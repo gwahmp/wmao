@@ -1,0 +1,165 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import "../styles/global.css";
+import Sidebar from "../components/Sidebar.astro";
+const version = Date.now();
+
+const { frontmatter, url } = Astro.props;
+const {
+  title, description, date, updatedDate, image, canonical,
+  tags, toc, learnPoints, relatedResources, faq, author, noindex
+} = frontmatter;
+const currentUrl = Astro.url.href; // full URL of the current page
+
+---
+<BaseLayout title={`${title}`} description={description} image={image} noindex={noindex}>
+
+  <Fragment slot="head">
+    <script src={`/assets/lib/jquery.min.js?v=${version}`} defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link href={`/assets/css/shop.css?v=${version}`} rel="stylesheet"> -->
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.wikimint.com#website",
+            url: "https://www.wikimint.com",
+            name: "Wikimint",
+            publisher: {
+              "@type": "Organization",
+              name: "Wikimint",
+              url: "https://www.wikimint.com"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": currentUrl + "#webpage",
+            url: currentUrl,
+            name: title,
+            description,
+            isPartOf: {
+              "@id": "https://www.wikimint.com#website"
+            },
+            primaryImageOfPage: {
+              "@id": "https://www.wikimint.com#primaryimage"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.wikimint.com#primaryimage",
+            url: `https://www.wikimint.com${image}`,
+            caption: title
+          }
+        ]
+      })}
+    />
+  </Fragment>
+
+  <div class="container mx-auto">
+    <!-- Filter bar -->
+    <div id="filterBar" class="flex flex-wrap gap-3 mb-6">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search products..."
+        class="border border-gray-400 bg-gray-100  rounded-md px-4 py-2 flex-1 min-w-[200px] focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <select
+        id="categoryFilter"
+        class="border border-gray-400 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
+        <option value="">All Categories</option>
+      </select>
+    </div>
+  
+    <!-- Main product area (for deep link view) -->
+    <div id="product" class="mb-10"></div>
+  
+    <p class="text-gray-700 leading-relaxed mb-8">
+      Looking for trusted product recommendations that actually work in real life?
+      You're in the right place. Whether you're building a digital business,
+      taking care of your wellness, or just love discovering innovative gadgets,
+      this page brings together our hand-picked favorites.
+    </p>
+  
+    <!-- Product grid -->
+    <div
+      id="productGrid"
+      class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 mb-10"
+    ></div>
+  
+    <button
+      id="loadMore"
+      class="bg-white border border-[#0077b5] text-[#0077b5] px-8 py-2 rounded-md mx-auto block font-medium hover:bg-[#0077b5] hover:text-white transition-colors duration-300"
+    >
+      Load More
+    </button>
+  
+    <!-- Favourite area -->
+    <div id="favourites" class="mt-16">
+      <h3 class="text-2xl font-semibold mb-4">Favourites</h3>
+      <div
+        id="favouriteGrid"
+        class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+      >No items found in the favourites list.</div>
+    </div>
+  
+    <!-- Affiliate iframe -->
+    <iframe
+      src="https://inrdeals.com/embed/deals?user=nks621344848"
+      width="100%"
+      height="1140"
+      frameborder="0"
+      class="w-full my-12 border-0 bg-gray-100 rounded-lg border border-gray-300"
+      style="padding-top: 30px"
+    ></iframe>
+
+    <h1>Handpicked Tools, Gadgets, and Resources for Work and Lifestyle</h1>
+
+  </div>
+  
+
+
+    <!-- Product JSON -->
+    <script id="productData" type="application/json">
+      [
+      ["8745", "digital-products", "resell-rights, plr-products, business-tools, income-opportunities",
+      "https://public-files.gumroad.com/pz2ncmd78cqufrdplopjo00ew4fq",
+      "Huge collection of digital products available at low prices for resale and profit, including eBooks, software, courses, templates, and marketing tools",
+      "Resell Digital Products and Earn Profits with Low-Cost PLR, Software & Courses", "All-in-one Business Kit",
+      "https://www.wikimint.com/digital-assets"],
+      ["8747", "tech-deals", "refurbished-laptops, used-laptops, renewed-laptops, budget-friendly, affordable-tech",
+      "https://m.media-amazon.com/images/I/8149ThY8zAL._AC_UY218_.jpg",
+      "Get top-brand refurbished and renewed laptops at unbeatable prices. Perfect for professionals, students, and everyday users who want reliable performance without the high cost. Save big while staying productive with these budget-friendly laptops.",
+      "Refurbished & Used Laptops – Reliable, Budget-Friendly Tech for Everyone", "Renewed Laptop Deals",
+      "https://amzn.to/4o5kpmc"],      
+      ["8746", "freelancer-office-setup", "workspace, freelancers, digital-creators, remote-work, productivity-tools",
+      "https://m.media-amazon.com/images/I/716xOV3LrbL._AC_UL320_.jpg",
+      "Create a complete freelancer office setup that enhances focus, comfort, and creativity. From ergonomic accessories to smart productivity tools, this setup is designed for digital creators, marketers, and professionals who work from anywhere.",
+      "Freelancer Office Setup Essentials for Productivity & Comfort", "Freelancer Office Setup Kit",
+      "https://amzn.to/4nlczUl"],
+      ["1546", "Health & Wellness", "wellness, foot-care, relaxation, pain-relief, personal-care",
+      "https://www.techanovafinds.us/cdn/shop/files/S907297a44e77457892af97749ad7ffa8K.webp?crop=center&height=300",
+      "Comfortable massage slippers for foot pain relief and relaxation, designed with acupressure points for wellness and daily personal care",
+      "Massage Slippers for Foot Pain Relief & Relaxation", "Massage Slippers", "https://amzn.to/3G9oNj4"]
+      ]
+      </script>
+
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto">
+    <main class="col-span-12 md:col-span-7">
+    <article class="prose lg:prose-xl max-w-none">
+        <slot /> {/* Markdown content */}
+      </article>
+    </main>
+    <aside class="col-span-12 md:col-span-5">
+        <Sidebar/>
+    </aside>
+  </div>
+  <!-- Simple client-side paginator using prebuilt JSON -->
+<script src={`/assets/js/shop.js?v=${version}`} defer></script>
+<script src={`/assets/js/script.js?v=${version}`} defer></script>
+</BaseLayout>

@@ -253,10 +253,9 @@ const currentUrl = Astro.url.href; // full URL of the current page
   <h2 class="text-2xl md:text-3xl font-bold pb-4 border-b border-gray-400 mb-8">
     Explore Categories</h2>
   <meta itemprop="name" content="Wikimint Blog Categories" />
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 max-w-7xl mx-auto px-4">
     
-    <!-- LEFT COLUMN -->
-    <div class="space-y-6">
+
       <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <meta itemprop="position" content="1" />
         <a href="https://www.wikimint.com/business" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
@@ -322,8 +321,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       </div>
     </div>
     
-    <!-- RIGHT COLUMN -->
-    <div class="space-y-6">
+
       <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <meta itemprop="position" content="9" />
         <a href="https://www.wikimint.com/internet" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
@@ -387,7 +385,6 @@ const currentUrl = Astro.url.href; // full URL of the current page
           <p class="text-gray-600 mt-2 min-h-[4rem]">Travel guides, destination tips, and adventure ideas for explorers.</p>
         </a>
       </div>
-    </div>
     
   </div>
 </section>
