@@ -128,7 +128,7 @@ A great idea without a plan is just a dream. A business plan acts as a roadmap, 
 Secure Funding for Your Startup
 -------------------------------
 
-Money is often the biggest barrier to launching a business. But today, there are multiple funding options available.
+Money is often the <a href="/online-business-struggle">biggest barrier to launching a business</a>. But today, there are multiple funding options available.
 
 ### Bootstrapping
 

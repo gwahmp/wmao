@@ -139,7 +139,7 @@ Surrounding yourself with experienced professionals helps you learn new trends, 
 
 ### Gaining Support and Advice
 
-Whether you're [launching a startup](/startup-business-guide), switching careers, or facing a business challenge, having a solid network means you can tap into collective wisdom. Peers and mentors can provide guidance, solutions, and even financial support in times of need.
+Whether you're [launching a startup](/startup-business-guide), switching careers, or <a href="/online-business-struggle">facing a business challenge</a>, having a solid network means you can tap into collective wisdom. Peers and mentors can provide guidance, solutions, and even financial support in times of need.
 
 Think about this: When a known person becomes your vendor, you may receive a price discount. This will help [reduce your business expenses](/reduce-business-expenses).
 

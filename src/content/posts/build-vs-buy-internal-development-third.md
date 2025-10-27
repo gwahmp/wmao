@@ -41,7 +41,7 @@ summary: "Software is a vital part of most businesses, from marketing to law to 
 <h2>Advantages</h2>
 <div class="numbered-h3">
   <h3>Unique Product Features</h3>
-  <p>If you buy an off-the-shelf solution, it's going to have a lot of general business tools and possibly some industry-specific tools. What you won't get, however, is tailored features that are designed specifically for your business challenges.</p>
+  <p>If you buy an off-the-shelf solution, it's going to have a lot of general business tools and possibly some industry-specific tools. What you won't get, however, is tailored features that are designed specifically for your <a href="/online-business-struggle">business challenges</a>.</p>
   <p>Custom software offers a unique advantage here. You can design features according to the problems you're trying to solve, exactly as you want, with none of the features you don't need or use. It can be as complex or basic as you want, from the sophisticated capabilities to the interface.</p>
   <h3>Better Long-Term Value</h3>
   <p>Third-party software tools and services are affordable on a month-to-month basis. They're designed to meet the needs of businesses at every stage, from bare-bones <a href="/startup-business-guide">startups</a> to enterprise corporations, and have pricing tiers to reflect that. But as affordable as they are, those costs add up month after month.</p>

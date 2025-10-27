@@ -460,7 +460,7 @@ Here's how:
 
 *   Choose 2–4 people who are growth-minded, reliable, and positive
 *   Meet weekly or bi-weekly (online or in-person)
-*   Share goals, struggles, and wins
+*   Share goals, <a href="/online-business-struggle">business struggles</a>, and wins
 *   Keep each other accountable and celebrate progress
 
 The magic happens when you commit to showing up consistently and helping each other grow.

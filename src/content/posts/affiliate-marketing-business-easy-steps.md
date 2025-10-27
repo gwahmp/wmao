@@ -30,7 +30,7 @@ What is affiliate marketing, and why would it be a good idea for you to care?
 
 Affiliate marketing is a type of performance-based marketing in which a business rewards one or more affiliates for each guest or customer achieved by the affiliate's own marketing efforts.
 
-As an affiliate marketer, you don't need to stress over creating products, dealing with customer service, or any of the other headaches that come with running a business. You essentially promote other people's products and earn a commission on each sale you generate.
+As an affiliate marketer, you don't need to stress over creating products, dealing with customer service, or any of the other <a href="/online-business-struggle">headaches that come with running a business</a>. You essentially promote other people's products and earn a commission on each sale you generate.
 
 Affiliate marketing is an attractive option for some people because it offers the potential for passive income. Unlike most other types of marketing, which require you to invest active energy to generate results, affiliate marketing is passive in nature.
 
