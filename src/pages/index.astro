@@ -178,7 +178,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
           new Date(b.data.date ?? 0).getTime() -
           new Date(a.data.date ?? 0).getTime()
       )
-      .slice(0, 6)
+      .slice(0, 20)
       .map((post) => (
         <li 
             class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto"
@@ -253,7 +253,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
   <h2 class="text-2xl md:text-3xl font-bold pb-4 border-b border-gray-400 mb-8">
     Explore Categories</h2>
   <meta itemprop="name" content="Wikimint Blog Categories" />
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 max-w-7xl mx-auto px-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 max-w-7xl mx-auto">
     
 
       <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">

@@ -123,9 +123,6 @@ const relatedPosts = allPosts
       <meta itemprop="position" content={post.data.category ? "3" : "2"} />
     </span>    
   </nav>
-  
-
-
         <article class="prose lg:prose-xl max-w-none">
           
             <h1>{post.data.h1}</h1>
@@ -138,6 +135,8 @@ const relatedPosts = allPosts
                 {post.data.summary}
               </p>
             )}
+
+          <div id="mainAd"></div>
 
           {toc && (
             <div class="wmdTOC graybox">
@@ -322,10 +321,10 @@ const relatedPosts = allPosts
   
   
       <!-- Column 3: Sticky Bottom Ads (25%) -->
-      <div class="col-span-12 md:col-span-5">
+      <aside class="col-span-12 md:col-span-5">
           <Sidebar/>
         </div>
-      </div>
+      </aside>
   
     </div>
 

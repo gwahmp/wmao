@@ -75,6 +75,6 @@ image: "money-articles-blog-posts.webp"
   <h3>Small Business Ideas</h3>
   <p>Thinking bigger? Check out business models you can start from scratch—with low investment and high potential.</p>
   
-    <h2>Ready to Start Your Money Journey?</h2>
+  <h2>Ready to Start Your Money Journey?</h2>
   <p>Scroll through our posts, pick what excites you, and start building the income stream that suits your lifestyle. This isn’t just about earning—it’s about making your money work smarter for you.</p>
 </article>
