@@ -3,6 +3,7 @@ const version = Date.now();
 import { getCollection, getEntry } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Sidebar from "../components/Sidebar.astro";
+import TopAds from "../components/TopAds.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
@@ -137,11 +138,9 @@ const relatedPosts = allPosts
             )}
 
 
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto">
-            <div class="col-span-12 md:col-span-6"></div>
-            <div class="col-span-12 md:col-span-6"></div>
-          </div>
-          <div id="mainAd"></div>
+
+          
+          <TopAds/>
 
           {toc && (
             <div class="wmdTOC graybox">
@@ -322,6 +321,8 @@ const relatedPosts = allPosts
           <h2 class="text-xl font-semibold">Comments</h2>
           <p class="opacity-70">Comments feature coming soon.</p>
         </section>
+
+        <div id="mainAd"></div>
       </div>
   
   

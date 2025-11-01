@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection, render } from "astro:content"; // 👈 import render
 import Sidebar from "../components/Sidebar.astro";
 import type { CollectionEntry } from "astro:content";
+import TopAds from "../components/TopAds.astro";
 
 type Post = CollectionEntry<"posts">;
 type Category = CollectionEntry<"category">;
@@ -178,7 +179,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       <h1 class="text-3xl font-bold mb-2">{category.data.h1}</h1>
       <p class="bluebox">{category.data.description}</p>
 
-      <div id="mainAd"></div>
+      <TopAds/>
 
       <!-- Posts list -->
       <h2 class="text-2xl font-semibold mt-10 mb-4">
@@ -226,6 +227,8 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
       <!-- Render markdown content from category file -->
       <Content />
+      <div id="mainAd" class="sticky top-20"></div>
+
     </main>
 
     <aside class="col-span-12 md:col-span-5">
