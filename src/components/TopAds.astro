@@ -2,16 +2,13 @@
 <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto my-5">
     <div class="col-span-12 md:col-span-6">
      
-<!-- Surfe.pro ad -->
-<ins class="surfe-be" data-sid="417025"></ins>
-<script>
-  const surfe = document.createElement("script");
-  surfe.src = "https://static.surfe.pro/js/net.js";
-  surfe.onload = () => {
-    (window.adsurfebe = window.adsurfebe || []).push({});
-  };
-  document.body.appendChild(surfe);
-</script>
+      <Fragment set:html={`<script src="https://static.surfe.pro/js/net.js"></script>
+        <ins class="surfe-be" data-sid="417025"></ins>
+        <script>
+        window.addEventListener("load", () => {
+          (window.adsurfebe = window.adsurfebe || []).push({});
+        });
+        </script>`} />
 
 
     </div>
