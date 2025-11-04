@@ -1,41 +1,33 @@
 backend:
-  name: github
-  repo: gwahmp/wmao
+  name: git-gateway
   branch: main
-  client_id: ${GITHUB_CLIENT_ID}
-  client_secret: ${GITHUB_CLIENT_SECRET}
+  site_domain: www.wikimint.com
 
-
-media_folder: "public/assets/images/blog"   # where images are stored in repo
-public_folder: "/assets/images/blog"        # how site references images
-
-publish_mode: editorial_workflow
-slug:
-  encoding: "unicode"
-  clean_accents: true
-  sanitize_replacement: "-"
+media_folder: "public/images"
+public_folder: "/images"
 
 collections:
-  - name: "blog"
+  - name: "posts"
     label: "Blog Posts"
-    folder: "src/content/blog"
+    folder: "src/content/posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"  # <-- filename only, no date
     extension: "md"
+    format: "frontmatter"
     fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "description", label: "Description", widget: "text" }
-      - { name: "h1", label: "H1", widget: "string" }
-      - { name: "image", label: "Image (upload to /assets/images/blog)", widget: "image" }
-      - { name: "date", label: "Date", widget: "datetime" }
-      - { name: "author", label: "Author", widget: "string", default: "Selvakumaran Krishnan" }
-      - { name: "category", label: "Category", widget: "string" }
-      - { name: "tags", label: "Tags", widget: "list" }
-      - { name: "summary", label: "Summary", widget: "text" }
-      - name: "faq"
-        label: "FAQ Section"
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "H1", name: "h1", widget: "string" }
+      - { label: "Image (upload 1200px version)", name: "image", widget: "image" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Author", name: "author", widget: "string", default: "selvakumaran-krishnan" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - label: "FAQ"
+        name: "faq"
         widget: "list"
         fields:
-          - { name: "q", label: "Question", widget: "string" }
-          - { name: "a", label: "Answer", widget: "text" }
-      - { name: "body", label: "Body", widget: "markdown" }
+          - { label: "Question", name: "q", widget: "string" }
+          - { label: "Answer", name: "a", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
