@@ -46,7 +46,7 @@ Develop a content strategy. Will your magazine feature articles, interviews, rev
 
 ### Website Development
 
-Invest in a [user-friendly website](https://developer.wikimint.com/2018/05/what-is-website-amazing-facts-need-to.html). Consider the design, navigation, and mobile responsiveness. You may need to hire a web developer and invest in a good content management system (CMS).
+Invest in a [user-friendly website](/web-development-services). Consider the design, navigation, and mobile responsiveness. You may need to hire a web developer and invest in a good content management system (CMS).
 
 ### Monetization Strategies
 

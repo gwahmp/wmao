@@ -81,7 +81,7 @@ Here's a quick breakdown of the core features that make LeadsLeap such a powerfu
 
 ### Real Traffic Through Ad Network
 
-<span data-link="https://leadsleap.com?r=selvaklnc">LeadsLeap</span> gives you the ability to promote your [websites](https://developer.wikimint.com/2018/05/what-is-website-amazing-facts-need-to.html) or offers to real users via its internal ad network, not bots. You earn credits by viewing others' ads, or you can go pro and get traffic automatically.
+<span data-link="https://leadsleap.com?r=selvaklnc">LeadsLeap</span> gives you the ability to promote your [websites](/web-development-services) or offers to real users via its internal ad network, not bots. You earn credits by viewing others' ads, or you can go pro and get traffic automatically.
 
 ### Link Tracker & Rotators
 

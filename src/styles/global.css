@@ -84,7 +84,7 @@ h1{
     clear: left ! important;
     font-family: georgia, "Times New Roman", serif ! important;
 }
-h1{
+article h1{
   font-size: 2.6em;
 }
 article .post-content img{
@@ -100,11 +100,11 @@ article h1{
       line-height: 35px ! important;
   }
 }
-h2 {
+article h2 {
   font-size: 24px ! important;
 }
-h3{font-size:21px ! important;}
-h4{font-size:18px ! important;}
+article h3{font-size:21px ! important;}
+article h4{font-size:18px ! important;}
 article h2{
   color: #336699 ! important;
     margin-top: 30px;
