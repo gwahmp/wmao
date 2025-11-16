@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const sidebarAdContent = `
   <a href="https://leadsleap.com/?r=selvaklnc" target="_blank"><img src="https://leadsleap.com/images/b300.250.hd.gif" width="100%"/></a>
 
-  <a href="/web-development-services"><img src="/assets/images/build-website-grow-business-cta.webp" width="100%" class="mb-10 bg-gray-100 border border-gray-200"/></a>
+  <a href="/web-development-services"><img src="/assets/images/build-website-grow-business-cta.webp" width="100%" class="my-5 bg-gray-100 border border-gray-200"/></a>
   `;
 
   // Define a handler function

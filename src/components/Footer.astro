@@ -71,10 +71,19 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
         <!-- Phone -->
         <p class="flex items-center gap-1">
           <img loading="lazy" src="/assets/svg/phone.svg" alt="Call Wikimint - Support" width="100" height="100" class="w-[20px]"/>
-          <a class="p-tel ms-2" href="tel:+914435707014">
+          <a class="p-tel ms-2" title="Call us" href="tel:+914435707014">
             +91 44 3570 7014
           </a>
           <meta itemprop="telephone" content="+914435707014">
+        </p>
+
+        <!-- WhatsApp -->
+        <p class="flex items-center gap-1">
+          <img loading="lazy" src="/assets/svg/whatsapp.svg" alt="Chat with Wikimint - Support through WhatsApp" width="100" height="100" class="w-[20px]"/>
+          <a class="p-tel ms-2" target="_blank" title="WhatsApp" href="https://wa.me/919342026754">
+            +91 9342026754
+          </a>
+          <meta itemprop="whatsapp" content="+919342026754">
         </p>
     
         <!-- Organization Metadata -->

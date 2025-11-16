@@ -178,7 +178,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
           new Date(b.data.date ?? 0).getTime() -
           new Date(a.data.date ?? 0).getTime()
       )
-      .slice(0, 20)
+      .slice(0, 10)
       .map((post) => (
         <li 
             class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto"
