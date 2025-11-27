@@ -359,7 +359,7 @@ faq:
 <p>Remember, the blockchain revolution is just getting started. Whether you're a tech enthusiast or a curious learner, understanding it now could be one of the smartest moves you make.</p>
 
 <h2>Final Thoughts: Why You Should Care About Blockchain</h2>
-<p>You don't need to be a coder or investor to care about blockchain. Just like the internet changed everything in the '90s, blockchain is changing how we share and protect data today.</p>
+<p>You don't need to be a coder or <a href="/top-investors">investor</a> to care about blockchain. Just like the internet changed everything in the '90s, blockchain is changing how we share and protect data today.</p>
 
 <p>It empowers people, removes unnecessary middlemen, and brings a new level of trust to our digital world.</p>
 

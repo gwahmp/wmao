@@ -54,7 +54,7 @@ Wikimint and the author, Selvakumaran Krishnan, are not authorized advisors; thi
 What is Momentum Investing?
 ---------------------------
 
-Momentum investing is a trading strategy where investors buy securities that are performing well and sell those that are underperforming. It's based on the idea that **the trend is your friend** - meaning that stocks with strong performance in the recent past are likely to continue performing well in the near future.
+Momentum investing is a trading strategy where <a href="/top-investors">investors</a> buy securities that are performing well and sell those that are underperforming. It's based on the idea that **the trend is your friend** - meaning that stocks with strong performance in the recent past are likely to continue performing well in the near future.
 
 ![Get a basic understanding of momentum investing, a strategy focused on buying high-performing stocks and capitalizing on upward market trends.](/assets/images/blog/what-is-momentum-investing-basic-understanding.webp "What is Momentum Investing? Basic Understanding Explained")
 

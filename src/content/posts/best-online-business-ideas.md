@@ -664,7 +664,7 @@ Investing in shares can be considered as part of online business ideas, especial
 
 Stock market earnings offer the potential for significant growth, but they come with risks. Success depends on knowledge, strategy, patience and timing. With the right approach, the market can be a powerful tool for financial growth.
 
-While stock market investment is not a traditional investment, like putting money into a shop's products, it offers flexibility. The invested money can be withdrawn at any time, either as the same amount or with some profit. During the holding period of certain stocks, investors may receive additional income through [dividend payouts](/dividend-stock-market-investment-wealth-strategy), bonus shares, rights issues, and more. However, this depends on your [understanding of the stock market](/stock-market-basic-understanding).
+While stock market investment is not a traditional investment, like putting money into a shop's products, it offers flexibility. The invested money can be withdrawn at any time, either as the same amount or with some profit. During the holding period of certain stocks, <a href="/top-investors">investors</a> may receive additional income through [dividend payouts](/dividend-stock-market-investment-wealth-strategy), bonus shares, rights issues, and more. However, this depends on your [understanding of the stock market](/stock-market-basic-understanding).
 
 ![Stock market profit options infographic showcasing multiple streams like dividends, bonuses, profit from selling, and more for smart earnings.](/assets/images/blog/stock-market-profit-earnings-streams-infographics.webp "Stock Market Profit Options - Multiple Earning Streams Infographic")
 

@@ -129,7 +129,7 @@ In 2006, Musk supported his cousins in founding SolarCity, a company specializin
 Final thoughts about Elon Musk
 ------------------------------
 
-Elon Musk's life is a testament to what can be achieved when determination meets the law of attraction and unyielding passion. From his early days of creating video games to steering companies that redefine industries, his story is a source of inspiration for dreamers, entrepreneurs, and investors alike.
+Elon Musk's life is a testament to what can be achieved when determination meets the law of attraction and unyielding passion. From his early days of creating video games to steering companies that redefine industries, his story is a source of inspiration for dreamers, entrepreneurs, and <a href="/top-investors">investors</a> alike.
 
 As a leader who juggles multiple businesses, from Tesla and SpaceX to ventures like Neuralink and The Boring Company, Musk's dedication to innovation extends beyond financial gains to shaping the future of humanity. His ability to combine business growth with a profound sense of purpose demonstrates that success is more than just building wealth—it's about making a lasting impact.
 

@@ -209,7 +209,7 @@ Navratna Companies and Their Presence in the Stock Market
 
 ### Stock Market Presence of Navratna Companies
 
-Many Navratna Companies are listed on the [Indian stock exchanges](/stock-market-basic-understanding) like the NSE (National Stock Exchange) and BSE (Bombay Stock Exchange). Examples include Oil India Limited (OIL), Engineers India Limited (EIL), and Bharat Electronics Limited (BEL). These stocks are popular among investors due to their stability and consistent performance.
+Many Navratna Companies are listed on the [Indian stock exchanges](/stock-market-basic-understanding) like the NSE (National Stock Exchange) and BSE (Bombay Stock Exchange). Examples include Oil India Limited (OIL), Engineers India Limited (EIL), and Bharat Electronics Limited (BEL). These stocks are popular among <a href="/top-investors">investors</a> due to their stability and consistent performance.
 
 ### Benefits for Shareholders
 

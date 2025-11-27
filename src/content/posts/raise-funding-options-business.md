@@ -63,7 +63,7 @@ faq:
 *   Ways to raise fund for a business
 *   Government grants, loans, and investor opportunities
 *   Step-by-step process of raising capital for small businesses
-*   Best methods to attract investors and secure funding
+*   Best methods to attract <a href="/top-investors">investors</a> and secure funding
 *   Crowdfunding, angel investment, and venture capital basics
 *   Eligibility and requirements for startup funding in India
 

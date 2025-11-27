@@ -852,7 +852,7 @@ For example:
 *   He worked in **marketing** to understand how to communicate value and reach customers.
 *   He observed business systems from the inside to learn **how companies make money**.
 
-These weren't just jobs. They were **strategic training grounds** that helped him later become a successful entrepreneur and investor.
+These weren't just jobs. They were **strategic training grounds** that helped him later become a successful entrepreneur and <a href="/top-investors">investor</a>.
 
 You don't need to love the job - you need to love the skills it gives you.
 

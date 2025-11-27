@@ -69,7 +69,7 @@ faq:
     <li>How to buy Bitcoin in India legally and securely</li>
     <li>How much Bitcoin cost in the beginning and how it grew</li>
     <li>How Bitcoin works for beginners explained in simple terms</li>
-    <li>How Bitcoin makes money for investors and miners</li>
+    <li>How Bitcoin makes money for <a href="/top-investors">investors</a> and miners</li>
     <li>How to invest in Bitcoin and make money</li>
     <li>The basics of Bitcoin mining and blockchain technology</li>
     <li>Cybersecurity basics for protecting your Bitcoin</li>

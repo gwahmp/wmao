@@ -22,13 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
   headings.forEach((h) => {
     const level = parseInt(h.tagName[1], 10);
     const text = h.textContent || "";
-    const id = `${slugify(text)}-${++counter}`;
-    h.id = id;
+
+    // ⭐ Use existing ID if present, else create new
+    let id = h.id?.trim();
+    if (!id) {
+      id = `${slugify(text)}-${++counter}`;
+      h.id = id;
+    }
 
     // climb up or down the stack
     if (level > currentLevel) {
       for (let i = 0; i < level - currentLevel; i++) {
-        // ensure there is a <li> to nest under
         const parentList = stack[stack.length - 1];
         let parentLi = parentList.lastElementChild;
         if (!parentLi) {

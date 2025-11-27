@@ -113,7 +113,7 @@ Not every idea is worth pursuing. Before investing time and money, validate your
 Create a Solid Business Plan
 ----------------------------
 
-A great idea without a plan is just a dream. A business plan acts as a roadmap, helping you navigate challenges and attract investors.
+A great idea without a plan is just a dream. A business plan acts as a roadmap, helping you navigate challenges and attract <a href="/top-investors">investors</a>.
 
 ### Key Components of a Business Plan:
 

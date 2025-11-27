@@ -151,7 +151,7 @@ Companies sometimes issue bonus shares to existing shareholders as a reward. The
 
 ### Stock Splits
 
-Stock splits entail the division of current shares into a multitude of new shares, altering the stock structure and providing investors with increased share quantities. While the total value of the investment remains the same, the number of shares increases, making them more affordable for investors.
+Stock splits entail the division of current shares into a multitude of new shares, altering the stock structure and providing investors with increased share quantities. While the total value of the investment remains the same, the number of shares increases, making them more affordable for <a href="/top-investors">investors</a>.
 
 ### Rights Issue
 

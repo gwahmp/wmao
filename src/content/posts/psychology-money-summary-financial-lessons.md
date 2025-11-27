@@ -930,7 +930,7 @@ These emotional reactions can **turn a temporary problem into a permanent setbac
 
 Think back to the early days of the COVID-19 pandemic in 2020.
 
-Markets crashed, fear was everywhere - and many investors sold off their portfolios in panic.
+Markets crashed, fear was everywhere - and many <a href="/top-investors">investors</a> sold off their portfolios in panic.
 
 But those who held on (or even invested more) saw huge gains in the following months.
 

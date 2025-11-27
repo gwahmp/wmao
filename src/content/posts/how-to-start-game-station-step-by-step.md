@@ -177,7 +177,7 @@ Once you've identified your niche, it's time to draft a comprehensive business p
 Secure Funding
 --------------
 
-Starting a game station can be financially demanding, so it's crucial to [secure adequate funding](/raise-funding-options-business). Depending on the scale of your project, you may need to seek investors, apply for loans, or explore crowdfunding options. Be sure to have a clear understanding of your budget and financial requirements to ensure a smooth start.
+Starting a game station can be financially demanding, so it's crucial to [secure adequate funding](/raise-funding-options-business). Depending on the scale of your project, you may need to seek <a href="/top-investors">investors</a>, apply for loans, or explore crowdfunding options. Be sure to have a clear understanding of your budget and financial requirements to ensure a smooth start.
 
 Legal and Regulatory Considerations
 -----------------------------------

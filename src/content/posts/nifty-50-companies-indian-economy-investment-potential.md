@@ -251,7 +251,7 @@ Despite the ever-changing dynamics of the stock market, Nifty 50 companies have 
 Stocks Beyond the Nifty 50
 --------------------------
 
-The Nifty 50 may be a benchmark index, but there are several outstanding stocks outside this index that offer excellent [investment opportunities](/investment-strategies-future-growth). These stocks come from diverse sectors and provide investors with strong growth potential, stable returns, and portfolio diversification.
+The Nifty 50 may be a benchmark index, but there are several outstanding stocks outside this index that offer excellent [investment opportunities](/investment-strategies-future-growth). These stocks come from diverse sectors and provide <a href="/top-investors">investors</a> with strong growth potential, stable returns, and portfolio diversification.
 
 ### Navratna Companies: Government-Backed Performers
 

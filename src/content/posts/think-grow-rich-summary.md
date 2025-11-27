@@ -26,7 +26,7 @@ First published in 1937 during the Great Depression, Think and Grow Rich remains
 
 Because it doesn't just teach you how to make money. It teaches you **how to think** like someone who attracts money, success, and opportunity. Hill understood that the real starting point for financial freedom isn't money - it's mindset. And that idea still rings true today.
 
-Whether you're a business owner, freelancer, investor, or just someone tired of the 9–5 grind, the ideas in this book can help you shift your mindset, build confidence, and use proven strategies to grow your wealth.
+Whether you're a business owner, freelancer, <a href="/top-investors">investor</a>, or just someone tired of the 9–5 grind, the ideas in this book can help you shift your mindset, build confidence, and use proven strategies to grow your wealth.
 
 Chapter-by-Chapter Overview of Think and Grow Rich
 --------------------------------------------------

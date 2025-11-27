@@ -290,7 +290,7 @@ Long-Term Wealth Building with Real Estate
 
 If you're thinking beyond the next paycheck, real estate is a solid path. It's not just about one house or one deal. It's about building a portfolio that supports your lifestyle for decades.
 
-Many investors follow the **BRRRR strategy**:
+Many <a href="/top-investors">investors</a> follow the **BRRRR strategy**:
 
 *   Buy
 *   Rehab

@@ -114,7 +114,7 @@ faq:
 
 ![Dividends in the stock market are periodic payments made by companies to shareholders as a reward for investing, offering passive income and long-term financial growth.](/assets/images/blog/dividend-stock-market-investment.webp "What Are Dividends in the Stock Market? A Complete Guide")
 
-Understanding dividends in the stock market and how they provide passive income for investors.
+Understanding dividends in the stock market and how they provide passive income for <a href="/top-investors">investors</a>.
 
 Dividends in the [stock market](/stock-market-basic-understanding) represent a lucrative avenue for investors to reap financial rewards. Companies share a portion of their profits with shareholders, offering a steady income stream. Whether through cash, stocks, or other assets, dividends enhance investment portfolios, providing stability and signaling a firm's financial health.
 

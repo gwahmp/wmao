@@ -207,7 +207,7 @@ it's important to note that managing investments for others requires legal and r
 **You've learned:**
 
 *   Top-performing investments for short-term and long-term goals
-*   High-return investment options for beginners and experienced investors
+*   High-return investment options for beginners and experienced <a href="/top-investors">investors</a>
 *   Safe yet profitable plans for retirement and monthly income
 *   How to identify and analyze promising investment opportunities
 *   Practical strategies for maximizing returns while managing risks

@@ -33,7 +33,7 @@ The global stock market capitalization has witnessed a staggering increase over 
 
 ### The Oracle of Omaha's Penny-Pinching Beginnings
 
-Warren Buffett, one of the most successful investors, started his investment journey by pinching pennies. At the age of six, he bought six-packs of Coca-Cola for 25 cents and sold each bottle for 5 cents, marking the beginning of his financial acumen.
+<a href="/top-investors#warren-buffet">Warren Buffett</a>, one of the <a href="/top-investors">most successful investors</a>, started his investment journey by pinching pennies. At the age of six, he bought six-packs of Coca-Cola for 25 cents and sold each bottle for 5 cents, marking the beginning of his financial acumen.
 
 ### Stock Market's Global Symphony
 

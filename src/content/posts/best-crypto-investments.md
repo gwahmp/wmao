@@ -317,7 +317,7 @@ faq:
 
 
 <h2>Final Thoughts: Your Crypto Game Plan for 2025</h2>
-<p>We're not in 2017 anymore. The crypto world of 2025 is more mature, more regulated, and more integrated into the <a href="/economy">global economy</a>. Whether you're a cautious beginner or a seasoned investor, there's room to grow. 2025 could be one of the <strong>most rewarding years</strong> in crypto history.</p>
+<p>We're not in 2017 anymore. The crypto world of 2025 is more mature, more regulated, and more integrated into the <a href="/economy">global economy</a>. Whether you're a cautious beginner or a seasoned <a href="/top-investors">investor</a>, there's room to grow. 2025 could be one of the <strong>most rewarding years</strong> in crypto history.</p>
 
 <p>You don't have to bet it all. But if you pick wisely, projects with real use cases, strong teams, and growing communities, you could be setting yourself up for something big.</p>
 
