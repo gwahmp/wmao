@@ -46,7 +46,7 @@ Every investing journey starts with a question: how do ordinary people turn simp
 
 ## Introduction
 
-This article brings you close to the personal stories, habits, and turning points of top global investors. These people shaped modern investing, influenced millions of learners, and proved that wealth is built on patience, clarity, and smart action.
+This article brings you close to the personal stories, habits, and turning points of top global investors. These people shaped modern investing, influenced millions of learners, and proved that wealth is built on <a href="/patience-investing-wealth-growth">patience</a>, clarity, and smart action.
 
 <figure>
   <img alt="Explore the top world-famous investors and money masters who shaped global financial markets with their strategies, insights, and timeless investment wisdom." title="Top World-Famous Investors and Money Masters to Learn From" width="100%" height="100%"  data-original-height="443" data-original-width="750" src="/assets/images/blog/top-world-famous-investors.webp"/>

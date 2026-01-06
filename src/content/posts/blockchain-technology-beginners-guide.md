@@ -6,7 +6,7 @@ h1: "What Is Blockchain? A Simple Guide to How Blockchain Technology Works"
 image: "what-is-blockchain-technology-distributed-ledger-technology-blockchain-explained.webp"
 date: "2025-06-15"
 author: "selvakumaran-krishnan"
-category: "Technology"
+category: "blockchain"
 tags: ["personal finance","budgeting"]
 summary: "In a world where digital information moves at lightning speed, trust and transparency often fall behind. That's where blockchain technology comes into play, a system that's changing how we store, share, and verify information. If you've ever wondered what is blockchain and how does it work, you're in the right place. This article walks you through the full picture, from the basics to the practical uses, all explained in a way that's simple and engaging."
 faq:

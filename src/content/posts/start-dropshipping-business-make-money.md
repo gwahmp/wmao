@@ -95,7 +95,7 @@ Dropshipping is a great option if:
 *   You're starting your first online business.
 *   You don't have a large budget for inventory.
 *   You want to work from home or anywhere.
-*   But, dropshipping is not a **get-rich-quick** scheme. It takes effort and patience.
+*   But, dropshipping is not a **get-rich-quick** scheme. It takes effort and <a href="/patience-investing-wealth-growth">patience</a>.
 
 How to Start a Dropshipping Business
 ------------------------------------

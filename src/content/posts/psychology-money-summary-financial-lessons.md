@@ -24,7 +24,7 @@ Morgan Housel begins the book with a bold statement: financial success is not al
 
 Think about it - two people can earn the same amount. One builds wealth, and the other struggles financially. The difference? Mindset and habits.
 
-This sets the stage for the entire book. The 20 short chapters aren't about spreadsheets and investment formulas. They're about how emotions, ego, luck, and patience influence our financial lives.
+This sets the stage for the entire book. The 20 short chapters aren't about spreadsheets and investment formulas. They're about how emotions, ego, luck, and <a href="/patience-investing-wealth-growth">patience</a> influence our financial lives.
 
 Let's dive into each chapter and pull out the gold.
 
