@@ -36,7 +36,7 @@ The ebook *Build Your Own Cash Pipeline* is your step-by-step guide to financial
 
 ### Understanding Residual and Recurring Income  
 
-Residual income is the foundation of long-term wealth. Instead of working harder every month, residual income allows you to earn continuously from past efforts. This ebook explains how recurring commissions work in **network marketing** and **[affiliate programs](/promote-affiliate-products)**, and why building a pipeline of residual earnings is far more effective than relying on one-time payments. You’ll discover how to leverage compounding benefits by choosing the right company or affiliate product.
+Residual income is the foundation of long-term wealth. Instead of working harder every month, residual income allows you to earn continuously from past efforts. This ebook explains how recurring commissions work in **network marketing** and **[affiliate programs](/promote-affiliate-products)**, and why building a pipeline of residual earnings is far more effective than relying on one-time payments. You’ll discover how to leverage <a href="/compounding-effect-build-wealth">compounding</a> benefits by choosing the right company or affiliate product.
 
 ### Choosing the Right Network Marketing Company  
 

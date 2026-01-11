@@ -97,7 +97,7 @@ A study by DALBAR showed that average investors earn much lower returns than the
 
 ## The Power of Compounding: Patience in Action
 
-The real strength of compounding shows up when you give your money plenty of time to grow.
+The real strength of <a href="/compounding-effect-build-wealth">compounding</a> shows up when you give your money plenty of time to grow.
 
 Let us take a simple example:
 

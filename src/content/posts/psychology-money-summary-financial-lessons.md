@@ -208,11 +208,11 @@ This chapter highlights one of the most misunderstood yet powerful concepts in f
 
 ### The Warren Buffett Effect
 
-Warren Buffett is often praised for his stock-picking skills, but that's only part of the story. The real secret?
+<a href="/top-investors#warren-buffett">Warren Buffett</a> is often praised for his stock-picking skills, but that's only part of the story. The real secret?
 
 Warren Buffett started investing at age 10 and is still going strong in his 90s. More than 99% of Buffett's wealth came after his 50th birthday. It wasn't just strategy - it was time.
 
-That's over **80 years of compounding** - and that's where the real magic happened.
+That's over **80 years of <a href="/compounding-effect-build-wealth">compounding</a>** - and that's where the real magic happened.
 
 ### Why Compounding Is So Powerful
 
