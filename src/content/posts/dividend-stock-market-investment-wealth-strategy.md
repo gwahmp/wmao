@@ -201,7 +201,7 @@ In 2012, Apple made headlines by announcing a quarterly dividend of $2.65 per sh
 
 ### Dividends in Crypto
 
-In recent years, there have been discussions about companies exploring the option of paying dividends in cryptocurrencies. This innovative approach could reshape traditional dividend distributions, adding a new dimension to shareholder rewards.
+In recent years, there have been discussions about companies exploring the option of paying dividends in <a href="/cryptocurrency-digital-economy">cryptocurrencies</a>. This innovative approach could reshape traditional dividend distributions, adding a new dimension to shareholder rewards.
 
 ### Indian Stock Market: SEBI's Dividend Disbursement Guidelines
 

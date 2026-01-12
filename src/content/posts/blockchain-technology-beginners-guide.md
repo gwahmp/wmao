@@ -53,7 +53,7 @@ faq:
   </figure>
 
   
-<p>In this guide, I'll take you through what blockchain really is, how dies blockchain work, and why it matters. Whether you're a curious student, a small business owner, or someone just trying to keep up with the digital age and to understand why everyone keeps talking about crypto and NFTs, you'll find everything you need right here. Also, you'll walk away with a clear understanding, no tech degree required. Blockchain technology explained in this guide covers everything you need to know about blockchain technology.</p>
+<p>In this guide, I'll take you through what blockchain really is, how dies blockchain work, and why it matters. Whether you're a curious student, a small business owner, or someone just trying to keep up with the digital age and to understand why everyone keeps talking about <a href="/cryptocurrency-digital-economy">cryptocurrency</a> and NFTs, you'll find everything you need right here. Also, you'll walk away with a clear understanding, no tech degree required. Blockchain technology explained in this guide covers everything you need to know about blockchain technology.</p>
 
 <div class="ull-learn">
   <p><b>You'll learn:</b></p>

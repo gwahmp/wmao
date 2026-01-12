@@ -64,7 +64,7 @@ Housel shares a striking point here: when you were born might be more important 
 
 *   **If you were born in 1950**, you likely experienced inflation in the 1970s and might favor hard assets like gold or real estate.
 *   **Born in the 1980s?** You probably saw tech booms, recessions, and low-interest rates - and may be more open to index investing or entrepreneurship.
-*   **Gen Z**, growing up in an era of crypto, student loan debt, and digital wealth trends, might prioritize side hustles, NFTs, or [online income](/best-online-business-ideas).
+*   **Gen Z**, growing up in an era of <a href="/cryptocurrency-digital-economy">crypto</a>, student loan debt, and digital wealth trends, might prioritize side hustles, NFTs, or [online income](/best-online-business-ideas).
 
 That means someone saving aggressively might look paranoid to others. Someone investing in risky assets may seem foolish. But they're all responding to their reality.
 

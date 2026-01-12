@@ -146,7 +146,7 @@ Many great investors believed in simple mental habits, and the classic <a href="
   - Known for the theory of “reflexivity”
   - A major figure in world finance and philanthropy
   
-  While classic investors preferred stocks, many new investors also study modern options, and a simple guide on the <a href="/best-crypto-investments">best crypto investments</a> helps them compare old and new ways of growing money.
+  While classic investors preferred stocks, many new investors also study modern options like <a href="/cryptocurrency-digital-economy">cryptocurrency</a>, and a simple guide on the <a href="/best-crypto-investments">best crypto investments</a> helps them compare old and new ways of growing money.
 
   Many new investors also show interest in digital money, and a short <a href="/what-is-bitcoin-basics-guide">bitcoin basics</a> guide helps them understand how this new form of currency works before taking any step.
 

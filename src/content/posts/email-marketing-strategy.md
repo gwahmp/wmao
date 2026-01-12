@@ -140,7 +140,7 @@ faq:
       </ul>
       <p>Each tool offers unique features, so choose one based on your business needs.</p>
 
-  - q: "Is email marketing still effective in 2025?"
+  - q: "Is email marketing still effective in 2026?"
     a: |
       <p>Yes! Despite the rise of social media and new marketing trends, email marketing remains highly effective. With <b>4.5 billion email users worldwide</b>, businesses continue to see strong engagement and conversions from email campaigns. The key is to focus on <b>personalization, automation, and value-driven content</b> to keep subscribers engaged.</p>
 
@@ -167,7 +167,7 @@ A step-by-step guide to crafting an email marketing strategy that drives quality
 
 **You'll learn:**
 
-*   What is email marketing strategy and why it matters in 2025
+*   What is email marketing strategy and why it matters in 2026
 *   The 5 T's of email marketing and how to apply them
 *   The 4 Ps and the rule of 7 in email marketing success
 *   Different types of email marketing strategies with examples

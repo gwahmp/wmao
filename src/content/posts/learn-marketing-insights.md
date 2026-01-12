@@ -25,7 +25,7 @@ faq:
 - q: "What makes LeadsLeap's training different from other online marketing courses?"
   a: "<p>LeadsLeap's training is based on real-world experience from successful marketers, not theory. It's practical, regularly updated, and designed to help you get results—not just knowledge.</p>"
 
-- q: 'Is the "One Signup A Day” method still relevant in 2025?'
+- q: 'Is the "One Signup A Day” method still relevant in 2026?'
   a: "<p>Yes, it remains effective because it's built on timeless marketing strategies and smart follow-up systems. Many marketers still use it today to generate steady leads and income.</p>"
 
 ---

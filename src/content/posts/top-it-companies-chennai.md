@@ -1,7 +1,7 @@
 ---
 title: "Top 45 IT Companies in Chennai – Leading Tech Firms You Should Know"
 description: "Explore the top 45 IT companies in Chennai. A complete guide for job seekers, IT professionals, and business solution enthusiasts looking for the best tech firms."
-h1: "List of Top IT Companies in Chennai to Know in 2025"
+h1: "List of Top IT Companies in Chennai to Know in 2026"
 
 image: "top-it-companies-in-chennai.webp"
 date: "2025-07-15"

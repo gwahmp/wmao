@@ -51,7 +51,7 @@ Why Invest in Real Estate? A Quick Overview
 
 **Imagine this**: you're earning money in your sleep. Your property is appreciating, rent is coming in monthly, and [tax benefits](/tax-saving-legal-guide) are quietly working in your favor. That's what makes real estate investing so appealing.
 
-Unlike stocks or crypto that fluctuate wildly, real estate is a tangible asset. It's something you can see, touch, and improve. And when done wisely, it can [generate passive income](/passive-income-ideas), long-term wealth, and even early retirement.
+Unlike stocks or <a href="/cryptocurrency-digital-economy">cryptocurrency</a> that fluctuate wildly, real estate is a tangible asset. It's something you can see, touch, and improve. And when done wisely, it can [generate passive income](/passive-income-ideas), long-term wealth, and even early retirement.
 
 Before jumping into the how-to, let's talk about **why real estate is such a powerful investment**:
 

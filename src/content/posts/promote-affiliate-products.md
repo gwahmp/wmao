@@ -165,7 +165,7 @@ Suppose you're promoting an online course about building Shopify stores. You cou
 
 After they sign up, send them to the course's sales page. Then over the next week, you email:
 
-*   “Why Shopify still works in 2025”
+*   “Why Shopify still works in 2026”
 *   “The 3 mistakes I made setting up my first store”
 *   “What I'd do differently if I started again”
 *   “Here's that course I mentioned - still the best I've seen”

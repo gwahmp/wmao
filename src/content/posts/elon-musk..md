@@ -24,7 +24,7 @@ faq:
 
   - q: Does Elon Musk invest in Bitcoin?
     a: |
-      <p><strong>SpaceX</strong> holds <a href="/what-is-bitcoin-basics-guide">Bitcoin</a>, but the CEO, Elon Musk did not disclose how much the investment is. Elon Musk personally owned <strong>Bitcoin</strong> and <strong>Ethereum</strong>. Interestingly, he also invested in <strong>Dogecoin</strong>, which was created as a fun cryptocoin.</p>
+      <p><strong>SpaceX</strong> holds <a href="/what-is-bitcoin-basics-guide">Bitcoin</a>, but the CEO, Elon Musk did not disclose how much the investment is. Elon Musk personally owned <strong>Bitcoin</strong> and <strong>Ethereum</strong>. Interestingly, he also invested in <strong>Dogecoin</strong>, which was created as a fun <a href="/cryptocurrency-digital-economy">cryptocoin</a>.</p>
 
   - q: What skills does Elon Musk have?
     a: |

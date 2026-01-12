@@ -19,7 +19,7 @@ faq:
 - q: What are the key takeaways in one line?
   a: Don't work for money. Learn how to make money work for you.
 
-- q: Is Rich Dad Poor Dad still relevant in 2025?
+- q: Is Rich Dad Poor Dad still relevant in 2026?
   a: Yes, because the principles of financial freedom, passive income, and wealth mindset apply in any economy.
 
 - q: Who should read Rich Dad Poor Dad?

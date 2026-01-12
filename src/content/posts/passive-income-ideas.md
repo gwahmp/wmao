@@ -25,7 +25,7 @@ Creative passive income streams to make money 24/7 without active effort.
 *   How to create ₹1 lakh passive income in India
 *   7 key sources of income and how to use them to your advantage
 *   10–50 passive income ideas for beginners, young adults, and professionals
-*   Easy passive income ideas you can start in 2024–2025
+*   Easy passive income ideas you can start in 2024–2026
 *   Online and from-home passive income options
 *   How to make quick money vs. sustainable income
 *   What to invest in as a beginner for long-term earnings
