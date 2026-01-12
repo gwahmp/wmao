@@ -392,7 +392,7 @@ Even so, large companies, payment platforms, and banks are now part of the crypt
 
 ## Why Learning Cryptocurrency Matters Today
 
-For anyone building an online career or business, cryptocurrency is a <a href="/skill">skill</a>, not a trend.
+For anyone building an online career or business, cryptocurrency is a <a href="/skills">skill</a>, not a trend.
 
 It helps you:
 
