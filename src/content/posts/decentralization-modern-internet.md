@@ -3,7 +3,7 @@ title: "Why Decentralization Matters for the Modern Internet"
 description: "Learn what decentralization is, how it works, and why it matters for privacy, freedom, security, and the future of the modern internet."
 h1: "Decentralization Explained: Why It Matters Online Today"
 
-image: "cryptocurrency-digital-money.webp"
+image: "decentralized-internet-future-visual.webp"
 date: "2026-01-16"
 author: "selvakumaran-krishnan"
 category: "Blockchain"
