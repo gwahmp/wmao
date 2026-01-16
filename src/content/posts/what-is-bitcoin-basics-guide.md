@@ -88,7 +88,7 @@ faq:
 <p>So, what is Bitcoin really? And why should you care? Let's study about Bitcoin in a simple, easy-understanding way.</p>
 
 <h2>What Is Bitcoin, Really?</h2>
-<p>Bitcoin is a decentralized digital currency, meaning it isn't controlled by any government, bank, or corporation. You can send it from person to person over the internet without needing a middleman. Think of it like cash, but for the digital world.</p>
+<p>Bitcoin is a <a href="/decentralization-modern-internet">decentralized</a> digital currency, meaning it isn't controlled by any government, bank, or corporation. You can send it from person to person over the internet without needing a middleman. Think of it like cash, but for the digital world.</p>
 
 <p>At its core, Bitcoin is digital money. But it's also more than that.</p>
 

@@ -103,7 +103,7 @@ faq:
 </ul>
 
 <h2>The Story Behind Blockchain: Summary</h2>
-<p>Imagine a digital notebook that keeps a record of everything but can't be tampered with, by anyone. That's blockchain in a nutshell. It's a technology that brings transparency, security, and decentralization to data handling. From banking and supply chains to healthcare and even voting, blockchain is proving its worth in the real world.</p>
+<p>Imagine a digital notebook that keeps a record of everything but can't be tampered with, by anyone. That's blockchain in a nutshell. It's a technology that brings transparency, security, and <a href="/decentralization-modern-internet">decentralization</a> to data handling. From banking and supply chains to healthcare and even voting, blockchain is proving its worth in the real world.</p>
 
 <p>Now, let's unravel how it all works.</p>
 

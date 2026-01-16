@@ -123,7 +123,7 @@ faq:
   <p><b>Pro Tip</b>: Allocate at least 30-40% of your crypto portfolio to Bitcoin for stability and long-term growth.</p>
   
   <h2>Ethereum (ETH): The Smart Contract Powerhouse</h2>
-  <p>Ethereum is more than just a coin, it's the backbone of decentralized applications (dApps). With the Ethereum 2.0 update fully rolled out, ETH is now faster, cheaper, and greener than ever before.</p>
+  <p>Ethereum is more than just a coin, it's the backbone of <a href="/decentralization-modern-internet">decentralized</a> applications (dApps). With the Ethereum 2.0 update fully rolled out, ETH is now faster, cheaper, and greener than ever before.</p>
   
   <h3>Why ETH Is a Must-Have</h3>
   <ul>
