@@ -259,7 +259,7 @@ faq:
   
   <li><strong>Stay informed</strong>: Follow top YouTube channels, Twitter accounts, and crypto newsletters.</li>
   
-  <li><strong>Use secure wallets</strong>: Always protect your assets. Hardware wallets like Ledger are a solid bet.</li>
+  <li><strong>Use secure wallets</strong>: Always protect your assets using a secure <a href="/crypto-wallets-complete-guide">wallet</a>. Hardware wallets like Ledger are a solid bet.</li>
 </ul>
 
 

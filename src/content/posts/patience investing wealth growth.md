@@ -134,7 +134,7 @@ Crypto markets test patience more than stocks.
 
 ### Long-Term Holders Often Win
 
-Data shows that long-term crypto holders tend to perform better than short-term traders. Many wallets that held Bitcoin for four years or more remained profitable, even after big drops.
+Data shows that long-term crypto holders tend to perform better than short-term traders. Many <a href="/crypto-wallets-complete-guide">wallets</a> that held Bitcoin for four years or more remained profitable, even after big drops.
 
 ### Avoiding Noise Is Critical
 

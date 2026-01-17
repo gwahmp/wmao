@@ -94,7 +94,7 @@ faq:
 
 <p>The key idea behind Bitcoin is that it operates on <a href="/blockchain-technology-beginners-guide">blockchain technology</a>, a public ledger where every transaction is recorded and cannot be changed.</p>
 
-<p>And the best part? Anyone with internet access and a digital wallet can use it.</p>
+<p>And the best part? Anyone with internet access and a <a href="/crypto-wallets-complete-guide">digital wallet</a> can use it.</p>
 
 
 <h3>Bitcoin in Simple Terms</h3>

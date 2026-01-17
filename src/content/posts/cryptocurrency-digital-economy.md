@@ -93,7 +93,7 @@ This system builds trust without a central authority.
 
 ### Wallets and Private Keys
 
-To use cryptocurrency, you need a digital wallet. A wallet holds private keys, not actual coins.
+To use cryptocurrency, you need a <a href="/crypto-wallets-complete-guide">digital wallet</a>. A wallet holds private keys, not actual coins.
 
 - Public key: like an email address  
 - Private key: like a password  

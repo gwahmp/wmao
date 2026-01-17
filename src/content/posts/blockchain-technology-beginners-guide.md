@@ -343,7 +343,7 @@ faq:
   <p>Start with free online courses or YouTube channels that explain blockchain in simple terms.</p>
   
   <h3>Experiment</h3>
-  <p>Try using a crypto wallet. Send a small amount of cryptocurrency to understand how it works.</p>
+  <p>Try using a <a href="/crypto-wallets-complete-guide">crypto wallet</a>. Send a small amount of cryptocurrency to understand how it works.</p>
   
   <h3>Follow Blockchain Projects</h3>
   <p>Keep an eye on real-world use cases like VeChain (supply chain), Ethereum (smart contracts), or IBM Blockchain.</p>
