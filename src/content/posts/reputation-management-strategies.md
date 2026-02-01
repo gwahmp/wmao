@@ -34,7 +34,7 @@ faq:
 They produce content to shape public perception of you, develop targeted campaigns, and manage social media engagement. You resolve issues and build a trusted reputation by building great customer experiences and seeking professional help from a <a href="https://www.elevated.marketing/" target="_blank" rel="nofollow">marketing firm</a>.
 
 <figure>
-<img alt="Proven online reputation management strategies to boost trust, attract customers, and grow your business in today's competitive digital market." title="Effective Reputation Management Strategies to Boost Business Growth" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/reputation-management-strategies-for-business-growth.webp"/>
+<img  loading="lazy" alt="Proven online reputation management strategies to boost trust, attract customers, and grow your business in today's competitive digital market." title="Effective Reputation Management Strategies to Boost Business Growth" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/reputation-management-strategies-for-business-growth.webp"/>
   <figcaption>Discover how smart reputation management can enhance your brand credibility, improve customer trust, and drive consistent business growth.</figcaption>
 </figure>
 

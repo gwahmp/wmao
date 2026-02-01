@@ -91,7 +91,7 @@ const relatedBooks = allBooks
 
     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto mb-20">
       <div class="col-span-12 md:col-span-5">
-        <img width="350" height="300" src={`/assets/images/books/${book.data.image}`} alt={book.data.alt} />
+        <img  loading="lazy" width="350" height="300" src={`/assets/images/books/${book.data.image}`} alt={book.data.alt} />
       </div>
   
       <div class="col-span-12 md:col-span-7">
@@ -112,8 +112,7 @@ const relatedBooks = allBooks
           class="flex items-center gap-2 border-2 border-wmblue bg-wmblue text-white px-6 py-2 mt-5 hover:bg-gray-500 transition"
                 >
           Download eBook
-          <img
-            loading="lazy"
+          <img loading="lazy"
             src="/assets/svg/download.svg"
             width="20"
             height="20"

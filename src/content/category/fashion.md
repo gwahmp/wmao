@@ -9,7 +9,7 @@ image: "fashion-articles-blog-posts.webp"
 <p>Elevate your style game with our Fashion category, your ultimate destination for the latest trends and style inspirations. Unleash your inner fashionista with expert tips on wardrobe essentials, beauty hacks, and runway-worthy looks. From high-end couture to street fashion, we celebrate the art of self-expression through clothing and accessories. Explore the ever-evolving world of fashion and discover how style can be a powerful form of self-confidence and individuality.</p>
 
 <figure>
-  <img alt="Discover the latest fashion trends, styling tips, outfit inspirations, seasonal collections, and timeless fashion advice from around the world in our archive." title="Fashion Articles Archive" width="100%" height="100%" data-original-height="443" data-original-width="750" src="/assets/images/blog/fashion-articles-blog-posts.webp"/>
+  <img  loading="lazy" alt="Discover the latest fashion trends, styling tips, outfit inspirations, seasonal collections, and timeless fashion advice from around the world in our archive." title="Fashion Articles Archive" width="100%" height="100%" data-original-height="443" data-original-width="750" src="/assets/images/blog/fashion-articles-blog-posts.webp"/>
     <figcaption>Browse through curated fashion articles featuring trend forecasts, wardrobe essentials, designer insights, and inspiration for your personal style.</figcaption>
   </figure>
 

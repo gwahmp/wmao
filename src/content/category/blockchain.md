@@ -9,7 +9,7 @@ image: "blockchain.webp"
 
 Blockchain is a <a href="/decentralization-modern-internet">decentralized technology</a> that securely records data across a distributed network. It enables transparent, tamper-resistant transactions and powers modern digital systems like <a href="/cryptocurrency-digital-economy">cryptocurrency</a>, smart contracts, and decentralized applications.
 
-  <img alt="Visual representation of blockchain technology showing linked data blocks, decentralization, and secure digital transactions" title="Blockchain network connecting blocks of digital data" width="100%" height="100%" data-original-height="443" data-original-width="750" src="/assets/images/blog/blockchain.webp"/>
+  <img  loading="lazy" alt="Visual representation of blockchain technology showing linked data blocks, decentralization, and secure digital transactions" title="Blockchain network connecting blocks of digital data" width="100%" height="100%" data-original-height="443" data-original-width="750" src="/assets/images/blog/blockchain.webp"/>
 
 
 ## What Is Blockchain Technology?

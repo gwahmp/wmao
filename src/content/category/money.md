@@ -50,7 +50,7 @@ image: "money-articles-blog-posts.webp"
   <p>Looking for smart, creative, and realistic ways to boost your income? You're in the right place. This page is your go-to archive for everything money-related—from practical side hustles to long-term income streams that actually work.</p>
   
   <figure>
-    <img alt="Explore insightful articles on money management, budgeting tips, investment strategies, saving plans, and financial advice to grow and protect your wealth." title="Money Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/money-articles-blog-posts.webp"/>
+    <img  loading="lazy" alt="Explore insightful articles on money management, budgeting tips, investment strategies, saving plans, and financial advice to grow and protect your wealth." title="Money Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/money-articles-blog-posts.webp"/>
       <figcaption>Find expert guidance on money matters including saving, investing, budgeting, and wealth-building strategies to help you achieve financial freedom.</figcaption>
     </figure>
   

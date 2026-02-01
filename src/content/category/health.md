@@ -9,7 +9,7 @@ image: "health-articles-blog-posts.webp"
 <p>Prioritize your well-being with our Health category, your comprehensive guide to a healthier, happier life. Dive into expert advice on physical and mental wellness, nutrition tips, and the latest developments in the world of health. From fitness routines to mindfulness practices, our Health category empowers you to make informed choices for a balanced lifestyle. Stay updated on medical breakthroughs, explore holistic health approaches, and embark on a journey toward overall well-being.</p>
 
 <figure>
-  <img alt="Discover informative and helpful health articles covering wellness, nutrition, fitness, mental health, self-care tips, and healthy living inspiration." title="Health Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/health-articles-blog-posts.webp"/>
+  <img  loading="lazy" alt="Discover informative and helpful health articles covering wellness, nutrition, fitness, mental health, self-care tips, and healthy living inspiration." title="Health Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/health-articles-blog-posts.webp"/>
     <figcaption>Explore our archive of health articles focused on wellness, fitness, nutrition, mental well-being, and tips for living a healthier and balanced life.</figcaption>
   </figure>
 

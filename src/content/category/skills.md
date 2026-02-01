@@ -9,7 +9,7 @@ image: "skills-articles-blog-posts.webp"
 <p>Hone your skills and expand your knowledge in our Skills category. Whether you're aiming for professional development, learning a new hobby, or mastering a craft, this category provides valuable insights and resources. Explore articles on skill acquisition, practical tips for improvement, and success stories from individuals who have mastered their chosen disciplines. Our Skills category is your guide to continuous learning and personal growth.</p>
 
 <figure>
-  <img alt="Discover articles on skill development, professional growth, soft skills, technical expertise, and practical tips to enhance your personal and career skills effectively." title="Skills Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/skills-articles-blog-posts.webp"/>
+  <img  loading="lazy" alt="Discover articles on skill development, professional growth, soft skills, technical expertise, and practical tips to enhance your personal and career skills effectively." title="Skills Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/skills-articles-blog-posts.webp"/>
     <figcaption>Explore a variety of articles focused on building essential skills, improving your abilities, and advancing your career with expert advice and practical guidance.</figcaption>
   </figure>
 

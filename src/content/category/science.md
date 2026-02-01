@@ -9,7 +9,7 @@ image: "science-articles-blog-posts.webp"
 <p>Embark on a journey of scientific exploration with our Science category. Stay updated on groundbreaking research, technological innovations, and discoveries that shape our understanding of the universe. From space exploration to advancements in medicine and technology, our Science category covers a wide spectrum of fascinating topics. Join us in unraveling the mysteries of the cosmos and the complexities of the scientific world.</p>
 
 <figure>
-  <img alt="Explore a wide range of science articles covering discoveries, innovations, research breakthroughs, technology advances, and fascinating scientific concepts." title="Science Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/science-articles-blog-posts.webp"/>
+  <img  loading="lazy" alt="Explore a wide range of science articles covering discoveries, innovations, research breakthroughs, technology advances, and fascinating scientific concepts." title="Science Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/science-articles-blog-posts.webp"/>
     <figcaption>Dive into the latest science news, research findings, technological innovations, and in-depth articles that unravel the mysteries of the universe.</figcaption>
   </figure>
 

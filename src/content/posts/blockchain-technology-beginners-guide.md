@@ -48,7 +48,7 @@ faq:
 
 
 <figure>
-  <img alt="Understand blockchain technology distributed ledger technology and how blockchain revolutionizes data security, transparency, and decentralized systems across industries globally." title="Understanding Distributed Ledger: How Blockchain Powers Secure Digital Transactions" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/what-is-blockchain-technology-distributed-ledger-technology-blockchain-explained.webp"/>
+  <img  loading="lazy" alt="Understand blockchain technology distributed ledger technology and how blockchain revolutionizes data security, transparency, and decentralized systems across industries globally." title="Understanding Distributed Ledger: How Blockchain Powers Secure Digital Transactions" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/what-is-blockchain-technology-distributed-ledger-technology-blockchain-explained.webp"/>
     <figcaption>An overview of blockchain's decentralized structure, exploring how digital ledgers enable secure, transparent, and tamper-proof record-keeping in modern tech.</figcaption>
   </figure>
 

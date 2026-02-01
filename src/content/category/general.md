@@ -49,7 +49,7 @@ image: "general-articles-blog-posts.webp"
   <p>Welcome to our General category, a diverse realm of captivating content that caters to a broad audience. Here, you'll find an eclectic mix of thought-provoking articles, miscellaneous musings, and explorations into various facets of life. From lifestyle tips and personal development to societal reflections and cultural insights, our General category offers a bit of everything. Embrace the variety and embark on a journey of discovery, where every read brings something new to ponder and enjoy.</p>
   
   <figure>
-    <img alt="Browse a diverse collection of general articles covering lifestyle, motivation, productivity, personal growth, creativity, and everyday inspiration." title="General Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/general-articles-blog-posts.webp"/>
+    <img  loading="lazy" alt="Browse a diverse collection of general articles covering lifestyle, motivation, productivity, personal growth, creativity, and everyday inspiration." title="General Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/general-articles-blog-posts.webp"/>
       <figcaption>Explore a wide range of general topics from lifestyle tips to motivation, productivity hacks, and personal development ideas to inspire your journey.</figcaption>
     </figure>
   

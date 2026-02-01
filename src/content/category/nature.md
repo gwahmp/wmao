@@ -9,7 +9,7 @@ image: "nature-articles-blog-posts.webp"
 <p>Immerse yourself in the wonders of the natural world with our Nature category. From breathtaking landscapes to wildlife discoveries, this category celebrates the beauty of our planet. Dive into articles that explore environmental conservation, outdoor adventures, and the intricate ecosystems that make Earth a marvel. Our Nature category is your gateway to a deeper understanding of the environment and the importance of preserving the planet for future generations.</p>
 
 <figure>
-  <img alt="Discover inspiring articles about nature, wildlife, environmental conservation, natural wonders, and tips to connect with and protect our planet’s beauty." title="Nature Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/nature-articles-blog-posts.webp"/>
+  <img  loading="lazy" alt="Discover inspiring articles about nature, wildlife, environmental conservation, natural wonders, and tips to connect with and protect our planet’s beauty." title="Nature Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/nature-articles-blog-posts.webp"/>
     <figcaption>Explore captivating stories and insights on nature, wildlife preservation, eco-friendly living, and the importance of sustaining our natural environment.</figcaption>
   </figure>
 

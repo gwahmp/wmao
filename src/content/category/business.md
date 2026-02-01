@@ -48,7 +48,7 @@ image: "business.webp"
 
 
 <figure>
-  <img alt="Browse a curated archive of insightful business articles covering entrepreneurship, finance, marketing, startups, and strategies for sustainable growth." title="Business Articles Archive" width="100%" height="100%" data-original-height="443" data-original-width="750" src="/assets/images/blog/business.webp"/>
+  <img  loading="lazy" alt="Browse a curated archive of insightful business articles covering entrepreneurship, finance, marketing, startups, and strategies for sustainable growth." title="Business Articles Archive" width="100%" height="100%" data-original-height="443" data-original-width="750" src="/assets/images/blog/business.webp"/>
     <figcaption>Explore a rich collection of business articles featuring expert tips, ideas, and practical guides to help you succeed in your entrepreneurial journey.</figcaption>
   </figure>
 

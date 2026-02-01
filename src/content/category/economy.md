@@ -9,7 +9,7 @@ image: "economy-articles-blog-posts.webp"
 <p>Welcome to the Economy Hub at Wikimint – your premier destination for insightful and comprehensive coverage of all things economic. In this meticulously curated category, we bring together a diverse array of articles, analyses, and features that delve into the multifaceted world of global and local economies.</p>
 
 <figure>
-  <img alt="Explore in-depth economy articles covering financial trends, global markets, government policies, and key factors shaping national and international economies." title="Economy Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/economy-articles-blog-posts.webp"/>
+  <img  loading="lazy" alt="Explore in-depth economy articles covering financial trends, global markets, government policies, and key factors shaping national and international economies." title="Economy Articles Archive" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/economy-articles-blog-posts.webp"/>
     <figcaption>Access our archive of economy-related articles offering insights into global finance, policy updates, market shifts, and economic development strategies.</figcaption>
   </figure>
 

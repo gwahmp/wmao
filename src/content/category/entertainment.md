@@ -9,7 +9,7 @@ image: "entertainment-articles-blog-posts.webp"
 <p>Indulge in a world of entertainment diversity with our Entertainment category. From movie reviews and TV show recommendations to gaming insights and pop culture updates, we cater to every entertainment enthusiast. Dive into thought-provoking discussions on the impact of entertainment on society and explore the latest trends shaping the industry. Whether you're a cinephile, a gaming aficionado, or a music lover, our Entertainment category promises an immersive experience that resonates with your passions.</p>
 
 <figure>
-  <img alt="Dive into a world of entertainment with articles on movies, celebrities, music, streaming, pop culture trends, and everything that keeps you entertained." title="Entertainment Articles Archive" width="100%" height="100%" data-original-height="443" data-original-width="750" src="/assets/images/blog/entertainment-articles-blog-posts.webp"/>
+  <img  loading="lazy" alt="Dive into a world of entertainment with articles on movies, celebrities, music, streaming, pop culture trends, and everything that keeps you entertained." title="Entertainment Articles Archive" width="100%" height="100%" data-original-height="443" data-original-width="750" src="/assets/images/blog/entertainment-articles-blog-posts.webp"/>
     <figcaption>Explore a curated archive of entertainment content featuring celebrity news, film insights, music trends, streaming platforms, and pop culture updates.</figcaption>
   </figure>
 

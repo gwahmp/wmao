@@ -8,7 +8,7 @@ image: "celebrity-articles-blog-posts.webp"
 <p>Step into the dazzling world of fame and fortune with our Celebrity category. Immerse yourself in exclusive interviews, red carpet events, and the latest buzz from the entertainment industry. Stay up-to-date on your favorite stars, from Hollywood A-listers to rising talents. Discover the behind-the-scenes stories, lifestyle insights, and the glamorous life of celebrities. Our Celebrity category is your front-row ticket to the glitz, glamour, and intrigue of the entertainment world.</p>
 
 <figure>
-  <img alt="Dive into the celebrity articles archive featuring profiles, news, lifestyle insights, and inspiring stories of famous personalities from around the world." title="Celebrity Articles Archive" width="100%" height="100%" data-original-height="443" data-original-width="750" src="/assets/images/blog/celebrity-articles-blog-posts.webp"/>
+  <img  loading="lazy" alt="Dive into the celebrity articles archive featuring profiles, news, lifestyle insights, and inspiring stories of famous personalities from around the world." title="Celebrity Articles Archive" width="100%" height="100%" data-original-height="443" data-original-width="750" src="/assets/images/blog/celebrity-articles-blog-posts.webp"/>
     <figcaption>Explore our archive of celebrity articles, packed with engaging profiles, career highlights, personal stories, and updates on your favorite stars.</figcaption>
   </figure>
 

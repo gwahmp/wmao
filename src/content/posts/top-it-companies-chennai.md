@@ -48,7 +48,7 @@ faq:
 <p>Let's rewind for a moment. Chennai didn't always wear the IT crown. But thanks to its skilled workforce, growing infrastructure, and strong educational ecosystem, the city has grown into a global technology hub. Today, it proudly houses hundreds of technology consulting companies, software engineering firms, and cloud companies that cater to global markets.</p>
 
 <figure>
-  <img alt="Explore the leading IT companies in Chennai known for innovation, software development, tech services, and career opportunities in India's growing tech hub." title="Top IT Companies in Chennai: Leading Tech Hubs & Career Opportunities" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/top-it-companies-in-chennai.webp"/>
+  <img  loading="lazy" alt="Explore the leading IT companies in Chennai known for innovation, software development, tech services, and career opportunities in India's growing tech hub." title="Top IT Companies in Chennai: Leading Tech Hubs & Career Opportunities" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/top-it-companies-in-chennai.webp"/>
     <figcaption>Discover Chennai's top IT firms offering cutting-edge technology solutions, global services, and thriving job markets for IT professionals and tech talent.</figcaption>
   </figure>
 

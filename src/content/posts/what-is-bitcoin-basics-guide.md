@@ -50,7 +50,7 @@ faq:
 <p>In this deep-dive article, we'll walk you through the entire journey of Bitcoin, from its mysterious beginnings to how it works, why it matters, and where it's headed. Whether you're curious about <a href="/cryptocurrency-digital-economy">cryptocurrency</a>, want to understand the blockchain, or just want to grasp how Bitcoin works in simple terms, this in-depth guide on Bitcoin is for you.</p>
 
 <figure>
-<img alt="Learn the basics of Bitcoin, the first decentralized digital currency, and how it works as a peer-to-peer payment system powered by blockchain technology." title="Beginner's Introduction to Bitcoin and Cryptocurrency Basics" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/bitcoin-introduction-cryptocurrency-basics-guide.webp"/>
+<img  loading="lazy" alt="Learn the basics of Bitcoin, the first decentralized digital currency, and how it works as a peer-to-peer payment system powered by blockchain technology." title="Beginner's Introduction to Bitcoin and Cryptocurrency Basics" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/bitcoin-introduction-cryptocurrency-basics-guide.webp"/>
   <figcaption>Understand Bitcoin as a digital asset, its blockchain foundation, and how it plays a vital role in the evolution of modern decentralized finance (DeFi).</figcaption>
 </figure>
 

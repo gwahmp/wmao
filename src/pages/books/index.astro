@@ -65,11 +65,11 @@ const version = Date.now();
   {books.slice(0, 12).map((book) => (
     <li class="transition">
       <a href={`/books/${book.slug}`}>
-        <img width="100" height="100"
+        <img  
+          loading="lazy" width="100" height="100"
           src={`/assets/images/books/200/${book.data.image}`} 
           alt={book.data.alt} 
           class="w-full h-80 object-cover"
-          loading="lazy"
         />
         <h3 class="mt-2 font-normal">{book.data.title}</h3>
       </a>
