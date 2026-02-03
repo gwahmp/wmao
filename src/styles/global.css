@@ -262,3 +262,50 @@ margin-bottom:20ox;
 .animate-fade-in-up {
   animation: fadeInUp 0.4s ease-in-out;
 }
+
+
+
+
+
+.acc input { display:none; }
+.acc-item{
+  border: 1px solid rgb(229 231 235);
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f1f1f1;
+}
+.acc-title h3 {
+  cursor:pointer;
+  position:relative;
+  padding-right:1.5rem;
+  margin-top:15px;
+  font-weight: 600;
+  color: rgb(75 85 99);
+}
+
+.acc-title h3::after {
+  content:"+";
+  position:absolute;
+  line-height:0px;
+  right:0;
+  top:50%;
+  visibility:visible;
+  transition:visibility .25s;
+}
+
+.acc-content {
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .3s ease;
+}
+.acc-content p{
+  margin-top:0px ! important;
+}
+.acc input:checked + .acc-title + .acc-content {
+  max-height:300px;
+}
+
+.acc input:checked + .acc-title h3::after {
+  visibility:hidden;
+}
