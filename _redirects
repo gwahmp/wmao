@@ -1,9 +1,0 @@
-# Blogger pages: /p/*.html → /slug
-/p/:slug.html   /:slug   301
-
-# Blogger posts: /yyyy/mm/slug.html → /slug
-/:year/:month/:slug.html   /:slug   301
-
-# others
-/r  /recommended 301
-/ias   /insider-advertising-strategies 301
