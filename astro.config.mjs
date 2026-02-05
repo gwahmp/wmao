@@ -7,6 +7,7 @@ export default defineConfig({
   site: "https://www.wikimint.com", // REQUIRED for sitemap
   trailingSlash: "never",
   output: "static",
+  compressHTML: true,
   build: {
     format: "file", // output flat .html files
   },
