@@ -16,7 +16,7 @@ image: "marketing-articles-blog-posts.webp"
   <ul>
     <li>Step-by-step resources on digital marketing fundamentals</li>
     <li>Ebooks about social media growth and engagement tactics</li>
-    <li>Guides on email marketing strategies and automation</li>
+    <li>Guides on email marketing strategies and <a href="/automate-business-processes-guide">automation</a></li>
     <li>Insights into content marketing and storytelling methods</li>
     <li>References on paid ads, SEO, and analytics tracking</li>
     <li>Tutorials on building customer funnels and lead generation</li>

@@ -70,7 +70,7 @@ Personalisation makes customers want to buy, and tailored suggestions grab atten
 
 ### Saves Money
 
-Artificial intelligence automates tasks like data analysis, saving businesses time and money. This means they have more time to brainstorm and less time to do regular work. Personalisation [cuts marketing costs](/reduce-business-expenses) by targeting the right people.
+Artificial intelligence <a href="/automate-business-processes-guide">automates tasks</a> like data analysis, saving businesses time and money. This means they have more time to brainstorm and less time to do regular work. Personalisation [cuts marketing costs](/reduce-business-expenses) by targeting the right people.
 
 ### Better Decisions
 

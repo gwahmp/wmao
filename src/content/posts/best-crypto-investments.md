@@ -218,7 +218,7 @@ faq:
   <p>In a world racing toward AI and immersive content, RNDR is poised to skyrocket.</p>
   
   <h2>Fetch.ai (FET): AI Meets Blockchain</h2>
-  <p>Another project at the AI + crypto intersection. Fetch.ai builds autonomous agents that can automate tasks, from ride-sharing to energy distribution.</p>
+  <p>Another project at the AI + crypto intersection. Fetch.ai builds autonomous agents that can <a href="/automate-business-processes-guide">automate tasks</a>, from ride-sharing to energy distribution.</p>
   
   <h3>What Makes FET Unique</h3>
   <ul>

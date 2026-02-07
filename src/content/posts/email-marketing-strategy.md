@@ -303,7 +303,7 @@ To maximize results, track key email marketing metrics:
 
 
 
-Email marketing is a powerful way to grow your business and generate leads—if done right. By understanding key strategies, avoiding common mistakes, and using automation, you can turn email subscribers into loyal customers.
+Email marketing is a powerful way to grow your business and generate leads—if done right. By understanding key strategies, avoiding common mistakes, and using <a href="/automate-business-processes-guide">automation workflows</a>, you can turn email subscribers into loyal customers.
 
 **You've learned:**
 

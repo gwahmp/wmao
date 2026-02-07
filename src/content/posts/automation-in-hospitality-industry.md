@@ -29,7 +29,7 @@ faq:
 
 ![Explore how automation is transforming the hospitality industry by enhancing guest experiences, streamlining operations, and improving service efficiency.](/assets/images/blog/How-Automation-in-the-Hospitality-Industry-is-Redefining-Guest-Experience.webp "Automation in Hospitality Industry: Enhancing Guest Experience & Efficiency")
 
-From smart check-ins to AI-powered concierge services, automation is reshaping the hospitality industry for better service and operational excellence.
+From smart check-ins to AI-powered concierge services, <a href="/automate-business-processes-guide">automation</a> is reshaping the hospitality industry for better service and operational excellence.
 
 Understanding Hotel Automation
 ------------------------------

@@ -213,7 +213,7 @@ As your startup starts growing, prioritize sustainable scaling strategies.
 
 ### Automate & Optimize Operations
 
-Use tools and software to automate repetitive tasks, such as customer support chatbots or [email marketing](/email-marketing-strategy) automation.
+Use tools and software to <a href="/automate-business-processes-guide">automate repetitive tasks</a>, such as customer support chatbots or [email marketing](/email-marketing-strategy) automation.
 
 ### Expand Your Team
 

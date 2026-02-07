@@ -33,7 +33,7 @@ faq:
 
 In today’s fast-paced digital economy, standing out as an online marketer requires more than just surface-level tactics. It takes a solid foundation, proven strategies, and the discipline to execute consistently. 30 Rules for Being an Online Marketer is a comprehensive playbook that distills years of experience into practical steps you can implement immediately.
 
-This ebook is designed for entrepreneurs, affiliate marketers, coaches, content creators, and anyone serious about building a profitable digital business. From understanding the psychology of sales to automating your systems, you’ll discover the exact methods that successful online marketers use to grow [sustainable income streams](/money-income-stream).
+This ebook is designed for entrepreneurs, affiliate marketers, coaches, content creators, and anyone serious about building a profitable digital business. From understanding the psychology of sales to <a href="/automate-business-processes-guide">automating your systems</a>, you’ll discover the exact methods that successful online marketers use to grow [sustainable income streams](/money-income-stream).
 
 ### Why These Rules Matter in Digital Marketing
 

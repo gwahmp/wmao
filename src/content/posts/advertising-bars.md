@@ -130,7 +130,7 @@ Final Thoughts
 
 If you're looking to squeeze more value out of your traffic without touching your existing campaigns, Ad Bars are a game-changer.
 
-In the next chapter, we'll explore **Forms Creation** and **Popup Creation** , the tool that powers your opt-in pages, helps you collect leads, design popups that feel helpful, not annoying, and get real results and kickstarts your email automation through <span data-link="https://sendsteed.com/?r=selvaklnc">SendSteed</span>.
+In the next chapter, we'll explore **Forms Creation** and **Popup Creation** , the tool that powers your opt-in pages, helps you collect leads, design popups that feel helpful, not annoying, and get real results and kickstarts your email <a href="/automate-business-processes-guide">automation</a> through <span data-link="https://sendsteed.com/?r=selvaklnc">SendSteed</span>.
 
 
 Table of Contents

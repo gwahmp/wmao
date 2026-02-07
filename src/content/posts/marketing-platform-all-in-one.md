@@ -34,7 +34,7 @@ Whether you're building your first funnel or managing multiple traffic sources o
 
 ![Discover an all-in-one marketing platform designed to streamline campaigns, manage leads, run ads, and track performance for complete digital growth solutions.](/assets/images/blog/marketing-platform-all-in-one.webp "All-in-One Marketing Platform for Digital Growth")
 
-An all-in-one marketing platform that offers tools for automation, lead generation, email marketing, and analytics to boost business efficiency and results.
+An all-in-one marketing platform that offers <a href="/automate-business-processes-guide">tools for automation</a>, lead generation, email marketing, and analytics to boost business efficiency and results.
 
 **You'll learn:**
 

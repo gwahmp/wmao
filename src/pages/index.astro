@@ -8,6 +8,10 @@ import { getImage } from "astro:assets";
 
 const version = Date.now();
 
+export const prerender = true;
+
+Astro.response.headers.set("Cache-Control", "no-cache, no-store, must-revalidate");
+
 // Load posts
 const posts = await getCollection("posts");
 

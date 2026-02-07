@@ -49,7 +49,7 @@ Backed by Years of Proven Results in Email Marketing
 
 Email Series campaigns have been a cornerstone of digital marketing for over a decade. Industry leaders, including content marketers, affiliate professionals, and online educators, consistently use automated sequences to increase engagement, conversions, and brand trust.
 
-<span data-link="https://leadsleap.com?r=selvaklnc">LeadsLeap</span>'s <span data-link="https://sendsteed.com/?r=selvaklnc">SendSteed</span> platform, designed by internet marketing experts, simplifies this process while giving you the same powerful automation tools that top marketers rely on.
+<span data-link="https://leadsleap.com?r=selvaklnc">LeadsLeap</span>'s <span data-link="https://sendsteed.com/?r=selvaklnc">SendSteed</span> platform, designed by internet marketing experts, simplifies this process while giving you the same powerful <a href="/automate-business-processes-guide">automation tools</a> that top marketers rely on.
 
 What is an Email Series?
 ------------------------

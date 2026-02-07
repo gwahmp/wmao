@@ -55,7 +55,7 @@ Use Funnel Manager to structure and optimize your marketing funnels for better e
 What Is the Funnel Manager?
 ---------------------------
 
-Contrary to what many marketers think, LeadsLeap's Funnel Manager isn't a page builder or an automation tool. Instead, it's an organizer for your existing pages, a dashboard where you can group, label, and manage your pages based on the campaigns or products they support.
+Contrary to what many marketers think, LeadsLeap's Funnel Manager isn't a page builder or an <a href="/automate-business-processes-guide">automation tool</a>. Instead, it's an organizer for your existing pages, a dashboard where you can group, label, and manage your pages based on the campaigns or products they support.
 
 Think of it as a folder system for your landing pages, giving you the ability to create logical, streamlined funnels that are easy to monitor and scale.
 

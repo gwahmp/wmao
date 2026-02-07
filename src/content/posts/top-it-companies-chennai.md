@@ -166,7 +166,7 @@ faq:
   
   
   <h3>Kissflow</h3>
-  <p>A leader in workflow automation, <span data-link="https://kissflow.com/">Kissflow</span> has emerged as one of the good IT companies in Chennai for job seekers who want startup agility with enterprise maturity.</p>
+  <p>A leader in <a href="/automate-business-processes-guide">workflow automation</a>, <span data-link="https://kissflow.com/">Kissflow</span> has emerged as one of the good IT companies in Chennai for job seekers who want startup agility with enterprise maturity.</p>
  
   <h3>Mindtree</h3>
   <p><span data-link="https://www.ltimindtree.com/">Mindtree</span>, a part of Larsen & Toubro Infotech, is a top-tier IT services company with a strong base in Chennai's technology ecosystem. Known for its digital transformation expertise, Mindtree delivers scalable solutions across enterprise cloud services, AI and analytics, and customer experience design. The company partners with global clients in sectors like BFSI, retail, and manufacturing, helping them modernize through automation and data-driven insights.</p>

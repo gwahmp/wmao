@@ -44,7 +44,7 @@ And that's exactly the mindset <span data-link="https://leadsleap.com?r=selvakln
 
 ![Build and manage your email list effectively using SendSteed's List Manager, an all-in-one tool for automation, segmentation, and subscriber engagement.  ](/assets/images/blog/list-manager-email-marketing.webp "Building Your List with the List Manager (SendSteed)")
 
-<span data-link="https://sendsteed.com/?r=selvaklnc">SendSteed</span>'s List Manager helps you grow and nurture your email list with powerful tools for automation, broadcast, and audience segmentation.
+<span data-link="https://sendsteed.com/?r=selvaklnc">SendSteed</span>'s List Manager helps you grow and nurture your email list with powerful <a href="/automate-business-processes-guide">tools for automation</a>, broadcast, and audience segmentation.
 
 In this chapter of Mastering [Digital Marketing](/digital-marketing-strategy) with LeadsLeap, we'll explore how <span data-link="https://sendsteed.com/?r=selvaklnc">SendSteed</span> helps you build, nurture, and monetize your email list the right way, without spammy shortcuts or overpriced tools.
 

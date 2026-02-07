@@ -256,7 +256,7 @@ By building a trusted platform of valuable content, entrepreneurs position thems
 By following the steps above, you'll not only grow your business network, but also enhance your [digital marketing efforts](/digital-marketing-strategy). This will help increase your business's visibility and make your [busines known globally](/expand-business-globally).
 
 
-Email marketing is a powerful way to grow your business and generate leads—if done right. By understanding key strategies, avoiding common mistakes, and using automation, you can turn email subscribers into loyal customers.
+Email marketing is a powerful way to grow your business and generate leads—if done right. By understanding key strategies, avoiding common mistakes, and using <a href="/automate-business-processes-guide">automation</a>, you can turn email subscribers into loyal customers.
 
 Networking isn't just about meeting people—it's about building lasting, meaningful relationships that can benefit your career and business in the long run. Whether online or in-person, being authentic, following up, and offering value are the cornerstones of successful networking.
 

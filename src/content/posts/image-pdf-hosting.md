@@ -115,7 +115,7 @@ Everything stays in one ecosystem, no jumping between file hosts, copy-pasting l
 
 ### Easy Content Delivery
 
-Delivering digital products (like PDFs) through opt-ins or email becomes seamless and automated.
+Delivering digital products (like PDFs) through opt-ins or email becomes seamless and <a href="/automate-business-processes-guide">automated</a>.
 
 ### Clean, Branded Presentations
 

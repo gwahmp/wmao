@@ -54,7 +54,7 @@ An Email Broadcast is a single email sent to your subscribers, either manually o
 *   Announcing a product or promotion
 *   Sharing new content (blogs, videos, etc.)
 *   Sending time-sensitive updates
-*   Keeping your list engaged outside of the regular automation flow
+*   Keeping your list engaged outside of the regular <a href="/automate-business-processes-guide">automation workflow</a>
 
 I've used broadcast emails for everything from real-time offers to quick content drops, and they've consistently helped maintain audience engagement during crucial moments.
 
