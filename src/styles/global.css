@@ -284,6 +284,10 @@ margin-bottom:20ox;
   color: rgb(75 85 99);
 }
 
+.acc input:checked + .acc-title h3::after {
+  visibility:hidden;
+}
+
 .acc-title h3::after {
   content:"+";
   position:absolute;
@@ -306,6 +310,3 @@ margin-bottom:20ox;
   max-height:300px;
 }
 
-.acc input:checked + .acc-title h3::after {
-  visibility:hidden;
-}
