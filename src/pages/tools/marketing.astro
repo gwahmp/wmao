@@ -1,0 +1,76 @@
+---
+import ToolsLayout from "../../layouts/ToolsLayout.astro";
+
+import social from "../../data/tools/marketing/social-media.json";
+import email from "../../data/tools/marketing/email-marketing.json";
+import ads from "../../data/tools/marketing/advertising.json";
+import growth from "../../data/tools/marketing/growth.json";
+import influencer from "../../data/tools/marketing/influencer.json";
+
+const sections = [
+  { id: "social-media", title: "Social Media Management", data: social },
+  { id: "email-marketing", title: "Email Marketing", data: email },
+  { id: "advertising", title: "Advertising Platforms", data: ads },
+  { id: "growth-optimization", title: "Growth & Optimization", data: growth },
+  { id: "influencer", title: "Influencer Marketing", data: influencer }
+];
+
+const categories = [
+  { name: "Cloud & Data", slug: "cloud-data" },
+  { name: "AI & ML", slug: "ai-ml" },
+  { name: "Marketing", slug: "marketing" },
+  { name: "SEO", slug: "seo" },
+  { name: "Analytics", slug: "analytics" }
+];
+
+const breadcrumbs = `
+<nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Home</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </span>
+  <span> » </span>
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Tools</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </span>
+  <span> » </span>
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools/marketing" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Marketing & Growth</span>
+    </a>
+    <meta itemprop="position" content="3" />
+  </span>
+</nav>
+`;
+---
+
+<ToolsLayout
+  title="Marketing & Growth Tools"
+  description="Discover free marketing tools for social media, email campaigns, ads, growth optimization and influencer outreach."
+  breadcrumbs={breadcrumbs}
+  categories={categories}
+>
+  {sections.map(sec => (
+    <section id={sec.id} class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">
+        {sec.title} ({sec.data.length})
+      </h2>
+
+      <ul class="space-y-2 list-disc pl-5">
+        {sec.data.map(tool => (
+          <li>
+            <a href={tool.url} target="_blank" class="text-wmblue hover:underline" rel="nofollow noopener">
+              {tool.name}
+            </a>
+            {" - "}{tool.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</ToolsLayout>

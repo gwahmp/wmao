@@ -1,0 +1,62 @@
+---
+import ToolsLayout from "../../layouts/ToolsLayout.astro";
+
+import budgeting from "../../data/tools/finance/budgeting.json";
+import investing from "../../data/tools/finance/investing.json";
+import accounting from "../../data/tools/finance/accounting.json";
+
+const sections = [
+  { id: "budgeting", title: "Budgeting Tools", data: budgeting },
+  { id: "investing", title: "Investing & Market Tools", data: investing },
+  { id: "accounting", title: "Accounting Software", data: accounting }
+];
+
+const breadcrumbs = `
+<nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Home</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </span>
+  <span> » </span>
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Tools</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </span>
+  <span> » </span>
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools/finance-money" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Finance & Money</span>
+    </a>
+    <meta itemprop="position" content="3" />
+  </span>
+</nav>
+`;
+---
+
+<ToolsLayout
+  title="Personal Finance & Money Management Tools"
+  description="Free finance, budgeting, investing, and accounting tools to manage money, grow wealth, and run your business smarter."
+  breadcrumbs={breadcrumbs}
+>
+  {sections.map(sec => (
+    <section id={sec.id} class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">
+        {sec.title} ({sec.data.length})
+      </h2>
+      <ul class="space-y-2 list-disc pl-5">
+        {sec.data.map(tool => (
+          <li>
+            <a href={tool.url} target="_blank" class="text-wmblue hover:underline">
+              {tool.name}
+            </a>
+            {" - "}{tool.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</ToolsLayout>

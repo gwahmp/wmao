@@ -1,0 +1,59 @@
+---
+import ToolsLayout from "../../layouts/ToolsLayout.astro";
+
+// Import JSON files for sections
+import workflow from "../../data/tools/automation/workflow.json";
+import integrations from "../../data/tools/automation/integrations.json";
+import bots from "../../data/tools/automation/bots.json";
+
+// Define sections for this category
+const sections = [
+  { id: "workflow", title: "Workflow Automation", data: workflow },
+  { id: "integrations", title: "Integrations", data: integrations },
+  { id: "bots", title: "Bots & Chat Automation", data: bots }
+];
+
+// Breadcrumbs with schema markup
+const breadcrumbs = `
+<nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Home</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </span> » 
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Tools</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </span> » 
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools/automation" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Automation & No-Code</span>
+    </a>
+    <meta itemprop="position" content="3" />
+  </span>
+</nav>
+`;
+---
+
+<ToolsLayout
+  title="Automation & No-Code Tools"
+  description="Free automation and no-code tools to streamline workflows, integrations, and bots."
+  breadcrumbs={breadcrumbs}
+>
+  {sections.map(sec => (
+    <section id={sec.id} class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">{sec.title} ({sec.data.length})</h2>
+      <ul class="space-y-2 list-disc pl-5">
+        {sec.data.map(tool => (
+          <li>
+            <a href={tool.url} target="_blank" class="text-wmblue hover:underline">{tool.name}</a>
+            {" - "}{tool.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</ToolsLayout>

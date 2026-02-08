@@ -1,0 +1,62 @@
+---
+import ToolsLayout from "../../layouts/ToolsLayout.astro";
+
+import tasks from "../../data/tools/productivity/task-management.json";
+import collab from "../../data/tools/productivity/collaboration.json";
+import time from "../../data/tools/productivity/time-tracking.json";
+
+const sections = [
+  { id: "task-management", title: "Task Management Tools", data: tasks },
+  { id: "collaboration", title: "Team Collaboration Tools", data: collab },
+  { id: "time-tracking", title: "Time Tracking Tools", data: time }
+];
+
+const breadcrumbs = `
+<nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Home</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </span>
+  <span> » </span>
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Tools</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </span>
+  <span> » </span>
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools/productivity" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Productivity</span>
+    </a>
+    <meta itemprop="position" content="3" />
+  </span>
+</nav>
+`;
+---
+
+<ToolsLayout
+  title="Productivity & Team Collaboration Tools"
+  description="Free productivity, task management, remote work, and collaboration tools to help teams and businesses work faster and smarter."
+  breadcrumbs={breadcrumbs}
+>
+  {sections.map(sec => (
+    <section id={sec.id} class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">
+        {sec.title} ({sec.data.length})
+      </h2>
+      <ul class="space-y-2 list-disc pl-5">
+        {sec.data.map(tool => (
+          <li>
+            <a href={tool.url} target="_blank" class="text-wmblue hover:underline">
+              {tool.name}
+            </a>
+            {" - "}{tool.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</ToolsLayout>

@@ -1,0 +1,50 @@
+---
+import ToolsLayout from "../../layouts/ToolsLayout.astro";
+
+import contracts from "../../data/tools/legal/contracts.json";
+import compliance from "../../data/tools/legal/compliance.json";
+import privacy from "../../data/tools/legal/privacy.json";
+
+const sections = [
+  { id: "contracts", title: "Contracts", data: contracts },
+  { id: "compliance", title: "Compliance", data: compliance },
+  { id: "privacy", title: "Privacy & Policies", data: privacy }
+];
+
+const breadcrumbs = `
+<nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com" itemprop="item"><span itemprop="name" class="text-wmblue">Home</span></a>
+    <meta itemprop="position" content="1" />
+  </span> » 
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
+    <meta itemprop="position" content="2" />
+  </span> » 
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools/legal" itemprop="item"><span itemprop="name" class="text-wmblue">Legal & Compliance</span></a>
+    <meta itemprop="position" content="3" />
+  </span>
+</nav>
+`;
+---
+
+<ToolsLayout
+  title="Legal & Compliance Tools"
+  description="Free tools for contracts, compliance, and privacy policies for businesses."
+  breadcrumbs={breadcrumbs}
+>
+  {sections.map(sec => (
+    <section id={sec.id} class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">{sec.title} ({sec.data.length})</h2>
+      <ul class="space-y-2 list-disc pl-5">
+        {sec.data.map(tool => (
+          <li>
+            <a href={tool.url} target="_blank" class="text-wmblue hover:underline">{tool.name}</a>
+            {" - "}{tool.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</ToolsLayout>

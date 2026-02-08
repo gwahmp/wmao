@@ -1,0 +1,180 @@
+---
+import LandingLayout from "../../layouts/LandingLayout.astro";
+import { loadToolCategories } from "../../utils/toolsLoader";
+const TOOL_CATEGORIES = await loadToolCategories();
+
+const frontmatter = {
+  title: "Free Business Tools Directory (1000+ Apps & Software)",
+  description: "Free Business Tools Directory (1000+ Apps & Software)",
+  image: "/assets/images/others/free-business-tools-collection-wikimint.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+};
+---
+<LandingLayout frontmatter={frontmatter}>
+    <h1>Collections Free Business Tools - Directory</h1>
+<p class="mb-12"> Discover 1,000+ free and open-source tools across AI, marketing, analytics, finance, cloud, and automation. Everything you need to build, grow, and scale - in one curated platform.</p>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+    {TOOL_CATEGORIES.map(cat => (
+        <div class="border rounded-xl p-6 bg-gray-50 shadow-sm">
+          <a href={`/tools/${cat.slug}`} class="font-medium text-wmblue text-lg block mb-1">
+            {cat.name.toUpperCase()}
+          </a>
+    
+          <p class="text-sm text-gray-500 mb-3">
+            {cat.total}+ tools
+          </p>
+    
+          {/* SUB LIST */}
+          <ul class="text-sm space-y-1">
+            {cat.subs.map(sub => (
+              <li>
+                <span class="text-gray-800">{sub.name}</span>
+                <span class="text-gray-600 ml-1">({sub.count})</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+  </div>
+
+<!--
+<section class="pt-0 pb-0 bg-white">
+    <div class="container mx-auto">
+      <div class="grid md:grid-cols-[2fr_3fr] gap-20 text-left">
+        <div>
+          <div class="sticky top-20">
+            <img loading="lazy" src="/assets/images/others/web-development-services.webp" alt="Illustration of professionals using free digital tools for business, marketing, AI, analytics, and automation" title="World’s Largest Free Business Tools Collection – Wikimint" class="w-full" />
+          </div>
+        </div>
+        <div>
+          <h2 id="faq" class="text-2xl md:text-5xl font-semibold text-gray-800 mt-0 pt-0 mt-0 mb-12">
+            Frequently Asked Questions
+          </h2>
+
+
+          
+          <div class="acc space-y-4">
+
+            <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q1" checked>
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q1" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">What is included in the SEO audit report?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p  itemprop="text">
+                      The report covers backlinks, spam risks, errors, warnings, keywords, site health, speed, mobile checks, content issues, and clear fix steps.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q2">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q2" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">How does the two-audit process work?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      You get one full audit. After you fix the issues, we run a second audit to check improvements and confirm results.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q3">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q3" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Do you use automated tools only?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      No. Every report is manually reviewed and prepared. Data is checked and explained in simple language. Yet, some metrices are obtained on <a href="/automate-business-processes-guide">automated process</a> and manually analysed.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q4">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q4" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">How long does the first audit take?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      The first audit is delivered within 3 to 5 working days after receiving your website.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q5">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q5" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Will you fix the issues for me?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      This package provides reports and fix guidance. If you want implementation help, it can be added as a separate service.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q6">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q6" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Is this service suitable for WordPress and static websites?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Yes. The audit works for WordPress, HTML, business, blog, and eCommerce websites.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q7">
+            <label for="q7" class="acc-title">
+              <h3 class="text-lg">Can this help improve Google rankings?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes. Fixing the listed issues helps improve site health, trust, and search visibility.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q8">
+            <label for="q8" class="acc-title">
+              <h3 class="text-lg">Is my website data safe?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes. Your website details are kept private and used only for audit work.
+                </p>
+              </div>
+          </div>
+
+          </div>
+          
+        </div>
+      </div>  
+
+
+    </div>
+  </section>
+-->
+
+</LandingLayout>

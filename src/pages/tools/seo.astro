@@ -1,0 +1,76 @@
+---
+import ToolsLayout from "../../layouts/ToolsLayout.astro";
+
+import keywords from "../../data/tools/seo/keyword-research.json";
+import audit from "../../data/tools/seo/site-audit.json";
+import backlinks from "../../data/tools/seo/backlink-tools.json";
+import onpage from "../../data/tools/seo/on-page.json";
+import tracking from "../../data/tools/seo/rank-tracking.json";
+
+const sections = [
+  { id: "keyword-research", title: "Keyword Research", data: keywords },
+  { id: "site-audit", title: "Site Audits", data: audit },
+  { id: "backlinks", title: "Backlink Tools", data: backlinks },
+  { id: "on-page", title: "On-Page Optimization", data: onpage },
+  { id: "rank-tracking", title: "Rank Tracking", data: tracking }
+];
+
+const categories = [
+  { name: "Cloud & Data", slug: "cloud-data" },
+  { name: "AI & ML", slug: "ai-ml" },
+  { name: "Marketing", slug: "marketing" },
+  { name: "SEO", slug: "seo" },
+  { name: "Analytics", slug: "analytics" }
+];
+
+const breadcrumbs = `
+<nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Home</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </span>
+  <span> » </span>
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Tools</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </span>
+  <span> » </span>
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools/seo" itemprop="item">
+      <span itemprop="name" class="text-wmblue">SEO</span>
+    </a>
+    <meta itemprop="position" content="3" />
+  </span>
+</nav>
+`;
+---
+
+<ToolsLayout
+  title="SEO & Search Optimization Tools"
+  description="Free SEO tools for keyword research, site audits, backlinks, on-page optimization, and rank tracking."
+  breadcrumbs={breadcrumbs}
+  categories={categories}
+>
+  {sections.map(sec => (
+    <section id={sec.id} class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">
+        {sec.title} ({sec.data.length})
+      </h2>
+
+      <ul class="space-y-2 list-disc pl-5">
+        {sec.data.map(tool => (
+          <li>
+            <a href={tool.url} target="_blank" class="text-wmblue hover:underline" rel="nofollow noopener">
+              {tool.name}
+            </a>
+            {" - "}{tool.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</ToolsLayout>

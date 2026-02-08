@@ -1,0 +1,82 @@
+---
+import ToolsLayout from "../../layouts/ToolsLayout.astro";
+
+import servers from "../../data/tools/cloud-data/servers.json";
+import databases from "../../data/tools/cloud-data/databases.json";
+import clouds from "../../data/tools/cloud-data/cloud-platforms.json";
+
+const sections = [
+  { id: "servers", title: "Servers", data: servers },
+  { id: "databases", title: "Databases", data: databases },
+  { id: "cloud-platforms", title: "Cloud Platforms", data: clouds },
+];
+
+const categories = [
+  { name: "AI", slug: "ai" },
+  { name: "SEO", slug: "seo" },
+  { name: "Analytics", slug: "analytics" },
+  { name: "Cloud & Data", slug: "cloud-data" },
+  // add all 20 here
+];
+
+
+const breadcrumbs = `
+<nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Home</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </span>
+
+  <span> » </span>
+
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Tools</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </span>
+
+  <span> » </span>
+
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools/cloud-data" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Cloud & Data</span>
+    </a>
+    <meta itemprop="position" content="3" />
+  </span>
+
+</nav>
+`;
+
+---
+
+<ToolsLayout
+  title="Cloud & Data Infrastructure Tools"
+  description="Curated servers, databases and cloud platforms for modern businesses and startups."
+  breadcrumbs={breadcrumbs}
+  categories={categories}
+>
+
+  {sections.map(sec => (
+    <section id={sec.id} class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">
+        {sec.title} ({sec.data.length})
+      </h2>
+
+      <ul class="space-y-2 list-disc pl-5">
+        {sec.data.map(tool => (
+          <li>
+            <a href={tool.url} target="_blank" class="text-wmblue hover:underline">
+              {tool.name}
+            </a>
+            {" - "}{tool.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+</ToolsLayout>

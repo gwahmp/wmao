@@ -306,7 +306,9 @@ margin-bottom:20ox;
 .acc-content p{
   margin-top:0px ! important;
 }
-.acc input:checked + .acc-title + .acc-content {
+.acc input:checked + .acc-title + .acc-content,
+.acc input:checked + [itemprop="mainEntity"] .acc-content
+ {
   max-height:300px;
 }
 

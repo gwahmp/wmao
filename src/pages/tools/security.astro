@@ -1,0 +1,62 @@
+---
+import ToolsLayout from "../../layouts/ToolsLayout.astro";
+
+import passwords from "../../data/tools/security/password.json";
+import encrypt from "../../data/tools/security/encryption.json";
+import privacy from "../../data/tools/security/privacy.json";
+
+const sections = [
+  { id: "passwords", title: "Password Managers", data: passwords },
+  { id: "encryption", title: "Encryption Tools", data: encrypt },
+  { id: "privacy", title: "Privacy Protection Tools", data: privacy }
+];
+
+const breadcrumbs = `
+<nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Home</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </span>
+  <span> » </span>
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Tools</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </span>
+  <span> » </span>
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools/security" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Security & Privacy</span>
+    </a>
+    <meta itemprop="position" content="3" />
+  </span>
+</nav>
+`;
+---
+
+<ToolsLayout
+  title="Cybersecurity & Privacy Protection Tools"
+  description="Free security, privacy, password, and encryption tools to protect your data, devices, and online identity."
+  breadcrumbs={breadcrumbs}
+>
+  {sections.map(sec => (
+    <section id={sec.id} class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">
+        {sec.title} ({sec.data.length})
+      </h2>
+      <ul class="space-y-2 list-disc pl-5">
+        {sec.data.map(tool => (
+          <li>
+            <a href={tool.url} target="_blank" class="text-wmblue hover:underline">
+              {tool.name}
+            </a>
+            {" - "}{tool.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</ToolsLayout>

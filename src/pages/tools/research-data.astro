@@ -1,0 +1,50 @@
+---
+import ToolsLayout from "../../layouts/ToolsLayout.astro";
+
+import market from "../../data/tools/research-data/market.json";
+import surveys from "../../data/tools/research-data/surveys.json";
+import scraping from "../../data/tools/research-data/scraping.json";
+
+const sections = [
+  { id: "market-research", title: "Market Research", data: market },
+  { id: "surveys", title: "Surveys", data: surveys },
+  { id: "scraping", title: "Web Scraping Tools", data: scraping }
+];
+
+const breadcrumbs = `
+<nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com" itemprop="item"><span itemprop="name" class="text-wmblue">Home</span></a>
+    <meta itemprop="position" content="1" />
+  </span> » 
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
+    <meta itemprop="position" content="2" />
+  </span> » 
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://www.wikimint.com/tools/research-data" itemprop="item"><span itemprop="name" class="text-wmblue">Research & Data</span></a>
+    <meta itemprop="position" content="3" />
+  </span>
+</nav>
+`;
+---
+
+<ToolsLayout
+  title="Research & Data Tools"
+  description="Free tools for market research, surveys, and web data scraping."
+  breadcrumbs={breadcrumbs}
+>
+  {sections.map(sec => (
+    <section id={sec.id} class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">{sec.title} ({sec.data.length})</h2>
+      <ul class="space-y-2 list-disc pl-5">
+        {sec.data.map(tool => (
+          <li>
+            <a href={tool.url} target="_blank" class="text-wmblue hover:underline">{tool.name}</a>
+            {" - "}{tool.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</ToolsLayout>
