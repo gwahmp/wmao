@@ -2,7 +2,12 @@
 import LandingLayout from "../../layouts/LandingLayout.astro";
 import { loadToolCategories } from "../../utils/toolsLoader";
 const TOOL_CATEGORIES = await loadToolCategories();
+import stats from "../../data/meta/tools-stats.json";
+function roundThousands(n) {
+  return Math.floor(n / 1000) * 1000;
+}
 
+const rounded = roundThousands(stats.totalTools);
 const frontmatter = {
   title: "Free Business Tools Directory (1000+ Apps & Software)",
   description: "Free Business Tools Directory (1000+ Apps & Software)",
@@ -12,14 +17,35 @@ const frontmatter = {
 };
 ---
 <LandingLayout frontmatter={frontmatter}>
-    <h1>Collections Free Business Tools - Directory</h1>
-<p class="mb-12"> Discover 1,000+ free and open-source tools across AI, marketing, analytics, finance, cloud, and automation. Everything you need to build, grow, and scale - in one curated platform.</p>
+    <h1>Collection of Free Business Tools - Directory</h1>
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center mb-12">
+  
+  <!-- Left 3/4 -->
+  <div class="md:col-span-3 md:pr-6">
+    <p class="text-lg leading-relaxed">
+      Discover <span class="font-semibold">{rounded}+</span> free and open-source tools across AI, marketing, analytics, finance, cloud, and automation. 
+      Everything you need to build, grow, and scale, in one curated platform.
+    </p>
+  </div>
+
+  <!-- Right 1/4 -->
+  <div class="md:col-span-1 text-center border-l md:pl-6">
+    <div class="text-5xl font-extrabold text-wmblue leading-none">
+      {stats.totalTools}
+    </div>
+    <div class="text-sm text-gray-500 tracking-wide mt-1">
+      TOTAL TOOLS
+    </div>
+  </div>
+
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
     {TOOL_CATEGORIES.map(cat => (
         <div class="border rounded-xl p-6 bg-gray-50 shadow-sm">
           <a href={`/tools/${cat.slug}`} class="font-medium text-wmblue text-lg block mb-1">
-            {cat.name.toUpperCase()}
+         {cat.name.toUpperCase()}
           </a>
     
           <p class="text-sm text-gray-500 mb-3">
