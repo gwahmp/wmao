@@ -10,6 +10,7 @@ const frontmatter = {
   author: "Wikimint Team",
 };
 import { getCollection } from "astro:content";
+import { TOOL_CATEGORIES } from "../data/tools/categories";
 
 const posts = await getCollection("posts");
 ---
@@ -31,9 +32,12 @@ const posts = await getCollection("posts");
               <li><a href="/contact" class="text-wmblue hover:underline">Contact</a></li>
               <li><a href="/legal#terms" class="text-wmblue hover:underline">Terms</a></li>
               <li><a href="/legal#privacy" class="text-wmblue hover:underline">Privacy</a></li>
-
+              <li><a href="/tools" class="text-wmblue hover:underline">Tools Directory</a></li>
+              <li><a href="/seo-audit" class="text-wmblue hover:underline">SEO Audit</a></li>
             </ul>
             <ul class="mt-0">
+              <li><a href="/digital-assets" class="text-wmblue hover:underline">Digital Assets</a></li>
+              <li><a href="/web-development-services" class="text-wmblue hover:underline">Web Development</a></li>
               <li><a href="/recommended" class="text-wmblue hover:underline">Recommended</a></li>
               <li><a href="/developer-innovation-hub" class="text-wmblue hover:underline">Developer hub</a></li>
               <li><a href="/write-for-us" class="text-wmblue hover:underline">Write for us</a></li>
@@ -63,6 +67,26 @@ const posts = await getCollection("posts");
           </div>
         </div>
       </div>
+
+
+
+      
+<div>
+  <h2 class="font-semibold mb-4">Free & Open-source Tools Directory</h2>
+  <nav>
+    <ol class="grid grid-cols-1 md:grid-cols-2 space-y-2">
+      {TOOL_CATEGORIES.map(cat => (
+        <li>
+          <a href={`/tools/${cat.slug}`} class="block">
+            {cat.name}
+          </a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+  
+</div>
+
 
       <h3 class="text-xl mb-2 pb-3 border-b border-gray-500">Blog Posts</h3>
       <ol class="pl-6 space-y-2">
