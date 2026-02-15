@@ -4,6 +4,17 @@
 @tailwind utilities;
 
 @layer components {
+  .hr h2{
+    @apply text-2xl md:text-3xl font-bold pb-4 border-b border-gray-400 mb-8;
+  }
+  .btn{
+    @apply flex md:inline px-10 py-2 bg-wmblue border border-wmblue text-white shadow-md 
+    hover:bg-gray-500 hover:shadow-lg hover:border-gray-500 transition-all duration-200;
+  }
+  .btn-ol{
+    @apply flex md:inline px-10 py-2 border border-wmblue text-wmblue 
+    hover:bg-gray-500 hover:text-white hover:shadow-md hover:border-gray-500 transition-all duration-200
+  }
   .bluebox, .ull-learn {
     @apply bg-blue-50 border border-2 border-blue-300 px-5 py-4;
   }

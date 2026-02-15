@@ -9,7 +9,7 @@ image: "business.webp"
 <h2 id="books">Business eBooks Bundle</h2>
 <p>The business ebook collection is designed for entrepreneurs, startups, and professionals who want ready-to-use knowledge resources and resale-ready digital products. Each title in this bundle is crafted to help you strengthen business foundations, refine strategies, and build growth-oriented systems.</p>
 
-<button class="inline-flex items-center px-6 py-2 bg-wmblue text-white shadow hover:bg-blue-700" data-title="Business eBooks Bundle" data-prod="https://mega.nz/file/7wIhGJJZ#17Rjh8ktwzaTkK48BfgEDnEN3eCnwQTyfXCssZdgv_E">Get the Books</button>
+<button class="btn" data-title="Business eBooks Bundle" data-prod="https://mega.nz/file/7wIhGJJZ#17Rjh8ktwzaTkK48BfgEDnEN3eCnwQTyfXCssZdgv_E">Get the Books</button>
 
 <h3>Included topics you’ll find in this bundle:</h3>
 
@@ -27,7 +27,7 @@ image: "business.webp"
 <h2 id="articles">Business PLR Articles</h2>
 <p>This set of business-focused PLR articles gives you ready-made content that can be used for blogs, newsletters, or repurposed as social posts. They are written to spark new ideas, save time, and help you publish consistently without the stress of starting from scratch.</p>
 
-<button class="inline-flex items-center px-6 py-2 bg-wmblue text-white shadow hover:bg-blue-700" data-title="Business PLR Articles Bundle" data-prod="https://mega.nz/file/T04hECiC#Sw8s8Rpj48mtBHouWNSJLpMpGRYXMn7NaHzzeCBPf5E">Get the Articles</button>
+<button class="btn" data-title="Business PLR Articles Bundle" data-prod="https://mega.nz/file/T04hECiC#Sw8s8Rpj48mtBHouWNSJLpMpGRYXMn7NaHzzeCBPf5E">Get the Articles</button>
 
 <h3>Included article topics you’ll find in this bundle:</h3>
 

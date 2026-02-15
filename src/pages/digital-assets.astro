@@ -1,6 +1,7 @@
 ---
 import LandingLayout from "../layouts/LandingLayout.astro";
 const version = Date.now();
+import { TOOL_CATEGORIES } from "../data/tools/categories";
 
 const frontmatter = {
   title: "Ultimate Digital Assets Bundle – Templates, Tools & Guides for Business",
@@ -23,26 +24,12 @@ const frontmatter = {
 
 <p>Unlock a complete library of digital assets designed to accelerate your business growth. From business  templates to marketing and digital creatives such as videos, graphics, prompts, we have you covered. It's a productivity tools kit bundle for Business, Marketing & Growth Crafted for Entrepreneures, Freelancers, Agencies & Digital Marketers</p>
 <div class="block md:flex gap-4 text-center">
-  <!-- Filled Button -->
-  <!-- <span 
-    data-link="https://gumroad.com/checkout?product=cynvlv&quantity=1"
-    class="block md:inline px-10 mb-3 py-2 bg-wmblue text-white font-medium shadow-md 
-           hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
-Download Assets</span> -->
 
-<a 
-    href="#download"
-    class="block md:inline px-10 mb-3 py-2 bg-wmblue text-white font-medium shadow-md 
-           hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
-Download Assets</a>
+<a href="#download" class="btn">Download Assets</a>
 
-
-
-  <!-- Outlined Button -->
   <a 
     href="#assets"
-    class="block md:inline px-10 mb-3 py-2 border-2 border-wmblue text-wmblue font-medium 
-           hover:bg-wmblue hover:text-white hover:shadow-md transition-all duration-200">
+    class="btn-ol">
     Explore Assets Included
   </a>
 </div>
@@ -63,29 +50,6 @@ Download Assets</a>
   <div class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-20 max-w-7xl mx-auto">
     <div class="col-span-12 md:col-span-6">
       <p>One bundle. Unlimited possibilities. Get lifetime access to a complete library of digital assets, tools, and resources built for entrepreneurs, freelancers, and marketers. Save time, grow faster, and unlock endless opportunities with just one purchase.</p>
-
-   
-      <!-- <div data-link="https://gumroad.com/checkout?product=cynvlv&quantity=1" class="flex sm:flex-row items-center justify-center gap-4 bg-blue-50 p-6 border-2 border-wmblue shadow-2xl transform transition-all hover:scale-105">
-
-        <span class="price line-through text-lg sm:text-xl font-normal">
-          $3.2
-        </span>
-      
-        <span class="price text-white bg-wmblue px-4 py-2 rounded-xl font-extrabold text-3xl sm:text-4xl shadow-lg">
-          $1
-        </span>
-      
-        <span class="text-white bg-[#555555] px-3 py-1 rounded-full font-semibold sm:text-base shadow-md">
-          67% OFF
-        </span>
-      </div>
-            
-      <div 
-      data-link="https://gumroad.com/checkout?product=cynvlv&quantity=1"
-      class="mt-10 w-full px-10 py-3 bg-wmblue text-center text-white font-medium shadow-md 
-             hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
-      Buy Now
-    </div> -->
     
       <img  loading="lazy" src="/assets/images/others/digital-products-bundle.webp" alt="All-in-one digital assets bundle with business templates, marketing tools, branding kits, ebooks, PLR content, graphics, and software source codes." class="object-cover w-full rounded-lg"/>
 
@@ -115,7 +79,7 @@ Download Assets</a>
 <h2>Your Ultimate Collection of Ready-to-Use Digital Assets</h2>
 <p>Discover a powerful collection of digital resources designed to save you time, boost productivity, and grow your business. From ready-made templates and planners to brand kits, graphics, and software tools, everything you need is organized and instantly usable. Whether you’re a marketer, entrepreneur, or small business owner, these assets help streamline operations, enhance marketing, and improve client management. Access guides, ebooks, and PLR content for learning and content creation. Get high-quality visuals and editable tools to strengthen your brand presence. All resources are crafted for efficiency, convenience, and business success.</p>
 </article>
-  <article>
+  <section>
     <h3 id="assets">Explore Our Complete Suite of Digital Business & Marketing Resources</h3>
 
 
@@ -161,35 +125,40 @@ Download Assets</a>
           </ol>
         </div>
 
-        <div class="mb-6 break-inside-avoid bg-gray-100 px-4 rounded-lg shadow border">
-          <h4>PLR Articles Bundle</h4>
-          <ol>
-            <li><a href="/business#articles">Business PLR Aarticles</a></li>
-            <li><a href="/marketing#articles">Marketing PLR Articles</a></li>
-            <li><a href="/money#articles">PLR Articles for Freelancers & Agencies</a></li>
-            <li><a href="/finance#articles">Finance PLR Articles</a></li>
-            <li><a href="/general#articles">General PLR Articles</a></li>
-          </ol>
-        </div>
+
 
         <div class="mb-6 break-inside-avoid bg-gray-100 px-4 rounded-lg shadow border">
+          <h4>Tools Directory (FREE Access)</h4>
+        <ol>
+          {TOOL_CATEGORIES.map(cat => (
+            <li>
+              <a href={`/tools/${cat.slug}`} class="block">
+                {cat.name}
+              </a>
+            </li>
+          ))}
+        </ol>
+  </div>
+
+  <div class="mb-6 break-inside-avoid bg-gray-100 px-4 rounded-lg shadow border">
+    <h4>PLR Articles Bundle</h4>
+    <ol>
+      <li><a href="/business#articles">Business PLR Aarticles</a></li>
+      <li><a href="/marketing#articles">Marketing PLR Articles</a></li>
+      <li><a href="/money#articles">PLR Articles for Freelancers & Agencies</a></li>
+      <li><a href="/finance#articles">Finance PLR Articles</a></li>
+      <li><a href="/general#articles">General PLR Articles</a></li>
+    </ol>
+  </div>
+
+        <div class="mb-6 break-inside-avoid bg-gray-100 px-4 pb-10 rounded-lg shadow border">
           <h4>Lifetime Access with Updates</h4>
-          <p>Gel lifetime access with all future updates to all the above listings at only $1.35
-
-            <!-- <span 
-              data-link="https://gumroad.com/checkout?product=cynvlv&quantity=1"
-              class="w-full block px-10 my-5 py-2 bg-wmblue text-white text-center font-medium shadow-md 
-                    hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
-              Download Assets
-          </span> -->
-   
-
+          <p>Gel lifetime access with all future updates to all the above listings at only $1.35</p>
         <a 
         href="#download"
-        class="block block px-10 mb-3 mt-5 text-center py-2 border-2 border-wmblue text-wmblue font-medium 
-               hover:bg-blue-100 hover:text-white hover:shadow-md transition-all duration-200">
+        class="btn">
                Download Assets      </a>
-          </p>
+          
         </div>
 
       <!-- <div class="mb-6 break-inside-avoid bg-gray-100 px-4 rounded-lg shadow border">
@@ -214,7 +183,7 @@ Download Assets</a>
   </div>
 
   
-</article>
+</section>
 
   <div class="flex flex-col justify-center items-center bg-gray-50 px-4">
     <h2 id="download" class="text-2xl font-bold mb-0 py-0 text-center">Download Access</h2>
@@ -234,7 +203,7 @@ Download Assets</a>
             >
             <button
               id="save-code-btn"
-              class="px-4 py-2 bg-wmblue text-white font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              class="btn"
             >
               Submit
             </button>
@@ -248,10 +217,10 @@ Download Assets</a>
     
         <div>
           <div class="p-5 pt-0 mb-5 border border-gray-500 rounded">
-            <img src="/assets/images/others/visa-mastercard-gpay.webp" width="180px" class="my-5 py-0 inline" alt="Pay with VISA, Master Card, UPI for Indian users"> (For India INR)
+            <img src="/assets/images/others/visa-mastercard-gpay.webp" width="180px" class="my-5 py-0 inline" alt="Pay with VISA, Master Card, UPI for Indian users"> (For India INR)<br/>
           <a rel="nofollow noopener" href="https://nknextgen.mojo.page/digital-assets-toolkit"
              target="_blank"
-             class="text-center block w-full rounded-lg bg-wmblue py-3 text-white hover:opacity-90 transition">
+             class="btn">
              Buy Now (INR) ₹124
           </a>
             </div>
@@ -261,10 +230,10 @@ Download Assets</a>
         <div>
     
         <div class="p-5 pt-0 border border-gray-500 rounded">
-          <img src="/assets/images/others/paypal.webp" width="120px" class="my-5 py-0 inline" alt="Pay with PayPal for international users"> (For international USD)
+          <img src="/assets/images/others/paypal.webp" width="120px" class="my-5 py-0 inline" alt="Pay with PayPal for international users"> (For international USD)<br/>
                 <a rel="nofollow noopener" href="https://www.paypal.com/ncp/payment/GNN9LXFXRF2C6"
              target="_blank"
-             class="text-center block w-full rounded-lg bg-wmblue py-3 text-white hover:opacity-90 transition">
+             class="btn">
             Buy Now (USD) $1.35
           </a>
         </div>
@@ -278,7 +247,7 @@ Download Assets</a>
     <div class="text-center" id="download-title"></div>
     <a href="#assets"
     id="download-btn" style="display:none;color:white ! important;"
-    class="px-10 my-5 py-3 bg-wmblue text-white font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+    class="btn"
   >
     Download
   </a>
@@ -290,7 +259,7 @@ Download Assets</a>
 
 
     <a href="#assets">
-    <button class="px-10 my-5 py-2 bg-wmblue text-white font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+    <button class="btn"
   >
     Explore Assets
   </button>
@@ -325,8 +294,7 @@ Download Assets</a>
     
         <a 
     href="#download"
-    class="block md:inline px-10 mb-3 py-2 bg-wmblue text-white font-medium shadow-md 
-           hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
+    class="btn">
            Get Lifetime Access
           </a>
 

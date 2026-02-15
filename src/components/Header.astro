@@ -1,10 +1,9 @@
 ---
 const navLinks = [
-  { name: "Business", href: "/business" },
-  { name: "Economy", href: "/economy" },
-  { name: "Finance", href: "/finance" }, // you can point this later to /blog if needed
-  { name: "Marketing", href: "/marketing" },
-  { name: "Money", href: "/money" },
+  { name: "Web Development", href: "/web-development-services" },
+  { name: "SEO Audit", href: "/seo-audit" },
+  { name: "Digital Assets", href: "/digital-assets" }, // you can point this later to /blog if needed
+  { name: "Tools Directory", href: "/tools" },
 ];
 ---
 
@@ -13,15 +12,13 @@ const navLinks = [
     <div class="flex justify-between h-16 items-center">
       <!-- Left: Logo + Nav -->
       <div class="flex items-center space-x-8">
-        <a href="https://www.wikimint.com" class="text-xl font-bold text-wmblue-600">
+        <a href="https://www.wikimint.com">
           <img  loading="lazy" alt="Master Personal Finance, Business Growth, Digital Marketing" data-height="46" data-width="200" width="165" height="38" src="/assets/images/wikimint-logo-200x46.webp">
         </a>
         <nav class="hidden md:flex space-x-6 font-normal">
           {navLinks.map((link) => (
             <a
-              href={link.href}
-              class="hover:text-wmblue"
-            >
+              href={link.href}>
               {link.name}
             </a>
           ))}
@@ -47,7 +44,7 @@ const navLinks = [
 <!-- Contact -->
 <a
   href="/contact"
-  class="hidden sm:inline-block bg-wmblue text-white px-4 py-2 hover:bg-wmblue-500"
+  class="btn"
 >
   Contact
 </a>
@@ -94,16 +91,16 @@ const navLinks = [
   </div>
 
   <ul class="space-y-2">
-    <li><a href="https://www.wikimint.com" class="hover:text-gray-500">Home</a></li>
-    <li><a href="/about" class="hover:text-gray-500">About</a></li>
-    <li><a href="/contact" class="hover:text-gray-500">Contact</a></li>
-    <li><a href="/recommended" class="hover:text-gray-500">Recommended</a></li>
-            <li><a href="/developer-innovation-hub" class="hover:text-gray-500">Developer hub</a></li>
-            <li><a href="/write-for-us" class="hover:text-gray-500">Write for us</a></li>
-            <li><a href="/share-your-story" class="hover:text-gray-500">Share your story</a></li>
-            <li><a href="/sitemap" class="hover:text-gray-500">Sitemap</a></li>
-    <li><a href="/legal#terms" class="hover:text-gray-500">Terms</a></li>
-    <li><a href="/legal#privacy" class="hover:text-gray-500">Privacy</a></li>
+    <li><a href="https://www.wikimint.com" >Home</a></li>
+    <li><a href="/about" >About</a></li>
+    <li><a href="/contact" >Contact</a></li>
+    <li><a href="/recommended" >Recommended</a></li>
+    <li><a href="/developer-innovation-hub" >Developer hub</a></li>
+    <li><a href="/write-for-us" >Write for us</a></li>
+    <li><a href="/share-your-story" >Share your story</a></li>
+    <li><a href="/sitemap" >Sitemap</a></li>
+    <li><a href="/legal#terms" >Terms</a></li>
+    <li><a href="/legal#privacy" >Privacy</a></li>
   </ul>
   </div>
 </div>

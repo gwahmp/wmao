@@ -10,7 +10,7 @@ image: "general-articles-blog-posts.webp"
   <h2 id="books">General Category Ebooks</h2>
   <p>The general category ebook bundle provides a wide variety of evergreen resources that suit diverse interests and audiences. These titles cover topics beyond strict business or finance themes, making them useful for knowledge seekers and digital resellers alike.</p>
   
-<button class="inline-flex items-center px-6 py-2 bg-wmblue text-white shadow hover:bg-blue-700" data-title="General Category eBooks Bundle" data-prod="https://mega.nz/file/6gx1iLSQ#BKurElRM3EdQVLL-tlp4UPsUuwcX0k7d-BNzMsbJaOw">Get the Books</button>
+<button class="btn" data-title="General Category eBooks Bundle" data-prod="https://mega.nz/file/6gx1iLSQ#BKurElRM3EdQVLL-tlp4UPsUuwcX0k7d-BNzMsbJaOw">Get the Books</button>
   
   <h3>Included topics you’ll find in this bundle:</h3>
   
@@ -28,7 +28,7 @@ image: "general-articles-blog-posts.webp"
   <h2 id="articles">General Category PLR Articles</h2>
   <p>For those who want versatile content that works across multiple niches, the general PLR articles bundle is the perfect fit. These topics are evergreen, broad in appeal, and useful for lifestyle blogs, authority websites, or personal brands.</p>
   
-<button class="inline-flex items-center px-6 py-2 bg-wmblue text-white shadow hover:bg-blue-700" data-title="General Category PLR Articles Bundle" data-prod="https://mega.nz/file/S1BGTBKA#MAVPRQB_x7pRrBXKELPZEOwP5C4_3OhL0_d76Xti-ys">Get the Articles</button>
+<button class="btn" data-title="General Category PLR Articles Bundle" data-prod="https://mega.nz/file/S1BGTBKA#MAVPRQB_x7pRrBXKELPZEOwP5C4_3OhL0_d76Xti-ys">Get the Articles</button>
   
   <h3>Included article topics you’ll find in this bundle:</h3>
   

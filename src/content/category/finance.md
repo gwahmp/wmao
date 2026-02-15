@@ -9,7 +9,7 @@ image: "finance-articles-blog-posts.webp"
   
   <h2 id="books">Finance Ebooks Bundle</h2>
   <p>The finance ebook bundle is ideal for individuals and businesses who want to strengthen their money management skills and financial planning. It covers essential concepts in personal finance, investing, and business accounting, making it a practical resource for both beginners and experienced professionals.</p>
-<button class="inline-flex items-center px-6 py-2 bg-wmblue text-white shadow hover:bg-blue-700" data-title="Finance eBooks Bundle" data-prod="https://mega.nz/file/ekZCQT7B#8yRxxpPA53h_vc-I4ojB_ZOdsUGbAcBX9YRA7fw5gEw">Get the Books</button>
+<button class="btn" data-title="Finance eBooks Bundle" data-prod="https://mega.nz/file/ekZCQT7B#8yRxxpPA53h_vc-I4ojB_ZOdsUGbAcBX9YRA7fw5gEw">Get the Books</button>
   
   <h3>Included topics you’ll find in this bundle:</h3>
   <ul>
@@ -26,7 +26,7 @@ image: "finance-articles-blog-posts.webp"
   
   <h2 id="articles">Finance PLR Articles</h2>
   <p>Finance is always a high-demand niche, and this PLR article bundle ensures you never run out of fresh blog content ideas. The collection covers a wide range of money management and investing topics that readers constantly search for online.</p>
-<button class="inline-flex items-center px-6 py-2 bg-wmblue text-white shadow hover:bg-blue-700" data-title="Finance PLR Articles Bundle" data-prod="https://mega.nz/file/ut4zBRbD#BlCOlfLtTvJxb5VHDOvKkaGb9t-SuFNjhQDOmNsKMjo">Get the Articles</button>
+<button class="btn" data-title="Finance PLR Articles Bundle" data-prod="https://mega.nz/file/ut4zBRbD#BlCOlfLtTvJxb5VHDOvKkaGb9t-SuFNjhQDOmNsKMjo">Get the Articles</button>
   
   <h3>Included article topics you’ll find in this bundle:</h3>
   <ul>

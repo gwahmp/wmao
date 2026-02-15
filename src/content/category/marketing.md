@@ -10,7 +10,7 @@ image: "marketing-articles-blog-posts.webp"
   <h2 id="books">Marketing Ebooks Bundle</h2>
   <p>This collection brings together a wide range of marketing-focused ebooks that are valuable for business owners, consultants, and digital marketers. The bundle covers proven techniques and modern strategies that help in reaching customers effectively and improving sales performance. Each ebook is ready for personal learning as well as resale under PLR rights, giving you flexibility in use.</p>
   
-<button class="inline-flex items-center px-6 py-2 bg-wmblue text-white shadow hover:bg-blue-700" data-title="Marketing eBooks Bundle" data-prod="https://mega.nz/file/ihZCwRrY#TqpRm6tj1qKmgJiEVyEZVhjtLNgLppsDVSn0xtRRvnc">Get the Books</button>
+<button class="btn" data-title="Marketing eBooks Bundle" data-prod="https://mega.nz/file/ihZCwRrY#TqpRm6tj1qKmgJiEVyEZVhjtLNgLppsDVSn0xtRRvnc">Get the Books</button>
   
   <h3>Included topics you’ll find in this bundle:</h3>
   <ul>
@@ -28,7 +28,7 @@ image: "marketing-articles-blog-posts.webp"
   <h2 id="articles">Marketing PLR Articles</h2>
   <p>The marketing PLR article bundle is designed for bloggers and digital marketers who want fresh, engaging topics to keep their audience hooked. These articles make it easy to share marketing insights, tips, and strategies that attract readers and position you as an authority.</p>
   
-<button class="inline-flex items-center px-6 py-2 bg-wmblue text-white shadow hover:bg-blue-700" data-title="Marketing PLR Articles Bundle" data-prod="https://mega.nz/file/n4wgCIxJ#mUDuzwrxaadosD5XpCvAXe3rf9S7JFvPZRCTVBFMLvY">Get the Articles</button>
+<button class="btn" data-title="Marketing PLR Articles Bundle" data-prod="https://mega.nz/file/n4wgCIxJ#mUDuzwrxaadosD5XpCvAXe3rf9S7JFvPZRCTVBFMLvY">Get the Articles</button>
   
   <h3>Included article topics you’ll find in this bundle:</h3>
   <ul>

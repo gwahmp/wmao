@@ -10,7 +10,7 @@ image: "money-articles-blog-posts.webp"
   <h2 id="books">eBooks for Freelancers & Agencies</h2>
   <p>Tailored for independent professionals and small service providers, this bundle focuses on freelancing success and agency growth. It combines resources that help you attract clients, manage projects efficiently, and scale services into sustainable businesses.</p>
   
-<button class="inline-flex items-center px-6 py-2 bg-wmblue text-white shadow hover:bg-blue-700" data-title="eBooks Bundle for Freelancers and Agencies" data-prod="https://mega.nz/file/7opQhA7K#OAE2zfOBboopRUvb2eUmahR3lyXFlvhBx2gJft7qS6Q">Get the Books</button>
+<button class="btn" data-title="eBooks Bundle for Freelancers and Agencies" data-prod="https://mega.nz/file/7opQhA7K#OAE2zfOBboopRUvb2eUmahR3lyXFlvhBx2gJft7qS6Q">Get the Books</button>
   
   <h3>Included topics you’ll find in this bundle:</h3>
   
@@ -27,7 +27,7 @@ image: "money-articles-blog-posts.webp"
   
   <h2 id="articles">Freelancers & Agencies PLR Articles</h2>
   <p>This category is dedicated to the growing world of freelancers and service agencies. The PLR articles here help address common challenges, offer practical advice, and share success tips that resonate with independent professionals. They’re ideal for blogs targeting freelancers, creative agencies, or service-based businesses.</p>
-  <button class="inline-flex items-center px-6 py-2 bg-wmblue text-white shadow hover:bg-blue-700" data-title="PLR Articles Bundle for Freelancers and Agencies" data-prod="https://mega.nz/file/zxgWFRxa#70E1YcUHYWUttDUPSmNf5c3flqD7TmnrYVQs5NGZGCA">Get the Articles</button>
+  <button class="btn" data-title="PLR Articles Bundle for Freelancers and Agencies" data-prod="https://mega.nz/file/zxgWFRxa#70E1YcUHYWUttDUPSmNf5c3flqD7TmnrYVQs5NGZGCA">Get the Articles</button>
   
   <h3>Included article topics you’ll find in this bundle:</h3>
   

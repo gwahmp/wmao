@@ -27,8 +27,7 @@ function renderProduct(product, includeControls = true) {
 
       <!-- Full-width Button -->
       <button data-link="${link}" 
-        class="w-full bg-[#0077b5] hover:bg-[#004cc1] text-white font-medium py-2 px-4 rounded-md 
-               transition-colors duration-300 shadow-sm">
+        class="btn w-full">
         Buy Now
       </button>
     </div>` : '';
@@ -70,8 +69,7 @@ function renderMainProduct(product, includeControls = true) {
          data-id="${id}" title="Share"></i>
 
       <a href="${link}" target="_blank" 
-         class="inline-block bg-[#0077b5] hover:bg-[#005ea3] text-white 
-         font-medium py-2 px-6 rounded-md transition-all duration-300 shadow-sm">
+         class="btn w-full">
         Buy Now
       </a>
     </div>` : '';
@@ -165,7 +163,7 @@ $(document).ready(function () {
   $('#productGrid, #favouriteGrid').addClass('grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 mb-16');
 
   // Load more button
-  $('#loadMore').addClass('bg-white border border-[#0077b5] text-[#0077b5]  py-2 rounded-md mx-auto block font-medium hover:bg-[#0077b5] hover:text-white transition-colors duration-300');
+  $('#loadMore').addClass('btn mx-auto block');
 
   // Populate categories
   [...new Set(productData.map(p => p[1]))].forEach(cat =>

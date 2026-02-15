@@ -1,14 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import PostCard from "../components/PostCard.astro";
 import Sidebar from "../components/Sidebar.astro";
 import { Image } from 'astro:assets';
-import { getImage } from "astro:assets";
 
 const version = Date.now();
 
-export const prerender = true;
+//export const prerender = true;
 
 Astro.response.headers.set("Cache-Control", "no-cache, no-store, must-revalidate");
 
@@ -20,7 +18,7 @@ const allPosts = (await getCollection("posts"))
 
   const frontmatter = {
   title: "Wikimint – Personal Finance, Business Growth & Money Tips",
-  description: "Master personal finance, business growth & digital marketing with expert guides. Learn smart money strategies to build wealth faster.",
+  description: "Master personal finance, business growth, marketing strategies & digital marketing with expert guides. Learn smart money strategies to build wealth faster.",
   image: "/assets/images/business-motivation-marketing-strategy-personal-finance-strategy.webp",
   tags: ["about", "business", "finance"],
   author: "Wikimint Team",
@@ -116,9 +114,9 @@ const currentUrl = Astro.url.href; // full URL of the current page
   </section>
 
 
-  <section class="pb-12 mb-5">
+  <section class="pb-12 mb-5 hr">
     <!-- SEO-optimized heading about core topics -->
-    <h2 class="text-2xl md:text-3xl font-bold pb-4 border-b border-gray-400 mb-8">
+    <h2>
       Expert insights to grow wealth and business
     </h2>
   
@@ -159,8 +157,8 @@ const currentUrl = Astro.url.href; // full URL of the current page
   </section>
 
 
-  <section id="services" class="pb-12 mb-5">
-    <h2 class="text-2xl md:text-3xl font-bold pb-4 border-b border-gray-400 mb-6">
+  <section id="services" class="pb-12 mb-5 hr">
+    <h2>
       Our Core Services
     </h2><p>  We help businesses grow online with clear strategy and real results.  
       Our services focus on website health, performance, and user experience.  
@@ -199,7 +197,8 @@ const currentUrl = Astro.url.href; // full URL of the current page
     </div>
   </section>
 
-  <h2 class="text-2xl md:text-3xl font-bold pb-4 border-b border-gray-400 mb-12">
+  <section class="hr" id="blog">
+  <h2>
     Your Trusted Source for Business Insights and Strategies
   </h2>
 
@@ -281,7 +280,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
   
       
       <div class="text-center mt-10">
-        <button id="load-more" class="px-4 py-2 bg-wmblue text-white rounded-md w-full">
+        <button id="load-more" class="btn w-full">
           Load More
         </button>
       </div>
@@ -292,10 +291,10 @@ const currentUrl = Astro.url.href; // full URL of the current page
     </div>
   </div>
 </div>
+</section>
 
-
-<section class="my-10" itemscope itemtype="https://schema.org/ItemList">
-  <h2 class="text-2xl md:text-3xl font-bold pb-4 border-b border-gray-400 mb-8">
+<section class="my-10 hr" itemscope itemtype="https://schema.org/ItemList">
+  <h2>
     Explore Categories</h2>
   <meta itemprop="name" content="Wikimint Blog Categories" />
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 max-w-7xl mx-auto">
@@ -387,9 +386,8 @@ const currentUrl = Astro.url.href; // full URL of the current page
   </div>
     
 
-    <section class="bg-gray-100 px-8 py-8 mb-10 mt-10 rounded-xl border border-gray-300">
-  <h2 class="text-2xl font-bold mb-4">Explore Personal Finance Insights</h2>
-  <hr class="mb-6 border-gray-400" />
+    <section class="bg-gray-100 px-8 py-8 mb-10 mt-10 rounded-xl border border-gray-300 hr">
+  <h2>Explore Personal Finance Insights</h2>
 
   <!-- Grid wrapper -->
   <div class="grid md:grid-cols-3 gap-6">
@@ -514,8 +512,8 @@ const currentUrl = Astro.url.href; // full URL of the current page
 </section>
 
 
-<div class="bluebox">
-  <h2 class="mt-0">Business Strategies and Insights</h2>
+<div class="bluebox hr">
+  <h2>Business Strategies and Insights</h2>
   <p>Explore innovative business ideas and practical strategies designed to help you launch, grow, and scale your business successfully. From creating a solid plan to executing it effectively, these insights will guide you through every step of your entrepreneurial journey, turning your business dreams into a thriving reality.</p>
   </div>
 
@@ -657,9 +655,9 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
 
 
-<section class="py-8 mb-10" itemscope itemtype="https://schema.org/FAQPage">
+<section id="faq" class="py-8 mb-10 hr" itemscope itemtype="https://schema.org/FAQPage">
   <div class="container mx-auto">
-    <h2 class="text-2xl md:text-3xl font-bold pb-4 border-b border-gray-400 mb-8">
+    <h2>
       Frequently Asked Questions</h2>
     <div class="grid md:grid-cols-2 gap-8">
       
@@ -764,8 +762,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
 </section>
 
 
-
-<div id="author" class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-0">
+<section id="author" class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-0">
   <!-- Author Image -->
   <div class="md:col-span-2">
       <a href="https://sk.wikimint.com">
@@ -784,24 +781,22 @@ const currentUrl = Astro.url.href; // full URL of the current page
   </div>
 
   <!-- Author Content -->
-  <div class="md:col-span-3">
-    <h2 class="text-xl font-bold mb-2">Author's Review Statement</h2>
-    <hr class="mb-4 border-gray-300">
-    <p class="text-gray-900 leading-relaxed mb-6">
+  <div class="md:col-span-3 hr">
+    <h2>Author's Review Statement</h2>
+    <p>
       At Wikimint, every post is meticulously reviewed by the founder, Selvakumaran Krishnan, to ensure that the information shared is both accurate and valuable. As a dedicated resource for personal finance and business strategies, we prioritize offering the most relevant and up-to-date content. Our goal is to empower readers with well-researched knowledge that can guide them in making informed decisions. Each article is crafted with care, reflecting the founder’s commitment to providing quality insights. Rest assured, all content is designed to be practical, reliable, and helpful for your financial and business growth. We aim to provide clear and actionable advice that resonates with our audience’s needs.
     </p>
 
     <!-- Yellowbox Disclaimer -->
-    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-md">
-      <h3 class="text-lg font-semibold mb-2">Content Disclaimer</h3>
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-md mt-10">
+      <h3>Content Disclaimer</h3>
       <hr class="mb-3 border-gray-200">
       <p class="text-gray-900 leading-relaxed">
         While we strive to provide reliable and up-to-date information on Wikimint, please note that all content related to finance, tax, law, and business strategies is for informational purposes only. The advice shared in our posts is general and may not apply to specific situations. We strongly recommend that readers verify any details through independent research or consult with relevant professionals before making any financial or business decisions. The content provided is meant to serve as a guide and not as professional advice. Always ensure you cross-check the facts before acting on any recommendations.
       </p>
     </div>
   </div>
-</div>
-
+</section>
 
 <!-- Simple client-side paginator using prebuilt JSON -->
 <script src={`/assets/js/index.js?v=${version}`} defer></script>
