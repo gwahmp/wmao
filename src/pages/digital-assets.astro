@@ -15,7 +15,7 @@ const frontmatter = {
 ---
 
 <LandingLayout frontmatter={frontmatter}>
- <article>
+ <section>
 
   <div class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-20 max-w-7xl mx-auto">
     <div class="col-span-12 md:col-span-6">
@@ -24,18 +24,25 @@ const frontmatter = {
 <p>Unlock a complete library of digital assets designed to accelerate your business growth. From business  templates to marketing and digital creatives such as videos, graphics, prompts, we have you covered. It's a productivity tools kit bundle for Business, Marketing & Growth Crafted for Entrepreneures, Freelancers, Agencies & Digital Marketers</p>
 <div class="block md:flex gap-4 text-center">
   <!-- Filled Button -->
-  <span 
+  <!-- <span 
     data-link="https://gumroad.com/checkout?product=cynvlv&quantity=1"
     class="block md:inline px-10 mb-3 py-2 bg-wmblue text-white font-medium shadow-md 
            hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
-    Buy Now
-</span>
+Download Assets</span> -->
+
+<a 
+    href="#download"
+    class="block md:inline px-10 mb-3 py-2 bg-wmblue text-white font-medium shadow-md 
+           hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
+Download Assets</a>
+
+
 
   <!-- Outlined Button -->
   <a 
     href="#assets"
-    class="block md:inline px-10 mb-3 py-2 border-2 border-wmblue text-blue-600 font-medium 
-           hover:bg-blue-600 hover:text-white hover:shadow-md transition-all duration-200">
+    class="block md:inline px-10 mb-3 py-2 border-2 border-wmblue text-wmblue font-medium 
+           hover:bg-wmblue hover:text-white hover:shadow-md transition-all duration-200">
     Explore Assets Included
   </a>
 </div>
@@ -47,7 +54,7 @@ const frontmatter = {
 
     </div>
   </div>
-  </article>
+  </section>
 
 
 <article>
@@ -58,19 +65,16 @@ const frontmatter = {
       <p>One bundle. Unlimited possibilities. Get lifetime access to a complete library of digital assets, tools, and resources built for entrepreneurs, freelancers, and marketers. Save time, grow faster, and unlock endless opportunities with just one purchase.</p>
 
    
-      <div data-link="https://gumroad.com/checkout?product=cynvlv&quantity=1" class="flex sm:flex-row items-center justify-center gap-4 bg-blue-50 p-6 border-2 border-wmblue shadow-2xl transform transition-all hover:scale-105">
+      <!-- <div data-link="https://gumroad.com/checkout?product=cynvlv&quantity=1" class="flex sm:flex-row items-center justify-center gap-4 bg-blue-50 p-6 border-2 border-wmblue shadow-2xl transform transition-all hover:scale-105">
 
-        <!-- Original Price -->
         <span class="price line-through text-lg sm:text-xl font-normal">
           $3.2
         </span>
       
-        <!-- Discounted Price -->
         <span class="price text-white bg-wmblue px-4 py-2 rounded-xl font-extrabold text-3xl sm:text-4xl shadow-lg">
           $1
         </span>
       
-        <!-- Discount Badge -->
         <span class="text-white bg-[#555555] px-3 py-1 rounded-full font-semibold sm:text-base shadow-md">
           67% OFF
         </span>
@@ -81,7 +85,7 @@ const frontmatter = {
       class="mt-10 w-full px-10 py-3 bg-wmblue text-center text-white font-medium shadow-md 
              hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
       Buy Now
-    </div>
+    </div> -->
     
       <img  loading="lazy" src="/assets/images/others/digital-products-bundle.webp" alt="All-in-one digital assets bundle with business templates, marketing tools, branding kits, ebooks, PLR content, graphics, and software source codes." class="object-cover w-full rounded-lg"/>
 
@@ -170,14 +174,21 @@ const frontmatter = {
 
         <div class="mb-6 break-inside-avoid bg-gray-100 px-4 rounded-lg shadow border">
           <h4>Lifetime Access with Updates</h4>
-          <p>Gel lifetime access with all future updates to all the above listings at only $1
+          <p>Gel lifetime access with all future updates to all the above listings at only $1.35
 
-            <span 
+            <!-- <span 
               data-link="https://gumroad.com/checkout?product=cynvlv&quantity=1"
               class="w-full block px-10 my-5 py-2 bg-wmblue text-white text-center font-medium shadow-md 
                     hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
-              Buy Now
-          </span>
+              Download Assets
+          </span> -->
+   
+
+        <a 
+        href="#download"
+        class="block block px-10 mb-3 mt-5 text-center py-2 border-2 border-wmblue text-wmblue font-medium 
+               hover:bg-blue-100 hover:text-white hover:shadow-md transition-all duration-200">
+               Download Assets      </a>
           </p>
         </div>
 
@@ -203,60 +214,65 @@ const frontmatter = {
   </div>
 
   
-  </article>
+</article>
 
   <div class="flex flex-col justify-center items-center bg-gray-50 px-4">
-    <h2 id="download" class="text-2xl font-bold mb-6 text-center">Download Access</h2>
+    <h2 id="download" class="text-2xl font-bold mb-0 py-0 text-center">Download Access</h2>
     
-    <div id="download-area" class="w-full max-w-md">
-      <p class="mb-4 text-gray-700 font-medium text-center">
-        Please enter your purchase code to continue:
-      </p>
-      <div class="flex justify-center">
-        <div class="flex space-x-2">
-          <input
-            type="text"
-            id="purchase-code-input"
-            placeholder="Enter purchase code"
-            class="flex-1 px-4 py-2 border border-wmblue focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-          <button
-            id="save-code-btn"
-            class="px-4 py-2 bg-wmblue text-white font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            Submit
-          </button>
+    <div id="download-area" class="w-full">
+      <div class="max-w-md mx-auto">
+        <p class="mb-4 text-gray-700 font-medium text-center">
+          Please enter your purchase code to continue:
+        </p>
+        <div class="flex justify-center">
+          <div class="flex space-x-2">
+            <input
+              type="text"
+              id="purchase-code-input"
+              placeholder="Enter purchase code"
+              class="flex-1 px-4 py-2 border border-wmblue focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            >
+            <button
+              id="save-code-btn"
+              class="px-4 py-2 bg-wmblue text-white font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            >
+              Submit
+            </button>
+          </div>
         </div>
-      </div>
-      <ul>
-        <li>Already have a purchase code? Enter it to unlock your downloads instantly.</li>
-        <li>New here? <a href="https://store.wikimint.com/l/digital-toolkit" target="_blank" class="text-wmblue font-semibold">Get your one-time subscription</a> for lifetime access and updates.</li>
-      </ul>
-
-      <div data-link="https://gumroad.com/checkout?product=cynvlv&quantity=1" class="flex sm:flex-row items-center justify-center gap-4 bg-blue-50 p-6 border-2 border-wmblue shadow-2xl transform transition-all hover:scale-105">
-
-        <!-- Original Price -->
-        <span class="price line-through text-lg sm:text-xl font-normal">
-          $3.2
-        </span>
-      
-        <!-- Discounted Price -->
-        <span class="price text-white bg-wmblue px-4 py-2 rounded-xl font-extrabold text-3xl sm:text-4xl shadow-lg">
-          $1
-        </span>
-      
-        <!-- Discount Badge -->
-        <span class="text-white bg-[#555555] px-3 py-1 rounded-full font-semibold sm:text-base shadow-md">
-          67% OFF
-        </span>
+          <p class="text-center">Already have a purchase code? Enter it to unlock your downloads instantly. Or, buy purchase code below.</p>
       </div>
 
-      <div 
-      data-link="https://gumroad.com/checkout?product=cynvlv&quantity=1"
-      class="mt-10 w-full px-10 py-3 bg-wmblue text-center text-white font-medium shadow-md 
-             hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
-      Buy Now
-    </div>
+    <section class="max-w-6xl mx-auto mb-5 px-6">
+      <div class="grid md:grid-cols-2 gap-1 md:gap-5 rounded-2xl p-8">
+    
+        <div>
+          <div class="p-5 pt-0 mb-5 border border-gray-500 rounded">
+            <img src="/assets/images/others/visa-mastercard-gpay.webp" width="180px" class="my-5 py-0 inline" alt="Pay with VISA, Master Card, UPI for Indian users"> (For India INR)
+          <a rel="nofollow noopener" href="https://nknextgen.mojo.page/digital-assets-toolkit"
+             target="_blank"
+             class="text-center block w-full rounded-lg bg-wmblue py-3 text-white hover:opacity-90 transition">
+             Buy Now (INR) ₹124
+          </a>
+            </div>
+        </div>
+    
+        <!-- RIGHT -->
+        <div>
+    
+        <div class="p-5 pt-0 border border-gray-500 rounded">
+          <img src="/assets/images/others/paypal.webp" width="120px" class="my-5 py-0 inline" alt="Pay with PayPal for international users"> (For international USD)
+                <a rel="nofollow noopener" href="https://www.paypal.com/ncp/payment/GNN9LXFXRF2C6"
+             target="_blank"
+             class="text-center block w-full rounded-lg bg-wmblue py-3 text-white hover:opacity-90 transition">
+            Buy Now (USD) $1.35
+          </a>
+        </div>
+    
+        </div>
+    
+      </div>
+    </section>
       
     </div>
     <div class="text-center" id="download-title"></div>
@@ -268,7 +284,11 @@ const frontmatter = {
   </a>
 
   <div id="other-downloads" class="justify-center items-center text-center">
-    <p>You have activated your purchase code. Now you can access to all assets downloads.</p>
+    <p style="font-size:30px;" class="text-green-900 text-lg font-bold">Congratulations!</p>
+    <p>You have activated your purchase code. Now you can access to all assets downloads. <span class="text-green-900 block">Please note down below purchase code for your future access.</span>
+    <div><p class="text-small block text-gray-600">Your Purchase Code</p><span style="font-size:60px;" class="text-lg font-bold">563124</span></div>
+
+
     <a href="#assets">
     <button class="px-10 my-5 py-2 bg-wmblue text-white font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
   >
@@ -286,6 +306,290 @@ const frontmatter = {
 
   <p class="bluebox text-left">This is your chance to get lifetime access to all our products and updates with a single payment. Prices may rise in the future as we add more valuable tools and resources, but if you act now, you’ll enjoy everything at the current lowest price. Lock in full access today and never miss a future update, bonus, or new addition, all included in this one-time offer. Why pay more later when you can get it all today at the lowest price? This one-time purchase gives you lifetime access to everything we offer now and everything we’ll add in the future. Each new template, tool, or resource will automatically be included in your account, saving you both time and money. Prices may rise as we expand and enhance our offerings, but by purchasing now, you lock in the best possible deal. Imagine gaining access to every future update, bonus, and addition without spending a single extra rupee. This is more than a purchase, it’s a long-term advantage, a complete toolkit for your growth, and a smart investment you won’t regret.</p>
 </div>
+
+
+
+<section class="pt-0 pb-20 bg-white">
+  <div class="container mx-auto">
+    <div class="grid md:grid-cols-[2fr_4fr] gap-20 text-left">
+      <div>
+        <div class="sticky top-20">
+          <img  loading="lazy" src="/assets/images/others/start-affordable-wed-design-services.webp" alt="Professional website design service offering fast, clean, SEO-friendly layouts with free consultation and personalized quote to build your ideal website" width="150" height="150" class="mb-0 " />
+
+          <h2 class="text-2xl font-semibold text-gray-800 mb-3">
+            Start Growing Today
+          </h2>
+          <p class="text-gray-600 pb-5">
+            Everything you need to run, promote, and scale your business is already inside this complete digital assets bundle. Save hours of work, reduce costs, and access ready-to-use resources across business, marketing, and content creation.
+          </p>
+    
+        <a 
+    href="#download"
+    class="block md:inline px-10 mb-3 py-2 bg-wmblue text-white font-medium shadow-md 
+           hover:bg-blue-700 hover:shadow-lg transition-all duration-200">
+           Get Lifetime Access
+          </a>
+
+        </div>
+      </div>
+      <div>
+        <h2 id="faq" class="text-2xl md:text-5xl font-semibold text-gray-800 mt-0 pt-0">
+          Frequently Asked Questions
+        </h2>
+
+        
+
+
+        <div class="acc space-y-4">
+
+          <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q1" checked>
+            <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <label for="q1" class="acc-title">
+                <h3 itemprop="name" class="text-lg">What is included in this all-in-one digital assets bundle?</h3>
+              </label>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                  <p  itemprop="text">
+                    This bundle includes business templates, marketing frameworks, branding kits, ebooks, PLR articles, graphics, videos, AI prompts, and software resources designed for business and marketing use.</p>
+                                  </div>
+            </div>
+          </div>
+        
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q2">
+            <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <label for="q2" class="acc-title">
+                <h3 itemprop="name" class="text-lg">Is this a one-time purchase or a subscription?</h3>
+              </label>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                  <p itemprop="text">
+                    This is a one-time payment only. There are no monthly or yearly charges, and you receive permanent access after purchase.                  </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q3">
+            <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <label for="q3" class="acc-title">
+                <h3 itemprop="name" class="text-lg">Do I get lifetime access to future updates?</h3>
+              </label>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                  <p itemprop="text">
+                    Yes, all future updates, new assets, and additions are included automatically at no extra cost.                  </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q4">
+            <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <label for="q4" class="acc-title">
+                <h3 itemprop="name" class="text-lg">Who is this digital assets bundle best suited for?</h3>
+              </label>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                  <p itemprop="text">
+                    It is ideal for entrepreneurs, freelancers, agencies, digital marketers, content creators, and small business owners looking to save time and improve output.                  </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q5">
+            <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <label for="q5" class="acc-title">
+                <h3 itemprop="name" class="text-lg">Can I resell the digital assets and earn income?</h3>
+              </label>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                  <p itemprop="text">
+                    Yes, many assets come with resell and PLR usage rights, allowing you to sell them through your own store or client services.                  </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q6">
+            <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <label for="q6" class="acc-title">
+                <h3 itemprop="name" class="text-lg">Are the templates and resources editable?</h3>
+              </label>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                  <p itemprop="text">
+                    Yes, the majority of templates, documents, and creatives are fully editable so you can customize them for your brand or client needs.                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q7">
+          <label for="q7" class="acc-title">
+            <h3 class="text-lg">How do I access the downloads after purchase?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Once payment is complete, you receive instant access to the download area along with your unique purchase code for future access.              </p>
+            </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q8">
+          <label for="q8" class="acc-title">
+            <h3 class="text-lg">Is technical knowledge required to use these assets?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                No technical expertise is required. The assets are beginner-friendly and suitable for both non-technical users and professionals.              </p>
+            </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q9">
+          <label for="q9" class="acc-title">
+            <h3 class="text-lg">Are the digital products organized by category?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Yes, all assets are neatly arranged into multiple niches such as business, marketing, finance, productivity, fitness, travel, and more.              </p>
+            </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q10">
+          <label for="q10" class="acc-title">
+            <h3 class="text-lg">Will I receive new assets regularly?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Yes, new resources are added frequently, and updates are shared through lifetime access channels such as Telegram.              </p>
+            </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q11">
+          <label for="q11" class="acc-title">
+            <h3 class="text-lg">Can I use these assets for client projects?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Yes, you can use the assets for client work, agency projects, and internal business operations, depending on the usage rights provided.              </p>
+            </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q12">
+          <label for="q12" class="acc-title">
+            <h3 class="text-lg">Are the ebooks and PLR articles original?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Yes, the content is professionally created and intended for reuse, republishing, or customization as permitted by PLR licenses.              </p>
+            </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q13">
+          <label for="q13" class="acc-title">
+            <h3 class="text-lg">Is there any limit on downloads?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                No, you can download the assets anytime without restrictions as long as you have your purchase code.              </p>
+            </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q14">
+          <label for="q14" class="acc-title">
+            <h3 class="text-lg">Does the bundle include marketing tools for planning and analysis?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Yes, it includes tools such as SWOT analysis templates, marketing calendars, buyer persona sheets, competitor analysis files, and budget planners.              </p>
+            </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q15">
+          <label for="q15" class="acc-title">
+            <h3 class="text-lg">Are graphics and videos suitable for social media?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Yes, the multimedia assets are designed for platforms like Instagram, YouTube, short-form video content, and promotional campaigns.              </p>
+            </div>
+        </div>
+
+        
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q16">
+          <label for="q16" class="acc-title">
+            <h3 class="text-lg">What kind of support is available if I face issues?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Real-time support is available via WhatsApp for download or access-related problems.              </p>
+            </div>
+        </div>
+
+        
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q17">
+          <label for="q17" class="acc-title">
+            <h3 class="text-lg">Can developers use the software resources included?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Yes, developers and tech-focused users can use the software tools and source codes for building, testing, or business use.            </p>
+            </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q18">
+          <label for="q18" class="acc-title">
+            <h3 class="text-lg">Is this bundle suitable for beginners starting a business?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Absolutely. The ready-made assets reduce setup time and help beginners focus on execution rather than creation.         </p>
+            </div>
+        </div>
+
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q19">
+          <label for="q19" class="acc-title">
+            <h3 class="text-lg">Will the price increase in the future?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Yes, pricing may increase as more tools and resources are added. Early buyers retain access at the original price.           </p>
+            </div>
+        </div>
+
+        
+        <div class="acc-item">
+          <input type="radio" name="acc" id="q20">
+          <label for="q20" class="acc-title">
+            <h3 class="text-lg">Why is this bundle considered cost-effective?</h3>
+          </label>
+            <div class="acc-content">
+              <p>
+                Instead of purchasing multiple tools separately, this single purchase provides long-term access to a wide range of business and marketing resources, saving both time and money.            </p>
+            </div>
+        </div>
+
+        </div>
+
+      </div>
+    </div>  
+
+
+  </div>
+</section>
+
+
+
 
 
   <script src={`/assets/js/toolkit.js?v=${version}`} defer></script>

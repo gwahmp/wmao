@@ -1,3 +1,19 @@
+(function () {
+  const url = new URL(window.location.href);
+  const pc = url.searchParams.get("pc");
+
+  if (pc && /^\d{6}$/.test(pc)) {
+    // Store PIN
+    localStorage.setItem("pc", pc);
+
+    // Remove pc from URL
+    url.searchParams.delete("pc");
+
+    // Clean URL without reloading
+    window.history.replaceState({}, document.title, url.pathname + url.hash);
+  }
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
     const productLink = sessionStorage.getItem("current_prod");
     const productTitle = sessionStorage.getItem("current_prod_title");
