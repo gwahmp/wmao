@@ -4,7 +4,6 @@
   {"name":"Wiki.js","url":"https://js.wiki","description":"A modern open-source wiki engine for building internal or public knowledge portals."},
   {"name":"Documize","url":"https://www.documize.com","description":"An open documentation platform for teams to write and manage shared knowledge."},
   {"name":"Outline","url":"https://www.getoutline.com","description":"An open-source team wiki for building fast, searchable documentation."},
-  {"name":"DokuWiki","url":"https://www.dokuwiki.org","description":"A lightweight open-source wiki that works without a database."},
   {"name":"MediaWiki","url":"https://www.mediawiki.org","description":"The open-source wiki platform behind Wikipedia and thousands of communities."},
   {"name":"XWiki","url":"https://www.xwiki.org","description":"An enterprise-grade open-source wiki and knowledge platform."},
   {"name":"TiddlyWiki","url":"https://tiddlywiki.com","description":"A self-contained wiki system that runs in a single HTML file."},

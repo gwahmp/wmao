@@ -25,7 +25,6 @@
   {"name":"Buddy (Free tier)","url":"https://buddy.works","description":"CI/CD automation and deployment pipelines."},
   {"name":"GitHub Pages","url":"https://pages.github.com","description":"Free static website hosting from GitHub repos."},
   {"name":"GitLab Pages","url":"https://docs.gitlab.com/ee/user/project/pages/","description":"Static site hosting with GitLab CI."},
-  {"name":"SourceHut Pages","url":"https://sr.ht","description":"Minimalist developer hosting and deployment tools."},
   {"name":"Surge","url":"https://surge.sh","description":"Static site deployment from the command line."},
   {"name":"Stormkit","url":"https://stormkit.io","description":"Frontend deployment platform with free tier."},
   {"name":"StackBlitz WebContainers","url":"https://stackblitz.com","description":"In-browser Node.js deployment environment."},

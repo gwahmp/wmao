@@ -2,8 +2,6 @@
   {"name":"Jasper","url":"https://www.jasper.ai","description":"AI writing assistant for marketing and content teams."},
   {"name":"Copy.ai","url":"https://www.copy.ai","description":"AI-powered copywriting for ads, blogs, and emails."},
   {"name":"Writesonic","url":"https://writesonic.com","description":"Content generation platform for articles and landing pages."},
-
-  {"name":"Rytr","url":"https://rytr.me","description":"AI writing assistant for short-form and long-form content."},
   {"name":"Anyword","url":"https://anyword.com","description":"AI copywriting with performance prediction."},
   {"name":"Sudowrite","url":"https://www.sudowrite.com","description":"Creative AI writing tool for fiction and storytelling."},
   {"name":"QuillBot","url":"https://quillbot.com","description":"Paraphrasing and grammar-enhancing AI writer."},
