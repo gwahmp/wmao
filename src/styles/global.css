@@ -323,3 +323,33 @@ margin-bottom:20ox;
   max-height:300px;
 }
 
+.star-container {
+  display: flex;
+  align-items: center;
+  /* font-family: Arial, sans-serif; */
+  gap: 2px;
+}
+
+.star {
+  font-size: 32px; /* Adjust size as needed */
+  line-height: 1;
+}
+
+/* Full Gold Stars */
+.star.full {
+  color: #FFD700; /* Gold */
+}
+
+/* The "4.9" Partial Star */
+.star.partial {
+  background: linear-gradient(90deg, #FFD700 90%, #ccc 10%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.rating-number {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #444;
+}
