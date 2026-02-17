@@ -1,0 +1,588 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import Sidebar from "../components/Sidebar.astro";
+import { Image } from 'astro:assets';
+
+const version = Date.now();
+
+//export const prerender = true;
+
+Astro.response.headers.set("Cache-Control", "no-cache, no-store, must-revalidate");
+
+// Load posts
+const posts = await getCollection("posts");
+
+const allPosts = (await getCollection("posts"))
+  .sort((a,b)=> new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+  const frontmatter = {
+  title: "Wikimint – Personal Finance, Business Growth & Money Tips",
+  description: "Master personal finance, business growth, marketing strategies & digital marketing with expert guides. Learn smart money strategies to build wealth faster.",
+  image: "/assets/images/business-motivation-marketing-strategy-personal-finance-strategy.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+};
+const currentUrl = Astro.url.href; // full URL of the current page
+
+---
+<BaseLayout title={frontmatter.title} description={frontmatter.description} image={frontmatter.image}>
+  <!-- Hero -->
+  <section class="grid md:grid-cols-2 gap-8 pb-10 items-center">
+    <div>
+      <h1><span class="font-normal">Mastering Financial Freedom</span><br/> Personal Finance, Business and Marketing Strategies</h1>
+      <p class="text-lg opacity-80">Whether you’re looking to take control of your finances or explore business growth ideas or marketing strategies, welcome. Dive into expert tips, practical advice, and real-life strategies to help you build wealth, manage money smarter, and turn your entrepreneurial dreams into reality. Visit <a href="/sitemap">sitemap here</a> to explore all the available resources.</p>
+      <form action="/search" method="get">
+        <input name="q"
+            type="search"
+            placeholder="Search Wikimint..."
+            class="bg-gray-100 px-3 w-full py-2 mt-5 border border-gray-500 rounded focus:outline-none focus:ring focus:ring-wmblue-200"
+          />
+        </form>
+    </div>
+    <div class="w-full">
+      <Image loading="lazy" src="/assets/images/business-motivation-marketing-strategy-personal-finance-strategy.webp" alt="Wikimint blog for business ideas, marketing tips, and growth strategies" width={799} height={450} class="w-full" />
+    </div>
+  </section>
+
+
+  <section class="pb-12 mb-5 hr">
+    <!-- SEO-optimized heading about core topics -->
+    <h2>
+      Expert insights to grow wealth and business
+    </h2>
+  
+    <!-- 4-column responsive cards -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 max-w-7xl mx-auto">
+      <!-- Card 1: Personal finance -->
+      <div class="col-span-12 md:col-span-3 bg-gray-100  border border-gray-300 shadow-sm p-5 hover:shadow-md transition-shadow">
+        <h3 class="text-lg font-medium mb-3 pb-3 border-b-2 border-gray-300">Personal finance</h3>
+        <p class="text-gray-900">
+          Practical guidance to budget, save, and invest for secure futures.
+        </p>
+      </div>
+  
+      <!-- Card 2: Business Growth -->
+      <div class="col-span-12 md:col-span-3 bg-gray-100  border border-gray-300 shadow-sm p-5 hover:shadow-md transition-shadow">
+        <h3 class="text-lg font-medium mb-2 pb-3 border-b-2 border-gray-300">Business Growth</h3>
+        <p class="text-gray-900">
+          Actionable tactics to scale operations, increase revenue, and build resilience.
+        </p>
+      </div>
+  
+      <!-- Card 3: Marketing Strategies -->
+      <div class="col-span-12 md:col-span-3 bg-gray-100  border border-gray-300 shadow-sm p-5 hover:shadow-md transition-shadow">
+        <h3 class="text-lg font-medium mb-2 pb-3 border-b-2 border-gray-300">Marketing Strategies</h3>
+        <p class="text-gray-900">
+          Data driven campaigns, brand positioning, and conversion focused growth techniques.
+        </p>
+      </div>
+  
+      <!-- Card 4: Money -->
+      <div class="col-span-12 md:col-span-3 bg-gray-100  border border-gray-300 shadow-sm p-5 hover:shadow-md transition-shadow">
+        <h3 class="text-lg font-medium mb-2 pb-3 border-b-2 border-gray-300">Money</h3>
+        <p class="text-gray-900">
+          Insights on wealth building, passive income, taxation, and smart investing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hr" id="blog">
+  <h2>
+    A Smart Place for Business Ideas and Growth Knowledge
+  </h2>
+
+  <!-- Feed + Sidebar -->
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto">
+    <div class="col-span-12 md:col-span-7">
+   
+            <p>  Keep up with fresh business updates, practical ideas, and modern strategies through the Wikimint blog. Read expert-written articles, real-world examples, and clear explanations created for founders, marketers, and growing teams.
+
+      </p>
+      <ul id="posts-container" class="mt-12 space-y-10 not-prose"
+      itemscope itemtype="https://schema.org/CollectionPage">
+  
+    <meta itemprop="name" content="Wikimint – Latest Insights & Articles" />
+    <meta itemprop="description" content="Stay updated with the latest articles on business, finance, marketing, technology, lifestyle, and growth strategies from Wikimint." />
+    <meta itemprop="url" content="https://www.wikimint.com/" />
+  
+    {posts
+      .filter((post) => !post.data.noindex)
+      .sort(
+        (a, b) =>
+          new Date(b.data.date ?? 0).getTime() -
+          new Date(a.data.date ?? 0).getTime()
+      )
+      .slice(0, 10)
+      .map((post) => (
+        <li 
+            class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto"
+            itemprop="mainEntity" itemscope itemtype="https://schema.org/Article">
+          
+          <!-- IMAGE -->
+          <div class="col-span-12 md:col-span-4">
+            <img loading="lazy" 
+              src={post.data.image
+                ? post.data.image.startsWith("http")
+                  ? post.data.image
+                  : `/assets/images/blog/200/${post.data.image}`
+                : "/assets/images/business-motivation-marketing-strategy-personal-finance-strategy.webp"}
+              alt={post.data.title}
+              class="w-full h-full object-cover rounded-lg"
+              itemprop="image"
+            />
+          </div>
+  
+          <!-- CONTENT -->
+          <div class="col-span-12 md:col-span-8 flex flex-col justify-center">
+            <a href={`/${post.slug}`} itemprop="url" class="hover:text-wmblue">
+              <h3 class="text-lg md:text-xl font-semibold mb-1 text-black line-clamp-2" itemprop="headline">
+                {post.data.title}
+              </h3>
+            </a>
+  
+            <p class="text-sm md:text-base text-gray-500 mb-2 line-clamp-2">
+
+              <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <a href="https://www.wikimint.com/write-for-us" itemprop="url">
+                <span itemprop="name">
+                  {(post?.data?.author ?? "Unknown Author")
+                    .replace(/-/g, " ")
+                    .replace(/\b\w/g, (c) => c.toUpperCase())}
+                </span>
+               </a>
+              </span>
+            ·{" "}
+              {post?.data?.date && (
+                <time itemprop="datePublished" datetime={new Date(post.data.date).toISOString()}>
+                  {new Date(post.data.date).toDateString()}
+                </time>
+              )}
+            </p>
+  
+            <p class="text-sm md:text-base text-gray-900 line-clamp-2" itemprop="description">
+              {post.data.description}
+            </p>
+          </div>
+  
+        </li>
+      ))}
+  </ul>
+  
+      
+      <div class="text-center mt-10">
+        <button id="load-more" class="btn w-full">
+          Load More
+        </button>
+      </div>
+      <div id="mainAd" class="my-10 sticky top-20"></div>
+    </div>
+    <div class="col-span-12 md:col-span-5">
+      <Sidebar />
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="my-10 hr" itemscope itemtype="https://schema.org/ItemList">
+  <h2>
+    Explore Categories</h2>
+  <meta itemprop="name" content="Wikimint Blog Categories" />
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 max-w-7xl mx-auto">
+    
+
+      <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="1" />
+        <a href="https://www.wikimint.com/business" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
+          <h3 itemprop="name">Business</h3>
+          <p class="text-gray-600 mt-2 min-h-[4rem]">Actionable strategies and insights to start, grow, and scale your business successfully.</p>
+        </a>
+      </div>
+
+      
+      <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="3" />
+        <a href="https://www.wikimint.com/economy" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
+          <h3 itemprop="name">Economy</h3>
+          <p class="text-gray-600 mt-2 min-h-[4rem]">Understand global and Indian economic trends, policies, and financial markets.</p>
+        </a>
+      </div>
+      
+      <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="6" />
+        <a href="https://www.wikimint.com/finance" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
+          <h3 itemprop="name">Finance</h3>
+          <p class="text-gray-600 mt-2 min-h-[4rem]">Practical personal finance tips, investment ideas, and money management guides.</p>
+        </a>
+      </div>
+      
+      <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="7" />
+        <a href="https://www.wikimint.com/general" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
+          <h3 itemprop="name">General</h3>
+          <p class="text-gray-600 mt-2 min-h-[4rem]">General lifestyle articles, useful knowledge, and everyday inspiration.</p>
+        </a>
+      </div>
+
+      <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="9" />
+        <a href="https://www.wikimint.com/internet" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
+          <h3 itemprop="name">Internet</h3>
+          <p class="text-gray-600 mt-2 min-h-[4rem]">Trends, innovations, and guides about the online world and digital future.</p>
+        </a>
+      </div>
+      
+      <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="10" />
+        <a href="https://www.wikimint.com/marketing" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
+          <h3 itemprop="name">Marketing</h3>
+          <p class="text-gray-600 mt-2 min-h-[4rem]">Digital marketing, SEO, and growth strategies for businesses and creators.</p>
+        </a>
+      </div>
+      
+      <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="11" />
+        <a href="https://www.wikimint.com/money" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
+          <h3 itemprop="name">Money</h3>
+          <p class="text-gray-600 mt-2 min-h-[4rem]">Smart money habits, savings tips, and financial freedom ideas.</p>
+        </a>
+      </div>
+ 
+      
+      <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="14" />
+        <a href="https://www.wikimint.com/skills" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
+          <h3 itemprop="name">Skills</h3>
+          <p class="text-gray-600 mt-2 min-h-[4rem]">Guides to learn professional, creative, and life skills for success.</p>
+        </a>
+      </div>
+      
+      <div class="border p-4 shadow-sm hover:shadow-md transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="15" />
+        <a href="https://www.wikimint.com/technology" itemprop="url" class="text-xl font-semibold text-blue-600 hover:underline">
+          <h3 itemprop="name">Technology</h3>
+          <p class="text-gray-600 mt-2 min-h-[4rem]">Latest updates in technology, gadgets, AI, and digital innovations.</p>
+        </a>
+      </div>
+    
+  </div>
+</section>
+
+
+
+
+  <div class='highlight mt-10'>
+    <h2 class="border-b border-gray-400 pb-3 mb-3">Why Personal Finance Literacy?</h2>
+    <p>Take charge of your financial future with simple strategies and expert tips. Whether you&#39;re a doctor, engineer, or entrepreneur, understanding personal finance is crucial for a secure life. Mastering money helps you build lasting wealth and freedom. So, no matter your profession or business, learning personal finance is an essential skill for everyone. It&#8217;s key to securing your financial future and making informed decisions. Start now and make your financial dreams come true!</p>
+  </div>
+    
+
+    <section class="bg-gray-100 px-8 py-8 mb-10 mt-10 rounded-xl border border-gray-300 hr">
+  <h2>Explore Personal Finance Insights</h2>
+
+  <!-- Grid wrapper -->
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- Item 1 -->
+    <div class="flex gap-4 items-start">
+      <img loading="lazy" 
+        src="/assets/images/personal-finance-literacy.webp"
+        alt="Master personal finance by learning to budget, save, invest, and manage debt wisely to build financial security and achieve your short- and long-term goals."
+        title="Essential Personal Finance Tips for a Secure Future"
+        class="pfi-card-img"
+      />
+      <div>
+        <a href="/personal-finance-wealth-guide">
+          <h3 class="pfi-card-h3">Personal Finance</h3>
+        </a>
+        <p class="pfi-card-p">
+          Master the art of budgeting, saving, and managing money effectively. Learn key strategies for financial health, debt management, and building a strong foundation for your future.
+        </p>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="flex gap-4 items-start">
+      <img loading="lazy" 
+        src="/assets/images/investing-strategies-ideas.webp"
+        alt="Explore smart investing strategies to grow your wealth, manage risk, diversify your portfolio, and make informed financial decisions for long-term success."
+        title="Top Investing Strategies to Grow Your Wealth"
+        class="pfi-card-img"
+      />
+      <div>
+        <a href="/investment-strategies-future-growth">
+          <h3 class="pfi-card-h3">Investing Strategies</h3>
+        </a>
+        <p class="pfi-card-p">
+          Discover diverse investment strategies to grow your wealth. Learn about risk management, asset allocation, and choosing the right investment vehicles to reach your financial goals.
+        </p>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="flex gap-4 items-start">
+      <img loading="lazy" 
+        src="/assets/images/how-tocalculate-net-worth.webp"
+        alt="Understand how to calculate your net worth by evaluating your assets and liabilities to assess financial health and plan for future financial goals effectively."
+        title="How to Calculate Your Net Worth: A Simple Guide"
+        class="pfi-card-img"
+      />
+      <div>
+        <a href="/calculate-net-worth-guide">
+          <h3 class="pfi-card-h3">Net Worth Calculation</h3>
+        </a>
+        <p class="pfi-card-p">
+          Understanding how to calculate your net worth is crucial for financial planning. Learn how to assess your assets and liabilities to get a clear picture of your financial standing.
+        </p>
+      </div>
+    </div>
+
+  <!-- Tax Saving Methods -->
+  <div class="flex gap-4 items-start">
+    <img loading="lazy" 
+      src="/assets/images/ways-to-save-tax.webp"
+      alt="Discover effective and legal tax saving methods including deductions, exemptions, investments, and smart planning to reduce your income tax burden efficiently."
+      width="90"
+      height="90"
+      class="pfi-card-img"
+      />
+    <div>
+      <a href="/tax-saving-legal-guide">
+        <h3 class="pfi-card-h3 mb-1">Tax Saving Methods</h3>
+      </a>
+      <p class="pfi-card-p">
+        Explore practical tax-saving strategies to reduce your taxable income. Learn about
+        deductions, credits, and tax-efficient investment options that help you keep more of your
+        hard-earned money.
+      </p>
+    </div>
+  </div>
+
+  <!-- Passive Income Ideas -->
+  <div class="flex gap-4 items-start">
+    <img loading="lazy" 
+      src="/assets/images/generate-passive-income-ideas.webp"
+      alt="Explore top passive income ideas to earn money while you sleep—includes investments, digital products, affiliate marketing, and real estate strategies."
+      width="90"
+      height="90"
+      class="pfi-card-img"
+      />
+    <div>
+      <a href="/passive-income-ideas">
+        <h3 class="pfi-card-h3 mb-1">Passive Income Ideas</h3>
+      </a>
+      <p class="pfi-card-p">
+        Generate income with minimal effort. Explore ideas like rental properties, dividends, and
+        online businesses that offer a steady stream of passive income to enhance your financial
+        freedom.
+      </p>
+    </div>
+  </div>
+
+  <!-- Stock Market Investing -->
+  <div class="flex gap-4 items-start">
+    <img loading="lazy" 
+      src="/assets/images/stock-market-investments.webp"
+      alt="Learn the essentials of stock market investing including strategies, risk management, and long-term wealth building tips for smart financial growth."
+      width="90"
+      height="90"
+      class="pfi-card-img"
+      />
+    <div>
+      <a href="/stock-market-basic-understanding">
+        <h3 class="pfi-card-h3 mb-1">Stock Market Investing</h3>
+      </a>
+      <p class="pfi-card-p">
+        Dive into stock market investing by learning how to pick stocks, analyze market trends, and
+        create a balanced portfolio. Start investing to build wealth over the long term with informed
+        decisions.
+      </p>
+    </div>
+</div>
+
+  </div>
+</section>
+
+
+<div class="bluebox hr">
+  <h2>Business Strategies and Insights</h2>
+  <p>Explore innovative business ideas and practical strategies designed to help you launch, grow, and scale your business successfully. From creating a solid plan to executing it effectively, these insights will guide you through every step of your entrepreneurial journey, turning your business dreams into a thriving reality.</p>
+  </div>
+
+
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+    <!-- Left Feature -->
+    <div class="md:pr-5">
+      <a href="/best-online-business-ideas">
+        <img  loading="lazy" 
+          class="w-full rounded-lg shadow-sm border border-gray-200"
+          src="/assets/images/blog/online-business-ideas-make-money-without-investment.webp" 
+          alt="Explore the best online business ideas including eCommerce, digital services, blogging, and affiliate marketing to start your entrepreneurial journey today." 
+          title="Top Online Business Ideas to Start from Anywhere"
+        >
+      </a>
+      <p class="mt-3 text-gray-900 line-clamp-4">
+        Unlock the potential of online entrepreneurship. Explore innovative and profitable online business ideas, from e-commerce to digital services, to start and grow your own business today.
+      </p>
+    </div>
+  
+    <!-- Right Grid (4 small items) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <!-- Item 1 -->
+      <a href="/reduce-business-expenses">
+      <figure>
+          <img  loading="lazy" 
+            class="w-full rounded-lg shadow-sm border border-gray-200"
+            src="/assets/images/blog/200/how-to-reduce-business-expenses-cut-costs.webp" 
+            alt="Discover effective ways to reduce business costs by optimizing operations, cutting unnecessary expenses, and improving efficiency for long-term profitability." 
+            title="How to Reduce Business Cost and Maximize Profitability"
+          >
+          <figcaption class="text-gray-800 mt-2">How to reduce business cost?</figcaption>
+      </figure>
+    </a>
+
+      <!-- Item 2 -->
+      <a href="/email-marketing-strategy">
+      <figure>
+          <img  loading="lazy" 
+            class="w-full rounded-lg shadow-sm border border-gray-200"
+            src="/assets/images/blog/200/effective-email-marketing-strategies-for-business-leads.webp" 
+            alt="Master effective email marketing strategies to boost engagement, grow your subscriber list, and drive conversions through targeted, personalized campaigns." 
+            title="Learn Email Marketing Strategies for Better Engagement and Growth"
+          >
+          <figcaption class="text-gray-800 mt-2">Learn email marketing strategies.</figcaption>
+      </figure>
+    </a>
+
+      <!-- Item 3 -->
+        <a href="/startup-business-guide">
+          <figure>
+            <img  loading="lazy" 
+            class="w-full rounded-lg shadow-sm border border-gray-200"
+            src="/assets/images/blog/200/how-to-build-successful-startup-from-scratch.webp" 
+            alt="Discover key steps to build a successful startup, from idea validation and business planning to funding, marketing, and scaling for long-term growth." 
+            title="Build a Successful Startup: Step-by-Step Guide"
+          >
+          <figcaption class="text-gray-800 mt-2">Build a successful startup.</figcaption>
+        </figure>
+      </a>
+  
+      <!-- Item 4 -->
+        <a href="/digital-marketing-strategy">
+          <figure>
+            <img  loading="lazy" 
+            class="w-full rounded-lg shadow-sm border border-gray-200"
+            src="/assets/images/blog/200/how-to-build-strong-digital-marketing-strategy.webp" 
+            alt="Master essential digital marketing strategies including SEO, content marketing, social media, email campaigns, and analytics to grow your online presence." 
+            title="Learn Digital Marketing Strategies for Online Growth"
+          >
+          <figcaption class="text-gray-800 mt-2">Learn digital marketing strategies.</figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+
+
+
+<div class="bg-gray-100 border border-gray-300 rounded-lg px-6 md:px-10 py-8 my-10">
+  <!-- Intro -->
+  <div class="pb-10">
+    <h3 class="text-2xl font-bold mb-4">3 Books for Financial Success</h3>
+    <hr class="mb-6 border-gray-300">
+    <p class="text-gray-900 leading-relaxed">
+      These must-read financial books offer timeless and actionable strategies for building lasting wealth, making intelligent investment decisions, and achieving true financial independence. They teach you how to manage your money effectively, grow your assets wisely, and develop the mindset of a successful <a href="/top-investors">investor</a>. Whether you're just starting or looking to refine your financial knowledge, these books are key to mastering personal finance and securing your financial future.
+    </p>
+  </div>
+
+  <!-- Books Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Book 1 -->
+        <a href="/psychology-money-summary-financial-lessons">
+          <figure>
+            <img  loading="lazy" 
+            class="w-full h-[240px] object-cover rounded-lg shadow-sm border border-gray-200"
+            src="/assets/images/blog/200/psychology-of-money-book-summary-financial-lessons.webp" 
+            alt="The Psychology of Money explores how emotions, behavior, and mindset shape our financial decisions, offering timeless wisdom for long-term wealth and success."
+            title="The Psychology of Money – Key Insights and Financial Wisdom"
+          >
+          <figcaption class="text-gray-800 mt-2">
+            <strong>The Psychology of Money</strong>: Understanding emotions behind financial decisions and success.
+          </figcaption>
+        </figure>
+      </a>
+
+    <!-- Book 2 -->
+        <a href="/rich-dad-poor-dad-summary-action-guide">
+          <figure>
+            <img  loading="lazy" 
+            class="w-full h-[240px] object-cover rounded-lg shadow-sm border border-gray-200"
+            src="/assets/images/blog/200/rich-dad-poor-dad-complete-lessons-summary-action-guide.webp" 
+            alt="Rich Dad Poor Dad highlights the contrasting mindsets of the wealthy and the poor, teaching essential lessons on financial independence and smart money management."
+            title="Rich Dad Poor Dad – Book Summary and Key Financial Lessons"
+          >
+          <figcaption class="text-gray-800 mt-2">
+            <strong>Rich Dad Poor Dad</strong>: Transform your mindset for financial independence.
+          </figcaption>
+        </figure>
+      </a>
+
+    <!-- Book 3 -->
+        <a href="/think-grow-rich-summary">
+          <figure>
+            <img  loading="lazy" 
+            class="w-full h-[240px] object-cover rounded-lg shadow-sm border border-gray-200"
+            src="/assets/images/blog/200/think-and-grow-rich-book-summary-lessons.webp" 
+            alt="Think and Grow Rich is a timeless self-help classic that reveals principles of wealth-building, success mindset, and goal achievement through focused action."
+            title="Think and Grow Rich – Book Summary and Success Principles"
+          >
+          <figcaption class="text-gray-800 mt-2">
+            <strong>Think and Grow Rich</strong>: Unlock wealth through mindset and perseverance.
+          </figcaption>
+        </figure>
+      </a>
+  </div>
+</div>
+
+
+<section id="author" class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-0">
+  <!-- Author Image -->
+  <div class="md:col-span-2">
+      <a href="https://sk.wikimint.com">
+        <figure>
+          <img  loading="lazy" 
+          class="w-full h-auto rounded-lg object-cover"
+          alt="Selvakumaran Krishnan, founder of Wikimint blog, shares personal finance tips, business ideas, and smart strategies to inspire financial independence." 
+          src="/assets/images/authors/selvakumaran-krishnan.webp" 
+          title="Selvakumaran Krishnan – Founder of Wikimint | Personal Finance and Business Strategist"
+        >
+        <figcaption class="text-gray-800 font-semibold mt-2 text-center">
+          Selvakumaran Krishnan
+        </figcaption>
+      </figure>
+    </a>
+  </div>
+
+  <!-- Author Content -->
+  <div class="md:col-span-3 hr">
+    <h2>Author's Review Statement</h2>
+    <p>
+      At Wikimint, every post is meticulously reviewed by the founder, Selvakumaran Krishnan, to ensure that the information shared is both accurate and valuable. As a dedicated resource for personal finance and business strategies, we prioritize offering the most relevant and up-to-date content. Our goal is to empower readers with well-researched knowledge that can guide them in making informed decisions. Each article is crafted with care, reflecting the founder’s commitment to providing quality insights. Rest assured, all content is designed to be practical, reliable, and helpful for your financial and business growth. We aim to provide clear and actionable advice that resonates with our audience’s needs.
+    </p>
+
+    <!-- Yellowbox Disclaimer -->
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-md mt-10">
+      <h3>Content Disclaimer</h3>
+      <hr class="mb-3 border-gray-200">
+      <p class="text-gray-900 leading-relaxed">
+        While we strive to provide reliable and up-to-date information on Wikimint, please note that all content related to finance, tax, law, and business strategies is for informational purposes only. The advice shared in our posts is general and may not apply to specific situations. We strongly recommend that readers verify any details through independent research or consult with relevant professionals before making any financial or business decisions. The content provided is meant to serve as a guide and not as professional advice. Always ensure you cross-check the facts before acting on any recommendations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Simple client-side paginator using prebuilt JSON -->
+<script src={`/assets/js/blog.js?v=${version}`} defer></script>
+
+</BaseLayout>

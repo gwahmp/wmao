@@ -99,8 +99,8 @@ const relatedPosts = allPosts
       
   <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a href="https://www.wikimint.com" itemprop="item">
-        <span itemprop="name" class="text-wmblue">Home</span>
+      <a href="https://www.wikimint.com/blog" itemprop="item">
+        <span itemprop="name" class="text-wmblue">Blog</span>
       </a>
       <meta itemprop="position" content="1" />
     </span>
@@ -124,15 +124,23 @@ const relatedPosts = allPosts
       <meta itemprop="position" content={post.data.category ? "3" : "2"} />
     </span>    
   </nav>
-        <article class="prose lg:prose-xl max-w-none">
+        <article vocab="https://schema.org/" typeof="BlogPosting" class="prose lg:prose-xl max-w-none">
           
-            <h1>{post.data.h1}</h1>
-            <p class="text-sm opacity-70">
-              {new Date(post.data.date).toDateString()} · <a href="#author">{author?.data?.name ?? "Unknown Author"}</a>
-            </p>          
+            <h1 property="headline">{post.data.h1}</h1>
+
+            <div class="post-meta">
+              Posted in <span property="articleSection">{post.data.category}</span> |
+              
+              By <span property="author" typeof="Person">
+                <span property="name"><a href="#author">{author?.data?.name ?? "Unknown Author"}</a></span>
+              </span> |
+              
+              Published on <time property="datePublished" datetime={new Date(post.data.date).toISOString().split('T')[0]}>{new Date(post.data.date).toDateString()}</time>
+            </div>
+              
   
             {post.data.summary && (
-              <p class="bluebox">
+              <p property="abstract" class="bluebox">
                 {post.data.summary}
               </p>
             )}
@@ -143,7 +151,7 @@ const relatedPosts = allPosts
           <TopAds/>
 
           {toc && (
-            <div class="wmdTOC graybox">
+            <nav aria-label="Table of Contents" class="wmdTOC graybox">
               <button>
                 Table of Contents
                 <span>
@@ -160,10 +168,10 @@ const relatedPosts = allPosts
                     </ol>
                   </div>
 
-            </div>
+            </nav>
           )}
       
-          <div class="post-content">
+          <div property="articleBody" class="post-content">
             <Content />
           
       
@@ -263,7 +271,15 @@ const relatedPosts = allPosts
             </div>
           )}
           
-            
+
+          <div property="publisher" typeof="Organization">
+            <meta property="name" content="Wikimint">
+            <div property="logo" typeof="ImageObject">
+               <meta property="url" content="/assets/images/wikimint-logo-200x46.webp">
+            </div>
+          </div>
+
+          </article>
 
   
 <!-- Prev / Next Navigation -->
