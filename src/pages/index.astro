@@ -97,11 +97,11 @@ const currentUrl = Astro.url.href; // full URL of the current page
       </script>
   </Fragment>
   <!-- Hero -->
-  <section class="grid md:grid-cols-2 gap-8 pb-10 items-center">
-    <div>
+  <section class="col-2">
+    <div class="col">
       <h1><span class="font-normal">Building Smarter Digital Growth</span><br/>
         Web Development, Marketing and Business Solutions</h1>
-      <p class="text-lg opacity-80">  Whether you want a powerful website, better online reach, or ready-to-use business tools, you’re in the right place. Wikimint helps you with web development, SEO, digital marketing, and productivity toolkits designed for modern businesses. Get clear guidance, real use cases, and practical systems that support daily operations and long-term growth. Visit <a href="/sitemap">sitemap here</a> to explore all available resources.
+      <p class="text-lg opacity-80">  Whether you want a powerful website, better online reach, or ready-to-use business tools, you’re in the right place. Wikimint helps you with web development, SEO, digital marketing, and productivity toolkits designed for modern businesses.
       </p>
       <form action="/search" method="get">
         <input name="q"
@@ -111,22 +111,22 @@ const currentUrl = Astro.url.href; // full URL of the current page
           />
         </form>
     </div>
-    <div class="w-full">
+    <div class="col">
       <Image loading="lazy" src="/assets/images/early-customers-growth-story.webp" alt="Wikimint web development, digital marketing, SEO and business productivity services" width={799} height={450} class="w-full" />
     </div>
   </section>
 
-  <section id="services" class="pb-12 mb-5 hr">
+  <section id="services" class="my-12 hr">
     <h2>
       Our Core Services
-    </h2><p>  We help businesses grow online with clear strategy and real results.  
+    </h2><p class="mb-6">  We help businesses grow online with clear strategy and real results.  
       Our services focus on website health, performance, and user experience.  
-      Each solution is simple, effective, and growth driven.</p>
+      Each solution is simple, effective, and growth driven. Get clear guidance, real use cases, and practical systems that support daily operations and long-term growth. Visit <a href="/sitemap">sitemap here</a> to explore all available resources.</p>
   
     <!-- 4-column responsive cards -->
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 max-w-7xl mt-8 mx-auto">
+    <div class="col-2">
       <!-- Card 1: Personal finance -->
-      <div class="col-span-12 md:col-span-6">
+      <div class="col">
         <a href="/seo-audit">
           <img loading="lazy" src="/assets/images/others/seo-audit-report-website-health-check.webp" alt="Website SEO audit report showing site health, backlinks, keyword data, errors, warnings, technical SEO checks, and performance metrics." title="Website SEO Audit Report" class="w-full" />
           <h3 class="text-xl font-semibold text-gray-900 my-3">
@@ -140,7 +140,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       </div>
   
       <!-- Card 2: Business Growth -->
-      <div class="col-span-12 md:col-span-6">
+      <div class="col">
         <a href="/web-development-services">
           <img  loading="lazy" src="/assets/images/others/web-development-services.webp" alt="Professional Web Development Services" class="w-full" />
           <h3 class="text-xl font-semibold text-gray-900 my-3">

@@ -4,6 +4,10 @@
 @tailwind utilities;
 
 @layer components {
+  .col-2{@apply grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-20 max-w-7xl mx-auto;}
+  .col-2 .col{@apply col-span-12 md:col-span-6;}
+  .masonry-3{@apply columns-1 md:columns-3 gap-6 [column-fill:_balance];}
+  .masonry-3 .col{@apply mb-6 break-inside-avoid bg-gray-100 px-4 rounded-lg shadow border;}
   .hr h2{
     @apply text-2xl md:text-3xl font-bold pb-4 border-b border-gray-400 mb-8;
   }
@@ -11,11 +15,11 @@
     @apply opacity-70;
   }
   .btn{
-    @apply flex md:inline px-10 py-2 bg-wmblue border border-wmblue text-white shadow-md 
+    @apply block md:inline text-center px-10 py-2 bg-wmblue border border-wmblue text-white shadow-md 
     hover:bg-gray-500 hover:shadow-lg hover:border-gray-500 transition-all duration-200;
   }
   .btn-ol{
-    @apply flex md:inline px-10 py-2 border border-wmblue text-wmblue 
+    @apply block md:inline text-center px-10 py-2 border border-wmblue text-wmblue 
     hover:bg-gray-500 hover:text-white hover:shadow-md hover:border-gray-500 transition-all duration-200
   }
   .bluebox, .ull-learn {
@@ -329,7 +333,7 @@ margin-bottom:20ox;
 .star-container {
   display: flex;
   align-items: center;
-  /* font-family: Arial, sans-serif; */
+  justify-self: center;
   gap: 2px;
 }
 
