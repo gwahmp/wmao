@@ -110,34 +110,92 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
 
     <div class="col-span-1 md:col-span-4">
 
-      
-      <div class="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-10 max-w-7xl mx-auto">
-        
-        <!-- First column -->
-        <nav class="col-span-1 md:col-span-2">
-          <ul class="space-y-3">
-            <li><a href="https://www.wikimint.com" class="hover:text-gray-500">Home</a></li>
-            <li><a href="/about" class="hover:text-gray-500">About</a></li>
-            <li><a href="/contact" class="hover:text-gray-500">Contact</a></li>
-            <li><a href="/legal#terms" class="hover:text-gray-500">Terms</a></li>
-            <li><a href="/legal#privacy" class="hover:text-gray-500">Privacy</a></li>
-          </ul>
-        </nav>
-    
-      
-        <!-- Third column -->
-        <nav class="col-span-2 md:col-span-3">
-          <ul class="space-y-2">
-            <li><a href="/web-development-services" class="hover:text-gray-500">Web Development</a></li>
-            <li><a href="/seo-audit" class="hover:text-gray-500">SEO Audit</a></li>
-            <li><a href="/tools" class="hover:text-gray-500">Tools Directory</a></li>
-            <li><a href="/digital-assets" class="hover:text-gray-500">Digital Assets</a></li>
-            <li><a href="/recommended" class="hover:text-gray-500">Recommended</a></li>
-            <li><a href="/blog" class="hover:text-gray-500">Blog</a></li>
-            <li><a href="/sitemap" class="hover:text-gray-500">Sitemap</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-10 max-w-7xl mx-auto"
+     vocab="https://schema.org/"
+     typeof="SiteNavigationElement">
+     <!-- First column -->
+<nav class="col-span-1 md:col-span-2">
+  <ul class="space-y-3">
+    <li typeof="WebPage">
+      <a href="https://www.wikimint.com" property="url">
+        <span property="name">Home</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/about" property="url">
+        <span property="name">About</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/contact" property="url">
+        <span property="name">Contact</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/blog" property="url">
+        <span property="name">Blog</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/sitemap" property="url">
+        <span property="name">Sitemap</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/legal#terms" property="url">
+        <span property="name">Terms</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/legal#privacy" property="url">
+        <span property="name">Privacy</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Second column -->
+<nav class="col-span-2 md:col-span-3">
+  <ul class="space-y-2">
+    <li typeof="WebPage">
+      <a href="/business-growth-services" property="url">
+        <span property="name">Assisted Services</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/business-resources" property="url">
+        <span property="name">DIY Business Kit</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/web-development-services" property="url">
+        <span property="name">Web Development</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/seo-audit" property="url">
+        <span property="name">SEO Audit</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/tools" property="url">
+        <span property="name">Tools Directory</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/digital-assets" property="url">
+        <span property="name">Digital Assets</span>
+      </a>
+    </li>
+    <li typeof="WebPage">
+      <a href="/recommended" property="url">
+        <span property="name">Recommended</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+
       
     </div>
     

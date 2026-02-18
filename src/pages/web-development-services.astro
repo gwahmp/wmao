@@ -16,14 +16,43 @@ const frontmatter = {
 
 <LandingLayout frontmatter={frontmatter}>
 
-  <section class="col-2">
+  <section  itemscope itemtype="https://schema.org/Service" class="col-2">
       <div class="col">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4 text-gray-800">
+        <h1  itemprop="name"  class="text-3xl md:text-5xl font-bold mb-4 text-gray-800">
           Web Development & Managed Website Services in Chennai
         </h1>
-        <p class="text-gray-600 pb-3">
+        <p itemprop="description" class="text-gray-600 pb-3">
           Build your online presence with professional WordPress or custom static websites. Choose a one-time website setup or our yearly managed website plan with hosting, domain, and maintenance included.
         </p>
+
+        
+        <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+          <meta itemprop="name" content="Wikimint" />
+        </div>
+        <meta itemprop="sku" content="WEB-DEVELOPMENT-SERVICES" />
+        <div class="block md:flex gap-4 text-center mb-3">
+        
+        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          From <meta itemprop="priceCurrency" content="USD">$</meta><meta itemprop="price" content="27">27</meta>
+          (₹2,500) onwards
+          <meta itemprop="priceValidUntil" content="2026-12-31" />
+          <link itemprop="availability" href="https://schema.org/InStock" />
+          
+          <meta itemprop="url" content="/web-development-services" />
+        </div>
+        
+        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating" class="star-container" aria-label="Rating: 4.8 out of 5 stars based on 32 reviews">
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star partial">★</span>
+          <span itemprop="ratingValue" class="rating-number">4.8</span>of 5<meta itemprop="reviewCount" content="32"></meta>
+        </div>
+        </div>
+
+
+
         <span data-link="https://wa.me/919342026754?text=Web%20Development%20Reg." class="btn">
           Get Free Consultation
         </span>
@@ -571,12 +600,37 @@ const frontmatter = {
     </div>
   </section>
   
-  <section class="bg-gradient-to-br from-blue-50 via-green-50 to-amber-100 pb-16 px-4 border border-gray-300 text-center">
-    <h2 class="text-gray text-2xl md:text-5xl font-medium mb-4">Ready to Build Your Dream Website?</h2>
-    <p class="text-gray/90 pb-5">Let’s create a professional and high-performing website for your business today.</p>
-    <span data-link="https://wa.me/919342026754?text=Web%20Development%20Reg."  class="btn">
-      Request a Quote
-    </span>
-  </section>
+
+
+  
+  <section
+  class="bg-gradient-to-br from-blue-50 via-green-50 to-amber-100 pb-16 px-4 border border-gray-300 text-center"
+  itemscope
+  itemtype="https://schema.org/ContactAction">
+  <div itemprop="potentialAction" itemscope itemtype="https://schema.org/ContactAction">
+    <meta itemprop="actionStatus" content="https://schema.org/PotentialActionStatus" />
+
+    <h2 itemprop="name" class="text-gray text-2xl md:text-5xl font-medium mb-4">
+      Ready to Build Your Dream Website?
+    </h2>
+
+    <p itemprop="description" class="text-gray/90 pb-5">
+      Let’s create a professional and high-performing website for your business today.
+    </p>
+
+    <div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+      <meta itemprop="urlTemplate" content="https://wa.me/919342026754?text=Web%20Development%20Reg." />
+      <meta itemprop="actionPlatform" content="http://schema.org/DesktopWebPlatform" />
+      <meta itemprop="actionPlatform" content="http://schema.org/MobileWebPlatform" />
+      
+      <a 
+        href="https://wa.me/919342026754?text=Web%20Development%20Reg." 
+        class="btn">
+        Request a Quote
+      </a>
+    </div>
+  </div>
+
+</section>
   
 </LandingLayout>

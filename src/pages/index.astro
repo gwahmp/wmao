@@ -100,8 +100,8 @@ const currentUrl = Astro.url.href; // full URL of the current page
   <section class="col-2">
     <div class="col">
       <h1><span class="font-normal">Building Smarter Digital Growth</span><br/>
-        Web Development, Marketing and Business Solutions</h1>
-      <p class="text-lg opacity-80">  Whether you want a powerful website, better online reach, or ready-to-use business tools, you’re in the right place. Wikimint helps you with web development, SEO, digital marketing, and productivity toolkits designed for modern businesses.
+        Assisted Business Solutions and DIY Growth Resources</h1>
+      <p class="text-lg opacity-80">Wikimint helps you with web development, SEO, digital marketing, and productivity toolkits designed for modern businesses. Whether you want a powerful website, better online reach, or ready-to-use business tools, you’re in the right place.
       </p>
       <form action="/search" method="get">
         <input name="q"
@@ -119,7 +119,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
   <section id="services" class="my-12 hr">
     <h2>
       Our Core Services
-    </h2><p class="mb-6">  We help businesses grow online with clear strategy and real results.  
+    </h2><p class="mb-6">We help businesses grow online with clear strategy and real results.  
       Our services focus on website health, performance, and user experience.  
       Each solution is simple, effective, and growth driven. Get clear guidance, real use cases, and practical systems that support daily operations and long-term growth. Visit <a href="/sitemap">sitemap here</a> to explore all available resources.</p>
   
@@ -356,6 +356,54 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
     </div>
   </div>
+</section>
+
+<section
+class="bg-gradient-to-br from-blue-50 via-green-50 to-amber-100 pt-12 pb-16 px-4 sm:px-20 border border-gray-300 text-center"
+itemscope
+itemtype="https://schema.org/ContactAction">
+<div itemprop="potentialAction" itemscope itemtype="https://schema.org/ContactAction">
+  <meta itemprop="actionStatus" content="https://schema.org/PotentialActionStatus" />
+
+  <h2 itemprop="name" class="text-gray text-2xl md:text-5xl font-medium mb-10">
+    Ready to Grow Your Business Online?
+  </h2>
+
+  <p itemprop="description" class="text-gray/90 pb-5">
+    Build a strong online presence with services and tools that support your daily operations and long-term goals. Choose the path that fits your business and start moving forward today.
+  </p>
+
+ 
+
+  <div class="mt-6 flex flex-col md:flex-row justify-center items-center md:space-x-4 space-y-3 md:space-y-0">
+
+    <div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+      <meta itemprop="urlTemplate" content="https://www.wikimint.com/business-growth-services" />
+      <meta itemprop="actionPlatform" content="http://schema.org/DesktopWebPlatform" />
+      <meta itemprop="actionPlatform" content="http://schema.org/MobileWebPlatform" />
+       <a
+      href="/business-growth-services" 
+      class="btn-ol"
+    >    Assisted Business Services
+    </a>
+  </div>
+
+  <div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+    <meta itemprop="urlTemplate" content="https://www.wikimint.com/business-resources" />
+    <meta itemprop="actionPlatform" content="http://schema.org/DesktopWebPlatform" />
+    <meta itemprop="actionPlatform" content="http://schema.org/MobileWebPlatform" />
+  <a
+  href="/business-resources" 
+  class="btn"
+  >  DIY Business Kit
+</a>
+</div>
+
+  </div>
+
+
+</div>
+
 </section>
 
 </BaseLayout>
