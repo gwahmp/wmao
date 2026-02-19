@@ -107,7 +107,6 @@ const seoDescription = truncate(description, 180);
   )}
 
 
-<link rel="stylesheet" href="/assets/css/klaro.min.css"/>
 <script is:inline src="/assets/lib/klaro.min.js"></script>
 <script>
   window.klaroConfig = {
@@ -116,23 +115,32 @@ const seoDescription = truncate(description, 180);
     privacyPolicy: '/legal#privacy',
     appName: 'Wikimint',
     mustConsent: true,
-  
-    apps: [
+    noticeAsModal: false,  
+  acceptAll: true,
+    services: [
       {
         name: 'googleAnalytics',
         title: 'Google Analytics',
         purposes: ['analytics'],
-        required: false,
+        required: true,
       },
       {
         name: 'googleAdsense',
         title: 'Google AdSense',
         purposes: ['ads'],
-        required: false,
+        required: true,
       }
     ]
   };
   </script>
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof klaro !== "undefined") {
+        klaro.setup(window.klaroConfig);
+      }
+    });
+    </script>
+    
 <script>
   document.addEventListener("klaro-consent", function(event) {
   
@@ -176,5 +184,7 @@ const seoDescription = truncate(description, 180);
       <slot />  <!-- page content will render here -->
     </main>
     <Footer />
+    <link rel="stylesheet" href="/assets/css/klaro.min.css"/>
+
   </body>
 </html>

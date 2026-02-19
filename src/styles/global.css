@@ -360,3 +360,10 @@ margin-bottom:20ox;
   font-weight: bold;
   color: #444;
 }
+
+.klaro .cookie-modal .cm-modal.cm-klaro{
+  background:#ffffff ! important;
+} 
+.klaro .cookie-modal .cm-modal .cm-footer-buttons{
+  justify-content:right ! important;
+}
