@@ -70,6 +70,19 @@ const seoDescription = truncate(description, 180);
 <slot name="head" />
 <meta name="generator" content="Ghost" />
 
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+  </script>
+  
+
 {import.meta.env.PROD && (
   <!-- Google Tag Manager -->
   <script is:inline>
@@ -94,6 +107,60 @@ const seoDescription = truncate(description, 180);
   )}
 
 
+<link rel="stylesheet" href="/assets/css/klaro.min.css"/>
+<script is:inline src="/assets/lib/klaro.min.js"></script>
+<script>
+  window.klaroConfig = {
+    version: 1,
+    elementID: 'klaro',
+    privacyPolicy: '/legal#privacy',
+    appName: 'Wikimint',
+    mustConsent: true,
+  
+    apps: [
+      {
+        name: 'googleAnalytics',
+        title: 'Google Analytics',
+        purposes: ['analytics'],
+        required: false,
+      },
+      {
+        name: 'googleAdsense',
+        title: 'Google AdSense',
+        purposes: ['ads'],
+        required: false,
+      }
+    ]
+  };
+  </script>
+<script>
+  document.addEventListener("klaro-consent", function(event) {
+  
+    if (event.detail.consents.googleAnalytics) {
+      dataLayer.push({
+        event: "analytics_consent_granted"
+      });
+  
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
+    }
+  
+    if (event.detail.consents.googleAdsense) {
+      dataLayer.push({
+        event: "ads_consent_granted"
+      });
+  
+      gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted'
+      });
+    }
+  
+  });
+  </script>
+    
 
 <script>
   if ("serviceWorker" in navigator) {
