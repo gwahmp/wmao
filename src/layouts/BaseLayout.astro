@@ -81,14 +81,14 @@ const seoDescription = truncate(description, 180);
    </script>
    <!-- End Google Tag Manager -->
 
-   {/* ✅ Load AdSense only if disableAds is NOT true */}
-   {!disableAds && (
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784071102690039"
-        crossorigin="anonymous">
-      </script>
-    )}
+{/* ✅ Load AdSense only if disableAds is NOT true */}
+{!disableAds && (
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784071102690039"
+    crossOrigin="anonymous"
+  />
+)}
 
    </>
   )}
