@@ -22,26 +22,27 @@ const posts = await getCollection("posts");
 
       </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 link">
         <div>
           <h2 class="text-xl mt-6 mb-0">Static Pages</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6">
             <ul class="mt-0">
-              <li><a href="https://www.wikimint.com" class="text-wmblue hover:underline">Home</a></li>
-              <li><a href="/about" class="text-wmblue hover:underline">About</a></li>
-              <li><a href="/contact" class="text-wmblue hover:underline">Contact</a></li>
-              <li><a href="/legal#terms" class="text-wmblue hover:underline">Terms</a></li>
-              <li><a href="/legal#privacy" class="text-wmblue hover:underline">Privacy</a></li>
-              <li><a href="/tools" class="text-wmblue hover:underline">Tools Directory</a></li>
-              <li><a href="/seo-audit" class="text-wmblue hover:underline">SEO Audit</a></li>
+              <li><a href="https://www.wikimint.com">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/legal#terms">Terms</a></li>
+              <li><a href="/legal#privacy">Privacy</a></li>
+              <li><a href="/tools">Tools Directory</a></li>
+              <li><a href="/seo-audit">SEO Audit</a></li>
             </ul>
             <ul class="mt-0">
-              <li><a href="/digital-assets" class="text-wmblue hover:underline">Digital Assets</a></li>
-              <li><a href="/web-development-services" class="text-wmblue hover:underline">Web Development</a></li>
-              <li><a href="/recommended" class="text-wmblue hover:underline">Recommended</a></li>
-              <li><a href="/developer-innovation-hub" class="text-wmblue hover:underline">Developer hub</a></li>
-              <li><a href="/write-for-us" class="text-wmblue hover:underline">Write for us</a></li>
-              <li><a href="/share-your-story" class="text-wmblue hover:underline">Share your story</a></li>
+              <li><a href="/website-security-audit">Security Audit</a></li>
+              <li><a href="/digital-assets">Digital Assets</a></li>
+              <li><a href="/web-development-services">Website Dev.</a></li>
+              <li><a href="/recommended">Recommended</a></li>
+              <li><a href="/developer-innovation-hub">Developer hub</a></li>
+              <li><a href="/write-for-us">Write for us</a></li>
+              <li><a href="/share-your-story">Share your story</a></li>
             </ul>
           </div>
 
@@ -51,18 +52,18 @@ const posts = await getCollection("posts");
           <h2 class="text-xl mt-6 mb-2">Post Categories</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6">
             <ul>
-              <li><a href="/business" class="text-wmblue hover:underline">Business</a></li>
-              <li><a href="/blockchain" class="text-wmblue hover:underline">Blockchain</a></li>
-              <li><a href="/economy" class="text-wmblue hover:underline">Economy</a></li>
-              <li><a href="/finance" class="text-wmblue hover:underline">Finance</a></li>
-              <li><a href="/general" class="text-wmblue hover:underline">General</a></li>
+              <li><a href="/business">Business</a></li>
+              <li><a href="/blockchain">Blockchain</a></li>
+              <li><a href="/economy">Economy</a></li>
+              <li><a href="/finance">Finance</a></li>
+              <li><a href="/general">General</a></li>
             </ul>
             <ul>
-              <li><a href="/internet" class="text-wmblue hover:underline">Internet</a></li>
-              <li><a href="/marketing" class="text-wmblue hover:underline">Marketing</a></li>
-              <li><a href="/money" class="text-wmblue hover:underline">Money</a></li>
-              <li><a href="/skills" class="text-wmblue hover:underline">Skills</a></li>
-              <li><a href="/technology" class="text-wmblue hover:underline">Technology</a></li>
+              <li><a href="/internet">Internet</a></li>
+              <li><a href="/marketing">Marketing</a></li>
+              <li><a href="/money">Money</a></li>
+              <li><a href="/skills">Skills</a></li>
+              <li><a href="/technology">Technology</a></li>
             </ul>
           </div>
         </div>
@@ -71,7 +72,7 @@ const posts = await getCollection("posts");
 
 
       
-<div>
+<div class="link">
   <h2 class="font-semibold mb-4">Free & Open-source Tools Directory</h2>
   <nav>
     <ol class="grid grid-cols-1 md:grid-cols-2 space-y-2">
@@ -89,7 +90,7 @@ const posts = await getCollection("posts");
 
 
       <h3 class="text-xl mb-2 pb-3 border-b border-gray-500">Blog Posts</h3>
-      <ol class="pl-6 space-y-2">
+      <ol class="pl-6 space-y-2 link">
         {posts
           .sort(
             (a, b) =>
@@ -98,7 +99,7 @@ const posts = await getCollection("posts");
           )
           .map((post) => (
             <li>
-              <a href={`/${post.slug}`} class="text-wmblue hover:underline">
+              <a href={`/${post.slug}`}>
                 {post.data.title}
               </a>
             </li>

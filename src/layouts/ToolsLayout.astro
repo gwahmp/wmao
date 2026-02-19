@@ -33,7 +33,7 @@ const { title, description, breadcrumbs } = Astro.props as Props;
     <aside class="border-l pl-6">
       <h3 class="font-semibold mb-4">All Tools Categories</h3>
       <nav>
-        <ul>
+        <ul class="link space-y-2">
           {TOOL_CATEGORIES.map(cat => (
             <li>
               <a href={`/tools/${cat.slug}`}>
