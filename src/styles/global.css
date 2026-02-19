@@ -13,11 +13,11 @@
     @apply opacity-70;
   }
   .btn{
-    @apply block md:inline text-center px-10 py-2 bg-wmblue border border-wmblue text-white shadow-md 
+    @apply block md:inline-block text-center px-10 py-2 my-1 bg-wmblue border border-wmblue text-white shadow-md 
     hover:bg-gray-500 hover:shadow-lg hover:border-gray-500 transition-all duration-200;
   }
   .btn-ol{
-    @apply block md:inline text-center px-10 py-2 border border-wmblue text-wmblue 
+    @apply block md:inline-block text-center px-10 py-2 my-1 border border-wmblue text-wmblue 
     hover:bg-gray-500 hover:text-white hover:shadow-md hover:border-gray-500 transition-all duration-200
   }
   .bluebox, .ull-learn {

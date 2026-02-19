@@ -1,0 +1,551 @@
+---
+import LandingLayout from "../layouts/LandingLayout.astro";
+const version = Date.now();
+
+const frontmatter = {
+  title: "Website Security Audit Services, Testing & Manual Vulnerability Assessment – Wikimint",
+  description: "Professional website security audit services for businesses worldwide. OWASP Top 10 testing, manual validation, SQL injection testing, API security checks, and detailed remediation report. Flat fee pricing.",
+  // canonical: "/about",
+  image: "/assets/images/others/web-development-services.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+  disableAds: true,
+};
+
+---
+
+<LandingLayout frontmatter={frontmatter}>
+
+  <section  itemscope itemtype="https://schema.org/Service" class="col-2">
+      <div class="col">
+        <h1  itemprop="name"  class="text-3xl md:text-5xl font-bold mb-4 text-gray-800">
+          Professionl Website Security Audit Services
+        </h1>
+        <p itemprop="description" class="text-gray-600 pb-3">
+          Comprehensive website security audit services, each assessment follows structured methodologies aligned with OWASP guidelines and includes both automated scanning and manual vulnerability validation. Identify real security risks, document evidence clearly, and provide practical remediation guidance, reduced exposure to cyber threats.
+        </p>
+
+        
+        <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+          <meta itemprop="name" content="Wikimint" />
+        </div>
+        <meta itemprop="sku" content="WEB-SECURITY-AUDIT" />
+        <div class="block md:flex gap-4 text-center mb-3">
+        
+        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+           <meta itemprop="priceCurrency" content="USD">$</meta><meta itemprop="price" content="135">135</meta>
+          (₹12,500) Flat fee
+          <meta itemprop="priceValidUntil" content="2026-12-31" />
+          <link itemprop="availability" href="https://schema.org/InStock" />
+          
+          <meta itemprop="url" content="/web-development-services" />
+        </div>
+        
+        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating" class="star-container" aria-label="Rating: 4.8 out of 5 stars based on 32 reviews">
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star partial">★</span>
+          <span itemprop="ratingValue" class="rating-number">4.8</span>of 5<meta itemprop="reviewCount" content="32"></meta>
+        </div>
+        </div>
+
+
+
+        <span data-link="https://wa.me/919342026754?text=Web%20Security%20Audit%20Reg." class="btn">
+          Request Security Assessment
+        </span>
+      </div>
+      <div class="col">
+        <img  loading="lazy" src="/assets/images/blog/website-security-audit-services.webp" alt="Website security audit process with vulnerability assessment tools and OWASP testing methodology" title="OWASP-Based Website Security Audit by Wikimint" class="w-full" />
+      </div>
+  </section>
+  
+
+  
+  <section class="hr pt-0 bg-white">
+    <h2>
+      Why Website Security Audits Are Essential
+    </h2>
+    <div class="container mx-auto">
+      <div class="col-2">
+        <div class="col">
+          <div class="sticky top-20">
+          
+
+            <h3>
+              Importance of Website Security Audit
+            </h3>
+            <p>
+              Security weaknesses are often invisible until exploited. A professional audit helps you:
+            </p>
+
+            <ul class="list-disc pb-5 pl-5 text-gray-600">
+              <li>Identify critical vulnerabilities before attackers do</li>
+              <li>Prevent data breaches and compliance violations</li>
+              <li>Strengthen authentication and access controls</li>
+              <li>Improve trust with customers and stakeholders</li>
+              <li>Reduce financial and reputational risk</li>
+            </ul>
+
+          </div>
+        </div>
+      
+      
+        <div class="col numbered-h4">
+          <h3>Our Security Audit Scope</h3>
+
+<p><strong>What Is Included in the Audit?</strong> Our flat-fee website security audit includes:</p>
+
+<div class="graybox mb-5">
+
+          <h4>OWASP Top 10 Risk Assessment</h4>
+          <p>Testing aligned with:</p>
+          <ol>
+            <li>Injection vulnerabilities</li>
+            <li>Broken authentication</li>
+            <li>Broken access control</li>
+            <li>Security misconfiguration</li>
+            <li>Cross-site scripting (XSS)</li>
+            <li>Cryptographic failures</li>
+            <li>Insecure design</li>
+            <li>Logging and monitoring weaknesses</li>
+          </ol>
+        </div>
+         
+        <div class="graybox mb-5">
+          <h4>Automated Vulnerability Scanning</h4>
+          <p>We use industry-recognized tools including:</p>
+          <ol>
+            <li>OWASP ZAP</li>
+            <li>sqlmap</li>
+            <li>Nikto</li>
+            <li>Amass</li>
+            <li>Dirsearch / Wfuzz</li>
+          </ol>
+        </div>
+
+        <div class="graybox mb-5">
+
+          <h4>Manual Security Testing</h4>
+          <p>Automated tools alone are not sufficient. We manually verify findings and test for:</p>
+          <ol>
+            <li>Business logic flaws</li>
+            <li>IDOR (Insecure Direct Object References)</li>
+            <li>Parameter tampering</li>
+            <li>Privilege escalation</li>
+            <li>Session management weaknesses</li>
+            <li>File upload vulnerabilities</li>
+            <li>Rate limiting issues</li>
+          </ol>
+        </div>
+
+        <div class="graybox mb-5">
+
+          <h4>Authenticated Testing (1 Role)</h4>
+          <p>If login access is provided, we test:</p>
+          <ol>
+            <li>Access control enforcement</li>
+            <li>Role separation</li>
+            <li>Sensitive data exposure</li>
+            <li>Password policy strength</li>
+          </ol>
+        </div>
+
+        <div class="graybox mb-5">
+          <h4>Server & Infrastructure Checks</h4>
+          <p>Using Nikto and manual inspection:</p>
+          <ol>
+            <li>Security headers review</li>
+            <li>SSL/TLS configuration</li>
+            <li>Directory exposure</li>
+            <li>Outdated server components</li>
+          </ol>
+        </div>
+
+
+      </div>  
+
+
+    </div>
+  </section>
+  
+
+
+  <div class="hr mx-auto">
+    <h2>Why Choose Wikimint for Security Audits?</h2>
+    <p>
+      This service gives real answers, not confusing charts. You get two full audits to confirm what changed. Every report is easy to follow and focused on growth.
+    </p>
+  </div>
+
+  <section  class="col-2">
+    <div class="col">
+ 
+<h3>What You Receive</h3>
+      <ul class="list-disc pl-5 text-gray-600">
+        <li>Detailed PDF security audit report</li>
+        <li>Executive risk summary</li>
+        <li>Evidence screenshots</li>
+        <li>Clear remediation instructions</li>
+        <li>Vulnerability severity breakdown</li>
+        <li>One complimentary re-test within 14 days</li>
+      </ul>
+
+    </div>
+  
+    <!-- Author Content -->
+    <div class="col">
+     
+        <h3>Deliverbles</h3>
+      <ul class="list-disc pl-5 text-gray-600">
+<li>Alignment with OWASP Testing Guidelines</li>
+<li>Manual verification of every major finding</li>
+<li>Clear documentation with remediation steps</li>
+<li>Confidential handling of all client data</li>
+<li>Professional reporting format suitable for stakeholders</li>
+
+      </ul>
+
+    </div>
+  </section>
+
+<section class="redbox py-0 my-10">
+  <p class="text-xl">Confidentiality & Legal Compliance</h2>
+
+  <p>All audits are conducted within agreed scope and written authorization. Findings remain confidential and are shared only with authorized client representatives. Testing is performed within approved boundaries to prevent service disruption.</p>
+</section>
+
+
+  <section id="faq" class="hr pt-0 pb-20 bg-white">
+    <h2>
+      Frequently Asked Questions
+    </h2>
+    <div class="container mx-auto">
+      <div class="grid md:grid-cols-[2fr_4fr] gap-20 text-left">
+        <div>
+          <div class="sticky top-20">
+            <img  loading="lazy" src="/assets/images/others/start-affordable-wed-design-services.webp" alt="Professional website design service offering fast, clean, SEO-friendly layouts with free consultation and personalized quote to build your ideal website" width="150" height="150" class="mb-0 " />
+
+            <h3>
+              Ready for Security Audit?
+            </h3>
+            <p>
+              Manual + Automated OWASP-Based Testing to Identify Critical Vulnerabilities Before Hackers Do.
+            </p>
+            <span data-link="https://wa.me/919342026754?text=Web%20Security%20Audit%20Reg." 
+               class="btn">
+               Get My Website Audited
+          </span>
+          </div>
+        </div>
+        <div>
+
+
+          
+
+
+          <div class="acc space-y-4">
+
+            <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q1" checked>
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q1" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">What is a website security audit?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p  itemprop="text">
+                      A website security audit is a structured assessment designed to identify vulnerabilities, misconfigurations, and weaknesses that could be exploited.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q2">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q2" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">How long does the audit take?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Typically 2–3 business days depending on website size.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q3">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q3" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Do you test login-protected areas?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Yes, if credentials are provided within agreed scope.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q4">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q4" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Is this automated or manual testing?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Both. Automated scanning plus manual validation.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q5">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q5" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Do you follow any security standard?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Testing aligns with OWASP Top 10 and OWASP Testing Guide principles.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q6">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q6" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Will my website experience downtime?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      No destructive testing is performed. Testing is controlled and non-disruptive.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q7">
+            <label for="q7" class="acc-title">
+              <h3 class="text-lg">Do you exploit vulnerabilities fully?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  No. Proof-of-concept testing is limited to verification without causing damage.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q8">
+            <label for="q8" class="acc-title">
+              <h3 class="text-lg">Can you test staging environments?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes, staging environments are recommended.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q9">
+            <label for="q9" class="acc-title">
+              <h3 class="text-lg">Do you provide remediation help?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes. The report includes practical remediation guidance.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q10">
+            <label for="q10" class="acc-title">
+              <h3 class="text-lg">Is re-testing included?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes, one re-test within 14 days after fixes.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q11">
+            <label for="q11" class="acc-title">
+              <h3 class="text-lg">What if my site is large?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Custom quote will be provided for extended scope.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q12">
+            <label for="q12" class="acc-title">
+              <h3 class="text-lg">Do you test APIs?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Basic API endpoint testing is included if within scope.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q13">
+            <label for="q13" class="acc-title">
+              <h3 class="text-lg">Do you test mobile apps?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+No, This service covers web applications only.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q14">
+            <label for="q14" class="acc-title">
+              <h3 class="text-lg">Is this a penetration test?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  This is a structured security assessment with manual validation, not a full red-team engagement.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q15">
+            <label for="q15" class="acc-title">
+              <h3 class="text-lg">Do you provide compliance certification?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  No formal certification is issued, but detailed reports support compliance efforts.
+                </p>
+              </div>
+          </div>
+
+          
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q16">
+            <label for="q16" class="acc-title">
+              <h3 class="text-lg">Is my data confidential?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes. All client data and findings remain confidential.
+                </p>
+              </div>
+          </div>
+
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q17">
+            <label for="q17" class="acc-title">
+              <h3 class="text-lg">Do you store my credentials?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Credentials are used only during testing and securely deleted afterward.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q18">
+            <label for="q18" class="acc-title">
+              <h3 class="text-lg">Can you fix the vulnerabilities?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Fixing services are available separately under custom quote.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q19">
+            <label for="q19" class="acc-title">
+              <h3 class="text-lg">Do you offer recurring security monitoring?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes, ongoing security services can be discussed.
+                </p>
+              </div>
+          </div>
+
+          
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q20">
+            <label for="q20" class="acc-title">
+              <h3 class="text-lg">How do I get started with website security audit?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Contact Wikimint, confirm scope, sign authorization, and schedule testing.
+                </p>
+              </div>
+          </div>
+
+
+          </div>
+
+        </div>
+      </div>  
+
+
+    </div>
+  </section>
+  
+
+
+  
+  <section
+  class="bg-gradient-to-br from-blue-50 via-green-50 to-amber-100 pb-16 px-4 border border-gray-300 text-center"
+  itemscope
+  itemtype="https://schema.org/ContactAction">
+  <div itemprop="potentialAction" itemscope itemtype="https://schema.org/ContactAction">
+    <meta itemprop="actionStatus" content="https://schema.org/PotentialActionStatus" />
+
+    <h2 itemprop="name">
+      Secure Your Website Before Attackers Test It
+    </h2>
+
+    <p itemprop="description" class="pb-5">
+      Cyber threats do not wait. A proactive security assessment helps reduce risk exposure and strengthens your digital presence. Flat Fee. Clear Reporting. Actionable Results.
+    </p>
+
+    <div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+      <meta itemprop="urlTemplate" content="https://wa.me/919342026754?text=Web%20Security%20Audit%20Reg." />
+      <meta itemprop="actionPlatform" content="http://schema.org/DesktopWebPlatform" />
+      <meta itemprop="actionPlatform" content="http://schema.org/MobileWebPlatform" />
+      
+      <a 
+        href="https://wa.me/919342026754?text=Web%20Security%20Audit%20Reg." 
+        class="btn">
+        Check My Website Security
+      </a>
+    </div>
+  </div>
+
+</section>
+  
+</LandingLayout>

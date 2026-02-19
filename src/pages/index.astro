@@ -116,43 +116,255 @@ const currentUrl = Astro.url.href; // full URL of the current page
     </div>
   </section>
 
-  <section id="services" class="my-12 hr">
+
+  <section class="hr pt-0 bg-white">
     <h2>
-      Our Core Services
-    </h2><p class="mb-6">We help businesses grow online with clear strategy and real results.  
-      Our services focus on website health, performance, and user experience.  
-      Each solution is simple, effective, and growth driven. Get clear guidance, real use cases, and practical systems that support daily operations and long-term growth. Visit <a href="/sitemap">sitemap here</a> to explore all available resources.</p>
-  
-    <!-- 4-column responsive cards -->
-    <div class="col-2">
-      <!-- Card 1: Personal finance -->
-      <div class="col">
-        <a href="/seo-audit">
-          <img loading="lazy" src="/assets/images/others/seo-audit-report-website-health-check.webp" alt="Website SEO audit report showing site health, backlinks, keyword data, errors, warnings, technical SEO checks, and performance metrics." title="Website SEO Audit Report" class="w-full" />
-          <h3 class="text-xl font-semibold text-gray-900 my-3">
-            Website SEO Audit
-          </h3>
-          <p class="text-gray-600 leading-relaxed">
-            Manual SEO audit with clear reports, fix guidance, and recheck support
-            to improve site health, rankings, and traffic growth.
-          </p>
-        </a>
+      Transparent, Empowering Business Model
+    </h2>
+
+    <p>
+      At Wikimint, we believe in complete transparency and empowerment. We offer both assisted services for hands-on support and a DIY guided kit for those who prefer to execute independently. Even within our assisted services, we openly share our workflow process, project structure, and the tools we use. This ensures clients not only receive results, but also gain the knowledge and confidence to implement the same strategies themselves in the future.</p>
+
+    <div class="container mx-auto mt-12">
+      <div class="col-2">
+        <div class="col">
+          <div class="sticky top-20">
+          
+
+
+
+              <img  loading="lazy" src="/assets/images/others/web-development-services.webp" alt="Wikimint transparent business model showcasing assisted services and DIY guided digital kit with visible workflow process and tools" title="Wikimint Transparent Assisted Services and DIY Guided Kit Model" class="w-full" />
+
+              <div class="mt-6 flex flex-col md:flex-row  md:space-x-4 space-y-3 md:space-y-0">
+
+                   <a
+                  href="/business-growth-services" 
+                  class="btn"
+                >    Assisted Business Services
+                </a>
+            
+              <a
+              href="/business-resources" 
+              class="btn-ol"
+              >  DIY Business Kit
+            </a>
+            
+              </div>
+
+          </div>
+        </div>
+      
+      
+        <div class="col numbered-h4">
+          <h3>
+            Our Core Products & Services
+          </h3><p class="mb-6">We help businesses grow online with clear strategy and real results.  
+            Our services focus on website health, performance, and user experience.  
+            Each solution is simple, effective, and growth driven. Get clear guidance, real use cases, and practical systems that support daily operations and long-term growth. Visit <a href="/sitemap">sitemap here</a> to explore all available resources.</p>
+
+
+            <div class="collection-list space-y-6"
+         itemscope
+         itemtype="https://schema.org/ItemList">
+
+  <meta itemprop="name" content="Wikimint Products and Services Collection" />
+
+  <!-- 1. Web Development Services -->
+  <div  class="graybox" itemprop="itemListElement"
+       itemscope
+       itemtype="https://schema.org/ListItem">
+
+    <meta itemprop="position" content="1" />
+
+    <div  itemprop="item"
+         itemscope
+         itemtype="https://schema.org/Service">
+
+      <h4 itemprop="name">Web Development Services</h4>
+
+      <p itemprop="description">
+        Custom, high-performance websites built for speed and scalability.
+        Transparent workflow and modern development stack.
+      </p>
+
+      <a href="/web-development-services"
+         itemprop="url"
+         class="text-wmblue">Explore Web Development Services</a>
+
+      <div itemprop="offers"
+           itemscope
+           itemtype="https://schema.org/Offer">
+        <meta itemprop="price" content="27" />
+        <meta itemprop="priceCurrency" content="USD" />
+        <meta itemprop="availability"
+              content="https://schema.org/InStock" />
       </div>
-  
-      <!-- Card 2: Business Growth -->
-      <div class="col">
-        <a href="/web-development-services">
-          <img  loading="lazy" src="/assets/images/others/web-development-services.webp" alt="Professional Web Development Services" class="w-full" />
-          <h3 class="text-xl font-semibold text-gray-900 my-3">
-            Web Development Services
-          </h3>
-          <p class="text-gray-600 leading-relaxed">
-            Fast, mobile-friendly websites with clean design and secure structure
-            built to support business goals and online growth.
-          </p>
-        </a>
+
+      <div itemprop="provider"
+           itemscope
+           itemtype="https://schema.org/Organization">
+        <meta itemprop="name" content="Wikimint" />
       </div>
-  
+
+    </div>
+  </div>
+
+  <!-- 2. Website Security Audit -->
+  <div  class="graybox" itemprop="itemListElement"
+       itemscope
+       itemtype="https://schema.org/ListItem">
+
+    <meta itemprop="position" content="2" />
+
+    <div itemprop="item"
+         itemscope
+         itemtype="https://schema.org/Service">
+
+      <h4 itemprop="name">Website Security Audit</h4>
+
+      <p itemprop="description">
+        Comprehensive vulnerability analysis and malware detection.
+        Actionable security improvement roadmap.
+      </p>
+
+      <a href="/website-security-audit"
+         itemprop="url"
+         class="text-wmblue">Explore Website Security Audit</a>
+
+      <div itemprop="offers"
+           itemscope
+           itemtype="https://schema.org/Offer">
+        <meta itemprop="price" content="125" />
+        <meta itemprop="priceCurrency" content="USD" />
+        <meta itemprop="availability"
+              content="https://schema.org/InStock" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 3. Website SEO Audit -->
+  <div class="graybox"  itemprop="itemListElement"
+       itemscope
+       itemtype="https://schema.org/ListItem">
+
+    <meta itemprop="position" content="3" />
+
+    <div itemprop="item"
+         itemscope
+         itemtype="https://schema.org/Service">
+
+      <h4 itemprop="name">Website SEO Audit</h4>
+
+      <p itemprop="description">
+        In-depth technical and on-page SEO analysis.
+        Prioritized recommendations to improve rankings.
+      </p>
+
+      <a href="/seo-audit"
+         itemprop="url"
+         class="text-wmblue">Explore SEO Audit Sevices</a>
+
+      <div itemprop="offers"
+           itemscope
+           itemtype="https://schema.org/Offer">
+        <meta itemprop="price" content="25" />
+        <meta itemprop="priceCurrency" content="USD" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. Digital Assets Toolkit -->
+  <div class="graybox"  itemprop="itemListElement"
+       itemscope
+       itemtype="https://schema.org/ListItem">
+
+    <meta itemprop="position" content="4" />
+
+    <div itemprop="item"
+         itemscope
+         itemtype="https://schema.org/Product">
+
+      <h4 itemprop="name">Digital Assets Toolkit</h4>
+
+      <p itemprop="description">
+        Ready-to-use digital templates and business frameworks.
+        Built to accelerate execution and growth.
+      </p>
+
+      <a href="/digital-assets"
+         itemprop="url"
+         class="text-wmblue">Explore Digital Assets</a>
+
+      <meta itemprop="sku" content="DIGITAL-ASSETS-TOOLKIT" />
+
+      <div itemprop="brand"
+           itemscope
+           itemtype="https://schema.org/Brand">
+        <meta itemprop="name" content="Wikimint" />
+      </div>
+
+      <div itemprop="offers"
+           itemscope
+           itemtype="https://schema.org/Offer">
+        <meta itemprop="price" content="1.35" />
+        <meta itemprop="priceCurrency" content="USD" />
+        <meta itemprop="availability"
+              content="https://schema.org/InStock" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 5. Marketing Templates -->
+  <div  class="graybox" itemprop="itemListElement"
+       itemscope
+       itemtype="https://schema.org/ListItem">
+
+    <meta itemprop="position" content="5" />
+
+    <div itemprop="item"
+         itemscope
+         itemtype="https://schema.org/Product">
+
+      <h4 itemprop="name">Marketing Templates</h4>
+
+      <p itemprop="description">
+        Conversion-focused templates for campaigns and branding.
+        Save time while maintaining professional consistency.
+      </p>
+
+      <a href="/marketing-templates"
+         itemprop="url"
+         class="text-wmblue">Explore Marketing Templates</a>
+
+      <meta itemprop="sku" content="MARKETING-TEMPLATES" />
+
+      <div itemprop="brand"
+           itemscope
+           itemtype="https://schema.org/Brand">
+        <meta itemprop="name" content="Wikimint" />
+      </div>
+
+      <div itemprop="offers"
+           itemscope
+           itemtype="https://schema.org/Offer">
+        <meta itemprop="price" content="1.35" />
+        <meta itemprop="priceCurrency" content="USD" />
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+            
+
+
+
+      </div>  
     </div>
   </section>
 
