@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   let lastScrollTop = 0;
-  const headerMenu = document.querySelector(".header");
+  const headerMenu = document.querySelector("header");
 
   // Hide/Show header on scroll
   window.addEventListener("scroll", function () {

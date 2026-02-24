@@ -1,16 +1,15 @@
 ---
 const navLinks = [
   { name: "Assisted Services", href: "/business-growth-services" },
-  { name: "DYI Business Kit", href: "/business-resources" },
+  { name: "DIY Business Kit", href: "/business-resources" },
   { name: "Blog", href: "/blog" },
   { name: "About Us", href: "/about" },
 ];
 ---
 
-<header class="bg-white shadow sticky top-0 z-50 header">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16 items-center">
-      <!-- Left: Logo + Nav -->
+<header>
+    <div class="col-2 px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+      {/* Left: Logo + Nav */}
       <div class="flex items-center space-x-8">
         <a href="https://www.wikimint.com">
           <img  loading="lazy" alt="Master Personal Finance, Business Growth, Digital Marketing" data-height="46" data-width="200" width="165" height="38" src="/assets/images/wikimint-logo-200x46.webp">
@@ -25,9 +24,9 @@ const navLinks = [
         </nav>
       </div>
 
-      <!-- Right: Search + Contact -->
+      {/* Right: Search + Contact */}
       <div class="flex items-center space-x-4">
-        <!-- Search -->
+        {/* Search */}
         <div class="relative">
           <button
             aria-label="Search"
@@ -41,7 +40,7 @@ const navLinks = [
 
         </div>
 
-<!-- Contact -->
+{/* Contact */}
 <a
   href="/contact"
   class="btn hidden sm:inline-block "
@@ -52,59 +51,13 @@ const navLinks = [
 
         <button aria-label="Open Menu"
   class="open-canvas p-1 text-gray-700 hover:text-wmblue focus:outline-none border border-wmblue">
-  <!-- Heroicons outline: Bars-3 -->
+  {/* Heroicons outline: Bars-3 */}
 
   <img loading="lazy" src="/assets/svg/burger.svg" alt="Wikimint navigation menu" width="100" height="100" class="icon"/>
 </button>
 
       </div>
     </div>
-  </div>
 </header>
-
-
-<!-- Overlay -->
-<div id="overlay" 
-  class="fixed inset-0 bg-black/50 z-40 hidden"></div>
-
-<!-- Offcanvas -->
-<div id="offcanvas" 
-  class="fixed top-0 right-0 h-full w-100 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300">
-  <!-- Header -->
-  <div class="flex justify-between items-center px-5 py-4 border-b">
-    <span class="text-xl font-semibold my-0 py-0">Menu</span>
-    <button class="close-canvas text-gray-500 hover:text-gray-700 text-3xl leading-none">&times;</button>
-  </div>
-  <!-- Content -->
-  <div class="p-4">
-    <div
-    id="searchBar"
-    class="mb-3 bg-gray-300 border shadow p-1 rounded"
-  >
-  <form action="/search" method="get">
-    <input name="q"
-        type="search"
-        placeholder="Search Wikimint..."
-        class="border px-3 py-2 rounded w-64 focus:outline-none focus:ring focus:ring-wmblue-200"
-      />
-    </form>
-  </div>
-<nav>
-  <ul class="space-y-2">
-    <li><a href="/web-development-services" class="hover:text-gray-500">Web Development</a></li>
-    <li><a href="/seo-audit" class="hover:text-gray-500">SEO Audit</a></li>
-    <li><a href="/tools" class="hover:text-gray-500">Tools Directory</a></li>
-    <li><a href="/digital-assets" class="hover:text-gray-500">Digital Assets</a></li>
-    <li><a href="/recommended" class="hover:text-gray-500">Recommended</a></li>
-    <li><a href="/blog" class="hover:text-gray-500">Blog</a></li>
-    <li><a href="/sitemap" class="hover:text-gray-500">Sitemap</a></li>
-    <li><a href="/about" class="hover:text-gray-500">About</a></li>
-    <li><a href="/contact" class="hover:text-gray-500">Contact</a></li>
-    <li><a href="/legal#terms" class="hover:text-gray-500">Terms</a></li>
-    <li><a href="/legal#privacy" class="hover:text-gray-500">Privacy</a></li>
-  </ul>
-</nav>
-  </div>
-</div>
 
 

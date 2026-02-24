@@ -96,8 +96,8 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
       </script>
   </Fragment>
-  <!-- Hero -->
-  <section class="col-2">
+  {/* Hero */}
+  <section id="hero" class="col-2">
     <div class="col">
       <h1><span class="font-normal">Building Smarter Digital Growth</span><br/>
         Assisted Business Solutions and DIY Growth Resources</h1>
@@ -117,7 +117,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
   </section>
 
 
-  <section class="hr pt-0 bg-white">
+  <section id="services" class="hr pt-0 bg-white">
     <h2>
       Transparent, Empowering Business Model
     </h2>
@@ -168,7 +168,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
   <meta itemprop="name" content="Wikimint Products and Services Collection" />
 
-  <!-- 1. Web Development Services -->
+  {/* 1. Web Development Services */}
   <div  class="graybox" itemprop="itemListElement"
        itemscope
        itemtype="https://schema.org/ListItem">
@@ -184,7 +184,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
           >Explore Web Development Services</a>
   </div>
 
-  <!-- 2. Website Security Audit -->
+  {/* 2. Website Security Audit */}
   <div  class="graybox" itemprop="itemListElement"
        itemscope
        itemtype="https://schema.org/ListItem">
@@ -199,7 +199,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       <a href="/website-security-audit">Explore Website Security Audit</a>
   </div>
 
-  <!-- 3. Website SEO Audit -->
+  {/* 3. Website SEO Audit */}
   <div class="graybox"  itemprop="itemListElement"
        itemscope
        itemtype="https://schema.org/ListItem">
@@ -217,7 +217,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
   </div>
 
-  <!-- 4. Digital Assets Toolkit -->
+  {/* 4. Digital Assets Toolkit */}
   <div class="graybox"  itemprop="itemListElement"
        itemscope
        itemtype="https://schema.org/ListItem">
@@ -234,7 +234,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
          >Explore Digital Assets</a>
   </div>
 
-  <!-- 5. Marketing Templates -->
+  {/* 5. Marketing Templates */}
   <div  class="graybox" itemprop="itemListElement"
        itemscope
        itemtype="https://schema.org/ListItem">
@@ -254,11 +254,6 @@ const currentUrl = Astro.url.href; // full URL of the current page
   </div>
 
 </div>
-
-
-            
-
-
 
       </div>  
     </div>
@@ -559,7 +554,7 @@ Our focus is simple: sustainable visibility, authority, and measurable growth.
 </section>
 
 
-<section
+<section id="cta"
 class="bg-gradient-to-br from-blue-50 via-green-50 to-amber-100 pt-12 pb-16 px-4 sm:px-20 border border-gray-300 text-center"
 itemscope
 itemtype="https://schema.org/ContactAction">
@@ -614,7 +609,7 @@ itemtype="https://schema.org/ContactAction">
     Your Trusted Source for Business Insights and Strategies
   </h2>
 
-  <!-- Feed + Sidebar -->
+  {/* Feed + Sidebar */}
   <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto">
     <div class="col-span-12 md:col-span-7">
    
@@ -640,7 +635,7 @@ itemtype="https://schema.org/ContactAction">
             class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto"
             itemprop="mainEntity" itemscope itemtype="https://schema.org/Article">
           
-          <!-- IMAGE -->
+          {/* IMAGE */}
           <div class="col-span-12 md:col-span-4">
             <img loading="lazy" 
               src={post.data.image
@@ -654,7 +649,7 @@ itemtype="https://schema.org/ContactAction">
             />
           </div>
   
-          <!-- CONTENT -->
+          {/* CONTENT */}
           <div class="col-span-12 md:col-span-8 flex flex-col justify-center">
             <a href={`/${post.slug}`} itemprop="url" class="hover:text-wmblue">
               <h3 class="text-lg md:text-xl font-semibold mb-1 text-black line-clamp-2" itemprop="headline">

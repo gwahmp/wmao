@@ -147,7 +147,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" 
       itemscope itemtype="https://schema.org/BreadcrumbList">
    
-   <!-- Home -->
+   {/* Home */}
    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
      <a href="https://www.wikimint.com" itemprop="item">
        <span itemprop="name" class="text-wmblue">Home</span>
@@ -157,7 +157,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
  
    <span> » </span>
  
-   <!-- Category -->
+   {/* Category */}
    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <span>
       {category.slug.charAt(0).toUpperCase() + category.slug.slice(1)}
@@ -165,9 +165,9 @@ const currentUrl = Astro.url.href; // full URL of the current page
     <a href={`https://www.wikimint.com/${category.slug}`} itemprop="item">
       <span class="sr-only" itemprop="name">{category.data.title}<span/>
     </a>
-     <!-- Structured data -->
+     {/* Structured data */}
      <meta itemprop="position" content="2" />
-     <!-- Visible label: capitalized slug -->
+     {/* Visible label: capitalized slug */}
 
     
    </span>
@@ -175,13 +175,13 @@ const currentUrl = Astro.url.href; // full URL of the current page
  </nav>
  
       
-      <!-- Category Metadata -->
+      {/* Category Metadata */}
       <h1 class="text-3xl font-bold mb-2">{category.data.h1}</h1>
       <p class="bluebox">{category.data.description}</p>
 
       <TopAds/>
 
-      <!-- Posts list -->
+      {/* Posts list */}
       <h2 class="text-2xl font-semibold mt-10 mb-4">
         Posts in {category.data.title}
       </h2>
@@ -225,7 +225,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       </ul>
       
 
-      <!-- Render markdown content from category file -->
+      {/* Render markdown content from category file */}
       <Content />
       <div id="mainAd" class="sticky top-20"></div>
 

@@ -27,7 +27,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
 ---
 <BaseLayout title={frontmatter.title} description={frontmatter.description} image={frontmatter.image}>
-  <!-- Hero -->
+  {/* Hero */}
   <section class="grid md:grid-cols-2 gap-8 pb-10 items-center">
     <div>
       <h1><span class="font-normal">Mastering Financial Freedom</span><br/> Personal Finance, Business and Marketing Strategies</h1>
@@ -47,14 +47,14 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
 
   <section class="pb-12 mb-5 hr">
-    <!-- SEO-optimized heading about core topics -->
+    {/* SEO-optimized heading about core topics */}
     <h2>
       Expert insights to grow wealth and business
     </h2>
   
-    <!-- 4-column responsive cards -->
+    {/* 4-column responsive cards */}
     <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 max-w-7xl mx-auto">
-      <!-- Card 1: Personal finance -->
+      {/* Card 1: Personal finance */}
       <div class="col-span-12 md:col-span-3 bg-gray-100  border border-gray-300 shadow-sm p-5 hover:shadow-md transition-shadow">
         <h3 class="text-lg font-medium mb-3 pb-3 border-b-2 border-gray-300">Personal finance</h3>
         <p class="text-gray-900">
@@ -62,7 +62,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
         </p>
       </div>
   
-      <!-- Card 2: Business Growth -->
+      {/* Card 2: Business Growth */}
       <div class="col-span-12 md:col-span-3 bg-gray-100  border border-gray-300 shadow-sm p-5 hover:shadow-md transition-shadow">
         <h3 class="text-lg font-medium mb-2 pb-3 border-b-2 border-gray-300">Business Growth</h3>
         <p class="text-gray-900">
@@ -70,7 +70,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
         </p>
       </div>
   
-      <!-- Card 3: Marketing Strategies -->
+      {/* Card 3: Marketing Strategies */}
       <div class="col-span-12 md:col-span-3 bg-gray-100  border border-gray-300 shadow-sm p-5 hover:shadow-md transition-shadow">
         <h3 class="text-lg font-medium mb-2 pb-3 border-b-2 border-gray-300">Marketing Strategies</h3>
         <p class="text-gray-900">
@@ -78,7 +78,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
         </p>
       </div>
   
-      <!-- Card 4: Money -->
+      {/* Card 4: Money */}
       <div class="col-span-12 md:col-span-3 bg-gray-100  border border-gray-300 shadow-sm p-5 hover:shadow-md transition-shadow">
         <h3 class="text-lg font-medium mb-2 pb-3 border-b-2 border-gray-300">Money</h3>
         <p class="text-gray-900">
@@ -93,7 +93,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
     A Smart Place for Business Ideas and Growth Knowledge
   </h2>
 
-  <!-- Feed + Sidebar -->
+  {/* Feed + Sidebar */}
   <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto">
     <div class="col-span-12 md:col-span-7">
    
@@ -120,7 +120,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
             class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto"
             itemprop="mainEntity" itemscope itemtype="https://schema.org/Article">
           
-          <!-- IMAGE -->
+          {/* IMAGE */}
           <div class="col-span-12 md:col-span-4">
             <img loading="lazy" 
               src={post.data.image
@@ -134,7 +134,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
             />
           </div>
   
-          <!-- CONTENT -->
+          {/* CONTENT */}
           <div class="col-span-12 md:col-span-8 flex flex-col justify-center">
             <a href={`/${post.slug}`} itemprop="url" class="hover:text-wmblue">
               <h3 class="text-lg md:text-xl font-semibold mb-1 text-black line-clamp-2" itemprop="headline">
@@ -281,9 +281,9 @@ const currentUrl = Astro.url.href; // full URL of the current page
     <section class="bg-gray-100 px-8 py-8 mb-10 mt-10 rounded-xl border border-gray-300 hr">
   <h2>Explore Personal Finance Insights</h2>
 
-  <!-- Grid wrapper -->
+  {/* Grid wrapper */}
   <div class="grid md:grid-cols-3 gap-6">
-    <!-- Item 1 -->
+    {/* Item 1 */}
     <div class="flex gap-4 items-start">
       <img loading="lazy" 
         src="/assets/images/personal-finance-literacy.webp"
@@ -301,7 +301,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       </div>
     </div>
 
-    <!-- Item 2 -->
+    {/* Item 2 */}
     <div class="flex gap-4 items-start">
       <img loading="lazy" 
         src="/assets/images/investing-strategies-ideas.webp"
@@ -319,7 +319,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       </div>
     </div>
 
-    <!-- Item 3 -->
+    {/* Item 3 */}
     <div class="flex gap-4 items-start">
       <img loading="lazy" 
         src="/assets/images/how-tocalculate-net-worth.webp"
@@ -337,7 +337,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       </div>
     </div>
 
-  <!-- Tax Saving Methods -->
+  {/* Tax Saving Methods */}
   <div class="flex gap-4 items-start">
     <img loading="lazy" 
       src="/assets/images/ways-to-save-tax.webp"
@@ -358,7 +358,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
     </div>
   </div>
 
-  <!-- Passive Income Ideas -->
+  {/* Passive Income Ideas */}
   <div class="flex gap-4 items-start">
     <img loading="lazy" 
       src="/assets/images/generate-passive-income-ideas.webp"
@@ -379,7 +379,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
     </div>
   </div>
 
-  <!-- Stock Market Investing -->
+  {/* Stock Market Investing */}
   <div class="flex gap-4 items-start">
     <img loading="lazy" 
       src="/assets/images/stock-market-investments.webp"
@@ -412,7 +412,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-    <!-- Left Feature -->
+    {/* Left Feature */}
     <div class="md:pr-5">
       <a href="/best-online-business-ideas">
         <img  loading="lazy" 
@@ -427,9 +427,9 @@ const currentUrl = Astro.url.href; // full URL of the current page
       </p>
     </div>
   
-    <!-- Right Grid (4 small items) -->
+    {/* Right Grid (4 small items) */}
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <!-- Item 1 -->
+      {/* Item 1 */}
       <a href="/reduce-business-expenses">
       <figure>
           <img  loading="lazy" 
@@ -442,7 +442,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       </figure>
     </a>
 
-      <!-- Item 2 -->
+      {/* Item 2 */}
       <a href="/email-marketing-strategy">
       <figure>
           <img  loading="lazy" 
@@ -455,7 +455,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       </figure>
     </a>
 
-      <!-- Item 3 -->
+      {/* Item 3 */}
         <a href="/startup-business-guide">
           <figure>
             <img  loading="lazy" 
@@ -468,7 +468,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
         </figure>
       </a>
   
-      <!-- Item 4 -->
+      {/* Item 4 */}
         <a href="/digital-marketing-strategy">
           <figure>
             <img  loading="lazy" 
@@ -487,7 +487,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
 
 <div class="bg-gray-100 border border-gray-300 rounded-lg px-6 md:px-10 py-8 my-10">
-  <!-- Intro -->
+  {/* Intro */}
   <div class="pb-10">
     <h3 class="text-2xl font-bold mb-4">3 Books for Financial Success</h3>
     <hr class="mb-6 border-gray-300">
@@ -496,9 +496,9 @@ const currentUrl = Astro.url.href; // full URL of the current page
     </p>
   </div>
 
-  <!-- Books Grid -->
+  {/* Books Grid */}
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <!-- Book 1 -->
+    {/* Book 1 */}
         <a href="/psychology-money-summary-financial-lessons">
           <figure>
             <img  loading="lazy" 
@@ -513,7 +513,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
         </figure>
       </a>
 
-    <!-- Book 2 -->
+    {/* Book 2 */}
         <a href="/rich-dad-poor-dad-summary-action-guide">
           <figure>
             <img  loading="lazy" 
@@ -528,7 +528,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
         </figure>
       </a>
 
-    <!-- Book 3 -->
+    {/* Book 3 */}
         <a href="/think-grow-rich-summary">
           <figure>
             <img  loading="lazy" 
@@ -547,7 +547,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
 
 
 <section id="author" class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-0">
-  <!-- Author Image -->
+  {/* Author Image */}
   <div class="md:col-span-2">
       <a href="https://sk.wikimint.com">
         <figure>
@@ -564,14 +564,14 @@ const currentUrl = Astro.url.href; // full URL of the current page
     </a>
   </div>
 
-  <!-- Author Content -->
+  {/* Author Content */}
   <div class="md:col-span-3 hr">
     <h2>Author's Review Statement</h2>
     <p>
       At Wikimint, every post is meticulously reviewed by the founder, Selvakumaran Krishnan, to ensure that the information shared is both accurate and valuable. As a dedicated resource for personal finance and business strategies, we prioritize offering the most relevant and up-to-date content. Our goal is to empower readers with well-researched knowledge that can guide them in making informed decisions. Each article is crafted with care, reflecting the founder’s commitment to providing quality insights. Rest assured, all content is designed to be practical, reliable, and helpful for your financial and business growth. We aim to provide clear and actionable advice that resonates with our audience’s needs.
     </p>
 
-    <!-- Yellowbox Disclaimer -->
+    {/* Yellowbox Disclaimer */}
     <div class="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-md mt-10">
       <h3>Content Disclaimer</h3>
       <hr class="mb-3 border-gray-200">
@@ -582,7 +582,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
   </div>
 </section>
 
-<!-- Simple client-side paginator using prebuilt JSON -->
+{/* Simple client-side paginator using prebuilt JSON */}
 <script src={`/assets/js/blog.js?v=${version}`} defer></script>
 
 </BaseLayout>

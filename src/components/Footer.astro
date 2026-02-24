@@ -14,13 +14,9 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
 ---
 
 
-<footer class="bg-gray-50 text-gray-900 border-t border-gray-300 py-5 mt-10">
-  <!-- First Row -->
-  <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 max-w-7xl mx-auto px-6 py-12">
-    <!-- Pages -->
-
+<footer>
+  <div class="f-cont">
     
-    <!-- Categories -->
     <div class="col-span-1 md:col-span-4 md:pe-5">
       <div class="h-card text-sm leading-loose" itemscope itemtype="http://schema.org/Organization">
         <a href="https://www.wikimint.com" class="text-xl font-bold text-wmblue-600">
@@ -38,7 +34,7 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
             <meta itemprop="url" content="https://www.wikimint.com/assets/images/wikimint-logo-200x46.webp">
           </span>
     
-          <!-- Add a generic image for the Organization (fixes 'Missing field "image"') -->
+          {/* Add a generic image for the Organization (fixes 'Missing field "image"') */}
           <span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
             <meta itemprop="url" content="https://www.wikimint.com/assets/images/wikimint.webp">
             <meta itemprop="contentUrl" content="https://www.wikimint.com/assets/images/wikimint.webp">
@@ -59,7 +55,7 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
     
         <hr class="border my-2"/>
     
-        <!-- Email -->
+        {/* Email */}
         <p class="flex items-center gap-1">
           <img loading="lazy" src="/assets/svg/envelope.svg" alt="Mail to Wikimint - Contact" width="100" height="100" class="w-[20px]"/>
           <a class="u-email ms-2" href="mailto:support&#64;wikimint&#46;com">
@@ -68,7 +64,7 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
           <meta itemprop="email" content="support@wikimint.com">
         </p>
     
-        <!-- Phone -->
+        {/* Phone */}
         <p class="flex items-center gap-1">
           <img loading="lazy" src="/assets/svg/phone.svg" alt="Call Wikimint - Support" width="100" height="100" class="w-[20px]"/>
           <a class="p-tel ms-2" title="Call us" href="tel:+914435707014">
@@ -77,26 +73,25 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
           <meta itemprop="telephone" content="+914435707014">
         </p>
 
-        <!-- WhatsApp -->
+        {/* WhatsApp */}
         <p class="flex items-center gap-1">
           <img loading="lazy" src="/assets/svg/whatsapp.svg" alt="Chat with Wikimint - Support through WhatsApp" width="100" height="100" class="w-[20px]"/>
           <a class="p-tel ms-2" target="_blank" title="WhatsApp" href="https://wa.me/919342026754">
             +91 9342026754
           </a>
-          <!-- <meta itemprop="whatsapp" content="+919342026754"> -->
         </p>
     
-        <!-- Organization Metadata -->
+        {/* Organization Metadata */}
         <meta itemprop="name" content="Wikimint">
         <meta itemprop="url" content="https://www.wikimint.com">
     
-        <!-- Founder -->
+        {/* Founder */}
         <div itemprop="founder" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Selvakumaran Krishnan">
           <meta itemprop="url" content="https://sk.wikimint.com">
         </div>
     
-        <!-- Social Profiles -->
+        {/* Social Profiles */}
         <meta itemprop="sameAs" content="https://twitter.com/wikimint">
         <meta itemprop="sameAs" content="https://www.facebook.com/wikimintofficial">
         <meta itemprop="sameAs" content="https://www.instagram.com/wikimintofficial">
@@ -104,16 +99,13 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
         <meta itemprop="sameAs" content="https://www.youtube.com/channel/UCWxiax3p4uu8qQhfVPak2VA">
       </div>
     </div>
-    
-    
-    
 
     <div class="col-span-1 md:col-span-4">
 
       <div class="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-10 max-w-7xl mx-auto"
      vocab="https://schema.org/"
      typeof="SiteNavigationElement">
-     <!-- First column -->
+     {/* First column */}
 <nav class="col-span-1 md:col-span-2">
   <ul class="space-y-2">
     <li typeof="WebPage">
@@ -159,7 +151,7 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
   </ul>
 </nav>
 
-<!-- Second column -->
+{/* Second column */}
 <nav class="col-span-2 md:col-span-3">
   <ul class="space-y-2">
     <li typeof="WebPage">
@@ -209,11 +201,6 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
       
     </div>
     
-
-
-
-
-  <!-- Disclaimer -->
   <div class="col-span-1 md:col-span-4">
    
 
@@ -236,11 +223,11 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
     </p>
 
     
-     <!-- Copyright -->
+     {/* Copyright */}
   <p class="text-sm my-6">&copy; {year} Wikimint. All rights reserved.</p>
 
 
-  <!-- Social Icons -->
+  {/* Social Icons */}
   <div class="flex space-x-4 mt-3 md:mt-0">
     <a href="https://twitter.com/wikimint" 
         aria-label="Follow Wikimint on Twitter" 
@@ -293,23 +280,68 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
 </div>
 
 
-</footer>
 
-<!-- EMAIL POPUP START -->
-<div id="emailPopup"
-  class="fixed bottom-5 right-5 bg-gradient-to-br from-black to-neutral-900 rounded-xl shadow-2xl p-6 w-[90%] max-w-sm z-[9999999] hidden animate-fade-in-up">
+
+{/* Overlay Mobile menu starts  */}
+<div id="overlay" 
+  class="fixed inset-0 bg-black/50 z-40 hidden"></div>
+
+{/* Offcanvas */}
+<div id="offcanvas" 
+  class="fixed top-0 right-0 h-full w-100 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300">
+  {/* Header */}
+  <div class="flex justify-between items-center px-5 py-4 border-b">
+    <span class="text-xl font-semibold my-0 py-0">Menu</span>
+    <button class="close-canvas text-gray-500 hover:text-gray-700 text-3xl leading-none">&times;</button>
+  </div>
+  {/* Content */}
+  <div class="p-4">
+    <div
+    id="searchBar"
+    class="mb-3 bg-gray-300 border shadow p-1 rounded"
+  >
+  <form action="/search" method="get">
+    <input name="q"
+        type="search"
+        placeholder="Search Wikimint..."
+        class="border px-3 py-2 rounded w-64 focus:outline-none focus:ring focus:ring-wmblue-200"
+      />
+    </form>
+  </div>
+<nav>
+  <ul class="space-y-2">
+    <li><a href="/web-development-services">Web Development</a></li>
+    <li><a href="/seo-audit">SEO Audit</a></li>
+    <li><a href="/tools">Tools Directory</a></li>
+    <li><a href="/digital-assets">Digital Assets</a></li>
+    <li><a href="/recommended">Recommended</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/sitemap">Sitemap</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/legal#terms">Terms</a></li>
+    <li><a href="/legal#privacy">Privacy</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+{/* Overlay Mobile menu ends */}
+
+
+{/* EMAIL POPUP START */}
+<div id="emailPopup">
   
   <form action="https://www.sendsteed.com/subscribe/" method="post" target="_blank" class="relative">
-    <h2 class="font-semibold text-[#0077b5] mb-2">Join Our Free Newsletter</h2>
+    <h2 class="font-semibold text-white mb-2">Join Our Free Newsletter     <span onclick="closePopup()"
+      class="absolute pb-3 right-2 text-white text-3xl cursor-pointer">&times;</span></h2>
+
     <p class="text-sm text-white mb-5">
       Get insights on personal finance, business, and marketing strategy, straight to your inbox.
     </p>
 
-    <input name="e5735" type="email" required placeholder="Your Email"
-      class="w-full p-2.5 mb-3 border border-gray-300 rounded-md text-sm bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#0077b5]" />
+    <input name="e5735" type="email" required placeholder="Your Email"/>
 
-    <input name="n5735" type="text" required placeholder="Your Name"
-      class="w-full p-2.5 mb-3 border border-gray-300 rounded-md text-sm bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#0077b5]" />
+    <input name="n5735" type="text" required placeholder="Your Name" />
 
     <input type="hidden" name="lllid" value="5735">
     <input type="hidden" name="lluid" value="selvaklnc">
@@ -321,8 +353,7 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
       Subscribe
     </button>
 
-    <span onclick="closePopup()"
-      class="absolute top-1 right-3 text-white text-3xl cursor-pointer">&times;</span>
+
   </form>
 
   <p class="text-sm text-right text-white mt-4 mb-0">
@@ -332,9 +363,13 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
     </a>
   </p>
 </div>
-<!-- EMAIL POPUP END -->
+{/* EMAIL POPUP END */}
 
 
 
 
 <script src={`/assets/js/script.js?v=${version}`} defer></script>
+
+
+</footer>
+

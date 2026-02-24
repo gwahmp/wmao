@@ -92,9 +92,9 @@ const relatedPosts = allPosts
   </Fragment>
   
 
-    <!-- 3-Column Layout -->
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto">
-      <div class="col-span-12 md:col-span-7">
+    {/* 3-Column Layout */}
+    <div class="col-2 post">
+      <div class="left">
 
       
   <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -145,9 +145,6 @@ const relatedPosts = allPosts
               </p>
             )}
 
-
-
-          
           <TopAds/>
 
           {toc && (
@@ -176,11 +173,11 @@ const relatedPosts = allPosts
           
       
             {post.data.faq && post.data.faq.length > 0 && (
-              <section class="my-8">
-                <h2 id="faq">Frequently Asked Questions</h2>
+              <section id="faq" class="my-8">
+                <h2>Frequently Asked Questions</h2>
             
                 <div class="numbered-h3 faq">
-                  <!-- First 6 FAQ with schema markup -->
+                  {/* First 6 FAQ with schema markup */}
                   <div itemscope itemtype="https://schema.org/FAQPage">
                     {post.data.faq.slice(0, 6).map((item: { q: string; a: string }) => (
                       <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
@@ -201,7 +198,7 @@ const relatedPosts = allPosts
                     ))}
                   </div>
             
-                  <!-- Remaining FAQ (no schema) -->
+                  {/* Remaining FAQ (no schema) */}
                   {post.data.faq.length > 6 && (
                     post.data.faq.slice(6).map((item: { q: string; a: string }) => (
                       <div>
@@ -223,7 +220,7 @@ const relatedPosts = allPosts
           {author && (
             <div id="author" class="about-author not-prose mt-8 p-5 border border-wmblue flex items-center gap-7 h-card" itemscope itemtype="https://schema.org/Person">
               
-              <!-- Left: Avatar -->
+              {/* Left: Avatar */}
               <div class="w-1/4">
                 <img  loading="lazy" 
                 src={`https://www.wikimint.com${author.data.image}`}
@@ -235,7 +232,7 @@ const relatedPosts = allPosts
                 />
               </div>
           
-              <!-- Right: Text -->
+              {/* Right: Text */}
               <div class="w-3/4">
                 <h3 class="author-name">
                   <span class="text-wmblue font-semibold text-xl">Written by </span>
@@ -282,7 +279,7 @@ const relatedPosts = allPosts
           </article>
 
   
-<!-- Prev / Next Navigation -->
+{/* Prev / Next Navigation */}
 <nav class="not-prose grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
   {prevPost && (
     <a 
@@ -314,24 +311,26 @@ const relatedPosts = allPosts
 </nav>
 
 
-<!-- Related Posts -->
+{/* Related Posts */}
 {relatedPosts.length > 0 && (
   <section class="my-10 not-prose">
     <h2 class="text-xl font-semibold mb-4">Related Posts</h2>
-    <ul class="space-y-3">
-      {relatedPosts.map((rel) => (
-        <li>
-          <a href={`/${rel.slug}`} class="text-wmblue hover:underline">
-            {rel.data.title}
-          </a>
-        </li>
-      ))}
-    </ul>
+    <nav>
+      <ul class="space-y-3">
+        {relatedPosts.map((rel) => (
+          <li>
+            <a href={`/${rel.slug}`} class="text-wmblue hover:underline">
+              {rel.data.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   </section>
 )}
 
 
-        <!-- Comments placeholder -->
+        {/* Comments placeholder */}
         <section class="not-prose mt-12">
           <h2 class="text-xl font-semibold">Comments</h2>
           <p class="opacity-70">Comments feature coming soon.</p>
@@ -341,7 +340,7 @@ const relatedPosts = allPosts
       </div>
   
   
-      <!-- Column 3: Sticky Bottom Ads (25%) -->
+      {/* Column 3: Sticky Bottom Ads (25%) */}
       <aside class="col-span-12 md:col-span-5">
           <Sidebar/>
         </div>

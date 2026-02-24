@@ -4,6 +4,18 @@
 @tailwind utilities;
 
 @layer components {
+  header{@apply bg-white shadow sticky top-0 z-50;}
+  footer nav a {
+    @apply hover:text-gray-500;
+  }
+  footer{
+    @apply bg-gray-50 text-gray-900 border-t border-gray-300 py-5 mt-10;
+  }
+  .f-cont{@apply grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 max-w-7xl mx-auto px-6 py-12;}
+  main{@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10;}
+  .page article, .post .left{@apply col-span-12 md:col-span-7 prose lg:prose-xl max-w-none;}
+  aside{@apply col-span-12 md:col-span-5;}
+#mainAd{@apply my-10 sticky top-20;}
   .col-2{@apply grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-20 max-w-7xl mx-auto;}
   .col-2 .col{@apply col-span-12 md:col-span-6;}
   .masonry-3{@apply columns-1 md:columns-3 gap-6 [column-fill:_balance];}
@@ -19,6 +31,10 @@
     @apply block md:inline-block text-center px-10 py-2 my-1 border border-wmblue text-wmblue 
     hover:bg-gray-500 hover:text-white hover:shadow-md hover:border-gray-500 transition-all duration-200
   }
+#cta{@apply mt-6 bg-gradient-to-br from-blue-50 via-green-50 to-amber-100 pb-16 px-4 sm:px-20 border border-gray-300 text-center;}
+
+#emailPopup{@apply fixed bottom-5 right-5 bg-gradient-to-br from-black to-neutral-900 rounded-xl shadow-2xl p-6 w-[90%] max-w-sm z-[9999999] hidden animate-fade-in-up text-white;}
+  #emailPopup input{@apply w-full p-2.5 mb-3 border border-gray-300 rounded-md text-sm bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#0077b5];}
   .bluebox, .ull-learn {
     @apply bg-blue-50 border border-blue-300 px-5 py-4;
   }
@@ -77,6 +93,7 @@ a{
 .link a{color:#0d6efd;
   cursor:pointer;}
   .link a:hover{text-decoration:underline ! important;}
+  .btn{color:white ! important;}
   .btn-ol:hover{color:white ! important;}
 .post-content [data-link]
 {

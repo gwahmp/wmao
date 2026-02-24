@@ -44,7 +44,7 @@ const relatedBooks = allBooks
     <div class="col-span-12">
       <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-10" itemscope itemtype="https://schema.org/BreadcrumbList">
 
-        <!-- Home -->
+        {/* Home */}
         <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="https://www.wikimint.com" itemprop="item">
             <span itemprop="name" class="text-wmblue">Home</span>
@@ -54,7 +54,7 @@ const relatedBooks = allBooks
       
         <span> » </span>
       
-        <!-- Books -->
+        {/* Books */}
         <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="https://www.wikimint.com/books" itemprop="item">
             <span itemprop="name" class="text-wmblue">Books</span>
@@ -64,7 +64,7 @@ const relatedBooks = allBooks
       
         <span> » </span>
       
-        <!-- Category -->
+        {/* Category */}
         <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href={`https://www.wikimint.com/${book.data.category.toLowerCase()}#books`} itemprop="item">
             <span itemprop="name" class="text-wmblue">{book.data.category} Books</span>
@@ -74,7 +74,7 @@ const relatedBooks = allBooks
       
         <span> » </span>
       
-        <!-- Book Title -->
+        {/* Book Title */}
         <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <span>{book.data.title}</span>
           <a href={`https://www.wikimint.com/books/${book.slug}`} itemprop="item">
@@ -130,7 +130,7 @@ const relatedBooks = allBooks
               <h2>Frequently Asked Questions</h2>
           
               <div class="numbered-h3 faq">
-                <!-- First 6 FAQ with schema markup -->
+                {/* First 6 FAQ with schema markup */}
                 <div itemscope itemtype="https://schema.org/FAQPage">
                   {book.data.faq.slice(0, 6).map((item: { q: string; a: string }) => (
                     <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
@@ -151,7 +151,7 @@ const relatedBooks = allBooks
                   ))}
                 </div>
           
-                <!-- Remaining FAQ (no schema) -->
+                {/* Remaining FAQ (no schema) */}
                 {book.data.faq.length > 6 && (
                   book.data.faq.slice(6).map((item: { q: string; a: string }) => (
                     <div>
@@ -171,7 +171,7 @@ const relatedBooks = allBooks
 
         </article>
 
-        <!-- Related Posts -->
+        {/* Related Posts */}
         {relatedBooks.length > 0 && (
           <section class="my-10 not-prose">
             <h2 class="text-xl font-semibold mb-4">
@@ -200,13 +200,13 @@ const relatedBooks = allBooks
       </aside>
     </div>
 
-    <!-- Modal -->
+    {/* Modal */}
 <div
 id="pdfModal"
 class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50"
 >
 <div class="bg-white w-full h-full relative flex flex-col">
-  <!-- Close button -->
+  {/* Close button */}
   <button
     id="closeModal"
     class="absolute top-3 right-3 text-black bg-gray-200 rounded-full px-3 py-1 hover:bg-gray-300 z-10"
@@ -214,7 +214,7 @@ class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50"
     ✕
   </button>
 
-  <!-- PDF iframe -->
+  {/* PDF iframe */}
   <iframe
     id="pdfViewer"
     src=""

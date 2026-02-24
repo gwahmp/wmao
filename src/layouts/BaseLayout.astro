@@ -29,7 +29,9 @@ const seoDescription = truncate(description, 180);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{seoTitle}</title>
     <meta name="description" content={seoDescription} />
-    {url && <link rel="canonical" href={url} />}
+    {url ? (
+      <link rel="canonical" href={url} />
+    ) : null}
 
 
       {noindex 
@@ -42,15 +44,19 @@ const seoDescription = truncate(description, 180);
     <meta http-equiv="Expires" content="0" />
 
     
-<!-- Open Graph -->
+{/* Open Graph */}
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Wikimint" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-{url && <meta property="og:url" content={url} />}
+
+{url ? (
+  <meta property="og:url" content={url} />
+) : null}
+
 <meta property="og:image" content={image} />
 
-<!-- Twitter Card -->
+{/* Twitter Card */}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
@@ -58,7 +64,6 @@ const seoDescription = truncate(description, 180);
 
 <meta content="#3079ED" name="theme-color"/>
 <meta content="#3079ED" name="msapplication-navbutton-color"/>
-
 <link rel="icon" href="/favicon.ico" sizes="any"/>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -84,7 +89,8 @@ const seoDescription = truncate(description, 180);
   
 
 {import.meta.env.PROD && (
-  <!-- Google Tag Manager -->
+  <>
+  {/* Google Tag Manager */}
   <script is:inline>
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -92,7 +98,7 @@ const seoDescription = truncate(description, 180);
    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
    })(window,document,'script','dataLayer','GTM-M5WJVVQ');
    </script>
-   <!-- End Google Tag Manager -->
+   {/* End Google Tag Manager */}
 
    </>
   )}
@@ -100,6 +106,7 @@ const seoDescription = truncate(description, 180);
 
 <script is:inline src="/assets/lib/klaro.min.js"></script>
 <script is:inline src="/assets/js/klaro.js"></script>
+<link rel="stylesheet" href="/assets/css/klaro.min.css"/>
     
 
 <script>
@@ -112,11 +119,10 @@ const seoDescription = truncate(description, 180);
   </head>
   <body>
     <Header />
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <main>
       <slot />
     </main>
     <Footer />
-    <link rel="stylesheet" href="/assets/css/klaro.min.css"/>
 
   </body>
 </html>

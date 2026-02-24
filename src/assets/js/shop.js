@@ -14,7 +14,6 @@ function renderProduct(product, includeControls = true) {
 
   const controls = includeControls ? `
     <div class="mt-4">
-      <!-- Icons Row -->
       <div class="flex justify-center items-center gap-4 mb-3">
         <i class="bi ${isFav ? 'bi-heart-fill text-[#ED4956]' : 'bi-heart text-gray-600 hover:text-red-500'} 
            favorite-btn cursor-pointer text-xl transition-colors duration-200" 
@@ -25,7 +24,6 @@ function renderProduct(product, includeControls = true) {
            data-id="${id}" title="Share"></i>
       </div>
 
-      <!-- Full-width Button -->
       <button data-link="${link}" 
         class="btn w-full">
         Buy Now
@@ -80,13 +78,11 @@ function renderMainProduct(product, includeControls = true) {
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-start">
 
-        <!-- Left Column: Image -->
         <div class="col-span-12 md:col-span-6">
           <img loading="lazy" src="${img}" alt="${alt}" title="${title}"
                class="w-full max-h-96 object-contain rounded-xl border border-gray-200 bg-gray-50 shadow-sm" />
         </div>
 
-        <!-- Right Column: Product Details -->
         <div class="col-span-12 md:col-span-6">
           <h2 class="text-xl md:text-2xl font-semibold mb-4 text-gray-900">${title}</h2>
           <p class="text-gray-700 leading-relaxed mb-6">${alt}</p>

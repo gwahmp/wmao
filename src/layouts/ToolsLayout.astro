@@ -17,9 +17,9 @@ const { title, description, breadcrumbs } = Astro.props as Props;
 ---
 
 <BaseLayout title={title} description={description}>
-  <main class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-20">
+  <div class="col-2 page">
 
-    <!-- MAIN -->
+    {/* MAIN */}
     <article>
         <div set:html={breadcrumbs}></div>
 
@@ -29,8 +29,8 @@ const { title, description, breadcrumbs } = Astro.props as Props;
       <slot />
     </article>
 
-    <!-- SIDEBAR -->
-    <aside class="border-l pl-6">
+    {/* SIDEBAR */}
+    <aside>
       <h3 class="font-semibold mb-4">All Tools Categories</h3>
       <nav>
         <ul class="link space-y-2">
@@ -58,5 +58,5 @@ const { title, description, breadcrumbs } = Astro.props as Props;
       
     </aside>
 
-  </main>
+  </div>
 </BaseLayout>

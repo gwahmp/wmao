@@ -53,12 +53,9 @@ const currentUrl = Astro.url.href; // full URL of the current page
     />
   </Fragment>
 
-  <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto">
-    <main class="col-span-12">
-    <div class="prose lg:prose-xl max-w-none">
+    <article class="prose lg:prose-xl max-w-none">
         <slot /> 
-    </div>
-    </main>
-  </div>
+    </article>
+
 
 </BaseLayout>
