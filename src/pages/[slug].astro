@@ -46,16 +46,27 @@ const relatedPosts = allPosts
       p.slug !== post.slug
   )
   .slice(0, 3); // limit to 3
+
+  import { getGitLastModified } from "../utils/gitLastModified";
+
+const gitModified =
+  getGitLastModified(post.filePath);
+
+  const finalModifiedDate =
+  post.data.updatedDate ??
+  gitModified ??
+  post.data.date;
+
 ---
 
 
-<BaseLayout title={post.data.title} description={post.data.description} image={`/assets/images/blog/${post.data.image}`}>
+<BaseLayout title={post.data.title} description={post.data.description} image={`/assets/images/blog/${post.data.image}`} ogType="article" publishedTime={post.data.date} modifiedTime={finalModifiedDate}>
   <Fragment slot="head">
     <script
     type="application/ld+json"
     set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": `https://www.wikimint.com/${post.slug}`
@@ -82,10 +93,17 @@ const relatedPosts = allPosts
         "name": (post?.data?.author ?? "Wikimint")
           .replace(/-/g, " ")
           .replace(/\b\w/g, (c) => c.toUpperCase()),
-        "url": "https://www.wikimint.com/write-for-us"
+        "url": "https://sk.wikimint.com",
+        "image": `https://www.wikimint.com${author?.data?.image}`
       },
-      "datePublished": post.data.date,
-      "dateModified": post.data.updated ?? post.data.date
+      "isPartOf": {
+  "@type": "Blog",
+  "name": "Wikimint Blog",
+  "url": "https://www.wikimint.com/blog"
+},
+"wordCount": post.body?.split(/\s+/).length,
+      "datePublished": post.data.date.toISOString(),
+      "dateModified": finalModifiedDate.toISOString()
     }, null, 2)}
   ></script>
   
@@ -129,13 +147,38 @@ const relatedPosts = allPosts
             <h1 property="headline">{post.data.h1}</h1>
 
             <div class="post-meta">
-              Posted in <span property="articleSection">{post.data.category}</span> |
+              Posted in <span property="articleSection">{post.data.category}</span> •
               
               By <span property="author" typeof="Person">
-                <span property="name"><a href="#author">{author?.data?.name ?? "Unknown Author"}</a></span>
-              </span> |
-              
-              Published on <time property="datePublished" datetime={new Date(post.data.date).toISOString().split('T')[0]}>{new Date(post.data.date).toDateString()}</time>
+               <a  property="name" href="#author">{author?.data?.name ?? "Unknown Author"}</a>
+              </span> •
+
+              <time property="datePublished" datetime={post.data.date.toISOString()}>
+                Published:
+                {post.data.date.toLocaleDateString("en-IN", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </time>
+          
+              {finalModifiedDate > post.data.date && (
+                <>
+                  •
+                  <time
+                    property="dateModified"
+                    datetime={finalModifiedDate.toISOString()}
+                  >
+                    Last Updated:
+                    {finalModifiedDate.toLocaleDateString("en-IN", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </time>
+                </>
+              )}
+
             </div>
               
   
