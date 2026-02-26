@@ -86,7 +86,7 @@ You don't need advanced skills, but understanding the basics of data entry and b
 
 ### Step 2: Create an Online Presence
 
-To draw in clients, it's important to have a professional online presence. Set up a basic website or create social media profiles to highlight your services. Platforms like LinkedIn are excellent for professionals, and websites like Upwork or Fiverr are great for freelancers.
+To draw in clients, it's important to have a professional online presence. <a href="/build-business-website-guide">Set up a basic website</a> or create social media profiles to highlight your services. Platforms like LinkedIn are excellent for professionals, and websites like Upwork or Fiverr are great for freelancers.
 
 ### Step 3: Set Your Rates
 

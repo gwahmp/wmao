@@ -19,7 +19,7 @@ faq:
       <p>To build an email list that generates leads, follow these steps:</p>
       <ul>
         <li><b>Use lead magnets</b> (e.g., free guides, discount codes, or exclusive content)</li>
-        <li><b>Create compelling opt-in forms</b> on your website and blog</li>
+        <li><b>Create compelling opt-in forms</b> on <a href="/build-business-website-guide">your website</a> and blog</li>
         <li><b>Leverage social media</b> to promote email sign-ups</li>
         <li><b>Run paid ads</b> targeting your ideal audience</li>
         <li><b>Implement exit-intent pop-ups</b> to engage visitors and encourage them to subscribe before they leave your site.</li>

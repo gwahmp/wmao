@@ -26,7 +26,7 @@ image: "general-articles-blog-posts.webp"
   <p>With PLR rights included, you can use them as learning material or sell them under your own brand. This bundle ensures you always have versatile content on hand for personal growth or for offering to your audience.</p>
   
   <h2 id="articles">General Category PLR Articles</h2>
-  <p>For those who want versatile content that works across multiple niches, the general PLR articles bundle is the perfect fit. These topics are evergreen, broad in appeal, and useful for lifestyle blogs, authority websites, or personal brands.</p>
+  <p>For those who want versatile content that works across multiple niches, the general PLR articles bundle is the perfect fit. These topics are evergreen, broad in appeal, and useful for lifestyle blogs, <a href="/build-business-website-guide">authority websites</a>, or personal brands.</p>
   
 <button class="btn" data-title="General Category PLR Articles Bundle" data-prod="https://mega.nz/file/S1BGTBKA#MAVPRQB_x7pRrBXKELPZEOwP5C4_3OhL0_d76Xti-ys">Get the Articles</button>
   

@@ -40,7 +40,7 @@ image: "business.webp"
   <li>Business innovation and adapting to market shifts</li>
 </ul>
 
-<p>Perfect for entrepreneurs and startups, these articles cover themes that stay evergreen and useful. With PLR rights, you can edit, brand, and republish them as your own content. They serve both as learning resources and traffic-driving assets for your website.</p>
+<p>Perfect for entrepreneurs and startups, these articles cover themes that stay evergreen and useful. With PLR rights, you can edit, brand, and republish them as your own content. They serve both as learning resources and traffic-driving assets for <a href="/build-business-website-guide">your website</a>.</p>
 
 <hr/>
 

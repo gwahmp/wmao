@@ -84,7 +84,7 @@ The internet started as a decentralized idea. Over time, it became more centrali
 
 ## How the Internet Became Centralized Over Time
 
-In the early days, the internet felt open. Anyone could create a website. Email worked between providers. No single company owned everything.
+In the early days, the internet felt open. Anyone could <a href="/build-business-website-guide">create a website</a>. Email worked between providers. No single company owned everything.
 
 Then things changed.
 

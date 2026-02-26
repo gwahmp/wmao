@@ -152,7 +152,7 @@ Register your business, obtain any necessary licenses, and set up a professional
 
 ### Develop an Online Presence
 
-Build a professional website showcasing your services, portfolio, and client testimonials. Create profiles on social media platforms such as LinkedIn, Twitter, and Instagram to connect with potential clients. Regularly update your profiles and engage with your audience to build credibility and trust.
+<a href="/build-business-website-guide">Build a professional website</a> showcasing your services, portfolio, and client testimonials. Create profiles on social media platforms such as LinkedIn, Twitter, and Instagram to connect with potential clients. Regularly update your profiles and engage with your audience to build credibility and trust.
 
 ### Networking and Marketing
 

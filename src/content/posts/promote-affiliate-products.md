@@ -23,7 +23,7 @@ faq:
   a: '<p>If you are new and lack personal results, you can leverage testimonials or case studies from others who used the product. Get permission or use public information ethically. Be honest about your own journey too.</p>'
 
 - q: Do I necessarily need a blog or website to start affiliate marketing?
-  a: '<p>No, but having a basic website or landing page improves your success. A website lets you publish presell content, collect emails, and build credibility. You can also use free platforms like systeme.io or ConvertKit to start.</p>'
+  a: '<p>No, but <a href="/build-business-website-guide">having a basic website</a> or landing page improves your success. A website lets you publish presell content, collect emails, and build credibility. You can also use free platforms like systeme.io or ConvertKit to start.</p>'
 
 - q: How much time does it typically take to start earning through affiliate marketing?
   a: '<p>It depends on strategy, consistency, and niche. Some see results in weeks, others in months. Focus on building trust and growing your email list. Once your system is set, earnings become more predictable.</p>'

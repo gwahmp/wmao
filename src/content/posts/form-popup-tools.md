@@ -150,7 +150,7 @@ Embedding Your Form or Popup
 Since forms and popups don't have their own URL, you'll need to embed them into another platform. Here's where you can use them:
 
 *   On your blog (WordPress, Blogger, etc.)
-*   On your website (HTML or CMS platforms)
+*   On <a href="/build-business-website-guide">your website</a> (HTML or CMS platforms)
 *   Inside a LeadsLeap landing page
 *   As part of a LeadsLeap tracked link (great for affiliate cloaking with a bonus popup!)
 

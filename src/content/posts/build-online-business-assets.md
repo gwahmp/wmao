@@ -265,7 +265,7 @@ Alyssa was known for her stunning bullet journal spreads on Instagram. Followers
 
 So, she:
 
-*   Built a simple website to showcase and sell her designs.
+*   <a href="/build-business-website-guide">Built a simple website</a> to showcase and sell her designs.
 *   Created downloadable planners, calendars, and productivity kits.
 *   Collected emails by offering a free monthly tracker template.
 *   Offered a $5/month membership for exclusive designs and video tutorials.

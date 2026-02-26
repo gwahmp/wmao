@@ -482,7 +482,7 @@ Use evenings or weekends to research or build your side hustle. No need for full
 Pick something that suits your interests and skills:
 
 *   [Real estate investing](/real-estate-investing-money)
-*   Building a website
+*   <a href="/build-business-website-guide">Building a website</a>
 *   Learning stock investing
 *   Writing an eBook
 *   Starting a YouTube channel

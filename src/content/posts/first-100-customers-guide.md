@@ -14,7 +14,7 @@ faq:
   a: It depends on your effort, message, and where you reach people. Many founders reach their first 100 within 3 to 6 months using simple organic methods.
 
 - q: Do I need a website before getting customers?
-  a: No. You can start with direct messages, a simple landing page, or even a Google Form. A full website is not required at the beginning.
+  a: No. You can start with direct messages, a simple landing page, or even a Google Form. A <a href="/build-business-website-guide">complete professional website</a> is not required at the beginning.
 
 - q: Can I get my first 100 customers without paid ads?
   a: Yes. Many early founders use word of mouth, community groups, content, and referrals instead of spending on ads.

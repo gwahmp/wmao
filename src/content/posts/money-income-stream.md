@@ -122,7 +122,7 @@ You cannot promote Coop Links inside the <span data-link="https://leadsleap.com?
 
 Here's how it works:
 
-*   Place the Ad Widget on your website, blog, or <span data-link="https://leadsleap.com?r=selvaklnc">LeadsLeap</span> pages
+*   Place the Ad Widget on <a href="/build-business-website-guide">your website</a>, blog, or <span data-link="https://leadsleap.com?r=selvaklnc">LeadsLeap</span> pages
 *   When visitors click the ads, you earn cash and ad credits
 
 ### Earning Potential:

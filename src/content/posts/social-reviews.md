@@ -93,7 +93,7 @@ Gone are the days when article directories or press releases could rank easily i
 
 LeadsLeap's Social Review directory checks all those boxes. Every review adds new, relevant, and useful content to the site, keeping it **Google-friendly and SEO-strong**.
 
-Here's a fun test: search Google for a product listed in Social Review (like sfimg.com review). You'll likely see a review from LeadsLeap's directory ranking on the first page, sometimes even above the product's own website!
+Here's a fun test: search Google for a product listed in Social Review (like sfimg.com review). You'll likely see a review from LeadsLeap's directory ranking on the first page, sometimes even above the product's <a href="/build-business-website-guide">own website</a>!
 
 That means when you publish a review, it could start bringing in organic traffic for months or even years.
 

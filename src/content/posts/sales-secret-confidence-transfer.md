@@ -52,7 +52,7 @@ Confidence transfer is the hidden skill in sales that helps convert prospects by
 
 Let me start with a story.
 
-A few years ago, I launched a small digital course. I thought I did everything right - set up a slick website, ran some ads, even offered a discount. But guess what? Crickets. Hardly any sales.
+A few years ago, I launched a small digital course. I thought I did everything right - <a href="/build-business-website-guide">set up a slick website</a>, ran some ads, even offered a discount. But guess what? Crickets. Hardly any sales.
 
 I was frustrated. I kept wondering, "What's the best way to improve how I'm selling this?" But that was the wrong question. The better question was: "Why aren't people confident enough to buy?"
 

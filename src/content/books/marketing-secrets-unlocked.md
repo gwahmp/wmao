@@ -50,7 +50,7 @@ Inside, you’ll discover:
 
 ### 2. The Trade Secrets of Successful Marketers
 
-The most profitable websites online share common traits. They incorporate specific techniques, triggers, and marketing flows that encourage visitors to buy, often without realizing why. This ebook reveals those exact trade secrets, methods you can instantly apply to your own business.
+The most <a href="/build-business-website-guide">profitable websites</a> online share common traits. They incorporate specific techniques, triggers, and marketing flows that encourage visitors to buy, often without realizing why. This ebook reveals those exact trade secrets, methods you can instantly apply to your own business.
 
 Some highlights include:
 

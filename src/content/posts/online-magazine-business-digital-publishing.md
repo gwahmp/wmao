@@ -62,7 +62,7 @@ Develop a marketing plan to promote your magazine. Utilize social media, [search
 
 ### Compliance and Legalities
 
-Understand the legal aspects, including copyrights, trademarks, and data protection laws. Consider consulting a legal expert to draft terms and conditions and privacy policies for your website.
+Understand the legal aspects, including copyrights, trademarks, and data protection laws. Consider consulting a legal expert to draft terms and conditions and privacy policies for <a href="/build-business-website-guide">your website</a>.
 
 ### Feedback and Adaptation
 

@@ -67,7 +67,7 @@ Here's how dropshipping works step-by-step:
 
 1.  **You create an online store** using platforms like Shopify or WooCommerce.
 2.  **Add products** to your store from suppliers.
-3.  **Customers order** from your website.
+3.  **Customers order** from <a href="/build-business-website-guide">your website</a>.
 4.  **The supplier delivers the product** straight to the customer.
 5.  **You keep the profit** after paying the supplier.
 

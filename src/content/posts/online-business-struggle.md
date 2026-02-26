@@ -29,7 +29,7 @@ Success isn't a fixed metric. If you're reading this, I've just scored a small w
 
 Back in 2018, I was living alone in a tiny 1RK apartment. I had no roommates and no distractions.
 
-But that turned out to be a blessing. Every evening after work, I'd sit in front of my old laptop and teach myself web development, programming, <a href="/digital-marketing-practical-guide">digital marketing</a>, website building and learning how to set up my first business site I'd work until 2 AM, grab 4-5 hours of sleep, and go to my day job.
+But that turned out to be a blessing. Every evening after work, I'd sit in front of my old laptop and teach myself web development, programming, <a href="/digital-marketing-practical-guide">digital marketing</a>, website building and learning <a href="/build-business-website-guide">how to set up my first business website</a>, I'd work until 2 AM, grab 4-5 hours of sleep, and go to my day job.
 
 I did that for three years straight. It wasn't sustainable (and I don't recommend that level of sleep deprivation), but that focused routine helped me build momentum.
 
@@ -220,7 +220,7 @@ No. The safest way is to start your business part-time while keeping your job. B
 
 ### “You Need to Be a Tech Expert”
 
-Most modern tools are beginner-friendly. You can build websites, run ads, or sell online with no coding knowledge at all.
+Most modern tools are beginner-friendly. You can <a href="/build-business-website-guide">build websites</a>, run ads, or sell online with no coding knowledge at all.
 
 ## Expert Insights and Data to Keep You Grounded
 

@@ -197,7 +197,7 @@ Create a unique and inviting ambiance for your game station. Consider the aesthe
 Marketing and Promotion
 -----------------------
 
-Establish a robust online presence by creating a polished website and maintaining active [social media profiles](https://developer.wikimint.com/2023/10/top-social-media-networking-sites.html). Utilize digital marketing strategies such as [SEO](https://developer.wikimint.com/2017/05/important-seo-techniques-to-increase.html), content marketing, and paid advertising to reach your target audience. Consider hosting gaming events, tournaments, or themed nights to attract and retain customers.
+Establish a robust online presence by <a href="/build-business-website-guide">creating a polished website</a> and maintaining active [social media profiles](https://developer.wikimint.com/2023/10/top-social-media-networking-sites.html). Utilize digital marketing strategies such as [SEO](https://developer.wikimint.com/2017/05/important-seo-techniques-to-increase.html), content marketing, and paid advertising to reach your target audience. Consider hosting gaming events, tournaments, or themed nights to attract and retain customers.
 
 Staffing and Training
 ---------------------
