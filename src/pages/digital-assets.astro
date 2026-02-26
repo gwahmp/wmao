@@ -16,55 +16,70 @@ const frontmatter = {
 ---
 
 <LandingLayout frontmatter={frontmatter}>
- <section>
+ <section itemscope itemtype="https://schema.org/Product">
 
-  <div itemscope itemtype="https://schema.org/Product" class="col-2">
+  <div class="col-2">
     <div class="col">
-        <h1 itemprop="name"><span class="text-small block border-b pb-5 mb-3">All-in-One Toolkit with Lifetime access </span> Digital Assets and Tools for Digital Productivity</h1>
-
-<p itemprop="description">Unlock a complete library of digital assets designed to accelerate your business growth. From business  templates to marketing and digital creatives such as videos, graphics, prompts, we have you covered. It's a productivity tools kit bundle for Business, Marketing & Growth Crafted for Entrepreneures, Freelancers, Agencies & Digital Marketers</p>
-<div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
-  <meta itemprop="name" content="Wikimint" />
-</div>
-<meta itemprop="sku" content="DIGITAL-ASSETS-BUNDLE" />
-<div class="block md:flex gap-4 text-center mb-3">
-
-<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-  <meta itemprop="priceCurrency" content="USD">$</meta><meta itemprop="price" content="1.35">1.35</meta>
-  <del>$25.00</del>
-  <meta itemprop="priceValidUntil" content="2026-12-31" />
-  <link itemprop="availability" href="https://schema.org/InStock" />
-  <small>In Stock</small>
-  
-  <meta itemprop="url" content="/digital-assets" />
-</div>
-
-<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating" class="star-container" aria-label="Rating: 4.9 out of 5 stars based on 124 reviews">
-  <span class="star full">★</span>
-  <span class="star full">★</span>
-  <span class="star full">★</span>
-  <span class="star full">★</span>
-  <span class="star partial">★</span>
-  <span itemprop="ratingValue" class="rating-number">4.9</span>of 5<meta itemprop="reviewCount" content="124"></meta>
-</div>
-
-
-</div>
-<div class="block md:flex gap-4 text-center">
-
-<a href="#download" class="btn">Download Assets</a>
-
-  <a 
-    href="#assets"
-    class="btn-ol">
-    Explore Assets Included
-  </a>
-</div>
-
-
+      <h1 itemprop="name"><span class="text-small block border-b pb-5 mb-3">All-in-One Toolkit with Lifetime access </span> Digital Assets and Tools for Digital Productivity</h1>
+      <p itemprop="description">Unlock a complete library of digital assets designed to accelerate your business growth. From business  templates to marketing and digital creatives such as videos, graphics, prompts, we have you covered. It's a productivity tools kit bundle for Business, Marketing & Growth Crafted for Entrepreneures, Freelancers, Agencies & Digital Marketers</p>
+      <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+        <meta itemprop="name" content="Wikimint">
+      </div>
+      
+      <meta itemprop="sku" content="DIGITAL-ASSETS-BUNDLE">
+      
+      <div class="block md:flex gap-4 md:text-center mb-3">
+      
+        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+      
+          <meta itemprop="priceCurrency" content="USD">
+          <meta itemprop="price" content="1.35">
+          <meta itemprop="priceValidUntil" content="2026-12-31">
+          <meta itemprop="url" content="/digital-assets">
+      
+          <link itemprop="availability" href="https://schema.org/InStock">
+      
+          <!-- Visible price -->
+          <span>$1.35</span>
+          <del>$25.00</del>
+          <small>In Stock</small>
+      
+        </div>
+      
+        <div
+          itemprop="aggregateRating"
+          itemscope
+          itemtype="https://schema.org/AggregateRating"
+          class="star-container"
+          aria-label="Rating: 4.9 out of 5 stars based on 124 reviews"
+        >
+      
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star partial">★</span>
+      
+          <span itemprop="ratingValue" class="rating-number">4.9</span>
+          of 5
+      
+          <meta itemprop="reviewCount" content="124">
+      
+        </div>
+      
+      </div>
+      
+      <div class="block md:flex gap-4">
+        <a href="#download" class="btn">Download Assets</a>
+      
+        <a href="#assets" class="btn-ol">
+          Explore Assets Included
+        </a>
+      </div>
     </div>
+
     <div class="col">
-      <img itemprop="image" loading="lazy" src="/assets/images/blog/digital-productivity-assets-toolkit-lifetime-updates-downloads.webp" alt="All-in-one digital assets bundle with templates, PLR content, marketing tools, branding kits, ebooks, and software for entrepreneurs, freelancers & marketers" class="object-cover w-full rounded-lg"/>
+      <img itemprop="image" loading="lazy" src="/assets/images/blog/digital-productivity-assets-toolkit-lifetime-updates-downloads.webp" alt="All-in-one digital assets bundle with templates, PLR content, marketing tools, branding kits, ebooks, and software for entrepreneurs, freelancers & marketers" class="object-cover rounded-lg"/>
 
     </div>
   </div>

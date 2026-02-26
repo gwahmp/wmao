@@ -354,7 +354,6 @@ margin-bottom:20ox;
 .star-container {
   display: flex;
   align-items: center;
-  justify-self: center;
   gap: 2px;
 }
 
