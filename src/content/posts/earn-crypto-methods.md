@@ -360,7 +360,7 @@ Many people mix two or three methods.
 ## Common Mistakes to Avoid
 
 - Chasing high returns blindly
-- Ignoring security basics
+- Ignoring <a href="/website-security-protection-guide">security basics</a>
 - Trusting unknown platforms
 
 Slow learning beats fast losses.

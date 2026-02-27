@@ -13,7 +13,7 @@ summary: "In an increasingly interconnected world, where our lives are intertwin
 
 ![Essential tips to safeguard digital sanctity and protect online privacy through secure browsing, encryption, and cybersecurity best practices.](/assets/images/blog/digital-privacy.webp "How to Safeguard Digital Sanctity: Protecting Privacy on the Internet")
 
-Learn how to safeguard your digital presence and enhance online privacy with advanced security measures and safe internet practices.
+Learn how to safeguard your digital presence and enhance online privacy with <a href="/website-security-protection-guide">advanced security measures</a> and safe internet practices.
 
 In this article, we'll explore the importance of protecting privacy on the internet and provide practical steps to help you secure your online presence.
 

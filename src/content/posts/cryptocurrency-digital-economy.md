@@ -355,7 +355,7 @@ Utility and governance tokens show how cryptocurrency goes beyond money. They sh
 
 ### Security, Trust, and Risk Factors
 
-Cryptocurrency is built with strong security at its core. Transactions are protected by cryptography, and blockchain records cannot be changed once confirmed. This design helps create trust between users who do not know each other. Still, safety depends greatly on how people use the system.
+Cryptocurrency is built with <a href="/website-security-protection-guide">strong security at its core</a>. Transactions are protected by cryptography, and blockchain records cannot be changed once confirmed. This design helps create trust between users who do not know each other. Still, safety depends greatly on how people use the system.
 
 Unlike banks, there is no customer support to recover lost access. This means users must take personal responsibility.
 

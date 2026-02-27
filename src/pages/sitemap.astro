@@ -19,55 +19,53 @@ const posts = await getCollection("posts");
 
       <h1 class="text-2xl mb-4">Wikimint HTML Sitemap: Browse All Pages, Posts and Categories</h1>
       <p class="bluebox">Browse all posts and pages on Wikimint. Welcome to the sitemap page. Here you'll find organized links to all pages, key articles and resources, including personal finance tips, business strategies, investment guides, and entrepreneurial ideas. Easily navigate to your desired topic and start learning today!
-
       </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 link">
-        <div>
-          <h2 class="text-xl mt-6 mb-0">Static Pages</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6">
-            <ul class="mt-0">
-              <li><a href="https://www.wikimint.com">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/legal#terms">Terms</a></li>
-              <li><a href="/careers">Careers</a></li>
-              <li><a href="/legal#privacy">Privacy</a></li>
-              <li><a href="/tools">Tools Directory</a></li>
-              <li><a href="/seo-audit">SEO Audit</a></li>
-            </ul>
-            <ul class="mt-0">
-              <li><a href="/website-security-audit">Security Audit</a></li>
-              <li><a href="/digital-assets">Digital Assets</a></li>
-              <li><a href="/web-development-services">Website Dev.</a></li>
-              <li><a href="/recommended">Recommended</a></li>
-              <li><a href="/developer-innovation-hub">Developer hub</a></li>
-              <li><a href="/write-for-us">Write for us</a></li>
-              <li><a href="/share-your-story">Share your story</a></li>
-            </ul>
-          </div>
+      <div class="link">
+        <h2 class="font-semibold mb-4">All Pages</h2>
+        <nav>
+          <ul class="grid grid-cols-1 md:grid-cols-2">
+            <li><a href="https://www.wikimint.com">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/contact">Contact us</a></li>
+            <li><a href="/legal#terms">Terms</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/legal#privacy">Privacy</a></li>
+            <li><a href="/tools">Tools Directory</a></li>
+            <li><a href="/seo-audit">SEO Audit</a></li>
+            <li><a href="/website-security-audit">Security Audit</a></li>
+            <li><a href="/digital-assets">Digital Assets</a></li>
+            <li><a href="/web-development-services">Website development services</a></li>
+            <li><a href="/recommended">Recommended</a></li>
+            <li><a href="/developer-innovation-hub">Developer hub</a></li>
+            <li><a href="/write-for-us">Write for us</a></li>
+            <li><a href="/business-resources">DIY Business Kit</a></li>
+            <li><a href="/business-growth-services">Assisted Services</a></li>
+            <li><a href="/share-your-story">Share your story</a></li>
+            <li><a href="/books">Free books collection</a></li>
+          </ul>
+        </nav>
+        
+      </div>
 
-        </div>
 
-        <div>
-          <h2 class="text-xl mt-6 mb-2">Post Categories</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6">
-            <ul>
-              <li><a href="/business">Business</a></li>
-              <li><a href="/blockchain">Blockchain</a></li>
-              <li><a href="/economy">Economy</a></li>
-              <li><a href="/finance">Finance</a></li>
-              <li><a href="/general">General</a></li>
-            </ul>
-            <ul>
-              <li><a href="/internet">Internet</a></li>
-              <li><a href="/marketing">Marketing</a></li>
-              <li><a href="/money">Money</a></li>
-              <li><a href="/skills">Skills</a></li>
-              <li><a href="/technology">Technology</a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="link">
+        <h2 class="font-semibold mb-4">Post Categories</h2>
+        <nav>
+          <ul class="grid grid-cols-1 md:grid-cols-2">
+            <li><a href="/business">Business</a></li>
+            <li><a href="/blockchain">Blockchain</a></li>
+            <li><a href="/economy">Economy</a></li>
+            <li><a href="/finance">Finance</a></li>
+            <li><a href="/general">General</a></li>
+            <li><a href="/internet">Internet</a></li>
+            <li><a href="/marketing">Marketing</a></li>
+            <li><a href="/money">Money</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/technology">Technology</a></li>
+          </ul>
+        </nav>
+        
       </div>
 
 
@@ -76,7 +74,7 @@ const posts = await getCollection("posts");
 <div class="link">
   <h2 class="font-semibold mb-4">Free & Open-source Tools Directory</h2>
   <nav>
-    <ol class="grid grid-cols-1 md:grid-cols-2 space-y-2">
+    <ul class="grid grid-cols-1 md:grid-cols-2">
       {TOOL_CATEGORIES.map(cat => (
         <li>
           <a href={`/tools/${cat.slug}`} class="block">
@@ -84,28 +82,30 @@ const posts = await getCollection("posts");
           </a>
         </li>
       ))}
-    </ol>
+    </ul>
   </nav>
   
 </div>
 
 
       <h3 class="text-xl mb-2 pb-3 border-b border-gray-500">Blog Posts</h3>
-      <ol class="pl-6 space-y-2 link">
-        {posts
-          .sort(
-            (a, b) =>
-              new Date(b.data.date ?? 0).getTime() -
-              new Date(a.data.date ?? 0).getTime()
-          )
-          .map((post) => (
-            <li>
-              <a href={`/${post.slug}`}>
-                {post.data.title}
-              </a>
-            </li>
-          ))}
-      </ol>
+      <nav>
+        <ol class="space-y-2 link">
+          {posts
+            .sort(
+              (a, b) =>
+                new Date(b.data.date ?? 0).getTime() -
+                new Date(a.data.date ?? 0).getTime()
+            )
+            .map((post) => (
+              <li>
+                <a href={`/${post.slug}`}>
+                  {post.data.title}
+                </a>
+              </li>
+            ))}
+        </ol>
+      </nav>
       
 
 
