@@ -1,7 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
-import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   site: "https://www.wikimint.com", // REQUIRED for sitemap
@@ -14,9 +13,6 @@ export default defineConfig({
   integrations: [
     tailwind(),
     mdx(),
-    sitemap({
-      entryLimit: 5000, // ✅ valid
-    }),
   ],
   markdown: {
     remarkPlugins: [

@@ -46,15 +46,9 @@ const relatedPosts = allPosts
       p.slug !== post.slug
   )
   .slice(0, 3); // limit to 3
-
-  import { getGitLastModified } from "../utils/gitLastModified";
-
-const gitModified =
-  getGitLastModified(post.filePath);
-
-  const finalModifiedDate =
+// ✅ Manual modified date from markdown meta
+const finalModifiedDate =
   post.data.updatedDate ??
-  gitModified ??
   post.data.date;
 
 ---
@@ -62,6 +56,8 @@ const gitModified =
 
 <BaseLayout title={post.data.title} description={post.data.description} image={`/assets/images/blog/${post.data.image}`} ogType="article" publishedTime={post.data.date} modifiedTime={finalModifiedDate}>
   <Fragment slot="head">
+    <meta itemprop="datePublished" content={post.data.date}/>
+<meta itemprop="dateModified" content={finalModifiedDate}/>
     <script
     type="application/ld+json"
     set:html={JSON.stringify({
