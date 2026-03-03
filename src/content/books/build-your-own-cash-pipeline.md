@@ -20,10 +20,10 @@ faq:
     a: Yes, it includes a step-by-step framework for evaluating compensation plans, products, and <a href="/5-rules-to-grow-your-business-big">long-term growth potential</a>.
 
   - q: Can affiliate marketers benefit from this book?
-    a: Absolutely. The ebook provides insights into affiliate marketing, including product selection, <a href="/leads-list-manager">audience building</a>, and recurring commissions.
+    a: Absolutely. The ebook provides insights into affiliate marketing, including product selection, <a href="/leadsleap-leads-list-manager">audience building</a>, and recurring commissions.
 
   - q: How long is the ebook Build Your Own Cash Pipeline?
-    a: The book is structured into concise chapters covering residual income, survival strategies, and <a href="/digital-marketing-practical-guide">marketing secrets</a> for easy learning.
+    a: The book is structured into concise chapters covering residual income, survival strategies, and <a href="/leadsleap-digital-marketing-practical-guide">marketing secrets</a> for easy learning.
 
   - q: Is this ebook suitable for beginners?
     a: Yes, it explains concepts in simple terms while also offering advanced insights for experienced marketers.
@@ -32,7 +32,7 @@ faq:
 
 ## Mastering Residual Income and Affiliate Marketing Success  
 
-The ebook *Build Your Own Cash Pipeline* is your step-by-step guide to financial freedom through **[residual income streams](/money-income-stream), network marketing, and affiliate business opportunities**. It is crafted for beginners who want clarity and professionals who want to scale their earnings. With actionable strategies, practical survival tips, and [insider knowledge in business and marketing](/learn-marketing-insights), this book will help you set up a sustainable cash flow pipeline that keeps working for you.
+The ebook *Build Your Own Cash Pipeline* is your step-by-step guide to financial freedom through **[residual income streams](/leadsleap-money-income-stream), network marketing, and affiliate business opportunities**. It is crafted for beginners who want clarity and professionals who want to scale their earnings. With actionable strategies, practical survival tips, and [insider knowledge in business and marketing](/leadsleap-learn-marketing-insights), this book will help you set up a sustainable cash flow pipeline that keeps working for you.
 
 ### Understanding Residual and Recurring Income  
 

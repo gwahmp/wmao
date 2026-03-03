@@ -212,7 +212,7 @@ For entrepreneurs, compounding shows up in systems.
 
 - Better processes save time daily
 - Saved time goes into growth
-- Growth builds brand trust
+- Growth <a href="/brand-positioning-strategy">builds brand trust</a>
 
 Small daily improvements stack up. Over years, they separate stable <a href="/business">businesses</a> from struggling ones.
 

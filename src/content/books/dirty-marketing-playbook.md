@@ -14,7 +14,7 @@ faq:
   a: The Dirty Marketing Playbook is a practical guide to sneaky marketing tactics and conversion hacks that are legal and ethical, designed to increase opt-ins, clicks, and revenue through tested headline formulas, urgency mechanics, social proof and copy techniques.
 
 - q: Are these “dirty” tactics legal and ethical?
-  a: Yes. The playbook distinguishes between unethical manipulation and clever persuasion. All tactics are legal, platform-compliant, and include safety checklists and transparency best practices to protect brand trust.
+  a: Yes. The playbook distinguishes between unethical manipulation and clever persuasion. All tactics are legal, platform-compliant, and include safety checklists and transparency best practices to <a href="/brand-positioning-strategy">protect brand trust</a>.
 
 - q: Will these tactics work for small budgets or only large ad spends?
   a: Many tactics are low-cost growth hacks that work well for solo founders and small teams, headline swaps, micro-commitments, email retargeting, and simple A/B tests that require minimal ad spend but can boost ROI significantly.
@@ -33,7 +33,7 @@ faq:
 
 ## The Power of Dirty Marketing Playbook
 
-The Dirty Marketing Playbook is a practical guide to dirty marketing tactics, dirty marketing playbook strategies, and sneaky marketing techniques that boost conversions without crossing legal or ethical lines. If you're an internet marketer, entrepreneur, small business owner, or growth hacker who wants direct, actionable methods to increase click-through rates, drive higher conversions, and trigger powerful psychological responses, this playbook puts those conversion hacks at your fingertips.
+The Dirty Marketing Playbook is a practical guide to dirty marketing tactics, dirty marketing playbook strategies, and sneaky marketing techniques that <a href="/conversion-rate-optimization">boost conversions</a> without crossing legal or ethical lines. If you're an internet marketer, entrepreneur, small business owner, or growth hacker who wants direct, actionable methods to increase click-through rates, drive higher conversions, and trigger powerful psychological responses, this playbook puts those conversion hacks at your fingertips.
 
 ### What you’ll learn
 
@@ -41,7 +41,7 @@ Inside this playbook you’ll find a blend of proven [digital marketing](/digita
 
 ### Tactical chapters and use-cases
 
-Chapters include attention-grabbing headline structures, urgency and scarcity mechanics that feel authentic rather than pushy, social proof amplification techniques, micro-commitments that lead to bigger buys, and subtle framing that steers user choice. You’ll also get growth hacks for [list-building](/leads-list-manager), a retargeting playbook to re-warm cold leads, and low-cost testing frameworks to safely run multiple experiments. Concrete examples show how to adapt each tactic for B2C funnels, B2B lead gen, SaaS free trial optimization, and e-commerce checkout recovery.
+Chapters include attention-grabbing headline structures, urgency and scarcity mechanics that feel authentic rather than pushy, social proof amplification techniques, micro-commitments that lead to bigger buys, and subtle framing that steers user choice. You’ll also get growth hacks for [list-building](/leadsleap-leads-list-manager), a retargeting playbook to re-warm cold leads, and low-cost testing frameworks to safely run multiple experiments. Concrete examples show how to adapt each tactic for B2C funnels, B2B lead gen, SaaS free trial optimization, and e-commerce checkout recovery.
 
 ### Ethical boundaries, compliance, and testing
 
@@ -49,7 +49,7 @@ The book makes an explicit distinction between unethical manipulation and clever
 
 ### Mini case studies and templates
 
-Real short case studies show the tactics in action: a landing page tweak that improved opt-ins by 37%, an email subject-line test that doubled open rates, and a retargeting sequence that cut cart abandonment by 22%. Templates include headline swipes, urgency timers, social-proof snippets, and a simple tracking spreadsheet to attribute uplift. These resources make it fast to apply the playbook to your own [marketing funnels](/sales-funnel-manager).
+Real short case studies show the tactics in action: a landing page tweak that improved opt-ins by 37%, an email subject-line test that doubled open rates, and a retargeting sequence that cut cart abandonment by 22%. Templates include headline swipes, urgency timers, social-proof snippets, and a simple tracking spreadsheet to attribute uplift. These resources make it fast to apply the playbook to your own [marketing funnels](/leadsleap-sales-funnel-manager).
 
 ### Who should read it
 

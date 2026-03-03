@@ -25,7 +25,7 @@ In the past, employees had to figure out what customers wanted. They worked hard
 Why AI Personalisation Matters
 ------------------------------
 
-Customers are glad when they feel understood. According to a study, three-quarters of people prefer brands that personalise their experience Forbes.
+Customers are glad when they feel understood. According to a study, three-quarters of <a href="/brand-positioning-strategy">people prefer brands</a> that personalise their experience Forbes.
 
 They hope for services that are right for their requirements. Thanks to artificial intelligence, this is possible because data can be examined at high speed. It shows companies what their customers enjoy. Consequently, clients are happier, which helps the company achieve higher sales.
 
@@ -36,7 +36,7 @@ How AI Personalisation Works
 
 Artificial intelligence works with data to make personalisation possible. It stores information about what you have bought or clicked on a website. Then, it analyses the data to learn about customer preferences. For example, someone who purchases dog food could suggest dog toys. Because of this, it looks like the brand is aware of customer needs.
 
-AI allows marketers to personalise the messages they send to customers. [Around 85.1% of AI usеrs](https://www.esparkinfo.com/blog/artificial-intelligence-statistics) usе it for [blog content creation](/start-blogging-make-money). Advertisers might [reach us either through email](/email-broadcasting-tips) or social media ads. When ads are personalised, they matter more to the person seeing them. If people find things they like, they often end up buying them. Customer information is also always being automatically updated by artificial intelligence. That's how we ensure new and precise suggestions.
+AI allows marketers to personalise the messages they send to customers. [Around 85.1% of AI usеrs](https://www.esparkinfo.com/blog/artificial-intelligence-statistics) usе it for [blog content creation](/start-blogging-make-money). Advertisers might [reach us either through email](/leadsleap-email-broadcasting-tips) or social media ads. When ads are personalised, they matter more to the person seeing them. If people find things they like, they often end up buying them. Customer information is also always being automatically updated by artificial intelligence. That's how we ensure new and precise suggestions.
 
 AI Personalisation in Different Industries
 ------------------------------------------
@@ -147,4 +147,4 @@ Wrapping Up
 
 In the future, [marketing](/marketing) will be driven by personalisation. Artificial intelligence provides an easy and powerful solution. Companies are now able to reach their customers in new and improved ways. Personalisation benefits customers in various areas, such as retail and healthcare. It helps you sell more and use less time to do so.
 
-We should also pay attention to problems such as privacy. However, when artificial intelligence is planned well, it brings outstanding results. Amazon and Sephora are good examples of companies that have won customers' hearts. It's all about [making marketing easy and enjoyable](/digital-marketing-practical-guide).
+We should also pay attention to problems such as privacy. However, when artificial intelligence is planned well, it brings outstanding results. Amazon and Sephora are good examples of companies that have won customers' hearts. It's all about [making marketing easy and enjoyable](/leadsleap-digital-marketing-practical-guide).

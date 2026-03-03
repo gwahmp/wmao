@@ -23,13 +23,13 @@ It's not because they lack talent, intelligence, or even opportunity. It's becau
 
 In this article, we'll explore the real reasons why so many aspiring entrepreneurs struggle to start their first online business, the hidden <strong>boiling point</strong> of success, and how to push through when motivation fades.
 
-Success isn't a fixed metric. If you're reading this, I've just scored a small win in the content <a href="/sales-funnel-manager">marketing funnel</a>. If I can do it, so can you, start your journey today!
+Success isn't a fixed metric. If you're reading this, I've just scored a small win in the content <a href="/leadsleap-sales-funnel-manager">marketing funnel</a>. If I can do it, so can you, start your journey today!
 
 ## My Own Journey: From Late Nights to Launching My First Online Business
 
 Back in 2018, I was living alone in a tiny 1RK apartment. I had no roommates and no distractions.
 
-But that turned out to be a blessing. Every evening after work, I'd sit in front of my old laptop and teach myself web development, programming, <a href="/digital-marketing-practical-guide">digital marketing</a>, website building and learning <a href="/build-business-website-guide">how to set up my first business website</a>, I'd work until 2 AM, grab 4-5 hours of sleep, and go to my day job.
+But that turned out to be a blessing. Every evening after work, I'd sit in front of my old laptop and teach myself web development, programming, <a href="/leadsleap-digital-marketing-practical-guide">digital marketing</a>, website building and learning <a href="/build-business-website-guide">how to set up my first business website</a>, I'd work until 2 AM, grab 4-5 hours of sleep, and go to my day job.
 
 I did that for three years straight. It wasn't sustainable (and I don't recommend that level of sleep deprivation), but that focused routine helped me build momentum.
 
@@ -122,7 +122,7 @@ When you start your business, you'll experience a long stretch where nothing see
 
 That's the boiling point phase. It's invisible progress. Every hour you invest in learning, testing, and failing is like heat raising the temperature.
 
-Keep going, and you'll eventually reach that moment where everything suddenly starts to click. Traffic grows, <a href="/lead-generation-techniques-business">qualified business leads generates</a>, <a href="/sales-secret-confidence-transfer">sales happen</a>, and momentum builds.
+Keep going, and you'll eventually reach that moment where everything suddenly starts to click. Traffic grows, <a href="/lead-generation-strategies">qualified business leads generates</a>, <a href="/sales-secret-confidence-transfer">sales happen</a>, and momentum builds.
 
 But if you quit too early, all that built-up heat goes to waste.
 
@@ -152,8 +152,8 @@ Don't chase 10 business ideas at once. Choose one, maybe <a href="/affiliate-mar
 
 Instead of <strong>launch a business</strong>, aim for small wins like:
 
-* <a href="/landing-page-manager">Build a landing page</a>.
-* <a href="/leads-list-manager">Collect your first email subscriber</a>.
+* <a href="/leadsleap-landing-page-manager">Build a landing page</a>.
+* <a href="/leadsleap-leads-list-manager">Collect your first email subscriber</a>.
 * Sell one digital product.
 
 Micro goals create momentum.
@@ -176,7 +176,7 @@ People don't just buy products online, they buy trust. If your audience believes
 
 When I first started Wikimint, I didn't have credentials or followers. What <a href="/reputation-management-strategies">built my reputation</a> wasn't fancy marketing, it was transparency. I shared what worked, what failed, and how long things actually took.
 
-That honesty connected with people. Readers started asking questions, and my small project slowly turned into a brand.
+That honesty connected with people. Readers started asking questions, and my small project slowly <a href="/brand-positioning-strategy">turned into a brand</a>.
 
 If you want to build credibility:
 

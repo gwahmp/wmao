@@ -92,7 +92,7 @@ Would you share your email with someone suspicious online? Most likely not.
 
 Trust starts with credibility. Are you showing up consistently? Are you transparent about your values, expertise, and results?
 
-**Example**: A small skincare brand boosted conversions by simply showing the founder's story and before/after results on their product page. People connected with the person behind the brand.
+**Example**: A small skincare <a href="/conversion-rate-optimization">brand boosted conversions</a> by simply showing the founder's story and before/after results on their product page. People connected with the person behind the brand.
 
 **Pro tip**: Show your face. Share your journey. Use testimonials and case studies.
 
@@ -129,9 +129,9 @@ Let's simplify it further into clear, actionable steps.
 
 ### Build Confidence in You
 
-*   Share your personal story or brand mission
+*   Share your personal story or <a href="/brand-positioning-strategy">brand mission</a>
 *   Create consistent, valuable content ([blogs](/start-blogging-make-money), videos, social)
-*   Display real [testimonials and reviews](/social-reviews)
+*   Display real [testimonials and reviews](/leadsleap-social-reviews)
 *   Use trust signals like secure checkout, awards, or media features
 
 ### Build Confidence in Your Product
@@ -143,7 +143,7 @@ Let's simplify it further into clear, actionable steps.
 
 ### Build Confidence in the Customer
 
-*   Provide beginner-friendly guides or [onboarding emails](/email-automation-series)
+*   Provide beginner-friendly guides or [onboarding emails](/leadsleap-email-automation-series)
 *   Include social proof from “people like them”
 *   Use gamified progress tracking or success milestones
 *   Send motivational content or community support stories
@@ -166,7 +166,7 @@ Why List Building is Actually About Confidence Building
 
 It's a familiar phrase: "Your email list is where the real value lies."
 
-But most people [build email lists](/leads-list-manager) just to blast offers through [email broadcasting](/email-broadcasting-tips). That's a mistake.
+But most people [build email lists](/leadsleap-leads-list-manager) just to blast offers through [email broadcasting](/leadsleap-email-broadcasting-tips). That's a mistake.
 
 The real reason to build a list? To build trust. It's your chance to nurture all three types of confidence over time.
 

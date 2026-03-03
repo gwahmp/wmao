@@ -18,7 +18,7 @@ image: "business.webp"
   <li>Books covering leadership and team management skills</li>
   <li>Resources on business planning and strategic execution</li>
   <li>Ebooks about productivity systems and workflow optimization</li>
-  <li>Insights on branding, positioning, and customer loyalty</li>
+  <li>Insights on <a href="/brand-positioning-strategy">branding, positioning, and customer loyalty</a></li>
   <li>Tutorials on modern business models and scaling techniques</li>
 </ul>
 

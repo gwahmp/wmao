@@ -173,7 +173,7 @@ Don't rely only on Google or social media. Use SEO, email, [social media platfor
 
 ### Update Your Assets
 
-Your blog posts, products, and funnels should evolve. Schedule a quarterly review to refresh old assets.
+Your blog posts, products, and <a href="/sales-funnel-strategy">funnels</a> should evolve. Schedule a quarterly review to refresh old assets.
 
 Eye-Opening Stats: Why Assets Matter
 ------------------------------------
@@ -203,14 +203,14 @@ But here's what he did differently:
 Now?
 
 *   His blog generates organic traffic through SEO.
-*   His guide continues to sell through email automation.
+*   His guide continues to sell through <a href="/leadsleap-email-automation-series">email automation</a>.
 *   His app brings ad revenue and email list growth daily.
 
 **Asset Built**: SEO-optimized blog, email list, digital product, and an app that runs independently.
 
 ### Example 2: Jasmine's Micro Niche Digital Studio
 
-Jasmine, a freelance UX designer, kept getting asked the same client questions: “How do I design a landing page that converts?” and “What's the best layout for a SaaS homepage?”
+Jasmine, a freelance UX designer, kept getting asked the same client questions: “How do I design a landing page that <a href="/conversion-rate-optimization">converts</a>?” and “What's the best layout for a SaaS homepage?”
 
 Instead of repeating herself, she:
 
@@ -299,7 +299,7 @@ A Quick Recap on Building Assets for an Online Business
 *   A sustainable online business needs assets, not just income.
 *   True assets bring [passive income](/passive-income-ideas) or traffic and are under your control.
 *   Start with your website, email list, and evergreen content.
-*   Diversify your platforms and always collect leads.
+*   Diversify your platforms and always <a href="/lead-generation-strategies">collect leads</a>.
 *   Avoid relying too much on trends or single channels.
 
 Wrap-Up with a Question for You

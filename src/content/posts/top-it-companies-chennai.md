@@ -180,7 +180,7 @@ faq:
   <p>Headquartered in Chennai, <span data-link="https://www.ramco.com/">Ramco Systems</span> is known for its cloud-based ERP solutions. It's a leader in enterprise software, offering opportunities in software development, cloud infrastructure, and IT consulting, especially valuable for freshers entering the SaaS and ERP space.</p>
 
 <h3>Zensar Technologies</h3>
-  <p><span data-link="https://www.zensar.com/">Zensar Technologies</span> operates from its Chennai location with a strong focus on digital transformation and cloud-based services. The company provides exciting roles for freshers in software development, data analytics, and IT consulting across global projects.</p>
+  <p><span data-link="https://www.zensar.com/">Zensar Technologies</span> operates from its Chennai location with a strong focus on digital transformation and cloud-based services. The company provides exciting roles for freshers in software development, <a href="/analytics-performance-tracking">data analytics</a>, and IT consulting across global projects.</p>
 
 <h3>Virtusa</h3>
   <p><span data-link="https://www.virtusa.com/">Virtusa</span> is a global digital engineering and IT services company with a key office in Chennai. Known for its work in enterprise application development, cloud transformation, and AI, it offers excellent career paths for freshers in both software and consulting roles.</p>
@@ -243,7 +243,7 @@ faq:
 <p>Lister Technologies in Chennai focuses on digital enablement, software development, and knowledge process outsourcing. With a strong tech stack and client base, the company welcomes freshers into roles in software engineering and digital consulting.</p>
 
 <h3>Pentafox Technologies</h3>
-<p>Pentafox Technologies is a Chennai-based IT company that builds scalable digital platforms and cloud-native applications. It's ideal for freshers wanting to grow in software development, digital marketing, or cloud transformation solutions.</p>
+<p>Pentafox Technologies is a Chennai-based IT company that builds scalable digital platforms and cloud-native applications. It's ideal for freshers wanting to grow in software development, <a href="/digital-marketing-foundation">digital marketing</a>, or cloud transformation solutions.</p>
 
 <h3>Inspirisys Solutions</h3>
 <p>Inspirisys Solutions, headquartered in Chennai, delivers a broad range of IT services including cloud infrastructure, product engineering, and cybersecurity. The company actively recruits freshers looking to break into tech roles across enterprise IT solutions.</p>

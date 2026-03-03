@@ -163,7 +163,7 @@ Avoid confusion by setting clear responsibilities from the beginning. Common sta
 
 *   CEO (Chief Executive Officer) – Vision & leadership
 *   CTO (Chief Technology Officer) – Product & technology
-*   CMO (Chief Marketing Officer) – Marketing & branding
+*   CMO (Chief Marketing Officer) – <a href="/marketing">Marketing</a> & <a href="/brand-positioning-strategy">branding</a>
 
 **Example**: Steve Jobs had the vision, but Apple wouldn't have succeeded without Steve Wozniak's technical expertise.
 

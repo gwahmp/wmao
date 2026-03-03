@@ -160,7 +160,7 @@ Andreas, a former IT consultant, created a niche dropshipping store for outdoor 
 
 ### Ricky Hayes: $3 Million in a Year
 
-Ricky used high-quality video ads and Facebook marketing to grow his dropshipping business from $0 to $3 million in just one year. He suggests focusing on building a brand rather than selling random products.
+Ricky used high-quality video ads and Facebook marketing to grow his dropshipping business from $0 to $3 million in just one year. He suggests focusing on <a href="/brand-positioning-strategy">building a brand</a> rather than selling random products.
 
 ### Mike: $200 to $5000
 

@@ -143,7 +143,7 @@ Because when someone gives you their email, you get a second chance. And a third
 
 ### The Email Funnel Strategy
 
-Let's look at a simple affiliate email funnel:
+Let's look at a simple affiliate <a href="/sales-funnel-strategy">email funnel</a>:
 
 #### Squeeze Page (Opt-In):
 
@@ -213,7 +213,7 @@ Let's back all this up with some data:
 
 *   81% of brands run affiliate programs (Rakuten).
 *   [16% of all e-commerce sales come from affiliates](https://www.hostinger.in/tutorials/affiliate-marketing-statistics).
-*   Emails that follow up after the first contact can increase conversions by 40%.
+*   Emails that follow up after the first contact can <a href="/conversion-rate-optimization">increase conversions</a> by 40%.
 *   The average affiliate earns around $50,000/year, but [top performers make 6-7 figures](https://www.outbrain.com/blog/affiliate-marketing/).
 
 These numbers show it's not just about luck - it's about strategy.
@@ -223,7 +223,7 @@ Recap: Key Takeaways
 
 *   Presell, don't sell. Speak from experience, not like a salesperson.
 *   Build an email list. It's your long-term affiliate asset.
-*   Create simple landing pages. Leverage them to deliver value and attract potential leads.
+*   Create simple landing pages. Leverage them to deliver value and <a href="/lead-generation-strategies">attract potential leads</a>.
 *   Use email to build trust. Follow up with helpful, honest insights.
 *   Leverage social proof. Share real results from real people.
 

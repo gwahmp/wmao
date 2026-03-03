@@ -33,7 +33,7 @@ faq:
 
 In today’s fast-paced digital economy, standing out as an online marketer requires more than just surface-level tactics. It takes a solid foundation, proven strategies, and the discipline to execute consistently. 30 Rules for Being an Online Marketer is a comprehensive playbook that distills years of experience into practical steps you can implement immediately.
 
-This ebook is designed for entrepreneurs, affiliate marketers, coaches, content creators, and anyone serious about building a profitable digital business. From understanding the psychology of sales to <a href="/automate-business-processes-guide">automating your systems</a>, you’ll discover the exact methods that successful online marketers use to grow [sustainable income streams](/money-income-stream).
+This ebook is designed for entrepreneurs, affiliate marketers, coaches, content creators, and anyone serious about building a profitable digital business. From understanding the psychology of sales to <a href="/automate-business-processes-guide">automating your systems</a>, you’ll discover the exact methods that successful online marketers use to grow [sustainable income streams](/leadsleap-money-income-stream).
 
 ### Why These Rules Matter in Digital Marketing
 
@@ -42,9 +42,9 @@ Success in [digital marketing](/digital-marketing-strategy) isn’t random, it�
 - <b>Rule 1</b>: <strong>Sell something first</strong>. Until you sell a product or service, you don’t have a business.
 - <b>Rule 2</b>: <strong>Get profitable fast</strong>. Avoid unnecessary debt by ensuring your investments pay off quickly.
 - <b>Rule 5</b>: <strong>Upsell effectively</strong>. Learn how to move customers from small purchases to higher-value offers.
-- <b>Rule 10</b>: <strong>Build a list first</strong>. Your [email list](/leads-list-manager) is the most [valuable asset](/build-online-business-assets) for long-term growth.
+- <b>Rule 10</b>: <strong>Build a list first</strong>. Your [email list](/leadsleap-leads-list-manager) is the most [valuable asset](/build-online-business-assets) for long-term growth.
 
-Each rule comes with real-world [business and marketing insights](/learn-marketing-insights), making it easy to apply directly to your own projects.
+Each rule comes with real-world [business and marketing insights](/leadsleap-learn-marketing-insights), making it easy to apply directly to your own projects.
 
 ### Key Takeaways from the Ebook
 
@@ -60,4 +60,4 @@ The ebook highlights the importance of [building relationships](/business-relati
 
 Sustainable success requires discipline and balance. You’ll discover why rest matters as much as work, how to prioritize tasks effectively, and why failing fast is better than standing still. The book also dives into the [importance of positivity](/law-attraction-business-life-success), [creativity](/unlocking-power-of-creative-thinking), and celebrating small wins to keep momentum alive.
 
-By the time you finish, you’ll have a complete [blueprint for online marketing](/digital-marketing-practical-guide) that covers sales, mindset, [business growth strategies](/5-rules-to-grow-your-business-big), and automation. These are not theories, they’re proven rules that have helped countless marketers succeed.
+By the time you finish, you’ll have a complete [blueprint for online marketing](/leadsleap-digital-marketing-practical-guide) that covers sales, mindset, [business growth strategies](/5-rules-to-grow-your-business-big), and <a href="/marketing-automation-systems">marketing automation</a>. These are not theories, they’re proven rules that have helped countless marketers succeed.

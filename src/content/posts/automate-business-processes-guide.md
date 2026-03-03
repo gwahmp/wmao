@@ -428,7 +428,7 @@ Form → CRM → Email → Task
 
 CRMs store leads, contacts, and deals.
 
-- **HubSpot** – Free CRM with marketing automation tools
+- **HubSpot** – Free CRM with <a href="/marketing-automation-systems">marketing automation</a> tools
 - **Zoho CRM** – <a href="/sales-secret-confidence-transfer">Flexible sales</a> CRM for growing businesses
 - **Freshsales** – Sales CRM for tracking customer pipelines
 
@@ -440,7 +440,7 @@ CRMs store leads, contacts, and deals.
 
 ### Email and Marketing Automation
 
-- **MailerLite** – <a href="/email-automation-series">Email marketing software</a> for small businesses
+- **MailerLite** – <a href="/leadsleap-email-automation-series">Email marketing software</a> for small businesses
 - **Brevo** – Multichannel marketing platform with email SMS
 - **ActiveCampaign** – Marketing automation with advanced customer journeys
 

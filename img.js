@@ -5,10 +5,10 @@ import sharp from "sharp";
 
 const rawDir = path.join(process.cwd(), "raw/blog");
 const outDir800 = path.join(process.cwd(), "public/assets/images/blog");
-const outDir200 = path.join(outDir800, "200");
+const outDir320 = path.join(outDir800, "320");
 
 // Ensure output directories exist
-[ outDir800, outDir200 ].forEach(dir => {
+[ outDir800, outDir320 ].forEach(dir => {
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
   }
@@ -18,10 +18,10 @@ async function processImage(file) {
   const inputPath = path.join(rawDir, file);
   const baseName = path.parse(file).name + ".webp"; // always webp output
   const outPath800 = path.join(outDir800, baseName);
-  const outPath200 = path.join(outDir200, baseName);
+  const outPath320 = path.join(outDir320, baseName);
 
   // Skip if both versions already exist
-  if (fs.existsSync(outPath800) && fs.existsSync(outPath200)) {
+  if (fs.existsSync(outPath800) && fs.existsSync(outPath320)) {
     console.log(`✅ Skipped (already processed): ${file}`);
     return;
   }
@@ -36,13 +36,13 @@ async function processImage(file) {
       console.log(`📸 Created 800px: ${outPath800}`);
     }
 
-    // 200px version
-    if (!fs.existsSync(outPath200)) {
+    // 320px version
+    if (!fs.existsSync(outPath320)) {
       await sharp(inputPath)
-        .resize({ width: 200 })
+        .resize({ width: 320 })
         .webp({ quality: 75 })
-        .toFile(outPath200);
-      console.log(`📸 Created 200px: ${outPath200}`);
+        .toFile(outPath320);
+      console.log(`📸 Created 320px: ${outPath320}`);
     }
   } catch (err) {
     console.error(`❌ Error processing ${file}:`, err);

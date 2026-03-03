@@ -20,7 +20,7 @@ faq:
 
 - q: What services can I offer as a virtual assistant?
   a: |
-    Services offered by virtual assistants vary widely. They can include administrative tasks, digital marketing, content creation, social media management, bookkeeping, technical support, and more. Your services should align with your skills and the needs of your target market.
+    Services offered by virtual assistants vary widely. They can include administrative tasks, <a href="/digital-marketing-foundation">digital marketing</a>, content creation, social media management, bookkeeping, technical support, and more. Your services should align with your skills and the needs of your target market.
 
 - q: How do I find clients for my virtual assistant business?
   a: |
@@ -156,7 +156,7 @@ Register your business, obtain any necessary licenses, and set up a professional
 
 ### Networking and Marketing
 
-Attend virtual networking events, join online forums, and participate in industry-specific groups. Networking is invaluable in the virtual assistant business. Establish connections with fellow VAs and potential clients. Utilize content marketing by creating blog posts, videos, or webinars showcasing your expertise and offering valuable insights.
+Attend virtual networking events, join online forums, and participate in industry-specific groups. Networking is invaluable in the virtual assistant business. Establish connections with fellow VAs and potential clients. Utilize <a href="/content-marketing-strategy">content marketing</a> by creating blog posts, videos, or webinars showcasing your expertise and offering valuable insights.
 
 ### Provide Exceptional Customer Service
 

@@ -25,7 +25,7 @@ if (post.data && post.data.image) {
 const imageSrc = rawImage && rawImage.trim() !== ""
   ? (rawImage.startsWith("http")
       ? rawImage
-      : `/assets/images/blog/200/${rawImage}`)
+      : `/assets/images/blog/320/${rawImage}`)
   : "/assets/images/business-motivation-marketing-strategy-personal-finance-strategy.webp";
 
 return `

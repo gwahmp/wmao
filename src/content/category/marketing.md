@@ -14,12 +14,12 @@ image: "marketing-articles-blog-posts.webp"
   
   <h3>Included topics you’ll find in this bundle:</h3>
   <ul>
-    <li>Step-by-step resources on digital marketing fundamentals</li>
+    <li>Step-by-step resources on <a href="/digital-marketing-foundation">digital marketing fundamentals</a></li>
     <li>Ebooks about social media growth and engagement tactics</li>
     <li>Guides on email marketing strategies and <a href="/automate-business-processes-guide">automation</a></li>
-    <li>Insights into content marketing and storytelling methods</li>
+    <li>Insights into <a href="/content-marketing-strategy">content marketing</a> and storytelling methods</li>
     <li>References on paid ads, SEO, and analytics tracking</li>
-    <li>Tutorials on building customer funnels and lead generation</li>
+    <li>Tutorials on <a href="/sales-funnel-strategy">building customer funnels</a> and <a href="/lead-generation-strategies">lead generation</a></li>
   </ul>
   
   <p>You can apply the knowledge to your own campaigns or rebrand and sell them as professional resources. It’s a practical toolkit for anyone serious about growing through smart marketing.</p>
@@ -36,8 +36,8 @@ image: "marketing-articles-blog-posts.webp"
     <li>Social media growth, engagement, and content ideas</li>
     <li>Email marketing strategies and list-building tips</li>
     <li>Content marketing, storytelling, and brand voice</li>
-    <li>SEO basics, keyword strategies, and analytics insights</li>
-    <li>Funnel creation, lead magnets, and conversion ideas</li>
+    <li>SEO basics, keyword strategies, and <a href="/analytics-performance-tracking">analytics insights</a></li>
+    <li>Funnel creation, lead magnets, and <a href="/conversion-rate-optimization">conversion ideas</a></li>
   </ul>
   
   <p>You can publish them as they are, rewrite them into unique posts, or turn them into guides and social media captions. With PLR rights, they’re yours to use however you choose for maximum reach and engagement.</p>
@@ -62,7 +62,7 @@ image: "marketing-articles-blog-posts.webp"
   <p>From Google Ads to social media campaigns, advertising plays a key role in reaching your target audience. Our guides help you create compelling ad copy, manage budgets wisely, and optimize performance for better ROI. Whether you're running paid ads or testing new platforms, we’ve got you covered.</p>
   
   <h3>Stay Ahead of the Curve</h3>
-  <p>Marketing is always evolving — and so should your strategy. Stay updated with the latest tools, platforms, and trends that can give your brand a competitive edge. Our posts are designed to be practical, easy to follow, and focused on real results.</p>
+  <p>Marketing is always evolving — and so should your strategy. Stay updated with the latest tools, platforms, and trends that can give <a href="/brand-positioning-strategy">your brand a competitive edge</a>. Our posts are designed to be practical, easy to follow, and focused on real results.</p>
   
   <p>Browse the posts below to dive deeper into the world of marketing!</p>
 </article>

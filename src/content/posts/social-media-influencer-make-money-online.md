@@ -132,7 +132,7 @@ Not true! Micro-influencers with smaller, engaged audiences often perform better
 
 ### Myth 2: It's All Glamorous
 
-Behind the scenes, influencers spend hours brainstorming content, editing photos, responding to comments, and negotiating with brands. It's hard work!
+Behind the scenes, influencers spend hours brainstorming content, editing photos, responding to comments, and <a href="/improve-negotiation-skill">negotiating with brands</a>. It's hard work!
 
 
 Final Thoughts

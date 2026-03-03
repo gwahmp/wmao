@@ -449,7 +449,7 @@ Getting your first 100 customers is not about speed.
 
 It is about care.
 
-- Each customer is a conversation.
+- Each customer is a <a href="/conversion-rate-optimization">conversation</a>.
 - Each conversation is a lesson.
 - Each lesson moves you forward.
 
@@ -469,7 +469,7 @@ Ravi reached 100 customers in six months.
 - Each reply shaped his product.  
 - Each small win pushed him forward.
 
-Your first 100 customers are not waiting for a perfect brand.  
+Your first 100 customers are not waiting for a <a href="/brand-positioning-strategy">perfect brand</a>.  
 They are waiting for **someone who understands them**.
 
 - Start small.  

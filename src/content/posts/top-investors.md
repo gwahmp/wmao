@@ -70,7 +70,7 @@ Many great investors believed in simple mental habits, and the classic <a href="
   
   - Known for value investing
   - Famous example: Coca-Cola investment in 1988, still held today
-  - Loves businesses with strong brand value and steady cash flow
+  - Loves businesses with <a href="/brand-positioning-strategy">strong brand value</a> and steady cash flow
   - Reads for 5–6 hours daily to make better decisions
   
   Many new investors follow Buffett because his long-term approach helps them build slow and steady <a href="/passive-income-ideas">passive income</a> through strong businesses.
