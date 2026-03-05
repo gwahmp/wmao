@@ -81,7 +81,7 @@ Common business website goals include:
 
 For example:
 
-A <a href="/business-growth-services">digital marketing agency</a> needs lead forms and case studies.
+A <a href="/choose-best-digital-marketing-agency">digital marketing agency</a> needs lead forms and case studies.
 An ecommerce brand needs product pages and payment systems.
 
 Both websites look completely different because their goals differ.

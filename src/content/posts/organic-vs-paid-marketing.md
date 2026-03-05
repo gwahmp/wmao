@@ -167,7 +167,7 @@ This creates stability + speed.
 
 ## Real Example: Service-Based Startup
 
-Let’s say you run a digital marketing agency.
+Let’s say you run a <a href="/choose-best-digital-marketing-agency">digital marketing agency</a>.
 
 Your balanced plan could be:
 

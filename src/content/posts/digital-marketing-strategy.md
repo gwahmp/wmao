@@ -401,7 +401,7 @@ It must support:
 
 For example:
 
-- **Blog post**: “How to choose a branding agency” (awareness)
+- **Blog post**: “<a href="/choose-best-digital-marketing-agency">How to choose a branding agency</a>” (awareness)
 - **Case study**: “How we helped X startup grow 200%” (consideration)
 - **Landing page** with offer (decision)
 

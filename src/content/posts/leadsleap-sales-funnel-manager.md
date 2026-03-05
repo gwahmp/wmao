@@ -117,7 +117,7 @@ It's perfect for:
 *   Downline support
 *   JV partnerships
 
-As an agency, we rely on this feature to onboard clients fast, handing them done-for-you funnels they can customize in under an hour.
+As <a href="/choose-best-digital-marketing-agency">an agency</a>, we rely on this feature to onboard clients fast, handing them done-for-you funnels they can customize in under an hour.
 
 Use Case Scenarios
 ------------------

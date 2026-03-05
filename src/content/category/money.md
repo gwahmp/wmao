@@ -8,7 +8,7 @@ image: "money-articles-blog-posts.webp"
 <article>
   
   <h2 id="books">eBooks for Freelancers & Agencies</h2>
-  <p>Tailored for independent professionals and small service providers, this bundle focuses on freelancing success and agency growth. It combines resources that help you attract clients, manage projects efficiently, and scale services into sustainable businesses.</p>
+  <p>Tailored for independent professionals and small service providers, this bundle focuses on freelancing success and <a href="/choose-best-digital-marketing-agency">agency growth</a>. It combines resources that help you attract clients, manage projects efficiently, and scale services into sustainable businesses.</p>
   
 <button class="btn" data-title="eBooks Bundle for Freelancers and Agencies" data-prod="https://mega.nz/file/7opQhA7K#OAE2zfOBboopRUvb2eUmahR3lyXFlvhBx2gJft7qS6Q">Get the Books</button>
   

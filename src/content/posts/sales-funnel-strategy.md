@@ -113,7 +113,7 @@ They are comparing solutions.
 
 They search things like:
 
-- “Best web design agency for startups”
+- “<a href="/choose-best-digital-marketing-agency">Best web design agency for startups</a>”
 - “Email marketing software comparison”
 - “Online fitness coach reviews”
 

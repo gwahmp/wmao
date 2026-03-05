@@ -49,7 +49,7 @@ faq:
 
 The Day Everything Changed
 
-Ravi ran a small digital agency.
+Ravi ran a small <a href="/choose-best-digital-marketing-agency">digital agency</a>.
 He worked 12 hours a day.
 Yet projects were late, emails were missed, and invoices stayed unpaid.
 
