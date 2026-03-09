@@ -1,0 +1,291 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const frontmatter = {
+  title: "Affiliate Test",
+  description: "Affiliate system test page",
+  image: "/assets/images/others/careers-at-wikimint-find-jobs.webp",
+  tags: ["test"],
+  author: "Wikimint Team",
+  noindex: true,
+};
+---
+
+<BaseLayout frontmatter={frontmatter}>
+
+   <Fragment slot="head">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="/assets/js/affiliate.js" defer></script> -->
+  </Fragment> 
+
+  <div id="loginRegister" class="hidden min-h-screen bg-gray-100 flex items-center justify-center p-6">
+
+    <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
+    
+    <h1 class="text-2xl font-bold text-center mb-6">Wikimint Account</h1>
+    
+    <!-- REGISTER -->
+    
+    <div class="space-y-3" id="registerSection">
+    
+    <h2 class="font-semibold">Register</h2>
+    
+    <input id="reg_email"
+    type="email"
+    placeholder="Email"
+    class="w-full border rounded-lg p-2"/>
+    
+    <input id="reg_pass"
+    type="password"
+    placeholder="Password"
+    class="w-full border rounded-lg p-2"/>
+    
+    <button onclick="registerUser()"
+    class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+    Create Account
+    </button>
+    <hr class="my-6">
+
+    </div>
+    
+    
+    <!-- LOGIN -->
+    
+    <div class="space-y-3" id="loginSection">
+    
+    <h2 class="font-semibold">Login</h2>
+    
+    <input id="login_email"
+    type="email"
+    placeholder="Email"
+    class="w-full border rounded-lg p-2"/>
+    
+    <input id="login_pass"
+    type="password"
+    placeholder="Password"
+    class="w-full border rounded-lg p-2"/>
+    
+    <button onclick="loginUser()"
+    class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">
+    Login
+    </button>
+
+    <button onclick="forgotPassword()"
+class="text-sm text-blue-600 underline">
+Forgot password?
+</button>
+
+
+    </div>
+    
+    
+
+    </div>
+    
+    </div>
+
+<div id="accountSection" class="hidden">
+
+
+  <div class="mx-auto">
+
+    <!-- hidden radios -->
+    <input type="radio" name="tabs" id="tab1" checked class="hidden">
+    <input type="radio" name="tabs" id="tab2" class="hidden">
+    <input type="radio" name="tabs" id="tab3" class="hidden">
+    
+    <!-- tab buttons -->
+    <div class="tabs flex overflow-x-auto whitespace-nowrap border-b">
+    
+    <label for="tab1" class="tab-btn px-4 py-3 cursor-pointer border-b-2 border-transparent">
+    Dashboard
+    </label>
+    
+    <label for="tab2" class="tab-btn px-4 py-3 cursor-pointer border-b-2 border-transparent">
+    Profile
+    </label>
+    
+    <label for="tab3" class="tab-btn px-4 py-3 cursor-pointer border-b-2 border-transparent">
+    Affiliates
+    </label>
+    
+    </div>
+    
+    <!-- tab content -->
+    <div class="mt-4">
+    
+    <div class="tab-content tab1">
+<p>Welcome <span id="welcome"></span>!</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <div>
+        <p class="text-xl font-bold text-gray-500">Total Earnings</p>
+        <p class="text-6xl font-bold text-green-600">$5324</p>
+      </div>
+      
+      <div><p class="text-xl font-bold text-gray-500">Total Paid</p>
+        <p class="text-6xl font-bold text-green-700">$5324</p>
+      </div>
+      
+      <div><p class="text-xl font-bold text-gray-500">Current Balance</p>
+        <p class="text-6xl font-bold text-green-800">$5324</p>
+      </div>
+      
+      </div>
+
+    </div>
+    
+    <div class="tab-content tab2">
+
+      <div id="resetPasswordSection" class="space-y-3">
+  
+        <h2 class="font-semibold text-lg">Reset Password</h2>
+        
+        <input id="newPassword"
+        type="password"
+        placeholder="New password"
+        class="w-full border rounded p-2">
+        
+        <button onclick="updatePassword()"
+        class="w-full bg-blue-600 text-white p-2 rounded">
+        Update Password
+        </button>
+        
+        </div>
+
+
+  
+  
+      <!-- PROFILE -->
+  <div id="profileSection" class="space-y-3">
+  
+    <h2 class="font-semibold text-lg">Profile</h2>
+  
+    <input id="profile_name" placeholder="Name"
+    class="w-full border rounded p-2">
+  
+    <input id="profile_website" placeholder="Website"
+    class="w-full border rounded p-2">
+  
+    <input id="profile_twitter" placeholder="Twitter"
+    class="w-full border rounded p-2">
+  
+    <input id="profile_linkedin" placeholder="LinkedIn"
+    class="w-full border rounded p-2">
+  
+    <button onclick="updateProfile()"
+    class="w-full bg-indigo-600 text-white p-2 rounded hover:bg-indigo-700">
+    Update Profile
+    </button>
+  
+    </div>
+  
+  
+    <!-- PASSWORD -->
+    <div id="passwordSection" class="space-y-3">
+  
+    <h2 class="font-semibold text-lg">Change Password</h2>
+  
+    <input id="new_password"
+    type="password"
+    placeholder="New password"
+    class="w-full border rounded p-2">
+  
+    <button onclick="changePassword()"
+    class="w-full bg-yellow-600 text-white p-2 rounded hover:bg-yellow-700">
+    Update Password
+    </button>
+  
+    </div>
+  
+  
+    <!-- DELETE -->
+    <div id="dangerSection" class="space-y-3">
+  
+    <h2 class="font-semibold text-lg text-red-600">Danger Zone</h2>
+  
+    <button onclick="deleteAccount()"
+    class="w-full bg-red-600 text-white p-2 rounded hover:bg-red-700">
+    Delete Account
+    </button>
+  
+    </div>
+      </div>
+    
+    <div class="tab-content tab3">
+  <!-- AFFILIATE -->
+    
+  <div id="affiliateSection" class="space-y-3">
+    
+    <h2 class="font-semibold">Your Affiliate Link</h2>
+    
+    <div class="flex gap-2">
+    
+    <input id="myref"
+    readonly
+    class="w-full border rounded-lg p-2 text-sm"/>
+    
+    <button onclick="copyAffiliate()"
+    class="bg-gray-800 text-white px-4 rounded-lg">
+    Copy
+    </button>
+    
+    </div>
+    
+    </div>
+      
+        </div>
+    
+    </div>
+    
+    </div>
+    
+    <style>
+    
+    /* hide all panels by default */
+    .tab-content{
+    display:none;
+    }
+    
+    /* show active panel */
+    
+    #tab1:checked ~ div + div .tab1 { display:block; }
+    #tab2:checked ~ div + div .tab2 { display:block; }
+    #tab3:checked ~ div + div .tab3 { display:block; }
+    
+    /* active tab style */
+    
+    #tab1:checked ~ .tabs label[for="tab1"],
+    #tab2:checked ~ .tabs label[for="tab2"],
+    #tab3:checked ~ .tabs label[for="tab3"]{
+    border-color:#2563eb;
+    color:#2563eb;
+    font-weight:600;
+    }
+    
+    </style>
+
+  
+      <div id="leaderboard"></div>
+
+
+      
+  
+      
+      <!-- LOGOUT -->
+      <div id="logoutBtn">
+        <hr class="my-6">
+  
+        <button onclick="logoutUser()"
+        class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700">
+        Logout
+        </button>
+        
+      </div>
+  
+  
+  
+  
+</div>
+
+</BaseLayout>
