@@ -43,8 +43,10 @@ function onLoginState(){
   document.getElementById("accountSection")?.classList.remove("hidden")
   document.getElementById("welcome").innerText = dn
 
+  loadProfile();
+  setUserData();
   showAffiliateLink()
-  loadProfile()
+
 }
 
 function onLogoutState(){
@@ -71,19 +73,56 @@ function captureReferral(){
 
 }
 
+/*Toggle Login Register*/
+
+function showRegister(){
+
+  document.getElementById("loginSection").classList.add("hidden")
+  document.getElementById("registerSection").classList.remove("hidden")
+  
+  }
+  
+  function showLogin(){
+  
+  document.getElementById("registerSection").classList.add("hidden")
+  document.getElementById("loginSection").classList.remove("hidden")
+  
+  }
 
 /* ================================
    REGISTER
 ================================ */
-
+const regBtn = document.querySelector("#registerSection button")
 window.registerUser = async function(){
 
-  const email = document.getElementById("reg_email").value
+  const email = document.getElementById("reg_email").value.trim()
   const password = document.getElementById("reg_pass").value
-
+  const confirmPassword = document.getElementById("reg_pass_confirm").value
+  
+  if(!email || !password){
+  alert("Email and password are required")
+  return
+  }
+  
+  if(password !== confirmPassword){
+  alert("Passwords do not match")
+  return
+  }
+  
+  if(password.length < 6){
+  alert("Password must be at least 6 characters")
+  return
+  }
+  
+  regBtn.disabled = true
+  regBtn.innerText = "Creating..."
+  
   await signup(email,password)
+  
+  regBtn.disabled = false
+  regBtn.innerText = "Create Account"
 
-}
+  }
 
 async function signup(email,password){
 
@@ -131,7 +170,7 @@ window.loginUser = async function(){
 
   const email = document.getElementById("login_email").value
   const password = document.getElementById("login_pass").value
-
+document.getElementById("logBtn").innerText = "Please wait...";
   const { error } = await supabaseClient.auth.signInWithPassword({
     email,
     password
@@ -142,8 +181,8 @@ window.loginUser = async function(){
     return
   }
 
-  onLoginState()
-  setUserData();
+  //onLoginState()
+  //setUserData();
   window.location.reload();
 
 
@@ -252,7 +291,15 @@ window.logoutUser = async function(){
 
   await supabaseClient.auth.signOut()
 
-  onLogoutState()
+  //onLogoutState()
+
+  localStorage.removeItem("dn"); 
+  localStorage.removeItem("em"); 
+  localStorage.removeItem("wb"); 
+  localStorage.removeItem("ln"); 
+  localStorage.removeItem("tw"); 
+  localStorage.removeItem("aid"); 
+
   window.location.reload();
 
 }
@@ -293,8 +340,6 @@ window.updateProfile = async function(){
 ================================ */
  function loadProfile(){
 
-
-  
   document.getElementById("profile_name").value = dn;
   document.getElementById("profile_website").value = wb;
   document.getElementById("profile_twitter").value = tw;

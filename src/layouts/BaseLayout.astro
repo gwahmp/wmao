@@ -114,7 +114,7 @@ const {
   type="application/rss+xml"
   title="Wikimint Blog RSS"
   href="/rss.xml" />
-
+{/*
 <script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -129,7 +129,6 @@ const {
   
 {import.meta.env.PROD && (
   <>
-  {/* Google Tag Manager */}
   <script is:inline>
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -137,7 +136,6 @@ const {
    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
    })(window,document,'script','dataLayer','GTM-M5WJVVQ');
    </script>
-   {/* End Google Tag Manager */}
 
    </>
   )}
@@ -146,6 +144,32 @@ const {
 <script is:inline src="/assets/lib/klaro.min.js"></script>
 <script is:inline src="/assets/js/klaro.js"></script>
 <link rel="stylesheet" href="/assets/css/klaro.min.css"/>
+*/}
+
+
+<script is:inline src="https://cdn.jsdelivr.net/gh/wikimint/wm-cookie-consent@1.0.9/dist/wm-cookie-consent.min.js"
+data-consent-title="We value your privacy"
+    data-consent-description="This website uses cookies to ensure you get the best experience on our website."
+    data-policy-link="/privacy-policy"
+    data-policy-title="Privacy Policy"
+    data-theme="light"
+    data-position="bottom-left"
+    data-font-family="system-ui"
+    data-cookie-manage="true"></script>
+
+    <!-- Google tag (gtag.js) -->
+<script is:inline async data-consent="analytics" type="text/plain" data-src="https://www.googletagmanager.com/gtag/js?id=G-HBNN5MVE39"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HBNN5MVE39');
+</script>
+
+<script is:inline async data-consent="ads" type="text/plain" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784071102690039"
+     crossorigin="anonymous"></script>
+
 
 <slot name="head" />
 
@@ -185,6 +209,6 @@ const {
       <slot />
     </main>
     <Footer />
-
+    <slot name="body-end" />
   </body>
 </html>
