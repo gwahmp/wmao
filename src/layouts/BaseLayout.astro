@@ -147,15 +147,9 @@ const {
 */}
 
 
-<script is:inline src="https://cdn.jsdelivr.net/gh/wikimint/wm-cookie-consent@1.0.10/dist/wm-cookie-consent.min.js"
-data-consent-title="We value your privacy"
-    data-consent-description="This website uses cookies to ensure you get the best experience on our website."
-    data-policy-link="/legal#privacy-policy"
-    data-policy-title="Privacy Policy"
-    data-theme="light"
-    data-position="bottom-left"></script>
-
-    <!-- Google tag (gtag.js) -->
+{import.meta.env.PROD && (
+  <>
+  <!-- Google tag (gtag.js) -->
 <script is:inline async data-consent="analytics" type="text/plain" data-src="https://www.googletagmanager.com/gtag/js?id=G-HBNN5MVE39"></script>
 <script is:inline data-consent="analytics" type="text/plain">
   window.dataLayer = window.dataLayer || [];
@@ -167,6 +161,23 @@ data-consent-title="We value your privacy"
 
 <script is:inline async data-consent="ads" type="text/plain" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784071102690039"
      crossorigin="anonymous"></script>
+   </>
+  )}
+
+
+
+
+<script is:inline src="https://cdn.jsdelivr.net/gh/wikimint/wm-cookie-consent@1.0.11/dist/wm-cookie-consent.min.js"
+data-consent-title="We value your privacy"
+    data-consent-description="This website uses cookies to ensure you get the best experience on our website."
+    data-policy-link="/legal#privacy-policy"
+    data-policy-title="Privacy Policy"
+    data-theme="light"
+    data-position="bottom-left"></script>
+
+
+    
+
 
 
 <slot name="head" />
@@ -192,6 +203,7 @@ data-consent-title="We value your privacy"
 
   </head>
   <body>
+    {/*
     {import.meta.env.PROD && (
       <noscript>
         <iframe
@@ -202,6 +214,7 @@ data-consent-title="We value your privacy"
         </iframe>
       </noscript>
       )}
+       */}
     <Header />
     <main>
       <slot />
