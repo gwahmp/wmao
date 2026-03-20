@@ -1,0 +1,450 @@
+---
+import LandingLayout from "../../layouts/LandingLayout.astro";
+const version = Date.now();
+import { Code } from 'astro:components';
+
+const frontmatter = {
+  title: "WM Cookie Consent – Lightweight JavaScript Cookie Banner for GDPR & Privacy Compliance",
+  description: "Add a customizable cookie consent banner to your website using WM Cookie Consent. Lightweight vanilla JavaScript library with NPM and jsDelivr CDN support for fast and simple integration.",
+  // canonical: "/about",
+  image: "/assets/images/others/cookie-consent-javascript-libraryconsent-management-platform.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+  disableAds: true,
+};
+
+---
+
+<LandingLayout frontmatter={frontmatter}>
+
+  <section class="col-2">
+      <div class="col">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4 text-gray-800">
+          Cookie Consent for Modern Websites
+        </h1>
+        <p class="text-gray-600">
+          Add a fully customizable, simple, lightweight  cookie consent banner to your website using a fast and dependency-free JavaScript library. WM Cookie Consent helps you meet privacy regulations while giving visitors clear control over their data preferences.
+        </p>
+
+
+
+             <a
+             href="#docs" 
+             class="btn"
+             >View Documentation</a>
+           
+             <p>
+              <strong>Free forever with full compliance.</strong> <br/><small>Analytics available on paid plans.</small>
+                    </p>
+
+      </div>
+      <div class="col">
+        <img  loading="lazy" src="/assets/images/others/cookie-consent-javascript-libraryconsent-management-platform.webp" alt="Website security audit process with vulnerability assessment tools and OWASP testing methodology" title="OWASP-Based Website Security Audit by Wikimint" class="w-full" />
+      </div>
+  </section>
+  
+
+  
+  <section id="docs" class="hr pt-0 bg-white">
+    <h2>
+      Setup Instructions and Documentation
+    </h2>
+    <div class="">
+      <div class="col-2">
+        <div class="col">
+          <div class="sticky top-20">
+            <h3>Implementation Guide</h3>
+
+            <p>
+              This section explains how to set up WM Cookie Consent on your website using a simple three-step process. By following these steps, you can ensure that cookies and third-party scripts are loaded only after user approval.
+            </p>
+
+
+          </div>
+        </div>
+      
+      
+        <div class="col">
+          <h3>Quick Start Guide</h3>
+
+<p>Follow this step-by-step documentation to integrate WM Cookie Consent into your website. These instructions will help you add the consent banner, block third-party scripts, and configure banner settings with minimal setup.</p>
+
+<h4>Step 1: Add the CDN Script (Mandatory)</h4>
+<p>Include the WM Cookie Consent script in the <code>&lt;head&gt;</code> section of your website. This initializes the consent banner and controls script loading.</p>
+
+<Code code={`<script src="https://cdn.jsdelivr.net/gh/wikimint/wm-cookie-consent@1.0.13/dist/wm-cookie-consent.min.js" crossorigin="anonymous"></script>`} lang="html" />
+<p>This script must be loaded before any analytics, advertising, or third-party scripts.</p>
+
+<h4>Step 2: Block Third-Party Scripts Until Consent (Mandatory)</h4>
+<p>To prevent cookies from loading before user approval, replace the <code>src</code> attribute of third-party scripts with <code>data-src</code> and change the script type to <code>text/plain</code>. Finally, Add a new attribute <code>data-consent</code> with relevant values based on the allowed categories listed below:</p> 
+<ul>
+  <li><code>analytics</code></li>
+   <li><code>ads</code></li>
+   <li><code>performance</code></li>
+    <li><code>essential</code></li>
+     <li><code>thirdparty</code></li>
+      <li><code>functionality</code> </li>
+      <li><code>persistent</code></li>
+      <li><code>others</code></li>
+      <li><code>session</code></li>
+</ul>
+  
+
+<p>WM Cookie Consent will automatically activate these scripts after the user grants permission.</p>
+<h5>Example: Google Analytics</h5>
+<Code code={`<script
+  type="text/plain"
+  data-src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+  data-consent="analytics">
+</script>
+
+<script type="text/plain" data-consent="analytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>`} lang="html" />
+<h5>Example: Google AdSense</h5>
+<Code code={`<script
+  type="text/plain"
+  data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+  data-consent="ads"
+  async>
+</script>`} lang="html" />
+
+<p>These scripts will remain inactive until the user accepts the corresponding cookie category.</p>
+<h4>Step 3: Customize the Consent Banner (Optional)</h4>
+<p>You can configure the consent banner directly through attributes on the CDN script tag.</p>
+<Code code={`<script
+  src="https://cdn.jsdelivr.net/gh/wikimint/wm-cookie-consent@1.0.13/dist/wm-cookie-consent.min.js"
+  data-consent-title="We value your privacy"
+  data-consent-description="This website uses cookies to ensure you get the best experience on our website."
+  data-policy-url="/privacy-policy"
+  data-policy-title="Privacy Policy"
+  data-theme="light"
+  data-position="bottom-left"
+  data-cookie-manage="true">
+</script>`} lang="html" />
+
+<h5>Configuration Attributes Explained</h5>
+  <h6>1. data-consent-title</h6>
+  
+  <p>Defines the main heading displayed in the cookie banner.</p>
+  
+  <b>Example</b>
+  <Code code={`data-consent-title="We value your privacy"`} lang="html" />
+  
+  <h6>2. data-consent-description</h6>
+  
+  <p>Controls the message shown to users explaining why cookies are used.</p>
+  <Code code={`data-consent-description="This website uses cookies to ensure you get the best experience on our website."`} lang="html" />
+  <h6>3. data-policy-url</h6>
+  
+  <p>Specifies the URL of your privacy or cookie policy page.</p>
+  <Code code={`data-policy-url="/privacy-policy"`} lang="html" />
+
+  <h6>4. data-policy-title</h6>
+  
+  <p>Sets the text label used for the privacy policy link.</p>
+  <Code code={`data-policy-title="Privacy Policy"`} lang="html" />
+
+  <h6>5. data-theme</h6>
+  
+  <p>Controls the visual theme of the banner.</p>
+  
+  <p>Available options:</p>
+  
+  <ul>
+    <li><code>light</code></li>
+    
+    <li><code>dark</code></li>
+  </ul>
+  <Code code={`data-theme="light"`} lang="html" />
+
+  <h6>6. data-position</h6>
+  
+  <p>Determines where the banner appears on the screen.</p>
+  
+  <p>Available positions:</p>
+  
+  <ul>
+    <li><code>top-left</code></li>
+      <li><code>top-right</code></li>
+    
+    <li><code>bottom-left</code></li>
+    
+    <li><code>bottom-right</code></li>
+  </ul>
+  <Code code={`data-position="bottom-left"`} lang="html" />
+
+  <h6>7. data-cookie-manage</h6>
+  
+  <p>Allows users to reopen and modify their cookie preferences after making a choice.</p>
+  
+  <p>Available options:</p>
+  
+  <ol>
+    <li><code>true</code></li>    
+    <li><code>false</code></li>
+  </ol>
+  <Code code={`data-cookie-manage="true"`} lang="html" />
+
+  
+  <p>When enabled, users will see a “Manage Cookies” option so they can update their preferences at any time.</p>
+      </div>  
+
+
+    </div>
+  </section>
+  
+{/*
+<section>
+  <div class="hr mx-auto">
+    <h2>Why Choose Wikimint for Security Audits?</h2>
+    <p>
+      This service gives real answers, not confusing charts. You get two full audits to confirm what changed. Every report is easy to follow and focused on growth.
+    </p>
+  </div>
+
+  <div  class="col-2">
+    <div class="col">
+ 
+<h3>What You Receive</h3>
+      <ul class="list-disc pl-5 text-gray-600">
+        <li>Detailed PDF security audit report</li>
+        <li>Executive risk summary</li>
+        <li>Evidence screenshots</li>
+        <li>Clear remediation instructions</li>
+        <li>Vulnerability severity breakdown</li>
+        <li>One complimentary re-test within 14 days</li>
+      </ul>
+
+    </div>
+  
+    <div class="col">
+     
+        <h3>Deliverbles</h3>
+      <ul class="list-disc pl-5 text-gray-600">
+<li>Alignment with OWASP Testing Guidelines</li>
+<li>Manual verification of every major finding</li>
+<li>Clear documentation with remediation steps</li>
+<li>Confidential handling of all client data</li>
+<li>Professional reporting format suitable for stakeholders</li>
+
+      </ul>
+
+    </div>
+  </div>
+  </section>
+
+<section class="redbox py-0 my-10">
+  <p class="text-xl">Confidentiality & Legal Compliance</h2>
+
+  <p>All audits are conducted within agreed scope and written authorization. Findings remain confidential and are shared only with authorized client representatives. Testing is performed within approved boundaries to prevent service disruption.</p>
+</section>
+*/}
+
+  <section id="faq" class="hr pt-0 pb-20 bg-white">
+    <h2>
+      Frequently Asked Questions
+    </h2>
+    <div class="">
+      <div class="grid md:grid-cols-[2fr_4fr] gap-20 text-left">
+        <div>
+          <div class="sticky top-20">
+            <img  loading="lazy" src="/assets/images/others/start-affordable-wed-design-services.webp" alt="Professional website design service offering fast, clean, SEO-friendly layouts with free consultation and personalized quote to build your ideal website" width="150" height="150" class="mb-0 " />
+
+            <h3>
+              Ready to Add Cookie Consent to Your Website?            </h3>
+            <p>
+              WM Cookie Consent makes it simple to display a privacy-friendly cookie banner and control when third-party scripts load. Set it up in minutes using CDN or NPM and give your visitors clear control over their data preferences.            </p>
+              <a
+              href="#docs" 
+              class="btn"
+              >View Setup Guide</a>
+          </div>
+        </div>
+        <div>
+
+
+          
+
+
+          <div class="acc space-y-4">
+
+            <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q1" checked>
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q1" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">What is WM Cookie Consent and how does it work?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p  itemprop="text">
+                      WM Cookie Consent is a lightweight JavaScript library that helps website owners display a cookie consent banner and manage user preferences. It blocks non-essential scripts until a visitor provides permission, ensuring cookies and third-party services only load after consent is recorded. This approach helps websites respect user privacy while maintaining full control over how and when tracking technologies are activated.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q2">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q2" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Is WM Cookie Consent a consent management platform (CMP)?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      WM Cookie Consent provides core features commonly found in a consent management platform, such as cookie categorization, user preference storage, and script blocking before consent. While it is lighter than enterprise CMP tools, it offers the essential functionality needed by most websites without adding heavy third-party scripts or complex dashboards.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q3">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q3" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Can I use WM Cookie Consent on any type of website?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Yes, WM Cookie Consent is built using vanilla JavaScript, which means it works on static websites, single-page applications, and traditional server-rendered platforms. It can be added to projects built with frameworks like React, Vue, Astro, or simple HTML pages without requiring changes to your existing architecture or build process.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q4">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q4" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Does WM Cookie Consent help with GDPR and cookie law compliance?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      WM Cookie Consent helps websites implement important privacy practices such as displaying a clear cookie banner, collecting user consent, and preventing non-essential cookies from loading before permission is granted. These features support common compliance requirements found in regulations like GDPR and other regional cookie laws, though final legal compliance depends on proper configuration and policy documentation.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q5">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q5" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">How do I install WM Cookie Consent using CDN or NPM?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      You can install WM Cookie Consent using NPM for modern development environments or include it directly through a CDN for quick integration. With NPM, you import the library into your JavaScript project, while the CDN option allows you to add a simple script tag to your HTML and initialize the consent banner with a few configuration settings.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q6">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q6" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Can users change their cookie preferences after giving consent?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Yes, WM Cookie Consent supports persistent preference management. You can provide a settings button or link that allows visitors to reopen the consent panel and modify their selections at any time. This helps maintain transparency and gives users ongoing control over which types of cookies and tracking technologies are allowed on your website.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q7">
+            <label for="q7" class="acc-title">
+              <h3 class="text-lg">Does WM Cookie Consent slow down website performance?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  The library is designed to be lightweight and dependency-free, which keeps file size small and loading times fast. Since it prevents third-party scripts from loading until consent is granted, it can actually reduce the amount of JavaScript executed on initial page load, improving performance metrics and user experience on slower connections.                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q8">
+            <label for="q8" class="acc-title">
+              <h3 class="text-lg">Can I customize the design and text of the cookie banner?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes, WM Cookie Consent provides full control over the appearance and content of the consent banner. You can adjust colors, fonts, layout, button labels, and message text to match your website’s branding. This ensures the banner looks consistent with your design rather than appearing as a generic or mismatched overlay.                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q9">
+            <label for="q9" class="acc-title">
+              <h3 class="text-lg">How does WM Cookie Consent block scripts before user consent?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  WM Cookie Consent allows you to mark scripts with custom attributes so they are not executed when the page loads. Once a visitor accepts a specific cookie category, the library dynamically activates only the scripts associated with that category. This ensures that analytics, advertising, or embedded third-party services remain inactive until permission is granted.                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q10">
+            <label for="q10" class="acc-title">
+              <h3 class="text-lg">Is WM Cookie Consent suitable for small businesses and developers?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes, WM Cookie Consent is particularly useful for freelancers, small businesses, and developers who want a simple privacy solution without paying for a full enterprise consent management platform. It provides essential consent features while remaining easy to deploy, making it a practical choice for projects where simplicity, speed, and control are priorities.                </p>
+              </div>
+          </div>
+
+        
+
+
+          </div>
+
+        </div>
+      </div>  
+
+
+    </div>
+  </section>
+  
+
+{/*
+  
+  <section
+  id="cta"
+  itemscope
+  itemtype="https://schema.org/ContactAction">
+  <div itemprop="potentialAction" itemscope itemtype="https://schema.org/ContactAction">
+    <meta itemprop="actionStatus" content="https://schema.org/PotentialActionStatus" />
+
+    <h2 itemprop="name">
+      Secure Your Website Before Attackers Test It
+    </h2>
+
+    <p itemprop="description" class="pb-5">
+      Cyber threats do not wait. A proactive <a href="/website-security-protection-guide">website security assessment</a> helps reduce risk exposure and strengthens your digital presence. Flat Fee. Clear Reporting. Actionable Results.
+    </p>
+
+    <div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+      <meta itemprop="urlTemplate" content="https://wa.me/919342026754?text=Web%20Security%20Audit%20Reg." />
+      <meta itemprop="actionPlatform" content="http://schema.org/DesktopWebPlatform" />
+      <meta itemprop="actionPlatform" content="http://schema.org/MobileWebPlatform" />
+      
+      <a 
+        href="https://wa.me/919342026754?text=Web%20Security%20Audit%20Reg." 
+        class="btn">
+        Check My Website Security
+      </a>
+    </div>
+  </div>
+
+</section>
+*/}
+</LandingLayout>
