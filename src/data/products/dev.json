@@ -1,0 +1,52 @@
+{
+    "tools": [
+      {
+        "t": "CSS Minify Unminify",
+        "l": "https://developer.wikimint.com/p/css-minify-unminify-tool.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbJddG3PfjOiWaAP0mtQ_IW0ZWqH7V0XPVvvoe0R42WLTcVNTchY4FKwGgO0TnLL1s2JI4ToP2L9Ke1aQdMISH5ATYYQyYbnb3H_xCe-2cnUorOblmoKoTiEaq9gAGeZkHOZqn10k2pMzIMG4kcTDdOLCf89DHWGhj-a1_rjUhhpZlal70Fc0LCclUrQT3/s1600/css-minify-unminify.png",
+        "d": "CSS Minify Unminify tool interface showing options to either minify or unminify CSS code, with a text area for input and output display of transformed code."
+      },
+      {
+        "t": "Image Optimizer",
+        "l": "https://developer.wikimint.com/p/photo-optimizer-online-image-compressor.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZvCYbjlawGjz3n3neDjRsTDrV6AAv5DLP_6uirQnEVWZKphyphenhypheno7-eiwyvx5FRD3zqbHXJvgLkhaWvU6zOD79R5OSZ8BS6p8AogJX_uWJ1u72j7ge1hDQ1dqzpu8BmH4-u2Q4dMbq2l99VvOQQNGHUPyt072sOMKWPZnf3Yo3yp4nD85QH4boAKAIxyUe4D/s1600/image-compressor-online-photo-optimizer.png",
+        "d": "Image Optimizer tool interface showing options to upload images, compress them for better performance, and download optimized versions with reduced file sizes."
+      },
+      {
+        "t": "Image Resizer",
+        "l": "https://developer.wikimint.com/p/online-image-resizer-tool.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR4OB9XR7GP84bJJ-Y3_cnAXtTw_qlog2ZFxyramUDtEUW-MAh5aZqmwoCCVkqxTT9RKuskVPwGFk_k4MRIrqXGztzJTF0Rk_XfcM13PCbbGFZoGu3kak2P6EjnPkI-qdUKyxBBWpVMH9ruWh-Kmn6xpD-jbn_Rqael727OMomzEFVfHHfjoH0uMiEPnfD/s1600/icons8-resize-image-96.png",
+        "d": "Image Resizer tool interface with input field for uploading images, resizing options, and a preview of the resized image for quick adjustments."
+      },
+      {
+        "t": "Code Editor",
+        "l": "https://code.wikimint.com",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGKNqU0u6S0f0FQbSPA5ntKeeiypqv59xOlkvvhkqDSWKfgOq4NMvy__CsG7KxqTdPtcG0fNzRNDSKQqgjti3ENpybVZs9uovNZo_8PQDXZUxhnMht1ifTlOH77aYbEwktOA1r6YbXo-r_vrvP6BkKhieZxX01O6JHscBayVVSIccU-EL3OOVQOKSW/s1600/code.png",
+        "d": "Code Editor interface displaying a text editor with syntax highlighting, line numbers, and customizable themes for coding in various programming languages."
+      },
+      {
+        "t": "HTML Color Codes",
+        "l": "https://developer.wikimint.com/p/color-codes.html#FA9C00",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijDNI6wJE57J3M2QLb0HXA5KEEOzhOZJM96pnUr9y5pvOf0XgpjPcq4-mqLbe9VNBkC1mKjcj04ELHkAGUxO2PZ8lqVnpjAsEFKGVIBcv_ytokQd_ndOp_g1pkl-9DqX27fWofMPUBWSa-n6d7DAQZFToqArMAr-FkeTYWrVRt1zLsr9j5JeCYNiXF/s1600/colors.png",
+        "d": "HTML Color Codes tool interface showing a color picker, hex color codes, and color preview to help users select and use web-safe colors in HTML design."
+      },
+      {
+        "t": "JavaScript Obfuscator",
+        "l": "https://developer.wikimint.com/p/javascript-obfuscator.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxrn41t4hZxNXXCidXfhRR1s_VBwV3eFWOgUbdD_mXe6wbhhjgfyFdpv8-HTk-atG2-y-7NcS7VcVFvR_FMDpRS_WbVxWK9WoU8sCAfiApNiuL_MfUSBjuLscH0Aod4YDXfTGzrHhuJzTkzZ1gYuTdpoh_ZCAy5XsX3iel4brHRbWryQxycAhiS8fT/s1600/javascript.png",
+        "d": "JavaScript Obfuscator tool interface with code input field, obfuscation options, and transformed, secure JavaScript code output for protecting source code."
+      },
+      {
+        "t": "CSS Validator",
+        "l": "https://developer.wikimint.com/p/css-validator.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbh43Zb0SVcXIfDerzPtU-Cfzt5EYo3DEEyGgepYiJkFTmbbukOrrTp6NNUz1uBuJWfF4K4Jw3C5e9JXTg7leY4cQXiq2dHVk2kYCHvUMgOUVoyCPdet7IFrP3tE4hfEd-QNcMovqpQbdyNmQDLqmbMF17crUFL3boqTlq3jOfBF9BdZQCfs3dHp9a/s1600/css.png",
+        "d": "CSS Validator tool interface showing code input area, error highlights, and detailed validation results for checking CSS code compliance and correctness."
+      },
+      {
+        "t": "JavaScript Compiler",
+        "l": "https://developer.wikimint.com/p/javascript-optimization-tool.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxrn41t4hZxNXXCidXfhRR1s_VBwV3eFWOgUbdD_mXe6wbhhjgfyFdpv8-HTk-atG2-y-7NcS7VcVFvR_FMDpRS_WbVxWK9WoU8sCAfiApNiuL_MfUSBjuLscH0Aod4YDXfTGzrHhuJzTkzZ1gYuTdpoh_ZCAy5XsX3iel4brHRbWryQxycAhiS8fT/s1600/javascript.png",
+        "d": "JavaScript Compiler interface displaying code input, syntax highlighting, and compiled output for efficient JavaScript development."
+      }
+    ]
+  }

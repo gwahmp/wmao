@@ -1,0 +1,22 @@
+{
+    "tools": [
+      {
+        "t": "SEO Writing Assistant",
+        "l": "https://app.wikimint.com/tools/seo-writing-assistant",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6GfRAKd1IzXvJaMMaiJojmifRPm9noOsAd782nhui1gq2FGxdf9bniwwq_wEMvFlM8m0ysxgxv1kHHDhYSurAvoPKFyZ604qY-Pzvhyphenhyphenixk2wnyuBTse4tkinFF5lDXXflRYShkg-cOTtUhByrFPn5uuW4uCfO-atd92o8M0WKtvf_qwtDrwg9kvuXD40U/s1600/seo-writing-free-tool.png",
+        "d": "SEO Writing Assistant tool displaying keyword recommendations, readability analysis, and optimization tips to improve content for better search engine ranking."
+      },
+      {
+        "t": "Text Counter",
+        "l": "https://developer.wikimint.com/p/text-counter.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhunvtw3N2JQXh8b6IEM3qHZ7_p_pdw9twIEt8hajYf-SbdMSbyOfmyg-ik94QJY2N2365lnT37FMeXabArFTxA-fKttsBXz0o7JzbvTejTNmQuwsX_-eN42Xqo0ZrmJUheu94DgS6QZR9kCxWF9G0gWPoJJASnOsKyBwggqYHrPJcVrBVfPNvrRisX/s1600/text.png",
+        "d": "Text Counter tool displaying an input text box, character count, word count, and real-time updates as the user types."
+      },
+      {
+        "t": "SEO Analyzer",
+        "l": "https://app.wikimint.com/tools/seo-analyzer",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsXoMglQAlU9fi0QrkkFRNNuZ1ROohWfgoN-kNs3svCa3uuU29YkAPIECNZnvNXS80R1y5Qk4VtgLFfKD6WrWAupql_4QdtwCwFZCCLHrT3Q8IXeAd3io9xXnuSBxK-Eg1CyCSpWif7nNevbGiwgYdcqpuXS-E7Ojtxz9M3RnDwHA6-A2UBLMBFLNe/s1600/seo.png",
+        "d": "SEO Analyzer tool dashboard showing detailed SEO performance metrics, keyword analysis, and optimization suggestions for websites."
+      }
+    ]
+  }

@@ -1,0 +1,363 @@
+---
+import Layout from "../../layouts/BaseLayout.astro";
+import CategoryBox from "../../components/CategoryBox.astro";
+
+import dev from "../../data/products/dev.json";
+import seo from "../../data/products/seo.json";
+import sec from "../../data/products/sec.json";
+import uti from "../../data/products/uti.json";
+
+const devTools = dev.tools;
+const seoTools = seo.tools;
+const securityTools = sec.tools;
+const utilTools = uti.tools;
+
+const totalToolsCount =
+  devTools.length +
+  seoTools.length +
+  securityTools.length +
+  utilTools.length;
+---
+
+<Layout
+  title="Best Online Tools to Boost Productivity and Streamline Your Workflow"
+  description="Discover top-rated free online tools to enhance productivity, simplify tasks, and optimize your workflow."
+>
+
+<!-- HERO -->
+<section class="md:py-16">
+  <div class="max-w-4xl mx-auto text-center px-4">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
+      Discover Powerful Online Tools
+    </h1>
+    <p class="mt-4 text-lg">
+        Explore a growing collection of free web-based tools for development, SEO, security, and productivity, built to simplify your workflow, save time, and help you achieve more with less effort.
+    </p>
+  </div>
+</section>
+
+<!-- TOOL LIST -->
+<section id="explore" class="hr py-12 space-y-14">
+
+  <!-- DEV -->
+  <section>
+    <h2 id="web-development" class="text-2xl font-semibold mb-4">
+      Website & Development
+    </h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+      {devTools.map(tool => (
+        <a href={tool.l} target="_blank" class="flex items-center gap-4 py-4">
+          <img src={tool.i} alt={tool.d} class="w-12 h-12 object-contain" />
+          <span class="lead">{tool.t}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- SEO -->
+  <section>
+    <h2 id="seo-content" class="text-2xl font-semibold mb-4">
+      SEO & Content
+    </h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+      {seoTools.map(tool => (
+        <a href={tool.l} target="_blank" class="flex items-center gap-4 py-4">
+          <img src={tool.i} alt={tool.d} class="w-12 h-12 object-contain" />
+          <span class="lead">{tool.t}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- SECURITY -->
+  <section>
+    <h2 id="security-privacy" class="text-2xl font-semibold mb-4">
+      Security & Privacy
+    </h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+      {securityTools.map(tool => (
+        <a href={tool.l} target="_blank" class="flex items-center gap-4 py-4">
+          <img src={tool.i} alt={tool.d} class="w-12 h-12 object-contain" />
+          <span class="lead">{tool.t}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- UTILITIES -->
+  <section>
+    <h2 id="general-utilities" class="text-2xl font-semibold mb-4">
+      General Utilities
+    </h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+      {utilTools.map(tool => (
+        <a href={tool.l} target="_blank" class="flex items-center gap-4 py-4">
+          <img src={tool.i} alt={tool.d} class="w-12 h-12 object-contain" />
+          <span class="lead">{tool.t}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+</section>
+
+<!-- CATEGORY SUMMARY -->
+<section class="py-16">
+  <div class="mx-auto">
+
+    <h2 class="text-3xl font-semibold mb-8">
+      Explore Tools by Category
+    </h2>
+
+    <div class="flex flex-col md:flex-row items-center gap-6 mb-10">
+      <div id="total_tools" class="text-8xl font-bold text-blue-600">
+        {totalToolsCount}
+      </div>
+
+      <p class="bg-white p-6 rounded-xl text-gray-600">
+       Currently {totalToolsCount} products are available across all categories. We have developed a diverse set of tools to help you with various aspects of website development, SEO, security, and more. Each category below showcases the number of tools we offer to make your tasks easier and more efficient. You can find everything you need for web development, content optimization, and much more.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <CategoryBox id="count-dev" title="Developer Tools" count={devTools.length} />
+      <CategoryBox id="count-seo" title="SEO Tools" count={seoTools.length} />
+      <CategoryBox id="count-security" title="Security Tools" count={securityTools.length} />
+      <CategoryBox id="count-utils" title="General Utilities" count={utilTools.length} />
+    </div>
+
+  </div>
+</section>
+
+
+<section id="faq" class="hr pt-0 pb-20 bg-white">
+    <h2>
+      Frequently Asked Questions
+    </h2>
+    <div class="">
+      <div class="grid md:grid-cols-[2fr_4fr] gap-20 text-left">
+        <div>
+          <div class="sticky top-20">
+            <img  loading="lazy" src="/assets/images/others/start-affordable-wed-design-services.webp" alt="Professional website design service offering fast, clean, SEO-friendly layouts with free consultation and personalized quote to build your ideal website" width="150" height="150" class="mb-0 " />
+
+            <h3>
+                Start Using Powerful Online Tools to Grow Your Business and Productivity  </h3>
+            <p>
+                Access a wide range of free, browser-based tools designed to support developers, entrepreneurs, and digital professionals. Whether you want to optimize your website, improve your workflow, or scale your business operations, our tools are built to help you work smarter and achieve results faster.        </p>
+              <a
+              href="#explore" 
+              class="btn"
+              >Explore All Tools Now</a>
+          </div>
+        </div>
+        <div>
+
+
+          
+
+
+          <div class="acc space-y-4">
+
+            <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q1" checked>
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q1" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">What are online tools and how can they help my business?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p  itemprop="text">
+                        Online tools are web-based applications that help automate, simplify, and optimize everyday business tasks such as content creation, website management, analytics, and communication. By using the right tools for business operations, companies can reduce manual work, improve efficiency, and scale faster without investing heavily in software installations or complex infrastructure.                    </p>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q2">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q2" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Are these tools suitable for developers and technical users?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                        Yes, many of these tools are designed with developers in mind and include utilities for code formatting, testing, debugging, and performance optimization. Whether you are a beginner or an experienced developer, these tools can help speed up development workflows, reduce repetitive tasks, and improve code quality without requiring local installations.                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q3">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q3" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">How can productivity tools improve daily workflow and efficiency?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                        Productivity tools streamline repetitive tasks, automate processes, and provide faster ways to complete work that would otherwise take hours. From text formatting to data processing and content optimization, these tools help professionals and businesses save time, reduce errors, and focus on high-value activities that contribute to growth and innovation.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q4">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q4" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Are the tools on this website free to use?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                        Most of the tools provided are completely free and accessible directly from your browser. This means you don’t need to install software or pay subscription fees to use essential utilities. Free online tools are especially useful for startups, freelancers, and small businesses that need cost-effective solutions to manage their daily operations.                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q5">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q5" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">What types of tools are available for business growth and marketing?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                        The platform offers tools that support multiple aspects of business growth, including SEO analysis, content optimization, website utilities, and productivity enhancements. These tools help businesses improve search engine rankings, generate better content, analyze performance, and streamline marketing efforts, all of which are critical for sustainable digital growth.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q6">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q6" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Can these tools help with search engine optimization (SEO)?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                        Yes, several tools are specifically designed to assist with SEO tasks such as keyword formatting, content optimization, and technical website improvements. By using the right SEO tools, website owners and marketers can enhance their search visibility, improve on-page optimization, and create content that performs better in search engine results pages.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q7">
+            <label for="q7" class="acc-title">
+              <h3 class="text-lg">Do I need to create an account to use these online tools?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                    No, most tools are available for instant use without requiring registration or login. This allows users to quickly access the features they need without sharing personal information or managing accounts. This approach improves privacy, reduces friction, and makes the tools accessible to a wider audience including developers, students, and business professionals.               </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q8">
+            <label for="q8" class="acc-title">
+              <h3 class="text-lg">How secure are browser-based tools compared to installed software?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                    Modern browser-based tools use secure protocols and run directly in your browser environment, which means your data is not always uploaded to external servers. Many utilities process data locally on your device, improving both privacy and performance. This makes web tools a safe and convenient option for handling everyday tasks and sensitive content.</p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q9">
+            <label for="q9" class="acc-title">
+              <h3 class="text-lg">Who can benefit from using these productivity and utility tools?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                    These tools are useful for a wide range of users including developers, digital marketers, entrepreneurs, students, and content creators. Anyone who works online or manages digital assets can benefit from tools that automate tasks, enhance accuracy, and reduce the time spent on repetitive manual work, ultimately improving overall productivity and output quality.              </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q10">
+            <label for="q10" class="acc-title">
+              <h3 class="text-lg">How often are new tools added to the platform?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                    The collection of tools is continuously expanding to keep up with evolving business and technology needs. New utilities are added regularly to support modern workflows, emerging web standards, and growing user demands. This ensures that users always have access to up-to-date tools that help them stay competitive and efficient in their work.           </p>
+              </div>
+          </div>
+
+        
+
+
+          </div>
+
+        </div>
+      </div>  
+
+
+    </div>
+  </section>
+
+
+
+<script
+  define:vars={{
+    devCount: devTools.length,
+    seoCount: seoTools.length,
+    secCount: securityTools.length,
+    utiCount: utilTools.length,
+    totalCount: totalToolsCount
+  }}
+>
+  const counts = {
+    "count-dev": devCount,
+    "count-seo": seoCount,
+    "count-security": secCount,
+    "count-utils": utiCount,
+    "total_tools": totalCount
+  };
+
+  function animateCount(el, end) {
+    let start = 0;
+    const step = Math.ceil(end / 80);
+
+    el.textContent = "0";
+
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= end) {
+        start = end;
+        clearInterval(timer);
+      }
+      el.textContent = start;
+    }, 20);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = Object.keys(counts).map(id => document.getElementById(id));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const id = el.id;
+            animateCount(el, counts[id]);
+          }
+        });
+      },
+      {
+        threshold: 0.4
+      }
+    );
+
+    elements.forEach(el => {
+      if (el) observer.observe(el);
+    });
+  });
+</script>
+
+</Layout>

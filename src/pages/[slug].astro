@@ -56,6 +56,10 @@ const finalModifiedDate =
 
 <BaseLayout title={post.data.title} description={post.data.description} image={`/assets/images/blog/${post.data.image}`} ogType="article" publishedTime={post.data.date} modifiedTime={finalModifiedDate}>
   <Fragment slot="head">
+    {import.meta.env.PROD && (
+    <script is:inline async data-consent="ads" type="text/plain" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784071102690039" crossorigin="anonymous"></script>
+      )}
+
     <meta itemprop="datePublished" content={post.data.date}/>
 <meta itemprop="dateModified" content={finalModifiedDate}/>
     <script

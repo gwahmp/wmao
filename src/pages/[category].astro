@@ -42,6 +42,9 @@ const currentUrl = Astro.url.href; // full URL of the current page
   image={`/assets/images/blog/${category.data.image}`}
 >
 <Fragment slot="head">
+  {import.meta.env.PROD && (
+    <script is:inline async data-consent="ads" type="text/plain" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784071102690039" crossorigin="anonymous"></script>
+      )}
   <script
   type="application/ld+json"
   set:html={JSON.stringify({

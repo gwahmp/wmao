@@ -1,0 +1,22 @@
+{
+    "tools": [
+      {
+        "t": "QR Code Scanner",
+        "l": "https://app.wikimint.com/tools/qr-code-scanner",
+        "i": "https://app.wikimint.com/tools/assets/images/qr-code-scanner.webp",
+        "d": "QR Code Scanner tool interface with camera access button, real-time scanning feature, and display of the decoded QR code information."
+      },
+      {
+        "t": "Cookie Consent Manager",
+        "l": "https://www.wikimint.com/products/wm-cookie-consent",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP8snjd16B9YkKp0WvOtZXF-xe-Rw6MRgaxr_0kxkubr8lgGuGCrYNwA4_6MuTKhoskYKMqWc9Gs5Zww959eHDEOI7my0tPYx67_dskZOc2-yVtot9ZVtbWYJIEWQwc1PNYHrLVrHD_1fpZ2JzpBWd31LTBmP2lxwp8Wj_UcF6QyZqmBihPBpY9TJ7UqpF/s1600/cookie-consent-manager-gdpr-compliance.png",
+        "d": "Cookie Consent Manager tool interface displaying a customizable pop-up for users to accept or reject cookies, ensuring compliance with privacy regulations."
+      },
+      {
+        "t": "Captcha Protection",
+        "l": "https://developer.wikimint.com/p/wmdcaptcha.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUAYL_AJVVse0yLiZExiF2CJtoSfbQYfeTeZrzWleK6CITVx6odNX9ewT2y6_LaIVwjzXr5Zy7EC_1u6ymocvVBuL9aHEP4trWynmOGH4FpSipb7Jru-2axv7Wy-syVMTg-sD8xDkwXpNuuwoAO_9pvrX85K4zKBdGzOfu3ncBceYuyO8dcK7xj5BxJp5i/s1600/wmdCaptcha-form-protection-tool.jpg",
+        "d": "Captcha Protection tool interface displaying a challenge with distorted characters or images to verify user authenticity and prevent automated submissions."
+      }
+    ]
+  }
