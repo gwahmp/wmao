@@ -32,7 +32,11 @@
     hover:bg-gray-500 hover:text-white hover:shadow-md hover:border-gray-500 transition-all duration-200
   }
 #cta{@apply mt-6 bg-gradient-to-br from-blue-50 via-green-50 to-amber-100 pb-16 px-4 sm:px-20 border border-gray-300 text-center;}
-
+.slider{@apply relative w-full overflow-hidden rounded-lg;}
+.slides{@apply  flex transition-transform duration-500;}
+.slider .prev{@apply absolute left-1 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded;}
+.slider .next{@apply absolute right-1 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded}
+.slides img{@apply w-full shrink-0;}
 #emailPopup{@apply fixed bottom-5 right-5 bg-gradient-to-br from-black to-neutral-900 rounded-xl shadow-2xl p-6 w-[90%] max-w-sm z-[9999999] hidden animate-fade-in-up text-white;}
   #emailPopup input{@apply w-full p-2.5 mb-3 border border-gray-300 rounded-md text-sm bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#0077b5];}
   .bluebox, .ull-learn {
@@ -70,7 +74,7 @@
 @layer base {
 .icon{width:30px;height:30px;}
   p,h2,h3,h4,h5,h6,span,a,div,ul,li{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
     font-size: 17px;
     font-weight: 400;
     color: #000000;
@@ -369,7 +373,7 @@ margin-bottom:20ox;
 
 /* The "4.9" Partial Star */
 .star.partial {
-  background: linear-gradient(90deg, #FFD700 90%, #ccc 10%);
+  background: linear-gradient(90deg, #FFD700 50%, #ccc 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
