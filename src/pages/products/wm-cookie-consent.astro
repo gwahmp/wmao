@@ -38,7 +38,7 @@ const frontmatter = {
 
       </div>
       <div class="col">
-        <img  loading="lazy" src="/assets/images/others/cookie-consent-javascript-libraryconsent-management-platform.webp" alt="Website security audit process with vulnerability assessment tools and OWASP testing methodology" title="OWASP-Based Website Security Audit by Wikimint" class="w-full" />
+        <img  loading="lazy" src="/assets/images/others/cookie-consent-javascript-libraryconsent-management-platform.webp" alt="WM Cookie Consent for website GDPR, DPDP and CCPA compliants by Wikimint" title="WM Cookie Consent by Wikimint" class="w-full" />
       </div>
   </section>
 
@@ -53,10 +53,10 @@ const frontmatter = {
       <div class="slider">
   
         <div class="slides">
-          <img alt="Free Javascript Library for GDPR Complianr Free Cookie Consent Banner" src="/assets/images/others/cookie-consent-gdpr-javascript.webp"/>
-          <img alt="GDPY Cookie Consent Free Javascript Library Preferences Screen Preview" src="/assets/images/others/cookie-consent-gdpr-preferences-settings-javascript-cdn.webp"/>
-          <img alt="Cookie Consent JavaScript Library Overview" src="/assets/images/others/about-cookie-consent-gdpr-overview-javascript-cdn.webp"/>
-          <img alt="GDPR Cookie Consent Banner Popup" src="/assets/images/others/cookie-consent-gdpr.webp"/>
+          <img loading="lazy" alt="Free Javascript Library for GDPR Complianr Free Cookie Consent Banner" src="/assets/images/others/cookie-consent-gdpr-javascript.webp"/>
+          <img loading="lazy" alt="GDPY Cookie Consent Free Javascript Library Preferences Screen Preview" src="/assets/images/others/cookie-consent-gdpr-preferences-settings-javascript-cdn.webp"/>
+          <img loading="lazy" alt="Cookie Consent JavaScript Library Overview" src="/assets/images/others/about-cookie-consent-gdpr-overview-javascript-cdn.webp"/>
+          <img loading="lazy" alt="GDPR Cookie Consent Banner Popup" src="/assets/images/others/cookie-consent-gdpr.webp"/>
         </div>
       
         <!-- Controls -->
@@ -105,12 +105,13 @@ const frontmatter = {
         </p>
     
         <!-- Hidden SEO Links -->
-        <meta itemprop="releaseNotes" content="https://www.wikimint.com/docs/release-notes">
-        <meta itemprop="discussionUrl" content="https://www.wikimint.com/products/wm-cookie-consent#discussion">
+        <meta itemprop="releaseNotes" content="https://github.com/wikimint/wm-cookie-consent/releases">
+          <meta itemprop="discussionUrl" content="https://github.com/wikimint/wm-cookie-consent/discussions">
 
-        <meta itemprop="screenshot" content="https://raw.githubusercontent.com/wikimint/wm-cookie-consent/main/screenshots/cookie-consent-gdpr-javascript.jpg">
-        <meta itemprop="screenshot" content="https://raw.githubusercontent.com/wikimint/wm-cookie-consent/main/screenshots/cookie-consent-gdpr-preferences-settings-javascript-cdn.jpg">
-        <meta itemprop="screenshot" content="https://raw.githubusercontent.com/wikimint/wm-cookie-consent/main/screenshots/about-cookie-consent-gdpr-overview-javascript-cdn.jpg">
+        <meta itemprop="screenshot" content="https://www.wikimint.com/assets/images/others/cookie-consent-gdpr-javascript.webp">
+        <meta itemprop="screenshot" content="https://www.wikimint.com/assets/images/others/cookie-consent-gdpr-preferences-settings-javascript-cdn.webp">
+        <meta itemprop="screenshot" content="https://www.wikimint.com/assets/images/others/about-cookie-consent-gdpr-overview-javascript-cdn.webp">
+        <meta itemprop="screenshot" content="https://www.wikimint.com/assets/images/others/cookie-consent-gdpr.webp">
         <meta itemprop="applicationCategory" content="BusinessApplication, DeveloperApplication">
         <meta itemprop="operatingSystem" content="Any Browser">
     
@@ -192,7 +193,10 @@ const frontmatter = {
 <h4>Step 1: Add the CDN Script (Mandatory)</h4>
 <p>Include the WM Cookie Consent script in the <code>&lt;head&gt;</code> section of your website. This initializes the consent banner and controls script loading.</p>
 
-<Code code={`<script src="https://cdn.jsdelivr.net/gh/wikimint/wm-cookie-consent@1.0.13/dist/wm-cookie-consent.min.js" crossorigin="anonymous"></script>`} lang="html" />
+<Code code={`<script 
+  src="https://cdn.jsdelivr.net/gh/wikimint/wm-cookie-consent@1.0.13/dist/wm-cookie-consent.min.js" 
+  crossorigin="anonymous">
+</script>`} lang="html" />
 <p>This script must be loaded before any analytics, advertising, or third-party scripts.</p>
 
 <h4>Step 2: Block Third-Party Scripts Until Consent (Mandatory)</h4>

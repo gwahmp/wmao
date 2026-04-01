@@ -11,6 +11,15 @@
   footer{
     @apply bg-gray-50 text-gray-900 border-t border-gray-300 py-5 mt-10;
   }
+
+  .code-block {
+    @apply relative bg-gray-100 px-5 py-0 my-6 border border-gray-300 rounded-lg overflow-hidden;
+  }
+  
+  .code-block button {
+    @apply absolute top-2 right-2 text-xs bg-white border border-gray-300 px-2 py-1 rounded shadow-sm hover:bg-gray-100 transition;
+  }
+
   .f-cont{@apply grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 max-w-7xl mx-auto px-6 py-12;}
   main{@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10;}
   .page article, .post .left{@apply col-span-12 md:col-span-7 prose lg:prose-xl max-w-none;}
@@ -35,8 +44,8 @@
 .slider{@apply relative w-full overflow-hidden rounded-lg;}
 .slides{@apply  flex transition-transform duration-500;}
 .slider .prev{@apply absolute left-1 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded;}
-.slider .next{@apply absolute right-1 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded}
-.slides img{@apply w-full shrink-0;}
+.slider .next{@apply absolute right-1 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded;}
+.slides img{@apply w-full h-fit shrink-0 p-5 border border-gray-300 m-auto;}
 #emailPopup{@apply fixed bottom-5 right-5 bg-gradient-to-br from-black to-neutral-900 rounded-xl shadow-2xl p-6 w-[90%] max-w-sm z-[9999999] hidden animate-fade-in-up text-white;}
   #emailPopup input{@apply w-full p-2.5 mb-3 border border-gray-300 rounded-md text-sm bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#0077b5];}
   .bluebox, .ull-learn {
@@ -69,6 +78,7 @@
   .pfi-card-p {
     @apply text-gray-800 line-clamp-2;
   }
+
 }
 
 @layer base {
@@ -88,6 +98,13 @@
   margin: 0 !important;
   padding: 0 !important;
 }
+
+.code-block pre{
+  background: transparent ! important;
+  padding: 0 ! important;
+  margin:12px 0 ! important
+}
+
 .usd{display:none;}
 a{
   text-decoration:none ! important;
@@ -105,7 +122,11 @@ a{
   cursor:pointer;}
   [data-prod]{cursor:pointer;}
   .post-content [data-link]::marker{color:#000000;}
-
+  article a{
+    color:#0d6efd ! important;
+    font-weight:normal ! important;
+  }
+  
 article li::marker{
 color:#000000 ! important;
 }
@@ -235,10 +256,6 @@ margin-bottom:20ox;
     font-style: italic;
     background: #eee;
     } 
-
-    article a{
-      color:#0080ff ! important;
-    }
   /*TOC starts*/
   .wmdTOC{
     color: #555;
@@ -250,7 +267,7 @@ margin-bottom:20ox;
     border: none;
     color: #333;
     padding: 0px;
-    }.mbtTOC2 button a {color:#0080ff; padding:0px 2px;cursor:pointer ! important;}
+    }.mbtTOC2 button a {color:#0d6efd; padding:0px 2px;cursor:pointer ! important;}
     .wmdTOC button a:hover{ text-decoration:underline ! important; }
     .wmdTOC button span {font-size:15px; margin:0px 10px ! important; }
     .wmdTOC li{list-style-type: none ! important;list-style-type: none ! important;}

@@ -1,0 +1,772 @@
+---
+import LandingLayout from "../../layouts/LandingLayout.astro";
+const version = Date.now();
+import Code from '../../components/CodeBlock.astro';
+
+const frontmatter = {
+  title: "wmCAPTCHA – Free JavaScript CAPTCHA for Website Form Protection",
+  description: "Protect your website forms from spam and automated submissions using wm-captcha, a lightweight and free JavaScript CAPTCHA solution with no API keys, no registration, and quick setup.",
+  image: "/assets/images/others/wm-captcha-form-protection-featured-illustration.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+  disableAds: true,
+};
+
+---
+
+<LandingLayout frontmatter={frontmatter}>
+
+  <section class="col-2">
+      <div class="col">
+        <h1>
+          Free Website Protection with wmCAPTCHA
+        </h1>
+        <p>
+          wmCaptcha is a lightweight JavaScript CAPTCHA tool designed to protect websites and online forms from spam, bots, and unwanted automated submissions. It works entirely on the client side, requires no account or API integration, and can be added to any website in just a few lines of code. Whether you run a business website, portfolio, or web application, wm-captcha provides a simple and reliable way to keep your forms secure while maintaining a smooth experience for real users.
+        </p>
+
+             <a
+             href="#docs" 
+             class="btn"
+             >View Documentation</a>
+           
+      </div>
+      <div class="col">
+        <img  loading="lazy" src="/assets/images/others/wm-captcha-form-protection-featured-illustration.webp" alt="Illustration showing wm-captcha checkbox verification protecting a website form from spam and bot submissions" title="wmCaptcha website form protection" class="w-full"/>
+      </div>
+  </section>
+
+  
+  <section itemscope itemtype="https://schema.org/SoftwareApplication">
+    <div class="grid md:grid-cols-[3fr_2fr] gap-10 text-left">
+      
+      <!-- LEFT: Screenshots -->
+      <div class="col">
+        <div class="sticky top-20">
+          <div class="slider">
+            <div class="slides">
+              <img loading="lazy" alt="JavaScript CAPTCHA library protecting web form from spam bots" src="/assets/images/others/wm-captcha-form-protection.webp"/>
+              <img loading="lazy" alt="Client side captcha verification example with interactive challenge" src="/assets/images/others/wm-captcha-preview-when-validation-failed.webp"/>
+              <img loading="lazy" alt="Lightweight JavaScript captcha widget embedded in website form" src="/assets/images/others/wm-captcha-standalone-captcha-preview.webp"/>
+                        </div>
+        
+            <button class="prev">‹</button>
+            <button class="next">›</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- RIGHT: Product Info -->
+      <div class="col">
+        <div class="w-full border border-gray-300 overflow-hidden px-8 py-5 bg-gray-50 mt-8">
+  
+          <div>
+            <h2 class="text-md font-semibold text-gray-900" itemprop="name">wmCaptcha</h2>
+            <p>Lightweight JavaScript Bot Protection Library</p>
+          </div>
+  
+          <!-- Rating -->
+          <div
+            itemprop="aggregateRating"
+            itemscope
+            itemtype="https://schema.org/AggregateRating"
+            class="star-container"
+            aria-label="Rating: 4.9 out of 5 stars based on 180 reviews"
+          >
+            <span class="star full">★</span>
+            <span class="star full">★</span>
+            <span class="star full">★</span>
+            <span class="star full">★</span>
+            <span class="star partial">★</span>
+  
+            <span itemprop="ratingValue" class="rating-number">4.9 (180 reviews)</span>
+            <meta itemprop="reviewCount" content="180">
+          </div>
+  
+          <!-- Version -->
+          <p>Version <span itemprop="softwareVersion">1.0.3</span></p>
+  
+          <!-- Description -->
+          <p itemprop="description">
+            WM CAPTCHA is a fast, privacy-friendly JavaScript CAPTCHA library designed to protect web forms and user interactions from automated bots, spam submissions, and malicious scripts. It runs fully on the client side, requires no external API, and integrates seamlessly into static websites, landing pages, and modern web applications.
+          </p>
+  
+          <!-- SEO Meta Links -->
+          <meta itemprop="releaseNotes" content="https://github.com/wikimint/wm-captcha/releases">
+          <meta itemprop="discussionUrl" content="https://github.com/wikimint/wm-captcha/discussions">
+  
+          <meta itemprop="screenshot" content="https://www.wikimint.com/assets/images/others/wm-captcha-form-protection.webp">
+          <meta itemprop="screenshot" content="https://www.wikimint.com/assets/images/others/wm-captcha-preview-when-validation-failed.webp">
+          <meta itemprop="screenshot" content="https://www.wikimint.com/assets/images/others/wm-captcha-standalone-captcha-preview.webp">
+  
+          <meta itemprop="applicationCategory" content="SecurityApplication, DeveloperApplication">
+          <meta itemprop="operatingSystem" content="Any Browser">
+  
+          <!-- Pricing -->
+          <div class="mt-5" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+            <meta itemprop="offerCount" content="1">
+            <meta itemprop="priceCurrency" content="USD">
+            <p class="font-medium">Starting from: <span itemprop="lowPrice">$0</span></p>
+  
+            <div class="mt-2">
+              <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <b>Free:</b> Complete CAPTCHA protection library with form integration and standalone verification.
+                <meta itemprop="name" content="Free CAPTCHA Library">
+                <meta itemprop="price" content="0">
+                <link itemprop="availability" href="https://schema.org/InStock">
+              </p>
+            </div>
+          </div>
+  
+          <!-- Features -->
+          <div class="mt-5" itemprop="featureList">
+            <h3 class="mb-2">Key Features</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Client-side CAPTCHA with no external API dependencies</li>
+              <li>Protects contact forms, login forms, and public submission endpoints</li>
+              <li>Standalone verification mode for downloads and gated content</li>
+              <li>Lightweight and optimized for fast page load performance</li>
+              <li>Privacy-focused design with no user tracking or data collection</li>
+            </ul>
+          </div>
+  
+          <!-- Developer -->
+          <div itemprop="author" itemscope itemtype="https://schema.org/Organization">
+            <b>Developed by</b>: 
+            <a href="https://www.wikimint.com" class="text-indigo-600 hover:underline" itemprop="url">
+              <span itemprop="name">Wikimint</span>
+            </a>
+            <meta itemprop="license" content="https://github.com/wikimint/wm-captcha/blob/main/LICENSE">
+          </div>
+  
+          <p><b>Library Size</b>: <span itemprop="fileSize">15.2KB</span></p>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="docs" class="hr pt-0 bg-white">
+    <h2>
+      Setup Instructions and Documentation
+    </h2>
+    <div class="">
+      <div class="col-2">
+        <div class="col">
+          <div class="sticky top-20">
+
+            <h3>Documentation Overview</h3>
+
+            <p>
+              wmCaptcha documentation explains how to integrate CAPTCHA protection into your website forms or use the CAPTCHA independently for user verification and custom function execution. The setup process is manual by design, allowing you to review, encrypt, and deploy protected form code before placing it on your live website.
+                        </p>
+                        <p>
+                          <a href="#form-captcha-docs">Form captcha docs</a> | 
+                          <a href="#standalone-captcha-docs">Standalone captcha docs</a> | 
+                          <a href="#encryption-tool">Encryption tool</a> | 
+                          <a href="#demo">Demo</a>
+                        </p>
+
+             
+          </div>
+        </div>
+      
+      
+        <div class="col">
+          <h3 id="form-captcha-docs">Step-by-Step Implementation Guide</h3>
+
+<p>Follow this step-by-step documentation to integrate wmCaptcha into your website. These instructions will help you protect your entire website client side and all the forms.</p>
+
+<h4>Step 1: Add CDN Script (Required)</h4>
+<p>To begin using wm-captcha, you must first include the official script file from the CDN. This script loads the CAPTCHA engine and enables all protection features on your page.</p>
+
+
+<Code code={`<script 
+  src="https://cdn.jsdelivr.net/gh/wikimint/wm-captcha@v1.0.3/dist/wm-captcha.min.js" 
+  crossorigin="anonymous">
+</script>`} lang="html" />
+
+<p>Place this script inside the <code>&lt;head&gt;</code> section or just before the closing <code>&lt;/body&gt;</code> tag of your webpage. Without this script, the CAPTCHA element and encryption process will not function.</p>
+
+<h4 id="encryption-tool">Step 2: Encrypt Your Form Code (Required)</h4>
+<p>wm-captcha provides an encryption textarea tool where you can paste your raw form HTML. After encryption, the tool generates a protected version of the form that prevents direct manipulation of form attributes and submission behavior.</p> 
+
+
+ <!-- wm-captcha Form Encryption UI (Tailwind) -->
+ <script src="https://cdn.jsdelivr.net/gh/wikimint/wm-captcha@v1.0.3/dist/wm-captcha.min.js" crossorigin="anonymous"></script>
+
+ <div class="max-w-3xl mx-auto">
+  <h5>HTML Element Encryption Tool</h5>
+  <label class="block mb-2">Paste Form or standalone captcha element HTML</label>
+
+  <textarea
+    id="formInput"
+    class="w-full h-56 p-4 border-2 border-gray-300 bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+    placeholder="Paste your form HTML or standalone captcha element here..."></textarea>
+
+  <div class="flex gap-3 mt-3">
+    <button
+      id="encryptBtn"
+      class="btn">
+      Encrypt Element
+    </button>
+
+    <button
+      id="copyBtn"
+      class="px-4 py-2 bg-green-600 text-white hover:bg-green-700 transition hidden">
+      Copy Encrypted Code
+    </button>
+  </div>
+</div>
+
+<script>
+const textarea = document.getElementById('formInput');
+const encryptBtn = document.getElementById('encryptBtn');
+const copyBtn = document.getElementById('copyBtn');
+
+function checkEncryptionState() {
+  const value = textarea.value;
+
+  if (value.includes('data-wm-protected="true"')) {
+    textarea.classList.remove('bg-gray-100');
+    textarea.classList.add('bg-green-50');
+
+    encryptBtn.classList.add('hidden');
+    copyBtn.classList.remove('hidden');
+  } else {
+    textarea.classList.remove('bg-green-50');
+    textarea.classList.add('bg-gray-100');
+
+    encryptBtn.classList.remove('hidden');
+    copyBtn.classList.add('hidden');
+  }
+}
+
+encryptBtn.addEventListener('click', () => {
+  const rawHtml = textarea.value.trim();
+  if (!rawHtml) return;
+
+  // Parse textarea HTML into DOM
+  const temp = document.createElement('div');
+  temp.innerHTML = rawHtml;
+
+  const form = temp.querySelector('form, .wm-captcha');
+form.setAttribute("data-wm-protection","enable");
+  // Pass actual form element to protection engine
+  if(form){protectForms(form);}
+
+  // Put protected HTML back into textarea
+  textarea.value = temp.innerHTML;
+
+  checkEncryptionState();
+});
+
+copyBtn.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(textarea.value);
+    copyBtn.textContent = 'Copied!';
+    setTimeout(() => (copyBtn.textContent = 'Copy Protected Code'), 1500);
+  } catch (err) {
+    alert('Copy failed');
+  }
+});
+
+textarea.addEventListener('input', checkEncryptionState);
+
+// Initial check on page load
+checkEncryptionState();
+</script>
+
+
+<p>The form should have <code>data-wm-protection="enable"</code> mandatorily and then paste the complete form element in the <a href="#encryption-tool">form encryption tool</a> here. Without this attribute, the form cannot be encrypted.</p>
+<Code code={`<form
+  data-wm-protection="enable">
+  ... other input fields here as usual ...
+  <div class="wm-captcha"></div>
+</form>`} lang="html" />
+
+<p class="redbox">Your form must include the attribute <code>data-wm-protection="enable"</code> and should have the captcha element <code>&lt;div class="wm-captcha"&gt;&lt;/div&gt;</code> before submit button inside the form element</code></p>
+
+<h5>Form Encryption Process</h5>
+<ol>
+  <li>Copy your original form code.</li>
+  <li>Paste it into the wm-captcha encryption textarea.</li>
+  <li>Click the encrypt or generate option.</li>
+  <li>Copy the protected output form.</li>
+  <li>Replace your original form on the website with the generated protected form.</li>
+</ol>
+
+<p><strong>This encryption step ensures</strong>:</p>
+
+<ul>
+  <li>Form action URLs cannot be easily modified.</li>
+  <li>Hidden inputs and field names remain protected.</li>
+  <li>Bot scripts cannot directly access or alter submission behavior.</li>
+</ul>
+  
+<h4>Step 3: Optional Website Protection Attributes</h4>
+<p>wm-captcha includes additional script attributes that can enhance page-level security. These attributes are optional and can be added based on your requirements.</p>
+<Code code={`<script
+  src="https://cdn.jsdelivr.net/gh/wikimint/wm-captcha@v1.0.3/dist/wm-captcha.min.js"
+  crossorigin="anonymous"
+  data-prevent-contextmenu="true"
+  data-prevent-selectstart="true"
+  data-prevent-dragstart="true"
+  data-prevent-keydown="true"
+  data-prevent-inspect="true">
+</script>`} lang="html" />
+
+<h5>Configuration Attributes Explained</h5>
+  <h6>1. data-prevent-contextmenu</h6>
+  
+  <p>Blocks right-click actions to reduce direct content copying and basic inspection attempts.</p>
+  
+  <b>Example</b>
+  <Code code={`data-prevent-contextmenu="true"`} lang="html" />
+  
+  <h6>2. data-prevent-selectstart</h6>
+  
+  <p>Prevents text selection on the page, which helps protect form structure and page content.</p>
+  <Code code={`data-prevent-selectstart="true"`} lang="html" />
+  <h6>3. data-prevent-dragstart</h6>
+  
+  <p>Stops drag-and-drop actions that may be used to copy protected content or form elements.</p>
+  <Code code={`data-prevent-dragstart="true"`} lang="html" />
+
+  <h6>4. data-prevent-keydown</h6>
+  
+  <p>Disables specific key combinations commonly used to open developer tools or view source.</p>
+  <Code code={`data-prevent-keydown="true"`} lang="html" />
+
+  <h6>5. data-prevent-inspect</h6>
+  
+  <p>Adds protection against opening developer inspection tools through common browser shortcuts.</p>
+  
+  <Code code={`data-prevent-inspect="true"`} lang="html" />
+
+  <p>These options are optional and can be used individually or together depending on how strict you want the protection to be.</p>
+<hr/>
+
+
+<h3 id="standalone-captcha-docs">Using CAPTCHA Without a Form</h3>
+<p>wm-captcha can also be used as a standalone human verification component. This is useful when you want to verify a user before executing a JavaScript function such as enabling a download, revealing content, or triggering an action.</p>
+<h4>Standalone CAPTCHA Example</h4>
+<Code code={`<div 
+  class="wm-captcha" 
+  data-success="sampleFunctionOnSuccess">
+</div>`} lang="html" />
+
+<p>When the user successfully verifies the CAPTCHA, the function defined in the data-success attribute will be executed.</p>
+<p><strong>Example Function</strong></p>
+<Code code={`<script>
+  function sampleFunctionOnSuccess() {
+    alert("User verified successfully");
+  }
+</script>`} lang="html" />
+
+<p>This approach allows you to use wm-captcha for:</p>
+
+<ul>
+  <li>download protection</li>
+  <li>restricted content viewing</li>
+  <li>client-side user validation before actions</li>
+</ul>
+<hr/>
+
+<h3 id="security-note">Important Security Note</h3>
+
+<p>Both the form-based CAPTCHA implementation and the standalone CAPTCHA block should be passed through the <a href="#encryption-tool">wm-captcha encryption tool</a> before deployment. Encrypting the code protects:</p>
+
+<ul>
+  <li>form submission logic</li>
+  <li>function names used in <code>data-success</code></li>
+  <li>page elements linked to verification events</li>
+</ul>
+
+<p>By encrypting these sections before publishing, you reduce the risk of scripts bypassing CAPTCHA verification or triggering protected functions without user interaction.</p>
+
+      </div>  
+
+
+    </div>
+  </section>
+  
+
+
+
+  <section id="demo" class="hr pt-0 bg-white">
+    <h2>
+      Live Demo with Form Protection and Standalone Captcha
+    </h2>
+    <div class="">
+      <div class="col-2">
+        <div class="col">
+          <div class="sticky top-20">
+
+            <h3>Demo Form and Captcha Implementation</h3>
+
+            <p>
+              This section shows how wm-captcha works in real time with both form protection and standalone user verification. You can interact with the demo to understand how the captcha validates human users and prevents automated form submissions before integrating it into your own website.
+                        </p>
+                        <p>
+                          <a href="#form-captcha-demo">Form captcha demo</a> | 
+                          <a href="#standalone-captcha-demo">Standalone captcha demo</a> | 
+                          <a href="#encryption-tool">Encryption tool</a> | 
+                          <a href="#docs">Documentation</a>
+                        </p>
+          </div>
+        </div>
+      
+      
+        <div class="col">
+
+          <h3 id="form-captcha-demo">Form CAPTCHA Demo</h3>
+
+<p>The form below demonstrates how wm-captcha protects a typical contact or input form. The captcha must be verified before the form submission is allowed to proceed. This ensures that automated scripts cannot send requests directly to the form endpoint. The example includes text fields, radio options, and a submit button to replicate a real-world form structure.</p>
+
+<iframe name="demo_target" id="demo_target" style="diplay:none;height:0px;width:0px;"></iframe>
+<div class="max-w-xl mx-auto bg-white shadow-lg border border-gray-300  p-6">
+<form target="KnAWkV" action="about:blank" class="space-y-5" data-wm-action="BDQewCJ3Bncsynh=" data-wm-target="ATEgy809BCQmACJ=" onsubmit="return false;" method="GET" data-wm-protected="true">
+    <fieldset class="space-y-4">
+      <legend class="text-lg font-semibold text-gray-800 mb-2">
+        Demo Form with wmCaptcha
+      </legend>
+
+      <!-- First Name -->
+      <div>
+        <label for="input1" class="block text-sm font-medium text-gray-700">
+          First Name
+        </label>
+        <input id="input1" type="text" value="Selvakumaran" class="mt-1 w-full border border-gray-300 bg-gray-100 px-3 py-2 text-sm text-gray-700" data-wm-name="zD4dwCJc">
+      </div>
+
+      <!-- Last Name -->
+      <div>
+        <label for="input2" class="block text-sm font-medium text-gray-700">
+          Last Name
+        </label>
+        <input id="input2" type="text" value="Krishnan"  class="mt-1 w-full border border-gray-300 bg-gray-100 px-3 py-2 text-sm text-gray-700" data-wm-name="zD4dwCJb">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="input3" class="block text-sm font-medium text-gray-700">
+          Email
+        </label>
+        <input id="input3" type="email" value="testmail@test.com"  class="mt-1 w-full border border-gray-300 bg-gray-100 px-3 py-2 text-sm text-gray-700" data-wm-name="zD4dwCJa">
+      </div>
+
+      <!-- Radio Options -->
+      <div>
+        <p class="text-sm font-medium text-gray-700 mb-2">
+          Pick your favorite metal:
+        </p>
+
+        <div class="flex items-center gap-6">
+          <label class="flex items-center gap-2 text-sm text-gray-700">
+            <input type="radio" value="gold" class="text-blue-600 border-gray-300 focus:ring-blue-500" data-wm-name="xnUpzD0a">
+            Gold
+          </label>
+
+          <label class="flex items-center gap-2 text-sm text-gray-700">
+            <input type="radio" value="diamond" class="text-blue-600 border-gray-300 focus:ring-blue-500" data-wm-name="xnUpzD0a">
+            Diamond
+          </label>
+        </div>
+      </div>
+
+      <!-- CAPTCHA -->
+      <div class="pt-2">
+        <div class="wm-captcha"></div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="pt-4">
+        <button id="wmCaptcha-demo-submit" type="submit" class="w-full btn transition duration-200">
+          Submit
+        </button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<h3 id="standalone-captcha-demo">Standalone CAPTCHA Demo</h3>
+
+<p>wm-captcha can also be used independently without attaching it to a form. In this mode, the captcha acts as a user verification step that triggers a predefined JavaScript function after successful validation. </p>
+<h4>Preview of standalone captcha</h4>
+<script is:inline>
+  function sampleFunctionOnSuccess() {
+    alert("User verified successfully");
+  }
+</script>
+<div class="wm-captcha" data-wm-success="x7UgxTcoImEfB6Iky74KyoM8B7Mox6N=" data-wm-protected="true">
+</div>
+
+
+<h4>Encrypted code for standalone captcha</h4>
+<Code code={`<div 
+  class="wm-captcha" 
+  data-success="x7UgxTcoImEfB6Iky74KyoM8B7Mox6N="
+  data-wm-protected="true">
+</div>
+<script>
+  function sampleFunctionOnSuccess() {
+    alert("User verified successfully");
+  }
+</script>`} lang="html" />
+
+<p>This is useful for securing downloads, revealing hidden content, or confirming that a visitor is a real person before allowing specific actions on your website.</p>
+        </div>
+        </div>
+{/*
+<section>
+  <div class="hr mx-auto">
+    <h2>Why Choose Wikimint for Security Audits?</h2>
+    <p>
+      This service gives real answers, not confusing charts. You get two full audits to confirm what changed. Every report is easy to follow and focused on growth.
+    </p>
+  </div>
+
+  <div  class="col-2">
+    <div class="col">
+ 
+<h3>What You Receive</h3>
+      <ul class="list-disc pl-5 text-gray-600">
+        <li>Detailed PDF security audit report</li>
+        <li>Executive risk summary</li>
+        <li>Evidence screenshots</li>
+        <li>Clear remediation instructions</li>
+        <li>Vulnerability severity breakdown</li>
+        <li>One complimentary re-test within 14 days</li>
+      </ul>
+
+    </div>
+  
+    <div class="col">
+     
+        <h3>Deliverbles</h3>
+      <ul class="list-disc pl-5 text-gray-600">
+<li>Alignment with OWASP Testing Guidelines</li>
+<li>Manual verification of every major finding</li>
+<li>Clear documentation with remediation steps</li>
+<li>Confidential handling of all client data</li>
+<li>Professional reporting format suitable for stakeholders</li>
+
+      </ul>
+
+    </div>
+  </div>
+  </section>
+
+<section class="redbox py-0 my-10">
+  <p class="text-xl">Confidentiality & Legal Compliance</h2>
+
+  <p>All audits are conducted within agreed scope and written authorization. Findings remain confidential and are shared only with authorized client representatives. Testing is performed within approved boundaries to prevent service disruption.</p>
+</section>
+*/}
+
+  <section id="faq" class="hr pt-0 pb-20 bg-white">
+    <h2>
+      Frequently Asked Questions
+    </h2>
+    <div class="">
+      <div class="grid md:grid-cols-[2fr_4fr] gap-20 text-left">
+        <div>
+          <div class="sticky top-20">
+            <img  loading="lazy" src="/assets/images/others/start-affordable-wed-design-services.webp" alt="Professional website design service offering fast, clean, SEO-friendly layouts with free consultation and personalized quote to build your ideal website" width="150" height="150" class="mb-0 " />
+
+            <h3>
+              Start Using wm-captcha          </h3>
+            <p>
+              Protect your website forms from spam, fake submissions, and automated bot activity with a simple client-side captcha solution. wm-captcha is quick to integrate, free to use, and works without API keys or account setup. Add it to your website today and keep your form data clean, secure, and reliable.           </p>
+              <a
+              href="#docs" 
+              class="btn"
+              >View Setup Guide</a>
+          </div>
+        </div>
+        <div>
+
+
+          
+
+
+          <div class="acc space-y-4">
+
+            <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q1" checked>
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q1" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">What is wm-captcha and how does it protect website forms?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p  itemprop="text">
+                      wm-captcha is a client-side JavaScript captcha tool designed to stop automated bots and spam submissions on website forms. It verifies that a real user is interacting with the page before allowing the form to submit. By adding a simple captcha checkbox and encrypted form output, it reduces fake entries, protects contact forms, and improves data quality without requiring external services or API keys.
+                                        </p>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q2">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q2" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Is wm-captcha really free and does it require API keys or registration?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      wm-captcha is completely free to use and does not require any account creation, API keys, or subscription setup. Unlike many captcha providers that depend on cloud verification services, wm-captcha works directly in the browser. This makes it suitable for developers, freelancers, and businesses who want captcha protection without managing external dashboards or usage limits.
+                                        </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q3">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q3" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">How do I add wm-captcha to my existing HTML contact form?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      To add wm-captcha to an existing contact form, first include the official CDN script on your webpage. Then place the captcha container element inside the form before the submit button. After that, paste your full form code into the wm-captcha encryption textarea to generate a protected version. Replace your original form with the encrypted output to enable secure verification.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q4">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q4" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Can wm-captcha prevent spam submissions and automated bot attacks?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Yes, wm-captcha is specifically designed to block automated scripts that attempt to submit forms without human interaction. The captcha checkbox requires manual user input and verification before the form action is allowed. Since the form code is also encrypted, bots cannot easily bypass validation or directly send requests to the form endpoint, which significantly reduces spam entries.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q5">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q5" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Does wm-captcha work with both GET and POST form submission methods?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      wm-captcha works with both GET and POST form submission methods because it intercepts the submission process at the browser level. The captcha verification must be completed before the form is allowed to proceed, regardless of how the data is sent to the server. This makes it compatible with simple HTML forms as well as more complex web applications.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q6">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q6" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Can I use wm-captcha without a form to validate users before running a function?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Yes, wm-captcha can be used as a standalone user verification component. By placing the captcha container with a data-success attribute, you can trigger a specific JavaScript function after successful verification. This is useful for protecting file downloads, showing hidden content, or enabling certain actions only after confirming that the visitor is a real human user.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q7">
+            <label for="q7" class="acc-title">
+              <h3 class="text-lg">Why is form encryption important when using wm-captcha?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Form encryption is important because it prevents attackers from copying or modifying the form structure, action URL, or field names. When you paste your form into the wm-captcha encryption textarea, it generates a protected version that hides sensitive attributes. This makes it harder for bots to send direct requests or bypass the captcha validation logic.               </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q8">
+            <label for="q8" class="acc-title">
+              <h3 class="text-lg">Is wm-captcha suitable for small business websites and portfolio sites?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  wm-captcha is well suited for small business websites, portfolio sites, landing pages, and personal blogs that need simple and effective form protection. Since it does not require server configuration or third-party verification services, it can be added quickly to static websites, shared hosting environments, and lightweight web projects with minimal setup effort.           </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q9">
+            <label for="q9" class="acc-title">
+              <h3 class="text-lg">Will wm-captcha affect page load speed or website performance?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  wm-captcha is built as a lightweight JavaScript file delivered through a CDN, so it has minimal impact on page load time. The script loads quickly and runs in the browser without making repeated external verification calls. This approach helps maintain fast page performance while still adding a layer of protection against automated submissions and malicious form activity.         </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q10">
+            <label for="q10" class="acc-title">
+              <h3 class="text-lg">Can wm-captcha be used together with other website security measures?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes, wm-captcha can be combined with other security practices such as server-side validation, rate limiting, firewall rules, and input sanitization. Using multiple layers of protection improves overall website security. wm-captcha handles client-side human verification, while server-side checks ensure that only valid and properly formatted data is processed by your application.         </p>
+              </div>
+          </div>
+
+        
+
+
+          </div>
+
+        </div>
+      </div>  
+
+
+    </div>
+  </section>
+  
+
+{/*
+  
+  <section
+  id="cta"
+  itemscope
+  itemtype="https://schema.org/ContactAction">
+  <div itemprop="potentialAction" itemscope itemtype="https://schema.org/ContactAction">
+    <meta itemprop="actionStatus" content="https://schema.org/PotentialActionStatus" />
+
+    <h2 itemprop="name">
+      Secure Your Website Before Attackers Test It
+    </h2>
+
+    <p itemprop="description" class="pb-5">
+      Cyber threats do not wait. A proactive <a href="/website-security-protection-guide">website security assessment</a> helps reduce risk exposure and strengthens your digital presence. Flat Fee. Clear Reporting. Actionable Results.
+    </p>
+
+    <div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+      <meta itemprop="urlTemplate" content="https://wa.me/919342026754?text=Web%20Security%20Audit%20Reg." />
+      <meta itemprop="actionPlatform" content="http://schema.org/DesktopWebPlatform" />
+      <meta itemprop="actionPlatform" content="http://schema.org/MobileWebPlatform" />
+      
+      <a 
+        href="https://wa.me/919342026754?text=Web%20Security%20Audit%20Reg." 
+        class="btn">
+        Check My Website Security
+      </a>
+    </div>
+  </div>
+
+</section>
+*/}
+</LandingLayout>

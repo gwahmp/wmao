@@ -163,3 +163,23 @@ document.querySelectorAll('.slider').forEach((slider) => {
   });
 });
 /* Image slider ends*/
+
+/*Code copy starts */
+function copyCode(btn) {
+  const pre = btn.parentElement?.querySelector('pre');
+  if (!pre) return;
+
+  const text = pre.innerText;
+
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.innerText;
+    btn.innerText = 'Copied!';
+    btn.classList.add('bg-green-100');
+
+    setTimeout(() => {
+      btn.innerText = original;
+      btn.classList.remove('bg-green-100');
+    }, 1500);
+  });
+}
+/*Code copy ends */
