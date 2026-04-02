@@ -1,7 +1,7 @@
 ---
 import LandingLayout from "../../layouts/LandingLayout.astro";
 const version = Date.now();
-import { Code } from 'astro:components';
+import Code from '../../components/CodeBlock.astro';
 
 const frontmatter = {
   title: "WM Cookie Consent – Lightweight JavaScript Cookie Banner for GDPR & Privacy Compliance",
@@ -19,6 +19,39 @@ const frontmatter = {
 
   <section class="col-2">
       <div class="col">
+
+        <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5"
+        itemscope itemtype="https://schema.org/BreadcrumbList">
+   
+     <!-- Home -->
+     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+       <a href="https://www.wikimint.com" itemprop="item">
+         <span itemprop="name" class="text-wmblue">Home</span>
+       </a>
+       <meta itemprop="position" content="1" />
+     </span>
+   
+     <span> » </span>
+   
+     <!-- Products -->
+     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+       <a href="https://www.wikimint.com/products" itemprop="item">
+         <span itemprop="name" class="text-wmblue">Products</span>
+       </a>
+       <meta itemprop="position" content="2" />
+     </span>
+   
+     <span> » </span>
+   
+      <!-- Current Page -->
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="item" content="https://www.wikimint.com/products/wm-cookie-consent" />
+        <span itemprop="name">WM Cookie Consent</span>
+        <meta itemprop="position" content="3" />
+      </span>
+   
+   </nav>
+
         <h1 class="text-3xl md:text-5xl font-bold mb-4 text-gray-800">
           Cookie Consent for Modern Websites
         </h1>

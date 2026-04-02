@@ -20,6 +20,7 @@
     @apply absolute top-2 right-2 text-xs bg-white border border-gray-300 px-2 py-1 rounded shadow-sm hover:bg-gray-100 transition;
   }
 
+
   .f-cont{@apply grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 max-w-7xl mx-auto px-6 py-12;}
   main{@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10;}
   .page article, .post .left{@apply col-span-12 md:col-span-7 prose lg:prose-xl max-w-none;}
@@ -83,7 +84,7 @@
 
 @layer base {
 .icon{width:30px;height:30px;}
-  p,h2,h3,h4,h5,h6,span,a,div,ul,li{
+  p,h2,h3,h4,h5,h6,a,div,ul,li{
     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
     font-size: 17px;
     font-weight: 400;

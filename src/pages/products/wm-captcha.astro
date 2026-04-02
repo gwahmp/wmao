@@ -16,8 +16,43 @@ const frontmatter = {
 
 <LandingLayout frontmatter={frontmatter}>
 
+
+
   <section class="col-2">
       <div class="col">
+
+        <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5"
+        itemscope itemtype="https://schema.org/BreadcrumbList">
+   
+     <!-- Home -->
+     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+       <a href="https://www.wikimint.com" itemprop="item">
+         <span itemprop="name" class="text-wmblue">Home</span>
+       </a>
+       <meta itemprop="position" content="1" />
+     </span>
+   
+     <span> » </span>
+   
+     <!-- Products -->
+     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+       <a href="https://www.wikimint.com/products" itemprop="item">
+         <span itemprop="name" class="text-wmblue">Products</span>
+       </a>
+       <meta itemprop="position" content="2" />
+     </span>
+   
+     <span> » </span>
+   
+ <!-- Current Page -->
+ <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <meta itemprop="item" content="https://www.wikimint.com/products/wm-captcha" />
+  <span itemprop="name">wmCaptcha</span>
+  <meta itemprop="position" content="3" />
+</span>
+   
+   </nav>
+
         <h1>
           Free Website Protection with wmCAPTCHA
         </h1>

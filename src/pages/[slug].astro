@@ -117,10 +117,19 @@ const finalModifiedDate =
       
   <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="https://www.wikimint.com" itemprop="item">
+        <span itemprop="name" class="text-wmblue">Home</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </span>
+  
+   
+        <span> » </span>
+    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
       <a href="https://www.wikimint.com/blog" itemprop="item">
         <span itemprop="name" class="text-wmblue">Blog</span>
       </a>
-      <meta itemprop="position" content="1" />
+      <meta itemprop="position" content="2" />
     </span>
   
    
@@ -129,18 +138,18 @@ const finalModifiedDate =
           <a href={`https://www.wikimint.com/${post.data.category.toLowerCase()}`} itemprop="item">
             <span itemprop="name"  class="text-wmblue">{post.data.category}</span>
           </a>
-          <meta itemprop="position" content="2" />
+          <meta itemprop="position" content="3" />
         </span>
       </>
   
     <span> » </span>
-    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <span>{post.data.title}</span>
-      <a href={`https://www.wikimint.com/${post.slug}`} itemprop="item">
-        <span itemprop="name"  class="text-wmblue sr-only">{post.data.title}</span>
-      </a>      
-      <meta itemprop="position" content={post.data.category ? "3" : "2"} />
-    </span>    
+          <!-- Current Page -->
+          <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="item" content={`https://www.wikimint.com/${post.slug}`}/>
+            <span itemprop="name">{post.data.title}</span>
+            <meta itemprop="position" content={post.data.category ? "4" : "3"} />
+          </span>
+
   </nav>
         <article vocab="https://schema.org/" typeof="BlogPosting" class="prose lg:prose-xl max-w-none">
           
