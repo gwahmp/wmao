@@ -1,18 +1,18 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import keywords from "../../data/tools/seo/keyword-research.json";
-import audit from "../../data/tools/seo/site-audit.json";
-import backlinks from "../../data/tools/seo/backlink-tools.json";
-import onpage from "../../data/tools/seo/on-page.json";
-import tracking from "../../data/tools/seo/rank-tracking.json";
+import generative from "../../data/toolbox/ai-ml/generative.json";
+import chatbots from "../../data/toolbox/ai-ml/chatbots.json";
+import imageVideo from "../../data/toolbox/ai-ml/image-video.json";
+import writing from "../../data/toolbox/ai-ml/writing.json";
+import platforms from "../../data/toolbox/ai-ml/platforms.json";
 
 const sections = [
-  { id: "keyword-research", title: "Keyword Research", data: keywords },
-  { id: "site-audit", title: "Site Audits", data: audit },
-  { id: "backlinks", title: "Backlink Tools", data: backlinks },
-  { id: "on-page", title: "On-Page Optimization", data: onpage },
-  { id: "rank-tracking", title: "Rank Tracking", data: tracking }
+  { id: "generative", title: "Generative AI", data: generative },
+  { id: "chatbots", title: "Chatbots & Assistants", data: chatbots },
+  { id: "image-video", title: "Image & Video AI", data: imageVideo },
+  { id: "writing", title: "AI Writing Tools", data: writing },
+  { id: "platforms", title: "AI Development Platforms", data: platforms }
 ];
 
 const categories = [
@@ -20,41 +20,49 @@ const categories = [
   { name: "AI & ML", slug: "ai-ml" },
   { name: "Marketing", slug: "marketing" },
   { name: "SEO", slug: "seo" },
-  { name: "Analytics", slug: "analytics" }
+  { name: "Analytics", slug: "analytics" },
+  // continue later
 ];
 
 const breadcrumbs = `
 <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <a href="https://www.wikimint.com" itemprop="item">
       <span itemprop="name" class="text-wmblue">Home</span>
     </a>
     <meta itemprop="position" content="1" />
   </span>
+
   <span> » </span>
+
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item">
+    <a href="https://www.wikimint.com/toolbox" itemprop="item">
       <span itemprop="name" class="text-wmblue">Tools</span>
     </a>
     <meta itemprop="position" content="2" />
   </span>
+
   <span> » </span>
+
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/seo" itemprop="item">
-      <span itemprop="name" class="text-wmblue">SEO</span>
+    <a href="https://www.wikimint.com/toolbox/ai-ml" itemprop="item">
+      <span itemprop="name" class="text-wmblue">AI & Machine Learning</span>
     </a>
     <meta itemprop="position" content="3" />
   </span>
+
 </nav>
 `;
 ---
 
-<ToolsLayout
-  title="SEO & Search Optimization Tools"
-  description="Free SEO tools for keyword research, site audits, backlinks, on-page optimization, and rank tracking."
+<ToolboxLayout
+  title="AI & Machine Learning Tools"
+  description="Explore free and open-source AI tools for writing, chatbots, images, automation and business intelligence."
   breadcrumbs={breadcrumbs}
   categories={categories}
 >
+
   {sections.map(sec => (
     <section id={sec.id} class="mb-10">
       <h2 class="text-2xl font-semibold mb-4">
@@ -64,7 +72,7 @@ const breadcrumbs = `
       <ul class="space-y-2 list-disc pl-5">
         {sec.data.map(tool => (
           <li>
-            <a href={tool.url} target="_blank" class="text-wmblue hover:underline" rel="nofollow noopener">
+            <a href={tool.url} target="_blank" rel="nofollow noopener">
               {tool.name}
             </a>
             {" - "}{tool.description}
@@ -73,4 +81,5 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+
+</ToolboxLayout>

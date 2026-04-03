@@ -12,7 +12,7 @@ function smartTitle(text) {
   }
   
   export async function loadToolCategories() {
-    const modules = import.meta.glob('/src/data/tools/**/**/*.json');
+    const modules = import.meta.glob('/src/data/toolbox/**/**/*.json');
     const categories = {};
   
     for (const path in modules) {

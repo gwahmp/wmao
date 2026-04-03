@@ -181,7 +181,7 @@ Building trust with your audience is crucial for long-term success in affiliate 
 
 ### Step 7: Track and Optimize
 
-To maximize your affiliate marketing business's performance, regularly track and analyze your results. Use <a href="/tools/analytics">analytics tools</a> to monitor key metrics like click-through rates, conversion rates, and revenue generated. Based on your findings, make data-driven optimizations to your strategies.
+To maximize your affiliate marketing business's performance, regularly track and analyze your results. Use <a href="/toolbox/analytics">analytics tools</a> to monitor key metrics like click-through rates, conversion rates, and revenue generated. Based on your findings, make data-driven optimizations to your strategies.
 
 Conclusion
 ----------

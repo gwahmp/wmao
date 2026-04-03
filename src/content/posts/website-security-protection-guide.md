@@ -763,7 +763,7 @@ A boutique e-commerce store in San Francisco detected unusual login attempts thr
 
 - Enable daily or weekly scans
 - Monitor email alerts and logs regularly
-- Combine multiple <a href="/tools/security">security tools</a> for layered protection
+- Combine multiple <a href="/toolbox/security">security tools</a> for layered protection
 - Review server and traffic reports to spot anomalies
 
 With proper monitoring, you can detect issues early, react quickly, and maintain customer trust and website performance.

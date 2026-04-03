@@ -1,7 +1,7 @@
 ---
 import LandingLayout from "../layouts/LandingLayout.astro";
 const version = Date.now();
-import { TOOL_CATEGORIES } from "../data/tools/categories";
+import { TOOL_CATEGORIES } from "../data/toolbox/categories";
 
 const frontmatter = {
   title: "Ultimate Digital Assets Bundle – Templates, Tools & Guides for Business",
@@ -174,7 +174,7 @@ const frontmatter = {
         <ol>
           {TOOL_CATEGORIES.map(cat => (
             <li>
-              <a href={`/tools/${cat.slug}`} class="block">
+              <a href={`/toolbox/${cat.slug}`} class="block">
                 {cat.name}
               </a>
             </li>

@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import liveChat from "../../data/tools/support/live-chat.json";
-import helpdesk from "../../data/tools/support/helpdesk.json";
-import knowledge from "../../data/tools/support/knowledge.json";
+import recruitment from "../../data/toolbox/hr-ops/recruitment.json";
+import payroll from "../../data/toolbox/hr-ops/payroll.json";
+import performance from "../../data/toolbox/hr-ops/performance.json";
 
 const sections = [
-  { id: "live-chat", title: "Live Chat", data: liveChat },
-  { id: "helpdesk", title: "Helpdesk", data: helpdesk },
-  { id: "knowledge", title: "Knowledge Base", data: knowledge }
+  { id: "recruitment", title: "Recruitment Tools", data: recruitment },
+  { id: "payroll", title: "Payroll Tools", data: payroll },
+  { id: "performance", title: "Performance Tools", data: performance }
 ];
 
 const breadcrumbs = `
@@ -18,20 +18,20 @@ const breadcrumbs = `
     <meta itemprop="position" content="1" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
+    <a href="https://www.wikimint.com/toolbox" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
     <meta itemprop="position" content="2" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/support" itemprop="item"><span itemprop="name" class="text-wmblue">Customer Support</span></a>
+    <a href="https://www.wikimint.com/toolbox/hr-ops" itemprop="item"><span itemprop="name" class="text-wmblue">HR & Hiring</span></a>
     <meta itemprop="position" content="3" />
   </span>
 </nav>
 `;
 ---
 
-<ToolsLayout
-  title="Customer Support Tools"
-  description="Free live chat, helpdesk, and knowledge base tools for businesses."
+<ToolboxLayout
+  title="HR & Hiring Tools"
+  description="Free recruitment, payroll, and performance management tools for businesses."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -47,4 +47,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

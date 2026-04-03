@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import blogging from "../../data/tools/content-media/blogging.json";
-import video from "../../data/tools/content-media/video.json";
-import assets from "../../data/tools/content-media/assets.json";
+import liveChat from "../../data/toolbox/support/live-chat.json";
+import helpdesk from "../../data/toolbox/support/helpdesk.json";
+import knowledge from "../../data/toolbox/support/knowledge.json";
 
 const sections = [
-  { id: "blogging", title: "Blogging Platforms", data: blogging },
-  { id: "video", title: "Video Tools", data: video },
-  { id: "assets", title: "Stock Assets", data: assets }
+  { id: "live-chat", title: "Live Chat", data: liveChat },
+  { id: "helpdesk", title: "Helpdesk", data: helpdesk },
+  { id: "knowledge", title: "Knowledge Base", data: knowledge }
 ];
 
 const breadcrumbs = `
@@ -18,20 +18,20 @@ const breadcrumbs = `
     <meta itemprop="position" content="1" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
+    <a href="https://www.wikimint.com/toolbox" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
     <meta itemprop="position" content="2" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/content-media" itemprop="item"><span itemprop="name" class="text-wmblue">Content & Media</span></a>
+    <a href="https://www.wikimint.com/toolbox/support" itemprop="item"><span itemprop="name" class="text-wmblue">Customer Support</span></a>
     <meta itemprop="position" content="3" />
   </span>
 </nav>
 `;
 ---
 
-<ToolsLayout
-  title="Content & Media Tools"
-  description="Free blogging platforms, video tools, and stock assets for creators."
+<ToolboxLayout
+  title="Customer Support Tools"
+  description="Free live chat, helpdesk, and knowledge base tools for businesses."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -47,4 +47,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

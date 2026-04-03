@@ -12,7 +12,7 @@ interface Props {
   breadcrumbs: any;
   categories: Category[];
 }
-import { TOOL_CATEGORIES } from "../data/tools/categories";
+import { TOOL_CATEGORIES } from "../data/toolbox/categories";
 const { title, description, breadcrumbs } = Astro.props as Props;
 ---
 
@@ -39,7 +39,7 @@ const { title, description, breadcrumbs } = Astro.props as Props;
         <ul class="link space-y-2">
           {TOOL_CATEGORIES.map(cat => (
             <li>
-              <a href={`/tools/${cat.slug}`}>
+              <a href={`/toolbox/${cat.slug}`}>
                 {cat.name}
               </a>
             </li>

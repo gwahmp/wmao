@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import budgeting from "../../data/tools/finance/budgeting.json";
-import investing from "../../data/tools/finance/investing.json";
-import accounting from "../../data/tools/finance/accounting.json";
+import editors from "../../data/toolbox/dev-apis/code-editors.json";
+import apis from "../../data/toolbox/dev-apis/api-platforms.json";
+import tests from "../../data/toolbox/dev-apis/testing-tools.json";
 
 const sections = [
-  { id: "budgeting", title: "Budgeting Tools", data: budgeting },
-  { id: "investing", title: "Investing & Market Tools", data: investing },
-  { id: "accounting", title: "Accounting Software", data: accounting }
+  { id: "code-editors", title: "Code Editors", data: editors },
+  { id: "api-platforms", title: "API Platforms", data: apis },
+  { id: "testing-tools", title: "Testing & QA Tools", data: tests }
 ];
 
 const breadcrumbs = `
@@ -21,15 +21,15 @@ const breadcrumbs = `
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item">
+    <a href="https://www.wikimint.com/toolbox" itemprop="item">
       <span itemprop="name" class="text-wmblue">Tools</span>
     </a>
     <meta itemprop="position" content="2" />
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/finance" itemprop="item">
-      <span itemprop="name" class="text-wmblue">Finance & Money</span>
+    <a href="https://www.wikimint.com/toolbox/dev-apis" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Developer Tools</span>
     </a>
     <meta itemprop="position" content="3" />
   </span>
@@ -37,9 +37,9 @@ const breadcrumbs = `
 `;
 ---
 
-<ToolsLayout
-  title="Personal Finance & Money Management Tools"
-  description="Free finance, budgeting, investing, and accounting tools to manage money, grow wealth, and run your business smarter."
+<ToolboxLayout
+  title="Developer Tools, APIs & Open-Source Platforms"
+  description="Free developer tools, APIs, code editors, testing platforms, and open-source software for modern app development."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -59,4 +59,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import graphics from "../../data/tools/design-ui/graphic-design.json";
-import uiux from "../../data/tools/design-ui/ui-ux.json";
-import media from "../../data/tools/design-ui/video-audio.json";
+import passwords from "../../data/toolbox/security/password.json";
+import encrypt from "../../data/toolbox/security/encryption.json";
+import privacy from "../../data/toolbox/security/privacy.json";
 
 const sections = [
-  { id: "graphic-design", title: "Graphic Design Tools", data: graphics },
-  { id: "ui-ux", title: "UI & UX Design Tools", data: uiux },
-  { id: "video-audio", title: "Video & Audio Tools", data: media }
+  { id: "passwords", title: "Password Managers", data: passwords },
+  { id: "encryption", title: "Encryption Tools", data: encrypt },
+  { id: "privacy", title: "Privacy Protection Tools", data: privacy }
 ];
 
 const breadcrumbs = `
@@ -21,15 +21,15 @@ const breadcrumbs = `
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item">
+    <a href="https://www.wikimint.com/toolbox" itemprop="item">
       <span itemprop="name" class="text-wmblue">Tools</span>
     </a>
     <meta itemprop="position" content="2" />
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/design-ui" itemprop="item">
-      <span itemprop="name" class="text-wmblue">Design & Creative</span>
+    <a href="https://www.wikimint.com/toolbox/security" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Security & Privacy</span>
     </a>
     <meta itemprop="position" content="3" />
   </span>
@@ -37,9 +37,9 @@ const breadcrumbs = `
 `;
 ---
 
-<ToolsLayout
-  title="Design & Creative Tools for Graphics, UI & Branding"
-  description="Free design, graphic, UI/UX, and creative tools for logos, social media, websites, and marketing assets."
+<ToolboxLayout
+  title="Cybersecurity & Privacy Protection Tools"
+  description="Free security, privacy, password, and encryption tools to protect your data, devices, and online identity."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -59,4 +59,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

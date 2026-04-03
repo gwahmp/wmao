@@ -33,7 +33,7 @@ faq:
    a: Ongoing monthly testing and performance reviews help maintain steady improvement and adapt to user behavior changes.
 
  - q: What tools are used for conversion optimization?
-   a: Businesses use <a href="/tools/analytics">analytics platforms</a>, heatmap tools, A/B testing software, and funnel tracking systems to monitor and improve performance.
+   a: Businesses use <a href="/toolbox/analytics">analytics platforms</a>, heatmap tools, A/B testing software, and funnel tracking systems to monitor and improve performance.
 
  - q: Does conversion optimization improve SEO?
    a: Improved user experience and engagement metrics can indirectly support search visibility and ranking performance.

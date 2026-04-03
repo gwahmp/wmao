@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import tasks from "../../data/tools/productivity/task-management.json";
-import collab from "../../data/tools/productivity/collaboration.json";
-import time from "../../data/tools/productivity/time-tracking.json";
+import budgeting from "../../data/toolbox/finance/budgeting.json";
+import investing from "../../data/toolbox/finance/investing.json";
+import accounting from "../../data/toolbox/finance/accounting.json";
 
 const sections = [
-  { id: "task-management", title: "Task Management Tools", data: tasks },
-  { id: "collaboration", title: "Team Collaboration Tools", data: collab },
-  { id: "time-tracking", title: "Time Tracking Tools", data: time }
+  { id: "budgeting", title: "Budgeting Tools", data: budgeting },
+  { id: "investing", title: "Investing & Market Tools", data: investing },
+  { id: "accounting", title: "Accounting Software", data: accounting }
 ];
 
 const breadcrumbs = `
@@ -21,15 +21,15 @@ const breadcrumbs = `
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item">
+    <a href="https://www.wikimint.com/toolbox" itemprop="item">
       <span itemprop="name" class="text-wmblue">Tools</span>
     </a>
     <meta itemprop="position" content="2" />
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/productivity" itemprop="item">
-      <span itemprop="name" class="text-wmblue">Productivity</span>
+    <a href="https://www.wikimint.com/toolbox/finance" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Finance & Money</span>
     </a>
     <meta itemprop="position" content="3" />
   </span>
@@ -37,9 +37,9 @@ const breadcrumbs = `
 `;
 ---
 
-<ToolsLayout
-  title="Productivity & Team Collaboration Tools"
-  description="Free productivity, task management, remote work, and collaboration tools to help teams and businesses work faster and smarter."
+<ToolboxLayout
+  title="Personal Finance & Money Management Tools"
+  description="Free finance, budgeting, investing, and accounting tools to manage money, grow wealth, and run your business smarter."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -59,4 +59,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

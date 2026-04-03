@@ -1,71 +1,52 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import servers from "../../data/tools/cloud-data/servers.json";
-import databases from "../../data/tools/cloud-data/databases.json";
-import clouds from "../../data/tools/cloud-data/cloud-platforms.json";
+import crm from "../../data/toolbox/crm-sales/crm.json";
+import leads from "../../data/toolbox/crm-sales/lead-generation.json";
+import sales from "../../data/toolbox/crm-sales/sales-automation.json";
 
 const sections = [
-  { id: "servers", title: "Servers", data: servers },
-  { id: "databases", title: "Databases", data: databases },
-  { id: "cloud-platforms", title: "Cloud Platforms", data: clouds },
+  { id: "crm", title: "CRM Platforms", data: crm },
+  { id: "lead-generation", title: "Lead Generation Tools", data: leads },
+  { id: "sales-automation", title: "Sales Automation Tools", data: sales }
 ];
-
-const categories = [
-  { name: "AI", slug: "ai" },
-  { name: "SEO", slug: "seo" },
-  { name: "Analytics", slug: "analytics" },
-  { name: "Cloud & Data", slug: "cloud-data" },
-  // add all 20 here
-];
-
 
 const breadcrumbs = `
 <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
-
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <a href="https://www.wikimint.com" itemprop="item">
       <span itemprop="name" class="text-wmblue">Home</span>
     </a>
     <meta itemprop="position" content="1" />
   </span>
-
   <span> » </span>
-
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item">
+    <a href="https://www.wikimint.com/toolbox" itemprop="item">
       <span itemprop="name" class="text-wmblue">Tools</span>
     </a>
     <meta itemprop="position" content="2" />
   </span>
-
   <span> » </span>
-
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/cloud-data" itemprop="item">
-      <span itemprop="name" class="text-wmblue">Cloud & Data</span>
+    <a href="https://www.wikimint.com/toolbox/crm-sales" itemprop="item">
+      <span itemprop="name" class="text-wmblue">CRM & Sales</span>
     </a>
     <meta itemprop="position" content="3" />
   </span>
-
 </nav>
 `;
-
 ---
 
-<ToolsLayout
-  title="Cloud & Data Infrastructure Tools"
-  description="Curated servers, databases and cloud platforms for modern businesses and startups."
+<ToolboxLayout
+  title="CRM & Sales Automation Tools"
+  description="Free CRM, sales automation, lead tracking, and customer management tools to grow your business faster."
   breadcrumbs={breadcrumbs}
-  categories={categories}
 >
-
   {sections.map(sec => (
     <section id={sec.id} class="mb-10">
       <h2 class="text-2xl font-semibold mb-4">
         {sec.title} ({sec.data.length})
       </h2>
-
       <ul class="space-y-2 list-disc pl-5">
         {sec.data.map(tool => (
           <li>
@@ -78,5 +59,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-
-</ToolsLayout>
+</ToolboxLayout>

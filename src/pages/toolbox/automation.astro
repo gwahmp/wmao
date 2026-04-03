@@ -1,10 +1,10 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
 // Import JSON files for sections
-import workflow from "../../data/tools/automation/workflow.json";
-import integrations from "../../data/tools/automation/integrations.json";
-import bots from "../../data/tools/automation/bots.json";
+import workflow from "../../data/toolbox/automation/workflow.json";
+import integrations from "../../data/toolbox/automation/integrations.json";
+import bots from "../../data/toolbox/automation/bots.json";
 
 // Define sections for this category
 const sections = [
@@ -23,13 +23,13 @@ const breadcrumbs = `
     <meta itemprop="position" content="1" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item">
+    <a href="https://www.wikimint.com/toolbox" itemprop="item">
       <span itemprop="name" class="text-wmblue">Tools</span>
     </a>
     <meta itemprop="position" content="2" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/automation" itemprop="item">
+    <a href="https://www.wikimint.com/toolbox/automation" itemprop="item">
       <span itemprop="name" class="text-wmblue">Automation & No-Code</span>
     </a>
     <meta itemprop="position" content="3" />
@@ -38,7 +38,7 @@ const breadcrumbs = `
 `;
 ---
 
-<ToolsLayout
+<ToolboxLayout
   title="Automation & No-Code Tools"
   description="Free automation and no-code tools to streamline workflows, integrations, and bots."
   breadcrumbs={breadcrumbs}
@@ -56,4 +56,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

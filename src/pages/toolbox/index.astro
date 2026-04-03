@@ -1,8 +1,8 @@
 ---
 import LandingLayout from "../../layouts/LandingLayout.astro";
-import { loadToolCategories } from "../../utils/toolsLoader";
+import { loadToolCategories } from "../../utils/toolboxLoader";
 const TOOL_CATEGORIES = await loadToolCategories();
-import stats from "../../data/meta/tools-stats.json";
+import stats from "../../data/meta/toolbox-stats.json";
 function roundThousands(n) {
   return Math.floor(n / 1000) * 1000;
 }
@@ -44,7 +44,7 @@ const frontmatter = {
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-0">
     {TOOL_CATEGORIES.map(cat => (
         <div class="border rounded-xl p-6 bg-gray-50 shadow-sm">
-          <a href={`/tools/${cat.slug}`} class="font-medium text-wmblue text-lg block mb-1">
+          <a href={`/toolbox/${cat.slug}`} class="font-medium text-wmblue text-lg block mb-1">
          {cat.name.toUpperCase()}
           </a>
     

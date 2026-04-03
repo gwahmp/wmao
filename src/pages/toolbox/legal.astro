@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import store from "../../data/tools/ecommerce/store-builders.json";
-import payments from "../../data/tools/ecommerce/payments.json";
-import shipping from "../../data/tools/ecommerce/shipping.json";
+import contracts from "../../data/toolbox/legal/contracts.json";
+import compliance from "../../data/toolbox/legal/compliance.json";
+import privacy from "../../data/toolbox/legal/privacy.json";
 
 const sections = [
-  { id: "store-builders", title: "Store Builders", data: store },
-  { id: "payments", title: "Payment Gateways", data: payments },
-  { id: "shipping", title: "Shipping Tools", data: shipping }
+  { id: "contracts", title: "Contracts", data: contracts },
+  { id: "compliance", title: "Compliance", data: compliance },
+  { id: "privacy", title: "Privacy & Policies", data: privacy }
 ];
 
 const breadcrumbs = `
@@ -18,20 +18,20 @@ const breadcrumbs = `
     <meta itemprop="position" content="1" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
+    <a href="https://www.wikimint.com/toolbox" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
     <meta itemprop="position" content="2" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/ecommerce" itemprop="item"><span itemprop="name" class="text-wmblue">E-commerce</span></a>
+    <a href="https://www.wikimint.com/toolbox/legal" itemprop="item"><span itemprop="name" class="text-wmblue">Legal & Compliance</span></a>
     <meta itemprop="position" content="3" />
   </span>
 </nav>
 `;
 ---
 
-<ToolsLayout
-  title="E-commerce Tools"
-  description="Free store builders, payment gateways, and shipping tools for online businesses."
+<ToolboxLayout
+  title="Legal & Compliance Tools"
+  description="Free tools for contracts, compliance, and privacy policies for businesses."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -47,4 +47,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

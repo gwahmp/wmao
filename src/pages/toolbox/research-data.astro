@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import contracts from "../../data/tools/legal/contracts.json";
-import compliance from "../../data/tools/legal/compliance.json";
-import privacy from "../../data/tools/legal/privacy.json";
+import market from "../../data/toolbox/research-data/market.json";
+import surveys from "../../data/toolbox/research-data/surveys.json";
+import scraping from "../../data/toolbox/research-data/scraping.json";
 
 const sections = [
-  { id: "contracts", title: "Contracts", data: contracts },
-  { id: "compliance", title: "Compliance", data: compliance },
-  { id: "privacy", title: "Privacy & Policies", data: privacy }
+  { id: "market-research", title: "Market Research", data: market },
+  { id: "surveys", title: "Surveys", data: surveys },
+  { id: "scraping", title: "Web Scraping Tools", data: scraping }
 ];
 
 const breadcrumbs = `
@@ -18,20 +18,20 @@ const breadcrumbs = `
     <meta itemprop="position" content="1" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
+    <a href="https://www.wikimint.com/toolbox" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
     <meta itemprop="position" content="2" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/legal" itemprop="item"><span itemprop="name" class="text-wmblue">Legal & Compliance</span></a>
+    <a href="https://www.wikimint.com/toolbox/research-data" itemprop="item"><span itemprop="name" class="text-wmblue">Research & Data</span></a>
     <meta itemprop="position" content="3" />
   </span>
 </nav>
 `;
 ---
 
-<ToolsLayout
-  title="Legal & Compliance Tools"
-  description="Free tools for contracts, compliance, and privacy policies for businesses."
+<ToolboxLayout
+  title="Research & Data Tools"
+  description="Free tools for market research, surveys, and web data scraping."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -47,4 +47,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

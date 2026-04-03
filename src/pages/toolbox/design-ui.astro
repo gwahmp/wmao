@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import crm from "../../data/tools/crm-sales/crm.json";
-import leads from "../../data/tools/crm-sales/lead-generation.json";
-import sales from "../../data/tools/crm-sales/sales-automation.json";
+import graphics from "../../data/toolbox/design-ui/graphic-design.json";
+import uiux from "../../data/toolbox/design-ui/ui-ux.json";
+import media from "../../data/toolbox/design-ui/video-audio.json";
 
 const sections = [
-  { id: "crm", title: "CRM Platforms", data: crm },
-  { id: "lead-generation", title: "Lead Generation Tools", data: leads },
-  { id: "sales-automation", title: "Sales Automation Tools", data: sales }
+  { id: "graphic-design", title: "Graphic Design Tools", data: graphics },
+  { id: "ui-ux", title: "UI & UX Design Tools", data: uiux },
+  { id: "video-audio", title: "Video & Audio Tools", data: media }
 ];
 
 const breadcrumbs = `
@@ -21,15 +21,15 @@ const breadcrumbs = `
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item">
+    <a href="https://www.wikimint.com/toolbox" itemprop="item">
       <span itemprop="name" class="text-wmblue">Tools</span>
     </a>
     <meta itemprop="position" content="2" />
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/crm-sales" itemprop="item">
-      <span itemprop="name" class="text-wmblue">CRM & Sales</span>
+    <a href="https://www.wikimint.com/toolbox/design-ui" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Design & Creative</span>
     </a>
     <meta itemprop="position" content="3" />
   </span>
@@ -37,9 +37,9 @@ const breadcrumbs = `
 `;
 ---
 
-<ToolsLayout
-  title="CRM & Sales Automation Tools"
-  description="Free CRM, sales automation, lead tracking, and customer management tools to grow your business faster."
+<ToolboxLayout
+  title="Design & Creative Tools for Graphics, UI & Branding"
+  description="Free design, graphic, UI/UX, and creative tools for logos, social media, websites, and marketing assets."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -59,4 +59,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import webHosting from "../../data/tools/hosting/web-hosting.json";
-import domains from "../../data/tools/hosting/domains.json";
-import deploy from "../../data/tools/hosting/deploy.json";
+import blogging from "../../data/toolbox/content-media/blogging.json";
+import video from "../../data/toolbox/content-media/video.json";
+import assets from "../../data/toolbox/content-media/assets.json";
 
 const sections = [
-  { id: "web-hosting", title: "Web Hosting", data: webHosting },
-  { id: "domains", title: "Domain Services", data: domains },
-  { id: "deployment", title: "Deployment Platforms", data: deploy }
+  { id: "blogging", title: "Blogging Platforms", data: blogging },
+  { id: "video", title: "Video Tools", data: video },
+  { id: "assets", title: "Stock Assets", data: assets }
 ];
 
 const breadcrumbs = `
@@ -18,20 +18,20 @@ const breadcrumbs = `
     <meta itemprop="position" content="1" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
+    <a href="https://www.wikimint.com/toolbox" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
     <meta itemprop="position" content="2" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/hosting" itemprop="item"><span itemprop="name" class="text-wmblue">Hosting & Domains</span></a>
+    <a href="https://www.wikimint.com/toolbox/content-media" itemprop="item"><span itemprop="name" class="text-wmblue">Content & Media</span></a>
     <meta itemprop="position" content="3" />
   </span>
 </nav>
 `;
 ---
 
-<ToolsLayout
-  title="Hosting & Domain Tools"
-  description="Free web hosting, domain services, and deployment platforms for developers and businesses."
+<ToolboxLayout
+  title="Content & Media Tools"
+  description="Free blogging platforms, video tools, and stock assets for creators."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -47,4 +47,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

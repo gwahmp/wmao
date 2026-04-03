@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import passwords from "../../data/tools/security/password.json";
-import encrypt from "../../data/tools/security/encryption.json";
-import privacy from "../../data/tools/security/privacy.json";
+import tasks from "../../data/toolbox/productivity/task-management.json";
+import collab from "../../data/toolbox/productivity/collaboration.json";
+import time from "../../data/toolbox/productivity/time-tracking.json";
 
 const sections = [
-  { id: "passwords", title: "Password Managers", data: passwords },
-  { id: "encryption", title: "Encryption Tools", data: encrypt },
-  { id: "privacy", title: "Privacy Protection Tools", data: privacy }
+  { id: "task-management", title: "Task Management Tools", data: tasks },
+  { id: "collaboration", title: "Team Collaboration Tools", data: collab },
+  { id: "time-tracking", title: "Time Tracking Tools", data: time }
 ];
 
 const breadcrumbs = `
@@ -21,15 +21,15 @@ const breadcrumbs = `
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item">
+    <a href="https://www.wikimint.com/toolbox" itemprop="item">
       <span itemprop="name" class="text-wmblue">Tools</span>
     </a>
     <meta itemprop="position" content="2" />
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/security" itemprop="item">
-      <span itemprop="name" class="text-wmblue">Security & Privacy</span>
+    <a href="https://www.wikimint.com/toolbox/productivity" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Productivity</span>
     </a>
     <meta itemprop="position" content="3" />
   </span>
@@ -37,9 +37,9 @@ const breadcrumbs = `
 `;
 ---
 
-<ToolsLayout
-  title="Cybersecurity & Privacy Protection Tools"
-  description="Free security, privacy, password, and encryption tools to protect your data, devices, and online identity."
+<ToolboxLayout
+  title="Productivity & Team Collaboration Tools"
+  description="Free productivity, task management, remote work, and collaboration tools to help teams and businesses work faster and smarter."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -59,4 +59,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

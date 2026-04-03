@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import market from "../../data/tools/research-data/market.json";
-import surveys from "../../data/tools/research-data/surveys.json";
-import scraping from "../../data/tools/research-data/scraping.json";
+import webHosting from "../../data/toolbox/hosting/web-hosting.json";
+import domains from "../../data/toolbox/hosting/domains.json";
+import deploy from "../../data/toolbox/hosting/deploy.json";
 
 const sections = [
-  { id: "market-research", title: "Market Research", data: market },
-  { id: "surveys", title: "Surveys", data: surveys },
-  { id: "scraping", title: "Web Scraping Tools", data: scraping }
+  { id: "web-hosting", title: "Web Hosting", data: webHosting },
+  { id: "domains", title: "Domain Services", data: domains },
+  { id: "deployment", title: "Deployment Platforms", data: deploy }
 ];
 
 const breadcrumbs = `
@@ -18,20 +18,20 @@ const breadcrumbs = `
     <meta itemprop="position" content="1" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
+    <a href="https://www.wikimint.com/toolbox" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
     <meta itemprop="position" content="2" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/research-data" itemprop="item"><span itemprop="name" class="text-wmblue">Research & Data</span></a>
+    <a href="https://www.wikimint.com/toolbox/hosting" itemprop="item"><span itemprop="name" class="text-wmblue">Hosting & Domains</span></a>
     <meta itemprop="position" content="3" />
   </span>
 </nav>
 `;
 ---
 
-<ToolsLayout
-  title="Research & Data Tools"
-  description="Free tools for market research, surveys, and web data scraping."
+<ToolboxLayout
+  title="Hosting & Domain Tools"
+  description="Free web hosting, domain services, and deployment platforms for developers and businesses."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -47,4 +47,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

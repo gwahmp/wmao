@@ -1,14 +1,14 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import recruitment from "../../data/tools/hr-ops/recruitment.json";
-import payroll from "../../data/tools/hr-ops/payroll.json";
-import performance from "../../data/tools/hr-ops/performance.json";
+import marketing from "../../data/toolbox/email/email-marketing.json";
+import team from "../../data/toolbox/email/team-email.json";
+import sms from "../../data/toolbox/email/sms-voip.json";
 
 const sections = [
-  { id: "recruitment", title: "Recruitment Tools", data: recruitment },
-  { id: "payroll", title: "Payroll Tools", data: payroll },
-  { id: "performance", title: "Performance Tools", data: performance }
+  { id: "marketing", title: "Email Marketing", data: marketing },
+  { id: "team-email", title: "Team Email", data: team },
+  { id: "sms-voip", title: "SMS & VoIP", data: sms }
 ];
 
 const breadcrumbs = `
@@ -18,20 +18,20 @@ const breadcrumbs = `
     <meta itemprop="position" content="1" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
+    <a href="https://www.wikimint.com/toolbox" itemprop="item"><span itemprop="name" class="text-wmblue">Tools</span></a>
     <meta itemprop="position" content="2" />
   </span> » 
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/hr-ops" itemprop="item"><span itemprop="name" class="text-wmblue">HR & Hiring</span></a>
+    <a href="https://www.wikimint.com/toolbox/email" itemprop="item"><span itemprop="name" class="text-wmblue">Email & Communication</span></a>
     <meta itemprop="position" content="3" />
   </span>
 </nav>
 `;
 ---
 
-<ToolsLayout
-  title="HR & Hiring Tools"
-  description="Free recruitment, payroll, and performance management tools for businesses."
+<ToolboxLayout
+  title="Email & Communication Tools"
+  description="Free tools for email marketing, team email management, and SMS/VoIP communication."
   breadcrumbs={breadcrumbs}
 >
   {sections.map(sec => (
@@ -47,4 +47,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>

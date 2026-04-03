@@ -1,18 +1,18 @@
 ---
-import ToolsLayout from "../../layouts/ToolsLayout.astro";
+import ToolboxLayout from "../../layouts/ToolboxLayout.astro";
 
-import web from "../../data/tools/analytics/web-analytics.json";
-import heatmaps from "../../data/tools/analytics/heatmaps.json";
-import events from "../../data/tools/analytics/event-tracking.json";
-import tags from "../../data/tools/analytics/tag-management.json";
-import perf from "../../data/tools/analytics/performance.json";
+import social from "../../data/toolbox/marketing/social-media.json";
+import email from "../../data/toolbox/marketing/email-marketing.json";
+import ads from "../../data/toolbox/marketing/advertising.json";
+import growth from "../../data/toolbox/marketing/growth.json";
+import influencer from "../../data/toolbox/marketing/influencer.json";
 
 const sections = [
-  { id: "web-analytics", title: "Web Analytics", data: web },
-  { id: "heatmaps", title: "Heatmaps & Session Recording", data: heatmaps },
-  { id: "event-tracking", title: "Event Tracking", data: events },
-  { id: "tag-management", title: "Tag Management", data: tags },
-  { id: "performance", title: "Performance & Speed", data: perf }
+  { id: "social-media", title: "Social Media Management", data: social },
+  { id: "email-marketing", title: "Email Marketing", data: email },
+  { id: "advertising", title: "Advertising Platforms", data: ads },
+  { id: "growth-optimization", title: "Growth & Optimization", data: growth },
+  { id: "influencer", title: "Influencer Marketing", data: influencer }
 ];
 
 const categories = [
@@ -33,15 +33,15 @@ const breadcrumbs = `
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools" itemprop="item">
+    <a href="https://www.wikimint.com/toolbox" itemprop="item">
       <span itemprop="name" class="text-wmblue">Tools</span>
     </a>
     <meta itemprop="position" content="2" />
   </span>
   <span> » </span>
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href="https://www.wikimint.com/tools/analytics" itemprop="item">
-      <span itemprop="name" class="text-wmblue">Analytics</span>
+    <a href="https://www.wikimint.com/toolbox/marketing" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Marketing & Growth</span>
     </a>
     <meta itemprop="position" content="3" />
   </span>
@@ -49,9 +49,9 @@ const breadcrumbs = `
 `;
 ---
 
-<ToolsLayout
-  title="Analytics & Tracking Tools"
-  description="Free analytics tools for tracking website traffic, user behavior, events, and performance."
+<ToolboxLayout
+  title="Marketing & Growth Tools"
+  description="Discover free marketing tools for social media, email campaigns, ads, growth optimization and influencer outreach."
   breadcrumbs={breadcrumbs}
   categories={categories}
 >
@@ -73,4 +73,4 @@ const breadcrumbs = `
       </ul>
     </section>
   ))}
-</ToolsLayout>
+</ToolboxLayout>
