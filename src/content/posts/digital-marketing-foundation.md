@@ -321,56 +321,56 @@ And that is what separates struggling startups from scalable businesses.
   <ul>
     <li>
       <a href="https://www.thinkwithgoogle.com/consumer-insights/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Think with Google – Consumer Insights
       </a>
       — Research-backed insights on online buyer behavior, search trends, and decision-making patterns.
     </li>
     <li>
       <a href="https://blog.hubspot.com/marketing"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot Marketing Blog
       </a>
       — In-depth guides on inbound marketing, sales funnels, CRM systems, and automation best practices.
     </li>
     <li>
       <a href="https://mailchimp.com/resources/email-marketing-benchmarks/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Mailchimp Email Marketing Benchmarks
       </a>
       — Industry data on email open rates, click-through rates, and campaign performance benchmarks.
     </li>
     <li>
       <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Google SEO Starter Guide
       </a>
       — Official guidance from Google on search engine optimization fundamentals and website best practices.
     </li>
     <li>
       <a href="https://neilpatel.com/blog/conversion-rate-optimization-guide/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Conversion Rate Optimization Guide – Neil Patel
       </a>
       — Practical strategies for improving landing pages, CTAs, and overall website conversions.
     </li>
     <li>
       <a href="https://www.contentmarketinginstitute.com/what-is-content-marketing/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Content Marketing Institute – What Is Content Marketing?
       </a>
       — Foundational explanations and frameworks for building long-term content strategies.
     </li>
     <li>
       <a href="https://www.statista.com/topics/1164/social-networks/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Statista – Social Media Statistics
       </a>
       — Updated statistics and data trends on social media usage and digital adoption globally.
     </li>
     <li>
       <a href="https://www.forbes.com/sites/forbesagencycouncil/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Forbes Agency Council – Marketing Insights
       </a>
       — Expert commentary and strategic advice from marketing leaders and industry professionals.

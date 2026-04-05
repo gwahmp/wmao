@@ -314,35 +314,35 @@ Take time to research, ask questions, and compare agencies carefully. The effort
   <ul>
     <li>
       <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Google SEO Starter Guide
       </a>
       — Official guidance from Google explaining the fundamentals of search engine optimization and best practices for improving website visibility.
     </li>
     <li>
       <a href="https://blog.hubspot.com/marketing/how-to-choose-marketing-agency"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot Guide to Choosing a Marketing Agency
       </a>
       — A practical guide that explains how businesses can evaluate agencies, review proposals, and identify the right marketing partner.
     </li>
     <li>
       <a href="https://moz.com/beginners-guide-to-seo"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Moz Beginner’s Guide to SEO
       </a>
       — A comprehensive educational resource covering how search engines work and why SEO plays a major role in digital marketing success.
     </li>
     <li>
       <a href="https://www.thinkwithgoogle.com/marketing-strategies/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Think with Google Marketing Insights
       </a>
       — Industry research, case studies, and marketing insights from Google that help businesses understand modern digital marketing trends.
     </li>
     <li>
       <a href="https://www.wordstream.com/blog/ws/2015/04/06/choose-digital-marketing-agency"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         WordStream Guide to Choosing a Digital Marketing Agency
       </a>
       — An expert resource explaining how to evaluate agencies, avoid common mistakes, and choose a marketing partner that delivers measurable results.

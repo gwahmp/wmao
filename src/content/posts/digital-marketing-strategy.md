@@ -513,21 +513,21 @@ Ready to take action? Start implementing these steps today and watch your busine
   <ul>
     <li>
       <a href="https://www.thinkwithgoogle.com/marketing-strategies/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Think with Google – Marketing Strategy Insights
       </a>
       — Research-based insights on planning and measuring digital marketing performance.
     </li>
     <li>
       <a href="https://blog.hubspot.com/marketing/marketing-plan-template"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot – Marketing Plan Guide
       </a>
       — Practical framework for developing structured marketing plans and campaigns.
     </li>
     <li>
       <a href="https://www.forbes.com/sites/forbesagencycouncil/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Forbes Agency Council – Marketing Insights
       </a>
       — Expert commentary on business growth, branding, and strategic marketing execution.

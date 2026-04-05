@@ -379,7 +379,7 @@ faq:
 <h3>Relevant Statistics on Blockchain Technology You Should Know:</h3>
 
 <ul>
-  <li>Global blockchain market value was $11.54 billion in 2022 and is projected to reach $469.49 billion by 2030. (<a href="https://www.fortunebusinessinsights.com/industry-reports/blockchain-market-100072" target="_blank" rel="noopener">Fortune Business Insights</a>)</li>
+  <li>Global blockchain market value was $11.54 billion in 2022 and is projected to reach $469.49 billion by 2030. (<a href="https://www.fortunebusinessinsights.com/industry-reports/blockchain-market-100072">Fortune Business Insights</a>)</li>
   
   <li>Over 81 of the top 100 public companies use blockchain technology in some form. (Forbes 2023)</li>
 

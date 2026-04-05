@@ -86,7 +86,7 @@ faq:
 
 <div class="numbered-h3">
   <h3>Tata Consultancy Services (TCS)</h3>
-  <p>TCS (<a href="https://www.tcs.com/" target="_blank" rel="noopener">Tata Consultancy Services</a>) - You can't talk about Chennai's IT landscape without starting with TCS. With multiple offices in the city, TCS is one of the top most IT companies in Chennai and globally recognized for its innovation in IT consulting & services.</p>
+  <p>TCS (<a href="https://www.tcs.com/">Tata Consultancy Services</a>) - You can't talk about Chennai's IT landscape without starting with TCS. With multiple offices in the city, TCS is one of the top most IT companies in Chennai and globally recognized for its innovation in IT consulting & services.</p>
   
   <ul>
     <li><b>Why it's notable</b>: Consistent presence in “Best Places to Work” lists.</li>
@@ -94,7 +94,7 @@ faq:
   </ul>
   
   <h3>Infosys</h3>
-  <p><a href="https://www.infosys.com/" target="_blank" rel="noopener">Infosys's</a> sprawling campus in Mahindra World City is an icon. It's one of the best IT companies in Chennai for freshers, offering world-class training and growth opportunities.</p>
+  <p><a href="https://www.infosys.com/">Infosys's</a> sprawling campus in Mahindra World City is an icon. It's one of the best IT companies in Chennai for freshers, offering world-class training and growth opportunities.</p>
   
   <ul>
     <li><b>Why it's notable</b>: Excellent learning environment and global clientele.</li>
@@ -102,7 +102,7 @@ faq:
   </ul>
   
   <h3>Cognizant</h3>
-  <p>With a significant workforce in Chennai, <a href="https://www.cognizant.com/in/en" target="_blank" rel="noopener">Cognizant</a> continues to be a high paid IT company in Chennai and a go-to employer for many.</p>
+  <p>With a significant workforce in Chennai, <a href="https://www.cognizant.com/in/en">Cognizant</a> continues to be a high paid IT company in Chennai and a go-to employer for many.</p>
   
   <ul>
     <li><b>Why it's notable</b>: Large client base in healthcare and <a href="/finance">finance</a> sectors.</li>
@@ -110,7 +110,7 @@ faq:
   </ul>
   
   <h3>Accenture</h3>
-  <p><a href="https://www.accenture.com/in-en" target="_blank" rel="noopener">Accenture</a> has set the benchmark for IT services companies in Chennai with its focus on innovation and client-driven results.</p>
+  <p><a href="https://www.accenture.com/in-en">Accenture</a> has set the benchmark for IT services companies in Chennai with its focus on innovation and client-driven results.</p>
   
   <ul>
     <li><b>Why it's notable</b>: Cutting-edge digital solutions and strong global presence.</li>
@@ -118,7 +118,7 @@ faq:
   </ul>
   
   <h3>Zoho Corporation</h3>
-  <p>A homegrown success story, <a href="https://www.zoho.com/" target="_blank" rel="noopener">Zoho</a> stands tall among the top product-based IT companies in Chennai. It's loved for its employee-first culture and innovative SaaS products.</p>
+  <p>A homegrown success story, <a href="https://www.zoho.com/">Zoho</a> stands tall among the top product-based IT companies in Chennai. It's loved for its employee-first culture and innovative SaaS products.</p>
   
   <ul>
     <li><b>Why it's notable</b>: A self-funded unicorn making global impact.</li>
@@ -126,7 +126,7 @@ faq:
   </ul>
   
   <h3>HCL Technologies</h3>
-  <p><a href="https://www.hcltech.com/" target="_blank" rel="noopener">HCL</a> has long been one of the best software companies in Chennai, offering services in IT management, technology consulting, and software development.</p>
+  <p><a href="https://www.hcltech.com/">HCL</a> has long been one of the best software companies in Chennai, offering services in IT management, technology consulting, and software development.</p>
   
   <ul>
     <li><b>Why it's notable</b>: Deep expertise in digital and engineering services.</li>
@@ -134,7 +134,7 @@ faq:
   </ul>
   
   <h3>Wipro</h3>
-  <p>A legacy IT giant, <a href="https://www.wipro.com/" target="_blank" rel="noopener">Wipro</a> has been part of Chennai's tech journey for decades.</p>
+  <p>A legacy IT giant, <a href="https://www.wipro.com/">Wipro</a> has been part of Chennai's tech journey for decades.</p>
   
   <ul>
     <li><b>Why it's notable</b>: Strong presence in enterprise IT and consulting.</li>
@@ -145,7 +145,7 @@ faq:
   <p><span data-link="https://hexaware.com/">Hexaware Technologies</span> is a rapidly growing IT company in Chennai, well-regarded for its expertise in cloud solutions, automation, and digital transformation. With a strong presence in finance, healthcare, and retail tech, the company delivers AI-driven services and modern IT infrastructure upgrades. Operating from Siruseri IT Park and OMR, Hexaware supports global Fortune 500 clients with smart, scalable tech solutions.</p>
   
   <h3>Freshworks</h3>
-  <p><a href="https://www.freshworks.com/" target="_blank" rel="noopener">Freshworks</a> is another Chennai-born unicorn making global waves. It leads the pack of famous IT companies in Chennai with its suite of customer engagement products.</p>
+  <p><a href="https://www.freshworks.com/">Freshworks</a> is another Chennai-born unicorn making global waves. It leads the pack of famous IT companies in Chennai with its suite of customer engagement products.</p>
   
   <ul>
     <li><b>Why it's notable</b>: Listed on NASDAQ, globally admired for design-led software.</li>

@@ -520,21 +520,21 @@ If you have any more questions about email marketing strategies for business lea
   <ul>
     <li>
       <a href="https://mailchimp.com/resources/email-marketing-101/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Mailchimp – Email Marketing 101
       </a>
       — Foundational principles for building effective email campaigns.
     </li>
     <li>
       <a href="https://blog.hubspot.com/marketing/email-marketing-guide"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot – Email Marketing Guide
       </a>
       — Strategy, segmentation, and optimization techniques.
     </li>
     <li>
       <a href="https://www.campaignmonitor.com/resources/guides/email-marketing/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Campaign Monitor – Email Marketing Guide
       </a>
       — Best practices for list growth and campaign performance.

@@ -12,7 +12,7 @@ summary: "Software is a vital part of most businesses, from marketing to law to 
  
 ---
 
-<p>Software is a vital part of most businesses, from <a href="/leadsleap-marketing-platform-all-in-one">marketing</a> to law to medicine to <a target="_blank" rel="noopener" href="https://www.revive.realestate/areas/orange-county">home renovation</a>. Whether you're using project management software, financial planning tools, <a href="/leadsleap-email-automation-series">email solutions</a>, or a customer relationship management solution, software is what keeps your day-to-day running smoothly.</p>
+<p>Software is a vital part of most businesses, from <a href="/leadsleap-marketing-platform-all-in-one">marketing</a> to law to medicine to <a href="https://www.revive.realestate/areas/orange-county">home renovation</a>. Whether you're using project management software, financial planning tools, <a href="/leadsleap-email-automation-series">email solutions</a>, or a customer relationship management solution, software is what keeps your day-to-day running smoothly.</p>
 
 <figure>
   <img  loading="lazy" alt="Compare the pros and cons of building in-house software vs. buying third-party tools to make the right decision for your business's growth and efficiency." title="Build vs Buy: How to Choose Between In-House Development and Third-Party Tools" width="100%" height="100%" border="0" data-original-height="443" data-original-width="750" src="/assets/images/blog/build-vs-buy-software-decision-guide.webp"/>
@@ -67,7 +67,7 @@ summary: "Software is a vital part of most businesses, from marketing to law to 
 
 <p>Still unsure which type of solution is best for your business? Here are some questions to ask:</p>
 <ul>
-  <li><strong>What is your budget?</strong> Like <a target="_blank" rel="noopener" href="https://www.revive.realestate/areas/san-jose">kitchen remodels</a> or other multi-step projects, custom software development always starts with a budget. You need to know what you can afford and what's realistic to see if a custom solution is a smart financial move for your business.</li>
+  <li><strong>What is your budget?</strong> Like <a href="https://www.revive.realestate/areas/san-jose">kitchen remodels</a> or other multi-step projects, custom software development always starts with a budget. You need to know what you can afford and what's realistic to see if a custom solution is a smart financial move for your business.</li>
   <li><strong>How much customization do you need?</strong> Custom software is helpful, but a lot of businesses can gain benefits from a third-party solution with helpful features. If you have complex workflows or niche requirements, a custom solution may be the better choice.</li>
   <li><strong>How quickly do you need software?</strong> Custom software is a long-term investment. If you have the time to wait, it may be worthwhile for you. Otherwise, an off-the-shelf solution gives you the features you need right now, with minimal disruption to your day-to-day operations.</li>
 </ul>

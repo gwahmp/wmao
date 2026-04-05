@@ -255,21 +255,21 @@ Data-driven marketing is no longer optional. A well-structured digital marketing
   <ul>
     <li>
       <a href="https://analytics.google.com/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Google Analytics – Official Platform
       </a>
       — Web analytics platform for tracking traffic and user behavior.
     </li>
     <li>
       <a href="https://blog.hubspot.com/marketing/marketing-analytics"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot – Marketing Analytics Guide
       </a>
       — Strategy and reporting best practices.
     </li>
     <li>
       <a href="https://www.thinkwithgoogle.com/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Think with Google – Marketing Insights
       </a>
       — Data-driven marketing research and case studies.

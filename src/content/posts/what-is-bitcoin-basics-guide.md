@@ -242,7 +242,7 @@ faq:
 
 <h3>Key Bitcoin Stats as of 2026</h3>
 <ul>
-<li>Bitcoin market cap: $1.2 trillion+ (<a href="https://coinmarketcap.com/currencies/bitcoin/" target="_blank" rel="noopener">CoinMarketCap</a>)</li>
+<li>Bitcoin market cap: $1.2 trillion+ (<a href="https://coinmarketcap.com/currencies/bitcoin/">CoinMarketCap</a>)</li>
   
   <li>400+ million users worldwide use or hold crypto.</li>
   

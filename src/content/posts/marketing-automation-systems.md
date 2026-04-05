@@ -259,21 +259,21 @@ Businesses that invest in marketing automation setup create predictable growth s
   <ul>
     <li>
       <a href="https://blog.hubspot.com/marketing/marketing-automation"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot – Marketing Automation Guide
       </a>
       — Comprehensive overview of automation workflows and lead nurturing systems.
     </li>
     <li>
       <a href="https://mailchimp.com/resources/marketing-automation/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Mailchimp – Marketing Automation Resources
       </a>
       — Practical guidance on automated campaigns and segmentation.
     </li>
     <li>
       <a href="https://www.salesforce.com/products/marketing-cloud/what-is-marketing-automation/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Salesforce – What Is Marketing Automation?
       </a>
       — Explanation of automation platforms and CRM integration benefits.

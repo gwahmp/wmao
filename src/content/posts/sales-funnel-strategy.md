@@ -257,21 +257,21 @@ When you understand how the sales funnel works and implement it strategically, m
   <ul>
     <li>
       <a href="https://blog.hubspot.com/sales/sales-funnel"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot – Sales Funnel Guide
       </a>
       — Overview of funnel stages and how they impact revenue generation.
     </li>
     <li>
       <a href="https://www.shopify.com/blog/sales-funnel"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Shopify – Sales Funnel Explained
       </a>
       — Practical explanation of funnel stages and customer journey mapping.
     </li>
     <li>
       <a href="https://neilpatel.com/blog/conversion-funnel/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Neil Patel – Conversion Funnel Guide
       </a>
       — Insights on optimizing funnel stages for improved conversion rates.

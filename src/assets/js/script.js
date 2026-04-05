@@ -106,13 +106,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Define the content to append
   const mainAdContent = `
-  <a href="https://leadsleap.com/?r=selvaklnc" target="_blank"><img src="https://leadsleap.com/images/b728.90.hd.gif" width="100%"/></a>
+  <a href="https://leadsleap.com/?r=selvaklnc"><img src="https://leadsleap.com/images/b728.90.hd.gif" width="100%"/></a>
 
   <a href="/web-development-services"><img src="/assets/images/web-development-services.webp" width="100%" class="mt-10"/></a>
   
   `;
   const sidebarAdContent = `
-  <a href="https://leadsleap.com/?r=selvaklnc" target="_blank"><img src="https://leadsleap.com/images/b300.250.hd.gif" width="100%"/></a>
+  <a href="https://leadsleap.com/?r=selvaklnc"><img src="https://leadsleap.com/images/b300.250.hd.gif" width="100%"/></a>
 
   <a href="/web-development-services"><img src="/assets/images/build-website-grow-business-cta.webp" width="100%" class="my-5 bg-gray-100 border border-gray-200"/></a>
   `;
@@ -183,3 +183,40 @@ function copyCode(btn) {
   });
 }
 /*Code copy ends */
+
+function applyLinkRules(root = document) {
+  const links = root.querySelectorAll('a[href]');
+  const currentHost = window.location.hostname;
+
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+      return;
+    }
+
+    try {
+      const url = new URL(link.href, window.location.origin);
+
+      if (url.hostname !== currentHost) {
+        link.setAttribute('target', '_blank');
+
+        let rel = (link.getAttribute('rel') || '').split(' ').filter(Boolean);
+
+        if (rel.includes('nofollow')) {
+          rel = [...new Set([...rel, 'nofollow', 'noopener', 'noreferrer'])];
+        } else {
+          rel = [...new Set([...rel, 'noopener', 'noreferrer'])];
+        }
+
+        link.setAttribute('rel', rel.join(' '));
+      }
+    } catch (e) {
+      // ignore invalid URLs
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyLinkRules();
+});

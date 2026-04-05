@@ -255,21 +255,21 @@ When you define customer persona using structured research, your marketing becom
   <ul>
     <li>
       <a href="https://blog.hubspot.com/marketing/buyer-persona-research"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot – Buyer Persona Research Guide
       </a>
       — Step-by-step guidance for creating data-driven customer personas.
     </li>
     <li>
       <a href="https://www.thinkwithgoogle.com/consumer-insights/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Think with Google – Consumer Insights
       </a>
       — Research on buyer behavior and decision-making patterns.
     </li>
     <li>
       <a href="https://www.semrush.com/blog/target-audience/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Semrush – Target Audience Analysis
       </a>
       — Practical methods for audience segmentation and behavioral research.

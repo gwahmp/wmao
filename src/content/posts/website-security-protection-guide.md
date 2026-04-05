@@ -791,21 +791,21 @@ The cost of prevention is far lower than the cost of dealing with a hacked websi
   <ul>
     <li>
       <a href="https://www.name.com/blog/what-is-website-security"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         What Is Website Security and Why It Matters
       </a>
       — Explains why robust website security matters for small businesses and the potential impacts of breaches.
     </li>
     <li>
       <a href="https://www.malcare.com/blog/7-best-wordpress-security-tips-to-protect-your-website/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         WordPress Security Guide: 14 Ways to Secure Your Site
       </a>
       — Practical tips for strengthening a WordPress website, including malware scanning and firewall setup.
     </li>
     <li>
       <a href="https://www.bluehost.com/blog/wordpress-security/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         WordPress Security Best Practices
       </a>
       — Covers essential steps such as backups, limiting login attempts, and HTTPS implementation.

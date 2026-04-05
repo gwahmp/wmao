@@ -253,21 +253,21 @@ A strong growth system does not rely solely on organic vs paid marketing. Instea
   <ul>
     <li>
       <a href="https://www.thinkwithgoogle.com/marketing-strategies/search/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Think with Google – Search & Advertising Insights
       </a>
       — Research on paid search performance and audience behavior trends.
     </li>
     <li>
       <a href="https://moz.com/beginners-guide-to-seo"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Moz – Beginner’s Guide to SEO
       </a>
       — Comprehensive overview of organic search optimization fundamentals.
     </li>
     <li>
       <a href="https://blog.hubspot.com/marketing/paid-vs-organic"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot – Paid vs Organic Marketing
       </a>
       — Comparative insights on traffic acquisition and growth strategy.

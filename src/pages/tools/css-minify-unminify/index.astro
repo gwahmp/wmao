@@ -1,0 +1,474 @@
+---
+import LandingLayout from "../../../layouts/LandingLayout.astro";
+const version = Date.now();
+
+const frontmatter = {
+  title: "Free CSS Minifier and Unminifier Online Tool for Clean and Optimized Stylesheets",
+  description: "Minify CSS online to reduce file size or unminify CSS for easy editing. Fast, free CSS minifier and unminifier tool for developers to optimize stylesheets and improve website performance instantly.",
+  image: "/assets/images/others/css-minify-unminify-tool.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+  disableAds: true,
+};
+
+---
+
+<LandingLayout frontmatter={frontmatter}>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css"/>
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/css/css.min.js"></script>
+{/* 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.1/theme/default.min.css"/> */}
+
+  <div id="tool" class="w-100 border-2 border-gray-300 shadow-sm mb-3">
+<textarea id="cssInput" cols="80" rows="10"></textarea>
+  </div>
+  <div class="mb-10">  
+    <button class="btn-ol" id="clearCSSBtn">Clear</button>
+    <button class="btn-ol" id="copyCSSBtn">Copy</button>
+    <button class="btn" id="minifyBtn">Minify CSS</button>
+    <button class="btn" id="unminifyBtn">Unminify CSS</button>
+  </div>
+
+
+
+<script is:inline src="/assets/js/css-minify-unminify/minify-unminify.js"></script>
+
+
+
+
+  <section class="col-2">
+      <div class="col">
+
+        <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5"
+        itemscope itemtype="https://schema.org/BreadcrumbList">
+   
+     <!-- Home -->
+     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+       <a href="https://www.wikimint.com" itemprop="item">
+         <span itemprop="name" class="text-wmblue">Home</span>
+       </a>
+       <meta itemprop="position" content="1" />
+     </span>
+   
+     <span> » </span>
+   
+     <!-- Products -->
+     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+       <a href="https://www.wikimint.com/products" itemprop="item">
+         <span itemprop="name" class="text-wmblue">Products</span>
+       </a>
+       <meta itemprop="position" content="2" />
+     </span>
+   
+     <span> » </span>
+   
+ <!-- Current Page -->
+ <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <meta itemprop="item" content="https://www.wikimint.com/tools/css-minify-unminify" />
+  <span itemprop="name">CSS Minifier Unminifier</span>
+  <meta itemprop="position" content="3" />
+</span>
+   
+   </nav>
+
+        <h1>
+          CSS Minifier and Unminifier Tool
+        </h1>
+        <p>
+          Optimize your stylesheets with this fast and easy CSS minifier and unminifier tool. Whether you want to reduce CSS file size for better page speed or convert compressed code into a readable format for editing, this tool helps you do both in seconds. It removes unnecessary characters to improve performance and also restores structured formatting for debugging and development workflows, making it ideal for developers, designers, and website owners.
+        </p>
+        <p>Free online tool • No signup • Instant results</p>
+
+{/*
+             <a
+             href="#docs" 
+             class="btn"
+             >View Documentation</a>  
+             */}
+           
+      </div>
+      <div class="col">
+        <img  loading="lazy" src="/assets/images/others/css-minify-unminify-tool.webp" alt="Illustration showing wm-captcha checkbox verification protecting a website form from spam and bot submissions" title="wmCaptcha website form protection" class="w-full"/>
+      </div>
+  </section>
+
+  
+  <section itemscope itemtype="https://schema.org/SoftwareApplication">
+    <div class="grid md:grid-cols-[3fr_2fr] gap-10 text-left">
+      
+      <!-- LEFT: Screenshots -->
+      <div class="col">
+        <div class="sticky top-20">
+          <div class="slider">
+            <div class="slides">
+              <img loading="lazy" alt="CSS minifier tool interface reducing stylesheet file size instantly" src="/assets/images/others/css-minifier-unminifier-minified-screenshot.webp"/>
+              <img loading="lazy" alt="CSS unminifier tool converting compressed CSS into readable format" src="/assets/images/others/css-minifier-unminifier-screenshot.webp"/>
+            </div>
+  
+            <button class="prev">‹</button>
+            <button class="next">›</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- RIGHT: Product Info -->
+      <div class="col">
+        <div class="w-full border border-gray-300 overflow-hidden px-8 py-5 bg-gray-50 mt-8">
+  
+          <div>
+            <h2 class="text-md font-semibold text-gray-900" itemprop="name">CSS Minifier and Unminifier</h2>
+            <p>Online CSS Optimization Tool</p>
+          </div>
+  
+          <!-- Rating -->
+          <div
+            itemprop="aggregateRating"
+            itemscope
+            itemtype="https://schema.org/AggregateRating"
+            class="star-container"
+            aria-label="Rating: 4.9 out of 5 stars based on 120 reviews"
+          >
+            <span class="star full">★</span>
+            <span class="star full">★</span>
+            <span class="star full">★</span>
+            <span class="star full">★</span>
+            <span class="star partial">★</span>
+  
+            <span itemprop="ratingValue" class="rating-number">4.9 (120 reviews)</span>
+            <meta itemprop="reviewCount" content="120">
+          </div>
+  
+          <!-- Version -->
+          <p>Version <span itemprop="softwareVersion">1.0.0</span></p>
+  
+          <!-- Description -->
+          <p itemprop="description">
+            This CSS minifier and unminifier tool helps you optimize stylesheets directly in your browser. Reduce CSS file size for faster loading websites or convert compressed CSS into a clean, readable format for editing and debugging. No installation required, fully online, and designed for quick and efficient workflow.
+          </p>
+  
+          <!-- SEO Meta Links -->
+          <meta itemprop="applicationCategory" content="DeveloperApplication, WebApplication">
+          <meta itemprop="operatingSystem" content="Any Browser">
+  
+          <meta itemprop="screenshot" content="https://www.wikimint.com/assets/images/others/css-minifier-unminifier-minified-screenshot.webp">
+          <meta itemprop="screenshot" content="https://www.wikimint.com/assets/images/others/css-minifier-unminifier-screenshot.webp">
+  
+          <!-- Pricing -->
+          <div class="mt-5" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+            <meta itemprop="offerCount" content="1">
+            <meta itemprop="priceCurrency" content="USD">
+            <p class="font-medium">Starting from: <span itemprop="lowPrice">$0</span></p>
+  
+            <div class="mt-2">
+              <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <b>Free:</b> Use CSS minify and unminify features instantly without signup or limits.
+                <meta itemprop="name" content="Free CSS Tool">
+                <meta itemprop="price" content="0">
+                <link itemprop="availability" href="https://schema.org/InStock">
+              </p>
+            </div>
+          </div>
+  
+          <!-- Features -->
+          <div class="mt-5" itemprop="featureList">
+            <h3 class="mb-2">Key Features</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Instant CSS minification to reduce file size and improve page speed</li>
+              <li>Unminify compressed CSS into structured and readable format</li>
+              <li>Works fully online with no installation required</li>
+              <li>Clean output suitable for debugging and editing</li>
+              <li>Fast processing for both small and large CSS files</li>
+            </ul>
+          </div>
+  
+          <!-- Developer -->
+          <div itemprop="author" itemscope itemtype="https://schema.org/Organization">
+            <b>Developed by</b>: 
+            <a href="https://github.com/wikimint" class="text-indigo-600 hover:underline" itemprop="url">
+              <span itemprop="name">Wikimint</span>
+            </a>
+            <link itemprop="sameAs" href="https://www.wikimint.com" />
+          </div>
+  
+          <p><b>Access</b>: <span>Online Web App</span></p>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="faq" class="hr pt-0 pb-20 bg-white">
+    <h2>
+      Frequently Asked Questions
+    </h2>
+    <div class="">
+      <div class="grid md:grid-cols-[2fr_4fr] gap-20 text-left">
+        <div>
+          <div class="sticky top-20">
+            <img  loading="lazy" src="/assets/images/others/start-affordable-wed-design-services.webp" alt="Professional website design service offering fast, clean, SEO-friendly layouts with free consultation and personalized quote to build your ideal website" width="150" height="150" class="mb-0 " />
+
+            <h3>
+              Optimize CSS Now</h3>
+            <p>
+              Minify CSS to reduce file size and improve loading speed instantly.  
+              Unminify CSS to make your code clean and easy to edit.  
+              Start optimizing your stylesheets online with a fast and simple tool. </p>
+              <a
+              href="#tool" 
+              class="btn"
+              >Minify or Unminify CSS</a>
+          </div>
+        </div>
+        <div>
+
+
+          
+
+
+          <div class="acc space-y-4">
+
+            <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q1" checked>
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q1" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">What is a CSS minifier and how does it improve website performance?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p  itemprop="text">
+                      A CSS minifier is an online tool that removes unnecessary characters such as spaces, comments, and line breaks from your stylesheet. This reduces file size and helps browsers load CSS faster, improving page speed and overall website performance. Using a CSS minifier online is one of the simplest ways to optimize frontend assets without changing functionality.
+                                        </p>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q2">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q2" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">How does a CSS unminifier help developers during debugging?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      A CSS unminifier converts compressed CSS into a clean, structured format that is easy to read and edit. This is useful when working with production code where formatting is removed. Developers can quickly understand styles, fix layout issues, and modify rules efficiently using a CSS unminify tool online.
+                                        </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q3">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q3" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Is it safe to use an online CSS minifier tool?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Yes, a reliable CSS minifier online tool processes your code directly in the browser without storing or sharing data. This ensures your stylesheet remains private. Always choose tools that do not require uploads or external processing to keep your CSS secure while optimizing file size.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q4">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q4" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Can I minify large CSS files using this tool?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      Yes, this CSS minifier and unminifier tool is designed to handle both small and large CSS files efficiently. It quickly compresses stylesheets to reduce file size or restores them to readable format, making it ideal for developers working on complex websites or large-scale projects.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q5">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q5" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">What is the difference between CSS minify and CSS unminify?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      CSS minify reduces the size of a stylesheet by removing unnecessary characters, while CSS unminify restores the code into a readable structure with proper spacing and formatting. Both processes are essential for optimizing performance and maintaining code during development and debugging.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q6">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q6" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Do I need to install any software to use this CSS tool?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                      No installation is required. This is a fully online CSS minifier and unminifier tool that works directly in your browser. You can paste your CSS code, process it instantly, and copy the result without downloading any software or setting up additional tools.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q7">
+            <label for="q7" class="acc-title">
+              <h3 class="text-lg">Does CSS minification affect how styles work on a website?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  No, CSS minification does not change how styles function. It only removes extra characters that are not required for execution. Your website design and layout remain exactly the same, while the optimized CSS file loads faster and improves performance.  
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q8">
+            <label for="q8" class="acc-title">
+              <h3 class="text-lg">Can I use this tool for real-time CSS optimization?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes, this online CSS optimizer allows you to minify or unminify code instantly. It is useful for real-time testing, quick edits, and performance improvements. Developers can refine stylesheets on the go without switching between multiple tools or environments.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q9">
+            <label for="q9" class="acc-title">
+              <h3 class="text-lg">Why should I unminify CSS before editing it?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Minified CSS is difficult to read because all formatting is removed. Unminifying CSS restores proper indentation and structure, making it easier to understand and modify. This is especially helpful when debugging issues or updating styles in existing projects.</p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q10">
+            <label for="q10" class="acc-title">
+              <h3 class="text-lg">Is this CSS minifier tool free to use?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                  Yes, this CSS minifier and unminifier tool is completely free to use. You can optimize CSS code, reduce file size, and convert compressed stylesheets into readable format without any cost, signup, or usage limits, making it ideal for developers and website owners.</p>
+              </div>
+          </div>
+
+        
+
+
+          </div>
+
+        </div>
+      </div>  
+
+
+    </div>
+  </section>
+  
+
+  
+  <section class="hr pt-0 pb-20 bg-white">
+    <h2>
+      CSS Optimization Guide
+    </h2>
+    <div class="">
+      <div class="grid md:grid-cols-[2fr_4fr] gap-20 text-left">
+        <div>
+          <div class="sticky top-20">
+            <h3>
+              Optimize CSS Fast</h3>
+            <p>
+              Reduce CSS file size and improve page speed instantly.  
+Format your stylesheets for easy editing and debugging.  
+Use a fast online tool with no setup required. </p>
+              <a
+              href="#tool" 
+              class="btn"
+              >Start CSS Optimization</a>
+          </div>
+        </div>
+        <div>
+
+
+          
+
+          <h3>What is CSS Minification</h3>
+
+          <p>CSS minification is the process of reducing the size of a stylesheet by removing unnecessary characters such as spaces, comments, and line breaks. This helps websites load faster by decreasing file size without affecting how styles are applied. Using a CSS minifier online ensures better performance and improved user experience across devices.</p>
+
+          <h3>What is CSS Unminification</h3>
+
+<p>CSS unminification converts compressed CSS code back into a readable format with proper spacing and structure. This is useful for developers who need to edit or debug styles efficiently. A CSS unminify tool allows you to quickly understand and modify production-level code without confusion.</p>
+
+<h3>How It Works</h3>
+
+<p>Using this CSS minifier and unminifier tool is simple and fast:</p>
+
+<ol>
+  <li>Paste your CSS code into the input field</li>
+  <li>Click on “Minify” to compress the stylesheet</li>
+  <li>Click on “Unminify” to restore readable formatting</li>
+  <li>Copy the processed CSS and use it in your project</li>
+</ol>
+
+<p>This process works instantly in your browser without any setup.</p>
+
+<h3>Benefits of CSS Minify and Unminify</h3>
+<ul>
+  <li>Reduces CSS file size for faster page loading</li>
+  <li>Improves website speed and performance</li>
+  <li>Makes debugging easier with readable code</li>
+  <li>Helps maintain clean and structured stylesheets</li>
+  <li>Works instantly without installing any software</li>
+</ul>
+
+<p>Optimizing CSS is a key step in improving frontend performance and SEO.</p>
+
+
+<h3>Use Cases</h3>
+
+<p>This CSS optimizer tool is useful for different types of users:</p>
+
+<ul>
+  <li><strong>Web Developers</strong>: Optimize stylesheets for production</li>
+  <li><strong>Frontend Engineers</strong>: Debug and edit compressed CSS</li>
+  <li><strong>Bloggers</strong>: Improve website speed and loading time</li>
+  <li><strong>Agencies</strong>: Handle large CSS files efficiently</li>
+</ul>
+
+<p>It supports both small projects and large-scale websites.</p>
+
+<h3>Tool Features</h3>
+<ul>
+  <li>Fast CSS minifier and unminifier online</li>
+  <li>No signup or installation required</li>
+  <li>Works directly in your browser</li>
+  <li>Supports large CSS files</li>
+  <li>Clean and simple interface for quick use</li>
+</ul>
+
+<p>This tool is designed for speed, simplicity, and accuracy.</p>
+
+<h3>CSS Minifier vs Manual Optimization</h3>
+
+<p>Manual CSS optimization requires time and attention to detail, especially when working with large files. A CSS minifier tool automates this process instantly, reducing errors and saving effort. Similarly, unminifying manually is difficult, while an online tool restores structure in seconds.</p>
+
+
+        </div>
+      </div>  
+
+
+    </div>
+  </section>
+  
+</LandingLayout>

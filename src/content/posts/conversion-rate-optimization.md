@@ -273,21 +273,21 @@ Traffic alone does not guarantee growth. Applying conversion optimization basics
   <ul>
     <li>
       <a href="https://neilpatel.com/blog/conversion-rate-optimization-guide/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Neil Patel – Conversion Rate Optimization Guide
       </a>
       — Practical insights on improving landing pages and testing strategies.
     </li>
     <li>
       <a href="https://www.wordstream.com/conversion-rate-optimization"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         WordStream – Conversion Optimization Basics
       </a>
       — Foundational explanation of improving website performance.
     </li>
     <li>
       <a href="https://blog.hubspot.com/marketing/conversion-rate-optimization"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot – CRO Strategies
       </a>
       — Comprehensive guide to conversion improvement frameworks.

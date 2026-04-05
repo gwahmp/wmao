@@ -66,7 +66,7 @@ function renderMainProduct(product, includeControls = true) {
          text-2xl transition-colors duration-200" 
          data-id="${id}" title="Share"></i>
 
-      <a href="${link}" target="_blank" 
+      <a href="${link}" 
          class="btn w-full">
         Buy Now
       </a>
@@ -89,7 +89,7 @@ function renderMainProduct(product, includeControls = true) {
           <hr class="border-gray-200 mb-6"/>
           ${controls}
 
-          <div class="bg-gray-300 w-full mt-12"><a href="https://leadsleap.com/?r=selvaklnc" target="_blank"><img src="https://leadsleap.com/images/b300.250.hd.gif" style="max-width:300px;" class="mx-auto"/></a></div>
+          <div class="bg-gray-300 w-full mt-12"><a href="https://leadsleap.com/?r=selvaklnc"><img src="https://leadsleap.com/images/b300.250.hd.gif" style="max-width:300px;" class="mx-auto"/></a></div>
 
 
         </div>
@@ -198,10 +198,10 @@ $(document).ready(function () {
     } else {
       const shareMenu = `
         <div class="share-dropdown absolute bg-white border border-gray-300 rounded-md shadow-lg p-5 z-50 mt-2 text-left text-sm">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}" target="_blank" class="flex items-center gap-2 hover:text-blue-600 my-3  py-2"><i class="bi bi-facebook"></i> Facebook</a>
-          <a href="https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}" target="_blank" class="flex items-center gap-2 hover:text-green-600 my3 py-2"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-          <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}" target="_blank" class="flex items-center gap-2 hover:text-black my-3 py-2"><i class="bi bi-twitter-x"></i> Twitter</a>
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}" target="_blank" class="flex items-center gap-2 hover:text-[#0077b5] my-3 py-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}" class="flex items-center gap-2 hover:text-blue-600 my-3  py-2"><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}" class="flex items-center gap-2 hover:text-green-600 my3 py-2"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}" class="flex items-center gap-2 hover:text-black my-3 py-2"><i class="bi bi-twitter-x"></i> Twitter</a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}" class="flex items-center gap-2 hover:text-[#0077b5] my-3 py-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
         </div>`;
       $('.share-dropdown').remove();
       const $btn = $(this);

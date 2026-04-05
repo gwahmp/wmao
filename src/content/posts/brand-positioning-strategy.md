@@ -249,21 +249,21 @@ Businesses that invest in brand positioning strategy create stronger market iden
   <ul>
     <li>
       <a href="https://hbr.org/1996/01/what-is-strategy"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Harvard Business Review – What Is Strategy?
       </a>
       — Foundational perspective on strategic differentiation.
     </li>
     <li>
       <a href="https://www.investopedia.com/terms/b/brand-positioning.asp"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Investopedia – Brand Positioning Definition
       </a>
       — Explanation of positioning principles and market perception.
     </li>
     <li>
       <a href="https://www.mckinsey.com/business-functions/marketing-and-sales/our-insights"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         McKinsey – Marketing & Sales Insights
       </a>
       — Research-based insights on differentiation and market strategy.

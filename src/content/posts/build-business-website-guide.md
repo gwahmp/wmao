@@ -239,7 +239,7 @@ Example structure:
 - <a href="https://www.wikimint.com">Home</a>
 - <a href="/about">About Us</a>
 - <a href="/business-growth-services">Services or Products</a>
-- <a href="https://sk.wikimint.com" target="_blank">Case Studies or Portfolio</a>
+- <a href="https://sk.wikimint.com">Case Studies or Portfolio</a>
 - <a href="/blog">Blog or Resources</a>
 - <a href="/contact">Contact Page</a>
 - <a href="/legal">Legal Pages</a>
@@ -886,7 +886,7 @@ Over time, your website can become one of the most valuable assets your business
   <ul>
     <li>
       <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Google Search Central – SEO Starter Guide
       </a>
       — Explains how search engines understand websites, structure content,
@@ -894,7 +894,7 @@ Over time, your website can become one of the most valuable assets your business
     </li>
     <li>
       <a href="https://web.dev/learn/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         web.dev by Google – Modern Web Development Guide
       </a>
       — Covers performance optimization, responsive design, accessibility,
@@ -902,7 +902,7 @@ Over time, your website can become one of the most valuable assets your business
     </li>
     <li>
       <a href="https://developer.mozilla.org/en-US/docs/Learn"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         MDN Web Docs – Learn Web Development
       </a>
       — Trusted developer documentation for HTML, CSS, JavaScript,
@@ -910,7 +910,7 @@ Over time, your website can become one of the most valuable assets your business
     </li>
     <li>
       <a href="https://owasp.org/www-project-top-ten/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         OWASP Top 10 Web Application Security Risks
       </a>
       — Industry-recognized security risks developers should address
@@ -918,7 +918,7 @@ Over time, your website can become one of the most valuable assets your business
     </li>
     <li>
       <a href="https://www.w3.org/standards/webdesign/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         W3C Web Standards
       </a>
       — Defines global standards for accessible, structured, and

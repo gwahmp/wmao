@@ -299,21 +299,21 @@ Sustainable growth depends on effective lead generation methods that attract the
   <ul>
     <li>
       <a href="https://blog.hubspot.com/marketing/lead-generation"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot – Lead Generation Guide
       </a>
       — Comprehensive overview of proven lead capture and nurturing strategies.
     </li>
     <li>
       <a href="https://neilpatel.com/blog/lead-generation-strategies/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Neil Patel – Lead Generation Strategies
       </a>
       — Practical tactics for improving conversion rates and prospect acquisition.
     </li>
     <li>
       <a href="https://www.wordstream.com/lead-generation"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         WordStream – Lead Generation Basics
       </a>
       — Insights on optimizing landing pages and paid campaigns for lead capture.

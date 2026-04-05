@@ -303,21 +303,21 @@ Content remains one of the most reliable long-term marketing investments. A well
   <ul>
     <li>
       <a href="https://contentmarketinginstitute.com/articles/what-is-content-marketing/"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Content Marketing Institute – What Is Content Marketing?
       </a>
       — Foundational principles and strategic planning insights.
     </li>
     <li>
       <a href="https://blog.hubspot.com/marketing/content-marketing"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         HubSpot – Content Marketing Guide
       </a>
       — Frameworks for building structured content systems.
     </li>
     <li>
       <a href="https://moz.com/beginners-guide-to-seo"
-         target="_blank" rel="noopener noreferrer nofollow">
+         rel="noopener noreferrer nofollow">
         Moz – Beginner’s Guide to SEO
       </a>
       — SEO fundamentals that support content strategy success.

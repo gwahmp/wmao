@@ -2,7 +2,7 @@
     "tools": [
       {
         "t": "CSS Minify Unminify",
-        "l": "https://developer.wikimint.com/p/css-minify-unminify-tool.html",
+        "l": "/tools/css-minify-unminify",
         "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbJddG3PfjOiWaAP0mtQ_IW0ZWqH7V0XPVvvoe0R42WLTcVNTchY4FKwGgO0TnLL1s2JI4ToP2L9Ke1aQdMISH5ATYYQyYbnb3H_xCe-2cnUorOblmoKoTiEaq9gAGeZkHOZqn10k2pMzIMG4kcTDdOLCf89DHWGhj-a1_rjUhhpZlal70Fc0LCclUrQT3/s1600/css-minify-unminify.png",
         "d": "CSS Minify Unminify tool interface showing options to either minify or unminify CSS code, with a text area for input and output display of transformed code."
       },

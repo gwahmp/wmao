@@ -269,7 +269,7 @@ faq:
 <ul>
   <li><strong>BlackRock's Bitcoin ETF</strong> brought crypto further into mainstream portfolios.</li>
   
-  <li><strong><a href="https://www.atlanticcouncil.org/cbdctracker/#:~:text=Every%20G20%20country%20is%20exploring,the%20Bahamas%2C%20Jamaica%20and%20Nigeria." target="_blank" rel="noopener">Nigeria and Brazil have launched CBDCs</a></strong> (Central Bank Digital Currencies).</li>
+  <li><strong><a href="https://www.atlanticcouncil.org/cbdctracker/#:~:text=Every%20G20%20country%20is%20exploring,the%20Bahamas%2C%20Jamaica%20and%20Nigeria.">Nigeria and Brazil have launched CBDCs</a></strong> (Central Bank Digital Currencies).</li>
   
   <li>Fidelity, JP Morgan, and Goldman Sachs are exploring <strong>tokenized asset platforms</strong>.</li>
 
