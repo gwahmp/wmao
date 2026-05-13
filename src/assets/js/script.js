@@ -220,3 +220,28 @@ function applyLinkRules(root = document) {
 document.addEventListener('DOMContentLoaded', () => {
   applyLinkRules();
 });
+
+
+(function () {
+  // Check if page is inside iframe
+  const isInsideIframe = window.self !== window.top;
+
+  if (!isInsideIframe) return;
+
+  // Get all links
+  const links = document.querySelectorAll("a[href]");
+
+  links.forEach((link) => {
+    const href = link.getAttribute("href");
+
+    // Ignore empty links
+    if (!href) return;
+
+    // Ignore same-page anchors
+    if (href.startsWith("#")) return;
+
+    // Open all other links in new tab
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener noreferrer");
+  });
+})();
