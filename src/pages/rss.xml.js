@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 
 export async function GET(context) {
 
-  const base = "https://www.wikimint.com";
+  const base = "https://wikimint.com";
 
   const posts = await getCollection("posts");
 

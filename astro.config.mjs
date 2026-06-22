@@ -3,7 +3,7 @@ import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 
 export default defineConfig({
-  site: "https://www.wikimint.com", // REQUIRED for sitemap
+  site: "https://wikimint.com", // REQUIRED for sitemap
   trailingSlash: "never",
   output: "static",
   compressHTML: true,

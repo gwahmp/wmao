@@ -138,7 +138,7 @@ Here are some quick tips to make sure you squeeze all the juice from this conten
 What's Next: Chapter 1 – Introduction to LeadsLeap
 --------------------------------------------------
 
-Now that you know what to expect, we're kicking things off with Chapter 1: Introduction to LeadsLeap. In this first chapter, we'll explore what LeadsLeap is all about, how it works, and why it's become a go-to [solution for marketers](https://www.wikimint.com) around the world. If you've never used the platform or only scratched the surface, this is your perfect starting point.
+Now that you know what to expect, we're kicking things off with Chapter 1: Introduction to LeadsLeap. In this first chapter, we'll explore what LeadsLeap is all about, how it works, and why it's become a go-to [solution for marketers](https://wikimint.com) around the world. If you've never used the platform or only scratched the surface, this is your perfect starting point.
 
 If you're tired of endless tabs, scattered tools, and mixed results, this practical marketing workflow series is for you. I've walked this road, tested what works, and boiled it down into these practical guides so you don't have to reinvent the wheel. Let's dive in.
 

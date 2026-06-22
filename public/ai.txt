@@ -1,9 +1,9 @@
-# ai.txt for Wikimint - https://www.wikimint.com
+# ai.txt for Wikimint - https://wikimint.com
 
 # Site information
 title: Wikimint - Personal Finance, Business, Marketing & Money
-homepage: https://www.wikimint.com
-sitemap: https://www.wikimint.com/sitemap.xml
+homepage: https://wikimint.com
+sitemap: https://wikimint.com/sitemap.xml
 
 # AI crawler permissions
 allow: /

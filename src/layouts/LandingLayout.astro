@@ -20,13 +20,13 @@ const currentUrl = Astro.url.href; // full URL of the current page
         "@graph": [
           {
             "@type": "WebSite",
-            "@id": "https://www.wikimint.com#website",
-            url: "https://www.wikimint.com",
+            "@id": "https://wikimint.com#website",
+            url: "https://wikimint.com",
             name: "Wikimint",
             publisher: {
               "@type": "Organization",
               name: "Wikimint",
-              url: "https://www.wikimint.com"
+              url: "https://wikimint.com"
             }
           },
           {
@@ -36,16 +36,16 @@ const currentUrl = Astro.url.href; // full URL of the current page
             name: title,
             description,
             isPartOf: {
-              "@id": "https://www.wikimint.com#website"
+              "@id": "https://wikimint.com#website"
             },
             primaryImageOfPage: {
-              "@id": "https://www.wikimint.com#primaryimage"
+              "@id": "https://wikimint.com#primaryimage"
             }
           },
           {
             "@type": "ImageObject",
-            "@id": "https://www.wikimint.com#primaryimage",
-            url: `https://www.wikimint.com${image}`,
+            "@id": "https://wikimint.com#primaryimage",
+            url: `https://wikimint.com${image}`,
             caption: title
           }
         ]

@@ -38,13 +38,13 @@ const currentUrl = Astro.url.href;
         "@graph": [
           {
             "@type": "WebSite",
-            "@id": "https://www.wikimint.com#website",
-            url: "https://www.wikimint.com",
+            "@id": "https://wikimint.com#website",
+            url: "https://wikimint.com",
             name: "Wikimint",
             publisher: {
               "@type": "Organization",
               name: "Wikimint",
-              url: "https://www.wikimint.com"
+              url: "https://wikimint.com"
             }
           },
           {
@@ -53,15 +53,15 @@ const currentUrl = Astro.url.href;
             url: currentUrl,
             name: title,
             description,
-            isPartOf: { "@id": "https://www.wikimint.com#website" },
-            primaryImageOfPage: { "@id": "https://www.wikimint.com#primaryimage" }
+            isPartOf: { "@id": "https://wikimint.com#website" },
+            primaryImageOfPage: { "@id": "https://wikimint.com#primaryimage" }
           },
           {
             "@type": "ImageObject",
-            "@id": "https://www.wikimint.com#primaryimage",
+            "@id": "https://wikimint.com#primaryimage",
             url: image?.startsWith("http")
               ? image
-              : `https://www.wikimint.com/assets/images/books/${image}`,
+              : `https://wikimint.com/assets/images/books/${image}`,
             caption: title
           },
           {
@@ -71,12 +71,12 @@ const currentUrl = Astro.url.href;
             name: title,
             alternateName: h1,
             description,
-            image: { "@id": "https://www.wikimint.com#primaryimage" },
+            image: { "@id": "https://wikimint.com#primaryimage" },
             author: { "@type": "Person", name: author },
             publisher: {
               "@type": "Organization",
               name: "Wikimint",
-              url: "https://www.wikimint.com"
+              url: "https://wikimint.com"
             },
             mainEntityOfPage: { "@id": currentUrl + "#webpage" },
             genre: category,

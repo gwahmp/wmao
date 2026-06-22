@@ -35,21 +35,21 @@ const currentUrl = Astro.url.href; // full URL of the current page
         "@graph": [
           {
             "@type": "WebSite",
-            "@id": "https://www.wikimint.com#website",
-            url: "https://www.wikimint.com",
+            "@id": "https://wikimint.com#website",
+            url: "https://wikimint.com",
             name: "Wikimint",
             description:
               "Mastering Financial Freedom, Personal Finance and Business Strategies",
             inLanguage: "en-US",
             publisher: {
-              "@id": "https://www.wikimint.com#organization"
+              "@id": "https://wikimint.com#organization"
             },
             potentialAction: {
               "@type": "SearchAction",
               target: {
                 "@type": "EntryPoint",
                 urlTemplate:
-                  "https://www.wikimint.com/search?q={search_term_string}"
+                  "https://wikimint.com/search?q={search_term_string}"
               },
               "query-input": "required name=search_term_string"
             }
@@ -60,7 +60,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
             url: currentUrl,
             name: frontmatter.title,
             description: frontmatter.description,
-            isPartOf: { "@id": "https://www.wikimint.com#website" },
+            isPartOf: { "@id": "https://wikimint.com#website" },
             primaryImageOfPage: { "@id": currentUrl + "#primaryimage" },
             author: {
               "@type": "Organization",
@@ -86,8 +86,8 @@ const currentUrl = Astro.url.href; // full URL of the current page
         "@graph": [
           {
             "@type": "BreadcrumbList",
-            "@id": "https://www.wikimint.com#breadcrumblist",
-            "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Assisted Business Services", "item": "https://www.wikimint.com/business-growth-services" }, { "@type": "ListItem", "position": 2, "name": "DIY Business Kit", "item": "https://www.wikimint.com/business-resources" }, { "@type": "ListItem", "position": 3, "name": "Tools Directory", "item": "https://www.wikimint.com/toolbox" }, { "@type": "ListItem", "position": 4, "name": "Digital Productivity Assets", "item": "https://www.wikimint.com/digital-assets" }, { "@type": "ListItem", "position": 5, "name": "Wikimint Blog", "item": "https://www.wikimint.com/blog" }, { "@type": "ListItem", "position": 6, "name": "About Wikimint", "item": "https://www.wikimint.com/about" } ]
+            "@id": "https://wikimint.com#breadcrumblist",
+            "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Assisted Business Services", "item": "https://wikimint.com/business-growth-services" }, { "@type": "ListItem", "position": 2, "name": "DIY Business Kit", "item": "https://wikimint.com/business-resources" }, { "@type": "ListItem", "position": 3, "name": "Tools Directory", "item": "https://wikimint.com/toolbox" }, { "@type": "ListItem", "position": 4, "name": "Digital Productivity Assets", "item": "https://wikimint.com/digital-assets" }, { "@type": "ListItem", "position": 5, "name": "Wikimint Blog", "item": "https://wikimint.com/blog" }, { "@type": "ListItem", "position": 6, "name": "About Wikimint", "item": "https://wikimint.com/about" } ]
           }
         ]
       }
@@ -572,7 +572,7 @@ itemtype="https://schema.org/ContactAction">
   <div class="mt-6 flex flex-col md:flex-row justify-center items-center md:space-x-4 space-y-3 md:space-y-0">
 
     <div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
-      <meta itemprop="urlTemplate" content="https://www.wikimint.com/business-growth-services" />
+      <meta itemprop="urlTemplate" content="https://wikimint.com/business-growth-services" />
       <meta itemprop="actionPlatform" content="http://schema.org/DesktopWebPlatform" />
       <meta itemprop="actionPlatform" content="http://schema.org/MobileWebPlatform" />
        <a
@@ -583,7 +583,7 @@ itemtype="https://schema.org/ContactAction">
   </div>
 
   <div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
-    <meta itemprop="urlTemplate" content="https://www.wikimint.com/business-resources" />
+    <meta itemprop="urlTemplate" content="https://wikimint.com/business-resources" />
     <meta itemprop="actionPlatform" content="http://schema.org/DesktopWebPlatform" />
     <meta itemprop="actionPlatform" content="http://schema.org/MobileWebPlatform" />
   <a
@@ -618,7 +618,7 @@ itemtype="https://schema.org/ContactAction">
   
     <meta itemprop="name" content="Wikimint – Latest Insights & Articles" />
     <meta itemprop="description" content="Stay updated with the latest articles on business, finance, marketing, technology, lifestyle, and growth strategies from Wikimint." />
-    <meta itemprop="url" content="https://www.wikimint.com/" />
+    <meta itemprop="url" content="https://wikimint.com/" />
   
     {posts
       .filter((post) => !post.data.noindex)
@@ -658,7 +658,7 @@ itemtype="https://schema.org/ContactAction">
             <p class="text-sm md:text-base text-gray-500 mb-2 line-clamp-2">
 
               <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <a href="https://www.wikimint.com/write-for-us" itemprop="url">
+                <a href="https://wikimint.com/write-for-us" itemprop="url">
                 <span itemprop="name">
                   {(post?.data?.author ?? "Unknown Author")
                     .replace(/-/g, " ")

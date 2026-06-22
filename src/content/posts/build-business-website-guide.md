@@ -236,7 +236,7 @@ A strong business website normally follows a clean hierarchy.
 
 Example structure:
 
-- <a href="https://www.wikimint.com">Home</a>
+- <a href="https://wikimint.com">Home</a>
 - <a href="/about">About Us</a>
 - <a href="/business-growth-services">Services or Products</a>
 - <a href="https://sk.wikimint.com">Case Studies or Portfolio</a>

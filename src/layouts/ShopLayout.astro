@@ -28,13 +28,13 @@ const currentUrl = Astro.url.href; // full URL of the current page
         "@graph": [
           {
             "@type": "WebSite",
-            "@id": "https://www.wikimint.com#website",
-            url: "https://www.wikimint.com",
+            "@id": "https://wikimint.com#website",
+            url: "https://wikimint.com",
             name: "Wikimint",
             publisher: {
               "@type": "Organization",
               name: "Wikimint",
-              url: "https://www.wikimint.com"
+              url: "https://wikimint.com"
             }
           },
           {
@@ -44,16 +44,16 @@ const currentUrl = Astro.url.href; // full URL of the current page
             name: title,
             description,
             isPartOf: {
-              "@id": "https://www.wikimint.com#website"
+              "@id": "https://wikimint.com#website"
             },
             primaryImageOfPage: {
-              "@id": "https://www.wikimint.com#primaryimage"
+              "@id": "https://wikimint.com#primaryimage"
             }
           },
           {
             "@type": "ImageObject",
-            "@id": "https://www.wikimint.com#primaryimage",
-            url: `https://www.wikimint.com${image}`,
+            "@id": "https://wikimint.com#primaryimage",
+            url: `https://wikimint.com${image}`,
             caption: title
           }
         ]
@@ -133,7 +133,7 @@ const currentUrl = Astro.url.href; // full URL of the current page
       "https://public-files.gumroad.com/pz2ncmd78cqufrdplopjo00ew4fq",
       "Huge collection of digital products available at low prices for resale and profit, including eBooks, software, courses, templates, and marketing tools",
       "Resell Digital Products and Earn Profits with Low-Cost PLR, Software & Courses", "All-in-one Business Kit",
-      "https://www.wikimint.com/digital-assets"],
+      "https://wikimint.com/digital-assets"],
       ["8747", "tech-deals", "refurbished-laptops, used-laptops, renewed-laptops, budget-friendly, affordable-tech",
       "https://m.media-amazon.com/images/I/8149ThY8zAL._AC_UY218_.jpg",
       "Get top-brand refurbished and renewed laptops at unbeatable prices. Perfect for professionals, students, and everyday users who want reliable performance without the high cost. Save big while staying productive with these budget-friendly laptops.",

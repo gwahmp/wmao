@@ -4,7 +4,7 @@ import path from "node:path";
 
 export async function GET() {
 
-  const base = "https://www.wikimint.com";
+  const base = "https://wikimint.com";
   let urls = [];
 
   /* --------------------------------

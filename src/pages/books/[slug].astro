@@ -46,7 +46,7 @@ const relatedBooks = allBooks
 
         {/* Home */}
         <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="https://www.wikimint.com" itemprop="item">
+          <a href="https://wikimint.com" itemprop="item">
             <span itemprop="name" class="text-wmblue">Home</span>
           </a>
           <meta itemprop="position" content="1" />
@@ -56,7 +56,7 @@ const relatedBooks = allBooks
       
         {/* Books */}
         <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="https://www.wikimint.com/books" itemprop="item">
+          <a href="https://wikimint.com/books" itemprop="item">
             <span itemprop="name" class="text-wmblue">Books</span>
           </a>
           <meta itemprop="position" content="2" />
@@ -66,7 +66,7 @@ const relatedBooks = allBooks
       
         {/* Category */}
         <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href={`https://www.wikimint.com/${book.data.category.toLowerCase()}#books`} itemprop="item">
+          <a href={`https://wikimint.com/${book.data.category.toLowerCase()}#books`} itemprop="item">
             <span itemprop="name" class="text-wmblue">{book.data.category} Books</span>
           </a>
           <meta itemprop="position" content="3" />
@@ -77,7 +77,7 @@ const relatedBooks = allBooks
         {/* Book Title */}
         <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <span>{book.data.title}</span>
-          <a href={`https://www.wikimint.com/books/${book.slug}`} itemprop="item">
+          <a href={`https://wikimint.com/books/${book.slug}`} itemprop="item">
             <span itemprop="name" class="text-wmblue sr-only">{book.data.title}</span>
           </a>
           <meta itemprop="position" content="4" />

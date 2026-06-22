@@ -5,7 +5,7 @@ export const GET: APIRoute = () => {
 `User-agent: *
 Allow: /
 
-Sitemap: https://www.wikimint.com/sitemap.xml
+Sitemap: https://wikimint.com/sitemap.xml
 `, {
     headers: { "Content-Type": "text/plain" }
   });

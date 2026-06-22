@@ -69,14 +69,14 @@ const finalModifiedDate =
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": `https://www.wikimint.com/${post.slug}`
+        "@id": `https://wikimint.com/${post.slug}`
       },
       "headline": post.data.title,
       "description": post.data.description,
       "image": {
         "@type": "ImageObject",
-        "url": `https://www.wikimint.com/assets/images/blog/${post.data.image}`,
-        "contentUrl": `https://www.wikimint.com/assets/images/blog/${post.data.image}`,
+        "url": `https://wikimint.com/assets/images/blog/${post.data.image}`,
+        "contentUrl": `https://wikimint.com/assets/images/blog/${post.data.image}`,
         "width": 800,   // optional
         "height": 600   // optional
       },
@@ -85,7 +85,7 @@ const finalModifiedDate =
         "name": "Wikimint",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.wikimint.com/assets/images/wikimint.webp"
+          "url": "https://wikimint.com/assets/images/wikimint.webp"
         }
       },
       "author": {
@@ -94,12 +94,12 @@ const finalModifiedDate =
           .replace(/-/g, " ")
           .replace(/\b\w/g, (c) => c.toUpperCase()),
         "url": "https://sk.wikimint.com",
-        "image": `https://www.wikimint.com${author?.data?.image}`
+        "image": `https://wikimint.com${author?.data?.image}`
       },
       "isPartOf": {
   "@type": "Blog",
   "name": "Wikimint Blog",
-  "url": "https://www.wikimint.com/blog"
+  "url": "https://wikimint.com/blog"
 },
 "wordCount": post.body?.split(/\s+/).length,
       "datePublished": post.data.date.toISOString(),
@@ -117,7 +117,7 @@ const finalModifiedDate =
       
   <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" itemscope itemtype="https://schema.org/BreadcrumbList">
     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a href="https://www.wikimint.com" itemprop="item">
+      <a href="https://wikimint.com" itemprop="item">
         <span itemprop="name" class="text-wmblue">Home</span>
       </a>
       <meta itemprop="position" content="1" />
@@ -126,7 +126,7 @@ const finalModifiedDate =
    
         <span> » </span>
     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a href="https://www.wikimint.com/blog" itemprop="item">
+      <a href="https://wikimint.com/blog" itemprop="item">
         <span itemprop="name" class="text-wmblue">Blog</span>
       </a>
       <meta itemprop="position" content="2" />
@@ -135,7 +135,7 @@ const finalModifiedDate =
    
         <span> » </span>
         <span class="label" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href={`https://www.wikimint.com/${post.data.category.toLowerCase()}`} itemprop="item">
+          <a href={`https://wikimint.com/${post.data.category.toLowerCase()}`} itemprop="item">
             <span itemprop="name"  class="text-wmblue">{post.data.category}</span>
           </a>
           <meta itemprop="position" content="3" />
@@ -145,7 +145,7 @@ const finalModifiedDate =
     <span> » </span>
           <!-- Current Page -->
           <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="item" content={`https://www.wikimint.com/${post.slug}`}/>
+            <meta itemprop="item" content={`https://wikimint.com/${post.slug}`}/>
             <span itemprop="name">{post.data.title}</span>
             <meta itemprop="position" content={post.data.category ? "4" : "3"} />
           </span>
@@ -275,7 +275,7 @@ const finalModifiedDate =
               {/* Left: Avatar */}
               <div class="w-1/4">
                 <img  loading="lazy" 
-                src={`https://www.wikimint.com${author.data.image}`}
+                src={`https://wikimint.com${author.data.image}`}
                   alt={author.data.name} 
                   width={150}
                   height={150}
@@ -288,7 +288,7 @@ const finalModifiedDate =
               <div class="w-3/4">
                 <h3 class="author-name">
                   <span class="text-wmblue font-semibold text-xl">Written by </span>
-                  <a href="https://www.wikimint.com" 
+                  <a href="https://wikimint.com" 
                      itemprop="url" 
                      rel="author noopener" 
                      

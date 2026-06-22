@@ -1,5 +1,5 @@
 (function () {
-  const allowedHosts = ["www.wikimint.com", "app.wikimint.com", "127.0.0.1", "wikimint.serveo.net"];
+  const allowedHosts = ["wikimint.com", "app.wikimint.com", "127.0.0.1", "wikimint.serveo.net"];
   if (!allowedHosts.includes(location.hostname)) window.stop();
 })();
 
