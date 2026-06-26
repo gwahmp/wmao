@@ -1,5 +1,7 @@
 ---
 import LandingLayout from "../../layouts/LandingLayout.astro";
+const version = Date.now();
+
 const frontmatter = {
   title: "Share One LeadsLeap Page for PPC Earnings, Coop Credits and Referral Commissions",
   description: "Promote this LeadsLeap-powered page using your username and earn from PPC ads, coop advertising, and referral commissions. Simply add your LeadsLeap username to the URL and start sharing.",
@@ -12,7 +14,7 @@ const frontmatter = {
 <LandingLayout frontmatter={frontmatter}>
 
   <div style="max-width:900px;margin:auto;">
-    <h1 class="text-center pt-5"><span class="block text-red-700">Promote LeadsLeap from One Link</span> Build Multiple Income Streams</h1>
+    <h1 class="text-center pt-5"><span class="text-red-700">Promote LeadsLeap from One Link</span> Build Multiple Income Streams</h1>
 
     <p class="lead text-center">Add your <a class="llpu" href="https://leadsleap.com/?r=selvaklnc" rel="nofollow noopener">LeadsLeap</a> username, share this page everywhere, and benefit from multiple LeadsLeap earning opportunities from a single promotional link.</p>
     
@@ -119,143 +121,32 @@ const frontmatter = {
   </div>
   
 
-
- 
-<script is:inline>
-document.addEventListener("DOMContentLoaded", function () {
-
-    // Get llpu parameter
-    var llpu = new URLSearchParams(window.location.search).get("llpu");
-
-    if (!llpu) return;
-
-    // Replace referral username in links
-    document.querySelectorAll("a.llpu").forEach(link => {
-        link.href = link.href
-            .replace(/\?r=selvaklnc/i, "?r=" + encodeURIComponent(llpu))
-            .replace(/&r=selvaklnc/i, "&r=" + encodeURIComponent(llpu));
-    });
-
-
-});
-</script>
-
 <div id="iframePopup">
-    <iframe src="about:blank"></iframe>
+    <iframe id="llpcoop" src="about:blank"></iframe>
     <button id="popupCloseBtn">Wait 10 seconds</button>
 </div>
 <style>
 #iframePopup iframe{
-    width:100%;
+    width:calc(100% - 60px);
     max-width:100%;
-    height:calc(100vh - 40px);
+    height:calc(100vh - 80px);
     border:none;
     background:#fff;
 }
 
 #popupCloseBtn{
-    position:absolute;
-    top:5px;
-    right:15px;
-    /* padding:10px 15px; */
-display:none;
-color:#fff;
+  position: absolute;
+    top: 39px;
+    right: 30px;
+    display: none;
+    color: red;
+    padding: 5px 15px;
+    background: #000;
+    font-weight: 500;
 }
 </style>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-let popupShown = false;
-
-function showPopup() {
 
 
-
-    if (popupShown) return;
-    popupShown = true;
-
-    const popup = document.getElementById("iframePopup");
-    const iframe = popup.querySelector("iframe");
-    const closeBtn = document.getElementById("popupCloseBtn");
-
-    // Get llpu parameter
-    var llpu = new URLSearchParams(window.location.search).get("llpu") || "selvaklnc";
-
-    // Set iframe URL
-    iframe.src = "https://lltrco.com/?r=" + encodeURIComponent(llpu);
-
-    document.body.style.overflow = "hidden";
-document.documentElement.style.overflow = "hidden";
-
-    // Show as overlay popup
-    popup.style.display = "flex";
-    popup.style.position = "fixed";
-    popup.style.bottom = "0";
-    popup.style.left = "0";
-    popup.style.width = "100%";
-    popup.style.height = "100%";
-    popup.style.background = "rgba(0,0,0,0.8)";
-    popup.style.justifyContent = "center";
-    popup.style.alignItems = "end";
-    popup.style.zIndex = "999999";
-
-    let seconds = 10;
-
-    closeBtn.style.display = "block";
-    closeBtn.disabled = true;
-    closeBtn.textContent = `Wait ${seconds} seconds`;
-
-    const countdown = setInterval(function () {
-
-        seconds--;
-
-        if (seconds > 0) {
-
-            closeBtn.textContent = `Wait ${seconds} seconds`;
-
-        } else {
-
-            clearInterval(countdown);
-
-            closeBtn.textContent = "Close";
-            closeBtn.disabled = false;
-            closeBtn.style.cursor = "pointer";
-
-            closeBtn.addEventListener("click", function () {
-
-                closeBtn.style.display = "none";
-
-                popup.style.display = "";
-                popup.style.position = "";
-                popup.style.top = "";
-                popup.style.left = "";
-                popup.style.width = "";
-                popup.style.height = "";
-                popup.style.background = "";
-                popup.style.justifyContent = "";
-                popup.style.alignItems = "";
-                popup.style.zIndex = "";
-
-                document.body.style.overflow = "";
-document.documentElement.style.overflow = "";
-
-            }, { once: true });
-
-        }
-
-    }, 1000);
-}
-
-// Show popup on first downward scroll
-window.addEventListener("scroll", function () {
-
-    if (window.scrollY > 100) {
-        showPopup();
-    }
-
-}, { passive: true });
-
-});
-</script>
+<script is:inline src={`/assets/js/llppromote.js?v=${version}`} defer></script>
 
 </LandingLayout>
