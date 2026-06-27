@@ -1,17 +1,5 @@
+
 document.addEventListener("DOMContentLoaded", function () {
-
-  // Get llpu parameter
-  var llpu = new URLSearchParams(window.location.search).get("llpu");
-
-  if (!llpu) return;
-
-  // Replace referral username in links
-  document.querySelectorAll("a.llpu").forEach(link => {
-      link.href = link.href
-          .replace(/\?r=selvaklnc/i, "?r=" + encodeURIComponent(llpu))
-          .replace(/&r=selvaklnc/i, "&r=" + encodeURIComponent(llpu));
-  });
-
 
   var popup = document.getElementById("iframePopup");
   var iframe = popup.querySelector("iframe#llpcoop");
@@ -21,13 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Set iframe URL
   iframe.src = "https://leadsleap.com/?r=" + encodeURIComponent(llpu);
-
-
-});
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
 
   let popupShown = false;
   
@@ -110,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
       }, 1000);
   }
-  
+  /*
   // Show popup on first downward scroll
   window.addEventListener("scroll", function () {
   
@@ -119,5 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   
   }, { passive: true });
-  
+  */
+
+  setTimeout(function(){showPopup();},3000);
   });
