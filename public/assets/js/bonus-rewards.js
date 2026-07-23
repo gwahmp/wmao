@@ -243,6 +243,7 @@ function initDailyLogin() {
             "function"
         ) {
     
+            clearDashboardData();
             refreshMemberBalance();
     
         }

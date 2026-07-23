@@ -161,6 +161,8 @@ document.querySelectorAll('.logout').forEach(btn => {
             sessionStorage.clear();
             WMAuth.loggedIn = false;
             WMAuth.member = null;
+            clearDashboardData();
+
 
            window.location.reload();
         } catch (error) {

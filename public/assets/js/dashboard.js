@@ -141,6 +141,59 @@ alert("This feature is under construction");
             })});
 /* Menu ends */
 
+//referral link
+function referralLinks(){
+    const userid =
+        member.userid;
+    document.querySelectorAll(".uid").forEach(el => {el.innerHTML = userid;});
+    
+    var referral =
+        `https://wikimint.com?r=${userid}`;
+    
+    document
+        .getElementById(
+            'referralLink'
+        )
+        .value =
+            referral;
+    
+    document
+        .getElementById(
+            'copyReferral'
+        )
+        .onclick =
+            async () => {
+    
+                await navigator
+                    .clipboard
+                    .writeText(
+                        referral
+                    );
+    
+                const toast =
+                    document.getElementById(
+                        'toast'
+                    );
+    
+                toast.classList.remove(
+                    'opacity-0'
+                );
+    
+                setTimeout(
+                    () => {
+    
+                        toast.classList.add(
+                            'opacity-0'
+                        );
+    
+                    },
+                    2000
+                );
+            };
+        }
+    //referral link
+
+    
 /*Dashboard data starts*/
 
 const DASHBOARD_CACHE_KEY = "wm_dashboard";

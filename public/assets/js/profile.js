@@ -20,8 +20,7 @@ if(puSession){
     
     loadHero(profile);
     
-    setupProfileViewTracking();
-    
+    startWaitForInteraction();    
     console.log(profile);
 }else{
     loadProfile(userid);
@@ -55,7 +54,7 @@ fetch(`https://api.wikimint.com/profile?u=${userid}`).then(res => res.json())
 
     loadHero(profile);
 
-    setupProfileViewTracking();
+    startWaitForInteraction();    
 
 });
 
@@ -324,27 +323,33 @@ if (description.length <= maxChars) {
 }
 
 
-
 async function recordProfileView() {
-    if (!profile || !profile.userid) {
-console.log("no profile");
+
+    if (!profile?.userid) {
+
         return;
 
     }
-    console.log(profile.userid);
 
-    const KEY =
-        "pv_" + profile.userid;
+    if (!hasUserInteracted()) {
 
-    const lastViewed =
-        parseInt(
-            localStorage.getItem(KEY) || "0"
-        );
+        return;
 
-    if (
-        Date.now() - lastViewed
-        < 86400000
-    ) {
+    }
+
+    const unique = await recordUniqueVisit({
+
+        visitorid: getBrowserId(),
+
+        targetid: profile.userid,
+
+        type: VISIT_TYPES.PROFILE,
+
+        duration: VISIT_DURATION.DAY
+
+    });
+
+    if (!unique) {
 
         return;
 
@@ -352,91 +357,48 @@ console.log("no profile");
 
     try {
 
-        console.log("Calling profile/view", profile.userid);
-
         const response = await fetch(
+
             "https://api.wikimint.com/profile/view",
+
             {
+
                 method: "POST",
 
                 headers: {
+
                     "Content-Type": "application/json"
+
                 },
 
                 body: JSON.stringify({
-                    userid: profile.userid
+                    userid: profile.userid,
+                    visitorid: getBrowserId()
                 })
+
             }
+
         );
 
+        const result = await response.json();
 
-const result = await response.json();
+        if (!result.success) {
 
-console.log(result);
+            return;
 
-        localStorage.setItem(
-            KEY,
-            Date.now()
-        );
+        }
 
         profile.profile_views++;
 
-        document.querySelector(
-            "#views"
-        ).textContent =
+        document.getElementById("views").textContent =
             profile.profile_views;
 
     }
 
     catch (err) {
 
-        console.log(err);
+        console.error(err);
 
     }
-
-}
-
-
-function setupProfileViewTracking() {
-
-    const firstInteraction = () => {
-
-        recordProfileView();
-
-    };
-
-    window.addEventListener(
-        "scroll",
-        firstInteraction,
-        {
-            passive: true,
-            once: true
-        }
-    );
-
-    window.addEventListener(
-        "mousemove",
-        firstInteraction,
-        {
-            once: true
-        }
-    );
-
-    window.addEventListener(
-        "click",
-        firstInteraction,
-        {
-            once: true
-        }
-    );
-
-    window.addEventListener(
-        "touchstart",
-        firstInteraction,
-        {
-            passive: true,
-            once: true
-        }
-    );
 
 }

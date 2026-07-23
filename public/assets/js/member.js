@@ -6,7 +6,6 @@ const CREDIT_DECIMALS = 6;
 
 ifMember(() => {
     renderMember(member);
-    referralLinks();
 });
 
 
@@ -21,56 +20,7 @@ function renderMember(
          }
 
 
-//referral link
-function referralLinks(){
-const userid =
-    member.userid;
-document.querySelector(".uid").innerHTML=userid;
-var referral =
-    `https://wikimint.com?r=${userid}`;
 
-document
-    .getElementById(
-        'referralLink'
-    )
-    .value =
-        referral;
-
-document
-    .getElementById(
-        'copyReferral'
-    )
-    .onclick =
-        async () => {
-
-            await navigator
-                .clipboard
-                .writeText(
-                    referral
-                );
-
-            const toast =
-                document.getElementById(
-                    'toast'
-                );
-
-            toast.classList.remove(
-                'opacity-0'
-            );
-
-            setTimeout(
-                () => {
-
-                    toast.classList.add(
-                        'opacity-0'
-                    );
-
-                },
-                2000
-            );
-        };
-    }
-//referral link
 
 window.addEventListener('load', () => {
     document.querySelector('.lph')?.remove();
@@ -279,4 +229,21 @@ function resetUserInteraction() {
 
     interacted = false;
 
+}
+
+let waitForInteraction;
+function startWaitForInteraction(){
+    waitForInteraction = setInterval(() => {
+
+    if (!hasUserInteracted()) {
+
+        return;
+
+    }
+
+    clearInterval(waitForInteraction);
+
+    recordProfileView();
+
+}, 250);
 }
