@@ -1,0 +1,245 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection, render } from "astro:content"; // 👈 import render
+import Sidebar from "../components/Sidebar.astro";
+import type { CollectionEntry } from "astro:content";
+import TopAds from "../components/TopAds.astro";
+
+type Post = CollectionEntry<"posts">;
+type Category = CollectionEntry<"category">;
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  const categories: Category[] = await getCollection("category");
+
+  return categories.map((cat) => ({
+    params: { category: cat.slug },
+    props: { category: cat, posts },
+  }));
+}
+
+const { category, posts } = Astro.props as {
+  category: Category;
+  posts: Post[];
+};
+
+const categoryPosts = posts.filter(
+  (p) => p.data.category?.toLowerCase() === category.slug.toLowerCase()
+);
+
+// 👇 use render() helper
+const { Content } = await render(category);
+const currentUrl = Astro.url.href; // full URL of the current page
+
+---
+
+
+
+
+<BaseLayout 
+  title={category.data.title} 
+  description={category.data.description}
+  image={`/assets/images/blog/${category.data.image}`}
+>
+<Fragment slot="head">
+  {import.meta.env.PROD && (
+    <script is:inline async data-consent="ads" type="text/plain" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784071102690039" crossorigin="anonymous"></script>
+      )}
+  <script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://wikimint.com#website",
+        url: "https://wikimint.com",
+        name: "Wikimint",
+        publisher: {
+          "@type": "Organization",
+          name: "Wikimint",
+          url: "https://wikimint.com"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": currentUrl + "#webpage",
+        url: currentUrl,
+        name: category.data.title,
+        description: category.data.description,  // ✅ fixed
+        isPartOf: {
+          "@id": "https://wikimint.com#website"
+        },
+        primaryImageOfPage: {
+          "@id": currentUrl + "#primaryimage"   // ✅ made per-page unique
+        }
+      },
+      {
+  "@type": "ImageObject",
+  "@id": currentUrl + "#primaryimage", // tied to current page
+  url: `https://wikimint.com/assets/images/blog/${category.data.image}`,
+  caption: category.data.title
+}
+
+    ]
+  })}
+/>
+
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": category.data.title,
+      "description": category.data.description,
+      "url": `https://wikimint.com/${category.slug}`,
+      "mainEntity": categoryPosts
+        .sort((a, b) => new Date(b.data.date) - new Date(a.data.date)) // sort by date desc
+        .slice(0, 6) // take latest 6
+        .map((post) => ({
+  "@type": "Article",
+  "headline": post.data.title,
+  "url": `https://wikimint.com/${post.slug}`,
+  "datePublished": post.data.date,
+  "description": post.data.description,
+  "image": `https://wikimint.com/assets/images/blog/${post.data.image}`,
+  "author": {
+    "@type": "Person",
+    "name": post.data.author
+      ? post.data.author.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
+      : "Unknown Author",
+    "url": "https://wikimint.com/write-for-us"
+  }
+}))
+
+    }, null, 2)}
+  />
+
+  <script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": `Posts in ${category.data.title}`,
+    "itemListElement": categoryPosts
+      .sort((a, b) => new Date(b.data.date) - new Date(a.data.date)) // sort by date desc
+      .slice(0, 6) // latest 6
+      .map((post, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": `https://wikimint.com/${post.slug}`,
+        "name": post.data.title,
+        "image": `https://wikimint.com/assets/images/blog/${post.data.image}`,
+        "author": {
+          "@type": "Person",
+          "name": (post?.data?.author ?? "Wikimint")
+            .replace(/-/g, " ")
+            .replace(/\b\w/g, (c) => c.toUpperCase()),
+          "url": "https://wikimint.com/write-for-us"
+        }
+      }))
+  }, null, 2)}
+></script>
+
+ 
+</Fragment>
+
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto">
+    <div class="col-span-12 md:col-span-7 prose lg:prose-xl max-w-none">
+      
+      <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-5" 
+      itemscope itemtype="https://schema.org/BreadcrumbList">
+   
+   {/* Home */}
+   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a href="https://wikimint.com" itemprop="item">
+       <span itemprop="name" class="text-wmblue">Home</span>
+     </a>
+     <meta itemprop="position" content="1" />
+   </span>
+ 
+   <span> » </span>
+
+   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="https://wikimint.com/blog" itemprop="item">
+      <span itemprop="name" class="text-wmblue">Blog</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </span>
+ 
+  <span> » </span>
+
+   {/* Category */}
+ 
+
+
+   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <meta itemprop="item" content={`https://wikimint.com/${category.slug}`} />
+    <span itemprop="name">{category.data.title}</span>
+    <meta itemprop="position" content="3" />
+  </span>
+ 
+ </nav>
+ 
+      
+      {/* Category Metadata */}
+      <h1 class="text-3xl font-bold mb-2">{category.data.h1}</h1>
+      <p class="bluebox">{category.data.description}</p>
+
+      <TopAds/>
+
+      {/* Posts list */}
+      <h2 class="text-2xl font-semibold mt-10 mb-4">
+        Posts in {category.data.title}
+      </h2>
+      <ul class="space-y-6">
+        {categoryPosts
+          .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+          .map((post: Post) => (
+            <li class="border-b pb-4">
+              <a href={`/${post.slug}`} class="text-lg font-semibold hover:underline">
+                {post.data.title}
+              </a>
+              {post.data.description && (
+                <p class="text-gray-600 mt-1">{post.data.description}</p>
+              )}
+              {post.data.date && (
+                // <p class="text-sm text-gray-500">
+                //   {new Date(post.data.date).toDateString()}
+                // </p>
+
+
+                <p class="text-sm md:text-base text-gray-500 mb-2 line-clamp-2">
+
+  <a href="https://wikimint.com/write-for-us" itemprop="url">
+    {(post?.data?.author ?? "Unknown Author")
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase())}
+ </a>
+·{" "}
+{post?.data?.date && (
+  <time datetime={new Date(post.data.date).toISOString()}>
+    {new Date(post.data.date).toDateString()}
+  </time>
+)}
+</p>
+
+
+
+              )}
+            </li>
+          ))}
+      </ul>
+      
+
+      {/* Render markdown content from category file */}
+      <Content />
+      <div id="mainAd" class="sticky top-20"></div>
+
+    </div>
+
+    <aside class="col-span-12 md:col-span-5">
+      <Sidebar />
+    </aside>
+  </div>
+</BaseLayout>

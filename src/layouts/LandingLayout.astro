@@ -1,0 +1,61 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import "../styles/global.css";
+
+const { frontmatter, url } = Astro.props;
+const {
+  title, description, date, updatedDate, image, canonical,
+  tags, toc, learnPoints, relatedResources, faq, author, noindex
+} = frontmatter;
+const currentUrl = Astro.url.href; // full URL of the current page
+
+---
+<BaseLayout title={`${title}`} description={description} image={image} noindex={noindex}>
+
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://wikimint.com#website",
+            url: "https://wikimint.com",
+            name: "Wikimint",
+            publisher: {
+              "@type": "Organization",
+              name: "Wikimint",
+              url: "https://wikimint.com"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": currentUrl + "#webpage",
+            url: currentUrl,
+            name: title,
+            description,
+            isPartOf: {
+              "@id": "https://wikimint.com#website"
+            },
+            primaryImageOfPage: {
+              "@id": "https://wikimint.com#primaryimage"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://wikimint.com#primaryimage",
+            url: `https://wikimint.com${image}`,
+            caption: title
+          }
+        ]
+      })}
+    />
+  </Fragment>
+
+    <article class="prose lg:prose-xl max-w-none">
+        <slot /> 
+    </article>
+
+
+</BaseLayout>

@@ -1,0 +1,92 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import "../styles/global.css";
+import Sidebar from "../components/Sidebar.astro";
+
+const { frontmatter } = Astro.props; // ✅ Passed from [slug].astro
+const {
+  title,
+  description,
+  date,
+  updatedDate,
+  image,
+  canonical,
+  tags,
+  toc,
+  learnPoints,
+  relatedResources,
+  faq,
+  author,
+  noindex,
+  category,
+  pages,
+  h1
+} = frontmatter;
+
+const currentUrl = Astro.url.href;
+---
+
+<BaseLayout title={title} description={description} image={image} noindex={noindex}>
+  <Fragment slot="head">
+    {import.meta.env.PROD && (
+      <script is:inline async data-consent="ads" type="text/plain" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784071102690039" crossorigin="anonymous"></script>
+        )}
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://wikimint.com#website",
+            url: "https://wikimint.com",
+            name: "Wikimint",
+            publisher: {
+              "@type": "Organization",
+              name: "Wikimint",
+              url: "https://wikimint.com"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": currentUrl + "#webpage",
+            url: currentUrl,
+            name: title,
+            description,
+            isPartOf: { "@id": "https://wikimint.com#website" },
+            primaryImageOfPage: { "@id": "https://wikimint.com#primaryimage" }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://wikimint.com#primaryimage",
+            url: image?.startsWith("http")
+              ? image
+              : `https://wikimint.com/assets/images/books/${image}`,
+            caption: title
+          },
+          {
+            "@type": "Book",
+            "@id": currentUrl + "#book",
+            url: currentUrl,
+            name: title,
+            alternateName: h1,
+            description,
+            image: { "@id": "https://wikimint.com#primaryimage" },
+            author: { "@type": "Person", name: author },
+            publisher: {
+              "@type": "Organization",
+              name: "Wikimint",
+              url: "https://wikimint.com"
+            },
+            mainEntityOfPage: { "@id": currentUrl + "#webpage" },
+            genre: category,
+            numberOfPages: pages,
+            inLanguage: "en"
+          }
+        ]
+      })}
+    />
+  </Fragment>
+
+  <slot /> {/* Book Markdown content */}
+</BaseLayout>

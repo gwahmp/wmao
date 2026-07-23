@@ -1,0 +1,21 @@
+---
+import { Code } from 'astro:components';
+
+const { code = '', lang = 'html', theme = 'github-light' } = Astro.props;
+
+let raw = code;
+
+if (!raw && Astro.slots.has('default')) {
+  raw = await Astro.slots.render('default');
+}
+
+raw = raw ?? '';
+---
+
+<div class="code-block">
+  <button onclick="copyCode(this)">
+    Copy
+  </button>
+
+  <Code code={raw} lang={lang} theme={theme} />
+</div>

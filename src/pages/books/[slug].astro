@@ -1,0 +1,229 @@
+---
+import { getCollection } from "astro:content";
+import BooksLayout from "../../layouts/BooksLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+const version = Date.now();
+// 1. Generate a path for every book file
+export async function getStaticPaths() {
+  const books = await getCollection("books");
+
+  return books.map((book) => ({
+    params: { slug: book.slug },
+    props: { book },
+  }));
+}
+
+// 2. Grab the book passed in props
+const { book } = Astro.props;
+
+// ✅ render() gives us a Markdown component
+const { Content } = await book.render();
+
+// Related books by category (excluding current)
+const allBooks = await getCollection("books");
+
+// Sort books by date (newest first)
+allBooks.sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+
+const relatedBooks = allBooks
+  .filter(
+    (p) =>
+      p.data.category === book.data.category &&
+      p.slug !== book.slug
+  )
+  .slice(0, 6); // limit to 3
+  
+---
+
+<BooksLayout frontmatter={book.data} title={book.data.title} description={book.data.description} image={`/assets/images/books/${book.data.image}`}>
+ 
+
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto">
+    <div class="col-span-12">
+      <nav class="breadcrumbs border-b border-gray-400 pb-4 mb-10" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+        {/* Home */}
+        <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://wikimint.com" itemprop="item">
+            <span itemprop="name" class="text-wmblue">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </span>
+      
+        <span> » </span>
+      
+        {/* Books */}
+        <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://wikimint.com/books" itemprop="item">
+            <span itemprop="name" class="text-wmblue">Books</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </span>
+      
+        <span> » </span>
+      
+        {/* Category */}
+        <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href={`https://wikimint.com/${book.data.category.toLowerCase()}#books`} itemprop="item">
+            <span itemprop="name" class="text-wmblue">{book.data.category} Books</span>
+          </a>
+          <meta itemprop="position" content="3" />
+        </span>
+      
+        <span> » </span>
+      
+        {/* Book Title */}
+        <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span>{book.data.title}</span>
+          <a href={`https://wikimint.com/books/${book.slug}`} itemprop="item">
+            <span itemprop="name" class="text-wmblue sr-only">{book.data.title}</span>
+          </a>
+          <meta itemprop="position" content="4" />
+        </span>
+      
+      </nav>
+      
+</div>
+</div>
+
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 max-w-7xl mx-auto mb-20">
+      <div class="col-span-12 md:col-span-5">
+        <img  loading="lazy" width="350" height="300" src={`/assets/images/books/${book.data.image}`} alt={book.data.alt} />
+      </div>
+  
+      <div class="col-span-12 md:col-span-7">
+        <h1>{book.data.h1}</h1>
+        <p class="mb-5"><strong>Author:</strong> {book.data.author} | <strong>Pages:</strong> {book.data.pages} | <strong>Category:</strong> {book.data.category}</p>
+    
+        <p>{book.data.summary}</p>
+
+        <div class="flex gap-4 mt-6">
+          <button
+          id="readBook"
+          class="btn-ol"
+                >
+          Read Online
+                </button>
+          <button
+          id="downloadBook"
+          class="btn">Download eBook
+          </button>
+        </div>
+      
+
+      </div>
+    </div>
+
+
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-20 max-w-7xl mx-auto">
+      <main class="col-span-12 md:col-span-7">
+        <article id="content" class="prose lg:prose-xl max-w-none">
+          <Content /> 
+
+
+          {book.data.faq && book.data.faq.length > 0 && (
+            <section class="my-8">
+              <h2>Frequently Asked Questions</h2>
+          
+              <div class="numbered-h3 faq">
+                {/* First 6 FAQ with schema markup */}
+                <div itemscope itemtype="https://schema.org/FAQPage">
+                  {book.data.faq.slice(0, 6).map((item: { q: string; a: string }) => (
+                    <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                      <div itemprop="name">
+                        <h3>{item.q}</h3>
+                      </div>
+                      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+
+                          {item.a.match(/<\/?[a-z][\s\S]*>/i) ? (
+                              <div set:html={item.a}></div>
+                            ) : (
+                              <p set:html={item.a}></p>
+                            )}
+                          </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+          
+                {/* Remaining FAQ (no schema) */}
+                {book.data.faq.length > 6 && (
+                  book.data.faq.slice(6).map((item: { q: string; a: string }) => (
+                    <div>
+                      <h3>{item.q}</h3>
+                      {item.a.match(/<\/?[a-z][\s\S]*>/i) ? (
+                          <div set:html={item.a}></div>
+                        ) : (
+                          <p set:html={item.a}></p>
+                        )}
+                    </div>
+                  ))
+                )}
+              </div>
+            </section>
+          )}
+
+
+        </article>
+
+        {/* Related Posts */}
+        {relatedBooks.length > 0 && (
+          <section class="my-10 not-prose">
+            <h2 class="text-xl font-semibold mb-4">
+              Related Books Under {book.data.category}
+            </h2>
+            <ul class="space-y-3">
+              {relatedBooks.map((rel) => (
+                <li>
+                  <a
+                    href={`/books/${rel.slug}`}
+                    class="text-wmblue hover:underline"
+                  >
+                    {rel.data.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+        
+
+      </main>
+  
+      <aside class="col-span-12 md:col-span-5">
+        <Sidebar />
+      </aside>
+    </div>
+
+    {/* Modal */}
+<div
+id="pdfModal"
+class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50"
+>
+<div class="bg-white w-full h-full relative flex flex-col">
+  {/* Close button */}
+  <button
+    id="closeModal"
+    class="absolute top-3 right-3 text-black bg-gray-200 rounded-full px-3 py-1 hover:bg-gray-300 z-10"
+  >
+    ✕
+  </button>
+
+  {/* PDF iframe */}
+  <iframe
+    id="pdfViewer"
+    src=""
+    class="w-full h-full rounded-b-lg"
+    frameborder="0"
+  ></iframe>
+</div>
+</div>
+<script src={`/assets/js/book.js?v=${version}`} defer></script>
+</BooksLayout>
+
+

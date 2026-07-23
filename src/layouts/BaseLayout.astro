@@ -1,0 +1,193 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import AuthVisibility from "../components/AuthVisibility.astro";
+
+import "../styles/global.css";
+const { disableAds } = Astro.props;
+const version = Date.now();
+
+const {
+  title = "Wikimint",
+  description = "",
+  image = "/assets/images/business-motivation-marketing-strategy-personal-finance-strategy.webp", 
+  noindex = false,
+} = Astro.props;
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, "");
+const absoluteImage =
+  image?.startsWith("http")
+    ? image
+    : `${siteUrl}${image}`;
+    
+const url = Astro.site
+  ? new URL(Astro.url.pathname.replace(/\.html$/, ""), Astro.site).toString()
+  : undefined;
+
+  const truncate = (str: string, len: number) =>
+  str.length > len ? str.slice(0, len).trim() : str;
+
+  const seoTitle = truncate(title, 90);
+const seoDescription = truncate(description, 180);
+
+const {
+  ogType,
+} = Astro.props;
+const finalOgType = ogType ?? "website";
+
+const {
+  publishedTime,
+  modifiedTime
+} = Astro.props;
+
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{seoTitle}</title>
+    <meta name="description" content={seoDescription} />
+    {url ? (
+      <link rel="canonical" href={url} />
+    ) : null}
+
+<link rel="preload" as="image" href={absoluteImage} />
+<meta name="robots" content={noindex 
+  ? "noindex, nofollow" 
+  : "index, follow, max-image-preview:large"} />
+    
+    <meta name="author" content="Wikimint" />
+
+{/* Open Graph */}
+<meta property="og:type" content={finalOgType} />
+{ogType === "article" && (
+  <>
+  <meta property="article:publisher" content="https://www.facebook.com/wikimintofficial" />
+    <meta property="article:author" content="https://sk.wikimint.com" />
+  </>
+)}
+<meta property="og:site_name" content="Wikimint" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+
+{url ? (
+  <meta property="og:url" content={url} />
+) : null}
+
+<meta property="og:image" content={absoluteImage} />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:type" content="image/webp" />
+
+{/* Twitter Card */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@wikimint" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={absoluteImage} />
+{ogType === "article" && (
+  <>
+<meta name="twitter:creator" content="@selvakumarankri" />
+</>
+)}
+{publishedTime && (
+  <meta
+    property="article:published_time"
+    content={new Date(publishedTime).toISOString()}
+  />
+  )}
+  
+  {modifiedTime && (
+  <meta
+    property="article:modified_time"
+    content={new Date(modifiedTime).toISOString()}
+  />
+  )}
+
+
+{/* ✅ Feed Discovery (Recommended Order) */}
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  title="Wikimint Blog"
+  href="/atom.xml" />
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Wikimint Blog RSS"
+  href="/rss.xml" />
+
+{import.meta.env.PROD && (
+  <>
+  <!-- Google tag (gtag.js) -->
+<script is:inline async data-consent="analytics" type="text/plain" data-src="https://www.googletagmanager.com/gtag/js?id=G-HBNN5MVE39"></script>
+<script is:inline data-consent="analytics" type="text/plain">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HBNN5MVE39');
+</script>
+
+   </>
+  )}
+
+
+{/*<script is:inline src="http://localhost:8080/dist/wm-cookie-consent.min.js"></script>*/}
+
+<script is:inline src="https://cdn.jsdelivr.net/gh/wikimint/wm-cookie-consent@1.0.13/dist/wm-cookie-consent.min.js"></script>
+    
+
+
+
+<slot name="head" />
+
+<meta content="#3079ED" name="theme-color"/>
+<meta content="#3079ED" name="msapplication-navbutton-color"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d6efd">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="format-detection" content="telephone=no" />
+
+<script is:inline>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js")
+      .catch(err => console.error("SW registration failed:", err));
+  }
+</script>
+
+  </head>
+  <body>
+    <AuthVisibility />
+    <script is:inline src={`/assets/js/auth.js?v=${version}`} defer/>
+
+    {/*
+    {import.meta.env.PROD && (
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-M5WJVVQ"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden">
+        </iframe>
+      </noscript>
+      )}
+       */}
+    <slot name="header">
+      <Header />
+  </slot>   
+    <main>
+      <slot />
+    </main>
+   <script is:inline src={`/assets/js/member.js?v=${version}`} defer/></script>
+    <slot name="footer">
+      <Footer />
+    </slot>
+    <slot name="body-end" />
+  </body>
+</html>

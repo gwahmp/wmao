@@ -1,0 +1,66 @@
+---
+import DummyLayout from "../../layouts/DummyLayout.astro";
+import "../../styles/global.css";
+
+const version = Date.now();
+
+const frontmatter = {
+  title: "LeadsLeap Review 2026: Free Traffic, Marketing Tools & Income Opportunities",
+  description: "Looking for free traffic, email marketing tools, landing pages, link tracking, and online income opportunities? See why I think LeadsLeap is worth trying and whether it's right for you.",
+  image: "/assets/images/blog/money-making-program-earn-money-online.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+  noindex:true,
+};
+---
+
+<DummyLayout
+    title="Members">
+<div class="max-w-[500px] mx-auto p-5">
+
+    <a href="/">
+
+        <img
+            width="150"
+            height="25"
+            src="/assets/images/wikimint-logo-200x46.webp"
+            class="mt-10 mb-5 mx-auto">
+    </a>
+    
+    <fieldset>
+    
+        <legend>
+    
+            Sign in
+    
+        </legend>
+    
+        <div class="space-y-4">
+ 
+    <div id="googleButton"></div>
+    
+    <div
+        id="createBox"
+        style="display:none"
+    >
+        <p>
+            No account found.
+            Create one?
+        </p>
+    
+        <button
+            id="createAccount"
+        >
+            Create Account
+        </button>
+    </div>
+    
+    <p class="text-sm text-gray-600">By signing in or creating an account, you agree to our <a target="_blank" href="/legal#terms" class="text-sm text-wmblue">Terms of Service</a> and acknowledge that you have read our <a target="_blank" href="/legal#privacy" class="text-sm text-wmblue">Privacy Policy.
+    </p>
+        </div>
+    
+    </fieldset>
+</div>
+<script is:inline src="/assets/js/google-login.js" defer></script>
+
+</DummyLayout>

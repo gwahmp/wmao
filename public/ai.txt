@@ -1,0 +1,16 @@
+# ai.txt for Wikimint - https://wikimint.com
+
+# Site information
+title: Wikimint - Personal Finance, Business, Marketing & Money
+homepage: https://wikimint.com
+sitemap: https://wikimint.com/sitemap.xml
+
+# AI crawler permissions
+allow: /
+disallow: /privacy
+disallow: /terms
+disallow: /search
+
+# Guidance for AI use
+preferred_use: Content may be used in AI summaries, search, and training with attribution to "Wikimint".
+prohibited_use: Do not misrepresent content as financial advice. For educational purposes only.

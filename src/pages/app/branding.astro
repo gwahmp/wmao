@@ -1,0 +1,924 @@
+---
+import MemberLayout from "../../layouts/MemberLayout.astro";
+const version = Date.now();
+
+const frontmatter = {
+  title: "Manage Your Public Profile | Wikimint Marketing Platform",
+  description: "Update your Wikimint public profile by managing your description, website, social links, recommended resources, and profile information. Keep your profile current, improve visitor engagement, and manage your online presence from one place.",
+  image: "/assets/images/others/manage-public-profile-wikimint-marketing-platform.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+  disableAds: true,
+};
+---
+
+<MemberLayout frontmatter={frontmatter}>
+
+<div class="mo mb-10">
+<div id="profileForm">
+
+    <div class="space-y-8">
+
+        <!-- Basic Information -->
+        <fieldset>
+        <legend>Basic Information</legend>
+
+            
+    
+                <div class="space-y-5">
+    
+                    <div>
+    
+                        <label class="block mb-2 font-medium">
+    
+                            User ID
+    
+                        </label>
+    
+                        <input
+                            id="userid"
+                            type="text"
+                            readonly disabled
+                            class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+                        >
+    
+                    </div>
+    
+                    <div>
+    
+                        <label class="block mb-2 font-medium">
+    
+                            Email
+    
+                        </label>
+    
+                        <input
+                            id="email"
+                            type="email"
+                            readonly disabled
+                            class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+                        >
+    
+                    </div>
+    
+                    <div>
+    
+                        <label class="block mb-2 font-medium">
+    
+                            Full Name <span class="text-red-500">*</span>
+    
+                        </label>
+    
+                        <input
+                            id="name"
+                            maxlength="100"
+                            class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+                        >
+    
+                    </div>
+    
+                    <div>
+    
+                        <label class="block mb-2 font-medium">
+    
+                            Professional Headline
+    
+                        </label>
+    
+                        <input
+                            id="headline"
+                            maxlength="100"
+                            placeholder="Web Developer | SEO Specialist"
+                            class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+                        >
+    
+                    </div>
+    
+                </div>
+    
+
+    
+        </fieldset>
+        <!-- About Me -->
+
+<fieldset>
+<legend>About Me</legend>
+
+    <div class="flex justify-between items-center mb-6">
+
+      
+
+        <span
+            id="descriptionCount"
+            class="text-sm text-gray-500"
+        >
+            0 / 1000
+        </span>
+
+    </div>
+
+    <textarea
+        id="description"
+        rows="8"
+        maxlength="1000"
+        placeholder="Tell visitors about yourself, your experience, expertise and what you do."
+        class="w-full border border-gray-300 bg-gray-50 px-4 py-3 resize-y"
+    ></textarea>
+
+    <p class="mt-3 text-sm text-gray-500">
+
+        Plain text only. HTML and links are not allowed.
+
+    </p>
+
+</fieldset>
+
+
+
+<fieldset>
+    <legend>Profile Visibility</legend>
+    <div class="form-group">
+
+        <label for="profile_visibility">
+    
+            Profile Visibility
+    
+        </label>
+    
+        <select id="profile_visibility" class="px-4 py-1 bg-gray-50 border border-gray-300">
+    
+            <option value="public">
+    
+                Public
+    
+            </option>
+    
+            <option value="private">
+    
+                Private
+    
+            </option>
+    
+        </select>
+    
+        <small>
+    
+            <p>Public profiles are visible to visitors. Private profiles are hidden.</p>
+    
+        </small>
+    
+    </div>
+    </fieldset>
+
+
+
+
+<fieldset>
+    <legend>Professional Category</legend>
+    <div class="form-group">
+
+        <label for="profile_category">
+    
+            Professional Category
+    
+        </label>
+    
+        <select id="profile_category"  class="px-4 py-1 bg-gray-50 border border-gray-300">
+    
+            <option value="professional">Professional</option>
+    
+            <option value="entrepreneur">Entrepreneur</option>
+    
+            <option value="freelancer">Freelancer</option>
+    
+            <option value="business-owner">Business Owner</option>
+    
+            <option value="digital-marketer">Digital Marketer</option>
+    
+            <option value="software-developer">Software Developer</option>
+    
+            <option value="consultant">Consultant</option>
+    
+            <option value="content-creator">Content Creator</option>
+    
+            <option value="educator">Educator / Trainer</option>
+    
+            <option value="creative-professional">Creative Professional</option>
+    
+        </select>
+    
+    </div>
+    
+    </fieldset>
+
+
+
+<!-- Business Information -->
+<fieldset>
+<legend>Business Information</legend>
+
+    <div class="space-y-6">
+
+        <!-- Company -->
+
+        <div>
+
+            <label class="block mb-2 font-medium">
+
+                Company
+
+            </label>
+
+            <input
+                id="company"
+                type="text"
+                maxlength="100"
+                placeholder="Company or Business Name"
+                class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+            >
+
+        </div>
+
+        <!-- Website -->
+
+        <div>
+
+            <label class="block mb-2 font-medium">
+
+                Website
+
+            </label>
+
+            <input
+                id="website"
+                type="url"
+                maxlength="200"
+                placeholder="https://example.com"
+                class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+            >
+
+        </div>
+
+        <!-- City / State -->
+
+        <div>
+
+            <label class="block mb-2 font-medium">
+
+                City / State
+
+            </label>
+
+            <input
+                id="location"
+                type="text"
+                maxlength="100"
+                placeholder="Chennai, Tamil Nadu"
+                class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+            >
+
+        </div>
+
+        <!-- Country -->
+
+        <div>
+
+            <label class="block mb-2 font-medium">
+
+                Country
+
+            </label>
+
+            <select
+                id="country"
+                class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+            >
+
+                <option value="">
+                    Select Country
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+</fieldset>
+
+
+
+<!-- Services & Skills -->
+<fieldset>
+    <legend>Services & Skills</legend>
+    
+        <div class="space-y-6">
+    
+            <!-- Services -->
+    
+            <div>
+    
+                <label class="block mb-2 font-medium">
+    
+                    Services
+    
+                </label>
+    
+                <textarea
+                    id="services"
+                    rows="3"
+                    maxlength="500"
+                    placeholder="SEO Consulting, Website Development, Graphic Design"
+                    class="w-full px-4 py-1 bg-gray-50 border border-gray-300 resize-y"
+                ></textarea>
+    
+                <p class="mt-2 text-sm text-gray-500">
+    
+                    Separate each service with a comma.
+    
+                </p>
+    
+            </div>
+    
+            <!-- Skills -->
+    
+            <div>
+    
+                <label class="block mb-2 font-medium">
+    
+                    Skills
+    
+                </label>
+    
+                <textarea
+                    id="skills"
+                    rows="3"
+                    maxlength="500"
+                    placeholder="SEO, Astro, JavaScript, Tailwind CSS"
+                    class="w-full px-4 py-1 bg-gray-50 border border-gray-300 resize-y"
+                ></textarea>
+    
+                <p class="mt-2 text-sm text-gray-500">
+    
+                    Separate each skill with a comma.
+    
+                </p>
+    
+            </div>
+    
+        </div>
+    
+    </fieldset>
+
+
+
+
+
+
+<!-- Social & Professional Links -->
+<fieldset>
+<legend>Social & Professional Links</legend>
+
+<div class="space-y-6">
+
+    <!-- Facebook -->
+
+    <div>
+
+        <label class="block mb-2 font-medium">
+
+            Facebook
+
+        </label>
+
+        <input
+            id="facebook"
+            type="url"
+            maxlength="255"
+            placeholder="https://facebook.com/username"
+            class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+        >
+
+    </div>
+
+    <!-- LinkedIn -->
+
+    <div>
+
+        <label class="block mb-2 font-medium">
+
+            LinkedIn
+
+        </label>
+
+        <input
+            id="linkedin"
+            type="url"
+            maxlength="255"
+            placeholder="https://linkedin.com/in/username"
+            class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+        >
+
+    </div>
+
+    <!-- GitHub -->
+
+    <div>
+
+        <label class="block mb-2 font-medium">
+
+            GitHub
+
+        </label>
+
+        <input
+            id="github"
+            type="url"
+            maxlength="255"
+            placeholder="https://github.com/username"
+            class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+        >
+
+    </div>
+
+    <!-- YouTube -->
+
+    <div>
+
+        <label class="block mb-2 font-medium">
+
+            YouTube
+
+        </label>
+
+        <input
+            id="youtube"
+            type="url"
+            maxlength="255"
+            placeholder="https://youtube.com/@channel"
+            class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+        >
+
+    </div>
+
+    <!-- X -->
+
+    <div class="md:col-span-2">
+
+        <label class="block mb-2 font-medium">
+
+            X (Twitter)
+
+        </label>
+
+        <input
+            id="twitter"
+            type="url"
+            maxlength="255"
+            placeholder="https://x.com/username"
+            class="w-full px-4 py-1 bg-gray-50 border border-gray-300"
+        >
+
+    </div>
+
+</div>
+
+</fieldset>
+
+
+
+   
+
+
+
+<!-- Promotional Links -->
+<fieldset>
+    <legend>Promotional Links</legend>
+
+    <p class="text-sm text-gray-500">
+
+        Maximum 20 links
+
+    </p>
+
+
+
+    <input
+        id="linkTitle"
+        type="text"
+        maxlength="100"
+        placeholder="Link Title"
+        class="px-4 py-1 bg-gray-50 border border-gray-300 w-full mb-3"
+    >
+
+    <input
+        id="linkUrl"
+        type="url"
+        maxlength="500"
+        placeholder="https://..."
+        class="px-4 py-1 bg-gray-50 border border-gray-300 w-full"
+    >
+
+
+
+
+    <button
+        id="addLinkBtn"
+        type="button"
+        class="btn bg-gray-500 w-full mt-3 border border-gray-500"
+    >
+
+        + Add Link
+
+    </button>
+
+<p class="text-sm text-gray-500 mt-3">
+
+    Promote your website, portfolio, products, blog, affiliate offers or other important pages.
+
+</p>
+
+<div
+    id="linksList"
+    class="mt-6 space-y-3"
+>
+
+    <div class="text-gray-500">
+
+        No promotional links added.
+
+    </div>
+
+</div>
+
+    </fieldset>
+    
+
+
+
+
+
+
+<!-- Sticky Action Bar -->
+
+<div
+    class="sticky bottom-0 z-40 bg-white border-t shadow-lg mt-10"
+>
+
+    <div
+        class="bg-gray-100 max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4"
+    >
+
+        <div>
+
+            <span class="text-lead font-semibold">
+
+                Manage Profile
+
+            </span>
+
+            <p
+                id="saveStatus"
+                class="text-sm text-gray-500"
+            >
+
+                Unsaved changes
+
+            </p>
+
+        </div>
+
+        <div
+            class="flex gap-3"
+        >
+
+            <button
+                id="resetProfileBtn"
+                type="button"
+                class="btn-ol"
+            >
+
+                Reset
+
+            </button>
+
+            <button
+                id="saveProfileBtn"
+                type="button"
+                class="btn"
+            >
+
+                Save Profile
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    
+    </div>
+    
+</div>
+
+<script is:inline type="module" src={`/assets/js/manage-profile.js?v=${version}`} defer></script>
+
+
+<h2 id="delete-account">Delete Account</h2>    
+<p>Members can delete their account and can create a new account at anytime. If you create a new account later, you'll be assigned the same user ID and each member's user ID is specific and unique to their respective email address. So, if you have shared your affiliate link anywhere, it still worth if you again create a new account later with the same email.</p>
+<fieldset class="border-red-700">
+
+    <legend class="text-red-900">
+
+        Danger Zone
+
+    </legend>
+
+    <div class="space-y-4">
+
+        <p>Warning! If you delete your account, all your profile data, configurations, website properties, affiliates, referrals, earnings, rewards, everything will be permenantly deleted. You can again create your account later anytime but, you'll start it from zero.</p>
+
+        <button
+            id="delete"
+            class="
+                btn bg-red-700 border-red-700 text-white float-right
+            ">
+
+            Delete Account
+
+        </button>
+
+    </div>
+
+</fieldset>
+</div>
+
+<article class="prose lg:prose-xl max-w-none">
+
+<h1>How to Maintain and keep Your Personal Branding Upated</h1>
+
+<p>Your public profile represents you wherever you share it. Keeping it complete and up to date helps visitors understand who you are, what you offer, and how they can connect with you. A well-maintained profile also supports your marketing activities by presenting accurate information across every platform where your profile link is shared.</p>
+
+<button class="w-full btn login go">
+    Promote Your Personal Brand
+  </button>
+
+  <img  loading="lazy" src="/assets/images/others/manage-public-profile-wikimint-marketing-platform.webp" alt="Illustration of managing a public marketing profile with profile information, website links, social media, email marketing, analytics, and personal branding on the Wikimint Marketing Platform." title="Manage Your Public Profile | Wikimint Marketing Platform" class="w-full" />
+
+
+<p>This page allows you to manage every important part of your profile from one place. Whether you want to update your description, change your website, add recommended links, or connect your social accounts, you can do it here without editing multiple pages.</p>
+
+<h2>Create a Better First Impression</h2>
+
+<p>People often decide within seconds whether they want to continue reading a profile. A complete profile makes that decision easier.</p>
+
+<p>Your profile should clearly explain:</p>
+
+<ul>
+    <li>Who you are</li>
+    <li>What you do</li>
+    <li>Your professional interests</li>
+    <li>Your business or website</li>
+    <li>Ways to connect with you</li>
+</ul>
+
+<p>Keeping this information current helps visitors feel confident when interacting with your content.</p>
+
+<h2>Write a Meaningful Profile Description</h2>
+<h3>Tell Your Story Clearly</h3>
+
+<p>Your profile description is one of the most important sections on your page. Use it to introduce yourself, explain your experience, and describe what visitors can expect.</p>
+
+<p>Avoid writing only a few words. Instead, provide useful information that helps people understand your background and interests.</p>
+
+<p>Updating your description regularly keeps your profile relevant as your business grows.</p>
+
+<h2>Keep Your Website Information Current</h2>
+
+<p>If your website changes, remember to update it here.</p>
+
+<p>Your primary website often receives the most attention from visitors, so make sure it points to the page you want people to visit first.</p>
+
+<p>Whether you promote a business website, blog, portfolio, or online store, keeping this link accurate improves the visitor experience.</p>
+
+<h2>Organize Your Recommended Links</h2>
+<h3>Share More Than One Resource</h3>
+
+<p>Your recommended links section gives you the flexibility to promote several resources from a single profile.</p>
+
+<p>You can organize links for:</p>
+
+<ul>
+    <li>Products</li>
+    <li>Services</li>
+    <li>Blogs</li>
+    <li>Online tools</li>
+    <li>Affiliate offers</li>
+    <li>Educational resources</li>
+</ul>
+
+<p>Review these links from time to time and remove anything that is no longer useful.</p>
+
+<h2>Connect Your Social Profiles</h2>
+
+<p>Visitors often prefer following creators through social media before making future decisions.</p>
+
+<p>Adding your important social accounts makes it easier for people to stay connected with your latest updates.</p>
+
+<p>Keep only the profiles you actively use so visitors always reach your current accounts.</p>
+
+<h2>Upload a Professional Profile Photo</h2>
+
+<p>A clear profile photo helps visitors recognize you across different platforms.</p>
+
+<p>Using the same photo on your website and social media accounts also creates consistency, making your online presence easier to remember.</p>
+
+<h2>Review Your Profile Analytics</h2>
+<h3>Learn From Visitor Activity</h3>
+
+<p>Your dashboard provides useful information about your public profile.</p>
+
+<p>Checking your analytics regularly helps you understand how visitors interact with your page and whether your updates are improving engagement.</p>
+
+<p>Small improvements made over time often produce better long-term results.</p>
+
+<h2>Prepare Your Profile Before Sharing</h2>
+
+<p>Before sharing your profile link, take a few moments to review every section.</p>
+
+<p>A quick checklist includes:</p>
+
+<ul>
+    <li>Profile photo</li>
+    <li>Description</li>
+    <li>Website</li>
+    <li>Recommended links</li>
+    <li>Social profiles</li>
+    <li>Contact information</li>
+</ul>
+
+<p>A complete profile creates a better experience for every visitor.</p>
+
+<h2>Keep Your Profile Active</h2>
+
+<p>Your business changes over time, and your profile should change with it.</p>
+
+<p>Whenever you launch a new website, publish a new product, change your business focus, or join another social platform, return here and update your profile.</p>
+
+<p>An active profile helps visitors receive accurate information whenever they visit.</p>
+
+<h2>Make Every Visit Count</h2>
+
+<p>Your public profile can become one of the most valuable pages you own.</p>
+
+<p>It brings together your personal introduction, website, recommendations, social profiles, and marketing opportunities in one location. Spending a few minutes updating your profile today can continue benefiting your online presence long after the changes are published.</p>
+
+<section id="faq" class="hr bg-white">
+
+    <h2>
+      Frequently Asked Questions
+    </h2>
+
+ 
+
+
+
+          
+          <div class="acc space-y-4">
+
+            <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q1" checked>
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q1" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Why should I keep my public profile updated?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p  itemprop="text">
+                        Your profile represents you wherever it is shared. Updating your information helps visitors see your latest website, business details, social profiles, and recommendations. A current profile creates a better experience and gives people accurate information every time they visit.                    </p>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q2">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q2" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">How long should my profile description be?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                        Write enough to explain who you are, what you do, and what visitors can expect. A thoughtful description provides more value than only a few words and helps people understand your background before exploring your website or recommended links.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q3">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q3" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Can I change my website whenever I want?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                        Yes. You can update your primary website whenever necessary. If you launch a new project or change your business website, updating your profile ensures visitors always reach the correct destination without needing to search elsewhere.                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q4">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q4" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Why should I add recommended links?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                        Recommended links allow you to organize important resources on one page. Visitors can quickly access products, services, blogs, affiliate offers, or useful tools without leaving your profile to search for additional information.                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q5">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q5" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Should I connect my social media accounts?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                        Yes. Connecting your active social profiles makes it easier for visitors to continue following your work. It also helps create consistency across different platforms while giving people more ways to interact with you.                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <input type="radio" name="acc" id="q6">
+              <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                <label for="q6" class="acc-title">
+                  <h3 itemprop="name" class="text-lg">Does my profile photo make a difference?</h3>
+                </label>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                    <p itemprop="text">
+                        A professional profile photo helps visitors recognize you and creates a stronger first impression. Using the same image across your online accounts also makes your personal brand more consistent and easier to remember.                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q7">
+            <label for="q7" class="acc-title">
+              <h3 class="text-lg">How often should I review my profile?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                    Review your profile whenever your business changes or you publish new content. Regular updates help remove outdated information and ensure visitors always receive your latest details, links, and recommendations.                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q8">
+            <label for="q8" class="acc-title">
+              <h3 class="text-lg">What can I learn from profile analytics?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                    Analytics help you understand how your profile performs over time. Reviewing visitor activity allows you to identify trends and make informed improvements that support better engagement with your profile.                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q9">
+            <label for="q9" class="acc-title">
+              <h3 class="text-lg">What should I check before sharing my profile?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                    Verify that your description, website, profile photo, recommended links, and social profiles are accurate. A complete profile provides visitors with useful information and encourages them to continue exploring your content.
+                </p>
+              </div>
+          </div>
+
+          <div class="acc-item">
+            <input type="radio" name="acc" id="q10">
+            <label for="q10" class="acc-title">
+              <h3 class="text-lg">Can my profile support my marketing activities?</h3>
+            </label>
+              <div class="acc-content">
+                <p>
+                    Yes. Your public profile brings together important information, promotional links, and communication opportunities in one place. Keeping it complete makes it easier to introduce yourself, share your work, and connect with people interested in what you offer.                </p>
+              </div>
+          </div>
+          </div>
+          
+        </div>
+
+
+  </section>
+</article>
+</MemberLayout>

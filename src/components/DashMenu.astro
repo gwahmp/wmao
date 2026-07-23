@@ -1,0 +1,236 @@
+
+<aside
+    id="sidebar"
+    class="
+        bg-white
+        border-r
+        flex
+        flex-col
+        group
+
+        md:w-64
+        md:h-screen
+        md:overflow-hidden
+    ">
+
+    <!-- sticky header -->
+
+    <div
+        class="
+        fixed md:sticky top-0
+            z-10
+
+
+            bg-white
+            border-b
+
+            px-6
+            py-2
+            min-h-[60px]
+
+            flex
+            justify-between
+            items-center
+
+            w-full 
+            md:w-auto
+        ">
+
+        <a href="/">
+
+            <img
+                width="150"
+                height="25"
+                src="/assets/images/wikimint-logo-200x46.webp">
+
+        </a>
+
+        <button
+    id="openMenu"
+    class="md:hidden text-2xl">
+
+    ☰
+
+</button>
+
+<button
+    id="closeMenu"
+    class="md:hidden hidden">
+
+    ✕
+
+</button>
+
+    </div>
+
+    <!-- mobile hidden by default -->
+    <div class="h-[60px] md:hidden"></div>
+    <nav
+        class="
+            dash-menu
+            hidden
+            group-focus-within:block
+
+            md:block
+            md:flex-1
+            md:overflow-y-auto
+
+            space-y-1
+        ">
+
+        <div class="bg-gray-100 px-6 py-4">
+        <div class="mo">
+          <p class="truncate">Hi, <span class="dname">Wikimint member</span></p>
+              <span role="button" class="block my-3 w-full logout text-red-600 py-1 px-3 text-center border border-red-600">Logout</span>
+        </div>
+        <div class="go">
+          <p>Create your brand. Promote yourself lifetime free.</p>
+          <span role="button" class="block my-3 w-full login btn">Login</span>
+        </div>
+
+        </div>
+
+            <div class="space-y-3 pt-3 go">
+              <a class="active" href="/app">Marketing Platform</a>
+              <a href="/profile">Create Profile</a>
+              <a href="/app/branding">Personal Branding</a>
+            </div>
+
+        <div class="acc-menu mo mt-0">
+    
+            <div class="acc-menu-item">
+              <input type="checkbox" name="acc" id="m1" checked>
+                <label for="m1" class="acc-menu-title">
+                  <span>Account</span>
+                </label>
+                <div class="acc-menu-content">
+                    <a class="active" data-menu href="/app">Dashboard</a>
+                    <a href="/profile" data-menu="" class="murl" target="_blank">Public Profile</a>   
+                    <a href="/app/branding" data-menu="">Manage Profile</a> 
+                  </div>
+            </div>
+          
+            <div class="acc-menu-item">
+              <input type="checkbox" name="acc" class="menu-group" id="m2">
+                <label for="m2" class="acc-menu-title">
+                  <span>Earnings</span>
+                </label>
+                <div class="acc-menu-content">
+                  <span class="sub-group">Rewards & Bonuses</span>
+                  <a href="/app/bonus-rewards#daily-login" data-menu="bonus-rewards#daily-login">Daily Login</a>
+                  <a href="/app/bonus-rewards#daily-activity" data-menu="bonus-rewards#daily-activity">Daily Activity</a>
+                  <a href="/app/bonus-rewards#achievements" data-menu="bonus-rewards#achievements">Achievements</a>
+                  <a href="/app/bonus-rewards#milestones" data-menu="bonus-rewards#milestones">Milestones</a>
+                  <a href="/app/bonus-rewards#referral-bonuses" data-menu="bonus-rewards#referral-bonuses">Referral Bonuses</a>
+                  <a href="/app/bonus-rewards#special-events" data-menu="bonus-rewards#special-events">Special Events</a>
+
+                    <span class="sub-group">Publisher Program</span>
+                    <a class="uc" href="#uc" data-menu="">Publisher Dashboard</a>
+                    <a class="uc" href="#uc" data-menu="">Ad Units</a>
+                    <a class="uc" href="#uc" data-menu="">Earnings</a>
+                    
+                    <span class="sub-group">Growth Pool</span>
+                    <a class="uc" href="#uc" data-menu="">Overview</a>
+                    <a class="uc" href="#uc" data-menu="">Growth Market</a>
+                    <a class="uc" href="#uc" data-menu="">Buy Units</a>
+                    <a class="uc" href="#uc" data-menu="">Sell Units</a>
+                    <a class="uc" href="#uc" data-menu="">My Portfolio</a>
+                    <a class="uc" href="#uc" data-menu="">Market History</a>
+                    <a class="uc" href="#uc" data-menu="">Leaderboard</a>
+                    <a class="uc" href="#uc" data-menu="">Learn</a>
+
+                    <span class="sub-group">Gig Rewards</span>
+                    <a class="uc" href="#uc" data-menu="">Available Tasks</a>
+                    <a class="uc" href="#uc" data-menu="">Completed Tasks</a>
+                    <a class="uc" href="#uc" data-menu="">Earnings</a>
+
+                    <span class="sub-group">Affiliate Center</span>
+                    <a class="uc" href="#uc" data-menu="">Affiliate Dashboard</a>
+                    <a class="uc" href="#uc" data-menu="">Referral Links</a>
+                    <a class="uc" href="#uc" data-menu="">Promotional Materials</a>
+                    <a class="uc" href="#uc" data-menu="">Commission History</a>
+
+                    <span class="sub-group">Referral Program</span>
+                    <a class="uc" href="#uc" data-menu="">Invite Friends</a>
+                    <a class="uc" href="#uc" data-menu="">Referral Tree</a>
+                    <a class="uc" href="#uc" data-menu="">Referral Earnings</a>
+                    <a class="uc" href="#uc" data-menu="">Leaderboard</a>
+                  </div>
+            </div>
+
+            <div class="acc-menu-item">
+              <input type="checkbox" name="acc" id="m3">
+                <label for="m3" class="acc-menu-title">
+                  <span>Marketing Hub</span>
+                </label>
+                  <div class="acc-menu-content">
+                    <span class="sub-group">Funnel Marketing</span>
+                    <a class="uc" href="#uc" data-menu="">Funnel Builder</a>
+                    <a class="uc" href="#uc" data-menu="">Landing Pages</a>
+                    <a class="uc" href="#uc" data-menu="">Splash Pages</a>
+                    <a class="uc" href="#uc" data-menu="">Lead Capture Pages</a>
+                    <a class="uc" href="#uc" data-menu="">Rotators</a>
+                    <a class="uc" href="#uc" data-menu="">Short Links</a>
+                    <a class="uc" href="#uc" data-menu="">QR Codes</a>
+
+                    <span class="sub-group">Email Marketing</span>
+                    <a class="uc" href="#uc" data-menu="">Email Broadcast</a>
+                    <a class="uc" href="#uc" data-menu="">Follow-up Series</a>
+                    <a class="uc" href="#uc" data-menu="">Email Templates</a>
+                    <a class="uc" href="#uc" data-menu="">Lead Lists</a>
+
+                    <span class="sub-group">Social Media Marketing</span>
+                    <a class="uc" href="#uc" data-menu="">Social Sharing</a>
+                    <a class="uc" href="#uc" data-menu="">Social Scheduler</a>
+                    <a class="uc" href="#uc" data-menu="">Bio Links</a>
+                    <a class="uc" href="#uc" data-menu="">Profile Promotion</a>
+
+                    <span class="sub-group">Content Marketing</span>
+                    <a class="uc" href="#uc" data-menu="">Article Directory</a>
+                    <a class="uc" href="#uc" data-menu="">Business Directory</a>
+                    <a class="uc" href="#uc" data-menu="">Press Release</a>
+                    <a class="uc" href="#uc" data-menu="">PDF Sharing</a>
+                    <a class="uc" href="#uc" data-menu="">Video Promotion</a>
+
+                    <span class="sub-group">Advertising</span>
+                    <a class="uc" href="#uc" data-menu="">Website Traffic</a>
+                    <a class="uc" href="#uc" data-menu="">Banner Ads</a>
+                    <a class="uc" href="#uc" data-menu="">Text Ads</a>
+                    <a class="uc" href="#uc" data-menu="">Safe Lists</a>
+                    <a class="uc" href="#uc" data-menu="">Solo Ads</a>
+                    
+                    <span class="sub-group">Freelance Marketplace</span>
+                    <a class="uc" href="#uc" data-menu="">Find Freelancers</a>
+                    <a class="uc" href="#uc" data-menu="">Offer Services</a>
+                    <a class="uc" href="#uc" data-menu="">Job Listings</a>
+                    <a class="uc" href="#uc" data-menu="">Micro Tasks</a>
+
+                  </div>
+            </div>
+
+                        <div class="acc-menu-item">
+              <input type="checkbox" name="acc" id="m4">
+                <label for="m4" class="acc-menu-title">
+                  <span>Tools & Resources</span>
+                </label>
+                  <div class="acc-menu-content">
+                    <a target="_blank" href="/blog">Blog</a>
+                    <a target="_blank" href="/toolbox">Tools Directory</a>   
+                    <a target="_blank" href="/digital-assets">Digital Assets</a> 
+                    <a target="_blank" href="/products">Utility Tools</a>
+                    {/*<a target="_blank" href="/recommended">Recommended</a>*/}
+                  </div>
+            </div>
+          
+        </div>
+
+
+
+
+
+</div>
+
+
+</nav>
+
+</aside>

@@ -1,0 +1,1277 @@
+---
+import MemberLayout from "../../layouts/MemberLayout.astro";
+const version = Date.now();
+const frontmatter = {
+  title: "App | Wikimint digital growth platform",
+  description: "Access your Wikimint member dashboard to manage your profile, credits, Growth Pool portfolio, marketing tools, referrals, earnings, and account settings from one place.",
+  // canonical: "/about",
+  image: "/assets/images/others/wikimint-all-in-one-marketing-platform.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+  disableAds: true,
+};
+---
+
+<MemberLayout
+frontmatter={frontmatter}>
+
+    <!-- Dashboard Welcome -->
+<section class="mo rounded-xl border border-gray-200 bg-white shadow-sm">
+
+    <div class="flex flex-col gap-6 p-6 lg:flex-row lg:items-center lg:justify-between">
+
+        <!-- Left -->
+        <div>
+
+            <p id="dashboardGreeting"
+               class="text-sm font-medium text-gray-500">
+                Good Evening,
+            </p>
+
+            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 lead">
+
+                Welcome back,
+
+                <span class="dname lead">
+                    Member
+                </span>
+
+                👋
+
+            </h1>
+
+            <p id="dashboardSubtitle"
+               class="mt-3 text-gray-600">
+                Your dashboard is ready.
+            </p>
+
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+
+                <span id="membershipBadge"
+                      class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700">
+
+                    FREE MEMBER
+
+                </span>
+
+                <span class="text-sm text-gray-500">
+
+                    Last login
+
+                    <span id="lastLogin">
+
+                        Just now
+
+                    </span>
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Right -->
+
+        <div class="flex flex-col items-start gap-3 text-left lg:items-end lg:text-right">
+
+            <div>
+
+                <p class="text-sm text-gray-500">
+
+                    Today
+
+                </p>
+
+                <p id="currentDate"
+                   class="mt-1 text-lg font-semibold text-gray-900">
+
+                    Monday,
+                    13 July 2026
+
+                </p>
+
+            </div>
+
+            <div class="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3">
+
+                <p class="text-xs uppercase tracking-wide text-gray-500">
+
+                    Account Status
+
+                </p>
+
+                <p class="mt-1 font-semibold text-green-600">
+
+                    Active
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+Overview Statistics
+======================================================== -->
+
+<section class="mo my-6">
+
+    <div class="grid gap-5 sm:grid-cols-1 xl:grid-cols-2">
+
+        <!-- Credits -->
+
+        <a href="/app"
+            class="group rounded-xl border border-gray-200 bg-white shadow-sm transition hover:border-blue-300 hover:shadow-md">
+
+            <div class="flex items-start justify-between bg-gray-100 px-5">
+
+                <div>
+
+                    <p class="text-sm font-medium text-gray-500">
+
+                        Available Credits
+
+                    </p>
+
+
+
+                </div>
+
+                <div
+                    class="rounded-lg bg-blue-50 p-3 text-blue-600">
+
+                    💳
+
+                </div>
+
+            </div>
+
+            <div
+            class="credits mt-3 text-3xl font-bold text-gray-900 px-5">
+
+            0
+
+    </div>
+            <div
+                class="p-5 flex items-center justify-between">
+
+
+
+                <div
+                    class="creditsChange text-sm text-green-600">
+
+                    +0 today
+
+    </div>
+
+                <span
+                    class="text-sm font-medium text-blue-600 opacity-0 transition group-hover:opacity-100">
+
+                    View →
+
+                </span>
+
+            </div>
+
+        </a>
+
+        <!-- Growth Units -->
+
+        <a href="/app"
+        class="group rounded-xl border border-gray-200 bg-white shadow-sm transition hover:border-blue-300 hover:shadow-md">
+
+            <div class="flex items-start justify-between bg-gray-100 px-5">
+
+                <div>
+
+                    <p class="text-sm font-medium text-gray-500">
+
+                        Growth Units
+
+                    </p>
+
+
+
+                </div>
+
+                <div
+                    class="rounded-lg bg-green-50 p-3 text-green-600">
+
+                    📈
+
+                </div>
+
+            </div>
+
+
+            <div
+            class="growthUnits mt-3 text-3xl font-bold text-gray-900 px-5">
+
+            0
+
+        </div>
+
+            <div
+                class="p-5 flex items-center justify-between">
+
+                <span
+                    class="growthValue text-sm text-green-600">
+
+                    Portfolio $0
+
+                </span>
+
+                <span
+                    class="text-sm font-medium text-blue-600 opacity-0 transition group-hover:opacity-100">
+
+                    View →
+
+                </span>
+
+            </div>
+
+        </a>
+
+        <!-- Portfolio -->
+
+        <a href="/app"
+        class="group rounded-xl border border-gray-200 bg-white shadow-sm transition hover:border-blue-300 hover:shadow-md">
+
+            <div class="flex items-start justify-between bg-gray-100 px-5">
+
+                <div>
+
+                    <p class="text-sm font-medium text-gray-500">
+
+                        Portfolio Value
+
+                    </p>
+
+
+
+                </div>
+
+                <div
+                    class="rounded-lg bg-purple-50 p-3 text-purple-600">
+
+                    💼
+
+                </div>
+
+            </div>
+
+            <div
+            class="portfolioValue mt-3 px-5 text-3xl font-bold text-gray-900">
+
+            $0.00
+
+    </div>
+
+            <div
+                class="p-5 flex items-center justify-between">
+
+                <span
+                    class="portfolioChange text-sm text-green-600">
+
+                    +0%
+
+                </span>
+
+                <span
+                    class="text-sm font-medium text-blue-600 opacity-0 transition group-hover:opacity-100">
+
+                    View →
+
+                </span>
+
+            </div>
+
+        </a>
+
+        <!-- Earnings -->
+
+        <a href="/app"
+        class="group rounded-xl border border-gray-200 bg-white shadow-sm transition hover:border-blue-300 hover:shadow-md">
+
+            <div class="flex items-start justify-between bg-gray-100 px-5">
+
+                <div>
+
+                    <p class="text-sm font-medium text-gray-500">
+
+                        Earnings
+
+                    </p>
+
+
+                </div>
+
+                <div
+                    class="rounded-lg bg-yellow-50 p-3 text-yellow-600">
+
+                    💰
+
+                </div>
+
+            </div>
+
+            
+            <div
+            class="earnings mt-3 px-5 text-3xl font-bold text-gray-900">
+
+            $0.00
+
+        </div>
+
+            <div
+                class="p-5 flex items-center justify-between">
+
+                <span
+                    class="pending text-sm text-gray-500">
+
+                    Pending $0
+
+                </span>
+
+                <span
+                    class="text-sm font-medium text-blue-600 opacity-0 transition group-hover:opacity-100">
+
+                    View →
+
+                </span>
+
+            </div>
+
+        </a>
+
+        <!-- Referrals -->
+
+        <a href="/app"
+        class="group rounded-xl border border-gray-200 bg-white shadow-sm transition hover:border-blue-300 hover:shadow-md">
+
+            <div class="flex items-start justify-between bg-gray-100 px-5">
+
+                <div>
+
+                    <p class="text-sm font-medium text-gray-500">
+
+                        Referrals
+
+                    </p>
+
+
+
+                </div>
+
+                <div
+                    class="rounded-lg bg-indigo-50 p-3 text-indigo-600">
+
+                    👥
+
+                </div>
+
+            </div>
+
+            <div
+            class="referrals mt-3 px-5 text-3xl font-bold text-gray-900">
+
+            0
+
+        </div>
+
+            <div
+                class="p-5 flex items-center justify-between">
+
+                <span
+                    class="proReferrals text-sm text-gray-500">
+
+                    0 Pro Members
+
+                </span>
+
+                <span
+                    class="text-sm font-medium text-blue-600 opacity-0 transition group-hover:opacity-100">
+
+                    View →
+
+                </span>
+
+            </div>
+
+        </a>
+
+        <!-- Membership -->
+
+        <a href="/app"
+        class="group rounded-xl border border-gray-200 bg-white shadow-sm transition hover:border-blue-300 hover:shadow-md">
+
+            <div class="flex items-start justify-between bg-gray-100 px-5">
+
+                <div>
+
+                    <p class="text-sm font-medium text-gray-500">
+
+                        Membership
+
+                    </p>
+
+
+
+                </div>
+
+                <div
+                    class="rounded-lg bg-gray-100 p-3">
+
+                    ⭐
+
+                </div>
+
+            </div>
+
+            <div
+            class="membership mt-6 px-5 text-3xl font-bold text-gray-900">
+
+            FREE
+
+        </div>
+
+            <div
+                class="p-5 flex items-center justify-between">
+
+                <span
+                    class="membershipExpiry text-sm text-gray-500">
+
+                    Upgrade Available
+
+                </span>
+
+                <span
+                    class="text-sm font-medium text-blue-600 opacity-0 transition group-hover:opacity-100">
+
+                    View →
+
+                </span>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+Quick Actions
+======================================================== -->
+
+<section class="mo my-6">
+
+    <div class="rounded-xl border border-gray-200 bg-white shadow-sm">
+
+        <div class="border-b border-gray-200 bg-gray-100 px-6 py-4">
+
+            <h2 class="text-lg font-semibold text-gray-900">
+
+                Quick Actions
+
+            </h2>
+
+            <p class="mt-1 text-sm text-gray-500">
+
+                Frequently used shortcuts.
+
+            </p>
+
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 p-6 sm:grid-cols-3 bg-gray-50">
+
+            <a href="/app/wallet"
+               class="group rounded-xl border border-gray-200 p-5 transition hover:border-blue-300 bg-white hover:bg-gray-50">
+
+                <div class="text-2xl">💳</div>
+
+                <p class="mt-4 font-semibold text-gray-900">
+
+                    Wallet
+
+                </p>
+
+                <p class="mt-1 text-sm text-gray-500">
+
+                    Credits & earnings
+
+                </p>
+
+            </a>
+
+            <a href="/app/growth-pool"
+               class="group rounded-xl border border-gray-200 p-5 transition hover:border-blue-300 bg-white hover:bg-gray-50">
+
+                <div class="text-2xl">📈</div>
+
+                <p class="mt-4 font-semibold text-gray-900">
+
+                    Growth Pool
+
+                </p>
+
+                <p class="mt-1 text-sm text-gray-500">
+
+                    Buy & sell units
+
+                </p>
+
+            </a>
+
+            <a href="/app/referrals"
+               class="group rounded-xl border border-gray-200 p-5 transition hover:border-blue-300 bg-white hover:bg-gray-50">
+
+                <div class="text-2xl">👥</div>
+
+                <p class="mt-4 font-semibold text-gray-900">
+
+                    Referrals
+
+                </p>
+
+                <p class="mt-1 text-sm text-gray-500">
+
+                    Invite members
+
+                </p>
+
+            </a>
+
+            <a href="/app/withdraw"
+               class="group rounded-xl border border-gray-200 p-5 transition hover:border-blue-300 bg-white hover:bg-gray-50">
+
+                <div class="text-2xl">💰</div>
+
+                <p class="mt-4 font-semibold text-gray-900">
+
+                    Withdraw
+
+                </p>
+
+                <p class="mt-1 text-sm text-gray-500">
+
+                    Request payout
+
+                </p>
+
+            </a>
+
+            <a href="/app/shortlinks"
+               class="group rounded-xl border border-gray-200 p-5 transition hover:border-blue-300 bg-white hover:bg-gray-50">
+
+                <div class="text-2xl">🔗</div>
+
+                <p class="mt-4 font-semibold text-gray-900">
+
+                    Short Links
+
+                </p>
+
+                <p class="mt-1 text-sm text-gray-500">
+
+                    Manage links
+
+                </p>
+
+            </a>
+
+            <a href="/resources"
+               class="group rounded-xl border border-gray-200 p-5 transition hover:border-blue-300 bg-white hover:bg-gray-50">
+
+                <div class="text-2xl">📚</div>
+
+                <p class="mt-4 font-semibold text-gray-900">
+
+                    Resources
+
+                </p>
+
+                <p class="mt-1 text-sm text-gray-500">
+
+                    Guides & tools
+
+                </p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+Dashboard Grid
+======================================================== -->
+{/* 
+<section class="mt-6">
+
+    <div class="grid gap-6 xl:grid-cols-3">
+
+        <!-- LEFT COLUMN -->
+
+        <div class="space-y-6 xl:col-span-2">
+
+            <!-- Recent Activity -->
+
+            <div class="rounded-xl border border-gray-200 bg-white shadow-sm">
+
+                <div class="border-b border-gray-200 px-6 py-4">
+
+                    <h2 class="text-lg font-semibold">
+
+                        Recent Activity
+
+                    </h2>
+
+                </div>
+
+                <div
+                    id="recentActivity"
+                    class="divide-y divide-gray-100">
+
+                </div>
+
+            </div>
+
+            <!-- Recent Transactions -->
+
+            <div class="rounded-xl border border-gray-200 bg-white shadow-sm">
+
+                <div
+                    class="flex items-center justify-between border-b border-gray-200 px-6 py-4">
+
+                    <h2 class="text-lg font-semibold">
+
+                        Recent Transactions
+
+                    </h2>
+
+                    <a
+                        href="/app/wallet"
+
+                        class="text-sm font-medium text-blue-600">
+
+                        View All
+
+                    </a>
+
+                </div>
+
+                <div
+                    id="recentTransactions">
+
+                </div>
+
+            </div>
+
+            <!-- Growth Pool -->
+
+            <div class="rounded-xl border border-gray-200 bg-white shadow-sm">
+
+                <div
+                    class="flex items-center justify-between border-b border-gray-200 px-6 py-4">
+
+                    <h2 class="text-lg font-semibold">
+
+                        Growth Pool
+
+                    </h2>
+
+                    <a
+                        href="/app/growth-pool"
+
+                        class="text-sm font-medium text-blue-600">
+
+                        Portfolio →
+
+                    </a>
+
+                </div>
+
+                <div class="p-6">
+
+                    <div class="grid gap-6 sm:grid-cols-3">
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Unit Price
+
+                            </p>
+
+                            <p
+                                class="growthPrice mt-2 text-3xl font-bold">
+
+                                $1.00
+
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Your Units
+
+                            </p>
+
+                            <p
+                                class="growthOwned mt-2 text-3xl font-bold">
+
+                                0
+
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Portfolio
+
+                            </p>
+
+                            <p
+                                class="growthPortfolio mt-2 text-3xl font-bold">
+
+                                $0
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+
+        <div class="space-y-6">
+
+            <!-- Profile -->
+
+            <div class="rounded-xl border border-gray-200 bg-white shadow-sm">
+
+                <div class="border-b border-gray-200 px-6 py-4">
+
+                    <h2 class="text-lg font-semibold">
+
+                        Your Profile
+
+                    </h2>
+
+                </div>
+
+                <div class="p-6">
+
+                    <div
+                        class="flex items-center gap-4">
+
+                        <img
+
+                            id="profilePhoto"
+
+                            src="/assets/images/avatar.svg"
+
+                            class="h-16 w-16 rounded-full border"
+
+                        >
+
+                        <div>
+
+                            <h3
+                                class="member-name font-semibold">
+
+                                Member
+
+                            </h3>
+
+                            <p
+                                class="member-email text-sm text-gray-500">
+
+                                -
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-6">
+
+                        <div
+                            class="mb-2 flex justify-between">
+
+                            <span
+                                class="text-sm">
+
+                                Profile Completion
+
+                            </span>
+
+                            <span
+                                id="profilePercent">
+
+                                30%
+
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="h-2 rounded-full bg-gray-200">
+
+                            <div
+
+                                id="profileBar"
+
+                                class="h-2 rounded-full bg-blue-600"
+
+                                style="width:30%">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <a
+
+                        href="/app/profile"
+
+                        class="mt-6 inline-flex text-sm font-medium text-blue-600">
+
+                        Complete Profile →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Referral -->
+
+            <div class="rounded-xl border border-gray-200 bg-white shadow-sm">
+
+                <div class="border-b border-gray-200 px-6 py-4">
+
+                    <h2 class="text-lg font-semibold">
+
+                        Referral Link
+
+                    </h2>
+
+                </div>
+
+                <div class="p-6">
+
+                    <input
+
+                        id="referralLink"
+
+                        readonly
+
+                        class="w-full rounded-lg border bg-gray-50 p-3 text-sm"
+
+                        value="https://wikimint.com?r=USERID"
+
+                    >
+
+                    <button
+
+                        id="copyReferral"
+
+                        class="mt-3 w-full rounded-lg bg-blue-600 py-2 text-white">
+
+                        Copy Link
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Announcements -->
+
+            <div class="rounded-xl border border-gray-200 bg-white shadow-sm">
+
+                <div
+                    class="flex items-center justify-between border-b border-gray-200 px-6 py-4">
+
+                    <h2 class="text-lg font-semibold">
+
+                        Announcements
+
+                    </h2>
+
+                    <a
+
+                        href="/announcements"
+
+                        class="text-sm text-blue-600">
+
+                        View All
+
+                    </a>
+
+                </div>
+
+                <div
+                    id="announcementList">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+*/}
+
+    <h1>All-in-one Digital Growth Portal</h1>
+
+    <p>Your dashboard is the central place to manage your Wikimint account and keep track of everything that supports your online business growth. Whether you're a new member or an experienced marketer, you'll find the most important information and tools in one convenient location.</p>
+
+    <img  loading="lazy" src="/assets/images/others/wikimint-all-in-one-marketing-platform.webp" alt="All-in-one digital marketing platform for creating funnels, promoting websites, collecting leads, tracking analytics, earning credits, and growing an online business." title="All-in-One Marketing Platform for Online Business Growth" class="w-full" />
+
+
+<p>At the top of the page, you can quickly review your available credits, Growth Units, earnings, referrals, and membership status. These summary cards give you an instant overview of your account so you always know where you stand.</p>
+
+<p>Use the Workspace section to access the features you use most often. You can create new promotions, manage your wallet, buy or sell Growth Units, generate short links, invite referrals, request withdrawals, and access helpful resources without searching through menus.</p>
+
+<p>The activity area keeps you informed about your recent account actions, including earnings, promotions, transactions, and important updates. Your profile section highlights your completion progress, making it easy to identify information that can strengthen your account and improve your visibility within the community.</p>
+
+<p>Don't forget to share your personal referral link to introduce others to Wikimint. Every successful referral helps expand your network while creating additional earning opportunities.</p>
+
+<p>As new features become available, you'll also find announcements, business resources, tutorials, and practical guides designed to help you make the most of the platform. Checking your dashboard regularly helps you stay informed, monitor your progress, and take advantage of new opportunities as they are introduced.</p>
+
+<p>Whether your goal is generating more traffic, promoting your business, building passive income, or expanding your online presence, your Wikimint dashboard provides the tools and insights needed to move forward with confidence. Make it your starting point each time you sign in and continue building your business one step at a time.</p>
+
+    <section id="faq" class="hr bg-white">
+
+        <h2>
+          Frequently Asked Questions
+        </h2>
+    
+     
+    
+    
+    
+              
+              <div class="acc space-y-4">
+    
+                <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="acc-item">
+                  <input type="radio" name="acc" id="q1" checked>
+                  <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                    <label for="q1" class="acc-title">
+                      <h3 itemprop="name" class="text-lg">What is the Wikimint Marketing Platform?</h3>
+                    </label>
+                      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                        <p  itemprop="text">
+                            The Wikimint Marketing Platform helps members promote their business, products, services, websites, and affiliate offers from one place. Every account includes tools that support online promotion, personal branding, lead generation, and campaign management. Members can build multiple funnels, monitor performance, earn credits through platform activities, and take part in community-based earning opportunities while growing their online presence.
+                        </p>
+                      </div>
+                  </div>
+                </div>
+              
+                <div class="acc-item">
+                  <input type="radio" name="acc" id="q2">
+                  <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                    <label for="q2" class="acc-title">
+                      <h3 itemprop="name" class="text-lg">Why should I complete my public profile?</h3>
+                    </label>
+                      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                        <p itemprop="text">
+                            Your public profile is much more than a personal introduction. It acts as a promotional page that you can share on social media, business cards, messaging apps, email signatures, or anywhere online. Visitors can learn about your business, view your recommended links, follow your social profiles, and join your email list through the integrated opt-in form. Every member receives the same public profile opportunity regardless of membership level.
+                        </p>
+                      </div>
+                  </div>
+                </div>
+    
+                <div class="acc-item">
+                  <input type="radio" name="acc" id="q3">
+                  <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                    <label for="q3" class="acc-title">
+                      <h3 itemprop="name" class="text-lg">What are credits and why are they important?</h3>
+                    </label>
+                      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                        <p itemprop="text">
+                            Credits are one of the key parts of the Wikimint Marketing Platform. They measure your participation and can influence several platform benefits. Credits are used when calculating member rewards, promotional opportunities, referral placement, and other activities that depend on account participation. Staying active and building your credit balance helps your account receive greater exposure across the platform.
+                        </p>
+                      </div>
+                  </div>
+                </div>
+    
+                <div class="acc-item">
+                  <input type="radio" name="acc" id="q4">
+                  <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                    <label for="q4" class="acc-title">
+                      <h3 itemprop="name" class="text-lg">How can I earn credits?</h3>
+                    </label>
+                      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                        <p itemprop="text">
+                            Members earn credits by taking part in approved platform activities and participating in the advertising section. Credits may also increase through pooled earnings that are distributed according to the quality of Wikimint article revenue and each member's credit balance. Regular participation helps build your account over time and increases your eligibility for several platform features and promotional opportunities.
+                        </p>
+                      </div>
+                  </div>
+                </div>
+    
+                <div class="acc-item">
+                  <input type="radio" name="acc" id="q5">
+                  <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                    <label for="q5" class="acc-title">
+                      <h3 itemprop="name" class="text-lg">What benefits do Pro members receive?</h3>
+                    </label>
+                      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                        <p itemprop="text">
+                            Pro members receive additional promotional advantages that help their campaigns reach a larger audience. Their links may appear more frequently within supported rotation areas, giving greater visibility compared to free accounts. Pro membership is intended for members who actively promote products, services, affiliate offers, or business websites and would like additional promotional opportunities while continuing to earn credits.
+                        </p>
+                      </div>
+                  </div>
+                </div>
+    
+                <div class="acc-item">
+                  <input type="radio" name="acc" id="q6">
+                  <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                    <label for="q6" class="acc-title">
+                      <h3 itemprop="name" class="text-lg">What can Free members do on the platform?</h3>
+                    </label>
+                      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                        <p itemprop="text">
+                            Free members have access to many valuable features. They receive a public profile page, can build their personal brand, promote one primary website, add multiple recommended links, display a LeadsLeap email opt-in form, publish website and product reviews with their own affiliate links, earn credits through participation, and qualify for pooled earnings based on their credit balance. Free members may also receive spillover referrals.
+                        </p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q7">
+                <label for="q7" class="acc-title">
+                  <h3 class="text-lg">How does the affiliate program and spillover referral system work?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Every registered member can recommend the Wikimint Marketing Platform and earn referral commissions when eligible. Members who join without a referrer may be assigned as spillover referrals according to platform rules that consider account participation and credit balance. This approach rewards active members while giving both Free and Pro accounts an opportunity to receive additional referrals over time.
+                    </p>
+                  </div>
+              </div>
+    
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q8">
+                <label for="q8" class="acc-title">
+                  <h3 class="text-lg">What types of funnels can I create?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Members can build multiple funnels for different marketing goals. A funnel may promote a landing page, sales page, opt-in page, affiliate offer, personal website, business website, product, service, or another approved destination. Creating separate funnels allows members to organize campaigns for different audiences and measure results more effectively from the dashboard.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q9">
+                <label for="q9" class="acc-title">
+                  <h3 class="text-lg">Can I promote my own websites and affiliate links?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Yes. Members may add one primary website along with multiple recommended links that point to approved websites, products, or affiliate offers. Important social profiles such as Facebook, X, and LinkedIn can also be included on the public profile page. Built-in analytics help members monitor page activity and understand how visitors interact with their profile and promotional links.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q10">
+                <label for="q10" class="acc-title">
+                  <h3 class="text-lg">How can I get the best results from the platform?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        The most successful members keep their profiles complete, update their promotional links regularly, create multiple funnels for different campaigns, remain active in platform activities, and continue building their credit balance. Sharing your public profile across business directories, social platforms, communities, and email communications can increase visibility while helping you make full use of the marketing tools available inside the platform.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q11">
+                <label for="q11" class="acc-title">
+                  <h3 class="text-lg">How can I improve the performance of my advertising campaigns?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Successful campaigns begin with a clear message and a focused destination page. Instead of promoting many offers at once, create separate funnels for individual products, services, or lead generation campaigns. Keep headlines simple, include a clear call to action, and review your campaign performance regularly. Small improvements made over time often produce better long-term results than making many changes at once.
+                    </p>
+                  </div>
+              </div>
+    
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q12">
+                <label for="q12" class="acc-title">
+                  <h3 class="text-lg">What information can I learn from the page analytics?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        The analytics section helps you understand how visitors interact with your public profile and promotional pages. By reviewing visitor activity over time, you can identify which campaigns receive the most attention, which links generate the highest interest, and when your audience is most active. These insights allow you to improve your marketing decisions using actual performance instead of assumptions.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q13">
+                <label for="q13" class="acc-title">
+                  <h3 class="text-lg">Why should I write website and product reviews?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Well-written reviews provide useful information for visitors while helping establish your credibility. Rather than simply placing an affiliate link, explain what a product or website offers, who it may benefit, and why you recommend it. Useful reviews encourage visitors to spend more time on your profile and make informed decisions before following your promotional links.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q14">
+                <label for="q14" class="acc-title">
+                  <h3 class="text-lg">How does the pooled earnings program benefit active members?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        A portion of advertising revenue generated from Wikimint articles is shared with eligible members through the pooled earnings program. Distribution is based on each member's credit balance, encouraging continued participation within the platform. As your credits grow through approved activities, your share of the available earnings may also increase whenever distributions are made.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q15">
+                <label for="q15" class="acc-title">
+                  <h3 class="text-lg">How can I optimize my public profile for better results?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Use a professional profile photo, write a short description that clearly explains what you offer, and keep your contact information current. Add only your most valuable promotional links and remove outdated content whenever necessary. An organized profile makes it easier for visitors to understand your business and increases the likelihood that they will interact with your links or join your mailing list.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q16">
+                <label for="q16" class="acc-title">
+                  <h3 class="text-lg">What is the best way to organize multiple funnels?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Create one funnel for each marketing objective instead of combining everything into a single page. For example, keep separate funnels for lead generation, affiliate products, business services, software recommendations, and personal branding. This approach makes campaign tracking easier and allows you to compare results so future improvements are based on measurable performance.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q17">
+                <label for="q17" class="acc-title">
+                  <h3 class="text-lg">How can I make better use of my public profile outside the platform?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Your public profile is designed to be shared anywhere online. Add it to your social media bios, email signature, blog, forum profile, business directory listings, digital business card, or messaging applications. Keeping a single profile link updated allows visitors to access your latest information without changing links across multiple websites.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q18">
+                <label for="q18" class="acc-title">
+                  <h3 class="text-lg">Does keeping my account active provide additional advantages?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Regular activity helps maintain an up-to-date profile, increases your credit balance through eligible activities, and keeps your promotional content current. Active participation may also improve your opportunities within platform programs that consider member involvement, including pooled earnings and spillover referral placement according to the applicable rules.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q19">
+                <label for="q19" class="acc-title">
+                  <h3 class="text-lg">What are some common mistakes experienced marketers should avoid?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Avoid sending all visitors to the same destination regardless of their interests. Keep your funnels focused, update reviews when products change, remove inactive links, and monitor analytics frequently. A profile containing accurate information and relevant recommendations creates a better experience for visitors and supports stronger long-term campaign performance.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="acc-item">
+                <input type="radio" name="acc" id="q20">
+                <label for="q20" class="acc-title">
+                  <h3 class="text-lg">How can I build a sustainable marketing system with Wikimint?</h3>
+                </label>
+                  <div class="acc-content">
+                    <p>
+                        Use your public profile as the central hub for your online presence, create dedicated funnels for different goals, monitor analytics to measure results, publish helpful reviews, participate consistently to earn credits, and share your profile wherever potential visitors may find it. A consistent approach allows your promotional efforts to continue working together while remaining easy to manage from a single dashboard.
+                    </p>
+                  </div>
+              </div>
+
+
+              </div>
+              
+            </div>
+    
+    
+      </section>
+
+
+{/*
+<script is:inline>
+    const r =
+    new URLSearchParams(
+        location.search
+    ).get('r');
+
+const script =
+    document.createElement(
+        'script'
+    );
+
+script.src =
+    r
+        ? `/assets/js/pub-profile.js?v=${Date.now()}`
+        : `/assets/js/member-home.js?v=${Date.now()}`;
+
+document.body.appendChild(
+    script
+);
+</script>
+*/}
+</MemberLayout>
+
+  
+<script is:inline src={`/assets/js/member-home.js?v=${version}`} defer/></script>

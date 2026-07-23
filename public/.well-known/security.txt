@@ -1,0 +1,7 @@
+Contact: https://wikimint.com/contact
+Expires: 2026-12-31T23:59:59.000Z
+Canonical: https://wikimint.com/.well-known/security.txt
+Preferred-Languages: en
+Policy: https://wikimint.com/legal
+Acknowledgments: https://wikimint.com/legal#security-hall-of-fame
+Hiring: https://wikimint.com/careers

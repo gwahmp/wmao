@@ -1,0 +1,52 @@
+{
+    "routes": [
+        { "pattern": "/(.*)/", "redirect": "/$1", "status": 301 },
+        { "pattern": "/(.*)", "dest": "/$1.html" },
+        {
+        "pattern": "/p/:slug.html",
+        "dest": "/:slug",
+        "status": 301
+      },
+      {
+        "pattern": "/:year/:month/:slug.html",
+        "dest": "/:slug",
+        "status": 301
+      },
+      {
+        "pattern": "/r",
+        "dest": "/recommended",
+        "status": 301
+      },
+      {
+        "pattern": "/ias",
+        "dest": "/insider-advertising-strategies",
+        "status": 301
+      },
+      {
+        "pattern": "/da",
+        "dest": "/digital-assets",
+        "status": 301
+      },
+      {
+        "pattern": "/author/:slug",
+        "dest": "/author/:slug",
+        "status": 200
+      },
+      {
+        "pattern": "/category/:slug",
+        "dest": "/:slug",
+        "status": 301
+      },
+      {
+        "pattern": "/feed",
+        "dest": "/rss.xml",
+        "status": 301
+      },
+      {
+        "pattern": "/robots.txt",
+        "dest": "/robots.txt",
+        "status": 200
+      }
+    ]
+  }
+  

@@ -1,0 +1,92 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const books = await getCollection("books");
+// const books = await Astro.glob('../content/books/*.md');
+
+const frontmatter = {
+  title: "eBooks on Business, Marketing, Money & Success",
+  description: "Explore powerful ebooks on business, marketing & money. Learn proven strategies for success, growth & financial freedom. Start reading today.",
+  image: "/assets/images/business-motivation-marketing-strategy-personal-finance-strategy.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+};
+const version = Date.now();
+---
+
+    <BaseLayout title={frontmatter.title} description={frontmatter.description} image={frontmatter.image}>
+      <Fragment slot="head">
+        <script
+        type="application/ld+json"
+        set:html={JSON.stringify(
+          {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": frontmatter.title,
+            "description": frontmatter.description,
+            "url": "https://wikimint.com/books",
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": books.map((book, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "item": {
+                  "@type": "Book",
+                  "name": book.data.title,
+                  "description": book.data.description || frontmatter.description,
+                  "image": `/assets/images/books/200/${book.data.image}`,
+                  "url": `/books/${book.slug}`,
+                  "author": {
+                    "@type": "Organization",
+                    "name": frontmatter.author
+                  },
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "Wikimint",
+                    "url": "https://wikimint.com"
+                  }
+                }
+              }))
+            }
+          }
+        )}
+      ></script>
+    </Fragment>
+  <h1>Business, Marketing & Money eBooks for Online Success</h1>
+<p>Discover a curated collection of business, marketing, and money-making ebooks designed to help you achieve financial freedom and career growth. Each title offers practical strategies, expert insights, and step-by-step guidance to build wealth, master marketing, and grow a sustainable business. Whether you’re an entrepreneur, marketer, or aspiring professional, these ebooks provide the tools you need to succeed.</p>
+
+  <h2>Explore Our Bestselling Business & Marketing Ebooks</h2>
+  <p>From residual income guides to digital marketing playbooks, our ebooks cover a wide range of success-driven topics. Each book is optimized for practical learning, offering actionable tips to grow your business, improve marketing skills, and manage money effectively. Browse the collection below and start your journey toward financial independence and professional success.</p>
+  <ul 
+  id="list" 
+  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-10"
+>
+  {books.slice(0, 12).map((book) => (
+    <li class="transition">
+      <a href={`/books/${book.slug}`}>
+        <img  
+          loading="lazy" width="100" height="100"
+          src={`/assets/images/books/200/${book.data.image}`} 
+          alt={book.data.alt} 
+          class="w-full h-80 object-cover"
+        />
+        <h3 class="mt-2 font-normal">{book.data.title}</h3>
+      </a>
+    </li>
+  ))}
+</ul>
+
+{books.length > 12 && (
+  <div class="flex justify-center mt-6">
+    <button 
+      id="load-more" 
+      class="btn"
+    >
+      Load More
+    </button>
+  </div>
+)}
+
+<script src={`/assets/js/books.js?v=${version}`} defer></script>
+</BaseLayout>

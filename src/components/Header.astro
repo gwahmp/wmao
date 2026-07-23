@@ -1,0 +1,62 @@
+---
+const navLinks = [
+  { name: "Products", href: "/products" },
+  { name: "Resources", href: "/business-resources" },
+  { name: "Blog", href: "/blog" },
+  { name: "About Us", href: "/about" },
+];
+---
+
+<header>
+    <div class="col-2 px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+      <div class="flex items-center space-x-8">
+        <a href="https://wikimint.com">
+          <img  loading="lazy" alt="Master Personal Finance, Business Growth, Digital Marketing" data-height="46" data-width="200" width="165" height="38" src="/assets/images/wikimint-logo-200x46.webp">
+        </a>
+        <nav class="hidden md:flex space-x-6 font-normal">
+          {navLinks.map((link) => (
+            <a
+              href={link.href}>
+              {link.name}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      {/* Right: Search + Contact */}
+      <div class="flex items-center space-x-4">
+        {/* Search */}
+        <div class="relative">
+          <button
+            aria-label="Search"
+            class="open-canvas p-2 text-gray-600 hover:text-wmblue"
+          >
+          
+          <img loading="lazy" src="/assets/svg/search.svg" alt="Search Wikimint" width="100" height="100" class="icon"/>
+
+          
+          </button>
+
+        </div>
+
+{/* Contact */}
+<a
+  href="/contact"
+  class="btn hidden sm:inline-block "
+>
+  Contact
+</a>
+
+
+        <button aria-label="Open Menu"
+  class="open-canvas p-1 text-gray-700 hover:text-wmblue focus:outline-none border border-wmblue">
+  {/* Heroicons outline: Bars-3 */}
+
+  <img loading="lazy" src="/assets/svg/burger.svg" alt="Wikimint navigation menu" width="100" height="100" class="icon"/>
+</button>
+
+      </div>
+    </div>
+</header>
+
+

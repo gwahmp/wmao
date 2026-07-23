@@ -1,0 +1,174 @@
+---
+import DummyLayout from "../layouts/DummyLayout.astro";
+---
+
+<DummyLayout
+  title="Business Growth Landing Page"
+  description="Boost productivity and scale your business faster."
+> 
+
+<iframe
+id="mainFrame"
+src="about:blank"
+loading="eager"
+></iframe>
+
+<script>
+// LocalStorage Key
+const STORAGE_KEY = "selected_iframe_url";
+
+// URL List
+const urls = [
+  "https://wikimint.com/web-development-services",
+  "https://wikimint.com/digital-assets",
+  "https://wikimint.com/business-resources"
+];
+
+const iframe = document.getElementById("mainFrame");
+
+// Check existing URL
+let savedUrl = localStorage.getItem(STORAGE_KEY);
+
+// If no saved URL, select random
+if (!savedUrl) {
+  const randomIndex = Math.floor(Math.random() * urls.length);
+
+  savedUrl = urls[randomIndex];
+
+  // Save for future visits
+  localStorage.setItem(STORAGE_KEY, savedUrl);
+}
+
+// Load iframe
+iframe.src = savedUrl;
+</script>
+
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  *:not(#mainFrame) {
+  display: none !important;
+}
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    display: block;
+  }
+</style>
+
+
+<section class="hero-section">
+  <div class="container">
+    <h1>Build Better Systems for Faster Business Growth</h1>
+
+    <p>
+      Modern businesses need more than basic tools. Streamline your workflow,
+      improve productivity, and create scalable systems that support long-term
+      success.
+    </p>
+
+    <a href="#start">Get Started</a>
+  </div>
+</section>
+
+<section class="features-section">
+  <div class="container">
+    <h2>Why Businesses Choose Smarter Solutions</h2>
+
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Improved Productivity</h3>
+
+        <p>
+          Reduce distractions and optimize daily operations with efficient
+          digital workflows.
+        </p>
+      </div>
+
+      <div class="feature-item">
+        <h3>Automation Tools</h3>
+
+        <p>
+          Save valuable time by automating repetitive tasks and simplifying
+          processes.
+        </p>
+      </div>
+
+      <div class="feature-item">
+        <h3>Scalable Growth</h3>
+
+        <p>
+          Build flexible systems designed to support startups, teams, and
+          growing businesses.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <h2>Work Smarter Every Day</h2>
+
+    <p>
+      Productivity is not about working longer hours. It is about creating
+      better systems that help teams collaborate, manage projects efficiently,
+      and achieve consistent growth.
+    </p>
+
+    <p>
+      Businesses that focus on streamlined operations often experience better
+      performance, faster decision-making, and improved customer satisfaction.
+    </p>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>24/7</h3>
+        <p>Workflow Accessibility</p>
+      </div>
+
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Cloud-Based Flexibility</p>
+      </div>
+
+      <div class="stat-item">
+        <h3>Smart</h3>
+        <p>Business Optimization</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" id="start">
+  <div class="container">
+    <h2>Start Building Efficient Business Systems</h2>
+
+    <p>
+      Discover modern strategies and productivity solutions that help businesses
+      grow faster with less complexity.
+    </p>
+
+    <a href="/contact">Contact Us Today</a>
+  </div>
+</section>
+
+</DummyLayout>

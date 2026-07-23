@@ -1,0 +1,27 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+
+const frontmatter = {
+  title: "Search results | Wikimint",
+  description: "Search Wikimint Wikimint for questions, feedback, partnerships, or business inquiries. Our team is here to guide you with finance and business insights.",
+  canonical: "/about",
+  image: "/assets/images/business-motivation-marketing-strategy-personal-finance-strategy.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+  noindex: true,
+};
+---
+
+<PageLayout frontmatter={frontmatter}>
+
+  <script async src="https://cse.google.com/cse.js?cx=partner-pub-7784071102690039:3247111414"></script>
+  <div class="gcse-searchresults-only"></div>
+<style>
+  .gsc-above-wrapper-area,
+  .gsc-above-wrapper-area-container,
+  ..gsc-above-wrapper-area table{
+    display:none ! important;
+    padding:0px ! important;
+  }
+</style>
+</PageLayout>

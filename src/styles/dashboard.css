@@ -1,0 +1,130 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    nav.dash-menu a{
+        @apply block my-2 px-6;
+    }
+    nav.dash-menu a.active{
+        @apply text-wmblue;
+    }
+    nav.dash-menu a:hover{
+        @apply text-gray-500;
+    }
+    .sub-group{
+        @apply bg-gray-100 px-6 py-3 w-full block border-y border-gray-300;
+    }
+    .uc{
+        @apply text-red-700;
+    }
+}
+ 
+ 
+
+.acc-menu input { display:none; }
+.acc-menu-item{
+  margin: 0px;
+}
+
+.acc-menu-title{
+    background:#66666633;
+    color:#000000;
+    padding:6px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    cursor:pointer;
+}
+
+.acc-menu-title::after{
+    color:#666;
+    font-size:25px;
+    content:"▿";
+    transition:transform .2s;
+}
+
+.acc-menu input:checked + .acc-menu-title::after{
+    content:"▵";
+}
+
+
+.acc-menu-title span {
+  cursor:pointer;
+  position:relative;
+  padding-right:1.5rem;
+  padding-left:18px;
+}
+
+
+.acc-menu-content {
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .3s ease;
+  background:#fefefe;
+}
+.acc-menu-content{
+  margin-top:0px ! important;
+  border-top:1px solid #999;
+}
+.acc-menu input:checked + .acc-menu-title + .acc-menu-content{
+  max-height:max-content;
+}
+
+
+ @keyframes shimmer {
+
+100% {
+
+    transform:
+        translateX(
+            200%
+        );
+
+}
+
+}
+
+.animate-shimmer {
+
+animation:
+    shimmer
+    1.5s
+    infinite;
+
+}
+
+
+
+@media (max-width:767px) {
+#sidebar nav,
+#closeMenu {
+    display: none;
+}
+}
+#sidebar.open nav,
+#sidebar.open #closeMenu {
+    display: block;
+}
+
+#sidebar.open #openMenu {
+    display: none;
+}
+
+
+@media (min-width:768px) {
+p, a, span{
+font-size:16px;
+}
+}
+article p {margin:12px 0;}
+h1{
+    color: #336699 ! important;
+    margin: 30px 0 20px 0;
+    border-bottom: 1px solid #999;
+    padding-bottom: 15px;
+    line-height:35px ! important;
+    font-size: 26px ! important;
+    font-family:inherit ! important;
+}

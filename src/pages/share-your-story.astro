@@ -1,0 +1,74 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+
+const frontmatter = {
+  title: "Share Your Story – Inspire Entrepreneurs & Readers on Wikimint",
+  description: "Every entrepreneur has a story worth telling. Share your startup journey or business experience on Wikimint and inspire readers across the globe.",
+  image: "/assets/images/online-interview-form-enterpreneurs-business-interview-share-your-story.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+};
+---
+
+<PageLayout frontmatter={frontmatter}>
+<h1>Tell Your Entrepreneurial Journey and Inspire Others</h1>
+  <style>
+    #reward,.sidebar,
+            .blog-post-comments.comments-system-blogger{
+                display:none ! important;
+            }
+            body, #main-wrapper{width:100% ! important;
+            height:100% ! important;
+        background:#fff ! important;}
+        .post-content-wrap{
+            border:none ! important;
+            box-shadow:none ! important;
+        }
+    </style>
+    
+    
+    <div class="row100">
+      <div class="column50">
+        <span></span>
+      <p>Have you ever stopped to think about how far you’ve come as an entrepreneur? The risks you’ve taken, the lessons you’ve learned, and the impact you’ve created—your journey is unique, and it deserves to be celebrated!</p>
+    
+    <p>At Wikimint Business Magazine, we’re on a mission to highlight the stories of entrepreneurs like you. Whether you’re solving big problems, shaking up industries, or quietly building something extraordinary, your story has the power to inspire others.</p>
+    
+    {/* Button trigger modal */}
+    <a href="#interview-form"><button type="button" class="btn btn-primary">
+    Share Your Story
+    </button>
+    </a>
+        <h2>Why Share Your Story?</h2>
+    <ul>
+      <li><strong>Inspire Others</strong>: Your challenges, achievements, and strategies could light the spark for someone else’s journey.</li>
+      <li><strong>Grow Your Brand</strong>: Showcase your business and increase visibility among our audience of entrepreneurs, professionals, and dreamers.</li>
+      <li><strong>Leave a Legacy</strong>: Be part of an exclusive collection of stories that define innovation, resilience, and success.</li>
+    </ul>
+      </div>
+        <div class="column50">
+    <img  loading="lazy" alt="Share your story with Wikimint Business Magazine and spotlight your entrepreneurship journey to inspire others and gain valuable exposure." title="Share Your Story with Wikimint - Spotlight Your Entrepreneurship" width="100%" height="100%" data-original-height="698" data-original-width="700" src="/assets/images/online-interview-form-enterpreneurs-business-interview-share-your-story.webp"/>
+    </div>
+    </div>
+    
+    
+    
+    <h3>How It Works</h3>
+    <p>It’s simple! Just fill out the form below with details about your journey. We’ll use your responses to craft an engaging interview article that will be published on our website. It’s your chance to shine and share your expertise with a global audience.</p>
+    
+    <h3>Who Can Participate?</h3>
+    <p>This is for all entrepreneurs—whether you’re a startup founder, a small business owner, or someone leading a thriving enterprise. Everyone has a story worth telling!</p>
+    
+    
+    <p>Ready to Inspire the World? Share Your Journey Today!</p>
+    <p>Fill out the form below to get started. Your answers will help us create an inspiring and engaging feature article that showcases your business, journey, and insights.</p>
+    
+    <p class="highlight">Your story could be the motivation someone needs to start their own journey. Don’t wait—submit your answers today and join our growing community of trailblazing entrepreneurs.</p>
+    
+    <p class="redbox">This interview form is exclusively for entrepreneurs who have received an invitation via email or other communication channels. Please note that this page is not directly accessible from our website. If you are visiting without an invitation from Wikimint, we kindly ask that you refrain from submitting this form. This invitation is primarily aimed at sharing the success stories of entrepreneurs, rather than just promoting their businesses. If you would like to participate but have not received an invitation, please request an interview using the <a href="/contact">contact page</a>. Thank you for your understanding.</p>
+    
+    <a name="interview-form"/>       
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSde_Iam5ja1yNkaL0IdtKybfIv3eKpiCBw-_XNNR0cLtQ_Jow/viewform?usp=sharing" width="100%" style="height:8000px;width:100%;border:none;"></iframe>
+            
+    
+</PageLayout>

@@ -1,0 +1,826 @@
+---
+import PublicProfileLayout from "../layouts/PublicProfileLayout.astro";
+const version = Date.now();
+
+const frontmatter = {
+  title: "Free Public Marketing Profile for Personal Branding",
+  description: "Build a professional public profile with Wikimint. Promote your website, collect subscribers, display social links, monitor analytics, earn credits, and grow your online presence from one marketing page.",
+  // canonical: "/about",
+  image: "/assets/images/others/wikimint-personal-branding-profile.webp",
+  tags: ["about", "business", "finance"],
+  author: "Wikimint Team",
+  disableAds: true,
+};
+---
+
+<PublicProfileLayout
+frontmatter={frontmatter}>
+
+
+
+<div class="grid grid-cols-1 md:grid-cols-[380px_1fr] gap-20 hidden mb-20" id="profileArea">
+
+    <div class="space-y-6">
+        <!-- sidebar starts -->
+
+        <span
+        class="pname w-full block text-2xl font-medium mb-3"
+    >
+    </span>
+
+
+
+        <div class="grid grid-cols-[25%_75%] gap-6">
+
+            <div class="flex items-start justify-end">
+                <img
+                id="profilePhoto"
+                src="/assets/svg/user-fill.svg"
+                alt="Profile Photo"
+                class="w-full h-auto rounded-full mx-auto object-cover"
+                style="margin-top:0px ! important;"/>
+            </div>
+          
+
+
+            <div class="space-y-2">
+
+                <div class="flex items-start gap-3">
+                    <img
+                        loading="lazy"
+                        src="/assets/svg/job.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                        class="w-5 h-5 flex-shrink-0 text-wmblue"
+                        style="margin-top:5px ! important;margin-bottom:0px ! important;"
+                    />
+                    <span id="cat">Profession loading...</span>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <img
+                        loading="lazy"
+                        src="/assets/svg/user.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                        class="w-5 h-5 flex-shrink-0 text-wmblue"
+                        style="margin-top:5px ! important;margin-bottom:0px ! important;"
+                    />
+                    <span>Member since <span id="created_at">loading...</span></span>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <img
+                        loading="lazy"
+                        src="/assets/svg/nav.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                        class="w-5 h-5 flex-shrink-0 text-wmblue"
+                        style="margin-top:5px ! important;margin-bottom:0px ! important;"
+                    />
+                    <span id="location">Location loading...</span>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <img
+                        loading="lazy"
+                        src="/assets/svg/eye.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                        class="w-5 h-5 flex-shrink-0 text-wmblue"
+                        style="margin-top:5px ! important;margin-bottom:0px ! important;"
+                    />
+                    <span><span id="views">loading...</span> Profile views</span>
+                </div>
+
+            </div>
+
+
+          </div>
+      
+        <!-- sidebar ends -->
+
+          <div class="bg-blue-50 p-5 hidden border border-wmblue" id="websiteContainer">
+            <a id="websiteLink" href="#website" target="_blank" rel="nofollow noopener noreferrer">
+        <div class="grid grid-cols-[15%_85%] gap-6 mb-5">
+
+            <div class="flex items-start justify-end">
+                <img
+                loading="lazy"
+                src="/assets/svg/web.svg"
+                alt=""
+                width="50"
+                height="50"
+                class="w-50 h-50 flex-shrink-0"
+                style="margin-top:5px ! important;margin-bottom:0px ! important;"
+            />
+            </div>
+          
+
+
+            <div class="space-y-0">
+
+            <span class="font-medium">My Website</span>
+            <span id="website" class="text-wmblue block truncate">www.example.com</span>   
+            
+
+            </div>
+
+            
+          </div>
+
+          <button class="btn w-full flex block justify-center"><span>Visit My Website</span> <img
+            loading="lazy"
+            src="/assets/svg/linkout.svg"
+            alt=""
+            width="20"
+            height="20"
+            class="w-5 h-5 ms-3"
+            style="margin-top:5px ! important;margin-bottom:0px ! important;"
+        /></button></a>
+
+
+        </div>
+
+        <span
+        class="hidden inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 text-green-700 text-sm font-medium"
+    >
+    
+        ✔ Verified Wikimint Member
+    
+    </span>
+
+    
+
+    <fieldset>
+
+    <legend>
+
+        Connect with me
+
+    </legend>
+     <div id="socialLinks" class="hidden"></div>
+    </fieldset>
+
+
+     
+<div class="sticky top-20 desktop-only">
+  <fieldset>
+
+  <legend>
+
+      Grow Your Online Presence
+
+  </legend>
+
+<div class="my-5">
+    Create a professional profile that showcases your expertise, services, and important links. Help people find you, learn about your work, and connect with confidence.
+</div>
+
+
+<a href="/app/branding">
+    <button class="w-full btn">
+        Build Your Personal Brand
+    </button>
+</a>
+
+
+</form>
+</fieldset>
+
+</div>
+
+    </div>
+  
+              
+
+
+    <div>
+      
+        <div class="highlight" id="headline">Profile headline loading..</div>
+
+        <h2>About <span class="pname"></span></h2>
+<div class="mb-6">
+            <span
+              id="description"
+          >Profile description loading..
+    
+    
+        </span>
+    
+          <a
+      id="showMoreBtn" href="#headline"
+      class="hidden text-blue-600 hover:underline"
+      role="button">Show More</a>
+</div>
+
+
+
+  <fieldset>
+  <legend>Sponsored</legend>
+  
+  
+  
+  <div class="grid grid-cols-[50%_50%] gap-6">
+
+      <div>
+            <!-- BEGIN AADS AD UNIT 2445354 -->
+
+<div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
+<iframe data-aa='2445354' loading="lazy" src='//acceptable.a-ads.com/2445354/?size=Adaptive'
+                style='border:0; padding:0; width:100%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
+</div>
+
+<!-- END AADS AD UNIT 2445354 -->
+
+      </div>
+
+
+    <div>    
+      <script src="//static.surfe.pro/js/net.js" is:inline></script>
+      <ins class="surfe-be" data-sid="421349"></ins>
+      <script is:inline>(adsurfebe = window.adsurfebe || []).push({});</script>
+    </div>
+  </div>
+  
+  </fieldset>
+
+
+  <div id="recommendedLinks" class="hidden">
+    <h2>Recommended Links</h2>
+  </div>
+
+  <h2>Skills Obtained</h2>
+  <div class="mb-6">
+              <span
+                id="skills"
+            >Loading skills...
+          </span>
+  </div>
+
+  <h2>Services Offered</h2>
+  <div class="mb-6">
+              <span
+                id="services"
+            >Loading services...
+          </span>
+  </div>
+
+  <div id="optin" class="optin p-6 border border-gray-300 bg-gray-100">
+  <form action="https://www.sendsteed.com/subscribe/" method="post" class="relative">
+    <div class="mb-5">
+      Subscribe to email newsletter. Powered by
+      <a href="https://sendsteed.com/?r=selvaklnc" rel="nofollow noopener">
+        SendSteed
+      </a>.
+  </div>
+
+    <input name="e5735" type="email" class="mb-3 w-full px-4 py-1 bg-white border border-gray-300" required placeholder="Your Email"/>
+
+    <input name="n5735" type="text" class="mb-3 w-full px-4 py-1 bg-white border border-gray-300" required placeholder="Your Name" />
+
+    <input type="hidden" name="lllid" value="5735">
+    <input type="hidden" name="lluid" value="selvaklnc">
+    <input type="hidden" name="redirect" value="">
+    <input type="hidden" name="source" value="">
+
+    <button type="submit"
+      class="w-full btn">
+      Subscribe
+    </button>
+  </form>
+</div>
+    </div>
+  
+  </div>
+
+
+  <div class="grid grid-cols-1 md:grid-cols-[1fr_380px] gap-20">
+
+
+    <div>
+
+<h1>Build Your Personal Brand with Your Wikimint Public Profile</h1>
+
+
+<p>Your online profile is often the first impression people have of you. Whether you promote a business, blog, online store, service, affiliate products, or simply want to establish your online presence, having a professional profile helps visitors understand who you are and what you offer.</p>
+
+<a href="/app/branding" class="mo">
+    <button class="w-full btn">
+        Promote Your Personal Brand
+    </button>
+</a>
+
+<button class="w-full btn login go">
+  Promote Your Personal Brand
+</button>
+
+<img  loading="lazy" src="/assets/images/others/wikimint-personal-branding-profile.webp" alt="Personal branding profile page with website links, social profiles, email subscriptions, profile analytics, referral benefits, and marketing opportunities." title="Personal Branding Profile for Digital Marketers" class="w-full" />
+
+<p>The Wikimint Marketing Platform provides every member with a dedicated public profile that works as much more than a standard member page. It combines branding, promotion, lead generation, analytics, and earning opportunities into a single shareable destination.</p>
+
+<p>Instead of maintaining several different profile pages across multiple websites, you can build one complete profile that introduces you, promotes your work, and gives visitors a simple way to stay connected.</p>
+
+<p class="highlight">Your public profile becomes your personal marketing hub that can be shared anywhere online.</p>
+
+<h2>Why Your Personal Brand Matters</h2>
+
+<p>People are more likely to interact with someone they know and trust. A complete profile helps establish credibility by presenting important information in one organized location.</p>
+
+<p>Your Wikimint profile allows visitors to quickly understand:</p>
+
+<ul>
+    <li>Who you are</li>
+    <li>What you do</li>
+    <li>Your interests and expertise</li>
+    <li>Your business or website</li>
+    <li>Products or services you recommend</li>
+    <li>Ways to contact or follow you</li>
+    <li>Opportunities to subscribe to your updates</li>
+</ul>
+
+<p>A professional profile gives visitors confidence before they decide to visit your website or follow your recommendations.</p>
+
+<h2>One Profile Page That Works Everywhere</h2>
+
+<p>Your profile is designed to be shared wherever you are active online.</p>
+
+<p>Examples include:</p>
+
+<ul>
+    <li>Facebook</li>
+    <li>X</li>
+    <li>LinkedIn</li>
+    <li>YouTube</li>
+    <li>Instagram</li>
+    <li>Telegram</li>
+    <li>WhatsApp</li>
+    <li>Email signatures</li>
+    <li>Blog author pages</li>
+    <li>Business directories</li>
+    <li>Forum signatures</li>
+    <li>Digital business cards</li>
+</ul>
+
+<p>Instead of updating several different pages, you maintain one profile that always contains your latest information.</p>
+
+<h2>Build a Strong First Impression</h2>
+<h3>Add a Professional Profile Photo</h3>
+
+<p>A genuine profile photo makes your page more personal and trustworthy.</p>
+
+<p>Visitors naturally feel more comfortable interacting with real people instead of anonymous accounts.</p>
+
+<p>A clear photograph helps create familiarity and makes your profile easier to remember.</p>
+
+<h3>Write an Informative Profile Description</h3>
+
+<p>Your profile description tells visitors what you do and why they should connect with you.</p>
+
+<p>A good description may include:</p>
+
+<ul>
+    <li>Your professional background</li>
+    <li>Your interests</li>
+    <li>Your business</li>
+    <li>Your website</li>
+    <li>Your experience</li>
+    <li>Topics you enjoy discussing</li>
+</ul>
+
+<p>Keep your description updated as your business grows.</p>
+
+<h2>Promote Your Website from One Place</h2>
+
+<p>Every member can include a primary website on their profile.</p>
+
+<p>This may be your:</p>
+
+<ul>
+    <li>Business website</li>
+    <li>Personal blog</li>
+    <li>Portfolio</li>
+    <li>Online store</li>
+    <li>Company website</li>
+    <li>Landing page</li>
+</ul>
+
+<p>Visitors no longer need to search for your website because it is displayed directly on your profile.</p>
+
+<h2>Recommend Multiple Resources</h2>
+
+<p>Many marketers promote more than one product or service.</p>
+
+<p>Instead of asking visitors to search through different pages, your profile allows you to organize your recommendations in one location.</p>
+
+<p>Examples include:</p>
+
+<ul>
+    <li>Affiliate products</li>
+    <li>Digital products</li>
+    <li>Software tools</li>
+    <li>Business resources</li>
+    <li>Online courses</li>
+    <li>Blog articles</li>
+    <li>YouTube channels</li>
+    <li>Community pages</li>
+</ul>
+
+<p>This makes your profile more useful while keeping everything neatly organized.</p>
+
+<h2>Build Your Email List</h2>
+
+<p>Growing an email list is valuable for anyone building an online business.</p>
+
+<p>Your Wikimint profile includes a LeadsLeap Email Subscription Form, giving visitors the opportunity to subscribe while they are already viewing your page.</p>
+
+<p>Benefits include:</p>
+
+<ul>
+    <li>Building long-term relationships</li>
+    <li>Sharing future updates</li>
+    <li>Announcing new products</li>
+    <li>Promoting services</li>
+    <li>Sending newsletters</li>
+    <li>Growing your audience</li>
+</ul>
+
+<p>Every subscriber becomes someone you can communicate with again in the future.</p>
+
+<h2>Connect Your Social Profiles</h2>
+
+<p>Many people prefer following creators on social media before making a purchase or joining a business opportunity.</p>
+
+<p>Your profile allows you to display important social accounts, making it easy for visitors to continue following your work.</p>
+
+<p>Supported platforms may include:</p>
+
+<ul>
+    <li>Facebook</li>
+    <li>X</li>
+    <li>LinkedIn</li>
+    <li>YouTube</li>
+    <li>Instagram</li>
+    <li>Telegram</li>
+    <li>GitHub</li>
+    <li>Other important social profiles</li>
+</ul>
+
+<p>Keeping all your social accounts together saves visitors time.</p>
+
+<h2>Monitor Your Profile Performance</h2>
+<h3>Built-in Analytics</h3>
+
+<p>Knowing how visitors interact with your profile helps you make better decisions.</p>
+
+<p>Your dashboard includes analytics that help you understand profile activity.</p>
+
+<p>Useful information includes:</p>
+
+<ul>
+    <li>Profile views</li>
+    <li>Visitor activity</li>
+    <li>Link interactions</li>
+    <li>Overall page performance</li>
+</ul>
+
+<p>Monitoring your profile regularly allows you to improve your marketing efforts based on actual visitor behaviour.</p>
+
+<h2>Earn Credits from Eligible Profile Visits</h2>
+
+<p>Your profile is not only a promotional page.</p>
+
+<p>Eligible unique visits from real people may earn credits according to the platform rules.</p>
+
+<p>As more genuine visitors view your profile, your participation within the platform continues to grow.</p>
+
+<p>Credits may contribute to additional platform opportunities available to active members.</p>
+
+<h2>Referral Benefits Continue Working for You</h2>
+
+<p>Every shared profile becomes another opportunity to introduce new members.</p>
+
+<p>Your public profile supports referral tracking, allowing eligible registrations made through your profile to be connected to your account according to the applicable referral rules.</p>
+
+<p>Instead of sharing different referral pages, you can simply share your public profile.</p>
+
+<p>This creates a smoother experience for visitors while keeping your promotional efforts simple.</p>
+
+<h2>Receive Additional Exposure with LeadsLeap Cooperative</h2>
+
+<p>Your public profile also includes the LeadsLeap Cooperative iframe.</p>
+
+<p>This provides another marketing advantage by giving your page additional promotional value while visitors interact with your profile.</p>
+
+<p>Combined with your own website, recommendations, and subscription form, your profile serves multiple purposes from a single page.</p>
+
+<h2>Organize Multiple Marketing Goals</h2>
+<h3>One Profile for Many Purposes</h3>
+
+<p>Your profile supports several marketing activities simultaneously.</p>
+
+<p>For example, one visitor may:</p>
+
+<ul>
+    <li>Read your profile</li>
+    <li>Visit your website</li>
+    <li>Subscribe to your email list</li>
+    <li>View your recommended products</li>
+    <li>Follow your social accounts</li>
+    <li>Register as a referral</li>
+</ul>
+
+<p>Everything happens from one page without requiring visitors to search for additional information.</p>
+
+<h2>Keep Your Information Updated</h2>
+
+<p>An active profile creates a better experience for visitors.</p>
+
+<p>Review your profile regularly.</p>
+
+<p>Recommended updates include:</p>
+
+<ul>
+    <li>Adding new achievements</li>
+    <li>Updating your business description</li>
+    <li>Replacing outdated links</li>
+    <li>Publishing new recommendations</li>
+    <li>Adding recent websites</li>
+    <li>Updating social accounts</li>
+</ul>
+
+<p>Small improvements over time help keep your profile relevant.</p>
+
+<h2>Best Practices for Better Results</h2>
+<h3>Share Your Profile Frequently</h3>
+
+<p>Your profile becomes more valuable when more people see it.</p>
+
+<p>Consider sharing it through:</p>
+
+<ul>
+    <li>Social media posts</li>
+    <li>Email newsletters</li>
+    <li>Blog articles</li>
+    <li>Online communities</li>
+    <li>Business directories</li>
+    <li>Discussion forums</li>
+    <li>Digital business cards</li>
+    <li>Presentation slides</li>
+    <li>QR codes</li>
+    <li>Video descriptions</li>
+</ul>
+
+<p>Consistent sharing increases visibility over time.</p>
+
+<h2>Make Your Profile Visitor Friendly</h2>
+
+<p>A clean profile encourages visitors to continue reading.</p>
+
+<p>Keep these simple practices in mind:</p>
+
+<ul>
+    <li>Use a clear profile photograph.</li>
+    <li>Write a short and informative description.</li>
+    <li>Include only useful links.</li>
+    <li>Remove outdated information.</li>
+    <li>Keep recommendations relevant.</li>
+    <li>Check your analytics regularly.</li>
+    <li>Update your profile whenever your business changes.</li>
+</ul>
+
+<p>These small improvements create a better experience for every visitor.</p>
+
+<h2>Why Every Member Should Complete Their Profile</h2>
+
+<p>Whether you are a beginner or an experienced marketer, your public profile becomes an important part of your online presence.</p>
+
+<p>It introduces your business, supports your marketing activities, helps build your subscriber list, promotes your websites, tracks visitor activity, provides referral opportunities, includes additional promotional benefits, and may earn credits through eligible profile visits.</p>
+
+<p>Instead of sending visitors to multiple websites, you can share a single profile that represents you professionally and continues working for you around the clock.</p>
+
+<p class="highlight">A complete profile is one of the simplest ways to build credibility, organize your online presence, and create more opportunities from a single shareable page.</p>
+
+
+
+        <section id="faq" class="hr bg-white">
+
+            <h2>
+              Frequently Asked Questions
+            </h2>
+        
+         
+        
+        
+        
+                  
+                  <div class="acc space-y-4">
+        
+                    <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+                    <div class="acc-item">
+                      <input type="radio" name="acc" id="q1" checked>
+                      <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                        <label for="q1" class="acc-title">
+                          <h3 itemprop="name" class="text-lg">Why should I create my Wikimint public profile?</h3>
+                        </label>
+                          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                            <p  itemprop="text">
+                                Your Wikimint public profile works as a complete online introduction that visitors can access from anywhere. Instead of sharing several different links, you can direct people to a single page containing your business details, website, social profiles, recommendations, and contact opportunities. It helps present your online identity in a clear and organized manner while giving visitors one place to learn more about you and your work.                            </p>
+                          </div>
+                      </div>
+                    </div>
+                  
+                    <div class="acc-item">
+                      <input type="radio" name="acc" id="q2">
+                      <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                        <label for="q2" class="acc-title">
+                          <h3 itemprop="name" class="text-lg">Can my profile be used as a marketing funnel?</h3>
+                        </label>
+                          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                            <p itemprop="text">
+                                Yes. Your profile is designed to do much more than display personal information. Visitors can read about you, visit your website, view your recommended resources, follow your social accounts, and subscribe to your email list without leaving the page. This allows your profile to work as a simple marketing funnel that continues promoting your business every time someone visits it.                            </p>
+                          </div>
+                      </div>
+                    </div>
+        
+                    <div class="acc-item">
+                      <input type="radio" name="acc" id="q3">
+                      <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                        <label for="q3" class="acc-title">
+                          <h3 itemprop="name" class="text-lg">What information should I include in my profile?</h3>
+                        </label>
+                          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                            <p itemprop="text">
+                                A complete profile creates a better experience for visitors. Add a professional profile photo, write a meaningful description, include your primary website, list important social media accounts, and keep your recommended links updated. The more useful information you provide, the easier it becomes for visitors to understand what you offer and decide whether they would like to connect with you.                            </p>
+                          </div>
+                      </div>
+                    </div>
+        
+                    <div class="acc-item">
+                      <input type="radio" name="acc" id="q4">
+                      <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                        <label for="q4" class="acc-title">
+                          <h3 itemprop="name" class="text-lg">Can I promote my website and affiliate offers?</h3>
+                        </label>
+                          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                            <p itemprop="text">
+                                Yes. Every member can add one primary website along with several recommended links that point to approved products, services, blogs, or affiliate offers. Instead of sending visitors to many different locations, your profile organizes everything on one page, making it easier for people to explore your recommendations and return whenever you add new content.                            </p>
+                          </div>
+                      </div>
+                    </div>
+        
+                    <div class="acc-item">
+                      <input type="radio" name="acc" id="q5">
+                      <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                        <label for="q5" class="acc-title">
+                          <h3 itemprop="name" class="text-lg">How does email subscription help my business?</h3>
+                        </label>
+                          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                            <p itemprop="text">
+                                Building an email list creates opportunities to stay connected with interested visitors. Your profile includes a LeadsLeap email subscription form so people can join your mailing list while viewing your page. As your audience grows, you can continue communicating with subscribers, introduce future products, and maintain long-term relationships without depending only on social media platforms.
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+        
+                    <div class="acc-item">
+                      <input type="radio" name="acc" id="q6">
+                      <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                        <label for="q6" class="acc-title">
+                          <h3 itemprop="name" class="text-lg">Can I see how my profile performs?</h3>
+                        </label>
+                          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="acc-content">
+                            <p itemprop="text">
+                                Yes. The dashboard provides analytics that help you monitor activity on your public profile. Reviewing visitor information allows you to understand how people interact with your page and whether your promotional efforts are producing results. This information helps you improve your profile over time by focusing on the content and links that receive the greatest interest.
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="acc-item">
+                    <input type="radio" name="acc" id="q7">
+                    <label for="q7" class="acc-title">
+                      <h3 class="text-lg">Can I earn credits when people visit my profile?</h3>
+                    </label>
+                      <div class="acc-content">
+                        <p>
+                            Yes. Eligible unique visits from real people can earn credits for your account according to the platform rules. Your public profile therefore serves two purposes at the same time. It introduces your business to visitors while also helping you participate in the credit system through genuine profile activity. Regularly sharing your profile can help increase both visibility and participation.                        </p>
+                      </div>
+                  </div>
+        
+                  <div class="acc-item">
+                    <input type="radio" name="acc" id="q8">
+                    <label for="q8" class="acc-title">
+                      <h3 class="text-lg">Does my profile include referral benefits?</h3>
+                    </label>
+                      <div class="acc-content">
+                        <p>
+                            Yes. Your public profile supports referral tracking so eligible visitors who join the platform through your profile may be connected to your account according to the applicable referral rules. Since your profile can be shared anywhere online, it becomes another opportunity to introduce new members while continuing to promote your own business and marketing activities.                        </p>
+                      </div>
+                  </div>
+    
+                  <div class="acc-item">
+                    <input type="radio" name="acc" id="q9">
+                    <label for="q9" class="acc-title">
+                      <h3 class="text-lg">What additional marketing benefits are included with my profile?</h3>
+                    </label>
+                      <div class="acc-content">
+                        <p>
+                            Besides promoting your own business, your profile also includes a LeadsLeap Cooperative iframe that provides another opportunity to receive exposure within the LeadsLeap network. Combined with your website, social links, email subscription form, recommended resources, and referral benefits, your profile serves several marketing purposes from one location without requiring multiple separate web pages.                        </p>
+                      </div>
+                  </div>
+    
+                  <div class="acc-item">
+                    <input type="radio" name="acc" id="q10">
+                    <label for="q10" class="acc-title">
+                      <h3 class="text-lg">How can I get the most value from my public profile?</h3>
+                    </label>
+                      <div class="acc-content">
+                        <p>
+                            Keep your profile complete, update your description whenever your business changes, review your recommended links regularly, and share your profile anywhere people may be interested in your work. Adding your profile link to social media, forums, business directories, email signatures, digital business cards, and other online locations helps bring more visitors while making full use of the promotional features available through your Wikimint profile.                        </p>
+                      </div>
+                  </div>
+   
+    
+                  </div>
+                  
+        
+        
+          </section>
+    
+        </div>
+
+        <div>
+<fieldset>
+
+<legend>
+
+    Sponsored
+
+</legend>
+<div class="space-y-6">
+
+
+<script data-cfasync="false" >ll_r="selvaklnc";ll_bc="#ffffff";ll_hc="#0b5394";ll_tc="#555a69";ll_cc="#8d9aa6";ll_dc="#8891a8";ll_w="";ll_nf="0";ll_nc="1";ll_nh="0";ll_nm="0";ll_np="1";ll_pa="0";ll_nt="0";ll_wt="0";ll_fw="1";ll_n="6";ll_cl="";ll_s="w";</script><script data-cfasync="false" src="https://w.leadsleap.com/js.js"></script>
+
+
+<a href="https://surfe.be/1302353" target="_blank"><img loading="lazy" src="https://static.surfe.be/images/banners/1123/5-468x60en_.gif" class="w-full py-5" alt="Surfe.be - Advertising service"></a>
+<a href="https://surfe.be/ext/1302353" target="_blank"><img class="w-full" loading="lazy" src="https://static.surfe.be/images/banners/en/468x60_3.gif" alt="Surfe.be - Advertising service"></a>
+
+
+</div>
+</fieldset>
+
+
+    
+<div class="sticky top-20">
+
+  <fieldset>
+
+  <legend>
+
+      Promote Yourself Online
+
+  </legend>
+
+<div class="my-5">
+    Build a profile that highlights what you do and where people can connect with you. Share your website, social links, and services from a single page.
+</div>
+
+
+<a href="/app/branding" class="mo">
+    <button class="w-full btn">
+        Promote Yourself
+    </button>
+</a>
+<button class="w-full btn login go">
+  Promote Yourself
+</button>
+
+
+</form>
+</fieldset>
+
+</div>
+
+    </div>
+
+</div>
+
+  
+  
+
+  
+
+  <script src={`/assets/js/profile.js?v=${version}`} defer></script>
+
+  {/* 
+  <script src={`/assets/js/profile.js?v=${version}`} defer></script>
+*/}
+
+</PublicProfileLayout>

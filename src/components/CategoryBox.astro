@@ -1,0 +1,18 @@
+---
+const { id, title, count } = Astro.props;
+---
+
+<div
+  class="bg-gray-100 shadow border border-gray-300 px-6 py-12"
+>
+  <div
+    id={id}
+    class="text-4xl md:text-8xl font-bold text-gray-900"
+  >
+    {count}
+  </div>
+
+  <div class="mt-2 lead">
+    {title}
+  </div>
+</div>

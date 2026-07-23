@@ -1,0 +1,32 @@
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
+import mdx from "@astrojs/mdx";
+
+export default defineConfig({
+  server: {
+        host: true,
+        allowedHosts: ['test.wikimint.com']
+    },
+  site: "https://wikimint.com", // REQUIRED for sitemap
+  trailingSlash: "never",
+  output: "static",
+  compressHTML: true,
+  build: {
+    format: "file", // output flat .html files
+  },
+  integrations: [
+    tailwind(),
+    mdx(),
+  ],
+  markdown: {
+    remarkPlugins: [
+      [
+        "remark-toc",
+        {
+          heading: null,
+          tight: true,
+        },
+      ],
+    ],
+  },
+});

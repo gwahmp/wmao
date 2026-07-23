@@ -1,0 +1,65 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+type Category = {
+  name: string;
+  slug: string;
+};
+
+interface Props {
+  title: string;
+  description: string;
+  breadcrumbs: any;
+  categories: Category[];
+}
+import { TOOL_CATEGORIES } from "../data/toolbox/categories";
+const { title, description, breadcrumbs } = Astro.props as Props;
+---
+
+<BaseLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script is:inline async data-consent="ads" type="text/plain" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784071102690039" crossorigin="anonymous"></script>
+    </Fragment>
+  <div class="col-2 page">
+
+    {/* MAIN */}
+    <article>
+        <div set:html={breadcrumbs}></div>
+
+      <h1 class="text-3xl font-bold mb-3">{title}</h1>
+      <p class="text-gray-600 mb-8">{description}</p>
+
+      <slot />
+    </article>
+
+    {/* SIDEBAR */}
+    <aside>
+      <h3 class="font-semibold mb-4">All Tools Categories</h3>
+      <nav>
+        <ul class="link space-y-2">
+          {TOOL_CATEGORIES.map(cat => (
+            <li>
+              <a href={`/toolbox/${cat.slug}`}>
+                {cat.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div class="space-y-6 my-10 sticky top-20">
+        <a href="/digital-assets"><img src="/assets/images/blog/digital-productivity-assets-toolkit-lifetime-updates-downloads.webp" width="100%" height="100%" alt="All-in-one digital assets bundle with templates, PLR content, marketing tools, branding kits, ebooks, and software for entrepreneurs, freelancers & marketers" class="object-cover w-full rounded-lg" loading="lazy" /></a>
+
+        <div class="col-span-12 md:col-span-12">
+          <a href="/web-development-services"><img  loading="lazy" alt="Website development services, Chennai - Build a website, grow your business digitally - Web design freelancer" src="/assets/images/web-development-services.webp" width="100%" class="mt-10"/></a>
+        </div>
+
+        
+      </div>
+
+  
+      
+    </aside>
+
+  </div>
+</BaseLayout>

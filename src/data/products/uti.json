@@ -1,0 +1,28 @@
+{
+    "tools": [
+      {
+        "t": "Case Converter",
+        "l": "https://developer.wikimint.com/p/case-converter-text-formatter-tool.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCegscdEElgkkU1ccH1uFqdt_ddo4377nSAOZORY4uEOIxjvQQlyvquYtWVBhmw0xnzayOIXFC_AWIA0do6X4v-ivtGa5gLxEg2zIBE2uWRdU04gVTdj3S_dEEIjLBii8J8Rt3NHjULScPrizosWJMLvQiwBjifQ9mBgqEK_6OkYQaEliOkxzsPIcSrXLb/s1600/case-converter-text-formatter-text-transform-tool.png",
+        "d": "Case Converter tool interface with input text field, options to transform text into uppercase, lowercase, or title case, with real-time updates."
+      },
+      {
+        "t": "Web to Image Converter",
+        "l": "https://developer.wikimint.com/p/webpage-to-image.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpaprp5IDtMVaWS6nYUADw3ZrWxZfEc9Z5pBPVSoWTW5zLGA_YfX3yLAq63k2eeF1727I4WrwvciTW2d_6nSj9XkOgVul2WyxjfWld99Zb5J1r4vdwzSbH7c0TBJlmchW9vBcTWXws0IReikbPlAopc1FnFHjhOEGEEPeOBaLG4JbPdeWe5XWN-iNP/s1600/image.png",
+        "d": "Web to Image Converter tool interface featuring a URL input field, conversion options, and generated screenshots of webpages saved as images."
+      },
+      {
+        "t": "Text Counter",
+        "l": "https://developer.wikimint.com/p/text-counter.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhunvtw3N2JQXh8b6IEM3qHZ7_p_pdw9twIEt8hajYf-SbdMSbyOfmyg-ik94QJY2N2365lnT37FMeXabArFTxA-fKttsBXz0o7JzbvTejTNmQuwsX_-eN42Xqo0ZrmJUheu94DgS6QZR9kCxWF9G0gWPoJJASnOsKyBwggqYHrPJcVrBVfPNvrRisX/s1600/text.png",
+        "d": "Text Counter tool displaying an input text box, character count, word count, and real-time statistics as users type."
+      },
+      {
+        "t": "Speech to Text Converter",
+        "l": "https://developer.wikimint.com/p/speech-to-text.html",
+        "i": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidGz5GEG4iW_kgEj3HLtbZn9xKUOoDZU-1ChS7FQNrkOWvGbS2SIwrd3Wg8icGhK0Bu0tQi-ovQyA-LJnLmjcZQjQVcqTPHxBhy3T5OLxVLMMzz7c4Mm9hTkuw2xy-2AGjWLHWGrai9LA3gWV2Q9F2mZd7iAqWa4p0hW4yej4hYW_EAolhIRdxWlnv/s320/speech-to-text.png",
+        "d": "Speech to Text Converter tool interface with microphone input, live audio processing, and real-time transcription displayed on screen."
+      }
+    ]
+  }

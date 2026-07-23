@@ -1,0 +1,11 @@
+---
+const { post } = Astro.props; // { slug, data }
+const p = post;
+---
+<article class="border rounded-xl p-4 hover:shadow-sm transition">
+  <h3 class="text-xl font-semibold">
+    <a href={`/${p.slug}`}>{p.data.title}</a>
+  </h3>
+  <p class="text-sm opacity-70">{new Date(p.data.date).toDateString()}</p>
+  <p class="mt-2">{p.data.description}</p>
+</article>
