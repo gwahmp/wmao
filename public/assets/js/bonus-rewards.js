@@ -1,1 +1,264 @@
-const a3_0x14dd2c=a3_0x14ac;function a3_0x2c79(){const _0x2a0cde=['uSk+W4m7cmo7WOaCWRRcUqeyWPFdS0lcJ8o4WOrJWO8ncwFdJCkYW6hdUfBdN2mkCG','dteLF00','uSkqW7pcK8o0','bCkLamkJBq','W4xdMmoFWOmvW5JcPG','Bmo2WOu','WOVdQ8oAWQFcQW','pJiasSoEn8kzvSo9','i8kNcSkDBhXoWQnlW6Kf','W63dGYNcIJThW4dcO8oXWOdcR8kpWQdcNW','q8kUWOldTCkMpum','vCo3WOnpW5hcQZBcQ8kpauaMzmkQyc1VW75sW59zW4q','WPSAbhNcV8khWRG','W4i9xCkuW4i','oYqpFLFdNSoezs/cRq','oCkEW5lcSSoVteRdTci','z0/dMCooW64rotFdTG','Ac8gsCozq8oT','DYJdOmoiWRy','W61vW5rhqbCFsKy','WPOVlNb0','n8o4usWbW5uvsmoaaW','WRDeamkgWOS','qCkGWPqDlG','BSoJeLNdPmoJW67cKJWUEG','WQfNoSkbWO8','kg/dPCkOeG','WQvXlmkRWOTeWP19lCoAWRFcS8kFWQmGW7u','uSoFhfRdSW','cY7cTfLu','WOiAd37cNCkpWRpdGbrkWQi','k8k+mSkGrq','xmoGWPBcPmop','WPmdjXNdVSkEmWZdMMry','W4PTdmk8fW','pJOKF8ob','W6iKvt/cVa','n1dcVSkiW7G','zIyuu8ovcCoSemkZW6hcKtObx3WXnW','WQ7dVSkGWOTbaCkn','fM5oq8kPaCoqj8oeW6XMavVdJsuT','svldTCkVhHeBixKUW4uuW5u','g8o1W5NcRSoMAXzMEGldUe1J','W6P2W6jmzG','W61vW5Xxwa','WPvoWRhcUmoJWPjW','bSkAWQyRWPa','W6nCW4zhuJWt','jehcOxldNG','BCkcWQqupSokWR8NWO/cHsW','WQX5WQhcOCoo','cGlcOmo3xuy','W4SQWPa','zmkKWQ8mmG','kCo0sqagW4qx','W6XqW5Tq','rSkZWOW7dSoHWOPfW73dVa','panOW4GR','WQVdNSkGWRvC','mwJcTCkyW6fTW7udWOKlmq','W6WFAJ/cUG','W75ZW51TzW','W47dKI7cVte','au3cGmomFgzbsa','WQddTSoxWQpcTtzhacmwDW','tY8Wvmou','qmkTWOS3','W71cW65wfGNcRJFcNSoKcmoEyG','vmksWRpcPSki','mmogwGea','oteDBL/dJCoy','W4ybvSkcW4W','ACkeWPJcUSkG','W5/dGWpdQmkRxmoNWRRdICojWQi','q8oEWQXCW7C','aKdcJCokEhThsCo7','W50DxtFcJhHa','W7VdHG3cHt0','W41ol8kxhW','B2Huy8o6oSkOymoU','fXadBN0','W5O/W5CVhuHED3bjdmo6WOZdJCoGWPq','amkdn8kuwuzVWOLIW5qjldOH','WP83WOazxW','WOFdMmoWWPZcMbT+lbaWsW','pCoDWOBcNSooAuu','urtcNSowAcyHW7rhWQNdJG','WQylpvbGp8ojd8oaWRVcUW','W4qmewNcRmkZWOq','W5KYW50o','CsuMtSoktCoMfG','WP/cK0ZcPmoqa8oHWQNdOmoFWRjH','ev/dVmkiaq','r8oVWOVcQCoR','W7OCWR3cG8oO','W4/dMmoyWRKaW5RcRG','eryICSoN','Bgzxd8kBs8kevCoVW53dLSoC','wGtdMdrGsXJcUCktnbrI','W5r9hCkDhe/cRcTrfadcRhOVWQ8R','DCo9WRepcW','WOFcJ20NWO4wW7z/nSkNWOVdSmk6FmoqArKeACoYWOqCWQpdICkRWPZcIxZcHmo5W7ZdM8oliXtcJCoKWPjgW4yMW64FWQBcSa','urtdNZm','nHjfW7y0','kSoJuJ0DW5udvSoa','cvxcHg43As/cL8k3ps4','FmoBWOpcNSozsw8','W7SCoSobgmk5h0mXp8oo','WPTlESkNCq','bfFcHmkMW7tdVCogW63cKHGlWQGQW50','W5j5gCkucW','ycJdGSo7WOu','pCo0sqWEW4qxq8olbe/dUSkBWOe','pJepsSocf8kv','DYJdOmooWQO','W7zxkmkS','WQtdVSkNWRfua8kf','mmo5ua0a','rxiFWRPzhX7cSSk9WOjyg0C','uHFcLmkScZu/W6nH','y8o9WQDRW5e','hSoqDauRW742ACoIoum','q8o8hXjxW5NcGCou','WPuqgxNcSCkmWRG','W5WDrd7cJa','fv3cG8oaFMPNuSoWW7G','W5bsALRcHmoapG3dQN9aW7i','W6RdVmoaWP42','vCoMWOa1mq','WQ1xWPxcTSoF','WP57W4pdV8kcWRHNBmo9bIbf','jZJcVCoQrfDekLa','W5CXDCklW7m','w8oIlN/dKG','W6yIxCk1W6O','umkzWQWkpG','ymkQWRldOCkQ','BCo7WPhcImo+','mGhcMmoGEW','wSo9WONcPmo3','wNBdKSowW7u','hqtcIx1YyCo4WQL7u8k3','uCk9W4/dUSk8n1vgFJhdOM5fWROuWQ81WRBdPwZcLSkrW4hdGCkvW7NcKmkbW67dNJxdSa','a8khkSk9thXUWOnRW4KL','q8kKW73cMmoD','fcDZW7ao','gW7cTfTpxmkSW7n0smk+W4myWRnBW73cUuiI','WQb0iCkcWOqmWP9MbSoAWQRdQSkxWQG2W7qGWPVdUG','WOHHWQRcKSow','W6/dPZldKmkXBmofWOhdQ8oUWPG','omkAW5xdISkfc3/dKHtdLW17','WRqebM52','cL/cHMSZdqNcPmkqncna'];a3_0x2c79=function(){return _0x2a0cde;};return a3_0x2c79();}(function(_0x20b60e,_0x4ec7d2){const _0x420e71=a3_0x14ac,_0x5ef5fd=_0x20b60e();while(!![]){try{const _0x169e99=-parseInt(_0x420e71(0x1bd,'KkPS'))/0x1+-parseInt(_0x420e71(0x1b1,'%0i3'))/0x2*(-parseInt(_0x420e71(0x159,'%0i3'))/0x3)+-parseInt(_0x420e71(0x1b7,'ReI*'))/0x4+parseInt(_0x420e71(0x1ab,'KkPS'))/0x5*(-parseInt(_0x420e71(0x1c7,']T]W'))/0x6)+parseInt(_0x420e71(0x13a,'u)]Z'))/0x7*(parseInt(_0x420e71(0x1c5,'hnPt'))/0x8)+parseInt(_0x420e71(0x19f,'Bys%'))/0x9+parseInt(_0x420e71(0x185,'z4B!'))/0xa;if(_0x169e99===_0x4ec7d2)break;else _0x5ef5fd['push'](_0x5ef5fd['shift']());}catch(_0x480066){_0x5ef5fd['push'](_0x5ef5fd['shift']());}}}(a3_0x2c79,0x8212e));const a3_0x5dc4e5=(function(){const _0x3d904f=a3_0x14ac,_0x1a0005={'YeKbs':function(_0x2667b6,_0x284725){return _0x2667b6===_0x284725;},'Ejvzl':'Besld','rTfOS':'iNxkv','Hrcwj':function(_0x2be84e,_0x116fce){return _0x2be84e+_0x116fce;},'ZQHvq':_0x3d904f(0x15c,'8WU3')};let _0x358161=!![];return function(_0x2d367c,_0xf5d6b6){const _0x334d1b=_0x3d904f,_0x31109c={'dlXso':function(_0x1518d5,_0x249599){const _0x1b0b91=a3_0x14ac;return _0x1a0005[_0x1b0b91(0x162,'nIf7')](_0x1518d5,_0x249599);},'sQHhv':_0x334d1b(0x155,'VSk*'),'ZXlZz':_0x1a0005[_0x334d1b(0x1a4,'wfQo')],'CDmsC':function(_0x1f7558){return _0x1f7558();}},_0x24fb07=_0x358161?function(){const _0x2288d2=_0x334d1b;if(_0xf5d6b6){if(_0x1a0005[_0x2288d2(0x15d,'9#q#')](_0x1a0005['Ejvzl'],_0x1a0005[_0x2288d2(0x147,'mpXs')])){const _0x393617=_0x16ae26(_0x31109c[_0x2288d2(0x154,'L(%c')](_0x31109c['dlXso'](_0x31109c[_0x2288d2(0x172,'4FW9')],_0x31109c['ZXlZz']),');'));_0x3122c5=_0x31109c[_0x2288d2(0x1ac,'9#q#')](_0x393617);}else{const _0x26be94=_0xf5d6b6['apply'](_0x2d367c,arguments);return _0xf5d6b6=null,_0x26be94;}}}:function(){};return _0x358161=![],_0x24fb07;};}()),a3_0x22506b=a3_0x5dc4e5(this,function(){const _0x5c19fa=a3_0x14ac,_0x47a2c4={'JeEnl':function(_0x1b873e,_0x54a457){return _0x1b873e(_0x54a457);},'jhmDr':function(_0x508e15,_0x1695c7){return _0x508e15+_0x1695c7;},'hcyEI':function(_0xf82ea0,_0x4e65da){return _0xf82ea0+_0x4e65da;},'kVToq':'return\x20(function()\x20','AKYqY':_0x5c19fa(0x151,'pgUK'),'euAlo':_0x5c19fa(0x161,'dbsr'),'LgHXL':_0x5c19fa(0x19e,'8WU3'),'uxZkY':_0x5c19fa(0x1a7,'D7ce'),'fjCJU':_0x5c19fa(0x1ca,'(x(O')};let _0x18816c;try{const _0x10b646=_0x47a2c4[_0x5c19fa(0x19d,'Erzx')](Function,_0x47a2c4[_0x5c19fa(0x138,'@HMT')](_0x47a2c4[_0x5c19fa(0x173,'8WU3')](_0x47a2c4[_0x5c19fa(0x1aa,'(x(O')],_0x47a2c4['AKYqY']),');'));_0x18816c=_0x10b646();}catch(_0x4fcd98){_0x18816c=window;}const _0xccbf7c=_0x18816c[_0x5c19fa(0x13e,'0]jt')]=_0x18816c[_0x5c19fa(0x1cd,'KkPS')]||{},_0x4877b2=[_0x47a2c4[_0x5c19fa(0x1a9,'teec')],'warn',_0x47a2c4['LgHXL'],_0x5c19fa(0x175,'4FW9'),_0x47a2c4[_0x5c19fa(0x1b8,'u)]Z')],_0x47a2c4[_0x5c19fa(0x15a,'Kr@o')],_0x5c19fa(0x16e,'MjJ&')];for(let _0x4ba917=0x0;_0x4ba917<_0x4877b2['length'];_0x4ba917++){const _0x1efc25=a3_0x5dc4e5[_0x5c19fa(0x19c,'nIf7')][_0x5c19fa(0x1c4,'@HMT')][_0x5c19fa(0x1b5,'QAoE')](a3_0x5dc4e5),_0x38a16d=_0x4877b2[_0x4ba917],_0x18d546=_0xccbf7c[_0x38a16d]||_0x1efc25;_0x1efc25[_0x5c19fa(0x146,'z4B!')]=a3_0x5dc4e5[_0x5c19fa(0x193,'sIPZ')](a3_0x5dc4e5),_0x1efc25[_0x5c19fa(0x1b6,'Erzx')]=_0x18d546['toString']['bind'](_0x18d546),_0xccbf7c[_0x38a16d]=_0x1efc25;}});a3_0x22506b();const BONUS_KEYS={'DAILY_LOGIN':a3_0x14dd2c(0x152,'JjeJ'),'DAILY_ACTIVITY':a3_0x14dd2c(0x1c9,'W1h('),'ACHIEVEMENTS':a3_0x14dd2c(0x1be,'hnPt'),'MILESTONES':a3_0x14dd2c(0x171,'@HMT'),'REFERRAL_BONUSES':a3_0x14dd2c(0x1bf,'(x(O'),'SPECIAL_EVENTS':a3_0x14dd2c(0x165,'teec')},BONUS_STORAGE_PREFIX=a3_0x14dd2c(0x16c,'WK5]');function a3_0x14ac(_0xed0827,_0x4a3f5f){const _0xbb6d87=a3_0x2c79();return a3_0x14ac=function(_0x22506b,_0x5dc4e5){_0x22506b=_0x22506b-0x136;let _0x26668c=_0xbb6d87[_0x22506b];if(a3_0x14ac['vgDOlw']===undefined){var _0x2c795e=function(_0x356827){const _0x4c9a82='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x485385='',_0x20fa71='';for(let _0x5f2c03=0x0,_0x25af9d,_0x55c491,_0x4fa1e7=0x0;_0x55c491=_0x356827['charAt'](_0x4fa1e7++);~_0x55c491&&(_0x25af9d=_0x5f2c03%0x4?_0x25af9d*0x40+_0x55c491:_0x55c491,_0x5f2c03++%0x4)?_0x485385+=String['fromCharCode'](0xff&_0x25af9d>>(-0x2*_0x5f2c03&0x6)):0x0){_0x55c491=_0x4c9a82['indexOf'](_0x55c491);}for(let _0x1d20f4=0x0,_0x2511cf=_0x485385['length'];_0x1d20f4<_0x2511cf;_0x1d20f4++){_0x20fa71+='%'+('00'+_0x485385['charCodeAt'](_0x1d20f4)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x20fa71);};const _0x42f9a3=function(_0x1a7bc3,_0x116882){let _0x3277a3=[],_0x1db89d=0x0,_0x51318b,_0x599fed='';_0x1a7bc3=_0x2c795e(_0x1a7bc3);let _0x5c8ccf;for(_0x5c8ccf=0x0;_0x5c8ccf<0x100;_0x5c8ccf++){_0x3277a3[_0x5c8ccf]=_0x5c8ccf;}for(_0x5c8ccf=0x0;_0x5c8ccf<0x100;_0x5c8ccf++){_0x1db89d=(_0x1db89d+_0x3277a3[_0x5c8ccf]+_0x116882['charCodeAt'](_0x5c8ccf%_0x116882['length']))%0x100,_0x51318b=_0x3277a3[_0x5c8ccf],_0x3277a3[_0x5c8ccf]=_0x3277a3[_0x1db89d],_0x3277a3[_0x1db89d]=_0x51318b;}_0x5c8ccf=0x0,_0x1db89d=0x0;for(let _0x8211b4=0x0;_0x8211b4<_0x1a7bc3['length'];_0x8211b4++){_0x5c8ccf=(_0x5c8ccf+0x1)%0x100,_0x1db89d=(_0x1db89d+_0x3277a3[_0x5c8ccf])%0x100,_0x51318b=_0x3277a3[_0x5c8ccf],_0x3277a3[_0x5c8ccf]=_0x3277a3[_0x1db89d],_0x3277a3[_0x1db89d]=_0x51318b,_0x599fed+=String['fromCharCode'](_0x1a7bc3['charCodeAt'](_0x8211b4)^_0x3277a3[(_0x3277a3[_0x5c8ccf]+_0x3277a3[_0x1db89d])%0x100]);}return _0x599fed;};a3_0x14ac['WGeIIy']=_0x42f9a3,_0xed0827=arguments,a3_0x14ac['vgDOlw']=!![];}const _0x14ac25=_0xbb6d87[0x0],_0x1fa18c=_0x22506b+_0x14ac25,_0x23d84e=_0xed0827[_0x1fa18c];return!_0x23d84e?(a3_0x14ac['AAXIDZ']===undefined&&(a3_0x14ac['AAXIDZ']=!![]),_0x26668c=a3_0x14ac['WGeIIy'](_0x26668c,_0x5dc4e5),_0xed0827[_0x1fa18c]=_0x26668c):_0x26668c=_0x23d84e,_0x26668c;},a3_0x14ac(_0xed0827,_0x4a3f5f);}function getTodayUTC(){const _0x37fb63=a3_0x14dd2c;return new Date()[_0x37fb63(0x150,'VSk*')]()[_0x37fb63(0x15e,'2H0j')](0x0,0xa);}function getBonusStorageKey(_0x3aaa07){const _0x110a0a=a3_0x14dd2c,_0x31d5d5={'PRIDR':function(_0x211f3c,_0xf23fa9){return _0x211f3c+_0xf23fa9;}};return _0x31d5d5[_0x110a0a(0x1ba,'(eKX')](BONUS_STORAGE_PREFIX,_0x3aaa07);}function canClaimBonusToday(_0x2b22ce){const _0x36e65d=a3_0x14dd2c,_0x1d27ae={'AdDRu':function(_0x49f73c,_0x1e73c3){return _0x49f73c!==_0x1e73c3;},'WfSBu':function(_0x505902,_0x1bc914){return _0x505902(_0x1bc914);},'JTTzt':function(_0x45d6c7){return _0x45d6c7();}};return _0x1d27ae[_0x36e65d(0x148,'fs(J')](localStorage[_0x36e65d(0x183,'JR$f')](_0x1d27ae[_0x36e65d(0x181,'W1h(')](getBonusStorageKey,_0x2b22ce)),_0x1d27ae[_0x36e65d(0x14f,'WK5]')](getTodayUTC));}function saveBonusClaimToday(_0x6fe18e){const _0x538867=a3_0x14dd2c,_0x22fa1d={'kcxGn':function(_0x4e1fb0,_0x4eab40){return _0x4e1fb0(_0x4eab40);},'LLkkU':function(_0x322396){return _0x322396();}};localStorage[_0x538867(0x192,'@HMT')](_0x22fa1d[_0x538867(0x18c,'I@jE')](getBonusStorageKey,_0x6fe18e),_0x22fa1d[_0x538867(0x180,'6Ovs')](getTodayUTC));}function clearBonusClaimToday(_0x465b89){const _0x4d29fe=a3_0x14dd2c,_0x2b93eb={'jWgHr':function(_0x2858e2,_0x3d5747){return _0x2858e2(_0x3d5747);}};localStorage[_0x4d29fe(0x140,'D7ce')](_0x2b93eb[_0x4d29fe(0x1a1,'@HMT')](getBonusStorageKey,_0x465b89));}function updateClaimButton(_0x2d253d,_0x3d1b69){const _0x3967db=a3_0x14dd2c,_0x441d30={'HYvwT':'cursor-not-allowed','bXghL':'Already\x20Claimed\x20Today','JfUxP':_0x3967db(0x16a,'9#q#')};_0x2d253d['disabled']=!_0x3d1b69,_0x3d1b69?_0x2d253d[_0x3967db(0x16f,'sIPZ')][_0x3967db(0x18f,'z4B!')](_0x3967db(0x194,'8WU3'),_0x441d30['HYvwT']):(_0x2d253d[_0x3967db(0x174,'fs(J')]=_0x441d30[_0x3967db(0x153,'2H0j')],_0x2d253d[_0x3967db(0x163,'KkPS')][_0x3967db(0x190,'(eKX')](_0x441d30[_0x3967db(0x14d,'z4B!')],_0x441d30[_0x3967db(0x178,'fs(J')]));}async function postBonusClaim(_0x36e247){const _0x4af3b1=a3_0x14dd2c,_0x143c11={'SNvYs':function(_0x18dfb5,_0x93c8a6){return _0x18dfb5(_0x93c8a6);},'cdEFl':function(_0x4f7009,_0x159a4b,_0xc11ece){return _0x4f7009(_0x159a4b,_0xc11ece);},'EOgFe':function(_0x5bb619,_0x15881c){return _0x5bb619+_0x15881c;},'TRcjL':_0x4af3b1(0x136,'(x(O'),'IJTmH':_0x4af3b1(0x166,'pgUK'),'luwDy':function(_0x313eb5,_0x56c4c5){return _0x313eb5===_0x56c4c5;},'yZARY':'euqQE','PabTc':_0x4af3b1(0x169,'mpXs')};try{const _0x598b19=await _0x143c11[_0x4af3b1(0x17f,'KkPS')](fetch,_0x143c11['EOgFe'](API_BASE,_0x36e247),{'method':_0x143c11[_0x4af3b1(0x18e,'9Lcz')],'credentials':_0x143c11['IJTmH']}),_0x484f0a=await _0x598b19[_0x4af3b1(0x1c2,'hnPt')]();if(!_0x598b19['ok']||!_0x484f0a[_0x4af3b1(0x1c6,'%0i3')]){if(_0x143c11[_0x4af3b1(0x17e,'(x(O')](_0x143c11[_0x4af3b1(0x14a,'8WU3')],_0x143c11['yZARY']))throw new Error(_0x484f0a[_0x4af3b1(0x1bb,'&*Lf')]||_0x4af3b1(0x167,'dbsr'));else _0x143c11[_0x4af3b1(0x17c,'%0i3')](_0x2d98fc,_0x55c56a[_0x4af3b1(0x13c,'@HMT')]),_0x143c11[_0x4af3b1(0x1a3,'mpXs')](_0xa31031,_0x37023e,![]);}return _0x484f0a;}catch(_0x5f383a){if(_0x143c11['PabTc']!==_0x143c11[_0x4af3b1(0x19a,'teec')])_0x143c11[_0x4af3b1(0x13b,'dbsr')](_0x1922b7,_0x331368,!![]);else return{'success':![],'message':_0x5f383a[_0x4af3b1(0x137,'JR$f')]};}}function initDailyLogin(){const _0x54b0de=a3_0x14dd2c,_0x353d5f={'pJhYT':function(_0x1c3e08,_0x7f204f){return _0x1c3e08!==_0x7f204f;},'CGNqJ':function(_0x4277c8,_0x49e32a){return _0x4277c8(_0x49e32a);},'mmBVF':function(_0x359181){return _0x359181();},'HAkTW':function(_0x5a0696,_0x1bdb4d){return _0x5a0696===_0x1bdb4d;},'LHCKJ':_0x54b0de(0x1c1,'VYLa'),'bEtwi':function(_0x51bb22,_0xbfdfc6,_0x4fc52d){return _0x51bb22(_0xbfdfc6,_0x4fc52d);},'ruzje':_0x54b0de(0x1ce,'MjJ&'),'FYnuU':_0x54b0de(0x1a0,'wfQo'),'AkAVC':_0x54b0de(0x191,'8WU3'),'YeurK':_0x54b0de(0x198,'6Ovs'),'USiYK':function(_0x37024e,_0xf8d62b,_0x49b0a5){return _0x37024e(_0xf8d62b,_0x49b0a5);},'fSXZJ':_0x54b0de(0x19b,'D7ce'),'dOWxU':function(_0x160e59){return _0x160e59();},'crCPV':function(_0x15102d){return _0x15102d();},'bUquB':_0x54b0de(0x156,'4FW9'),'WLZvq':function(_0x3d33a9,_0x41174a){return _0x3d33a9||_0x41174a;},'UdxSY':'PQZZu','LXqqp':function(_0x3070c3,_0x5cfcc8){return _0x3070c3(_0x5cfcc8);},'fZwqk':_0x54b0de(0x188,'sIPZ')},_0x2a0efe=document[_0x54b0de(0x1ae,'JjeJ')](_0x54b0de(0x182,'Erzx')),_0x33bf60=document[_0x54b0de(0x1cc,'@HMT')](_0x353d5f[_0x54b0de(0x14c,'%0i3')]);if(_0x353d5f[_0x54b0de(0x1af,'Bys%')](!_0x2a0efe,!_0x33bf60)){if(_0x353d5f[_0x54b0de(0x199,'sIPZ')](_0x353d5f[_0x54b0de(0x1c8,']T]W')],_0x353d5f['UdxSY']))return _0x353d5f['pJhYT'](_0x51f3ed[_0x54b0de(0x160,'&*Lf')](_0x353d5f[_0x54b0de(0x1a6,'dbsr')](_0x146fb4,_0xeab525)),_0x353d5f['mmBVF'](_0x15670a));else return;}updateClaimButton(_0x2a0efe,_0x353d5f[_0x54b0de(0x17b,'JjeJ')](canClaimBonusToday,BONUS_KEYS[_0x54b0de(0x1b0,'nIf7')])),!_0x353d5f['CGNqJ'](canClaimBonusToday,BONUS_KEYS[_0x54b0de(0x158,'ReI*')])&&(_0x33bf60[_0x54b0de(0x1b3,'Kr@o')]=_0x353d5f[_0x54b0de(0x195,'L(%c')]),_0x2a0efe[_0x54b0de(0x1ad,'QAoE')](_0x353d5f[_0x54b0de(0x18a,'S15O')],async()=>{const _0x4d4bee=_0x54b0de;if(_0x353d5f['HAkTW'](_0x353d5f[_0x4d4bee(0x13f,'6Ovs')],_0x4d4bee(0x14b,'pgUK'))){_0xa0aecf[_0x4d4bee(0x17d,'FmC[')]=_0x4a8a80[_0x4d4bee(0x16d,'Erzx')];_0x353d5f[_0x4d4bee(0x144,'5*QS')](_0x4b5a76[_0x4d4bee(0x1a2,'9#q#')],_0x353d5f[_0x4d4bee(0x176,'u)]Z')])?(_0x353d5f['CGNqJ'](_0xcd8c4,_0x2d0558[_0x4d4bee(0x18d,'8WU3')]),_0x353d5f['bEtwi'](_0x37f4a6,_0x2a8f35,![])):_0x353d5f[_0x4d4bee(0x196,'JR$f')](_0x1c9db0,_0x320593,!![]);return;}else{_0x2a0efe[_0x4d4bee(0x13d,'4f)#')]=!![];const _0x35a230=await postBonusClaim('/bonus/daily-login');if(!_0x35a230[_0x4d4bee(0x1a8,'6Ovs')]){_0x33bf60[_0x4d4bee(0x1a5,'ReI*')]=_0x35a230[_0x4d4bee(0x168,'0]jt')];if(_0x353d5f[_0x4d4bee(0x142,'&*Lf')](_0x35a230[_0x4d4bee(0x18b,'sIPZ')],_0x353d5f[_0x4d4bee(0x1bc,'KkPS')])){if(_0x353d5f[_0x4d4bee(0x1b9,'%0i3')](_0x353d5f[_0x4d4bee(0x1c3,'L(%c')],_0x4d4bee(0x15f,'JjeJ'))){if(_0x4e8cc0){const _0x5e937c=_0x41757b[_0x4d4bee(0x143,'])GN')](_0x3a4aee,arguments);return _0x2d7c87=null,_0x5e937c;}}else saveBonusClaimToday(BONUS_KEYS['DAILY_LOGIN']),_0x353d5f[_0x4d4bee(0x179,'VSk*')](updateClaimButton,_0x2a0efe,![]);}else{if(_0x353d5f[_0x4d4bee(0x157,'9Lcz')](_0x353d5f[_0x4d4bee(0x1c0,'])GN')],_0x353d5f['YeurK']))_0x353d5f[_0x4d4bee(0x14e,'%0i3')](updateClaimButton,_0x2a0efe,!![]);else return _0x6206db+_0x40d78a;}return;}_0x353d5f[_0x4d4bee(0x149,'mpXs')](saveBonusClaimToday,BONUS_KEYS[_0x4d4bee(0x164,'JjeJ')]),_0x353d5f['bEtwi'](updateClaimButton,_0x2a0efe,![]),_0x33bf60[_0x4d4bee(0x17a,'0]jt')]=_0x35a230[_0x4d4bee(0x189,'9Lcz')],_0x353d5f[_0x4d4bee(0x170,'Kr@o')](typeof refreshMemberBalance,_0x353d5f['fSXZJ'])&&(_0x353d5f[_0x4d4bee(0x187,'sIPZ')](clearDashboardData),_0x353d5f[_0x4d4bee(0x1cb,'MjJ&')](refreshMemberBalance));}});}document[a3_0x14dd2c(0x177,'4FW9')](a3_0x14dd2c(0x184,'Y7lh'),()=>{initDailyLogin();});
+/**
+ * Bonus Rewards Frontend Helpers
+ * --------------------------------
+ * These helpers are only used to reduce unnecessary API calls.
+ * They DO NOT determine actual eligibility.
+ * The API always performs the final validation.
+ */
+
+/**
+ * Returns today's UTC date.
+ * Example: 2026-07-22
+ */
+
+/**************************************************************************
+ * Bonus Reward Constants
+ **************************************************************************/
+
+const BONUS_KEYS = {
+
+    DAILY_LOGIN: "daily_login",
+
+    DAILY_ACTIVITY: "daily_activity",
+
+    ACHIEVEMENTS: "achievements",
+
+    MILESTONES: "milestones",
+
+    REFERRAL_BONUSES: "referral_bonuses",
+
+    SPECIAL_EVENTS: "special_events"
+
+};
+
+const BONUS_STORAGE_PREFIX = "wm_bonus_";
+
+
+/**************************************************************************
+ * Bonus Reward Helper Functions
+ **************************************************************************/
+
+/**
+ * Returns today's UTC date.
+ * Example: 2026-07-22
+ */
+function getTodayUTC() {
+
+    return new Date().toISOString().slice(0, 10);
+
+}
+
+/**
+ * Returns the localStorage key for a bonus.
+ */
+function getBonusStorageKey(bonusKey) {
+
+    return BONUS_STORAGE_PREFIX + bonusKey;
+
+}
+
+/**
+ * Returns true if this browser can claim the bonus today.
+ * This is only a frontend optimization.
+ * The API performs the final verification.
+ */
+function canClaimBonusToday(bonusKey) {
+
+    return (
+        localStorage.getItem(
+            getBonusStorageKey(bonusKey)
+        ) !== getTodayUTC()
+    );
+
+}
+
+/**
+ * Saves today's successful claim in localStorage.
+ * Call only after the API returns success.
+ */
+function saveBonusClaimToday(bonusKey) {
+
+    localStorage.setItem(
+        getBonusStorageKey(bonusKey),
+        getTodayUTC()
+    );
+
+}
+
+/**
+ * Removes today's local claim.
+ * Useful during development/testing.
+ */
+function clearBonusClaimToday(bonusKey) {
+
+    localStorage.removeItem(
+        getBonusStorageKey(bonusKey)
+    );
+
+}
+
+/**
+ * Enables or disables a claim button.
+ */
+function updateClaimButton(button, eligible) {
+
+    button.disabled = !eligible;
+
+    if (eligible) {
+
+        button.classList.remove(
+            "opacity-50",
+            "cursor-not-allowed"
+        );
+
+    } else {
+
+        button.textContent = "Already Claimed Today";
+
+        button.classList.add(
+            "opacity-50",
+            "cursor-not-allowed"
+        );
+
+    }
+
+}
+
+/**
+ * Generic helper to claim a bonus.
+ * Returns the API response object.
+ */
+async function postBonusClaim(url) {
+
+    try {
+
+        const response = await fetch(API_BASE + url, {
+            method: "POST",
+            credentials: "include"
+        });
+
+        const data = await response.json();
+
+        if (!response.ok || !data.success) {
+
+            throw new Error(
+                data.message || "Unable to claim bonus."
+            );
+
+        }
+
+        return data;
+
+    } catch (error) {
+
+        return {
+            success: false,
+            message: error.message
+        };
+
+    }
+
+}
+
+
+/**************************************************************************
+ * Daily Login Bonus
+ **************************************************************************/
+
+function initDailyLogin() {
+
+    const button = document.getElementById("claim-daily-login");
+    const message = document.getElementById("daily-login-message");
+
+    if (!button || !message) {
+        return;
+    }
+
+    updateClaimButton(
+        button,
+        canClaimBonusToday(BONUS_KEYS.DAILY_LOGIN)
+    );
+
+    if (!canClaimBonusToday(BONUS_KEYS.DAILY_LOGIN)) {
+
+        message.textContent = "You have already claimed today's login bonus.";
+        
+
+    }
+
+    button.addEventListener("click", async () => {
+
+        button.disabled = true;
+    
+        const data =
+            await postBonusClaim(
+                "/bonus/daily-login"
+            );
+            if (!data.success) {
+
+                message.textContent = data.message;
+            
+                // Server confirms today's bonus already exists.
+                if (
+                    data.message ===
+                    "You have already claimed today's login bonus."
+                ) {
+            
+                    saveBonusClaimToday(
+                        BONUS_KEYS.DAILY_LOGIN
+                    );
+            
+                    updateClaimButton(
+                        button,
+                        false
+                    );
+            
+                } else {
+            
+                    updateClaimButton(
+                        button,
+                        true
+                    );
+            
+                }
+            
+                return;
+            
+            }
+    
+        saveBonusClaimToday(
+            BONUS_KEYS.DAILY_LOGIN
+        );
+    
+        updateClaimButton(
+            button,
+            false
+        );
+    
+        message.textContent =
+            data.message;
+    
+        if (
+            typeof refreshMemberBalance ===
+            "function"
+        ) {
+    
+            clearDashboardData();
+            refreshMemberBalance();
+    
+        }
+    
+    });
+
+}
+
+/**************************************************************************
+ * Initialize
+ **************************************************************************/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    initDailyLogin();
+
+});
+

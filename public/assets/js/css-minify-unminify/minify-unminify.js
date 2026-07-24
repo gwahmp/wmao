@@ -1,1 +1,312 @@
-const a6_0x417dab=a6_0x2e45;(function(_0x296490,_0x42f507){const _0x116333=a6_0x2e45,_0x53205a=_0x296490();while(!![]){try{const _0x1fc2ae=parseInt(_0x116333(0xf1,'CRgU'))/0x1+parseInt(_0x116333(0xb9,'W9rM'))/0x2+-parseInt(_0x116333(0xe2,'D[r3'))/0x3+-parseInt(_0x116333(0xa5,'TaG@'))/0x4*(-parseInt(_0x116333(0xe9,'W2BM'))/0x5)+parseInt(_0x116333(0xc8,'A1PM'))/0x6+-parseInt(_0x116333(0xad,'[eiQ'))/0x7*(-parseInt(_0x116333(0x10a,'fi[G'))/0x8)+-parseInt(_0x116333(0xd2,'A1PM'))/0x9*(parseInt(_0x116333(0x10f,'S]AO'))/0xa);if(_0x1fc2ae===_0x42f507)break;else _0x53205a['push'](_0x53205a['shift']());}catch(_0xb11e30){_0x53205a['push'](_0x53205a['shift']());}}}(a6_0x53f5,0xc2d5b));const a6_0x31674a=(function(){const _0x4ff476={'lSNRV':function(_0x1ba9e8,_0x597e42){return _0x1ba9e8===_0x597e42;},'QnaYf':function(_0xadb66a,_0x1d4b8a){return _0xadb66a===_0x1d4b8a;},'guPBP':'tnPzB'};let _0x203b3c=!![];return function(_0x1b03d9,_0x38cedc){const _0x26c3e0=a6_0x2e45;if(_0x4ff476[_0x26c3e0(0xf3,'ZAd!')](_0x4ff476['guPBP'],_0x4ff476[_0x26c3e0(0xe0,'b[oC')])){const _0x281165=_0x203b3c?function(){const _0x5364cd=_0x26c3e0;if(_0x38cedc){const _0x4860fc=_0x38cedc[_0x5364cd(0x104,'Qmzs')](_0x1b03d9,arguments);return _0x38cedc=null,_0x4860fc;}}:function(){};return _0x203b3c=![],_0x281165;}else{if(_0x4ff476[_0x26c3e0(0xba,'jPy5')](_0x3d3d96,'{'))_0x1f3bf1++,_0x2d4cb9=_0x39c076[_0x26c3e0(0xb8,'D[r3')](_0x408684,_0x1ddcb7);else _0x4ff476['lSNRV'](_0x5b0782,'}')&&_0x20654e--;}};}()),a6_0x65f5ae=a6_0x31674a(this,function(){const _0x4f3cc3=a6_0x2e45,_0x5cb95a={'eDMXV':_0x4f3cc3(0xc3,'m!yY'),'vQdvX':_0x4f3cc3(0xce,'h%mQ'),'juxpk':function(_0x4d1f99,_0x53216f){return _0x4d1f99(_0x53216f);},'GhrWQ':function(_0x4f30b8,_0x128986){return _0x4f30b8+_0x128986;},'YoSMm':function(_0x5e4127,_0x3add39){return _0x5e4127+_0x3add39;},'uIfdM':_0x4f3cc3(0xcf,'K5Mo'),'OBhrj':function(_0x246b0a){return _0x246b0a();},'LUOka':_0x4f3cc3(0xda,'DA(B'),'EFIpV':_0x4f3cc3(0xfc,'Py!V'),'YwPyQ':_0x4f3cc3(0xd4,'#a8r')},_0x535846=function(){const _0x3072d1=_0x4f3cc3;let _0x542018;try{_0x5cb95a[_0x3072d1(0xd1,'RiQj')]===_0x5cb95a[_0x3072d1(0xcb,'Py!V')]?_0x542018=_0x5cb95a[_0x3072d1(0xf2,'aPml')](Function,_0x5cb95a[_0x3072d1(0xc6,'W9rM')](_0x5cb95a[_0x3072d1(0x10e,'fi[G')](_0x3072d1(0xbe,'aj7e'),_0x5cb95a[_0x3072d1(0xd5,'W2BM')]),');'))():_0x1ece24['log'](_0x5cb95a[_0x3072d1(0xc5,'ejNV')]);}catch(_0x4f53d4){_0x542018=window;}return _0x542018;},_0x5aa7ac=_0x5cb95a[_0x4f3cc3(0x106,'D]pt')](_0x535846),_0x34a271=_0x5aa7ac[_0x4f3cc3(0x105,'CRgU')]=_0x5aa7ac['console']||{},_0xb4dc1d=[_0x4f3cc3(0x102,'^7BX'),_0x4f3cc3(0x107,'TbH8'),_0x5cb95a[_0x4f3cc3(0xa7,'!Mc8')],_0x5cb95a['EFIpV'],_0x4f3cc3(0xdb,'#Bs)'),_0x5cb95a['YwPyQ'],_0x4f3cc3(0x112,'DA(B')];for(let _0x14a4dc=0x0;_0x14a4dc<_0xb4dc1d[_0x4f3cc3(0xb4,'DA(B')];_0x14a4dc++){const _0x3b8e20=a6_0x31674a[_0x4f3cc3(0xcd,'CRgU')][_0x4f3cc3(0xf8,'9DO9')]['bind'](a6_0x31674a),_0xf57fc8=_0xb4dc1d[_0x14a4dc],_0x5eebc6=_0x34a271[_0xf57fc8]||_0x3b8e20;_0x3b8e20[_0x4f3cc3(0xab,'cP[3')]=a6_0x31674a[_0x4f3cc3(0xb0,'eBQF')](a6_0x31674a),_0x3b8e20[_0x4f3cc3(0x110,'S]AO')]=_0x5eebc6['toString'][_0x4f3cc3(0x109,'W2BM')](_0x5eebc6),_0x34a271[_0xf57fc8]=_0x3b8e20;}});a6_0x65f5ae();const cssEditorCssInput=CodeMirror[a6_0x417dab(0xf4,'c]49')](document[a6_0x417dab(0xdf,'^7BX')](a6_0x417dab(0xff,'GYN1')),{'mode':a6_0x417dab(0xeb,'eTBx'),'lineNumbers':!![],'theme':'default','lint':!![],'lineWrapping':!![]});function minifyCSS(_0x16587c){const _0x255077=a6_0x417dab;if(!_0x16587c)return'';return _0x16587c[_0x255077(0x10c,'b[oC')](/\/\*[\s\S]*?\*\//g,'')['replace'](/\s*([{}:;,>+~])\s*/g,'$1')[_0x255077(0xca,'aPml')](/;}/g,'}')[_0x255077(0xaf,'#a8r')](/\s+/g,'\x20')['replace'](/\s*!important/g,'!important')['trim']();}function a6_0x2e45(_0x20a7b7,_0x3c744c){const _0x238a3a=a6_0x53f5();return a6_0x2e45=function(_0x65f5ae,_0x31674a){_0x65f5ae=_0x65f5ae-0xa2;let _0x3842d1=_0x238a3a[_0x65f5ae];if(a6_0x2e45['AopKSU']===undefined){var _0x53f5b6=function(_0x401173){const _0xee1735='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x2b960a='',_0x5524f2='';for(let _0x2453be=0x0,_0x350768,_0x5b8040,_0x44060f=0x0;_0x5b8040=_0x401173['charAt'](_0x44060f++);~_0x5b8040&&(_0x350768=_0x2453be%0x4?_0x350768*0x40+_0x5b8040:_0x5b8040,_0x2453be++%0x4)?_0x2b960a+=String['fromCharCode'](0xff&_0x350768>>(-0x2*_0x2453be&0x6)):0x0){_0x5b8040=_0xee1735['indexOf'](_0x5b8040);}for(let _0x3a00ec=0x0,_0xbd7166=_0x2b960a['length'];_0x3a00ec<_0xbd7166;_0x3a00ec++){_0x5524f2+='%'+('00'+_0x2b960a['charCodeAt'](_0x3a00ec)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x5524f2);};const _0xfc9349=function(_0x5d704c,_0x445032){let _0x37141c=[],_0x5014f8=0x0,_0x461e48,_0xd93056='';_0x5d704c=_0x53f5b6(_0x5d704c);let _0x1d3ae5;for(_0x1d3ae5=0x0;_0x1d3ae5<0x100;_0x1d3ae5++){_0x37141c[_0x1d3ae5]=_0x1d3ae5;}for(_0x1d3ae5=0x0;_0x1d3ae5<0x100;_0x1d3ae5++){_0x5014f8=(_0x5014f8+_0x37141c[_0x1d3ae5]+_0x445032['charCodeAt'](_0x1d3ae5%_0x445032['length']))%0x100,_0x461e48=_0x37141c[_0x1d3ae5],_0x37141c[_0x1d3ae5]=_0x37141c[_0x5014f8],_0x37141c[_0x5014f8]=_0x461e48;}_0x1d3ae5=0x0,_0x5014f8=0x0;for(let _0x3d65e4=0x0;_0x3d65e4<_0x5d704c['length'];_0x3d65e4++){_0x1d3ae5=(_0x1d3ae5+0x1)%0x100,_0x5014f8=(_0x5014f8+_0x37141c[_0x1d3ae5])%0x100,_0x461e48=_0x37141c[_0x1d3ae5],_0x37141c[_0x1d3ae5]=_0x37141c[_0x5014f8],_0x37141c[_0x5014f8]=_0x461e48,_0xd93056+=String['fromCharCode'](_0x5d704c['charCodeAt'](_0x3d65e4)^_0x37141c[(_0x37141c[_0x1d3ae5]+_0x37141c[_0x5014f8])%0x100]);}return _0xd93056;};a6_0x2e45['YeHtEG']=_0xfc9349,_0x20a7b7=arguments,a6_0x2e45['AopKSU']=!![];}const _0x2e459b=_0x238a3a[0x0],_0x2b4b5a=_0x65f5ae+_0x2e459b,_0x3b7155=_0x20a7b7[_0x2b4b5a];return!_0x3b7155?(a6_0x2e45['hIqEIO']===undefined&&(a6_0x2e45['hIqEIO']=!![]),_0x3842d1=a6_0x2e45['YeHtEG'](_0x3842d1,_0x31674a),_0x20a7b7[_0x2b4b5a]=_0x3842d1):_0x3842d1=_0x3b7155,_0x3842d1;},a6_0x2e45(_0x20a7b7,_0x3c744c);}function unminifyCSS(_0x3ed4ac){const _0x57145c=a6_0x417dab,_0x1ef33f={'sPMFU':function(_0x32bc5a,_0x577a87){return _0x32bc5a+_0x577a87;},'Oyxvz':'\x0a}\x0a','QBbWH':':root','xEymD':function(_0x5a20cf,_0x339b6d){return _0x5a20cf(_0x339b6d);}};if(!_0x3ed4ac)return'';let _0x4ac7c9=_0x3ed4ac['replace'](/\s*{\s*/g,'\x20{\x0a')[_0x57145c(0xf6,'aj7e')](/\s*}\s*/g,_0x1ef33f[_0x57145c(0xe4,'K5Mo')])[_0x57145c(0xea,'cP[3')](/\s*;\s*/g,';\x0a')[_0x57145c(0xa4,'rYB6')](/:(?!hover|active|focus|visited|before|after|first-child|last-child|nth-child|not)/g,':\x20')[_0x57145c(0xbf,'D]pt')](/\n\s*\n/g,'\x0a')[_0x57145c(0xd3,'ejNV')](/: :/g,'::')[_0x57145c(0xe7,'GYN1')](/: root/g,_0x1ef33f['QBbWH'])[_0x57145c(0xe1,'ZAd!')](),_0x1c3b22=0x0;return _0x4ac7c9=_0x4ac7c9[_0x57145c(0xbd,'ZPaQ')]('\x0a')[_0x57145c(0xc0,'O$*c')](_0x3a9fe4=>{const _0x40a241=_0x57145c;_0x3a9fe4=_0x3a9fe4[_0x40a241(0xd8,'RiQj')]();if(_0x3a9fe4[_0x40a241(0x108,'cP[3')]('}'))_0x1c3b22--;const _0x1ab70e=_0x1ef33f['sPMFU']('\x20\x20'[_0x40a241(0xb1,'m!yY')](Math['max'](_0x1c3b22,0x0)),_0x3a9fe4);if(_0x3a9fe4['endsWith']('{'))_0x1c3b22++;return _0x1ab70e;})['join']('\x0a'),_0x1ef33f[_0x57145c(0xae,'fi[G')](detectNestedBraces,_0x4ac7c9),_0x4ac7c9;}document[a6_0x417dab(0xa6,'fi[G')](a6_0x417dab(0xf5,'[eiQ'))[a6_0x417dab(0xd0,'Qmzs')](a6_0x417dab(0xa9,'Mm*X'),function(){const _0x585b6d=a6_0x417dab,_0x220501={'OWLas':function(_0x5cc90f,_0x502322){return _0x5cc90f(_0x502322);}},_0x2dceb0=cssEditorCssInput[_0x585b6d(0x103,'Py!V')]();cssEditorCssInput[_0x585b6d(0xbc,'@uLy')](_0x220501[_0x585b6d(0xc4,'rYB6')](minifyCSS,_0x2dceb0));}),document[a6_0x417dab(0x113,'m!yY')](a6_0x417dab(0x10d,'Mm*X'))[a6_0x417dab(0xf0,'aj7e')](a6_0x417dab(0xe3,'fi[G'),function(){const _0xef9e7b=a6_0x417dab,_0x33a336=cssEditorCssInput[_0xef9e7b(0xee,'W9rM')]();cssEditorCssInput['setValue'](unminifyCSS(_0x33a336));});function detectNestedBraces(_0x8f5b61){const _0x15f8dc=a6_0x417dab,_0x58df1f={'kzxau':function(_0x313fb2,_0x5552d2){return _0x313fb2===_0x5552d2;},'raHju':_0x15f8dc(0xa2,'7Q3F'),'amjcf':function(_0x39638b,_0x25b173){return _0x39638b===_0x25b173;},'HQEoB':function(_0x28cac4,_0x1be3d4){return _0x28cac4>_0x1be3d4;},'YyGOw':_0x15f8dc(0x115,'CRgU')};if(!_0x8f5b61)return;let _0x307823=0x0,_0x5d1493=0x0;for(let _0x3e34ba of _0x8f5b61){if(_0x58df1f['kzxau'](_0x3e34ba,'{'))_0x58df1f[_0x15f8dc(0xfe,'ZPaQ')](_0x58df1f[_0x15f8dc(0xdd,'cFwx')],_0x58df1f[_0x15f8dc(0xa3,'#a8r')])?(_0x307823++,_0x5d1493=Math[_0x15f8dc(0xcc,'jPy5')](_0x5d1493,_0x307823)):_0x39fdbc[_0x15f8dc(0xaa,'eTBx')]['writeText'](_0x44767a)['then'](()=>_0x316c07[_0x15f8dc(0xac,'aj7e')](_0x15f8dc(0x114,'A1PM')));else _0x58df1f[_0x15f8dc(0xa8,'eBQF')](_0x3e34ba,'}')&&_0x307823--;}_0x58df1f[_0x15f8dc(0xdc,'[eiQ')](_0x5d1493,0x1)?console['log']('Nested\x20CSS\x20detected\x20(depth:',_0x5d1493,')'):console[_0x15f8dc(0xf9,'A1PM')](_0x58df1f[_0x15f8dc(0x100,'eBQF')]);}var css='/*\x20=========================\x0a\x20\x20Global\x20Styles\x0a=========================\x20*/\x0a\x0a:root\x20{\x0a\x20--primary-color:\x20#3498db;\x0a\x20--secondary-color:\x20#2ecc71;\x0a\x20--font-stack:\x20\x27Segoe\x20UI\x27,\x20Arial,\x20sans-serif;\x0a}\x0a\x0a*,\x0a*::before,\x0a*::after\x20{\x0a\x20box-sizing:\x20border-box;\x0a}\x0a\x0a/*\x20=========================\x0a\x20\x20Body\x20&\x20Typography\x0a=========================\x20*/\x0a\x0abody\x20{\x0a\x20margin:\x200;\x0a\x20padding:\x200;\x0a\x20font-family:\x20var(--font-stack);\x0a\x20background:\x20#f5f5f5;\x0a\x20color:\x20#333;\x0a}\x0a\x0a/*\x20=========================\x0a\x20\x20Container\x0a=========================\x20*/\x0a\x0a.container\x20{\x0a\x20width:\x2090%;\x0a\x20max-width:\x201200px;\x0a\x20margin:\x200\x20auto;\x0a}\x0a\x0a/*\x20=========================\x0a\x20\x20Navigation\x0a=========================\x20*/\x0a\x0a.navbar\x20>\x20ul\x20li\x20+\x20li\x20{\x0a\x20margin-left:\x2015px;\x0a}\x0a\x0a.navbar\x20a:hover,\x0a.navbar\x20a:focus\x20{\x0a\x20color:\x20var(--primary-color);\x0a}\x0a\x0a.navbar\x20a::after\x20{\x0a\x20content:\x20\x27\x27;\x0a\x20display:\x20block;\x0a\x20width:\x200;\x0a\x20height:\x202px;\x0a\x20background:\x20var(--primary-color);\x0a\x20transition:\x20width\x200.3s\x20ease;\x0a}\x0a\x0a.navbar\x20a:hover::after\x20{\x0a\x20width:\x20100%;\x0a}\x0a\x0a/*\x20=========================\x0a\x20\x20Buttons\x0a=========================\x20*/\x0a\x0a.btn\x20{\x0a\x20padding:\x2010px\x2020px;\x0a\x20border:\x20none;\x0a\x20cursor:\x20pointer;\x0a}\x0a\x0a.btn-primary\x20{\x0a\x20background:\x20var(--primary-color);\x0a\x20color:\x20#fff\x20!important;\x0a}\x0a\x0a.btn-primary:hover\x20{\x0a\x20background:\x20#2980b9;\x0a}\x0a\x0a/*\x20=========================\x0a\x20\x20Cards\x20(Nested\x20Example)\x0a=========================\x20*/\x0a\x0a.card\x20{\x0a\x20background:\x20#fff;\x0a\x20padding:\x2020px;\x0a\x20border-radius:\x205px;\x0a\x0a\x20/*\x20Nested\x20(modern\x20CSS\x20/\x20preprocessor\x20style)\x20*/\x0a\x20.card-title\x20{\x0a\x20\x20\x20font-size:\x2020px;\x0a\x20\x20\x20margin-bottom:\x2010px;\x0a\x20}\x0a\x0a\x20.card-content\x20{\x0a\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20line-height:\x201.5;\x0a\x20}\x0a\x0a\x20&:hover\x20{\x0a\x20\x20\x20box-shadow:\x200\x205px\x2015px\x20rgba(0,0,0,0.1);\x0a\x20}\x0a}\x0a\x0a/*\x20=========================\x0a\x20\x20Grid\x20Layout\x0a=========================\x20*/\x0a\x0a.grid\x20{\x0a\x20display:\x20grid;\x0a\x20grid-template-columns:\x20repeat(3,\x201fr);\x0a\x20gap:\x2015px;\x0a}\x0a\x0a/*\x20=========================\x0a\x20\x20Animation\x0a=========================\x20*/\x0a\x0a@keyframes\x20fadeIn\x20{\x0a\x200%\x20{\x0a\x20\x20\x20opacity:\x200;\x0a\x20}\x0a\x20100%\x20{\x0a\x20\x20\x20opacity:\x201;\x0a\x20}\x0a}\x0a\x0a.fade-in\x20{\x0a\x20animation:\x20fadeIn\x201s\x20ease-in-out;\x0a}\x0a\x0a/*\x20=========================\x0a\x20\x20Media\x20Queries\x0a=========================\x20*/\x0a\x0a@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20.grid\x20{\x0a\x20\x20\x20grid-template-columns:\x201fr;\x0a\x20}\x0a\x0a\x20.navbar\x20{\x0a\x20\x20\x20display:\x20none;\x0a\x20}\x0a}\x0a\x0a/*\x20=========================\x0a\x20\x20Complex\x20Selectors\x0a=========================\x20*/\x0a\x0aul\x20li:first-child,\x0aul\x20li:last-child\x20{\x0a\x20font-weight:\x20bold;\x0a}\x0a\x0ainput[type=\x22text\x22]:focus\x20{\x0a\x20border-color:\x20var(--secondary-color);\x0a}\x0a\x0a/*\x20=========================\x0a\x20\x20Edge\x20Cases\x0a=========================\x20*/\x0a\x0a/*\x20Comment\x20to\x20be\x20removed\x20*/\x0a.box\x20{\x0a\x20margin:\x200px\x20\x2010px\x20\x2020px\x20\x2030px\x20;\x0a\x20padding\x20:\x2010px\x20;\x0a\x20background\x20:\x20url(\x22image.png\x22)\x20no-repeat\x20center\x20center\x20/\x20cover\x20;\x0a}';cssEditorCssInput['setValue'](css),document[a6_0x417dab(0xb5,'9DO9')](a6_0x417dab(0xc2,'CRgU'))[a6_0x417dab(0xb2,'fi[G')]('click',function(){const _0x4a5567=a6_0x417dab;cssEditorCssInput[_0x4a5567(0xec,'fi[G')]('');}),document[a6_0x417dab(0xc1,'D[r3')](a6_0x417dab(0xc7,'D[r3'))[a6_0x417dab(0xde,'(yfF')](a6_0x417dab(0xb6,'c]49'),function(){const _0x1e40fd=a6_0x417dab,_0x50f94d={'iMMBK':function(_0x425a75,_0x23f6f4){return _0x425a75===_0x23f6f4;},'ohcek':'FinfN','xYTIe':_0x1e40fd(0xfd,'7Q3F')},_0x3e13b2=cssEditorCssInput[_0x1e40fd(0xf7,'D]pt')]();if(!_0x3e13b2)return;navigator[_0x1e40fd(0xed,'DA(B')]&&window[_0x1e40fd(0xfa,'(yfF')]&&(_0x50f94d['iMMBK'](_0x50f94d[_0x1e40fd(0xb7,'(yfF')],_0x50f94d['xYTIe'])?(_0x26ef8e++,_0x3257fb=_0x57a4f5[_0x1e40fd(0xfb,'@uLy')](_0x1067ab,_0x2920bf)):navigator[_0x1e40fd(0xd6,'XKrb')][_0x1e40fd(0xc9,'hyEW')](_0x3e13b2)[_0x1e40fd(0x101,'b[oC')](()=>console['log']('Copied\x20to\x20clipboard')));});function a6_0x53f5(){const _0x6d534=['WP3cNCo2mXa','W6VdSSoj','wHbGWPJcHSo7nqWeWOdcTa','zCo1j3il','o1JcISkPWOGKWRxcQdtdKmknBSoriSkLW7ldGLZdT0pdM8oZsI1SWRDqWP4BW7Sgiq','tsrNB8oNWRCDiL3cT8kbBmktWQWpjG','W73dNmo6WQpcRG','WRFdJCo7wKWoW6xdSSkxWPrcdCoM','i8kFf8kfWRRdPZ4','W4VcUgGavG','WOCIW5ZcJSo8','gcXbzq3dSGDRhW','zxBcVrNcLaRdHJG','W7/dV8o3WRG','WR3dHmo2WOa5lghdOwRdMLZdPG','mSkyB8o4','otJcQH/cIZddPt/cSW','W53dNh0ZW4C','n0HqWROV','mCkAaSkMyIJcSmoiW7aXWPnTW7byW6tcPq','A8kCiSk+jSkMvmkKWRfZW4tcPdZdPa','WPVdSSo4iZm','WQhdMCocW7i','W6xdICkmWOldImomWO3dUG9Xpx8','WPNdUgr/qa','d1ZdNmk8WP0','w3OfWPpdKCkqW7lcU8oavvXCW7O','zCkAcH/cQsbjW50LW6GCAq','W6vBWOVdICkBW505','ySoiWPFcIN3dPNy','W4CnW63cNCoLkSoO','oSoWhGJcNSkKeW','C8o5W68','WONdSxLksSkyW7jF','omkAymoNW4HbW6zvWRC','WPZcHWj7tNLBW48','ySopvSoyW63cVg99W54kgCkXWQm','WPval8ktW5FdNKpdQbNcJx8CWR0zWPij','au09W5ldGSkWosuFWQtcRSk2','pCoBWRJcJui','WOtdHCokW4yP','oZtcTcddR8oGibDPW5ldNqi','W7JdPfy1W6pdNr1jxq','WOzbo8k6W4ddMeG','xWtcMmoOiZCyCW','WO7dI8kWgSoIhSkUWP8a','W6NcM8kP','oCknnCkgDZJcRmozW783WO5TW7boW7u','DtNcOq','WO7cVSoGkJO','lCkshCoeW7O','WO50W77cPJm','W7rnWOJdRmkuW44PhG','wa50WPBdHW','WOJdR8ondW','ymkwmq','WOZcQCoMeYKFW5TD','ttbZrSoO','wHbGWPJcNCoLjq','DYpcHmomka','WPVdUJ0A','o8oHdXBcI8k0iCklW40g','WPacW5tcJG','W4pcONL/rmk6W41s','W4/cImoVfmoHi8kaWOOo','WO7dOSoydqi/oW','DZxdG1GIc1i2WQRdHxW','WQpdU15rrG','vSoRzmkGW6/dN8k6WO/dLW','e8k1b8kUW7hdV8kdWO0','q3iBlf/cPb9tfcxcImoD','l8keAmo0W48','W7PkW5rwr8k8yL3dQmkamxxcK8k3','W4BcM8k+br1FW7ddJ8kxW7nyjSo6xmkyW6pdPxhcVW','DXaUWOxcL8o6naOuW4/cHCksW5P4w2GLlYJdSXiQ','bCkGfCoCW7q','W43cUeigrG','WOi1mXfqetG','umkrsNLBW6X+WQvrWP7dQ8o2ra','WP3dSxLzr8krW6PFW57dIe1+gmoX','W6zHr1FdOq','ybPzWRRdLG','ytFdH1iN','C8oMW7vkW4ddICo3WRxdRW','f8okhHBcKmkZgCk9W6y','WPHlla','WQhcTa1RWRlcKtTfFHnsEW','WOldKxrXBW','W43cVhOauSkHW7m','yX5DWR0','W69kW5b2sSkT','WPVdSgLzxCkrW6LoW7ZdLxXZnmo7W6hdJq','oIGXWOpcNX8gE2NdPLVcUa','n8ktz8oWW55g','WPNdNmkRk8oHd8k6WOOljZefW6ddKq','pIRcSI7dKa','p8kwbCkgFW','WRNcNCoe','W4ldL0uDfIv8W4JdLmo3W7XX','W6RdGmo/s8oN','uxyjWPZdNCktW7FcNSoAyeXEW5W','AZ3cRCobWPy3hZe','WPz+W6RcRJi','WOzbp8kJW5pdLq3cTdpcKwilWQWEWPGvWQzidW','sGtcNmosiZGi','oCoosG','WRpcMCoiW7xcNCkyWPxdIcnNc0FcKci','wHnRWORcGmokeZWYWPVcQa','W5naWOb9tSkQE13dOSoumf/cICoZmmkBWRJcGspcRmoQpW','WR8hdXXc','nmk+kSkXWO0','WRZcIGr6FG','WRFcK8omW4NcSSkUWQVdRZL9','WR3dGCo3vuanW6ddL8knWQfsd8oa','W77cJ8kQW4nRtwddOvm','jColWRdcKuJdJ2m'];a6_0x53f5=function(){return _0x6d534;};return a6_0x53f5();}
+const cssEditorCssInput = CodeMirror.fromTextArea(
+    document.getElementById('cssInput'),
+    {
+      mode: 'css',
+      lineNumbers: true,
+      theme: 'default',
+      lint: true,
+      lineWrapping: true,
+    }
+  );
+  
+  function minifyCSS(input) {
+    if (!input) return '';
+  
+    return input
+      // Remove comments (safe)
+      .replace(/\/\*[\s\S]*?\*\//g, '')
+  
+      // Remove whitespace around symbols
+      .replace(/\s*([{}:;,>+~])\s*/g, '$1')
+  
+      // Remove unnecessary semicolons
+      .replace(/;}/g, '}')
+  
+      // Collapse multiple spaces
+      .replace(/\s+/g, ' ')
+  
+      // Remove space before !important
+      .replace(/\s*!important/g, '!important')
+  
+      // Trim
+      .trim();
+  }
+  
+  
+  function unminifyCSS(input) {
+    if (!input) return '';
+  
+    let output = input
+      // Ensure proper spacing before processing
+      .replace(/\s*{\s*/g, ' {\n')
+      .replace(/\s*}\s*/g, '\n}\n')
+      .replace(/\s*;\s*/g, ';\n')
+  
+      // Fix colon spacing (avoid pseudo selectors)
+      .replace(
+        /:(?!hover|active|focus|visited|before|after|first-child|last-child|nth-child|not)/g,
+        ': '
+      )
+  
+      // Remove extra empty lines
+      .replace(/\n\s*\n/g, '\n')
+      .replace(/: :/g, '::')
+      .replace(/: root/g, ':root')
+      .trim();
+  
+    let indentLevel = 0;
+  
+    output = output
+      .split('\n')
+      .map(line => {
+        line = line.trim();
+  
+        // Decrease indent BEFORE applying
+        if (line.startsWith('}')) indentLevel--;
+  
+        const indentedLine =
+          '  '.repeat(Math.max(indentLevel, 0)) + line;
+  
+        // Increase indent AFTER {
+        if (line.endsWith('{')) indentLevel++;
+  
+        return indentedLine;
+      })
+      .join('\n');
+  
+    detectNestedBraces(output);
+  
+    return output;
+  }
+  
+  
+  // ✅ Vanilla JS Event Listeners
+  document.getElementById('minifyBtn').addEventListener('click', function () {
+    const code = cssEditorCssInput.getValue();
+    cssEditorCssInput.setValue(minifyCSS(code));
+  });
+  
+  document.getElementById('unminifyBtn').addEventListener('click', function () {
+    const code = cssEditorCssInput.getValue();
+    cssEditorCssInput.setValue(unminifyCSS(code));
+  });
+  
+  function detectNestedBraces(cssCode) {
+    if (!cssCode) return;
+  
+    let depth = 0;
+    let maxDepth = 0;
+  
+    for (let char of cssCode) {
+      if (char === '{') {
+        depth++;
+        maxDepth = Math.max(maxDepth, depth);
+      } else if (char === '}') {
+        depth--;
+      }
+    }
+  
+    if (maxDepth > 1) {
+      console.log('Nested CSS detected (depth:', maxDepth, ')');
+    } else {
+      console.log('No nested CSS detected');
+    }
+  }
+  
+  
+  
+
+
+  var css = `/* =========================
+  Global Styles
+========================= */
+
+:root {
+ --primary-color: #3498db;
+ --secondary-color: #2ecc71;
+ --font-stack: 'Segoe UI', Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+/* =========================
+  Body & Typography
+========================= */
+
+body {
+ margin: 0;
+ padding: 0;
+ font-family: var(--font-stack);
+ background: #f5f5f5;
+ color: #333;
+}
+
+/* =========================
+  Container
+========================= */
+
+.container {
+ width: 90%;
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+/* =========================
+  Navigation
+========================= */
+
+.navbar > ul li + li {
+ margin-left: 15px;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+ color: var(--primary-color);
+}
+
+.navbar a::after {
+ content: '';
+ display: block;
+ width: 0;
+ height: 2px;
+ background: var(--primary-color);
+ transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+ width: 100%;
+}
+
+/* =========================
+  Buttons
+========================= */
+
+.btn {
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+}
+
+.btn-primary {
+ background: var(--primary-color);
+ color: #fff !important;
+}
+
+.btn-primary:hover {
+ background: #2980b9;
+}
+
+/* =========================
+  Cards (Nested Example)
+========================= */
+
+.card {
+ background: #fff;
+ padding: 20px;
+ border-radius: 5px;
+
+ /* Nested (modern CSS / preprocessor style) */
+ .card-title {
+   font-size: 20px;
+   margin-bottom: 10px;
+ }
+
+ .card-content {
+   font-size: 14px;
+   line-height: 1.5;
+ }
+
+ &:hover {
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+ }
+}
+
+/* =========================
+  Grid Layout
+========================= */
+
+.grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 15px;
+}
+
+/* =========================
+  Animation
+========================= */
+
+@keyframes fadeIn {
+ 0% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+
+.fade-in {
+ animation: fadeIn 1s ease-in-out;
+}
+
+/* =========================
+  Media Queries
+========================= */
+
+@media screen and (max-width: 768px) {
+ .grid {
+   grid-template-columns: 1fr;
+ }
+
+ .navbar {
+   display: none;
+ }
+}
+
+/* =========================
+  Complex Selectors
+========================= */
+
+ul li:first-child,
+ul li:last-child {
+ font-weight: bold;
+}
+
+input[type="text"]:focus {
+ border-color: var(--secondary-color);
+}
+
+/* =========================
+  Edge Cases
+========================= */
+
+/* Comment to be removed */
+.box {
+ margin: 0px  10px  20px  30px ;
+ padding : 10px ;
+ background : url("image.png") no-repeat center center / cover ;
+}`;
+//$("#cssInput").val(css);
+cssEditorCssInput.setValue(css);
+
+
+
+document.getElementById('clearCSSBtn').addEventListener('click', function () {
+    cssEditorCssInput.setValue('');
+  });
+  
+  document.getElementById('copyCSSBtn').addEventListener('click', function () {
+    const code = cssEditorCssInput.getValue();
+  
+    if (!code) return;
+  
+    // Modern clipboard API
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(code)
+        .then(() => console.log('Copied to clipboard'));
+    } 
+  });
+  
