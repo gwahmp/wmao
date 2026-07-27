@@ -141,6 +141,16 @@ const categories = posts.reduce((acc: Record<string, number>, post) => {
      typeof="SiteNavigationElement">
      {/* First column */}
 <nav class="col-span-1 md:col-span-2">
+
+  <div class="mo">
+    <p class="truncate">Hi, <span class="dname">Wikimint member</span></p>
+        <span role="button" class="block my-3 w-full logout text-red-600 py-1 px-3 text-center border border-red-600">Logout</span>
+  </div>
+  <div class="go">
+    <p>Create your brand. Promote yourself lifetime free.</p>
+    <span role="button" class="block my-3 w-full login btn">Login</span>
+  </div>
+  
   <ul class="space-y-2">
     <li typeof="WebPage">
       <a href="https://wikimint.com" property="url">

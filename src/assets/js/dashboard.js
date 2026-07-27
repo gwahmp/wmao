@@ -1,5 +1,3 @@
-
-
 const sidebar = document.getElementById('sidebar');
 const open = document.getElementById('openMenu');
 const close = document.getElementById('closeMenu');
@@ -46,7 +44,9 @@ document.addEventListener(
         //
         // Highlight active menu
         //
-        document.querySelectorAll("[data-menu]").forEach(el => {el.classList.remove('active');});
+        document.querySelectorAll("[data-menu]").forEach(el => {
+            el.classList.remove('active');
+        });
         menu.classList.add(
             'active'
         );
@@ -56,11 +56,11 @@ document.addEventListener(
         //
 
         const group =
-        menu
-        .closest('.acc-menu-item')
-        ?.querySelector('.menu-group');
+            menu
+                .closest('.acc-menu-item')
+                ?.querySelector('.menu-group');
         if (group) {
-            
+
             group.click();
 
         }
@@ -128,7 +128,7 @@ document
 
     });
 
-    document
+document
     .querySelectorAll(
         'a.uc'
     )
@@ -137,63 +137,66 @@ document
         link.addEventListener(
             'click',
             () => {
-alert("This feature is under construction");
-            })});
+                alert("This feature is under construction");
+            })
+    });
 /* Menu ends */
 
 //referral link
-function referralLinks(){
+function referralLinks() {
     const userid =
         member.userid;
-    document.querySelectorAll(".uid").forEach(el => {el.innerHTML = userid;});
-    
+    document.querySelectorAll(".uid").forEach(el => {
+        el.innerHTML = userid;
+    });
+
     var referral =
         `https://wikimint.com?r=${userid}`;
-    
+
     document
         .getElementById(
             'referralLink'
         )
         .value =
-            referral;
-    
+        referral;
+
     document
         .getElementById(
             'copyReferral'
         )
         .onclick =
-            async () => {
-    
-                await navigator
-                    .clipboard
-                    .writeText(
-                        referral
-                    );
-    
-                const toast =
-                    document.getElementById(
-                        'toast'
-                    );
-    
-                toast.classList.remove(
-                    'opacity-0'
-                );
-    
-                setTimeout(
-                    () => {
-    
-                        toast.classList.add(
-                            'opacity-0'
-                        );
-    
-                    },
-                    2000
-                );
-            };
-        }
-    //referral link
+        async () => {
 
-    
+            await navigator
+                .clipboard
+                .writeText(
+                    referral
+                );
+
+            const toast =
+                document.getElementById(
+                    'toast'
+                );
+
+            toast.classList.remove(
+                'opacity-0'
+            );
+
+            setTimeout(
+                () => {
+
+                    toast.classList.add(
+                        'opacity-0'
+                    );
+
+                },
+                2000
+            );
+        };
+}
+//referral link
+
+
 /*Dashboard data starts*/
 
 const DASHBOARD_CACHE_KEY = "wm_dashboard";
@@ -246,6 +249,12 @@ function clearDashboardData() {
 
 }
 
+async function refreshDashboardData() {
+
+    return await loadDashboardData(true);
+
+}
+
 async function fetchDashboardData() {
 
     const response = await fetch(
@@ -272,19 +281,27 @@ async function fetchDashboardData() {
 
 }
 
-async function loadDashboardData() {
+async function loadDashboardData(
+    forceRefresh = false
+) {
 
-    const cache = getDashboardData();
+    if (!forceRefresh) {
 
-    if (cache) {
+        const cache =
+            getDashboardData();
 
-        dashboardData = cache;
+        if (cache) {
 
-        return cache;
+            dashboardData = cache;
+
+            return cache;
+
+        }
 
     }
 
-    const fresh = await fetchDashboardData();
+    const fresh =
+        await fetchDashboardData();
 
     if (!fresh)
         return null;
@@ -295,6 +312,7 @@ async function loadDashboardData() {
 
 }
 
+let dashboard;
 async function initMember() {
 
     const dashboard = await loadDashboardData();

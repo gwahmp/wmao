@@ -55,7 +55,7 @@ let VERIFY_KEY;
             >
             86400000
         );
-  
+
 
     //
     // already logged in
@@ -88,7 +88,7 @@ let VERIFY_KEY;
 
 })();
 
-window.callWhenAuthReady = function(callback) {
+window.callWhenAuthReady = function (callback) {
 
     const wait = setInterval(() => {
 
@@ -106,7 +106,7 @@ window.callWhenAuthReady = function(callback) {
 
 };
 
-window.ifMember = function(callback) {
+window.ifMember = function (callback) {
 
     callWhenAuthReady(auth => {
 
@@ -120,7 +120,7 @@ window.ifMember = function(callback) {
 
 };
 
-window.ifGuest = function(callback) {
+window.ifGuest = function (callback) {
 
     callWhenAuthReady(auth => {
 
@@ -136,7 +136,7 @@ window.ifGuest = function(callback) {
 
 
 
-document.querySelectorAll('.login').forEach(btn =>btn.onclick = () => {location.href = "/app/signin"});
+document.querySelectorAll('.login').forEach(btn => btn.onclick = () => { location.href = "/app/signin" });
 
 document.querySelectorAll('.logout').forEach(btn => {
     btn.onclick = async () => {
@@ -164,7 +164,7 @@ document.querySelectorAll('.logout').forEach(btn => {
             clearDashboardData();
 
 
-           window.location.reload();
+            window.location.reload();
         } catch (error) {
             alert('Unable to log out. Please try again.');
         }

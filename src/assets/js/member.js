@@ -12,12 +12,12 @@ ifMember(() => {
 function renderMember(
     member
 ) {
-    document.querySelectorAll(".dname").forEach(el => {el.textContent =member.name;});
-    document.querySelectorAll(".dname").forEach(el => {el.setAttribute("title",member.name);});
-    document.querySelectorAll(".murl").forEach(el => {el.setAttribute("href","/profile?u="+member.userid);});
+    document.querySelectorAll(".dname").forEach(el => { el.textContent = member.name; });
+    document.querySelectorAll(".dname").forEach(el => { el.setAttribute("title", member.name); });
+    document.querySelectorAll(".murl").forEach(el => { el.setAttribute("href", "/profile?u=" + member.userid); });
 
 
-         }
+}
 
 
 
@@ -26,29 +26,29 @@ window.addEventListener('load', () => {
     document.querySelector('.lph')?.remove();
 });
 
-function referrerCookie(){
+function referrerCookie() {
     const params = new URLSearchParams(window.location.search);
 
     const referrer = params.get("r");
     const profile = params.get("u");
-    
+
     const validUserId = /^[a-z0-9]{10}$/;
-    
+
     // Read existing referral cookie
     const existingReferrer = document.cookie
         .split("; ")
         .find(c => c.startsWith("referrer="))
         ?.split("=")[1];
-    
+
     // 1. Explicit referral link (?r=)
     // Always overwrite
     if (referrer && validUserId.test(referrer)) {
-    
+
         document.cookie =
             `referrer=${encodeURIComponent(referrer)}; Path=/; Max-Age=31536000; SameSite=Lax; Secure`;
-    
+
     }
-    
+
     // 2. Member profile (?u=)
     // Only set if no referral cookie exists
     else if (
@@ -56,12 +56,12 @@ function referrerCookie(){
         validUserId.test(profile) &&
         !existingReferrer
     ) {
-    
+
         document.cookie =
             `referrer=${encodeURIComponent(profile)}; Path=/; Max-Age=31536000; SameSite=Lax; Secure`;
-    
+
     }
-}referrerCookie();
+} referrerCookie();
 
 function getBrowserId() {
 
@@ -70,7 +70,7 @@ function getBrowserId() {
     if (!id) {
         id = crypto.randomUUID();
 
-        localStorage.setItem("browserid",id);
+        localStorage.setItem("browserid", id);
 
     }
 
@@ -231,19 +231,70 @@ function resetUserInteraction() {
 
 }
 
-let waitForInteraction;
-function startWaitForInteraction(){
-    waitForInteraction = setInterval(() => {
 
-    if (!hasUserInteracted()) {
 
-        return;
+function isRealTraffic() { const ua = navigator.userAgent.toLowerCase(); const bots = ["bot", "crawl", "spider", "slurp", "bingpreview", "facebookexternalhit", "whatsapp", "telegrambot", "linkedinbot", "discordbot", "googlebot", "bingbot", "yandex", "duckduckbot", "baiduspider", "applebot"]; return !bots.some(bot => ua.includes(bot)); }
+
+
+
+//modal starts
+function openModal(
+    title,
+    html
+) {
+
+    document.getElementById(
+        "modalTitle"
+    ).textContent = title;
+
+    document.getElementById(
+        "modalBody"
+    ).innerHTML = html;
+
+    document.getElementById(
+        "modalOverlay"
+    ).classList.remove(
+        "hidden"
+    );
+
+}
+
+function closeModal() {
+
+    document.getElementById(
+        "modalOverlay"
+    ).classList.add(
+        "hidden"
+    );
+
+}
+
+document.addEventListener(
+    "click",
+    event => {
+
+        if (
+
+            event.target.id ===
+            "closeModal"
+
+        ) {
+
+            closeModal();
+
+        }
+
+        if (
+
+            event.target.id ===
+            "modalOverlay"
+
+        ) {
+
+            closeModal();
+
+        }
 
     }
-
-    clearInterval(waitForInteraction);
-
-    recordProfileView();
-
-}, 250);
-}
+);
+//modal ends

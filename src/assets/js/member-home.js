@@ -3,9 +3,8 @@
 // ----------------------
 
 ifMember(() => { console.log('member'); });
-ifGuest(() => { console.log('guest');  });
+ifGuest(() => { console.log('guest'); });
 
-let dashboard;
 
 async function initMember() {
 
@@ -22,159 +21,159 @@ async function initMember() {
 
 
 
-// ----------------------
-// Member Name
-// ----------------------
+    // ----------------------
+    // Member Name
+    // ----------------------
 
-document.querySelectorAll(".member-name").forEach(el => {
+    document.querySelectorAll(".member-name").forEach(el => {
 
-    el.textContent = member.name || "Member";
+        el.textContent = member.name || "Member";
 
-});
+    });
 
-// ----------------------
-// Membership
-// ----------------------
-if(member){
-const badge = document.getElementById("membershipBadge");
+    // ----------------------
+    // Membership
+    // ----------------------
+    if (member) {
+        const badge = document.getElementById("membershipBadge");
 
-const membership = member.membership || "FREE";
+        const membership = member.membership || "FREE";
 
-badge.textContent = membership + " MEMBER";
+        badge.textContent = membership + " MEMBER";
 
-if (membership === "PRO") {
+        if (membership === "PRO") {
 
-    badge.className =
-        "rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-700";
+            badge.className =
+                "rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-700";
 
-}
+        }
 
-// ----------------------
-// Last Login
-// ----------------------
+        // ----------------------
+        // Last Login
+        // ----------------------
 
-if (member.lastLogin) {
+        if (member.lastLogin) {
 
-    document.getElementById("lastLogin").textContent =
-        member.lastLogin;
+            document.getElementById("lastLogin").textContent =
+                member.lastLogin;
 
-}
+        }
 
-// ----------------------
-// Greeting
-// ----------------------
+        // ----------------------
+        // Greeting
+        // ----------------------
 
-const hour = new Date().getHours();
+        const hour = new Date().getHours();
 
-let greeting = "Good Evening";
+        let greeting = "Good Evening";
 
-if (hour < 12)
-    greeting = "Good Morning";
+        if (hour < 12)
+            greeting = "Good Morning";
 
-else if (hour < 17)
-    greeting = "Good Afternoon";
+        else if (hour < 17)
+            greeting = "Good Afternoon";
 
-document.getElementById("dashboardGreeting").textContent =
-    greeting + ",";
+        document.getElementById("dashboardGreeting").textContent =
+            greeting + ",";
 
-// ----------------------
-// Date
-// ----------------------
+        // ----------------------
+        // Date
+        // ----------------------
 
-const dateOptions = {
+        const dateOptions = {
 
-    weekday: "long",
+            weekday: "long",
 
-    day: "numeric",
+            day: "numeric",
 
-    month: "long",
+            month: "long",
 
-    year: "numeric"
+            year: "numeric"
 
-};
+        };
 
-document.getElementById("currentDate").textContent =
-    new Date().toLocaleDateString(
-        undefined,
-        dateOptions
-    );
+        document.getElementById("currentDate").textContent =
+            new Date().toLocaleDateString(
+                undefined,
+                dateOptions
+            );
 
-// ----------------------
-// Random Subtitle
-// ----------------------
+        // ----------------------
+        // Random Subtitle
+        // ----------------------
 
-const subtitles = [
+        const subtitles = [
 
-    "Let's grow your online business today.",
+            "Let's grow your online business today.",
 
-    "Your marketing dashboard is ready.",
+            "Your marketing dashboard is ready.",
 
-    "Keep building your online presence.",
+            "Keep building your online presence.",
 
-    "Review today's progress and opportunities.",
+            "Review today's progress and opportunities.",
 
-    "Every small step moves your business forward.",
+            "Every small step moves your business forward.",
 
-    "Check your latest earnings and referrals.",
+            "Check your latest earnings and referrals.",
 
-    "You're one step closer to your next milestone."
+            "You're one step closer to your next milestone."
 
-];
+        ];
 
-document.getElementById("dashboardSubtitle").textContent =
-    subtitles[
-        Math.floor(
-            Math.random() * subtitles.length
-        )
-    ];
+        document.getElementById("dashboardSubtitle").textContent =
+            subtitles[
+            Math.floor(
+                Math.random() * subtitles.length
+            )
+            ];
 
-// ======================================================
-// Overview Statistics
-// ======================================================
+        // ======================================================
+        // Overview Statistics
+        // ======================================================
 
-const wallet = dashboard.wallet || {};
-const portfolio = dashboard.portfolio || {};
-var referral = dashboard.referral || {};
-console.log(member);
-document.querySelector(".credits").textContent =
-    (wallet.availableCredits ?? 0).toLocaleString();
+        const wallet = dashboard.wallet || {};
+        const portfolio = dashboard.portfolio || {};
+        var referral = dashboard.referral || {};
+        console.log(member);
+        document.querySelector(".credits").textContent =
+            (wallet.availableCredits ?? 0).toLocaleString();
 
-document.querySelector(".creditsChange").textContent =
-    "+" + (wallet.todayCredits ?? 0) + " today";
+        document.querySelector(".creditsChange").textContent =
+            "+" + (wallet.todayCredits ?? 0) + " today";
 
-document.querySelector(".growthUnits").textContent =
-    (portfolio.units ?? 0).toLocaleString();
+        document.querySelector(".growthUnits").textContent =
+            (portfolio.units ?? 0).toLocaleString();
 
-document.querySelector(".growthValue").textContent =
-    "Portfolio $" + (portfolio.value ?? 0);
+        document.querySelector(".growthValue").textContent =
+            "Portfolio $" + (portfolio.value ?? 0);
 
-document.querySelector(".portfolioValue").textContent =
-    "$" + (portfolio.value ?? 0);
+        document.querySelector(".portfolioValue").textContent =
+            "$" + (portfolio.value ?? 0);
 
-document.querySelector(".portfolioChange").textContent =
-    (portfolio.change ?? 0) + "%";
+        document.querySelector(".portfolioChange").textContent =
+            (portfolio.change ?? 0) + "%";
 
-document.querySelector(".earnings").textContent =
-    "$" + (wallet.earnings ?? 0);
+        document.querySelector(".earnings").textContent =
+            "$" + (wallet.earnings ?? 0);
 
-document.querySelector(".pending").textContent =
-    "Pending $" + (wallet.pending ?? 0);
+        document.querySelector(".pending").textContent =
+            "Pending $" + (wallet.pending ?? 0);
 
-document.querySelector(".referrals").textContent =
-    referral.total ?? 0;
+        document.querySelector(".referrals").textContent =
+            referral.total ?? 0;
 
-document.querySelector(".proReferrals").textContent =
-    (referral.pro ?? 0) + " Pro Members";
+        document.querySelector(".proReferrals").textContent =
+            (referral.pro ?? 0) + " Pro Members";
 
-document.querySelector(".membership").textContent =
-    member.membership || "FREE";
+        document.querySelector(".membership").textContent =
+            member.membership || "FREE";
 
-document.querySelector(".membershipExpiry").textContent =
-    member.membership === "PRO"
-        ? "Renew in 25 days"
-        : "Upgrade Available";    
+        document.querySelector(".membershipExpiry").textContent =
+            member.membership === "PRO"
+                ? "Renew in 25 days"
+                : "Upgrade Available";
 
-}
+    }
 }
 
 document.addEventListener("DOMContentLoaded", initMember);

@@ -5,6 +5,7 @@ import DashMenu from "../components/DashMenu.astro";
 import DashSidebar from "../components/DashSidebar.astro";
 import AuthVisibility from "../components/AuthVisibility.astro";
 import Spinner from "../components/Spinner.astro";
+import Modal from "../components/modal.astro";
 
 const {
     frontmatter = {}
@@ -221,7 +222,7 @@ const {
 <script is:inline src={`/assets/js/dashboard.js?v=${version}`} defer></script>
 
 
-
+<Modal/>
 </body>
 
 </html>

@@ -182,72 +182,73 @@ function initDailyLogin() {
     if (!canClaimBonusToday(BONUS_KEYS.DAILY_LOGIN)) {
 
         message.textContent = "You have already claimed today's login bonus.";
-        
+
 
     }
 
     button.addEventListener("click", async () => {
 
         button.disabled = true;
-    
+
         const data =
             await postBonusClaim(
                 "/bonus/daily-login"
             );
-            if (!data.success) {
+        if (!data.success) {
 
-                message.textContent = data.message;
-            
-                // Server confirms today's bonus already exists.
-                if (
-                    data.message ===
-                    "You have already claimed today's login bonus."
-                ) {
-            
-                    saveBonusClaimToday(
-                        BONUS_KEYS.DAILY_LOGIN
-                    );
-            
-                    updateClaimButton(
-                        button,
-                        false
-                    );
-            
-                } else {
-            
-                    updateClaimButton(
-                        button,
-                        true
-                    );
-            
-                }
-            
-                return;
-            
+            message.textContent = data.message;
+
+            // Server confirms today's bonus already exists.
+            if (
+                data.message ===
+                "You have already claimed today's login bonus."
+            ) {
+
+                saveBonusClaimToday(
+                    BONUS_KEYS.DAILY_LOGIN
+                );
+
+                updateClaimButton(
+                    button,
+                    false
+                );
+
+            } else {
+
+                updateClaimButton(
+                    button,
+                    true
+                );
+
             }
-    
+
+            return;
+
+        }
+
         saveBonusClaimToday(
             BONUS_KEYS.DAILY_LOGIN
         );
-    
+
         updateClaimButton(
             button,
             false
         );
-    
+
         message.textContent =
             data.message;
-    
+
         if (
             typeof refreshMemberBalance ===
             "function"
         ) {
-    
+
             clearDashboardData();
             refreshMemberBalance();
-    
+            await refreshDashboardData();
+
         }
-    
+
     });
 
 }
