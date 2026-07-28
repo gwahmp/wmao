@@ -232,10 +232,30 @@ function resetUserInteraction() {
 }
 
 
-
 function isRealTraffic() { const ua = navigator.userAgent.toLowerCase(); const bots = ["bot", "crawl", "spider", "slurp", "bingpreview", "facebookexternalhit", "whatsapp", "telegrambot", "linkedinbot", "discordbot", "googlebot", "bingbot", "yandex", "duckduckbot", "baiduspider", "applebot"]; return !bots.some(bot => ua.includes(bot)); }
 
+let waitForInteraction;
 
+function startWaitForInteraction() {
+
+    // Ignore obvious bots
+    if (!isRealTraffic()) {
+        return;
+    }
+
+    waitForInteraction = setInterval(() => {
+
+        if (!hasUserInteracted()) {
+            return;
+        }
+
+        clearInterval(waitForInteraction);
+
+        recordProfileView();
+
+    }, 250);
+
+}
 
 //modal starts
 function openModal(

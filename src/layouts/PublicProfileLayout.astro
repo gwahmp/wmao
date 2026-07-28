@@ -4,17 +4,32 @@ import "../styles/global.css";
 import HeaderLanding from "../components/HeaderLanding.astro";
 import FooterSimple from "../components/FooterSimple.astro";
 import Spinner from "../components/Spinner.astro";
+const version = Date.now();
 
 const { frontmatter, url } = Astro.props;
 const {
-  title, description, date, updatedDate, image, canonical,
-  tags, toc, learnPoints, relatedResources, faq, author, noindex
+  title,
+  description,
+  date,
+  updatedDate,
+  image,
+  canonical,
+  tags,
+  toc,
+  learnPoints,
+  relatedResources,
+  faq,
+  author,
+  noindex,
 } = frontmatter;
 const currentUrl = Astro.url.href; // full URL of the current page
-
 ---
-<BaseLayout title={`${title}`} description={description} image={image} noindex={noindex}>
 
+<BaseLayout
+  title={`${title}`}
+  description={description}
+  image={image}
+  noindex={noindex}>
   <Fragment slot="head">
     <script
       type="application/ld+json"
@@ -29,8 +44,8 @@ const currentUrl = Astro.url.href; // full URL of the current page
             publisher: {
               "@type": "Organization",
               name: "Wikimint",
-              url: "https://wikimint.com"
-            }
+              url: "https://wikimint.com",
+            },
           },
           {
             "@type": "WebPage",
@@ -39,28 +54,29 @@ const currentUrl = Astro.url.href; // full URL of the current page
             name: title,
             description,
             isPartOf: {
-              "@id": "https://wikimint.com#website"
+              "@id": "https://wikimint.com#website",
             },
             primaryImageOfPage: {
-              "@id": "https://wikimint.com#primaryimage"
-            }
+              "@id": "https://wikimint.com#primaryimage",
+            },
           },
           {
             "@type": "ImageObject",
             "@id": "https://wikimint.com#primaryimage",
             url: `https://wikimint.com${image}`,
-            caption: title
-          }
-        ]
+            caption: title,
+          },
+        ],
       })}
     />
   </Fragment>
 
-  <HeaderLanding slot="header"/>
-    <article class="prose lg:prose-xl max-w-none">
-      <Spinner/>
-        <slot /> 
-    </article>
-    <FooterSimple slot="footer"/>
-
+  <HeaderLanding slot="header" />
+  <article class="prose lg:prose-xl max-w-none">
+    <Spinner />
+    <slot />
+  </article>
+  <FooterSimple slot="footer" />
 </BaseLayout>
+
+<script is:inline src={`/assets/js/profile.js?v=${version}`} defer></script>

@@ -5,7 +5,10 @@ const params = new URLSearchParams(window.location.search);
 const userid = (params.get("u") || "").trim();
 
 if (!/^[a-z0-9]{10}$/.test(userid)) {
+
     profileName.textContent = "Profile Not Found";
+
+    console.warn("Invalid User ID:", userid);
 
 } else {
     console.log("user ID validated");
@@ -17,13 +20,17 @@ if (!/^[a-z0-9]{10}$/.test(userid)) {
 
         loadHero(profile);
 
+        startWaitForInteraction();
+        console.log(profile);
     } else {
         loadProfile(userid);
+        console.log("no session");
     }
 
 }
 
 async function loadProfile(userid) {
+
     // fetch API here
 
     fetch(`https://api.wikimint.com/profile?u=${userid}`).then(res => res.json())
@@ -32,11 +39,13 @@ async function loadProfile(userid) {
             console.log("data fetched");
 
             if (!data.success) {
+
                 document.getElementById("profileName").textContent = "Profile Not Found";
 
                 return;
 
             }
+
 
             profile = data.profile;
 
@@ -46,12 +55,18 @@ async function loadProfile(userid) {
 
             loadHero(profile);
 
+            startWaitForInteraction();
+
+            console.log(profile);
+            console.log(profile.userid);
+
         });
 
 
 }
 
 function loadHero(profile) {
+
     document.querySelector('.lph')?.remove();
 
     document.getElementById("profileArea").classList.remove("hidden");
@@ -60,39 +75,50 @@ function loadHero(profile) {
 
 
 
-    document.getElementById("description").textContent = profile.description || "Not Available";
+    document.getElementById("description").textContent =
+        profile.description || "Not Available";
 
-    document.getElementById("headline").textContent = profile.headline || "Headline Not Available";
+    document.getElementById("headline").textContent =
+        profile.headline || "Headline Not Available";
 
-    document.getElementById("cat").textContent = profile.profile_category
-        ? profile.profile_category
-            .replace(/-/g, " ")
-            .replace(/\b\w/g, c => c.toUpperCase())
-        : "Not Available";
+    document.getElementById("cat").textContent =
+        profile.profile_category
+            ? profile.profile_category
+                .replace(/-/g, " ")
+                .replace(/\b\w/g, c => c.toUpperCase())
+            : "Not Available";
 
-    document.getElementById("views").textContent = profile.profile_views || "0";
+    document.getElementById("views").textContent =
+        profile.profile_views || "0";
 
-    document.getElementById("skills").textContent = profile.skills || "Not Available";
+    document.getElementById("skills").textContent =
+        profile.skills || "Not Available";
 
-    document.getElementById("services").textContent = profile.services || "Not Available";
+    document.getElementById("services").textContent =
+        profile.services || "Not Available";
 
-    document.getElementById("location").textContent = (profile.location || "Not Available") +
+    document.getElementById("location").textContent =
+        (profile.location || "Not Available") +
         ", " +
         (profile.country || "Not Available");
 
     /* if(profile.photo)
-     {         document.getElementById("profilePhoto").src =             profile.photo;
+     {
+         document.getElementById("profilePhoto").src =
+             profile.photo;
      }*/
 
-    document.querySelector("#created_at").textContent = profile.created_at
-        ? new Date(profile.created_at).toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "long"
-        })
-        : "";
+    document.querySelector("#created_at").textContent =
+        profile.created_at
+            ? new Date(profile.created_at).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long"
+            })
+            : "";
 
 
-    const socialContainer = document.getElementById("socialLinks");
+    const socialContainer =
+        document.getElementById("socialLinks");
 
     socialContainer.innerHTML = "";
 
@@ -130,23 +156,32 @@ function loadHero(profile) {
 
     ];
 
-    const activeSocials = socials.filter(s => s.url);
+    const activeSocials =
+        socials.filter(s => s.url);
 
     if (activeSocials.length > 0) {
-        const list = document.createElement("div");
 
-        list.className = "flex gap-6 mb-4";
+        const list =
+            document.createElement("div");
+
+        list.className =
+            "flex gap-6 mb-4";
 
         socialContainer.appendChild(list);
 
         activeSocials.forEach(social => {
-            const a = document.createElement("a");
 
-            a.href = social.url;
+            const a =
+                document.createElement("a");
 
-            a.target = "_blank";
+            a.href =
+                social.url;
 
-            a.rel = "nofollow noopener noreferrer";
+            a.target =
+                "_blank";
+
+            a.rel =
+                "nofollow noopener noreferrer";
 
             a.title = `${social.name}`;
 
@@ -171,11 +206,13 @@ function loadHero(profile) {
 
     }
     else {
+
         socialContainer.classList.add("hidden");
 
     }
 
     if (profile.website) {
+
         document.getElementById("website").textContent = profile.website
             .replace(/^https?:\/\//i, "")
             .split("/")[0];;
@@ -191,39 +228,54 @@ function loadHero(profile) {
 
 
 
-    const rlcontainer = document.getElementById("recommendedLinks");
+    const rlcontainer =
+        document.getElementById("recommendedLinks");
 
     rlcontainer.innerHTML = "";
 
     if (profile.recommended_links.length > 0) {
-        const rlH2 = document.createElement("h2");
 
-        rlH2.textContent = "Recommended Links";
+        const rlH2 =
+            document.createElement("h2");
+
+        rlH2.textContent =
+            "Recommended Links";
 
         rlcontainer.appendChild(rlH2);
 
-        const rlOl = document.createElement("ol");
+        const rlOl =
+            document.createElement("ol");
 
-        rlOl.className = "list-decimal list-inside space-y-2";
+        rlOl.className =
+            "list-decimal list-inside space-y-2";
 
         rlcontainer.appendChild(rlOl);
 
         profile.recommended_links.forEach(link => {
-            const li = document.createElement("li");
 
-            const a = document.createElement("a");
+            const li =
+                document.createElement("li");
 
-            a.href = link.url;
+            const a =
+                document.createElement("a");
 
-            a.title = link.title;
+            a.href =
+                link.url;
 
-            a.target = "_blank";
+            a.title =
+                link.title;
 
-            a.rel = "nofollow noopener noreferrer";
+            a.target =
+                "_blank";
 
-            a.textContent = link.title;
+            a.rel =
+                "nofollow noopener noreferrer";
 
-            a.className = "text-blue-600 hover:underline";
+            a.textContent =
+                link.title;
+
+            a.className =
+                "text-blue-600 hover:underline";
 
             li.appendChild(a);
 
@@ -235,6 +287,7 @@ function loadHero(profile) {
 
     }
     else {
+
         rlcontainer.classList.add("hidden");
 
     }
@@ -275,16 +328,19 @@ function loadHero(profile) {
 async function recordProfileView() {
 
     if (!profile?.userid) {
+
         return;
 
     }
 
     if (!hasUserInteracted()) {
+
         return;
 
     }
 
     const unique = await recordUniqueVisit({
+
         visitorid: getBrowserId(),
 
         targetid: profile.userid,
@@ -296,29 +352,35 @@ async function recordProfileView() {
     });
 
     if (!unique) {
+
         return;
 
     }
 
-    console.log('page view recorded for profile:', profile.userid);
+    console.log(profile.userid);
 
 
     try {
+
+
+
         const response = await fetch(
 
             "https://api.wikimint.com/profile/view",
 
             {
+
                 method: "POST",
 
                 headers: {
+
                     "Content-Type": "application/json"
 
                 },
 
                 body: JSON.stringify({
-                    userid: profile.userid,
-                    visitorid: getBrowserId()
+                    userid: member?.userid || "",
+                    targetid: profile.userid
                 })
 
             }
@@ -328,47 +390,25 @@ async function recordProfileView() {
         const result = await response.json();
 
         if (!result.success) {
+            console.log("data fail");
+            console.log(result);
             return;
 
         }
 
-        profile.profile_views++;
-
-        document.getElementById("views").textContent = profile.profile_views;
+        console.log("data success");
+        console.log(result);
+        profile.profile_views =
+            Number(profile.profile_views || 0) + 1;
+        document.getElementById("views").textContent =
+            profile.profile_views;
 
     }
 
     catch (err) {
+
         console.error(err);
 
     }
 
 }
-
-
-let waitForInteraction;
-
-function startWaitForInteraction() {
-
-    // Ignore obvious bots
-    if (!isRealTraffic()) {
-        return;
-    }
-
-    waitForInteraction = setInterval(() => {
-
-        if (!hasUserInteracted()) {
-            return;
-        }
-
-        clearInterval(waitForInteraction);
-        recordProfileView();
-
-
-    }, 250);
-
-}
-
-setTimeout(() => {
-    startWaitForInteraction();
-}, 5000);
