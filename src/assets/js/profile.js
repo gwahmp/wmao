@@ -329,11 +329,14 @@ async function recordProfileView() {
 
     if (!profile?.userid) {
 
+        console.log(profile.userid);
+
         return;
 
     }
 
     if (!hasUserInteracted()) {
+        console.log("hasUserInteracted: " + hasUserInteracted());
 
         return;
 
@@ -352,12 +355,11 @@ async function recordProfileView() {
     });
 
     if (!unique) {
-
+        console.log("unique " + unique);
         return;
 
     }
 
-    console.log(profile.userid);
 
 
     try {

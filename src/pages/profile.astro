@@ -161,7 +161,6 @@ const frontmatter = {
         </fieldset>
       </div>
     </div>
-  </div>
 
   <div>
     <div class="highlight" id="headline">Profile headline loading..</div>
@@ -260,8 +259,7 @@ const frontmatter = {
       </form>
     </div>
   </div>
-</PublicProfileLayout>
-
+</div>
 <div class="grid grid-cols-1 md:grid-cols-[1fr_380px] gap-20">
   <div>
     <h1>Build Your Personal Brand with Your Wikimint Public Profile</h1>
@@ -946,7 +944,7 @@ const frontmatter = {
     </section>
   </div>
 
-  <div>
+  <div class="space-y-6">
     <fieldset>
       <legend> Sponsored </legend>
       <div class="space-y-6">
@@ -1011,3 +1009,6 @@ const frontmatter = {
     </div>
   </div>
 </div>
+</PublicProfileLayout>
+
+<script is:inline src={`/assets/js/profile.js?v=${version}`} defer></script>
