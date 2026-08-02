@@ -85,6 +85,7 @@ let VERIFY_KEY;
     );
 
     WMAuth.ready = true;
+    window.dispatchEvent(new Event("wmauthready"));
 
 })();
 
