@@ -196,6 +196,18 @@ function referralLinks() {
 }
 //referral link
 
+(async () => {
+    if (!await checkAuth()) { return; }
+
+
+    document.addEventListener("DOMContentLoaded", initMember);
+    /*Dashboard data ends*/
+
+})();
+
+
+
+
 
 /*Dashboard data starts*/
 
@@ -250,7 +262,7 @@ function clearDashboardData() {
 }
 
 async function refreshDashboardData() {
-
+    localStorage.removeItem("wm_dashboard");
     return await loadDashboardData(true);
 
 }
@@ -328,5 +340,3 @@ async function initMember() {
 
 }
 
-document.addEventListener("DOMContentLoaded", initMember);
-/*Dashboard data ends*/

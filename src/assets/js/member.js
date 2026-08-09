@@ -3,6 +3,33 @@ const FETCH_OPTIONS = {
     credentials: "include"
 };
 const CREDIT_DECIMALS = 6;
+// Visit Types
+const VISIT_TYPES = {
+
+    PROFILE:
+        "profile",
+
+    PUBLISHER:
+        "publisher",
+
+    DAILY_LOGIN:
+        "daily_login",
+
+    AD_VIEW:
+        "ad_view"
+
+};
+
+// Visit Durations
+const VISIT_DURATION = {
+
+    MINUTE: 60,
+
+    HOUR: 3600,
+
+    DAY: 86400
+
+};
 
 ifMember(() => {
     renderMember(member);
@@ -78,33 +105,6 @@ function getBrowserId() {
 
 }
 
-// Visit Types
-const VISIT_TYPES = {
-
-    PROFILE:
-        "profile",
-
-    PUBLISHER:
-        "publisher",
-
-    DAILY_LOGIN:
-        "daily_login",
-
-    AD_VIEW:
-        "ad_view"
-
-};
-
-// Visit Durations
-const VISIT_DURATION = {
-
-    MINUTE: 60,
-
-    HOUR: 3600,
-
-    DAY: 86400
-
-};
 
 async function recordUniqueVisit({
     visitorid,

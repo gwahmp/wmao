@@ -8,7 +8,7 @@ async function claimCredits() {
 
     try {
 
-        const res = await fetch(API_URL + "/wallet/claim", {
+        const res = await fetch(API_BASE + "/wallet/claim", {
 
             method: "POST",
 
@@ -41,6 +41,7 @@ document
     .getElementById("claimCreditsBtn")
     .addEventListener("click", claimCredits);
 
+
 const labels = {
 
     profile_visit: "Profile Visits",
@@ -49,30 +50,43 @@ const labels = {
 
 };
 
-const wallet = dashboardData.wallet;
+function loadWallet() {
 
-if (!wallet)
-    return;
+    const wallet = dashboardData.wallet;
+    console.log(dashboardData);
+    if (!wallet) {
+        return;
+    }
+    const rewards = document.getElementById("pendingRewards");
 
-const rewards = document.getElementById("pendingRewards");
+    rewards.innerHTML = "";
 
-rewards.innerHTML = "";
+    for (const [type, value] of Object.entries(wallet.unclaimed || {})) {
 
-for (const [type, value] of Object.entries(wallet.unclaimed)) {
+        if (Number(value) <= 0)
+            continue;
 
-    if (Number(value) <= 0)
-        continue;
+        rewards.insertAdjacentHTML("beforeend", `
 
-    rewards.insertAdjacentHTML("beforeend", `
+            <div class="d-flex justify-content-between py-2">
 
-        <div class="d-flex justify-content-between py-2">
+                <span>${labels[type] || type}</span>
 
-            <span>${labels[type]}</span>
+                <strong>${Number(value).toFixed(6)}</strong>
 
-            <strong>${Number(value).toFixed(6)}</strong>
+            </div>
 
-        </div>
+        `);
 
-    `);
+    }
 
 }
+
+(async () => {
+    if (!await checkAuth()) { return; }
+
+
+    document.addEventListener("DOMContentLoaded", loadWallet);
+    /*Dashboard data ends*/
+
+})();

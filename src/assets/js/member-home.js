@@ -5,6 +5,14 @@
 ifMember(() => { console.log('member'); });
 ifGuest(() => { console.log('guest'); });
 
+(async () => {
+    if (!await checkAuth()) { return; }
+
+    document.addEventListener("DOMContentLoaded", initMember);
+
+})();
+
+
 
 async function initMember() {
 
@@ -175,5 +183,3 @@ async function initMember() {
 
     }
 }
-
-document.addEventListener("DOMContentLoaded", initMember);

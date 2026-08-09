@@ -127,31 +127,39 @@ function loadHero(profile) {
         {
             name: "Facebook",
             url: profile.facebook,
-            icon: "/assets/svg/facebook.svg"
-        },
+            icon: "facebook",
+            color: "facebook"
 
-        {
-            name: "LinkedIn",
-            url: profile.linkedin,
-            icon: "/assets/svg/linkedin.svg"
         },
 
         {
             name: "GitHub",
             url: profile.github,
-            icon: "/assets/svg/github.svg"
+            icon: "github",
+            color: "gray-600"
+
         },
 
         {
+            name: "LinkedIn",
+            url: profile.linkedin,
+            icon: "linkedin",
+            color: "linkedin"
+        },
+        {
             name: "YouTube",
             url: profile.youtube,
-            icon: "/assets/svg/youtube.svg"
+            icon: "youtube",
+            color: "youtube"
+
         },
 
         {
             name: "Twitter",
             url: profile.twitter,
-            icon: "/assets/svg/x.svg"
+            icon: "x",
+            color: "twitter"
+
         }
 
     ];
@@ -187,15 +195,10 @@ function loadHero(profile) {
 
             a.innerHTML =
                 `
-        <img
-            loading="lazy"
-            src="${social.icon}"
-            alt="${social.name}"
-            width="30"
-            height="30"
-            class="w-10 h-10 flex-shrink-0"
-            style="margin-top:5px!important;margin-bottom:0!important;"
-        />
+      
+        <svg width="30" height="30" class="text-${social.color}">
+                <use href="/assets/icons/com.svg#${social.icon}"></use>
+              </svg>
         `;
 
             list.appendChild(a);

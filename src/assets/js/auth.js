@@ -135,7 +135,15 @@ window.ifGuest = function (callback) {
 
 };
 
+async function checkAuth() {
 
+    if (!WMAuth.loggedIn) {
+        return false;
+    }
+
+    return true;
+
+}
 
 document.querySelectorAll('.login').forEach(btn => btn.onclick = () => { location.href = "/app/signin" });
 
