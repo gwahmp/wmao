@@ -1,14 +1,17 @@
-const CACHE_NAME = "wikimint-cache-v1";
-const urlsToCache = ["/", "/about", "/favicon.ico"];
-
-self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(urlsToCache))
-  );
+self.addEventListener("install", () => {
+  self.skipWaiting();
 });
 
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => response || fetch(event.request))
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    Promise.all([
+      self.registration.unregister(),
+
+      caches.keys().then((cacheNames) =>
+        Promise.all(
+          cacheNames.map((cacheName) => caches.delete(cacheName))
+        )
+      )
+    ])
   );
 });

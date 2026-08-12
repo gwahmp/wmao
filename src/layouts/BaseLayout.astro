@@ -154,13 +154,6 @@ const {
 <link rel="manifest" href="/site.webmanifest"/>
 <meta name="format-detection" content="telephone=no" />
 
-<script is:inline>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/service-worker.js")
-      .catch(err => console.error("SW registration failed:", err));
-  }
-</script>
-
   </head>
   <body>
     <AuthVisibility />
