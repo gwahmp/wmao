@@ -154,6 +154,18 @@ const {
 <link rel="manifest" href="/site.webmanifest"/>
 <meta name="format-detection" content="telephone=no" />
 
+<script is:inline>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.getRegistration("/").then((registration) => {
+      if (registration) {
+        registration.unregister().then((success) => {
+          console.log("Wikimint service worker unregistered:", success);
+        });
+      }
+    });
+  }
+</script>
+
   </head>
   <body>
     <AuthVisibility />

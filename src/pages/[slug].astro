@@ -122,8 +122,8 @@ const finalModifiedDate = post.data.updatedDate ?? post.data.date;
   </Fragment>
 
   {/* 3-Column Layout */}
-  <div class="grid grid-cols-1 gap-20 lg:grid-cols-12">
-    <div class="lg:col-span-8">
+  <div class="col-2 post">
+    <div class="left">
       <nav
         class="breadcrumbs border-b border-gray-400 pb-4 mb-5"
         itemscope
@@ -464,7 +464,7 @@ const finalModifiedDate = post.data.updatedDate ?? post.data.date;
     </div>
 
     {/* Column 3: Sticky Bottom Ads (25%) */}
-    <aside class="lg:col-span-4">
+    <aside>
       <Sidebar />
     </aside>
   </div>
