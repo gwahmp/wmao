@@ -46,6 +46,7 @@ const relatedPosts = allPosts
   .slice(0, 3); // limit to 3
 // ✅ Manual modified date from markdown meta
 const finalModifiedDate = post.data.updatedDate ?? post.data.date;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <BaseLayout
@@ -455,9 +456,60 @@ const finalModifiedDate = post.data.updatedDate ?? post.data.date;
       }
 
       {/* Comments placeholder */}
-      <section class="not-prose mt-12">
-        <h2 class="text-xl font-semibold">Comments</h2>
-        <p class="opacity-70">Comments feature coming soon.</p>
+      <section id="comments" class="not-prose mt-12">
+        <h2 class="text-xl font-semibold title">Comments Section</h2>
+        {/* <p class="opacity-70">Comments feature coming soon.</p> */}
+        <div id="disqus_thread"></div>
+
+        <script
+          define:vars={{
+            disqusUrl: canonicalURL,
+            disqusIdentifier: post.slug,
+          }}
+        >
+          var disqus_config = function () {
+            this.page.url = disqusUrl;
+            this.page.identifier = disqusIdentifier;
+          };
+
+          (function () {
+            var d = document;
+            var s = d.createElement("script");
+
+            s.src = "https://ourmaster.disqus.com/embed.js";
+            s.setAttribute("data-timestamp", +new Date());
+
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">
+            comments powered by Disqus.
+          </a>
+        </noscript>
+      </section>
+
+      <section id="recommended">
+        <div id="disqus_recommendations"></div>
+
+        <script is:inline>
+          (function () {
+            // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+            var d = document,
+              s = d.createElement("script"); // IMPORTANT: Replace EXAMPLE with your forum shortname!
+            s.src = "https://ourmaster.disqus.com/recommendations.js";
+            s.setAttribute("data-timestamp", +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+            comments powered by Disqus.
+          </a>
+        </noscript>
       </section>
 
       <div id="mainAd"></div>
@@ -469,5 +521,6 @@ const finalModifiedDate = post.data.updatedDate ?? post.data.date;
     </aside>
   </div>
 </BaseLayout>
-
+<script is:inline id="dsq-count-scr" src="//ourmaster.disqus.com/count.js" async
+></script>
 <script is:inline src={`/assets/js/posts.js?v=${version}`} defer></script>
