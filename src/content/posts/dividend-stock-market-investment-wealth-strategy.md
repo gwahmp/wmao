@@ -116,7 +116,7 @@ faq:
 
 Understanding dividends in the stock market and how they provide passive income for <a href="/top-investors">investors</a>.
 
-Dividends in the [stock market](/stock-market-basic-understanding) represent a lucrative avenue for investors to reap financial rewards. Companies share a portion of their profits with shareholders, offering a steady income stream. Whether through cash, stocks, or other assets, dividends enhance investment portfolios, providing stability and signaling a firm's financial health.
+Dividends in the [stock market](/stock-market-basic-understanding) represent a lucrative avenue for investors to reap financial rewards. Companies share a portion of their profits with shareholders, offering a <a href="/income-streams-build-wealth">steady income stream</a>. Whether through cash, stocks, or other assets, dividends enhance investment portfolios, providing stability and signaling a firm's financial health.
 
 What are Dividends?
 -------------------

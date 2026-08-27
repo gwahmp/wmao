@@ -491,19 +491,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
         </noscript>
       </section>
 
-      <section id="recommended">
+      <section id="recommended" class="not-prose mt-12">
         <div id="disqus_recommendations"></div>
-
         <script is:inline>
           (function () {
-            // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-            var d = document,
-              s = d.createElement("script"); // IMPORTANT: Replace EXAMPLE with your forum shortname!
+            var d = document, s = d.createElement("script");
             s.src = "https://ourmaster.disqus.com/recommendations.js";
             s.setAttribute("data-timestamp", +new Date());
             (d.head || d.body).appendChild(s);
-          })();
-        </script>
+          })(); </script>
         <noscript>
           Please enable JavaScript to view the
           <a href="https://disqus.com/?ref_noscript" rel="nofollow">

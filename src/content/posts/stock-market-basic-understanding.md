@@ -139,7 +139,7 @@ Stock trading involves buying and selling stocks over shorter periods to take ad
 
 ### Dividend Income
 
-Certain enterprises share a segment of their earnings with shareholders through [dividend payments](/dividend-stock-market-investment-wealth-strategy), providing a direct financial reward to those invested in the company. Holding dividend-paying stocks can provide a steady income stream.
+Certain enterprises share a segment of their earnings with shareholders through [dividend payments](/dividend-stock-market-investment-wealth-strategy), providing a direct financial reward to those invested in the company. Holding dividend-paying stocks can provide a <a href="/income-streams-build-wealth">steady income stream</a>.
 
 ### Initial Public Offerings (IPOs)
 

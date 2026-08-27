@@ -840,7 +840,7 @@ Most people are trained to chase the highest-paying job they can find. And while
 
 That's when your growth stalls. You become good at your job - but **only that job**. If the market shifts or you're laid off, your income disappears along with your title.
 
-The rich, on the other hand, don't just work for money - they **work to build skill sets** that unlock new income streams, investments, and business opportunities.
+The rich, on the other hand, don't just work for money - they **work to build skill sets** that unlock new <a href="/income-streams-build-wealth">income streams</a>, investments, and business opportunities.
 
 ### The Skill Stack That Builds Wealth
 

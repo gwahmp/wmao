@@ -90,7 +90,7 @@ Many influencers create and sell their own merchandise. This could be anything f
 
 Platforms like Patreon or OnlyFans allow influencers to offer exclusive content to their subscribers in exchange for a monthly fee. For example, an artist on Patreon might offer behind-the-scenes looks, custom artwork, or early access to new content.
 
-This is a great way to build a steady income stream while giving your most loyal fans more value.
+This is a great way to build a <a href="/income-streams-build-wealth">steady income stream</a> while giving your most loyal fans more value.
 
 Starting as a social media influencer? Focus on your passion and pick one platform to shine on. Create content that speaks to people, and watch your influence grow from there!
 

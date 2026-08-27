@@ -398,7 +398,7 @@ It helps you:
 
 - Understand digital finance  
 - Join global markets  
-- Explore new income models  
+- Explore new <a href="/income-streams-build-wealth">income models</a>  
 - Stay relevant in <a href="/best-online-business-ideas">online business</a>  
 
 Learning does not mean investing blindly. It means understanding how the system works.

@@ -654,7 +654,7 @@ Here's how you can use Think and Grow Rich to level up your finances fast:
 ### Financial Growth Strategy
 
 *   Choose a high-income skill (sales, content writing, freelancing, digital products)
-*   Build multiple income streams
+*   Build <a href="/income-streams-build-wealth">multiple income streams</a>
 *   Invest early - compound growth matters (8% annual growth can double your money in ~9 years)
 *   Save and reinvest wisely (aim to save 20–30% of your income)
 

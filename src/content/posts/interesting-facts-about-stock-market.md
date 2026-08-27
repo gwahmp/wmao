@@ -113,7 +113,7 @@ Many affluent individuals and successful entrepreneurs attribute a significant p
 
 ### Dividend Aristocrats
 
-There are companies known as "Dividend Aristocrats" that have a consistent history of paying and increasing dividends. Investing in such companies can provide a reliable income stream over the long term.
+There are companies known as "Dividend Aristocrats" that have a consistent history of paying and increasing dividends. Investing in such companies can provide a <a href="/income-streams-build-wealth">reliable income stream</a> over the long term.
 
 ### Historic Bull Markets
 

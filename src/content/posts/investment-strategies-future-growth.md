@@ -89,7 +89,7 @@ Discover smart investment options like stocks, [real estate](/real-estate-invest
 *   How to find and evaluate great investment opportunities
 *   The 7-5-3-1 SIP rule and how it can impact your returns
 *   Strategies to achieve 20%–25% return on investment in India
-*   Where to invest money for steady income and wealth creation
+*   Where to invest money for <a href="/income-streams-build-wealth">steady income and wealth creation</a>
 
 Understanding Investment Basics
 -------------------------------

@@ -59,7 +59,7 @@ Whether you're a newbie or a seasoned marketer, the platform's clarity, lifetime
 Why Promote LeadsLeap?
 ----------------------
 
-Before diving into the income streams, let's talk why promoting <span data-link="https://leadsleap.com?r=selvaklnc">LeadsLeap</span> makes sense:
+Before diving into the <a href="/income-streams-build-wealth">income streams</a>, let's talk why promoting <span data-link="https://leadsleap.com?r=selvaklnc">LeadsLeap</span> makes sense:
 
 ### Recurring Income
 

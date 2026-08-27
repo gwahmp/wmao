@@ -148,7 +148,7 @@ Here are some things people think are assets but usually aren't (on their own):
 
 *   **A high-converting ad campaign**: It works today but needs funding tomorrow.
 *   **A viral TikTok video**: It gets attention, but where does that attention go?
-*   **One affiliate link**: If the product dies, so does your income stream.
+*   **One affiliate link**: If the product dies, so does your <a href="/income-streams-build-wealth">income stream</a>.
 
 Practical Tips to Build Online Business Assets
 ----------------------------------------------

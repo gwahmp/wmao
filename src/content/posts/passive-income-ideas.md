@@ -23,7 +23,7 @@ Creative passive income streams to make money 24/7 without active effort.
 *   The richest and highest-earning passive income sources
 *   How to make $1,000+ per month in passive income
 *   How to create ₹1 lakh passive income in India
-*   7 key sources of income and how to use them to your advantage
+*   <a href="/income-streams-build-wealth">7 key sources of income</a> and how to use them to your advantage
 *   10–50 passive income ideas for beginners, young adults, and professionals
 *   Easy passive income ideas you can start in 2024–2026
 *   Online and from-home passive income options
