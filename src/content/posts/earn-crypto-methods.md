@@ -145,7 +145,7 @@ You deposit crypto. The platform lends it and shares interest with you.
 - **Stablecoins**: 3% to 8% yearly
 - **Bitcoin and Ethereum**: lower but steady
 
-Always check platform safety and withdrawal rules before depositing.
+Always <a href="/trusted-investment-platforms-india">check platform safety</a> and withdrawal rules before depositing.
 
 Crypto savings feel familiar to traditional finance users. They offer calm growth without daily effort. Choosing trusted platforms keeps this method simple and stable.
 

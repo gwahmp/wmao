@@ -11,7 +11,7 @@ tags: ["business","economy"]
 summary: "The stock market, often referred to as the equity market, is a platform where buyers and sellers trade shares of publicly listed companies. In India, the major stock exchanges are the Bombay Stock Exchange (BSE) and the National Stock Exchange (NSE)."
 faq:
 - q: What is the stock market?
-  a: The stock market is a platform where buyers and sellers trade shares of publicly listed companies, facilitating investment and capital formation.
+  a: The stock market is a <a href="/trusted-investment-platforms-india">platform</a> where buyers and sellers trade shares of publicly listed companies, facilitating investment and capital formation.
 
 - q: How do I start investing in the Indian stock market?
   a: To begin investing, open a demat account, and a trading account with a registered stockbroker. Before venturing into investment decisions, it is imperative to undertake comprehensive research, ensuring a well-informed approach to navigating the intricate landscape of financial choices.
