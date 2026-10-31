@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#f3f4f6"/>
+<rect x="60" y="60" width="1080" height="510" rx="28" fill="#ffffff" stroke="#d1d5db" stroke-width="4"/>
+<text x="100" y="260" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#111827">Wikimint</text>
+<text x="100" y="350" font-family="Arial, sans-serif" font-size="42" fill="#374151">Digital Business Systems</text>
+<text x="100" y="430" font-family="Arial, sans-serif" font-size="26" fill="#6b7280">Sample feed image</text>
+</svg>

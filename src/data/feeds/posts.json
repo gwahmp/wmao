@@ -1,0 +1,211 @@
+[
+  {
+    "slug": "gold-prices-2026",
+    "title": "Why Gold Prices Continue to Attract Investors",
+    "date": "2026-09-04",
+    "categories": ["money", "investing"],
+    "excerpt": "Gold remains a closely watched asset when investors think about inflation, uncertainty and portfolio diversification.",
+    "content": [
+      "Gold continues to attract attention because investors often use it as a diversification asset during periods of economic and market uncertainty.",
+      "It does not produce interest or dividends, so its role is different from shares and bonds. The main question for an investor is how much exposure fits the overall portfolio rather than whether gold must always rise."
+    ],
+    "image": {
+      "src": "/assets/images/feeds/gold-prices-2026.svg",
+      "alt": "Illustration of gold bars and a rising price chart",
+      "width": 1200,
+      "height": 630
+    },
+    "links": [
+      {
+        "text": "Explore more investing articles",
+        "href": "/blog"
+      }
+    ],
+    "tags": ["gold", "investing", "portfolio"]
+  },
+  {
+    "slug": "treasury-etf-guide",
+    "title": "What Is a Treasury ETF?",
+    "date": "2026-09-03",
+    "categories": ["money", "investing"],
+    "excerpt": "Treasury ETFs can provide market-traded exposure to government securities without buying individual bonds one by one.",
+    "content": [
+      "A Treasury ETF holds a portfolio of U.S. government Treasury securities and allows investors to buy and sell units through a stock exchange.",
+      "The return comes from the interest earned by the underlying securities and changes in their market prices. Investors should still consider duration, currency risk and fund expenses before investing."
+    ],
+    "image": {
+      "src": "/assets/images/feeds/treasury-etf-guide.svg",
+      "alt": "Illustration of Treasury securities and an exchange traded fund",
+      "width": 1200,
+      "height": 630
+    },
+    "video": {
+      "provider": "youtube",
+      "id": "VIDEO_ID_HERE",
+      "title": "Treasury ETF explainer"
+    },
+    "links": [
+      {
+        "text": "Read more money guides",
+        "href": "/feeds/money"
+      }
+    ],
+    "tags": ["bonds", "treasury", "etf"]
+  },
+  {
+    "slug": "bitcoin-portfolio-allocation",
+    "title": "Should Bitcoin Be Part of a Diversified Portfolio?",
+    "date": "2026-09-02",
+    "categories": ["money", "investing", "crypto"],
+    "excerpt": "Bitcoin can offer high upside potential, but its volatility makes position sizing more important than simply chasing returns.",
+    "content": [
+      "Bitcoin behaves differently from traditional assets, but it can also experience very large drawdowns. That makes risk control and position size central to any investment decision.",
+      "A diversified investor can evaluate Bitcoin as a speculative allocation rather than treating it as a replacement for cash, bonds or productive businesses."
+    ],
+    "image": {
+      "src": "/assets/images/feeds/bitcoin-portfolio-allocation.svg",
+      "alt": "Illustration of Bitcoin as one part of a diversified portfolio",
+      "width": 1200,
+      "height": 630
+    },
+    "links": [
+      {
+        "text": "Browse the investing feed",
+        "href": "/feeds/investing"
+      }
+    ],
+    "tags": ["bitcoin", "crypto", "asset-allocation"]
+  },
+  {
+    "slug": "small-business-cash-flow",
+    "title": "Why Cash Flow Matters More Than Revenue for a Small Business",
+    "date": "2026-09-01",
+    "categories": ["business", "money"],
+    "excerpt": "A business can show strong sales and still struggle if cash arrives too late to cover its obligations.",
+    "content": [
+      "Revenue tells you how much a business has sold, but cash flow tells you whether money is actually available when bills, salaries and suppliers need to be paid.",
+      "Small businesses can improve cash flow by shortening payment cycles, monitoring receivables and keeping a sensible operating cash buffer."
+    ],
+    "image": {
+      "src": "/assets/images/feeds/small-business-cash-flow.svg",
+      "alt": "Small business cash flow illustration with invoices and money",
+      "width": 1200,
+      "height": 630
+    },
+    "links": [
+      {
+        "text": "Explore business growth resources",
+        "href": "/business-resources"
+      }
+    ],
+    "tags": ["cash-flow", "small-business", "finance"]
+  },
+  {
+    "slug": "customer-retention-growth",
+    "title": "Customer Retention Can Be a Powerful Growth Lever",
+    "date": "2026-08-31",
+    "categories": ["business", "marketing"],
+    "excerpt": "Acquiring customers gets attention, but retaining satisfied customers can create repeat revenue and stronger relationships.",
+    "content": [
+      "A retention strategy starts with delivering a reliable product or service and making it easy for customers to get help when something goes wrong.",
+      "Businesses can then measure repeat purchases, churn and customer lifetime value to understand which retention efforts are actually producing results."
+    ],
+    "image": {
+      "src": "/assets/images/feeds/customer-retention-growth.svg",
+      "alt": "Customer retention and business growth illustration",
+      "width": 1200,
+      "height": 630
+    },
+    "tags": ["customers", "retention", "growth"]
+  },
+  {
+    "slug": "small-business-digital-systems",
+    "title": "Simple Digital Systems Can Remove Repetitive Business Work",
+    "date": "2026-08-30",
+    "categories": ["business", "marketing", "technology"],
+    "excerpt": "Small businesses do not always need complex software; a few well-connected digital workflows can eliminate repetitive tasks.",
+    "content": [
+      "Automating recurring tasks such as lead capture, appointment reminders, invoices and follow-up messages can free time for higher-value work.",
+      "The best starting point is usually a process that is repetitive, rules-based and easy to measure. Automating a broken process only makes the problem happen faster."
+    ],
+    "image": {
+      "src": "/assets/images/feeds/small-business-digital-systems.svg",
+      "alt": "Digital workflow automation illustration for a small business",
+      "width": 1200,
+      "height": 630
+    },
+    "links": [
+      {
+        "text": "Browse business and technology resources",
+        "href": "/toolbox"
+      }
+    ],
+    "tags": ["automation", "small-business", "productivity"]
+  },
+  {
+    "slug": "content-marketing-consistency",
+    "title": "Why Consistency Matters in Content Marketing",
+    "date": "2026-08-29",
+    "categories": ["marketing", "business"],
+    "excerpt": "Publishing useful content consistently gives a brand more opportunities to be discovered and remembered.",
+    "content": [
+      "Content marketing works better as a system than as a collection of occasional posts. A consistent publishing rhythm helps a business build topical depth and audience expectations.",
+      "Consistency does not mean publishing low-quality content every day. It means choosing a sustainable schedule and repeatedly solving problems that matter to the intended audience."
+    ],
+    "image": {
+      "src": "/assets/images/feeds/content-marketing-consistency.svg",
+      "alt": "Content marketing calendar and publishing illustration",
+      "width": 1200,
+      "height": 630
+    },
+    "links": [
+      {
+        "text": "Explore marketing resources",
+        "href": "/feeds/marketing"
+      }
+    ],
+    "tags": ["content-marketing", "seo", "publishing"]
+  },
+  {
+    "slug": "search-intent-content",
+    "title": "Create Content Around Search Intent, Not Just Keywords",
+    "date": "2026-08-28",
+    "categories": ["marketing", "seo"],
+    "excerpt": "A keyword tells you what someone typed; search intent helps you understand what they actually want to accomplish.",
+    "content": [
+      "Two searches can contain similar words but require completely different answers. One person may want a definition, while another wants a comparison, tutorial or product decision.",
+      "Understanding the intent behind a query helps you choose the right format, depth and call to action instead of forcing every keyword into the same article template."
+    ],
+    "image": {
+      "src": "/assets/images/feeds/search-intent-content.svg",
+      "alt": "Search intent and content strategy illustration",
+      "width": 1200,
+      "height": 630
+    },
+    "tags": ["seo", "search-intent", "content-strategy"]
+  },
+  {
+    "slug": "email-list-owned-audience",
+    "title": "Why an Email List Is Still an Owned Audience Asset",
+    "date": "2026-08-27",
+    "categories": ["marketing", "business"],
+    "excerpt": "Social platforms can help you reach people, but an email list gives a business a direct communication channel.",
+    "content": [
+      "Algorithms and platform policies can change how much organic reach a social account receives. An opt-in email list gives a business a direct channel for updates, education and offers.",
+      "The goal should not be to collect addresses without purpose. A useful newsletter, clear expectations and easy unsubscribe options create a healthier long-term audience relationship."
+    ],
+    "image": {
+      "src": "/assets/images/feeds/email-list-owned-audience.svg",
+      "alt": "Email marketing and owned audience illustration",
+      "width": 1200,
+      "height": 630
+    },
+    "links": [
+      {
+        "text": "Read more marketing content",
+        "href": "/feeds/marketing"
+      }
+    ],
+    "tags": ["email-marketing", "audience", "business"]
+  }
+]

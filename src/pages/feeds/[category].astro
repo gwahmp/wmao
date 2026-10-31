@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import FeedPost from "../../components/feed/FeedPost.astro";
+import posts from "../../data/feeds/posts.json";
+import type { FeedPost as FeedPostData } from "../../data/feeds/types";
+
+const allPosts = posts as FeedPostData[];
+const categories = [...new Set(allPosts.flatMap((post) => post.categories))].sort();
+
+export function getStaticPaths() {
+  const allPostsForPaths = posts as FeedPostData[];
+
+  const categoriesForPaths = [
+    ...new Set(
+      allPostsForPaths.flatMap((post) => post.categories)
+    )
+  ].sort();
+
+  return categoriesForPaths.map((category) => ({
+    params: { category },
+    props: { category }
+  }));
+}
+
+const { category } = Astro.props as { category: string };
+const categoryPosts = allPosts
+  .filter((post) => post.categories.includes(category))
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+const label = category.charAt(0).toUpperCase() + category.slice(1);
+const title = `Wikimint ${label} Feed – Latest Insights`;
+const description = `Latest Wikimint short posts about ${label.toLowerCase()}, presented in date order.`;
+---
+
+<BaseLayout title={title} description={description} image="/assets/images/business-motivation-marketing-strategy-personal-finance-strategy.webp">
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: title,
+        description,
+        url: Astro.url.href,
+        mainEntity: categoryPosts.map((post) => ({
+          "@type": "Article",
+          headline: post.title,
+          url: `https://wikimint.com/feeds/${category}#${post.slug}`,
+          datePublished: post.date,
+          description: post.excerpt
+        }))
+      })}
+    />
+  </Fragment>
+
+  <section class="mx-auto max-w-3xl px-4 py-10">
+    <header class="mb-10">
+      <p class="text-sm font-semibold uppercase tracking-wide text-wmblue">Wikimint Feeds</p>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight">{label} Feed</h1>
+      <p class="mt-4 text-lg leading-8 text-gray-600">Latest {label.toLowerCase()} insights, arranged from newest to oldest.</p>
+      <nav class="mt-6 flex flex-wrap gap-2" aria-label="Feed categories">
+        <a class="rounded-full border px-4 py-2 text-sm hover:bg-gray-50" href="/feeds">All</a>
+        {categories.map((item) => (
+          <a class={`rounded-full border px-4 py-2 text-sm hover:bg-gray-50 ${item === category ? "bg-gray-100 font-semibold" : ""}`} href={`/feeds/${item}`}>{item.charAt(0).toUpperCase() + item.slice(1)}</a>
+        ))}
+      </nav>
+    </header>
+
+    <div>
+      {categoryPosts.map((post) => <FeedPost post={post} />)}
+    </div>
+  </section>
+</BaseLayout>
