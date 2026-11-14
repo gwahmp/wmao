@@ -30,53 +30,54 @@ const currentUrl = Astro.url.href; // full URL of the current page
   description={description}
   image={image}
   noindex={noindex}>
-  <Fragment slot="head">
-    <script
-      type="application/ld+json"
-      set:html={JSON.stringify({
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "https://wikimint.com#website",
-            url: "https://wikimint.com",
-            name: "Wikimint",
-            publisher: {
-              "@type": "Organization",
-              name: "Wikimint",
-              url: "https://wikimint.com",
-            },
-          },
-          {
-            "@type": "WebPage",
-            "@id": currentUrl + "#webpage",
-            url: currentUrl,
-            name: title,
-            description,
-            isPartOf: {
-              "@id": "https://wikimint.com#website",
-            },
-            primaryImageOfPage: {
-              "@id": "https://wikimint.com#primaryimage",
-            },
-          },
-          {
-            "@type": "ImageObject",
-            "@id": "https://wikimint.com#primaryimage",
-            url: `https://wikimint.com${image}`,
-            caption: title,
-          },
-        ],
-      })}
-    />
-  </Fragment>
-
+  {
+    !frontmatter.disablePageSchema && (
+      <Fragment slot="head">
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": "https://wikimint.com#website",
+                url: "https://wikimint.com",
+                name: "Wikimint",
+                publisher: {
+                  "@type": "Organization",
+                  name: "Wikimint",
+                  url: "https://wikimint.com",
+                },
+              },
+              {
+                "@type": "WebPage",
+                "@id": currentUrl + "#webpage",
+                url: currentUrl,
+                name: title,
+                description,
+                isPartOf: {
+                  "@id": "https://wikimint.com#website",
+                },
+                primaryImageOfPage: {
+                  "@id": "https://wikimint.com#primaryimage",
+                },
+              },
+              {
+                "@type": "ImageObject",
+                "@id": "https://wikimint.com#primaryimage",
+                url: `https://wikimint.com${image}`,
+                caption: title,
+              },
+            ],
+          })}
+        />
+      </Fragment>
+    )
+  }
   <HeaderLanding slot="header" />
   <article class="prose lg:prose-xl max-w-none">
     <Spinner />
     <slot />
   </article>
   <FooterSimple slot="footer" />
-
 </BaseLayout>
-

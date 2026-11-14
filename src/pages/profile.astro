@@ -24,14 +24,20 @@ const frontmatter = {
       <span class="pname w-full block text-2xl font-medium mb-3"> </span>
 
       <div class="grid grid-cols-[25%_75%] gap-6">
-        <div class="flex items-start justify-end">
-          <img
-            id="profilePhoto"
-            src="/assets/svg/user-fill.svg"
-            alt="Profile Photo"
-            class="w-full h-auto rounded-full mx-auto object-cover"
-            style="margin-top:0px ! important;"
-          />
+        <div class="flex flex-col items-center md:items-start md:justify-start">
+          <!-- <img
+    id="profilePhoto"
+    src="/assets/svg/user-fill.svg"
+    alt="Profile Photo"
+    class="w-full h-auto rounded-full mx-auto object-cover"
+    style="margin-top:0px ! important;"
+  /> -->
+          <div
+            id="qrcode"
+            class="w-full h-auto object-cover flex justify-center md:justify-start"
+            style="margin-top:-25px ! important;">
+          </div>
+          <span id="uname" class="hidden text-sm text-gray-500 mt-2"></span>
         </div>
 
         <div class="space-y-2">
@@ -138,13 +144,127 @@ const frontmatter = {
         ✔ Verified Wikimint Member
       </span>
 
-      <fieldset>
-        <legend> Connect with me </legend>
-        <div id="socialLinks" class="hidden mt-3"></div>
-      </fieldset>
+      <div class="sticky top-20">
+        <div class="w-full max-w-md mx-auto flex flex-col gap-4">
+          <!-- Bottom: Menu Tabs (2 Buttons) -->
+          <div class="flex p-1 space-x-2 bg-gray-100">
+            <button
+              id="btm-tab1-btn"
+              onclick="switchBtmTab('btm-tab1')"
+              class="btm-tab-btn w-full py-2.5 text-md font-medium leading-5 transition-all duration-200 bg-white text-blue-700 shadow">
+              Connect
+            </button>
+            <button
+              id="btm-tab2-btn"
+              onclick="switchBtmTab('btm-tab2')"
+              class="btm-tab-btn w-full py-2.5 text-md font-medium leading-5 transition-all duration-200 text-gray-700 hover:text-gray-900">
+              Contact
+            </button>
+          </div>
 
-      <div class="sticky top-20 desktop-only">
-        <fieldset>
+          <!-- Top: Tab Contents Area -->
+          <div class="w-full">
+            <!-- Tab 1 Panel -->
+            <fieldset id="btm-tab1-content" class="btm-tab-panel">
+              <legend> Connect with me </legend>
+              <div id="socialLinks" class="hidden mt-3"></div>
+            </fieldset>
+
+            <!-- Tab 2 Panel -->
+            <fieldset id="btm-tab2-content" class="btm-tab-panel hidden">
+              <legend> Contact me </legend>
+              <div id="contactLinks" class="hidden mt-3"></div>
+            </fieldset>
+          </div>
+        </div>
+
+        <fieldset id="pay" class="mt-5 space-y-4">
+          <legend>Pay me</legend>
+
+          <!-- 3. QR Code Container -->
+          <div
+            id="qrpay"
+            class="w-full h-auto mx-auto object-cover flex justify-center bg-white">
+          </div>
+
+          <!-- 2. Amount Input and Generate Button -->
+          <div class="flex gap-2">
+            <div class="relative flex-grow">
+              <span
+                class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500 font-medium"
+                >₹</span
+              >
+              <input
+                type="number"
+                id="payment-amount"
+                step="0.01"
+                min="1"
+                placeholder="Enter amount (e.g. 100.00)"
+                class="w-full pl-8 pr-4 py-2 bg-white border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+              />
+            </div>
+            <button
+              onclick="generateDynamicQr()"
+              class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-xl transition-colors shadow-sm whitespace-nowrap">
+              Generate QR
+            </button>
+          </div>
+
+          <!-- 1. UPI ID Badge with Copy Button -->
+          <div
+            class="flex items-center justify-between p-3 bg-gray-50 border border-gray-200 rounded-xl">
+            <div class="flex items-center space-x-2">
+              <span
+                class="text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >UPI ID:</span
+              >
+              <span id="upi-id-text" class="text-sm font-semibold text-gray-900"
+                >selva301@slc</span
+              >
+            </div>
+            <button
+              onclick="copyUpiId()"
+              class="p-1.5 text-gray-500 hover:text-blue-600 hover:bg-white rounded-lg transition-colors"
+              title="Copy UPI ID">
+              <!-- Copy Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- 4. Share UPI Page Button -->
+          <button
+            onclick="shareUpiPage()"
+            class="w-full py-2.5 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium rounded-xl transition-colors flex items-center justify-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+              ></path>
+            </svg>
+            <span>Share Payment Link</span>
+          </button>
+        </fieldset>
+
+        <fieldset class="desktop-only mt-5">
           <legend> Grow Your Online Presence </legend>
 
           <div class="my-5">
@@ -174,7 +294,8 @@ const frontmatter = {
           role="button">Show More</a
         >
       </div>
-
+      {
+        /*
       <fieldset>
         <legend>Sponsored</legend>
 
@@ -205,7 +326,8 @@ const frontmatter = {
           </div>
         </div>
       </fieldset>
-
+      */
+      }
       <div id="recommendedLinks" class="hidden">
         <h2>Recommended Links</h2>
       </div>
@@ -957,7 +1079,7 @@ const frontmatter = {
         </div>
       </section>
     </div>
-
+    <!-- 
     <div class="space-y-6">
       <fieldset>
         <legend> Sponsored </legend>
@@ -1022,7 +1144,9 @@ const frontmatter = {
         </fieldset>
       </div>
     </div>
+     -->
   </div>
 </PublicProfileLayout>
 
+<script is:inline src={`/assets/lib/qrcode.min.js?v=${version}`} defer></script>
 <script is:inline src={`/assets/js/profile.js?v=${version}`} defer></script>

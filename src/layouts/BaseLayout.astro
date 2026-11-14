@@ -47,7 +47,7 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{seoTitle}</title>
     <meta name="description" content={seoDescription} />
-    {url ? (
+    {url && !noindex ? (
       <link rel="canonical" href={url} />
     ) : null}
 
@@ -70,7 +70,7 @@ const {
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 
-{url ? (
+{url && !noindex ? (
   <meta property="og:url" content={url} />
 ) : null}
 

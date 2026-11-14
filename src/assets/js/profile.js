@@ -1,8 +1,14 @@
 const profileName = document.getElementById("profileName");
-
+/*
 const params = new URLSearchParams(window.location.search);
 
-const userid = (params.get("u") || "").trim();
+const userid = (params.get("u") || "").trim();*/
+
+const userid = window.location.pathname
+    .split("/")
+    .filter(Boolean)
+    .pop()
+    ?.trim() || "";
 
 if (!/^[a-z0-9]{10}$/.test(userid)) {
 
@@ -21,13 +27,38 @@ if (!/^[a-z0-9]{10}$/.test(userid)) {
         loadHero(profile);
 
         startWaitForInteraction();
-        console.log(profile);
+        // console.log(profile);
     } else {
         loadProfile(userid);
         console.log("no session");
     }
 
 }
+
+
+
+function switchBtmTab(activeTabId) {
+    // Hide all tab panels
+    document.querySelectorAll('.btm-tab-panel').forEach(panel => {
+        panel.classList.add('hidden');
+    });
+
+    // Reset styles on all tab buttons
+    document.querySelectorAll('.btm-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-blue-700', 'shadow');
+        btn.classList.add('text-gray-700', 'hover:text-gray-900');
+    });
+
+    // Show the active tab panel
+    document.getElementById(activeTabId + '-content').classList.remove('hidden');
+
+    // Apply active styles to clicked button
+    const activeBtn = document.getElementById(activeTabId + '-btn');
+    activeBtn.classList.add('bg-white', 'text-blue-700', 'shadow');
+    activeBtn.classList.remove('text-gray-700', 'hover:text-gray-900');
+}
+
+
 
 async function loadProfile(userid) {
 
@@ -60,6 +91,8 @@ async function loadProfile(userid) {
             console.log(profile);
             console.log(profile.userid);
 
+
+
         });
 
 
@@ -67,6 +100,7 @@ async function loadProfile(userid) {
 
 function loadHero(profile) {
 
+    document.getElementById("uname").textContent = profile.userid;
     document.querySelector('.lph')?.remove();
 
     document.getElementById("profileArea").classList.remove("hidden");
@@ -417,3 +451,86 @@ async function recordProfileView() {
     }
 
 }
+
+//QR STARTS
+
+var qrcode = new QRCode("qrcode",
+    "https://wikimint.com/u/" + profile.userid);
+
+
+const upiId = "selva301@slc";
+const payeeName = "Your Store Name";
+const defaultNote = "Payment for order";
+const userId = typeof profile !== 'undefined' ? profile.userid : "myprofile"; // fallback if profile object isn't global yet
+
+// Helper function to render QR Code
+function renderQrCode(amountVal = "") {
+    let upiUri = `upi://pay?pa=${encodeURIComponent(upiId)}&pn=${encodeURIComponent(payeeName)}&cu=INR`;
+    if (amountVal && !isNaN(amountVal) && Number(amountVal) > 0) {
+        // Format to 2 decimal places
+        const formattedAmount = Number(amountVal).toFixed(2);
+        upiUri += `&am=${encodeURIComponent(formattedAmount)}`;
+    }
+    upiUri += `&tn=${encodeURIComponent(defaultNote)}`;
+
+    const qrcodeContainer = document.getElementById("qrpay");
+    qrcodeContainer.innerHTML = ""; // Clear old QR code
+
+    new QRCode(qrcodeContainer, {
+        text: upiUri,
+        /*width: 160,
+        height: 160,*/
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+}
+
+// Generate QR on button click with 2 decimal formatting validation
+function generateDynamicQr() {
+    const amountInput = document.getElementById("payment-amount");
+    let val = amountInput.value;
+    if (val) {
+        val = parseFloat(val).toFixed(2);
+        amountInput.value = val; // auto-correct input format to 2 decimals
+    }
+    renderQrCode(val);
+}
+
+// Copy UPI ID to Clipboard & Trigger Toast
+function copyUpiId() {
+    navigator.clipboard.writeText(upiId).then(() => {
+        // Trigger your custom reusable toast here
+        // showToast("UPI ID copied to clipboard!");
+        alert("UPI ID copied to clipboard!");
+    }).catch(err => {
+        console.error("Failed to copy UPI ID: ", err);
+    });
+}
+
+// Share UPI Link
+function shareUpiPage() {
+    const amountInput = document.getElementById("payment-amount").value;
+    let shareUrl = `https://wikimint.com/u/${encodeURIComponent(userId)}`;
+    if (amountInput) {
+        shareUrl += `&am=${encodeURIComponent(Number(amountInput).toFixed(2))}`;
+    }
+    shareUrl += `&tn=${encodeURIComponent(defaultNote)}#pay`;
+
+    if (navigator.share) {
+        navigator.share({
+            title: 'Pay via UPI',
+            text: 'Click the link to pay securely:',
+            url: shareUrl,
+        }).catch(err => console.log('Error sharing:', err));
+    } else {
+        navigator.clipboard.writeText(shareUrl).then(() => {
+            showToast("Payment link copied to clipboard!");
+        });
+    }
+}
+
+// Initial load default QR code on page load
+document.addEventListener("DOMContentLoaded", function () {
+    renderQrCode();
+});
