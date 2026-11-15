@@ -147,11 +147,11 @@ const frontmatter = {
       <div class="sticky top-20">
         <div class="w-full max-w-md mx-auto flex flex-col gap-4">
           <!-- Bottom: Menu Tabs (2 Buttons) -->
-          <div class="flex p-1 space-x-2 bg-gray-100">
+          <div class="flex p-1 space-x-2 bg-gray-100 border border-gray-200">
             <button
               id="btm-tab1-btn"
               onclick="switchBtmTab('btm-tab1')"
-              class="btm-tab-btn w-full py-2.5 text-md font-medium leading-5 transition-all duration-200 bg-white text-blue-700 shadow">
+              class="btm-tab-btn w-full py-2.5 text-md font-medium leading-5 transition-all duration-200 bg-white text-wmblue hover:text-gray-900 shadow">
               Connect
             </button>
             <button
@@ -173,7 +173,48 @@ const frontmatter = {
             <!-- Tab 2 Panel -->
             <fieldset id="btm-tab2-content" class="btm-tab-panel hidden">
               <legend> Contact me </legend>
-              <div id="contactLinks" class="hidden mt-3"></div>
+              <div id="contactLinks" class="mt-3">
+                <div class="space-y-2">
+                  <div class="flex items-start gap-3">
+                    <img
+                      loading="lazy"
+                      src="/assets/svg/chat.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                      class="w-5 h-5 flex-shrink-0 text-wmblue"
+                      style="margin-top:5px ! important;margin-bottom:0px ! important;"
+                    />
+                    <span id="pub_chat">Not Available</span>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <img
+                      loading="lazy"
+                      src="/assets/svg/envelope.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                      class="w-5 h-5 flex-shrink-0 text-wmblue"
+                      style="margin-top:5px ! important;margin-bottom:0px ! important;"
+                    />
+                    <span id="pub_email">Not Available</span>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <img
+                      loading="lazy"
+                      src="/assets/svg/phone.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                      class="w-5 h-5 flex-shrink-0 text-wmblue"
+                      style="margin-top:5px ! important;margin-bottom:0px ! important;"
+                    />
+                    <span id="pub_phone">Not Available</span>
+                  </div>
+                </div>
+              </div>
             </fieldset>
           </div>
         </div>
@@ -182,6 +223,7 @@ const frontmatter = {
           <legend>Pay me</legend>
 
           <!-- 3. QR Code Container -->
+          <div>Pay to <span id="pubupiname"></span></div>
           <div
             id="qrpay"
             class="w-full h-auto mx-auto object-cover flex justify-center bg-white">
@@ -200,31 +242,30 @@ const frontmatter = {
                 step="0.01"
                 min="1"
                 placeholder="Enter amount (e.g. 100.00)"
-                class="w-full pl-8 pr-4 py-2 bg-white border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                class="w-full pl-8 pr-4 py-2 bg-white border border-wmblue text-sm focus:outline-none focus:ring-2 focus:ring-wmblue focus:border-transparent"
               />
             </div>
-            <button
-              onclick="generateDynamicQr()"
-              class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-xl transition-colors shadow-sm whitespace-nowrap">
-              Generate QR
-            </button>
           </div>
+
+          <button onclick="generateDynamicQr()" class="btn w-full">
+            Generate QR
+          </button>
 
           <!-- 1. UPI ID Badge with Copy Button -->
           <div
-            class="flex items-center justify-between p-3 bg-gray-50 border border-gray-200 rounded-xl">
+            class="flex items-center justify-between px-3 py-1.5 bg-gray-50 border border-gray-200">
             <div class="flex items-center space-x-2">
               <span
                 class="text-xs font-medium text-gray-500 uppercase tracking-wider"
                 >UPI ID:</span
               >
               <span id="upi-id-text" class="text-sm font-semibold text-gray-900"
-                >selva301@slc</span
+                >Not Available</span
               >
             </div>
             <button
               onclick="copyUpiId()"
-              class="p-1.5 text-gray-500 hover:text-blue-600 hover:bg-white rounded-lg transition-colors"
+              class="p-1.5 text-gray-500 hover:text-wmblue hover:bg-white transition-colors"
               title="Copy UPI ID">
               <!-- Copy Icon -->
               <svg
@@ -246,7 +287,7 @@ const frontmatter = {
           <!-- 4. Share UPI Page Button -->
           <button
             onclick="shareUpiPage()"
-            class="w-full py-2.5 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium rounded-xl transition-colors flex items-center justify-center space-x-2">
+            class="w-full py-2.5 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium transition-colors flex items-center justify-center space-x-2 border border-gray-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-4 h-4 text-gray-500"
@@ -263,7 +304,8 @@ const frontmatter = {
             <span>Share Payment Link</span>
           </button>
         </fieldset>
-
+        {
+          /*
         <fieldset class="desktop-only mt-5">
           <legend> Grow Your Online Presence </legend>
 
@@ -276,7 +318,8 @@ const frontmatter = {
           <a href="/app/branding">
             <button class="w-full btn"> Build Your Personal Brand </button>
           </a>
-        </fieldset>
+        </fieldset> */
+        }
       </div>
     </div>
 
@@ -290,7 +333,7 @@ const frontmatter = {
         <a
           id="showMoreBtn"
           href="#headline"
-          class="hidden text-blue-600 hover:underline"
+          class="hidden text-wmblue hover:underline"
           role="button">Show More</a
         >
       </div>

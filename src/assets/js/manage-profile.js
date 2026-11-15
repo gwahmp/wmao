@@ -7,15 +7,15 @@ let editingLink = -1;
 
 ifMember(() => {
 
-    var muSession = sessionStorage.getItem("mp-"+userid);
-if(muSession){
-    profile = JSON.parse(muSession);
-    loadFields();
-    console.log(profile);
-}else{
-    loadProfile(userid);
-    console.log("no session");
-}
+    var muSession = sessionStorage.getItem("mp-" + userid);
+    if (muSession) {
+        profile = JSON.parse(muSession);
+        loadFields();
+        console.log(profile);
+    } else {
+        loadProfile(userid);
+        console.log("no session");
+    }
 
 });
 
@@ -42,12 +42,12 @@ async function loadProfile() {
 
         profile = data.profile;
 
-        sessionStorage.setItem("mp-"+userid,JSON.stringify(profile));
+        sessionStorage.setItem("mp-" + userid, JSON.stringify(profile));
 
         console.log("Rendering profile");
         loadFields()
 
-       
+
 
     }
     catch (err) {
@@ -58,70 +58,86 @@ async function loadProfile() {
 
 }
 
-function loadFields(){
+function loadFields() {
     // document.getElementById("photo").src =
     // profile.photo || "/assets/images/wikimint.webp";
+    console.log(profile);
+    document.getElementById("userid").value =
+        profile.userid;
 
-document.getElementById("userid").value =
-    profile.userid;
+    document.getElementById("email").value =
+        profile.email;
 
-document.getElementById("email").value =
-    profile.email;
+    document.getElementById("name").value =
+        profile.name;
 
-document.getElementById("name").value =
-    profile.name;
+    document.getElementById("headline").value =
+        profile.headline;
 
-document.getElementById("headline").value =
-    profile.headline;
+    document.getElementById("pub_chat").value =
+        profile.pubchat;
+
+    document.getElementById("pub_phone").value =
+        profile.pubphone;
+
+    document.getElementById("pub_email").value =
+        profile.pubemail;
+
+    document.getElementById("pub_upi_id").value =
+        profile.pubupiid;
+
+    document.getElementById("pub_upi_payee_name").value =
+        profile.pubupipayeename;
+
     document.getElementById("description").value =
-    profile.description;
+        profile.description;
 
-updateDescriptionCounter();
+    updateDescriptionCounter();
 
-document.getElementById("company").value =
-profile.company;
+    document.getElementById("company").value =
+        profile.company;
 
-document.getElementById("website").value =
-profile.website;
+    document.getElementById("website").value =
+        profile.website;
 
-document.getElementById("location").value =
-profile.location;
+    document.getElementById("location").value =
+        profile.location;
 
-loadCountries(
-    profile.country ||
-    data.detectedCountryCode
-);
+    loadCountries(
+        profile.country ||
+        data.detectedCountryCode
+    );
 
-document.getElementById("services").value =
-profile.services;
+    document.getElementById("services").value =
+        profile.services;
 
-document.getElementById("skills").value =
-profile.skills;
+    document.getElementById("skills").value =
+        profile.skills;
 
-document.getElementById("facebook").value =
-profile.facebook;
+    document.getElementById("facebook").value =
+        profile.facebook;
 
-document.getElementById("linkedin").value =
-profile.linkedin;
+    document.getElementById("linkedin").value =
+        profile.linkedin;
 
-document.getElementById("github").value =
-profile.github;
+    document.getElementById("github").value =
+        profile.github;
 
-document.getElementById("youtube").value =
-profile.youtube;
+    document.getElementById("youtube").value =
+        profile.youtube;
 
-document.getElementById("twitter").value =
-profile.twitter;
+    document.getElementById("twitter").value =
+        profile.twitter;
 
-document.getElementById("profile_visibility").value =
-profile.profile_visibility || "public";
+    document.getElementById("profile_visibility").value =
+        profile.profile_visibility || "public";
 
-document.getElementById("profile_category").value = profile.profile_category || "professional";
+    document.getElementById("profile_category").value = profile.profile_category || "professional";
 
-promotionalLinks =
-    profile.recommended_links || [];
+    promotionalLinks =
+        profile.recommended_links || [];
 
-renderLinks();
+    renderLinks();
 
 }
 
@@ -146,153 +162,153 @@ function updateDescriptionCounter() {
 const countries = await fetch("/assets/data/countries.json")
     .then(r => r.json());
 
-    async function loadCountries(selectedCountry = "") {
+async function loadCountries(selectedCountry = "") {
 
-        const response =
-            await fetch("/assets/data/countries.json");
-    
-        const countries =
-            await response.json();
-    
-        const country =
-            document.getElementById("country");
-    
-        country.innerHTML =
-            `<option value="">Select Country</option>`;
-    
-        countries.forEach(item => {
-    
-            const option =
-                document.createElement("option");
-    
-            option.value =
-                item.code;
-    
-            option.textContent =
-                item.name;
-    
-            if (item.code === selectedCountry) {
-    
-                option.selected = true;
-    
-            }
-    
-            country.appendChild(option);
-    
-        });
-    
-    }
+    const response =
+        await fetch("/assets/data/countries.json");
+
+    const countries =
+        await response.json();
+
+    const country =
+        document.getElementById("country");
+
+    country.innerHTML =
+        `<option value="">Select Country</option>`;
+
+    countries.forEach(item => {
+
+        const option =
+            document.createElement("option");
+
+        option.value =
+            item.code;
+
+        option.textContent =
+            item.name;
+
+        if (item.code === selectedCountry) {
+
+            option.selected = true;
+
+        }
+
+        country.appendChild(option);
+
+    });
+
+}
 
 
-        document
+document
     .getElementById("addLinkBtn")
     .addEventListener(
         "click",
         addLink
     );
 
-    function addLink() {
+function addLink() {
 
-        const title =
-            document
-                .getElementById("linkTitle")
-                .value
-                .trim();
-    
-        const url =
-            document
-                .getElementById("linkUrl")
-                .value
-                .trim();
-    
-        if (!title) {
-    
-            alert("Enter link title.");
-    
-            return;
-    
-        }
-    
-        if (!url) {
-    
-            alert("Enter link URL.");
-    
-            return;
-    
-        }
-    
-        if (editingLink === -1) {
-    
-            if (promotionalLinks.length >= 20) {
-    
-                alert("Maximum 20 links allowed.");
-    
-                return;
-    
-            }
-    
-            promotionalLinks.push({
-    
-                title,
-                url
-    
-            });
+    const title =
+        document
+            .getElementById("linkTitle")
+            .value
+            .trim();
 
-            console.log("After push:", promotionalLinks);
-    
-        }
-        else {
-    
-            promotionalLinks[editingLink] = {
-    
-                title,
-                url
-    
-            };
-    
-            editingLink = -1;
-    
-            document.getElementById("addLinkBtn").textContent =
-                "+ Add";
-    
-        }
-    
-        document.getElementById("linkTitle").value = "";
-    
-        document.getElementById("linkUrl").value = "";
-    
-        renderLinks();
-    
+    const url =
+        document
+            .getElementById("linkUrl")
+            .value
+            .trim();
+
+    if (!title) {
+
+        alert("Enter link title.");
+
+        return;
+
     }
 
-    function renderLinks() {
+    if (!url) {
 
-        const list =
-            document.getElementById("linksList");
-    
-        if (promotionalLinks.length === 0) {
-    
-            list.innerHTML = `
+        alert("Enter link URL.");
+
+        return;
+
+    }
+
+    if (editingLink === -1) {
+
+        if (promotionalLinks.length >= 20) {
+
+            alert("Maximum 20 links allowed.");
+
+            return;
+
+        }
+
+        promotionalLinks.push({
+
+            title,
+            url
+
+        });
+
+        console.log("After push:", promotionalLinks);
+
+    }
+    else {
+
+        promotionalLinks[editingLink] = {
+
+            title,
+            url
+
+        };
+
+        editingLink = -1;
+
+        document.getElementById("addLinkBtn").textContent =
+            "+ Add";
+
+    }
+
+    document.getElementById("linkTitle").value = "";
+
+    document.getElementById("linkUrl").value = "";
+
+    renderLinks();
+
+}
+
+function renderLinks() {
+
+    const list =
+        document.getElementById("linksList");
+
+    if (promotionalLinks.length === 0) {
+
+        list.innerHTML = `
                 <div class="text-gray-500">
                     No promotional links added.
                 </div>
             `;
-    
-            return;
-    
-        }
-    
-        list.innerHTML = "";
-    
-        promotionalLinks.forEach(
-    
-            (link, index) => {
-    
-                list.insertAdjacentHTML(
 
-                    "beforeend",
-                
-                    `
+        return;
+
+    }
+
+    list.innerHTML = "";
+
+    promotionalLinks.forEach(
+
+        (link, index) => {
+
+            list.insertAdjacentHTML(
+
+                "beforeend",
+
+                `
                     <div class="border rounded-lg p-4 flex justify-between items-center">
                 
                         <div>
@@ -337,59 +353,59 @@ const countries = await fetch("/assets/data/countries.json")
                 
                     </div>
                     `
-                
-                );
-    
-            }
-    
-        );
-    
-    }
 
-    window.deleteLink = function(index) {
+            );
 
-        promotionalLinks.splice(index, 1);
-    
-        if (editingLink === index) {
-    
-            editingLink = -1;
-    
-            document.getElementById("linkTitle").value = "";
-    
-            document.getElementById("linkUrl").value = "";
-    
-            document.getElementById("addLinkBtn").textContent =
-                "+ Add";
-    
         }
-    
-        renderLinks();
-    
-    }
-    window.editLink = function(index) {
 
-        const link =
-            promotionalLinks[index];
-    
-        document.getElementById("linkTitle").value =
-            link.title;
-    
-        document.getElementById("linkUrl").value =
-            link.url;
-    
-        editingLink =
-            index;
-    
+    );
+
+}
+
+window.deleteLink = function (index) {
+
+    promotionalLinks.splice(index, 1);
+
+    if (editingLink === index) {
+
+        editingLink = -1;
+
+        document.getElementById("linkTitle").value = "";
+
+        document.getElementById("linkUrl").value = "";
+
         document.getElementById("addLinkBtn").textContent =
-            "Update";
-    
-        document
-            .getElementById("linkTitle")
-            .focus();
-    
+            "+ Add";
+
     }
+
+    renderLinks();
+
+}
+window.editLink = function (index) {
+
+    const link =
+        promotionalLinks[index];
+
+    document.getElementById("linkTitle").value =
+        link.title;
+
+    document.getElementById("linkUrl").value =
+        link.url;
+
+    editingLink =
+        index;
+
+    document.getElementById("addLinkBtn").textContent =
+        "Update";
 
     document
+        .getElementById("linkTitle")
+        .focus();
+
+}
+
+document
     .getElementById("resetProfileBtn")
     .addEventListener(
         "click",
@@ -416,14 +432,14 @@ document
     );
 
 
-    function setDirty() {
+function setDirty() {
 
-        document
-            .getElementById("saveStatus")
-            .textContent =
-            "Unsaved changes";
-    
-    }
+    document
+        .getElementById("saveStatus")
+        .textContent =
+        "Unsaved changes";
+
+}
 
 async function saveProfile() {
 
@@ -434,6 +450,21 @@ async function saveProfile() {
 
         headline:
             document.getElementById("headline").value.trim(),
+
+        pubchat:
+            document.getElementById("pub_chat").value.trim(),
+
+        pubphone:
+            document.getElementById("pub_phone").value.trim(),
+
+        pubemail:
+            document.getElementById("pub_email").value.trim(),
+
+        pubupiid:
+            document.getElementById("pub_upi_id").value.trim(),
+
+        pubupipayeename:
+            document.getElementById("pub_upi_payee_name").value.trim(),
 
         description:
             document.getElementById("description").value.trim(),
@@ -471,15 +502,15 @@ async function saveProfile() {
         twitter:
             document.getElementById("twitter").value.trim(),
 
-            recommended_links:
+        recommended_links:
             promotionalLinks,
-        
+
         profile_visibility:
             document.getElementById("profile_visibility").value,
-        
+
         profile_category:
             document.getElementById("profile_category").value,
-                       
+
 
     };
 
@@ -525,8 +556,8 @@ async function saveProfile() {
 
         alert("Profile updated successfully.");
 
-        sessionStorage.removeItem("mp-"+userid);
-        sessionStorage.removeItem("pp-"+userid);
+        sessionStorage.removeItem("mp-" + userid);
+        sessionStorage.removeItem("pp-" + userid);
 
         await loadProfile();
 
@@ -550,48 +581,48 @@ async function saveProfile() {
 
 document.querySelectorAll('.delete').forEach(btn => {
     btn.onclick = async () => {
-        
-                    const confirmation =
-                        prompt(
-                            'This action permanently deletes your account.\n\nType DELETE to continue.'
-                        );
-        
-                        if (
-                            confirmation
-                                ?.trim()
-                                .toLowerCase()
-                            !==
-                            'delete'
-                        ) {
-        
-                        alert(
-                            'Account deletion cancelled.'
-                        );
-        
-                        return;
-                    }
-        
-                    await fetch(
-                        'https://api.wikimint.com/delete-account',
-                        {
-                            method:
-                                'POST',
-        
-                            credentials:
-                                'include'
-                        }
-                    );
-        
- // Clear local data only after successful server logout
- localStorage.removeItem(CACHE_KEY);
- localStorage.removeItem(VERIFY_KEY);
- localStorage.setItem('loggedIn', 'false');
- localStorage.clear();
- sessionStorage.clear();
- WMAuth.loggedIn = false;
- WMAuth.member = null;
 
-window.location.reload();
-                }
-            }
+        const confirmation =
+            prompt(
+                'This action permanently deletes your account.\n\nType DELETE to continue.'
             );
+
+        if (
+            confirmation
+                ?.trim()
+                .toLowerCase()
+            !==
+            'delete'
+        ) {
+
+            alert(
+                'Account deletion cancelled.'
+            );
+
+            return;
+        }
+
+        await fetch(
+            'https://api.wikimint.com/delete-account',
+            {
+                method:
+                    'POST',
+
+                credentials:
+                    'include'
+            }
+        );
+
+        // Clear local data only after successful server logout
+        localStorage.removeItem(CACHE_KEY);
+        localStorage.removeItem(VERIFY_KEY);
+        localStorage.setItem('loggedIn', 'false');
+        localStorage.clear();
+        sessionStorage.clear();
+        WMAuth.loggedIn = false;
+        WMAuth.member = null;
+
+        window.location.reload();
+    }
+}
+);

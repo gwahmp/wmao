@@ -1,14 +1,17 @@
 const profileName = document.getElementById("profileName");
-/*
+
 const params = new URLSearchParams(window.location.search);
+var userid;
+if (params.has("u")) {
+    userid = (params.get("u") || "").trim();
+} else {
 
-const userid = (params.get("u") || "").trim();*/
-
-const userid = window.location.pathname
-    .split("/")
-    .filter(Boolean)
-    .pop()
-    ?.trim() || "";
+    userid = window.location.pathname
+        .split("/")
+        .filter(Boolean)
+        .pop()
+        ?.trim() || "";
+}
 
 if (!/^[a-z0-9]{10}$/.test(userid)) {
 
@@ -99,6 +102,18 @@ async function loadProfile(userid) {
 }
 
 function loadHero(profile) {
+            console.log(profile);
+
+    //var qrcode = new QRCode("qrcode", "https://wikimint.com/u/" + profile.userid);
+    var qrcode = new QRCode("qrcode", {
+        text: "https://wikimint.com/u/" + profile.userid,
+        width: 160,
+        height: 160,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
 
     document.getElementById("uname").textContent = profile.userid;
     document.querySelector('.lph')?.remove();
@@ -111,6 +126,21 @@ function loadHero(profile) {
 
     document.getElementById("description").textContent =
         profile.description || "Not Available";
+
+    document.getElementById("pub_chat").textContent =
+        profile.pubchat || "Not Available";
+
+    document.getElementById("pub_phone").textContent =
+        profile.pubphone || "Not Available";
+
+    document.getElementById("pub_email").textContent =
+        profile.pubemail || "Not Available";
+
+    document.getElementById("pubupiname").textContent =
+        profile.pubupipayeename || " this user";
+
+    document.getElementById("upi-id-text").textContent =
+        profile.pubupiid || "Not Available";
 
     document.getElementById("headline").textContent =
         profile.headline || "Headline Not Available";
@@ -454,8 +484,6 @@ async function recordProfileView() {
 
 //QR STARTS
 
-var qrcode = new QRCode("qrcode",
-    "https://wikimint.com/u/" + profile.userid);
 
 
 const upiId = "selva301@slc";
