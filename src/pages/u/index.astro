@@ -15,8 +15,8 @@ const frontmatter = {
 ---
 
 <PublicProfileLayout frontmatter={frontmatter}>
-  
-  <!-- Public profile skeleton loader -->
+ 
+<!-- Public profile skeleton loader -->
 <div
   id="profileSkeleton"
   class="grid grid-cols-1 md:grid-cols-[380px_1fr] gap-20 mb-20 animate-pulse"
@@ -93,7 +93,7 @@ const frontmatter = {
 
             <!-- Headline -->
     <div class="space-y-3">
-               <div class="h-20 w-full bg-gray-200 rounded"></div>
+               <div class="h-32 w-full bg-gray-200 rounded"></div>
 
     </div>
 
@@ -306,7 +306,7 @@ const frontmatter = {
           </div>
         </div>
 
-        <fieldset id="pay" class="hidden mt-5 space-y-4">
+        <fieldset id="pay" class="hidden mt-5 space-y-0">
           <legend>Pay me</legend>
 
           <!-- 3. QR Code Container -->
@@ -315,7 +315,7 @@ const frontmatter = {
             id="qrpay"
             class="w-full h-auto mx-auto object-cover flex justify-center bg-white">
           </div>
-
+<div class=" space-y-4">
           <!-- 2. Amount Input and Generate Button -->
           <div class="flex gap-2">
             <div class="relative flex-grow">
@@ -390,6 +390,7 @@ const frontmatter = {
             </svg>
             <span>Share Payment Link</span>
           </button>
+        </div>
         </fieldset>
         {
           /*
@@ -512,7 +513,6 @@ const frontmatter = {
       </div>
     </div>
   </div>
-  
 
 </PublicProfileLayout>
 

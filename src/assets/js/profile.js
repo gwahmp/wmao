@@ -51,7 +51,7 @@ function finishProfileLoading() {
     // Completely remove the skeleton from the DOM
     skeleton?.remove();
 
-    document.querySelectorAll("#qrcode img, #qrpay img").forEach(img => {
+    document.querySelectorAll("#qrcode img").forEach(img => {
         img.setAttribute("width", "100%");
         img.setAttribute("height", "auto");
 
@@ -528,8 +528,8 @@ function renderQrCode(amountVal = "") {
 
     new QRCode(qrcodeContainer, {
         text: upiUri,
-        /*width: 160,
-        height: 160,*/
+        width: 160,
+        height: 160,
         colorDark: "#000000",
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H
