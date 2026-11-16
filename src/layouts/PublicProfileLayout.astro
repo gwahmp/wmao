@@ -3,7 +3,6 @@ import BaseLayout from "./BaseLayout.astro";
 import "../styles/global.css";
 import HeaderLanding from "../components/HeaderLanding.astro";
 import FooterSimple from "../components/FooterSimple.astro";
-import Spinner from "../components/Spinner.astro";
 const version = Date.now();
 
 const { frontmatter, url } = Astro.props;
@@ -76,7 +75,6 @@ const currentUrl = Astro.url.href; // full URL of the current page
   }
   <HeaderLanding slot="header" />
   <article class="prose lg:prose-xl max-w-none">
-    <Spinner />
     <slot />
   </article>
   <FooterSimple slot="footer" />

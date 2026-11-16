@@ -1,3 +1,4 @@
+
 const profileName = document.getElementById("profileName");
 
 const params = new URLSearchParams(window.location.search);
@@ -38,6 +39,27 @@ if (!/^[a-z0-9]{10}$/.test(userid)) {
 
 }
 
+
+function finishProfileLoading() {
+    const skeleton = document.getElementById("profileSkeleton");
+    const profileArea = document.getElementById("profileArea");
+
+    if (profileArea) {
+        profileArea.classList.remove("hidden");
+    }
+
+    // Completely remove the skeleton from the DOM
+    skeleton?.remove();
+
+    document.querySelectorAll("#qrcode img, #qrpay img").forEach(img => {
+        img.setAttribute("width", "100%");
+        img.setAttribute("height", "auto");
+
+        img.style.setProperty("width", "100%", "important");
+        img.style.setProperty("height", "auto", "important");
+    });
+
+}
 
 
 function switchBtmTab(activeTabId) {
@@ -102,7 +124,7 @@ async function loadProfile(userid) {
 }
 
 function loadHero(profile) {
-            console.log(profile);
+    console.log(profile);
 
     //var qrcode = new QRCode("qrcode", "https://wikimint.com/u/" + profile.userid);
     var qrcode = new QRCode("qrcode", {
@@ -119,7 +141,6 @@ function loadHero(profile) {
     document.querySelector('.lph')?.remove();
 
     document.getElementById("profileArea").classList.remove("hidden");
-
     document.querySelectorAll(".pname").forEach(el => { el.textContent = profile.name; });
 
 
@@ -486,11 +507,12 @@ async function recordProfileView() {
 
 
 
-const upiId = "selva301@slc";
-const payeeName = "Your Store Name";
+const upiId = profile.pubupiid;
+const payeeName = profile.pubupipayeename || " this user";
 const defaultNote = "Payment for order";
 const userId = typeof profile !== 'undefined' ? profile.userid : "myprofile"; // fallback if profile object isn't global yet
 
+if (upiId) { document.getElementById("pay").classList.remove("hidden"); }
 // Helper function to render QR Code
 function renderQrCode(amountVal = "") {
     let upiUri = `upi://pay?pa=${encodeURIComponent(upiId)}&pn=${encodeURIComponent(payeeName)}&cu=INR`;
@@ -512,6 +534,9 @@ function renderQrCode(amountVal = "") {
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H
     });
+
+    finishProfileLoading();
+
 }
 
 // Generate QR on button click with 2 decimal formatting validation
@@ -522,6 +547,7 @@ function generateDynamicQr() {
         val = parseFloat(val).toFixed(2);
         amountInput.value = val; // auto-correct input format to 2 decimals
     }
+    document.getElementById("upiamount").textContent = val || "any amount";
     renderQrCode(val);
 }
 
