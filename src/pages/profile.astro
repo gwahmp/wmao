@@ -111,18 +111,19 @@ const frontmatter = {
 
       <span class="pname w-full block text-2xl font-medium mb-3"> </span>
 
-      <div class="grid grid-cols-[25%_75%] gap-6">
+      <!-- <div class="grid grid-cols-[25%_75%] gap-6"> -->
+       <div class="grid grid-cols-[minmax(0,1fr)_minmax(0,3fr)] gap-6">
         <div class="flex flex-col items-center md:items-start md:justify-start">
-          <!-- <img
+<img
     id="profilePhoto"
     src="/assets/svg/user-fill.svg"
     alt="Profile Photo"
-    class="w-full h-auto rounded-full mx-auto object-cover"
+    class="mobile-only w-full h-auto rounded-full mx-auto object-cover"
     style="margin-top:0px ! important;"
-  /> -->
+  />
           <div
             id="qrcode"
-            class="w-full h-auto object-cover flex justify-center md:justify-start"
+            class="desktop-only w-full min-w-0 h-auto object-cover flex justify-center md:justify-start"
             style="margin-top:-25px ! important;">
           </div>
           <span id="uname" class="hidden text-sm text-gray-500 mt-2"></span>
@@ -184,6 +185,9 @@ const frontmatter = {
       </div>
 
       <!-- sidebar ends -->
+
+            <div class="highlight headline mobile-only">Profile headline loading..</div>
+
 
       <div
         class="bg-blue-50 p-5 hidden border border-wmblue"
@@ -314,7 +318,7 @@ const frontmatter = {
           <div class="text-center py-0 my-0 space-y-0">Pay <span id="upiamount" class="lead">any amount </span> to <span id="pubupiname" class="text-wmblue lead block py-0 my-0"></span></div>
           <div
             id="qrpay"
-            class="w-full h-auto mx-auto object-cover flex justify-center bg-white">
+            class="w-full h-auto mx-auto object-cover py-4 md:py-0 flex justify-center bg-white">
           </div>
 <div class=" space-y-4">
           <!-- 2. Amount Input and Generate Button -->
@@ -413,7 +417,7 @@ const frontmatter = {
     </div>
 
     <div>
-      <div class="highlight" id="headline">Profile headline loading..</div>
+      <div class="highlight headline desktop-only" id="headline">Profile headline loading..</div>
 
       <h2>About <span class="pname"></span></h2>
       <div class="mb-6">

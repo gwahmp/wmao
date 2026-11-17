@@ -51,13 +51,7 @@ function finishProfileLoading() {
     // Completely remove the skeleton from the DOM
     skeleton?.remove();
 
-    document.querySelectorAll("#qrcode img").forEach(img => {
-        img.setAttribute("width", "100%");
-        img.setAttribute("height", "auto");
 
-        img.style.setProperty("width", "100%", "important");
-        img.style.setProperty("height", "auto", "important");
-    });
 
 }
 
@@ -129,13 +123,18 @@ function loadHero(profile) {
     //var qrcode = new QRCode("qrcode", "https://wikimint.com/u/" + profile.userid);
     var qrcode = new QRCode("qrcode", {
         text: "https://wikimint.com/u/" + profile.userid,
-        width: 160,
-        height: 160,
+        /*width: 75,
+        height: 75,*/
         colorDark: "#000000",
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H
     });
-
+    // document.querySelectorAll("#qrcode img").forEach(img => {
+    //     img.style.setProperty("width", "75px", "important");
+    //     img.style.setProperty("max-width", "75px", "important");
+    //     img.style.setProperty("height", "auto", "important");
+    //     img.style.setProperty("display", "block", "important");
+    // });
 
     document.getElementById("uname").textContent = profile.userid;
     document.querySelector('.lph')?.remove();
@@ -163,8 +162,9 @@ function loadHero(profile) {
     document.getElementById("upi-id-text").textContent =
         profile.pubupiid || "Not Available";
 
-    document.getElementById("headline").textContent =
-        profile.headline || "Headline Not Available";
+document.querySelectorAll(".headline").forEach(el => {
+    el.textContent = profile.headline || "Headline Not Available";
+});
 
     document.getElementById("cat").textContent =
         profile.profile_category
@@ -528,8 +528,8 @@ function renderQrCode(amountVal = "") {
 
     new QRCode(qrcodeContainer, {
         text: upiUri,
-        width: 160,
-        height: 160,
+        /* width: 160,
+         height: 160,*/
         colorDark: "#000000",
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H
