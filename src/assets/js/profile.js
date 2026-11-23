@@ -120,21 +120,27 @@ async function loadProfile(userid) {
 function loadHero(profile) {
     console.log(profile);
 
-    //var qrcode = new QRCode("qrcode", "https://wikimint.com/u/" + profile.userid);
+    document.title = profile.name + " | Wikimint profile" || "Wikimint Profile for Free Personal Branding";
+
+    const pageDescription = profile.headline || "View public profile on Wikimint.";
+
+    let metaDescription = document.querySelector('meta[name="description"]');
+
+    if (!metaDescription) {
+        metaDescription = document.createElement("meta");
+        metaDescription.name = "description";
+        document.head.appendChild(metaDescription);
+    }
+
+    metaDescription.setAttribute("content", pageDescription);
+
     var qrcode = new QRCode("qrcode", {
         text: "https://wikimint.com/u/" + profile.userid,
-        /*width: 75,
-        height: 75,*/
         colorDark: "#000000",
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H
     });
-    // document.querySelectorAll("#qrcode img").forEach(img => {
-    //     img.style.setProperty("width", "75px", "important");
-    //     img.style.setProperty("max-width", "75px", "important");
-    //     img.style.setProperty("height", "auto", "important");
-    //     img.style.setProperty("display", "block", "important");
-    // });
+
 
     document.getElementById("uname").textContent = profile.userid;
     document.querySelector('.lph')?.remove();
@@ -162,9 +168,9 @@ function loadHero(profile) {
     document.getElementById("upi-id-text").textContent =
         profile.pubupiid || "Not Available";
 
-document.querySelectorAll(".headline").forEach(el => {
-    el.textContent = profile.headline || "Headline Not Available";
-});
+    document.querySelectorAll(".headline").forEach(el => {
+        el.textContent = profile.headline || "Headline Not Available";
+    });
 
     document.getElementById("cat").textContent =
         profile.profile_category
@@ -408,6 +414,7 @@ document.querySelectorAll(".headline").forEach(el => {
         });
     }
 
+    finishProfileLoading();
 
 
 }
@@ -535,7 +542,6 @@ function renderQrCode(amountVal = "") {
         correctLevel: QRCode.CorrectLevel.H
     });
 
-    finishProfileLoading();
 
 }
 

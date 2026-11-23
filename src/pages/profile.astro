@@ -16,95 +16,8 @@ const frontmatter = {
 
 <PublicProfileLayout frontmatter={frontmatter}>
 
-
-<!-- Public profile skeleton loader -->
-<div
-  id="profileSkeleton"
-  class="grid grid-cols-1 md:grid-cols-[380px_1fr] gap-20 mb-20 animate-pulse"
-  aria-busy="true"
-  aria-label="Loading profile">
-
-  <!-- Left column skeleton -->
-  <div class="space-y-6">
-
-    <!-- Profile name -->
-    <div class="h-8 w-3/4 bg-gray-200 rounded"></div>
-
-    <!-- QR/profile image + member details -->
-    <div class="grid grid-cols-[25%_75%] gap-6">
-
-      <div class="flex justify-center md:justify-start">
-        <div class="w-20 h-20 md:w-24 md:h-24 bg-gray-200 rounded-full"></div>
-      </div>
-
-      <div class="space-y-4 pt-2">
-        <div class="h-4 w-4/5 bg-gray-200 rounded"></div>
-        <div class="h-4 w-3/4 bg-gray-200 rounded"></div>
-        <div class="h-4 w-2/3 bg-gray-200 rounded"></div>
-        <div class="h-4 w-1/2 bg-gray-200 rounded"></div>
-      </div>
-
-    </div>
-
-          <div class="h-20 w-full bg-gray-200 rounded"></div>
-
-
-        <!-- Headline -->
-    <div class="space-y-3">
-      <div class="h-6 w-full bg-gray-200 rounded"></div>
-      <div class="h-6 w-4/5 bg-gray-200 rounded"></div>
-    </div>
-
-    <!-- About -->
-    <div class="space-y-4">
-      <div class="h-7 w-32 bg-gray-200 rounded"></div>
-      <div class="h-4 w-full bg-gray-200 rounded"></div>
-      <div class="h-4 w-full bg-gray-200 rounded"></div>
-      <div class="h-4 w-5/6 bg-gray-200 rounded"></div>
-    </div>
-
-  </div>
-
-  <!-- Right column skeleton -->
-  <div class="space-y-6">
-
-    <!-- Headline -->
-    <div class="space-y-3">
-      <div class="h-6 w-full bg-gray-200 rounded"></div>
-      <div class="h-6 w-4/5 bg-gray-200 rounded"></div>
-    </div>
-
-    <!-- About -->
-    <div class="space-y-4">
-      <div class="h-7 w-32 bg-gray-200 rounded"></div>
-      <div class="h-4 w-full bg-gray-200 rounded"></div>
-      <div class="h-4 w-full bg-gray-200 rounded"></div>
-      <div class="h-4 w-5/6 bg-gray-200 rounded"></div>
-    </div>
-
-
-
-    <!-- About -->
-    <div class="space-y-4">
-      <div class="h-7 w-50 bg-gray-200 rounded"></div>
-      <div class="h-4 w-full bg-gray-200 rounded"></div>
-      <div class="h-4 w-full bg-gray-200 rounded"></div>
-      <div class="h-4 w-5/6 bg-gray-200 rounded"></div>
-    </div>
-
-            <!-- Headline -->
-    <div class="space-y-3">
-               <div class="h-32 w-full bg-gray-200 rounded"></div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
   <div
-    class="grid grid-cols-1 md:grid-cols-[380px_1fr] gap-20 hidden mb-20"
+    class="grid grid-cols-1 md:grid-cols-[380px_1fr] gap-0 md:gap-20 hidden mb-20"
     id="profileArea">
     <div class="space-y-6">
       <!-- sidebar starts -->
@@ -189,138 +102,173 @@ const frontmatter = {
             <div class="highlight headline mobile-only">Profile headline loading..</div>
 
 
-      <div
-        class="bg-blue-50 p-5 hidden border border-wmblue"
-        id="websiteContainer">
-        <a
-          id="websiteLink"
-          href="#website"
-          target="_blank"
-          rel="nofollow noopener noreferrer">
-          <div class="grid grid-cols-[15%_85%] gap-6 mb-5">
-            <div class="flex items-start justify-end">
-              <svg
-                width="50"
-                height="50"
-                class="text-wmblue"
-                style="margin-top:5px ! important;margin-bottom:0px ! important;">
-                <use href="/assets/icons/com.svg#web"></use>
-              </svg>
+      <div  class="sticky space-y-10 top-20">
+        <div class="bg-blue-50 p-5 hidden border border-wmblue" id="websiteContainer">
+          <a
+            id="websiteLink"
+            href="#website"
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+            <div class="grid grid-cols-[15%_85%] gap-6 mb-5">
+              <div class="flex items-start justify-end">
+                <svg
+                  width="50"
+                  height="50"
+                  class="text-wmblue"
+                  style="margin-top:5px ! important;margin-bottom:0px ! important;">
+                  <use href="/assets/icons/com.svg#web"></use>
+                </svg>
+              </div>
+              <div class="space-y-0">
+                <span class="font-medium">My Website</span>
+                <span id="website" class="text-wmblue block truncate"
+                  >www.example.com</span
+                >
+              </div>
             </div>
+            <button class="btn w-full flex block justify-center"
+              ><span>Visit My Website</span>
+              <img
+                loading="lazy"
+                src="/assets/svg/linkout.svg"
+                alt=""
+                width="20"
+                height="20"
+                class="w-5 h-5 ms-3"
+                style="margin-top:5px ! important;margin-bottom:0px ! important;"
+              /></button
+            ></a
+          >
+        </div>
+        <span
+          class="hidden inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 text-green-700 text-sm font-medium">
+          ✔ Verified Wikimint Member
+        </span>
 
-            <div class="space-y-0">
-              <span class="font-medium">My Website</span>
-              <span id="website" class="text-wmblue block truncate"
-                >www.example.com</span
-              >
+        <div class="w-full max-w-md mx-auto flex flex-col gap-4">
+            <!-- Bottom: Menu Tabs (2 Buttons) -->
+            <div class="flex p-1 space-x-2 bg-gray-100 border border-gray-200">
+              <button
+                id="btm-tab1-btn"
+                onclick="switchBtmTab('btm-tab1')"
+                class="btm-tab-btn w-full py-2.5 text-md font-medium leading-5 transition-all duration-200 bg-white text-wmblue hover:text-gray-900 shadow">
+                Connect
+              </button>
+              <button
+                id="btm-tab2-btn"
+                onclick="switchBtmTab('btm-tab2')"
+                class="btm-tab-btn w-full py-2.5 text-md font-medium leading-5 transition-all duration-200 text-gray-700 hover:text-gray-900">
+                Contact
+              </button>
+            </div>
+            <!-- Top: Tab Contents Area -->
+            <div class="w-full">
+              <!-- Tab 1 Panel -->
+              <fieldset id="btm-tab1-content" class="btm-tab-panel">
+                <legend> Connect with me </legend>
+                <div id="socialLinks" class="hidden mt-3 px-3"></div>
+              </fieldset>
+              <!-- Tab 2 Panel -->
+              <fieldset id="btm-tab2-content" class="btm-tab-panel hidden">
+                <legend> Contact me </legend>
+                <div id="contactLinks" class="mt-3 px-3">
+                  <div class="space-y-2">
+                    <div class="flex items-start gap-3">
+                      <img
+                        loading="lazy"
+                        src="/assets/svg/chat.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                        class="w-5 h-5 flex-shrink-0 text-wmblue"
+                        style="margin-top:5px ! important;margin-bottom:0px ! important;"
+                      />
+                      <span id="pub_chat">Not Available</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                      <img
+                        loading="lazy"
+                        src="/assets/svg/envelope.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                        class="w-5 h-5 flex-shrink-0 text-wmblue"
+                        style="margin-top:5px ! important;margin-bottom:0px ! important;"
+                      />
+                      <span id="pub_email">Not Available</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                      <img
+                        loading="lazy"
+                        src="/assets/svg/phone.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                        class="w-5 h-5 flex-shrink-0 text-wmblue"
+                        style="margin-top:5px ! important;margin-bottom:0px ! important;"
+                      />
+                      <span id="pub_phone">Not Available</span>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
             </div>
           </div>
+        </div>
+        
+    </div>
 
-          <button class="btn w-full flex block justify-center"
-            ><span>Visit My Website</span>
-            <img
-              loading="lazy"
-              src="/assets/svg/linkout.svg"
-              alt=""
-              width="20"
-              height="20"
-              class="w-5 h-5 ms-3"
-              style="margin-top:5px ! important;margin-bottom:0px ! important;"
-            /></button
-          ></a
+    <div>
+      <div class="highlight headline desktop-only" id="headline">Profile headline loading..</div>
+
+      <h2>About <span class="pname"></span></h2>
+      <div class="mb-6">
+        <span id="description">Profile description loading.. </span>
+
+        <a
+          id="showMoreBtn"
+          href="#headline"
+          class="hidden text-wmblue hover:underline"
+          role="button">Show More</a
         >
       </div>
 
-      <span
-        class="hidden inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 text-green-700 text-sm font-medium">
-        ✔ Verified Wikimint Member
-      </span>
+      <div id="recommendedLinks" class="hidden">
+        <h2>Recommended Links</h2>
+      </div>
 
-      <div class="sticky top-20">
-        <div class="w-full max-w-md mx-auto flex flex-col gap-4">
-          <!-- Bottom: Menu Tabs (2 Buttons) -->
-          <div class="flex p-1 space-x-2 bg-gray-100 border border-gray-200">
-            <button
-              id="btm-tab1-btn"
-              onclick="switchBtmTab('btm-tab1')"
-              class="btm-tab-btn w-full py-2.5 text-md font-medium leading-5 transition-all duration-200 bg-white text-wmblue hover:text-gray-900 shadow">
-              Connect
-            </button>
-            <button
-              id="btm-tab2-btn"
-              onclick="switchBtmTab('btm-tab2')"
-              class="btm-tab-btn w-full py-2.5 text-md font-medium leading-5 transition-all duration-200 text-gray-700 hover:text-gray-900">
-              Contact
-            </button>
-          </div>
+      <h2>Skills Obtained</h2>
+      <div class="mb-6">
+        <span id="skills">Loading skills... </span>
+      </div>
 
-          <!-- Top: Tab Contents Area -->
-          <div class="w-full">
-            <!-- Tab 1 Panel -->
-            <fieldset id="btm-tab1-content" class="btm-tab-panel">
-              <legend> Connect with me </legend>
-              <div id="socialLinks" class="hidden mt-3"></div>
-            </fieldset>
+      <h2>Services Offered</h2>
+      <div class="mb-6">
+        <span id="services">Loading services... </span>
+      </div>
 
-            <!-- Tab 2 Panel -->
-            <fieldset id="btm-tab2-content" class="btm-tab-panel hidden">
-              <legend> Contact me </legend>
-              <div id="contactLinks" class="mt-3">
-                <div class="space-y-2">
-                  <div class="flex items-start gap-3">
-                    <img
-                      loading="lazy"
-                      src="/assets/svg/chat.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                      class="w-5 h-5 flex-shrink-0 text-wmblue"
-                      style="margin-top:5px ! important;margin-bottom:0px ! important;"
-                    />
-                    <span id="pub_chat">Not Available</span>
-                  </div>
 
-                  <div class="flex items-start gap-3">
-                    <img
-                      loading="lazy"
-                      src="/assets/svg/envelope.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                      class="w-5 h-5 flex-shrink-0 text-wmblue"
-                      style="margin-top:5px ! important;margin-bottom:0px ! important;"
-                    />
-                    <span id="pub_email">Not Available</span>
-                  </div>
-
-                  <div class="flex items-start gap-3">
-                    <img
-                      loading="lazy"
-                      src="/assets/svg/phone.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                      class="w-5 h-5 flex-shrink-0 text-wmblue"
-                      style="margin-top:5px ! important;margin-bottom:0px ! important;"
-                    />
-                    <span id="pub_phone">Not Available</span>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-        </div>
 
         <fieldset id="pay" class="hidden mt-5 space-y-0">
           <legend>Pay me</legend>
+<div
+  class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-0 md:gap-10 px-3">
 
+  <!-- Left column skeleton -->
+  <div class="space-y-6">
           <!-- 3. QR Code Container -->
-          <div class="text-center py-0 my-0 space-y-0">Pay <span id="upiamount" class="lead">any amount </span> to <span id="pubupiname" class="text-wmblue lead block py-0 my-0"></span></div>
+
           <div
             id="qrpay"
-            class="w-full h-auto mx-auto object-cover py-4 md:py-0 flex justify-center bg-white">
+            class="w-full h-auto mx-auto object-cover py-4 md:py-0 md:py-0 flex justify-center bg-white">
           </div>
-<div class=" space-y-4">
+  </div>
+
+  <!-- Right column skeleton -->
+  <div class="space-y-6">
+
+          <div class="text-center md:text-start py-0 my-0 space-y-0">Pay <span id="upiamount" class="lead">any amount </span> to <span id="pubupiname" class="text-wmblue lead block md:inline py-0 my-0"></span></div>
+
           <!-- 2. Amount Input and Generate Button -->
           <div class="flex gap-2">
             <div class="relative flex-grow">
@@ -395,90 +343,21 @@ const frontmatter = {
             </svg>
             <span>Share Payment Link</span>
           </button>
+
         </div>
+
+
+</div>
+
+
         </fieldset>
-        {
-          /*
-        <fieldset class="desktop-only mt-5">
-          <legend> Grow Your Online Presence </legend>
 
-          <div class="my-5">
-            Create a professional profile that showcases your expertise,
-            services, and important links. Help people find you, learn about
-            your work, and connect with confidence.
-          </div>
 
-          <a href="/app/branding">
-            <button class="w-full btn"> Build Your Personal Brand </button>
-          </a>
-        </fieldset> */
-        }
-      </div>
-    </div>
 
-    <div>
-      <div class="highlight headline desktop-only" id="headline">Profile headline loading..</div>
 
-      <h2>About <span class="pname"></span></h2>
-      <div class="mb-6">
-        <span id="description">Profile description loading.. </span>
 
-        <a
-          id="showMoreBtn"
-          href="#headline"
-          class="hidden text-wmblue hover:underline"
-          role="button">Show More</a
-        >
-      </div>
-      {
-        /*
-      <fieldset>
-        <legend>Sponsored</legend>
 
-        <div class="grid grid-cols-[50%_50%] gap-6">
-          <div>
-            <!-- BEGIN AADS AD UNIT 2445354 -->
-
-            <div
-              id="frame"
-              style="width: 100%;margin: auto;position: relative; z-index: 99998;">
-              <iframe
-                data-aa="2445354"
-                loading="lazy"
-                src="//acceptable.a-ads.com/2445354/?size=Adaptive"
-                style="border:0; padding:0; width:100%; height:auto; overflow:hidden;display: block;margin: auto"
-              ></iframe>
-            </div>
-
-            <!-- END AADS AD UNIT 2445354 -->
-          </div>
-
-          <div>
-            <script src="//static.surfe.pro/js/net.js" is:inline></script>
-            <ins class="surfe-be" data-sid="421349"></ins>
-            <script is:inline>
-              (adsurfebe = window.adsurfebe || []).push({});
-            </script>
-          </div>
-        </div>
-      </fieldset>
-      */
-      }
-      <div id="recommendedLinks" class="hidden">
-        <h2>Recommended Links</h2>
-      </div>
-
-      <h2>Skills Obtained</h2>
-      <div class="mb-6">
-        <span id="skills">Loading skills... </span>
-      </div>
-
-      <h2>Services Offered</h2>
-      <div class="mb-6">
-        <span id="services">Loading services... </span>
-      </div>
-
-      <div id="optin" class="optin p-6 border border-gray-300 bg-gray-100">
+      <div id="optin" class="hidden optin p-6 border border-gray-300 bg-gray-100">
         <form
           action="https://www.sendsteed.com/subscribe/"
           method="post"
